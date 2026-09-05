@@ -1,7 +1,30 @@
 # HANDOFF — lanjutkan TopWallet tanpa kehilangan konteks
 
 > Dokumen ini ditulis agar sesi berikutnya bisa langsung lanjut. Baca ini
-> dulu, lalu PROGRESS.md untuk kronologi lengkap.
+> dulu, lalu PROGRESS.md untuk kronologi lengkap, dan **docs/ROADMAP.md untuk
+> scope asli yang diperluas** (Phase 2 = "bedah wallet": PnL truth engine,
+> copy-trade tiers, cluster attribution, fresh-wallet sniper pattern, CT/X
+> identity attribution, follow-the-CT monitor, Whale Entry Map dari rule
+> teman user). Catatan catchup Bahasa Indonesia ada di vault Obsidian:
+> `C:\Users\ROG\Documents\Obsidian\Sniper Token\TopWallet\`.
+
+## 0. PERLUASAN SCOPE DARI USER (WAJIB DIBACA — ini tugas yang sebenarnya)
+
+User menegaskan roadmap asli 1–5 terlalu pendek. Inti tambahan (detail di
+docs/ROADMAP.md):
+1. **Phase 2 sebenarnya = bedah wallet**: tentukan wallet mana yang PnL-nya
+   BENAR-BENAR positif vs HALU, mana yang konsisten → recommended copy-trade;
+   clustere dipecah untuk tahu "milik siapa".
+2. **Pola fresh wallet**: modal kecil → jutaan $ dalam minggu/bulan — deteksi
+   dan pantau dari awal (ini para insider/pro).
+3. **CT attribution**: wallet top CT → identitas X/Twitter (user akan sediakan
+   auth token X + GitHub saat masuk phase ini); pantau CT: kalau post/beli,
+   kita bisa ikor. Semua on-chain, plus AI → tahun-tahun investigasi dipadatkan.
+4. **Whale Entry Map (rule teman user, WAJIB diimplement + di-A/B test)**:
+   "Jangan entry asal-app. Lihat holder: whale entry di area berapa? Kalau
+   area whale dekat/di atas area kita, apalagi size jumbo → conviction hold
+   long-term." → fitur: distribusi entry-MC top holder per token +
+   `conviction_score` untuk keputusan entry.
 
 ## 1. STATUS SAAT INI (2026-09-06, di-stop karena limit usage)
 
