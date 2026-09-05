@@ -1,17 +1,17 @@
 {
-  "updated_at": "2026-09-05T10:40:28.538228+00:00",
+  "updated_at": "2026-09-05T11:03:31.616740+00:00",
   "chain": "robinhood",
   "chain_id": 4663,
   "stage_counts": {
     "tokens_in_db": 12,
     "pools_in_db": 12,
     "wallets_in_db": 316,
-    "swap_events": 137,
+    "swap_events": 1807,
     "wallets_scored": 0,
-    "wallets_excluded": 0
+    "wallets_excluded": 177
   },
   "top_wallets_count": 0,
-  "run_duration_seconds": 66.7,
+  "run_duration_seconds": 648.8,
   "config": {
     "lookback_days": 45,
     "min_positions": 5,
