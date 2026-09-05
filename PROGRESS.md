@@ -82,3 +82,9 @@
 - Stats: {"tokens_in_db": 62, "pools_in_db": 62, "wallets_in_db": 1675, "swap_events": 7643, "wallets_scored": 0, "wallets_excluded": 18}
 - No wallets passed the consistency filters this run (normal for small samples).
 - Next: scheduled re-run per PIPELINE_CRON; details in results/stats.json
+
+### [2026-09-05] — Automated pipeline run
+- What ran: full pipeline (discover → enrich → analyze → rank → export)
+- Stats: {"tokens_in_db": 62, "pools_in_db": 62, "wallets_in_db": 1675, "swap_events": 7643, "wallets_scored": 0, "wallets_excluded": 139}
+- No wallets passed the consistency filters this run (normal for small samples).
+- Next: scheduled re-run per PIPELINE_CRON; details in results/stats.json
