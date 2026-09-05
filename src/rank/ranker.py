@@ -21,6 +21,7 @@ class RankedWallet:
     trading_style: str
     risk_flags: list[str]
     cluster_id: str | None
+    verification: dict | None = None  # set by the hard PnL verifier
 
 
 def rank_wallets(

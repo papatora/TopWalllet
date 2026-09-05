@@ -264,20 +264,29 @@ class EvmRpcClient:
         address: str | None,
         topics: list[Any] | None,
         start_window: int | None = None,
+        max_calls: int | None = None,
     ) -> list[dict]:
         """Fetch logs over a large range. Shrinks the window only on
         response-size limits; endpoint-specific range rejections are routed
-        around instead."""
+        around instead. `max_calls` bounds the worst-case RPC spend (oldest
+        ranges are dropped first, newest data always wins)."""
         window = start_window or settings.getlogs_start_window
+        budget = max_calls or 10 ** 9
         logs: list[dict] = []
-        start = from_block
+        end = to_block
         retries_left = 3
-        while start <= to_block:
-            end = min(start + window - 1, to_block)
+        calls = 0
+        while end >= from_block:
+            if calls >= budget:
+                jlog(log, logging.WARNING, "getlogs call budget exhausted; oldest ranges dropped",
+                     fetched=len(logs), calls=calls, oldest_reached=end)
+                break
+            start = max(end - window + 1, from_block)
+            calls += 1
             try:
                 chunk = await self.get_logs(start, end, address, topics)
                 logs.extend(chunk)
-                start = end + 1
+                end = start - 1
                 retries_left = 3
                 if len(logs) > settings.price_max_logs_per_pool:
                     jlog(log, logging.WARNING, "price series capped", fetched=len(logs))
@@ -287,7 +296,7 @@ class EvmRpcClient:
                 if retries_left <= 0:
                     jlog(log, logging.WARNING, "getlogs range skipped after retries",
                          start=start, end=end)
-                    start = end + 1
+                    end = start - 1
                     retries_left = 3
                 else:
                     await asyncio.sleep(15)
@@ -299,7 +308,7 @@ class EvmRpcClient:
                 else:
                     jlog(log, logging.WARNING, "getlogs range skipped",
                          start=start, end=end, error=msg[:140])
-                    start = end + 1
+                    end = start - 1
         return logs
 
     async def block_timestamps(self, blocks: list[int]) -> dict[int, int]:

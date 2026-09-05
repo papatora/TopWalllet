@@ -23,8 +23,10 @@
     "unrealized_5x": 5.0
   },
   "thresholds": {
-    "min_positions": 5,
-    "min_distinct_tokens": 3,
-    "big_wins_for_moonshot_style": 3
+    "min_positions": 3,
+    "min_distinct_tokens": 1,
+    "big_wins_for_moonshot_style": 3,
+    "min_position_size_usd": 1.0,
+    "win_threshold_multiple": 1.02
   }
 }

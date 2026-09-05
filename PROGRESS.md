@@ -2,6 +2,37 @@
 
 ## Phase 1 (MVP) — build log
 
+### [2026-09-06] — Independent subagent audit → 3 hard fixes
+- **Setup**: 2 subagents assigned to re-derive the top-6 shipped wallets' PnL purely from raw Blockscout transfers + on-chain Swap logs (no trust in our DB). One agent completed (wallets #1–3); the second hit a concurrency limit and is queued.
+- **Audit verdicts**: best-trade multiples confirmed accurate (1.2067x vs claimed 1.21; 1.1969x vs 1.2; price math independently validated to 0.4% vs DexScreener). BUT:
+  1. **Position undercounting ~2.5x** — root cause found: v4 router-routed buys (`PoolManager→router→wallet`) have no wallet-adjacent pool leg, so whole buy transactions were dropped by the `touched_pool` per-leg check → FIFO undercounted closed positions and inflated win rates (claimed 1.0 vs true 0.842 on wallet #1).
+  2. **Fees ignored** — trips at 1.001–1.007x are break-even-to-losing after swap fees.
+  3. **Coordinated trading** — two shipped wallets repeatedly on opposite sides of the same token in the same/adjacent blocks (4+ coincidences), classic wash pattern.
+- **Hard fixes shipped (all in this commit)**:
+  - `touched_pool` now evaluated at TRANSACTION level (any leg touching pool counterparties) → router hops classified correctly.
+  - Win threshold raised to ≥1.02x (`win_threshold_multiple` in scoring_weights.json) — sub-fee "wins" no longer counted.
+  - Wash-pair detection: wallets appearing ≥3x on opposite sides of the same token in the same block are flagged `WASH_PAIR`.
+  - Full re-enrichment of all 1,675 wallets triggered (classification changed).
+- **Status**: audit-fix run executing; results + updated verified list to be pushed on completion.
+
+### [2026-09-06] — First VERIFIED Top-Wallet list shipped (36 wallets)
+- **What was completed**:
+  - End-to-end pipeline validated on real chain data: 62 tokens / 62 pools discovered, 1,675 wallets enriched, 7,643 classified swaps, 22,552 on-chain price points across ~58 pools.
+  - Hard PnL verification shipped ("aturan keras"): R1 ETH-oracle cross-check, R2 per-wallet trade re-derivation from raw Blockscout legs, R3 stale-open rule. Of 101 consistency-passing wallets, **36 shipped** — 65 dropped by strict verification.
+  - ETH pricing verified against real-time reference: on-chain WETH/USDG pool $2,455.80 vs live $2,457.79 → **0.08% deviation** (R1 green).
+  - GMGN-style metrics added to exports: return-distribution buckets + daily PnL calendar per wallet.
+  - Independent subagent audit of top wallets launched against raw Blockscout data (results appended below).
+- **Engineering war stories (all fixed, all test-locked)**:
+  - Uniswap v4 Swap topic0 must be keccak of the canonical signature (`Swap(bytes32,address,…)` = 0x40e9cecb…) — the naive "with parameter names" hash silently returns zero logs (unit test pins it).
+  - sqrtPriceX96² = token1/token0; orientation now self-checks against the DexScreener spot price (fixed a $118B/token inversion).
+  - Cluster-based pricing: prices are built only around blocks where trades actually happened (gaps <30k blocks merged, ±5k margin) — full-history scans of active pools cost hundreds of getLogs calls and were throttled; cluster scans cost 1–3 calls each.
+  - v4 router hops: trades classified by NET token flow per transaction (PoolManager→router→wallet legs defeated per-leg classification).
+  - SQLite lock contention and Blockscout 500s handled with retries/status resets.
+- **Honest calibration (documented, config-driven)**: on a ~2-month-old chain, the 1675-wallet sample contains mostly single-token specialists. Consistency bar lowered for the MVP preset (3 positions × ≥1 token, `SINGLE_TOKEN_SAMPLE` flag discloses it); the shipped list is dominated by verified micro-scalpers (77–100% win rate, 1.03–1.34x per trip, $7–76 realized PnL). The 5-position × 3-token bar ships as the default target once coverage widens on the VPS.
+- **Stats**: see results/stats.json — wallets_scored 101, shipped 36, excluded 822.
+- **Blockers/issues**: Blockscout token-filtered endpoint intermittently 500s (retried); Alchemy free tier caps eth_getLogs at 10 blocks (public Robinhood RPC used for log scans; PAYG key recommended).
+- **Next steps**: VPS deployment (setup.sh) with wider universe (500+ tokens), GMGN leaderboards via the ENABLE_GMGN path, robinscan.io/leaderboard integration, funding-graph sybil clustering.
+
 ### [2026-09-05] — Phase 1: Robinhood Chain pivot + full pipeline MVP (v0.1)
 - **Chain correction**: target chain is **Robinhood Chain** (EVM L2, Arbitrum-Orbit stack, chain id 4663) — not Solana as originally drafted. Architecture rebuilt EVM-first.
 - Recon facts baked into the design:

@@ -61,8 +61,10 @@ def compute_metrics(
     closed = [p for p in meaningful if p.status == "closed" and p.return_multiple]
     open_pos = [p for p in meaningful if p.status == "open"]
     with_mult = closed
-
-    wins = [p for p in with_mult if (p.return_multiple or 0) > 1.0]
+    # subagent-audit hard rule: a trip under the fee threshold (~2%) is NOT a
+    # win — counting 1.001x as "wins" hallucinated profitability
+    win_threshold = float(cfg.get("win_threshold_multiple", 1.02))
+    wins = [p for p in with_mult if (p.return_multiple or 0) >= win_threshold]
     win_rate = len(wins) / len(with_mult) if with_mult else 0.0
 
     mults = sorted((p.return_multiple or 1.0) for p in with_mult)
@@ -109,7 +111,7 @@ def compute_metrics(
         age_days = max((now - _aware(ended)).total_seconds() / 86400.0, 0.0)
         w = 0.5 ** (age_days / half_life)
         wsum += w
-        if (p.return_multiple or 0) > 1.0:
+        if (p.return_multiple or 0) >= win_threshold:
             wwin += w
     recent_win_rate = (wwin / wsum) if wsum > 0 else 0.0
 

@@ -12,6 +12,7 @@ from __future__ import annotations
 import asyncio
 import bisect
 import logging
+from collections import defaultdict
 from datetime import datetime, timezone
 from statistics import median
 
@@ -247,16 +248,6 @@ class Pipeline:
 
         await self.rpc.probe_log_endpoints(settings.pool_manager, v4_swap_topic0(), to_block)
 
-        rows = (await session.execute(
-            select(SwapEvent.token_address,
-                   func.min(SwapEvent.block_num),
-                   func.max(SwapEvent.block_num))
-            .group_by(SwapEvent.token_address)
-        )).all()
-        if not rows:
-            jlog(log, logging.INFO, "no swap events yet — nothing to price")
-            return {"price_points": 0, "pools_priced": 0}
-
         lookback_blocks = min(
             int(settings.price_lookback_days * 86400 / max(self.block_time_s, 0.01)),
             self.head_block,
@@ -268,32 +259,79 @@ class Pipeline:
         for p in sorted(pools, key=lambda p: p.liquidity_usd or 0, reverse=True):
             pool_by_token.setdefault(p.token_address, p)
 
+        # scan only AROUND the blocks where trades actually happened: merge
+        # each token's event blocks into clusters (gaps < CLUSTER_GAP) and
+        # price each cluster with a small margin. Full-history scans of active
+        # pools cost hundreds of getLogs calls; cluster scans cost 1-3 each
+        # and cover exactly the blocks the scorer needs prices for.
+        cluster_gap = 30_000
+        margin = 5_000
+        max_clusters_per_pool = settings.price_max_clusters_per_pool
+
         built_points = 0
         priced_pools: set[str] = set()
         quotes_needed: set[str] = set()
-        for token, min_block, _max_block in rows:
-            pool = pool_by_token.get(token)
-            if pool is None:
-                continue
-            from_block = max(min(to_block - lookback_blocks, min_block - window_blocks), 1)
-            if pool.address in priced_pools:
-                continue
-            try:
-                built_points += await service.build_series_for_pool(pool, from_block, to_block)
-                priced_pools.add(pool.address)
-                quotes_needed.add(pool.quote_token.lower())
-                quotes_needed.add(pool.quote_symbol.upper())
-            except Exception as e:
-                jlog(log, logging.WARNING, "series build failed", pool=pool.address, error=str(e)[:160])
+        tokens_rows = (await session.execute(
+            select(SwapEvent.token_address,
+                   func.min(SwapEvent.block_num),
+                   func.max(SwapEvent.block_num))
+            .group_by(SwapEvent.token_address)
+        )).all()
+        cutoff_block = self.head_block - min(
+            int(settings.price_lookback_days * 86400 / max(self.block_time_s, 0.01)),
+            self.head_block,
+        )
 
-        # ETH-quoted pools need the ETH price series (or fall back to a constant)
-        if any(q in (settings.weth_address, "0x0000000000000000000000000000000000000000") for q in quotes_needed) \
-                and service._eth_pool and service._eth_pool not in priced_pools:
-            eth_pool = await session.get(Pool, service._eth_pool)
-            if eth_pool:
+        # ETH-quoted pools need the ETH price series FIRST (they fail otherwise);
+        # the WETH/stable pool has no swap events of its own, so cluster scanning
+        # never reaches it — build it explicitly over the lookback window.
+        eth_needed = any(
+            (pool_by_token.get(t).quote_token.lower() in
+             (settings.weth_address, "0x0000000000000000000000000000000000000000"))
+            for t, _mn, _mx in tokens_rows if pool_by_token.get(t)
+        )
+        if eth_needed and service._eth_pool:
+            eth_pool_row = await session.get(Pool, service._eth_pool)
+            if eth_pool_row:
                 from_block = max(to_block - lookback_blocks, 1)
-                built_points += await service.build_series_for_pool(eth_pool, from_block, to_block)
+                built_points += await service.build_series_for_pool(
+                    eth_pool_row, from_block, to_block,
+                    max_calls=settings.price_max_calls_per_pool,
+                )
                 priced_pools.add(service._eth_pool)
+        for token, min_block, max_block in tokens_rows:
+            pool = pool_by_token.get(token)
+            if pool is None or max_block < cutoff_block:
+                continue  # no pool, or all events older than the price window
+            blocks = sorted((await session.execute(
+                select(SwapEvent.block_num).where(SwapEvent.token_address == token)
+            )).scalars().all())
+            # merge into clusters
+            clusters: list[list[int]] = []
+            for b in blocks:
+                if clusters and b - clusters[-1][1] <= cluster_gap:
+                    clusters[-1][1] = b
+                else:
+                    clusters.append([b, b])
+            clusters = clusters[-max_clusters_per_pool:]  # keep the most recent
+            for c0, c1 in clusters:
+                f = max(c0 - margin, 1)
+                t = min(c1 + margin, to_block)
+                if f > t:
+                    continue
+                try:
+                    built_points += await service.build_series_for_pool(
+                        pool, f, t,
+                        max_calls=settings.price_max_calls_per_pool,
+                    )
+                    priced_pools.add(pool.address)
+                    quotes_needed.add(pool.quote_token.lower())
+                    quotes_needed.add(pool.quote_symbol.upper())
+                except Exception as e:
+                    jlog(log, logging.WARNING, "series build failed",
+                         pool=pool.address, error=str(e)[:160])
+                    break
+
         await session.commit()
         jlog(log, logging.INFO, "targeted price series built", points=built_points, pools=len(priced_pools))
         return {"price_points": built_points, "pools_priced": len(priced_pools)}
@@ -406,17 +444,21 @@ class Pipeline:
                     by_tx.setdefault(tx, []).append(it)
 
             for tx, legs in by_tx.items():
-                touched_pool = False
+                # a swap tx touches the pool somewhere even when the wallet's
+                # leg goes through a router (PoolManager→router→wallet), so
+                # test ANY leg of the tx against the pool counterparties —
+                # not just the wallet-adjacent legs (subagent-audit fix)
+                touched_pool = any(
+                    ((leg.get("from") or {}).get("hash") or "").lower() in cps
+                    or ((leg.get("to") or {}).get("hash") or "").lower() in cps
+                    for leg in legs
+                )
                 received = sent = 0.0
                 block_num = 0
                 ts = None
                 for leg in legs:
                     src = ((leg.get("from") or {}).get("hash") or "").lower()
                     dst = ((leg.get("to") or {}).get("hash") or "").lower()
-                    if dst == address and src in cps:
-                        touched_pool = True
-                    if src == address and dst in cps:
-                        touched_pool = True
                     amount = _parse_amount((leg.get("total") or {}).get("value") or leg.get("value")) or 0.0
                     if dst == address:
                         received += amount
@@ -502,23 +544,22 @@ class Pipeline:
         started = started or datetime.now(timezone.utc)
         service = PriceService(self.rpc, session)
         await service.load_pools()
+        self._verify_service = service  # used by the hard PnL verifier
 
         tokens = (await session.execute(select(Token))).scalars().all()
         symbols = {t.address: t.symbol or t.address[:8] for t in tokens}
         current_prices = {t.address: t.price_usd for t in tokens if t.price_usd}
+        self._decimals = {t.address: t.decimals for t in tokens}
 
-        # in-memory sync lookup over the stored price series
+        # in-memory sync lookup over the stored price series (shared cache with
+        # the verifier so it sees identical prices)
         pools = (await session.execute(select(Pool))).scalars().all()
         series_by_pool: dict[str, tuple[list[int], list[float]]] = {}
         for p in pools:
-            pts = (await session.execute(
-                select(PricePoint)
-                .where(PricePoint.pool_address == p.address)
-                .order_by(PricePoint.block_num)
-            )).scalars().all()
+            pts = await service.get_series(p.address)
             if pts:
                 series_by_pool[p.address] = (
-                    [q.block_num for q in pts], [q.price_usd for q in pts],
+                    [q.block for q in pts], [q.price_usd for q in pts],
                 )
         token_pool = {p.token_address: p.address for p in pools}
         first_block_by_token: dict[str, int] = {}
@@ -538,6 +579,8 @@ class Pipeline:
         scored: list[tuple] = []
         excluded = 0
         wallet_tokens: dict[str, set[str]] = {}
+        buys_at: dict[tuple, set] = defaultdict(set)
+        sells_at: dict[tuple, set] = defaultdict(set)
         for wallet in wallets:
             events = (await session.execute(
                 select(SwapEvent).where(SwapEvent.wallet_address == wallet.address).order_by(SwapEvent.block_num)
@@ -554,6 +597,9 @@ class Pipeline:
                     token=ev.token_address, side=ev.side, token_amount=ev.token_amount,
                     price_usd=price, ts=ev.ts, block_num=ev.block_num,
                 ))
+                # counterparty-coincidence index (same token, same block)
+                key = (ev.token_address, ev.block_num)
+                (buys_at if ev.side == "BUY" else sells_at)[key].add(wallet.address)
             if not by_token:
                 wallet.status = "skipped"
                 continue
@@ -577,10 +623,42 @@ class Pipeline:
             score = composite_score(metrics, self.weights_cfg) if metrics else 0.0
             scored.append((wallet.address, metrics, positions, score, filters.flags, None))
 
+        # wash-pair detection (subagent-audit finding): two wallets repeatedly
+        # on opposite sides of the same token in the same block
+        pair_counts: dict[tuple, int] = defaultdict(int)
+        for key, buyers in buys_at.items():
+            for b in buyers:
+                for sll in sells_at.get(key, ()):  # noqa: B007
+                    if b != sll:
+                        pair_counts[tuple(sorted((b, sll)))] += 1
+        wash_wallets = {w for pair, n in pair_counts.items() if n >= 3 for w in pair}
+
         clusters = cluster_wallets(wallet_tokens)
-        scored = [(w, m, p, s, f, clusters.get(w)) for (w, m, p, s, f, _) in scored]
+        scored = [(w, m, p, s, f + (["WASH_PAIR"] if w in wash_wallets else []), clusters.get(w))
+                  for (w, m, p, s, f, _) in scored]
 
         ranked = rank_wallets(scored, self.weights_cfg)
+
+        # --- hard PnL verification: unverified wallets do not ship ---
+        if settings.verify_pnl and ranked:
+            from src.analyze.pnl_verifier import verify_top_wallets
+
+            counterparties: dict[str, set[str]] = {}
+            for p in pools:
+                counterparties.setdefault(p.token_address, set()).add(p.address)
+            for tok in list(counterparties):
+                counterparties[tok].add(settings.pool_manager)
+            self._counterparties = counterparties
+
+            await verify_top_wallets(ranked, service, self._rederive_trade)
+            before = len(ranked)
+            ranked = [e for e in ranked
+                      if (e.verification or {}).get("verdict") == "verified"]
+            for i, e in enumerate(ranked, start=1):
+                e.rank = i
+            jlog(log, logging.INFO, "strict verification filter",
+                 before=before, shipped=len(ranked))
+
         await self._persist_scores(session, ranked)
         await session.commit()
 
@@ -593,6 +671,44 @@ class Pipeline:
 
                 push_results()
         return ranked
+
+    async def _rederive_trade(self, wallet: str, pos) -> float | None:
+        """R2 re-derivation: recompute a position's return multiple from RAW
+        Blockscout legs (fresh request, not our DB) + series prices."""
+        from src.enrich.tx_fetcher import _parse_amount
+
+        wallet = wallet.lower()
+        cps = (self._counterparties or {}).get(pos.token)
+        if not cps:
+            return None
+        items = await self.blockscout.address_token_transfers(wallet, 12, token_filter=pos.token)
+        dec = (self._decimals or {}).get(pos.token, 18)
+
+        def net_units_at(block: int, tol: int = 10) -> float:
+            units = 0.0
+            for it in items:
+                bn = int(it.get("block_number") or 0)
+                if abs(bn - block) > tol:
+                    continue
+                src = ((it.get("from") or {}).get("hash") or "").lower()
+                dst = ((it.get("to") or {}).get("hash") or "").lower()
+                amt = _parse_amount((it.get("total") or {}).get("value") or it.get("value")) or 0.0
+                if dst == wallet and src in cps:
+                    units += amt
+                elif src == wallet and dst in cps:
+                    units -= amt
+            return abs(units) / (10 ** dec) if units else 0.0
+
+        entry_amt = net_units_at(pos.entry_block)
+        exit_amt = net_units_at(pos.exit_block) if pos.exit_block else 0.0
+        if entry_amt <= 0 or exit_amt <= 0:
+            return None
+        svc = self._verify_service
+        pe = await svc.price_at(pos.token, pos.entry_block)
+        px = await svc.price_at(pos.token, pos.exit_block)
+        if not pe or not px:
+            return None
+        return (exit_amt * px) / (entry_amt * pe)
 
     async def _persist_scores(self, session: AsyncSession, ranked) -> None:
         await session.execute(delete(WalletScore))

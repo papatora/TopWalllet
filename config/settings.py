@@ -80,7 +80,9 @@ class Settings:
     enrich_max_pages_per_wallet: int = _env_int("ENRICH_MAX_PAGES_PER_WALLET", 6)
     enrich_limit_per_run: int = _env_int("ENRICH_LIMIT_PER_RUN", 0)
     lookback_days: int = _env_int("LOOKBACK_DAYS", 70)
-    price_lookback_days: int = _env_int("PRICE_LOOKBACK_DAYS", 70)
+    price_lookback_days: int = _env_int("PRICE_LOOKBACK_DAYS", 45)
+    price_max_calls_per_pool: int = _env_int("PRICE_MAX_CALLS_PER_POOL", 120)
+    price_max_clusters_per_pool: int = _env_int("PRICE_MAX_CLUSTERS_PER_POOL", 60)
     getlogs_start_window: int = _env_int("GETLOGS_START_WINDOW", 2_000_000)
     # light safety margin below the chain tip for log queries (tip reorgs /
     # indexer catch-up); the real index on public RPC is much fresher
@@ -94,6 +96,11 @@ class Settings:
     dip_percentile: float = _env_float("DIP_PERCENTILE", 0.2)
     top_percentile: float = _env_float("TOP_PERCENTILE", 0.8)
     unrealized_big_multiple: float = _env_float("UNREALIZED_BIG_MULTIPLE", 5.0)
+
+    # --- hard PnL verification (aturan keras, see src/analyze/pnl_verifier.py) ---
+    verify_pnl: bool = _env_bool("VERIFY_PNL", True)
+    verify_top_n: int = _env_int("VERIFY_TOP_N", 150)
+    stale_open_hours: float = _env_float("STALE_OPEN_HOURS", 24.0)
 
     # infra / plumbing
     database_url: str = os.getenv("DATABASE_URL", "sqlite+aiosqlite:///data/topwallet.db")

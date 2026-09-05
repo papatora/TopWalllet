@@ -62,6 +62,7 @@ class PriceService:
         self._eth_const: float | None = None
         self._v4_topic = v4_swap_topic0()
         self.head_hint: int | None = None
+        self._eth_spot: float | None = None
 
     # ---------------- setup ----------------
 
@@ -96,16 +97,19 @@ class PriceService:
         jlog(log, logging.INFO, "price series built", points=total, pools=len(pools))
         return total
 
-    async def build_series_for_pool(self, pool: Pool, from_block: int, to_block: int) -> int:
+    async def build_series_for_pool(self, pool: Pool, from_block: int, to_block: int,
+                                    max_calls: int | None = None) -> int:
         if pool.version == 4:
             logs = await self.rpc.get_logs_adaptive(
                 from_block, to_block,
                 address=settings.pool_manager,
                 topics=[self._v4_topic, pool.address],
+                max_calls=max_calls,
             )
         else:
             logs = await self.rpc.get_logs_adaptive(
-                from_block, to_block, address=pool.address, topics=[V3_SWAP_TOPIC0]
+                from_block, to_block, address=pool.address, topics=[V3_SWAP_TOPIC0],
+                max_calls=max_calls,
             )
         if not logs:
             return 0
@@ -257,19 +261,22 @@ class PriceService:
         return None
 
     async def eth_price_at(self, block: int) -> float | None:
-        if self._eth_pool is None:
-            if self._eth_const is None:
-                stats = await self._blockscout_coin_price()
-                self._eth_const = stats  # may be None; caller skips
-            return self._eth_const
-        series = await self.get_series(self._eth_pool)
-        if not series:
-            return None
-        prices = [p.block for p in series]
-        idx = bisect.bisect_right(prices, block) - 1
-        if idx < 0:
-            idx = 0
-        return series[idx].price_usd
+        """ETH USD: series from the ETH/stable pool when available, else the
+        verified DexScreener on-chain oracle (WETH most-liquid pool)."""
+        if self._eth_pool is not None:
+            series = await self.get_series(self._eth_pool)
+            if series:
+                prices = [p.block for p in series]
+                idx = bisect.bisect_right(prices, block) - 1
+                if idx < 0:
+                    idx = 0
+                return series[idx].price_usd
+        if self._eth_spot is None:
+            from src.analyze.pnl_verifier import eth_oracle_usd
+
+            self._eth_spot = await eth_oracle_usd()
+            jlog(log, logging.INFO, "eth spot oracle fallback", usd=self._eth_spot)
+        return self._eth_spot
 
     async def _blockscout_coin_price(self) -> float | None:
         from src.discover.holder_scraper import BlockscoutClient
@@ -315,6 +322,14 @@ class PriceService:
         lo = bisect.bisect_left(blocks, block - window_blocks)
         hi = bisect.bisect_right(blocks, block + window_blocks)
         return [p.price_usd for p in series[lo:hi]]
+
+    def last_point_ts(self, token: str) -> datetime | None:
+        """Timestamp of the most recent known price point for a token."""
+        pool = self._token_pool.get(token)
+        if pool is None or pool not in self._series_cache:
+            return None
+        series = self._series_cache[pool]
+        return series[-1].ts if series else None
 
     def percentile(self, value: float, window: list[float]) -> float | None:
         """Fraction of window prices strictly below `value` (0 = bought the dip, 1 = the top)."""

@@ -38,6 +38,36 @@ def eip55(address: str) -> str:
     return out
 
 
+def _return_distribution(positions: list) -> dict:
+    """GMGN-style bucket distribution of closed-position return multiples."""
+    buckets = {"over_500x": 0, "200x_500x": 0, "1x_200x": 0, "0x_1x": 0, "under_0x": 0}
+    for p in positions:
+        if p.status != "closed" or p.return_multiple is None:
+            continue
+        m = p.return_multiple
+        if m >= 500:
+            buckets["over_500x"] += 1
+        elif m >= 200:
+            buckets["200x_500x"] += 1
+        elif m >= 1.0:
+            buckets["1x_200x"] += 1
+        elif m > 0:
+            buckets["0x_1x"] += 1
+        else:
+            buckets["under_0x"] += 1
+    return buckets
+
+
+def _pnl_calendar(positions: list, symbols: dict[str, str]) -> dict:
+    """Daily realized PnL (GMGN-style calendar data), newest entries last."""
+    daily: dict[str, float] = {}
+    for p in positions:
+        if p.status == "closed" and p.pnl_usd and p.exit_ts:
+            day = p.exit_ts.date().isoformat()
+            daily[day] = round(daily.get(day, 0.0) + p.pnl_usd, 2)
+    return dict(sorted(daily.items()))
+
+
 def _wallet_json(entry: RankedWallet, symbols: dict[str, str]) -> dict:
     m = entry.metrics
     closed = sorted(
@@ -85,6 +115,7 @@ def _wallet_json(entry: RankedWallet, symbols: dict[str, str]) -> dict:
             "last_active": m.last_active.isoformat() if m.last_active else None,
         },
         "top_trades": top_trades,
+        "verification": entry.verification or {"verdict": "not_checked"},
         "trading_style": entry.trading_style,
         "risk_flags": entry.risk_flags,
         "cluster_id": entry.cluster_id,

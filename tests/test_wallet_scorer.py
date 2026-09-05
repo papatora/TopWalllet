@@ -49,10 +49,13 @@ def test_metrics_basic():
 
 
 def test_low_data_wallet_returns_none():
+    # below min_positions (3 in the current pioneer preset) → insufficient
     assert compute_metrics([pos("0xa", 10.0), pos("0xb", 2.0)], WEIGHTS, now=NOW) is None
-    # 6 positions but only 2 distinct tokens → still insufficient
-    many = [pos("0xa", 1.5) for _ in range(6)]
-    assert compute_metrics(many, WEIGHTS, now=NOW) is None
+    # 3 positions on one token passes the pioneer bar (flagged SINGLE_TOKEN_SAMPLE
+    # by anti-gaming, which is the transparency mechanism — see its tests)
+    three = [pos("0xa", m) for m in (1.5, 2.0, 0.8)]
+    m = compute_metrics(three, WEIGHTS, now=NOW)
+    assert m is not None and m.distinct_tokens == 1
 
 
 def test_consistent_winner_beats_one_hit_wonder():

@@ -76,6 +76,11 @@ def apply_filters(
     if metrics.median_position_size_usd < 10:
         result.flags.append("DUST_ONLY")
 
+    # transparency: single-token wallets are specialists with a narrow sample,
+    # not multi-token consistent traders — always disclosed, never hidden
+    if metrics.distinct_tokens == 1:
+        result.flags.append("SINGLE_TOKEN_SAMPLE")
+
     # insider: first buy of a token within 300 blocks of first observed trade,
     # and >80% of that position sold within a day of entry.
     if first_token_trade_block:

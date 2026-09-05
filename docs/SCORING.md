@@ -78,3 +78,24 @@ Output joins up to 3 tags, e.g. `dip_buyer_diamond_hands_multi_moonshot`.
 
 Phase 2 roadmap: funding-graph clustering (common funder address, nonce
 linkage), counterparty circular-flow detection.
+
+## Hard PnL verification (aturan keras)
+
+Ranked output ships ONLY wallets that survive independent re-derivation
+(`VERIFY_PNL=true`, `src/analyze/pnl_verifier.py`):
+
+- **R1 — ETH oracle cross-check**: the ETH USD price used for valuations must
+  match an independent on-chain source (most liquid WETH/USDG pool via
+  DexScreener) within 2%. Verified 2026-09-05: pool price $2,455.80 vs live
+  reference $2,457.79 → 0.08% deviation. On mismatch, all ETH-quoted PnL is
+  unverified and such wallets are dropped.
+- **R2 — trade re-derivation**: each top wallet's top-3 closed trades are
+  re-pulled RAW from Blockscout (fresh requests, not our DB) and the return
+  multiple recomputed. ≥2 of 3 must match within 25%, else `PNL_UNVERIFIED`
+  → dropped from Top-N.
+- **R3 — stale-open rule**: unrealized multiples only count when the price
+  point they rest on is <24h old.
+
+Each exported wallet carries a `verification` block:
+`{"verdict": "verified", "eth_oracle_ok": true, "trades_verified": "3/3", "details": []}`.
+
