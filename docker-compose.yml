@@ -1,0 +1,70 @@
+# TopWallet — full stack for a Linux VPS.
+#   docker compose up -d --build
+# Services: postgres, redis, worker (one-shot pipeline run), scheduler
+# (weekly cron), api (FastAPI dashboard). The worker can be scaled:
+#   docker compose up -d --scale worker=4
+name: topwallet
+
+x-app-base: &app-base
+  build: .
+  env_file: .env
+  environment:
+    # inside the compose network, prefer Postgres over the sqlite default
+    DATABASE_URL: postgresql+asyncpg://topwallet:topwallet@postgres:5432/topwallet
+    AUTO_PUSH_RESULTS: ${AUTO_PUSH_RESULTS:-true}
+  volumes:
+    - ./results:/app/results
+    - ./logs:/app/logs
+  depends_on:
+    postgres:
+      condition: service_healthy
+    redis:
+      condition: service_started
+  restart: unless-stopped
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: topwallet
+      POSTGRES_PASSWORD: topwallet
+      POSTGRES_DB: topwallet
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U topwallet"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    restart: unless-stopped
+
+  redis:
+    image: redis:7-alpine
+    command: redis-server --appendonly yes
+    volumes:
+      - redisdata:/data
+    restart: unless-stopped
+
+  worker:
+    <<: *app-base
+    command: python -m src.cli pipeline
+    restart: "no"
+
+  scheduler:
+    <<: *app-base
+    command: python -m src.cli scheduler
+
+  monitor:
+    <<: *app-base
+    command: python -m src.cli monitor
+    profiles: ["monitor"]   # start explicitly: docker compose --profile monitor up -d
+
+  api:
+    <<: *app-base
+    command: python -m src.cli api
+    ports:
+      - "8000:8000"
+
+volumes:
+  pgdata:
+  redisdata:

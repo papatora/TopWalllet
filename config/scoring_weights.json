@@ -1,0 +1,30 @@
+{
+  "weights": {
+    "win_rate": 0.22,
+    "median_return": 0.18,
+    "moonshots": 0.10,
+    "dip_buying": 0.15,
+    "top_selling": 0.10,
+    "consistency": 0.15,
+    "recency": 0.10
+  },
+  "normalization": {
+    "median_return_log_cap": 20.0,
+    "max_return_log_cap": 500.0,
+    "distinct_tokens_cap": 15,
+    "recency_half_life_days": 45
+  },
+  "styles": {
+    "dip_accuracy_threshold": 0.6,
+    "top_accuracy_threshold": 0.6,
+    "big_win_multiple": 10.0,
+    "scalper_max_hold_hours": 6.0,
+    "diamond_min_hold_hours": 168.0,
+    "unrealized_5x": 5.0
+  },
+  "thresholds": {
+    "min_positions": 5,
+    "min_distinct_tokens": 3,
+    "big_wins_for_moonshot_style": 3
+  }
+}

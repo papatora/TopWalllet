@@ -2,7 +2,7 @@
 
 ## Phase 1 (MVP) — build log
 
-### [2026-09-05] — Phase 1: Robinhood Chain pivot + full pipeline MVP
+### [2026-09-05] — Phase 1: Robinhood Chain pivot + full pipeline MVP (v0.1)
 - **Chain correction**: target chain is **Robinhood Chain** (EVM L2, Arbitrum-Orbit stack, chain id 4663) — not Solana as originally drafted. Architecture rebuilt EVM-first.
 - Recon facts baked into the design:
   - DexScreener indexes Robinhood Chain (chainId `robinhood`); DEXs: Uniswap v4 (dominant), Ramses v3, Giga v3; quote token USDG; real liquidity ($10M+ ETH/USDG pools).

@@ -1,0 +1,28 @@
+# Secrets — never commit
+.env
+*.pem
+credentials*.txt
+
+# Local runtime data (DB lives here; results/ IS committed intentionally)
+data/
+*.sqlite
+*.sqlite3
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Logs (structured logs are large; only .gitkeep'd dir is committed)
+logs/*.log
+logs/*.log.*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
