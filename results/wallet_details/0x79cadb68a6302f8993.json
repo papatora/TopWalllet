@@ -1,0 +1,116 @@
+{
+  "rank": 20,
+  "wallet_address": "0x79CADb68a6302F89938717a81883ED6b7805AEf6",
+  "composite_score": 10.0,
+  "metrics": {
+    "total_positions": 3,
+    "winning_positions": 0,
+    "win_rate": 0.0,
+    "median_return_multiple": 0.9519,
+    "max_return_multiple": 0.9957,
+    "total_realized_pnl_usd": -7.78,
+    "total_unrealized_pnl_usd": 0,
+    "avg_hold_duration_hours": 1.69,
+    "consistency_score": 0.0,
+    "dip_buying_accuracy": 0.6667,
+    "top_selling_accuracy": 0.0,
+    "distinct_tokens": 1,
+    "big_wins_10x_plus": 0,
+    "recent_win_rate": 0.0,
+    "active_months": 1,
+    "last_active": "2026-09-05T12:45:23+00:00"
+  },
+  "top_trades": [
+    {
+      "token": "18932",
+      "ca": "0xDACcBeAF0062E782472d7Ad7D762c38e59c18932",
+      "entry_price_usd": 5.825558291118316e-06,
+      "exit_price_usd": 5.800747025799076e-06,
+      "return_multiple": 1.0,
+      "position_size_usd": 9.51,
+      "pnl_usd": -0.04,
+      "entry_date": "2026-09-05",
+      "exit_date": "2026-09-05"
+    },
+    {
+      "token": "18932",
+      "ca": "0xDACcBeAF0062E782472d7Ad7D762c38e59c18932",
+      "entry_price_usd": 6.031129023904513e-06,
+      "exit_price_usd": 5.740952829993219e-06,
+      "return_multiple": 0.95,
+      "position_size_usd": 13.6,
+      "pnl_usd": -0.65,
+      "entry_date": "2026-09-05",
+      "exit_date": "2026-09-05"
+    },
+    {
+      "token": "18932",
+      "ca": "0xDACcBeAF0062E782472d7Ad7D762c38e59c18932",
+      "entry_price_usd": 1.5031205294418074e-05,
+      "exit_price_usd": 6.299241623606752e-06,
+      "return_multiple": 0.42,
+      "position_size_usd": 12.19,
+      "pnl_usd": -7.08,
+      "entry_date": "2026-09-04",
+      "exit_date": "2026-09-04"
+    }
+  ],
+  "verification": {
+    "verdict": "verified",
+    "eth_oracle_ok": true,
+    "trades_verified": "3/3",
+    "details": []
+  },
+  "trading_style": "dip_buyer_scalper",
+  "risk_flags": [
+    "SINGLE_TOKEN_SAMPLE"
+  ],
+  "cluster_id": "cluster_79cadb68",
+  "all_positions": [
+    {
+      "token": "18932",
+      "ca": "0xDACcBeAF0062E782472d7Ad7D762c38e59c18932",
+      "status": "closed",
+      "entry_ts": "2026-09-04T11:38:16",
+      "exit_ts": "2026-09-04T15:22:45",
+      "entry_price_usd": 1.5031205294418074e-05,
+      "exit_price_usd": 6.299241623606752e-06,
+      "size_usd": 12.19,
+      "pnl_usd": -7.08,
+      "return_multiple": 0.4191,
+      "hold_hours": 3.74,
+      "entry_pctile": 0.6821052631578948,
+      "exit_pctile": 0.04421052631578947
+    },
+    {
+      "token": "18932",
+      "ca": "0xDACcBeAF0062E782472d7Ad7D762c38e59c18932",
+      "status": "closed",
+      "entry_ts": "2026-09-05T01:47:44",
+      "exit_ts": "2026-09-05T02:17:37",
+      "entry_price_usd": 6.031129023904513e-06,
+      "exit_price_usd": 5.740952829993219e-06,
+      "size_usd": 13.6,
+      "pnl_usd": -0.65,
+      "return_multiple": 0.9519,
+      "hold_hours": 0.5,
+      "entry_pctile": 0.02736842105263158,
+      "exit_pctile": 0.016842105263157894
+    },
+    {
+      "token": "18932",
+      "ca": "0xDACcBeAF0062E782472d7Ad7D762c38e59c18932",
+      "status": "closed",
+      "entry_ts": "2026-09-05T11:55:38",
+      "exit_ts": "2026-09-05T12:45:23",
+      "entry_price_usd": 5.825558291118316e-06,
+      "exit_price_usd": 5.800747025799076e-06,
+      "size_usd": 9.51,
+      "pnl_usd": -0.04,
+      "return_multiple": 0.9957,
+      "hold_hours": 0.83,
+      "entry_pctile": 0.023157894736842106,
+      "exit_pctile": 0.021052631578947368
+    }
+  ]
+}

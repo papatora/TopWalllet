@@ -1,0 +1,116 @@
+{
+  "rank": 36,
+  "wallet_address": "0xA7B5F842a0cf73B4866dd2eAA6dd78C8B71BD7B3",
+  "composite_score": 0.0,
+  "metrics": {
+    "total_positions": 3,
+    "winning_positions": 0,
+    "win_rate": 0.0,
+    "median_return_multiple": 0.704,
+    "max_return_multiple": 0.777,
+    "total_realized_pnl_usd": -631.72,
+    "total_unrealized_pnl_usd": 2812.51,
+    "avg_hold_duration_hours": 2.26,
+    "consistency_score": 0.0,
+    "dip_buying_accuracy": 0.0,
+    "top_selling_accuracy": 0.0,
+    "distinct_tokens": 1,
+    "big_wins_10x_plus": 0,
+    "recent_win_rate": 0.0,
+    "active_months": 1,
+    "last_active": "2026-08-29T20:53:35+00:00"
+  },
+  "top_trades": [
+    {
+      "token": "$CASHCATSLLC",
+      "ca": "0x26FE0F73Fb5EA558A2a67fd94198abBc078fC03e",
+      "entry_price_usd": 8.955578537796684e-05,
+      "exit_price_usd": 6.958526622518986e-05,
+      "return_multiple": 0.78,
+      "position_size_usd": 630.76,
+      "pnl_usd": -140.66,
+      "entry_date": "2026-08-27",
+      "exit_date": "2026-08-27"
+    },
+    {
+      "token": "$CASHCATSLLC",
+      "ca": "0x26FE0F73Fb5EA558A2a67fd94198abBc078fC03e",
+      "entry_price_usd": 7.989466454429788e-05,
+      "exit_price_usd": 5.040600325163027e-05,
+      "return_multiple": 0.63,
+      "position_size_usd": 1330.45,
+      "pnl_usd": -491.06,
+      "entry_date": "2026-08-28",
+      "exit_date": "2026-08-28"
+    },
+    {
+      "token": "$CASHCATSLLC",
+      "ca": "0x26FE0F73Fb5EA558A2a67fd94198abBc078fC03e",
+      "entry_price_usd": 5.639113070564196e-05,
+      "exit_price_usd": 0.0002355,
+      "return_multiple": 4.18,
+      "position_size_usd": 885.5,
+      "pnl_usd": null,
+      "entry_date": "2026-08-29",
+      "exit_date": null
+    }
+  ],
+  "verification": {
+    "verdict": "verified",
+    "eth_oracle_ok": true,
+    "trades_verified": "2/2",
+    "details": []
+  },
+  "trading_style": "scalper",
+  "risk_flags": [
+    "SINGLE_TOKEN_SAMPLE"
+  ],
+  "cluster_id": null,
+  "all_positions": [
+    {
+      "token": "$CASHCATSLLC",
+      "ca": "0x26FE0F73Fb5EA558A2a67fd94198abBc078fC03e",
+      "status": "closed",
+      "entry_ts": "2026-08-27T20:51:21",
+      "exit_ts": "2026-08-27T20:52:45",
+      "entry_price_usd": 8.955578537796684e-05,
+      "exit_price_usd": 6.958526622518986e-05,
+      "size_usd": 630.76,
+      "pnl_usd": -140.66,
+      "return_multiple": 0.777,
+      "hold_hours": 0.02,
+      "entry_pctile": 0.9616613418530351,
+      "exit_pctile": 0.6485623003194888
+    },
+    {
+      "token": "$CASHCATSLLC",
+      "ca": "0x26FE0F73Fb5EA558A2a67fd94198abBc078fC03e",
+      "status": "closed",
+      "entry_ts": "2026-08-28T15:13:10",
+      "exit_ts": "2026-08-28T19:42:57",
+      "entry_price_usd": 7.989466454429788e-05,
+      "exit_price_usd": 5.040600325163027e-05,
+      "size_usd": 1330.45,
+      "pnl_usd": -491.06,
+      "return_multiple": 0.6309,
+      "hold_hours": 4.5,
+      "entry_pctile": 0.8402555910543131,
+      "exit_pctile": 0.22468354430379747
+    },
+    {
+      "token": "$CASHCATSLLC",
+      "ca": "0x26FE0F73Fb5EA558A2a67fd94198abBc078fC03e",
+      "status": "open",
+      "entry_ts": "2026-08-29T20:53:35",
+      "exit_ts": null,
+      "entry_price_usd": 5.639113070564196e-05,
+      "exit_price_usd": 0.0002355,
+      "size_usd": 885.5,
+      "pnl_usd": null,
+      "return_multiple": 4.1762,
+      "hold_hours": 14.57,
+      "entry_pctile": 0.3449367088607595,
+      "exit_pctile": null
+    }
+  ]
+}

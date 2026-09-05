@@ -1,0 +1,117 @@
+{
+  "rank": 35,
+  "wallet_address": "0x6e951d31343d7875627d33E3CDF182B8547C256d",
+  "composite_score": 0.0,
+  "metrics": {
+    "total_positions": 3,
+    "winning_positions": 0,
+    "win_rate": 0.0,
+    "median_return_multiple": 1.0,
+    "max_return_multiple": 1.0,
+    "total_realized_pnl_usd": 0.0,
+    "total_unrealized_pnl_usd": 0,
+    "avg_hold_duration_hours": 0.06,
+    "consistency_score": 0.0,
+    "dip_buying_accuracy": 0.0,
+    "top_selling_accuracy": 0.0,
+    "distinct_tokens": 1,
+    "big_wins_10x_plus": 0,
+    "recent_win_rate": 0.0,
+    "active_months": 1,
+    "last_active": "2026-09-05T11:26:52+00:00"
+  },
+  "top_trades": [
+    {
+      "token": "PONSI",
+      "ca": "0x40dF1828C5AeC639F9C0A0181622D2b650843E35",
+      "entry_price_usd": 1.0511137033434718e-05,
+      "exit_price_usd": 1.0511137033434718e-05,
+      "return_multiple": 1.0,
+      "position_size_usd": 18.81,
+      "pnl_usd": 0,
+      "entry_date": "2026-09-05",
+      "exit_date": "2026-09-05"
+    },
+    {
+      "token": "PONSI",
+      "ca": "0x40dF1828C5AeC639F9C0A0181622D2b650843E35",
+      "entry_price_usd": 1.0511137033434718e-05,
+      "exit_price_usd": 1.0511137033434718e-05,
+      "return_multiple": 1.0,
+      "position_size_usd": 9.6,
+      "pnl_usd": 0,
+      "entry_date": "2026-09-05",
+      "exit_date": "2026-09-05"
+    },
+    {
+      "token": "PONSI",
+      "ca": "0x40dF1828C5AeC639F9C0A0181622D2b650843E35",
+      "entry_price_usd": 1.0511137033434718e-05,
+      "exit_price_usd": 1.0511137033434718e-05,
+      "return_multiple": 1.0,
+      "position_size_usd": 7.1,
+      "pnl_usd": 0,
+      "entry_date": "2026-09-05",
+      "exit_date": "2026-09-05"
+    }
+  ],
+  "verification": {
+    "verdict": "verified",
+    "eth_oracle_ok": true,
+    "trades_verified": "3/3",
+    "details": []
+  },
+  "trading_style": "scalper",
+  "risk_flags": [
+    "DUST_ONLY",
+    "SINGLE_TOKEN_SAMPLE"
+  ],
+  "cluster_id": "cluster_2cef1019",
+  "all_positions": [
+    {
+      "token": "PONSI",
+      "ca": "0x40dF1828C5AeC639F9C0A0181622D2b650843E35",
+      "status": "closed",
+      "entry_ts": "2026-09-05T11:07:40",
+      "exit_ts": "2026-09-05T11:17:18",
+      "entry_price_usd": 1.0511137033434718e-05,
+      "exit_price_usd": 1.0511137033434718e-05,
+      "size_usd": 18.81,
+      "pnl_usd": 0,
+      "return_multiple": 1.0,
+      "hold_hours": 0.16,
+      "entry_pctile": null,
+      "exit_pctile": null
+    },
+    {
+      "token": "PONSI",
+      "ca": "0x40dF1828C5AeC639F9C0A0181622D2b650843E35",
+      "status": "closed",
+      "entry_ts": "2026-09-05T11:24:22",
+      "exit_ts": "2026-09-05T11:25:04",
+      "entry_price_usd": 1.0511137033434718e-05,
+      "exit_price_usd": 1.0511137033434718e-05,
+      "size_usd": 9.6,
+      "pnl_usd": 0,
+      "return_multiple": 1.0,
+      "hold_hours": 0.01,
+      "entry_pctile": null,
+      "exit_pctile": null
+    },
+    {
+      "token": "PONSI",
+      "ca": "0x40dF1828C5AeC639F9C0A0181622D2b650843E35",
+      "status": "closed",
+      "entry_ts": "2026-09-05T11:26:28",
+      "exit_ts": "2026-09-05T11:26:52",
+      "entry_price_usd": 1.0511137033434718e-05,
+      "exit_price_usd": 1.0511137033434718e-05,
+      "size_usd": 7.1,
+      "pnl_usd": 0,
+      "return_multiple": 1.0,
+      "hold_hours": 0.01,
+      "entry_pctile": null,
+      "exit_pctile": null
+    }
+  ]
+}

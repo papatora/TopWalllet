@@ -1,0 +1,211 @@
+{
+  "rank": 1,
+  "wallet_address": "0x805B2cC2bA44B9b1a3c5a1927d17CaeB35aDD5Bf",
+  "composite_score": 46.6,
+  "metrics": {
+    "total_positions": 7,
+    "winning_positions": 6,
+    "win_rate": 1.0,
+    "median_return_multiple": 1.0963,
+    "max_return_multiple": 1.2067,
+    "total_realized_pnl_usd": 57.55,
+    "total_unrealized_pnl_usd": -9.01,
+    "avg_hold_duration_hours": 0.23,
+    "consistency_score": 0.44,
+    "dip_buying_accuracy": 0.1429,
+    "top_selling_accuracy": 0.5,
+    "distinct_tokens": 1,
+    "big_wins_10x_plus": 0,
+    "recent_win_rate": 1.0,
+    "active_months": 1,
+    "last_active": "2026-09-05T15:11:21+00:00"
+  },
+  "top_trades": [
+    {
+      "token": "CYBR",
+      "ca": "0xB948C24BAc6cAF34604f39AA52B1deD5035BC4a4",
+      "entry_price_usd": 6.596016656692894e-05,
+      "exit_price_usd": 7.959139487723343e-05,
+      "return_multiple": 1.21,
+      "position_size_usd": 114.36,
+      "pnl_usd": 23.63,
+      "entry_date": "2026-09-05",
+      "exit_date": "2026-09-05"
+    },
+    {
+      "token": "CYBR",
+      "ca": "0xB948C24BAc6cAF34604f39AA52B1deD5035BC4a4",
+      "entry_price_usd": 5.213491136847589e-05,
+      "exit_price_usd": 6.039439213625899e-05,
+      "return_multiple": 1.16,
+      "position_size_usd": 106.31,
+      "pnl_usd": 16.84,
+      "entry_date": "2026-09-05",
+      "exit_date": "2026-09-05"
+    },
+    {
+      "token": "CYBR",
+      "ca": "0xB948C24BAc6cAF34604f39AA52B1deD5035BC4a4",
+      "entry_price_usd": 9.356115175695608e-05,
+      "exit_price_usd": 0.00010431442964542533,
+      "return_multiple": 1.11,
+      "position_size_usd": 56.73,
+      "pnl_usd": 6.52,
+      "entry_date": "2026-09-05",
+      "exit_date": "2026-09-05"
+    },
+    {
+      "token": "CYBR",
+      "ca": "0xB948C24BAc6cAF34604f39AA52B1deD5035BC4a4",
+      "entry_price_usd": 8.179114230826675e-05,
+      "exit_price_usd": 8.81416081367757e-05,
+      "return_multiple": 1.08,
+      "position_size_usd": 63.91,
+      "pnl_usd": 4.96,
+      "entry_date": "2026-09-05",
+      "exit_date": "2026-09-05"
+    },
+    {
+      "token": "CYBR",
+      "ca": "0xB948C24BAc6cAF34604f39AA52B1deD5035BC4a4",
+      "entry_price_usd": 9.834434646970238e-05,
+      "exit_price_usd": 0.00010413854893373732,
+      "return_multiple": 1.06,
+      "position_size_usd": 51.69,
+      "pnl_usd": 3.05,
+      "entry_date": "2026-09-05",
+      "exit_date": "2026-09-05"
+    },
+    {
+      "token": "CYBR",
+      "ca": "0xB948C24BAc6cAF34604f39AA52B1deD5035BC4a4",
+      "entry_price_usd": 9.834434646970238e-05,
+      "exit_price_usd": 9.295e-05,
+      "return_multiple": 0.95,
+      "position_size_usd": 164.26,
+      "pnl_usd": null,
+      "entry_date": "2026-09-05",
+      "exit_date": null
+    }
+  ],
+  "verification": {
+    "verdict": "verified",
+    "eth_oracle_ok": true,
+    "trades_verified": "2/3",
+    "details": [
+      "R2 mismatch stored=1.11x recomputed=0.58x"
+    ]
+  },
+  "trading_style": "scalper",
+  "risk_flags": [
+    "SINGLE_TOKEN_SAMPLE"
+  ],
+  "cluster_id": "cluster_ad06acf9",
+  "all_positions": [
+    {
+      "token": "CYBR",
+      "ca": "0xB948C24BAc6cAF34604f39AA52B1deD5035BC4a4",
+      "status": "closed",
+      "entry_ts": "2026-09-05T14:06:46",
+      "exit_ts": "2026-09-05T14:10:02",
+      "entry_price_usd": 5.213491136847589e-05,
+      "exit_price_usd": 6.039439213625899e-05,
+      "size_usd": 106.31,
+      "pnl_usd": 16.84,
+      "return_multiple": 1.1584,
+      "hold_hours": 0.05,
+      "entry_pctile": 0.05105105105105105,
+      "exit_pctile": 0.34984984984984985
+    },
+    {
+      "token": "CYBR",
+      "ca": "0xB948C24BAc6cAF34604f39AA52B1deD5035BC4a4",
+      "status": "closed",
+      "entry_ts": "2026-09-05T14:27:03",
+      "exit_ts": "2026-09-05T14:31:16",
+      "entry_price_usd": 6.596016656692894e-05,
+      "exit_price_usd": 7.959139487723343e-05,
+      "size_usd": 114.36,
+      "pnl_usd": 23.63,
+      "return_multiple": 1.2067,
+      "hold_hours": 0.07,
+      "entry_pctile": 0.581081081081081,
+      "exit_pctile": 0.6186186186186187
+    },
+    {
+      "token": "CYBR",
+      "ca": "0xB948C24BAc6cAF34604f39AA52B1deD5035BC4a4",
+      "status": "closed",
+      "entry_ts": "2026-09-05T14:37:17",
+      "exit_ts": "2026-09-05T14:41:18",
+      "entry_price_usd": 8.179114230826675e-05,
+      "exit_price_usd": 8.81416081367757e-05,
+      "size_usd": 63.91,
+      "pnl_usd": 4.96,
+      "return_multiple": 1.0776,
+      "hold_hours": 0.07,
+      "entry_pctile": 0.6501501501501501,
+      "exit_pctile": 0.7477477477477478
+    },
+    {
+      "token": "CYBR",
+      "ca": "0xB948C24BAc6cAF34604f39AA52B1deD5035BC4a4",
+      "status": "closed",
+      "entry_ts": "2026-09-05T14:37:17",
+      "exit_ts": "2026-09-05T14:50:54",
+      "entry_price_usd": 8.787672148798367e-05,
+      "exit_price_usd": 9.136447839077307e-05,
+      "size_usd": 64.28,
+      "pnl_usd": 2.55,
+      "return_multiple": 1.0397,
+      "hold_hours": 0.23,
+      "entry_pctile": 0.7447447447447447,
+      "exit_pctile": 0.8408408408408409
+    },
+    {
+      "token": "CYBR",
+      "ca": "0xB948C24BAc6cAF34604f39AA52B1deD5035BC4a4",
+      "status": "closed",
+      "entry_ts": "2026-09-05T14:37:17",
+      "exit_ts": "2026-09-05T15:00:19",
+      "entry_price_usd": 9.356115175695608e-05,
+      "exit_price_usd": 0.00010431442964542533,
+      "size_usd": 56.73,
+      "pnl_usd": 6.52,
+      "return_multiple": 1.1149,
+      "hold_hours": 0.38,
+      "entry_pctile": 0.9009009009009009,
+      "exit_pctile": 0.990990990990991
+    },
+    {
+      "token": "CYBR",
+      "ca": "0xB948C24BAc6cAF34604f39AA52B1deD5035BC4a4",
+      "status": "closed",
+      "entry_ts": "2026-09-05T14:37:17",
+      "exit_ts": "2026-09-05T15:11:21",
+      "entry_price_usd": 9.834434646970238e-05,
+      "exit_price_usd": 0.00010413854893373732,
+      "size_usd": 51.69,
+      "pnl_usd": 3.05,
+      "return_multiple": 1.0589,
+      "hold_hours": 0.57,
+      "entry_pctile": 0.948948948948949,
+      "exit_pctile": 0.987987987987988
+    },
+    {
+      "token": "CYBR",
+      "ca": "0xB948C24BAc6cAF34604f39AA52B1deD5035BC4a4",
+      "status": "open",
+      "entry_ts": "2026-09-05T14:37:17",
+      "exit_ts": null,
+      "entry_price_usd": 9.834434646970238e-05,
+      "exit_price_usd": 9.295e-05,
+      "size_usd": 164.26,
+      "pnl_usd": null,
+      "return_multiple": 0.9451,
+      "hold_hours": 0.57,
+      "entry_pctile": 0.948948948948949,
+      "exit_pctile": null
+    }
+  ]
+}

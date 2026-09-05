@@ -1,0 +1,169 @@
+{
+  "rank": 32,
+  "wallet_address": "0x505D2e7A715c9AF1D690204F43D75EaEa4EFaF10",
+  "composite_score": 3.0,
+  "metrics": {
+    "total_positions": 5,
+    "winning_positions": 0,
+    "win_rate": 0.0,
+    "median_return_multiple": 0.9992,
+    "max_return_multiple": 0.9993,
+    "total_realized_pnl_usd": -0.02,
+    "total_unrealized_pnl_usd": 0,
+    "avg_hold_duration_hours": 0.01,
+    "consistency_score": 0.0,
+    "dip_buying_accuracy": 0.2,
+    "top_selling_accuracy": 0.0,
+    "distinct_tokens": 1,
+    "big_wins_10x_plus": 0,
+    "recent_win_rate": 0.0,
+    "active_months": 1,
+    "last_active": "2026-09-05T10:40:35+00:00"
+  },
+  "top_trades": [
+    {
+      "token": "ROBINHOOD",
+      "ca": "0x8f100e99dDF699320724e37Cb866770381d47382",
+      "entry_price_usd": 8.317641121252978e-05,
+      "exit_price_usd": 8.311643631431284e-05,
+      "return_multiple": 1.0,
+      "position_size_usd": 6.09,
+      "pnl_usd": -0.0,
+      "entry_date": "2026-09-02",
+      "exit_date": "2026-09-02"
+    },
+    {
+      "token": "ROBINHOOD",
+      "ca": "0x8f100e99dDF699320724e37Cb866770381d47382",
+      "entry_price_usd": 7.239336871231732e-05,
+      "exit_price_usd": 7.233741700964018e-05,
+      "return_multiple": 1.0,
+      "position_size_usd": 6.09,
+      "pnl_usd": -0.0,
+      "entry_date": "2026-09-03",
+      "exit_date": "2026-09-03"
+    },
+    {
+      "token": "ROBINHOOD",
+      "ca": "0x8f100e99dDF699320724e37Cb866770381d47382",
+      "entry_price_usd": 6.51291238686187e-05,
+      "exit_price_usd": 6.5076054115636e-05,
+      "return_multiple": 1.0,
+      "position_size_usd": 6.09,
+      "pnl_usd": -0.0,
+      "entry_date": "2026-09-01",
+      "exit_date": "2026-09-01"
+    },
+    {
+      "token": "ROBINHOOD",
+      "ca": "0x8f100e99dDF699320724e37Cb866770381d47382",
+      "entry_price_usd": 6.228267971842306e-05,
+      "exit_price_usd": 6.223116661873623e-05,
+      "return_multiple": 1.0,
+      "position_size_usd": 6.09,
+      "pnl_usd": -0.01,
+      "entry_date": "2026-09-04",
+      "exit_date": "2026-09-04"
+    },
+    {
+      "token": "ROBINHOOD",
+      "ca": "0x8f100e99dDF699320724e37Cb866770381d47382",
+      "entry_price_usd": 5.110322254276669e-05,
+      "exit_price_usd": 5.1056562081277024e-05,
+      "return_multiple": 1.0,
+      "position_size_usd": 6.09,
+      "pnl_usd": -0.01,
+      "entry_date": "2026-09-05",
+      "exit_date": "2026-09-05"
+    }
+  ],
+  "verification": {
+    "verdict": "verified",
+    "eth_oracle_ok": true,
+    "trades_verified": "3/3",
+    "details": []
+  },
+  "trading_style": "scalper",
+  "risk_flags": [
+    "DUST_ONLY",
+    "SINGLE_TOKEN_SAMPLE"
+  ],
+  "cluster_id": "cluster_2e9839d9",
+  "all_positions": [
+    {
+      "token": "ROBINHOOD",
+      "ca": "0x8f100e99dDF699320724e37Cb866770381d47382",
+      "status": "closed",
+      "entry_ts": "2026-09-01T14:05:33",
+      "exit_ts": "2026-09-01T14:06:34",
+      "entry_price_usd": 6.51291238686187e-05,
+      "exit_price_usd": 6.5076054115636e-05,
+      "size_usd": 6.09,
+      "pnl_usd": -0.0,
+      "return_multiple": 0.9992,
+      "hold_hours": 0.02,
+      "entry_pctile": 0.06597671410090557,
+      "exit_pctile": 0.06274256144890039
+    },
+    {
+      "token": "ROBINHOOD",
+      "ca": "0x8f100e99dDF699320724e37Cb866770381d47382",
+      "status": "closed",
+      "entry_ts": "2026-09-02T11:10:15",
+      "exit_ts": "2026-09-02T11:10:55",
+      "entry_price_usd": 8.317641121252978e-05,
+      "exit_price_usd": 8.311643631431284e-05,
+      "size_usd": 6.09,
+      "pnl_usd": -0.0,
+      "return_multiple": 0.9993,
+      "hold_hours": 0.01,
+      "entry_pctile": 0.5811373092926491,
+      "exit_pctile": 0.5776699029126213
+    },
+    {
+      "token": "ROBINHOOD",
+      "ca": "0x8f100e99dDF699320724e37Cb866770381d47382",
+      "status": "closed",
+      "entry_ts": "2026-09-03T04:54:49",
+      "exit_ts": "2026-09-03T04:55:28",
+      "entry_price_usd": 7.239336871231732e-05,
+      "exit_price_usd": 7.233741700964018e-05,
+      "size_usd": 6.09,
+      "pnl_usd": -0.0,
+      "return_multiple": 0.9992,
+      "hold_hours": 0.01,
+      "entry_pctile": 0.40114613180515757,
+      "exit_pctile": 0.3992831541218638
+    },
+    {
+      "token": "ROBINHOOD",
+      "ca": "0x8f100e99dDF699320724e37Cb866770381d47382",
+      "status": "closed",
+      "entry_ts": "2026-09-04T06:10:27",
+      "exit_ts": "2026-09-04T06:11:07",
+      "entry_price_usd": 6.228267971842306e-05,
+      "exit_price_usd": 6.223116661873623e-05,
+      "size_usd": 6.09,
+      "pnl_usd": -0.01,
+      "return_multiple": 0.9992,
+      "hold_hours": 0.01,
+      "entry_pctile": 0.21982414068745004,
+      "exit_pctile": 0.2182254196642686
+    },
+    {
+      "token": "ROBINHOOD",
+      "ca": "0x8f100e99dDF699320724e37Cb866770381d47382",
+      "status": "closed",
+      "entry_ts": "2026-09-05T10:40:15",
+      "exit_ts": "2026-09-05T10:40:35",
+      "entry_price_usd": 5.110322254276669e-05,
+      "exit_price_usd": 5.1056562081277024e-05,
+      "size_usd": 6.09,
+      "pnl_usd": -0.01,
+      "return_multiple": 0.9991,
+      "hold_hours": 0.01,
+      "entry_pctile": 0.23712948517940718,
+      "exit_pctile": 0.22776911076443057
+    }
+  ]
+}

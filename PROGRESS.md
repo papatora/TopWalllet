@@ -94,3 +94,9 @@
 - Stats: {"tokens_in_db": 62, "pools_in_db": 62, "wallets_in_db": 1675, "swap_events": 7643, "wallets_scored": 0, "wallets_excluded": 888}
 - No wallets passed the consistency filters this run (normal for small samples).
 - Next: scheduled re-run per PIPELINE_CRON; details in results/stats.json
+
+### [2026-09-05] — Automated pipeline run
+- What ran: full pipeline (discover → enrich → analyze → rank → export)
+- Stats: {"tokens_in_db": 62, "pools_in_db": 62, "wallets_in_db": 1675, "swap_events": 7643, "wallets_scored": 101, "wallets_excluded": 822}
+- Top wallet: `0x805b2cc2…` score 46.6 (scalper, 1 tokens, median 1.0963x)
+- Next: scheduled re-run per PIPELINE_CRON; details in results/stats.json

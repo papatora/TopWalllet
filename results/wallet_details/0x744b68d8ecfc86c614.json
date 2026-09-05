@@ -1,0 +1,116 @@
+{
+  "rank": 18,
+  "wallet_address": "0x744b68D8ecFC86c614455B5Fc8f5723358De68CF",
+  "composite_score": 13.03,
+  "metrics": {
+    "total_positions": 3,
+    "winning_positions": 1,
+    "win_rate": 0.3333,
+    "median_return_multiple": 0.8772,
+    "max_return_multiple": 1.1063,
+    "total_realized_pnl_usd": -24.32,
+    "total_unrealized_pnl_usd": 0,
+    "avg_hold_duration_hours": 0.17,
+    "consistency_score": 0.1467,
+    "dip_buying_accuracy": 0.0,
+    "top_selling_accuracy": 0.0,
+    "distinct_tokens": 1,
+    "big_wins_10x_plus": 0,
+    "recent_win_rate": 0.3334,
+    "active_months": 1,
+    "last_active": "2026-09-05T11:21:04+00:00"
+  },
+  "top_trades": [
+    {
+      "token": "COIN",
+      "ca": "0x9395116762721d13c246F6b0A5c41bBB31777a8d",
+      "entry_price_usd": 0.00021420225501394893,
+      "exit_price_usd": 0.0002369762747440879,
+      "return_multiple": 1.11,
+      "position_size_usd": 50.01,
+      "pnl_usd": 5.32,
+      "entry_date": "2026-09-05",
+      "exit_date": "2026-09-05"
+    },
+    {
+      "token": "COIN",
+      "ca": "0x9395116762721d13c246F6b0A5c41bBB31777a8d",
+      "entry_price_usd": 0.0003286770072980288,
+      "exit_price_usd": 0.00028830036335328584,
+      "return_multiple": 0.88,
+      "position_size_usd": 47.82,
+      "pnl_usd": -5.88,
+      "entry_date": "2026-09-05",
+      "exit_date": "2026-09-05"
+    },
+    {
+      "token": "COIN",
+      "ca": "0x9395116762721d13c246F6b0A5c41bBB31777a8d",
+      "entry_price_usd": 0.00029268872206449716,
+      "exit_price_usd": 0.00014724883632321166,
+      "return_multiple": 0.5,
+      "position_size_usd": 47.83,
+      "pnl_usd": -23.77,
+      "entry_date": "2026-09-05",
+      "exit_date": "2026-09-05"
+    }
+  ],
+  "verification": {
+    "verdict": "verified",
+    "eth_oracle_ok": true,
+    "trades_verified": "3/3",
+    "details": []
+  },
+  "trading_style": "scalper",
+  "risk_flags": [
+    "SINGLE_TOKEN_SAMPLE"
+  ],
+  "cluster_id": "cluster_f27359c7",
+  "all_positions": [
+    {
+      "token": "COIN",
+      "ca": "0x9395116762721d13c246F6b0A5c41bBB31777a8d",
+      "status": "closed",
+      "entry_ts": "2026-09-05T10:48:23",
+      "exit_ts": "2026-09-05T10:59:10",
+      "entry_price_usd": 0.0003286770072980288,
+      "exit_price_usd": 0.00028830036335328584,
+      "size_usd": 47.82,
+      "pnl_usd": -5.88,
+      "return_multiple": 0.8772,
+      "hold_hours": 0.18,
+      "entry_pctile": 0.7338169642857143,
+      "exit_pctile": 0.6453683035714286
+    },
+    {
+      "token": "COIN",
+      "ca": "0x9395116762721d13c246F6b0A5c41bBB31777a8d",
+      "status": "closed",
+      "entry_ts": "2026-09-05T10:59:12",
+      "exit_ts": "2026-09-05T11:05:15",
+      "entry_price_usd": 0.00029268872206449716,
+      "exit_price_usd": 0.00014724883632321166,
+      "size_usd": 47.83,
+      "pnl_usd": -23.77,
+      "return_multiple": 0.5031,
+      "hold_hours": 0.1,
+      "entry_pctile": 0.6594587053571429,
+      "exit_pctile": 0.27859933035714285
+    },
+    {
+      "token": "COIN",
+      "ca": "0x9395116762721d13c246F6b0A5c41bBB31777a8d",
+      "status": "closed",
+      "entry_ts": "2026-09-05T11:07:46",
+      "exit_ts": "2026-09-05T11:21:04",
+      "entry_price_usd": 0.00021420225501394893,
+      "exit_price_usd": 0.0002369762747440879,
+      "size_usd": 50.01,
+      "pnl_usd": 5.32,
+      "return_multiple": 1.1063,
+      "hold_hours": 0.22,
+      "entry_pctile": 0.4213169642857143,
+      "exit_pctile": 0.5132533482142857
+    }
+  ]
+}
