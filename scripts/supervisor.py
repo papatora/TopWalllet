@@ -36,7 +36,11 @@ load_dotenv(REPO / ".env")
 RESULTS = REPO / "results"
 STATUS_FILE = RESULTS / "supervisor_status.json"
 WATCH_LOG = RESULTS / "night_watch.log"
-PY = str(REPO / ".venv" / "Scripts" / "python.exe") if os.name == "nt" else "python"
+if os.name == "nt":
+    PY = str(REPO / ".venv" / "Scripts" / "python.exe")
+else:
+    _venv_py = REPO / ".venv" / "bin" / "python"
+    PY = str(_venv_py) if _venv_py.exists() else "python3"
 
 PIPELINE_CMD = [PY, "-m", "src.cli", "pipeline", "--stages", "enrich,prices,analyze"]
 CHECK_INTERVAL = int(os.getenv("SUPERVISOR_CHECK_INTERVAL", "3600"))  # 1 hour
