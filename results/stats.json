@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-06T20:03:19.208239+00:00",
+  "updated_at": "2026-09-06T20:04:47.756596+00:00",
   "chain": "robinhood",
   "chain_id": 4663,
   "stage_counts": {
@@ -11,7 +11,7 @@
     "wallets_excluded": 0
   },
   "top_wallets_count": 0,
-  "run_duration_seconds": 5.6,
+  "run_duration_seconds": 4.2,
   "config": {
     "lookback_days": 70,
     "min_positions": 5,
