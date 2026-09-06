@@ -639,6 +639,47 @@ class Pipeline:
 
         ranked = rank_wallets(scored, self.weights_cfg)
 
+        # Whale Entry Map per token (conviction rule) from all entrants' VWAPs
+        try:
+            from src.analyze.whale_map import Entrant, compute_whale_entry_map
+            import json as _json
+
+            entrants_by_token: dict[str, dict[str, list[float]]] = defaultdict(lambda: defaultdict(lambda: [0.0, 0.0]))
+            for _w, _m, positions, _s, _f, _c in scored:
+                for p in positions:
+                    if p.entry_price_usd and p.size_usd:
+                        agg = entrants_by_token[p.token][p.wallet]
+                        agg[0] += p.size_usd
+                        agg[1] += (p.size_usd / p.entry_price_usd) if p.entry_price_usd else 0.0
+            whale_maps = {}
+            for tok, wallets_agg in entrants_by_token.items():
+                cur = lookup.last_price(tok)
+                if not cur:
+                    continue
+                ents = [Entrant(w, usd / units, usd) for w, (usd, units) in wallets_agg.items()
+                        if units > 0 and usd >= 10]
+                m = compute_whale_entry_map(tok, ents, cur)
+                if m:
+                    whale_maps[tok] = {
+                        "current_price_usd": m.current_price_usd,
+                        "whale_count": m.whale_count,
+                        "whale_avg_entry_price": m.whale_avg_entry_price,
+                        "pct_whales_at_or_above_current": m.pct_whales_at_or_above_current,
+                        "jumbo_above_current": m.jumbo_above_current,
+                        "conviction_score": m.conviction_score,
+                        "verdict": m.verdict,
+                        "whales": m.whales,
+                    }
+            if whale_maps:
+                out = settings.results_dir / "whale_entry_maps.json"
+                out.write_text(_json.dumps({
+                    "generated_at": datetime.now(timezone.utc).isoformat(),
+                    "maps": whale_maps,
+                }, indent=2))
+                jlog(log, logging.INFO, "whale entry maps exported", tokens=len(whale_maps))
+        except Exception as e:
+            jlog(log, logging.WARNING, "whale entry map failed", error=str(e)[:160])
+
         # --- hard PnL verification: unverified wallets do not ship ---
         if settings.verify_pnl and ranked:
             from src.analyze.pnl_verifier import verify_top_wallets
