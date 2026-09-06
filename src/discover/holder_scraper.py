@@ -39,6 +39,26 @@ class BlockscoutClient:
 
         self._limiter = AsyncLimiter(max(self._limiter_rate, 0.1), 1.0)
         self._client: httpx.AsyncClient | None = None
+        # API health tracking (circuit breaker for outage periods)
+        self.consecutive_5xx = 0
+        self.total_5xx = 0
+        self.total_ok = 0
+
+    @property
+    def is_degraded(self) -> bool:
+        """True when the API is in an outage window (circuit open)."""
+        return self.consecutive_5xx >= 8
+
+    async def wait_until_healthy(self, max_wait_s: float = 120.0) -> None:
+        """Block while the circuit is open, backing off exponentially."""
+        waited = 0.0
+        while self.is_degraded and waited < max_wait_s:
+            import asyncio
+
+            await asyncio.sleep(15)
+            waited += 15
+            # probe with a cheap stats call; clears the counter on success
+            await self.get_json("/api/v2/stats", retries=1)
 
     async def _http(self) -> httpx.AsyncClient:
         if self._client is None:
@@ -53,14 +73,21 @@ class BlockscoutClient:
                 await self._limiter.acquire()
                 resp = await client.get(f"{self.base}{path}", params=params)
                 if resp.status_code == 429:
+                    self.consecutive_5xx += 1
                     await asyncio.sleep(1.5 * (2 ** attempt))
                     continue
                 if resp.status_code >= 500:
+                    self.consecutive_5xx += 1
+                    self.total_5xx += 1
                     await asyncio.sleep(1.0 * (2 ** attempt))
                     continue
                 if resp.status_code == 404:
+                    self.consecutive_5xx = 0
+                    self.total_ok += 1
                     return None
                 resp.raise_for_status()
+                self.consecutive_5xx = 0
+                self.total_ok += 1
                 return resp.json()
             except (httpx.HTTPError, ValueError) as e:
                 if attempt == retries - 1:

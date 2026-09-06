@@ -94,7 +94,22 @@ async def verify_top_wallets(
     def _aware(dt: datetime) -> datetime:
         return dt if dt.tzinfo else dt.replace(tzinfo=timezone.utc)
 
-    for entry in ranked[: settings.verify_top_n]:
+    # R2 hits Blockscout hard; when the API is in an outage window, wait for
+    # it to heal instead of burning retries (hybrid resilience)
+    rederive_client = getattr(rederive_trade, "__self__", None)
+    blockscout = getattr(rederive_client, "blockscout", None)
+
+    total = min(len(ranked), settings.verify_top_n)
+    for idx, entry in enumerate(ranked[: settings.verify_top_n], start=1):
+        if blockscout is not None and blockscout.is_degraded:
+            jlog(log, logging.INFO, "R2: blockscout degraded, waiting for recovery",
+                 progress=f"{idx}/{total}", consecutive_5xx=blockscout.consecutive_5xx)
+            await blockscout.wait_until_healthy()
+        if idx % 10 == 1:
+            jlog(log, logging.INFO, "R2 progress", done=idx, total=total,
+                 ok_5xx=blockscout.total_ok if blockscout else None,
+                 err_5xx=blockscout.total_5xx if blockscout else None)
+
         res = VerificationResult(wallet=entry.wallet_address, eth_oracle_ok=eth_ok)
 
         # R3: stale open positions must not claim unrealized profits
