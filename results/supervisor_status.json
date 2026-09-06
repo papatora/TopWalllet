@@ -1,12 +1,12 @@
 {
   "phase": "pipeline",
-  "cycle": 2,
+  "cycle": 3,
   "pid": 26931,
   "top_wallets": 0,
   "last_exit": null,
-  "updated_at": "2026-09-06T20:01:42.471646+00:00",
+  "updated_at": "2026-09-06T20:03:12.480036+00:00",
   "log_tail": "  \"wallets_ranked\": 0 | }",
-  "pipeline_pid": 27001,
+  "pipeline_pid": 27138,
   "stats": {
     "tokens_in_db": 0,
     "pools_in_db": 0,
