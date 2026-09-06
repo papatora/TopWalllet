@@ -16,6 +16,25 @@
 
 ---
 
+## SNAPSHOT S-8 — 2026-09-07 (watchdog cron selesai; semua siap deploy VPS)
+
+- User tegaskan lagi: desktop lokal akan di-SHUTDOWN → supervisory lokal memang
+  mustahil; SEMUA autonomy di VPS. Insiden lokal di S-7 tidak boleh terulang.
+- **Watchdog LLM (`scripts/watchdog.py`) selesai + dites end-to-end**: cron per
+  jam di VPS → kumpulkan fakta keras (proses/heartbeat/stats) → injek ke ZAI
+  GLM-5.3-flash → verdict JSON aksi whitelisted (NONE/START_SUPERVISOR/
+  RESTART_SUPERVISOR/RESTART_PIPELINE) → eksekusi restart otomatis (hanya
+  TOPWALLET_RUN_ENV=vps; lokal report-only — SUDah DITES). Log →
+  results/night_watch.log. Tes nyata: GLM benar mendiagnosis supervisor mati
+  → START_SUPERVISOR.
+- `scripts/VPS_SETUP.md`: systemd unit (supervisor auto-restart on boot/crash)
+  + crontab watchdog + verifikasi. Ini yang dipaste user di VPS.
+- Arsitektur autonomy 3 lapis di VPS: systemd (restart on crash) → supervisor
+  (loop pipeline + resume checkpoint) → watchdog cron per jam (LLM pengawas
+  yang bisa membangunkan keduanya).
+- Besok (atau saat user siap): user SSH ke VPS, paste blok SECURITY_POLICY.md
+  §VPS DEPLOY + scripts/VPS_SETUP.md → semuanya jalan otomatis di sana.
+
 ## SNAPSHOT S-7 — 2026-09-07 (KEBIJAKAN BARU: VPS-ONLY, lokal supervisor dihentikan)
 
 **Insiden & koreksi:**
