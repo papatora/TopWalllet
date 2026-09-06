@@ -1,5 +1,5 @@
 {
-  "rank": 36,
+  "rank": 40,
   "wallet_address": "0xA7B5F842a0cf73B4866dd2eAA6dd78C8B71BD7B3",
   "composite_score": 0.0,
   "metrics": {
@@ -79,8 +79,8 @@
       "pnl_usd": -140.66,
       "return_multiple": 0.777,
       "hold_hours": 0.02,
-      "entry_pctile": 0.9616613418530351,
-      "exit_pctile": 0.6485623003194888
+      "entry_pctile": 0.963302752293578,
+      "exit_pctile": 0.6452599388379205
     },
     {
       "token": "$CASHCATSLLC",
@@ -94,8 +94,8 @@
       "pnl_usd": -491.06,
       "return_multiple": 0.6309,
       "hold_hours": 4.5,
-      "entry_pctile": 0.8402555910543131,
-      "exit_pctile": 0.22468354430379747
+      "entry_pctile": 0.8470948012232415,
+      "exit_pctile": 0.21646341463414634
     },
     {
       "token": "$CASHCATSLLC",
@@ -109,7 +109,7 @@
       "pnl_usd": null,
       "return_multiple": 4.1762,
       "hold_hours": 14.57,
-      "entry_pctile": 0.3449367088607595,
+      "entry_pctile": 0.27450980392156865,
       "exit_pctile": null
     }
   ]

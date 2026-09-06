@@ -1,7 +1,7 @@
 {
-  "rank": 35,
+  "rank": 13,
   "wallet_address": "0x6e951d31343d7875627d33E3CDF182B8547C256d",
-  "composite_score": 0.0,
+  "composite_score": 15.0,
   "metrics": {
     "total_positions": 3,
     "winning_positions": 0,
@@ -12,7 +12,7 @@
     "total_unrealized_pnl_usd": 0,
     "avg_hold_duration_hours": 0.06,
     "consistency_score": 0.0,
-    "dip_buying_accuracy": 0.0,
+    "dip_buying_accuracy": 1.0,
     "top_selling_accuracy": 0.0,
     "distinct_tokens": 1,
     "big_wins_10x_plus": 0,
@@ -61,7 +61,7 @@
     "trades_verified": "3/3",
     "details": []
   },
-  "trading_style": "scalper",
+  "trading_style": "dip_buyer_scalper",
   "risk_flags": [
     "DUST_ONLY",
     "SINGLE_TOKEN_SAMPLE"
@@ -80,8 +80,8 @@
       "pnl_usd": 0,
       "return_multiple": 1.0,
       "hold_hours": 0.16,
-      "entry_pctile": null,
-      "exit_pctile": null
+      "entry_pctile": 0.08695652173913043,
+      "exit_pctile": 0.08695652173913043
     },
     {
       "token": "PONSI",
@@ -95,8 +95,8 @@
       "pnl_usd": 0,
       "return_multiple": 1.0,
       "hold_hours": 0.01,
-      "entry_pctile": null,
-      "exit_pctile": null
+      "entry_pctile": 0.08695652173913043,
+      "exit_pctile": 0.08695652173913043
     },
     {
       "token": "PONSI",
@@ -110,8 +110,8 @@
       "pnl_usd": 0,
       "return_multiple": 1.0,
       "hold_hours": 0.01,
-      "entry_pctile": null,
-      "exit_pctile": null
+      "entry_pctile": 0.08695652173913043,
+      "exit_pctile": 0.08695652173913043
     }
   ]
 }

@@ -1,22 +1,22 @@
 {
-  "rank": 19,
+  "rank": 29,
   "wallet_address": "0xde5d34705F2145541a75E49c5e8CC08F9Cd2d8Ce",
-  "composite_score": 12.55,
+  "composite_score": 8.18,
   "metrics": {
     "total_positions": 11,
-    "winning_positions": 1,
-    "win_rate": 0.0909,
+    "winning_positions": 0,
+    "win_rate": 0.0,
     "median_return_multiple": 0.9992,
     "max_return_multiple": 1.0001,
     "total_realized_pnl_usd": -0.05,
     "total_unrealized_pnl_usd": 0,
     "avg_hold_duration_hours": 0.01,
-    "consistency_score": 0.04,
+    "consistency_score": 0.0,
     "dip_buying_accuracy": 0.5455,
-    "top_selling_accuracy": 0.0909,
+    "top_selling_accuracy": 0.0,
     "distinct_tokens": 1,
     "big_wins_10x_plus": 0,
-    "recent_win_rate": 0.0863,
+    "recent_win_rate": 0.0,
     "active_months": 2,
     "last_active": "2026-09-05T08:33:55+00:00"
   },
@@ -88,7 +88,7 @@
     "DUST_ONLY",
     "SINGLE_TOKEN_SAMPLE"
   ],
-  "cluster_id": "cluster_2e9839d9",
+  "cluster_id": "cluster_470e6be8",
   "all_positions": [
     {
       "token": "ROBINHOOD",
@@ -102,8 +102,8 @@
       "pnl_usd": 0.0,
       "return_multiple": 1.0001,
       "hold_hours": 0.02,
-      "entry_pctile": 0.7775947281713345,
-      "exit_pctile": 0.7792421746293245
+      "entry_pctile": 0.7087827426810478,
+      "exit_pctile": 0.70929635336415
     },
     {
       "token": "ROBINHOOD",
@@ -117,8 +117,8 @@
       "pnl_usd": -0.0,
       "return_multiple": 0.9994,
       "hold_hours": 0.01,
-      "entry_pctile": 0.8548123980424144,
-      "exit_pctile": 0.8531810766721044
+      "entry_pctile": 0.7380585516178737,
+      "exit_pctile": 0.7375449409347714
     },
     {
       "token": "ROBINHOOD",
@@ -132,8 +132,8 @@
       "pnl_usd": -0.0,
       "return_multiple": 0.9993,
       "hold_hours": 0.01,
-      "entry_pctile": 0.26212121212121214,
-      "exit_pctile": 0.25984848484848483
+      "entry_pctile": 0.4630290668026517,
+      "exit_pctile": 0.46149923508414076
     },
     {
       "token": "ROBINHOOD",
@@ -147,8 +147,8 @@
       "pnl_usd": -0.01,
       "return_multiple": 0.9992,
       "hold_hours": 0.01,
-      "entry_pctile": 0.0260989010989011,
-      "exit_pctile": 0.02403846153846154
+      "entry_pctile": 0.18969913309535952,
+      "exit_pctile": 0.18816930137684854
     },
     {
       "token": "ROBINHOOD",
@@ -162,8 +162,8 @@
       "pnl_usd": -0.0,
       "return_multiple": 0.9992,
       "hold_hours": 0.01,
-      "entry_pctile": 0.06253988513082323,
-      "exit_pctile": 0.06190172303765156
+      "entry_pctile": 0.21213666496685366,
+      "exit_pctile": 0.21162672106068334
     },
     {
       "token": "ROBINHOOD",
@@ -177,8 +177,8 @@
       "pnl_usd": -0.0,
       "return_multiple": 0.9992,
       "hold_hours": 0.01,
-      "entry_pctile": 0.15265200517464425,
-      "exit_pctile": 0.15080906148867315
+      "entry_pctile": 0.22182559918408976,
+      "exit_pctile": 0.22029576746557877
     },
     {
       "token": "ROBINHOOD",
@@ -192,8 +192,8 @@
       "pnl_usd": -0.01,
       "return_multiple": 0.9992,
       "hold_hours": 0.01,
-      "entry_pctile": 0.22459016393442624,
-      "exit_pctile": 0.22213114754098362
+      "entry_pctile": 0.19275879653238143,
+      "exit_pctile": 0.19122896481387047
     },
     {
       "token": "ROBINHOOD",
@@ -207,8 +207,8 @@
       "pnl_usd": -0.01,
       "return_multiple": 0.9991,
       "hold_hours": 0.01,
-      "entry_pctile": 0.19011725293132328,
-      "exit_pctile": 0.18760469011725292
+      "entry_pctile": 0.15247322794492607,
+      "exit_pctile": 0.1509433962264151
     },
     {
       "token": "ROBINHOOD",
@@ -222,8 +222,8 @@
       "pnl_usd": -0.01,
       "return_multiple": 0.9991,
       "hold_hours": 0.01,
-      "entry_pctile": 0.1665264928511354,
-      "exit_pctile": 0.1648444070647603
+      "entry_pctile": 0.1009688934217236,
+      "exit_pctile": 0.09994900560938297
     },
     {
       "token": "ROBINHOOD",
@@ -237,8 +237,8 @@
       "pnl_usd": -0.01,
       "return_multiple": 0.999,
       "hold_hours": 0.02,
-      "entry_pctile": 0.0339943342776204,
-      "exit_pctile": 0.026912181303116147
+      "entry_pctile": 0.01223865374808771,
+      "exit_pctile": 0.009688934217236104
     },
     {
       "token": "ROBINHOOD",
@@ -252,8 +252,8 @@
       "pnl_usd": -0.01,
       "return_multiple": 0.9991,
       "hold_hours": 0.01,
-      "entry_pctile": 0.20285714285714285,
-      "exit_pctile": 0.2
+      "entry_pctile": 0.07241203467618562,
+      "exit_pctile": 0.07139214686384497
     }
   ]
 }

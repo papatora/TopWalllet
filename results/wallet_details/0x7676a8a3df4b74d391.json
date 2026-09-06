@@ -1,7 +1,7 @@
 {
   "rank": 31,
   "wallet_address": "0x7676a8a3dF4b74d391BF519029e7C7768Ca2A282",
-  "composite_score": 3.0,
+  "composite_score": 6.0,
   "metrics": {
     "total_positions": 5,
     "winning_positions": 0,
@@ -12,7 +12,7 @@
     "total_unrealized_pnl_usd": 0,
     "avg_hold_duration_hours": 0.01,
     "consistency_score": 0.0,
-    "dip_buying_accuracy": 0.2,
+    "dip_buying_accuracy": 0.4,
     "top_selling_accuracy": 0.0,
     "distinct_tokens": 1,
     "big_wins_10x_plus": 0,
@@ -102,8 +102,8 @@
       "pnl_usd": -0.0,
       "return_multiple": 0.9994,
       "hold_hours": 0.02,
-      "entry_pctile": 0.6624803767660911,
-      "exit_pctile": 0.6075353218210361
+      "entry_pctile": 0.6852367688022284,
+      "exit_pctile": 0.6527390900649953
     },
     {
       "token": "ROBINHOOD",
@@ -117,8 +117,8 @@
       "pnl_usd": -0.0,
       "return_multiple": 0.9994,
       "hold_hours": 0.01,
-      "entry_pctile": 0.4578005115089514,
-      "exit_pctile": 0.45524296675191817
+      "entry_pctile": 0.28769657724329323,
+      "exit_pctile": 0.28677150786308975
     },
     {
       "token": "ROBINHOOD",
@@ -132,8 +132,8 @@
       "pnl_usd": -0.0,
       "return_multiple": 0.9993,
       "hold_hours": 0.01,
-      "entry_pctile": 0.38242894056847543,
-      "exit_pctile": 0.3772609819121447
+      "entry_pctile": 0.24606845513413506,
+      "exit_pctile": 0.24421831637372804
     },
     {
       "token": "ROBINHOOD",
@@ -147,8 +147,8 @@
       "pnl_usd": -0.0,
       "return_multiple": 0.9993,
       "hold_hours": 0.01,
-      "entry_pctile": 0.4568345323741007,
-      "exit_pctile": 0.44964028776978415
+      "entry_pctile": 0.14153561517113783,
+      "exit_pctile": 0.1396854764107308
     },
     {
       "token": "ROBINHOOD",
@@ -162,8 +162,8 @@
       "pnl_usd": -0.0,
       "return_multiple": 0.9992,
       "hold_hours": 0.01,
-      "entry_pctile": 0.1724137931034483,
-      "exit_pctile": 0.15862068965517243
+      "entry_pctile": 0.026557711950970377,
+      "exit_pctile": 0.024514811031664963
     }
   ]
 }

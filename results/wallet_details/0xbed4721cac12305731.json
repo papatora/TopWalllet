@@ -1,24 +1,24 @@
 {
-  "rank": 10,
+  "rank": 3,
   "wallet_address": "0xbed4721cAC12305731Ffe086a2dF96feE8F5eF69",
-  "composite_score": 32.43,
+  "composite_score": 29.51,
   "metrics": {
     "total_positions": 5,
     "winning_positions": 3,
-    "win_rate": 0.75,
-    "median_return_multiple": 1.0659,
+    "win_rate": 0.6,
+    "median_return_multiple": 1.0632,
     "max_return_multiple": 1.0697,
-    "total_realized_pnl_usd": 18.48,
-    "total_unrealized_pnl_usd": -13.89,
-    "avg_hold_duration_hours": 7.43,
-    "consistency_score": 0.33,
-    "dip_buying_accuracy": 0.2,
+    "total_realized_pnl_usd": -15.01,
+    "total_unrealized_pnl_usd": 0,
+    "avg_hold_duration_hours": 12.33,
+    "consistency_score": 0.264,
+    "dip_buying_accuracy": 0.4,
     "top_selling_accuracy": 0.0,
     "distinct_tokens": 1,
     "big_wins_10x_plus": 0,
-    "recent_win_rate": 0.7487,
+    "recent_win_rate": 0.587,
     "active_months": 2,
-    "last_active": "2026-09-04T14:01:57+00:00"
+    "last_active": "2026-09-05T21:59:04+00:00"
   },
   "top_trades": [
     {
@@ -69,12 +69,12 @@
       "token": "BAG",
       "ca": "0x616bcd920e1e1F354750BBaf2FB3b3fa3B4aAE16",
       "entry_price_usd": 4.909234243147023e-05,
-      "exit_price_usd": 4.56e-05,
-      "return_multiple": 0.93,
+      "exit_price_usd": 4.0669956257106614e-05,
+      "return_multiple": 0.83,
       "position_size_usd": 195.22,
-      "pnl_usd": null,
+      "pnl_usd": -33.49,
       "entry_date": "2026-09-04",
-      "exit_date": null
+      "exit_date": "2026-09-05"
     }
   ],
   "verification": {
@@ -103,8 +103,8 @@
       "pnl_usd": 5.87,
       "return_multiple": 1.0697,
       "hold_hours": 4.72,
-      "entry_pctile": 0.3927536231884058,
-      "exit_pctile": 0.4515669515669516
+      "entry_pctile": 0.4591397849462366,
+      "exit_pctile": 0.4978494623655914
     },
     {
       "token": "BAG",
@@ -118,8 +118,8 @@
       "pnl_usd": 4.85,
       "return_multiple": 1.0632,
       "hold_hours": 4.81,
-      "entry_pctile": 0.3927536231884058,
-      "exit_pctile": 0.44413012729844414
+      "entry_pctile": 0.4591397849462366,
+      "exit_pctile": 0.489247311827957
     },
     {
       "token": "BAG",
@@ -133,8 +133,8 @@
       "pnl_usd": -3.91,
       "return_multiple": 0.9567,
       "hold_hours": 4.69,
-      "entry_pctile": 0.10344827586206896,
-      "exit_pctile": 0.04904632152588556
+      "entry_pctile": 0.1443089430894309,
+      "exit_pctile": 0.0975609756097561
     },
     {
       "token": "BAG",
@@ -148,23 +148,23 @@
       "pnl_usd": 11.68,
       "return_multiple": 1.0685,
       "hold_hours": 15.49,
-      "entry_pctile": 0.43874643874643876,
-      "exit_pctile": 0.5119402985074627
+      "entry_pctile": 0.3983739837398374,
+      "exit_pctile": 0.4507936507936508
     },
     {
       "token": "BAG",
       "ca": "0x616bcd920e1e1F354750BBaf2FB3b3fa3B4aAE16",
-      "status": "open",
+      "status": "closed",
       "entry_ts": "2026-09-04T14:01:57",
-      "exit_ts": null,
+      "exit_ts": "2026-09-05T21:59:04",
       "entry_price_usd": 4.909234243147023e-05,
-      "exit_price_usd": 4.56e-05,
+      "exit_price_usd": 4.0669956257106614e-05,
       "size_usd": 195.22,
-      "pnl_usd": null,
-      "return_multiple": 0.9289,
-      "hold_hours": 20.79,
-      "entry_pctile": 0.27472527472527475,
-      "exit_pctile": null
+      "pnl_usd": -33.49,
+      "return_multiple": 0.8284,
+      "hold_hours": 31.95,
+      "entry_pctile": 0.08614668218859138,
+      "exit_pctile": 0.022988505747126436
     }
   ]
 }

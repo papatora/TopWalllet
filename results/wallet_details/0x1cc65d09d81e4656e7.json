@@ -1,7 +1,7 @@
 {
-  "rank": 33,
+  "rank": 22,
   "wallet_address": "0x1cc65D09d81e4656e72444217E201064226d2c3C",
-  "composite_score": 2.5,
+  "composite_score": 11.25,
   "metrics": {
     "total_positions": 4,
     "winning_positions": 0,
@@ -12,8 +12,8 @@
     "total_unrealized_pnl_usd": 0,
     "avg_hold_duration_hours": 0.01,
     "consistency_score": 0.0,
-    "dip_buying_accuracy": 0.0,
-    "top_selling_accuracy": 0.25,
+    "dip_buying_accuracy": 0.75,
+    "top_selling_accuracy": 0.0,
     "distinct_tokens": 1,
     "big_wins_10x_plus": 0,
     "recent_win_rate": 0.0,
@@ -72,7 +72,7 @@
     "trades_verified": "3/3",
     "details": []
   },
-  "trading_style": "scalper",
+  "trading_style": "dip_buyer_scalper",
   "risk_flags": [
     "DUST_ONLY",
     "SINGLE_TOKEN_SAMPLE"
@@ -91,8 +91,8 @@
       "pnl_usd": -0.0,
       "return_multiple": 0.9993,
       "hold_hours": 0.02,
-      "entry_pctile": 0.865979381443299,
-      "exit_pctile": 0.8608247422680413
+      "entry_pctile": 0.2479185938945421,
+      "exit_pctile": 0.24699352451433856
     },
     {
       "token": "ROBINHOOD",
@@ -106,8 +106,8 @@
       "pnl_usd": -0.0,
       "return_multiple": 0.9993,
       "hold_hours": 0.01,
-      "entry_pctile": 0.4222222222222222,
-      "exit_pctile": 0.4166666666666667
+      "entry_pctile": 0.09065679925994449,
+      "exit_pctile": 0.08973172987974098
     },
     {
       "token": "ROBINHOOD",
@@ -121,8 +121,8 @@
       "pnl_usd": -0.01,
       "return_multiple": 0.9986,
       "hold_hours": 0.01,
-      "entry_pctile": 0.5549132947976878,
-      "exit_pctile": 0.5317919075144508
+      "entry_pctile": 0.1091581868640148,
+      "exit_pctile": 0.10545790934320073
     },
     {
       "token": "ROBINHOOD",
@@ -136,8 +136,8 @@
       "pnl_usd": -0.0,
       "return_multiple": 0.9992,
       "hold_hours": 0.01,
-      "entry_pctile": 0.26717557251908397,
-      "exit_pctile": 0.2595419847328244
+      "entry_pctile": 0.0384204909284952,
+      "exit_pctile": 0.03735325506937033
     }
   ]
 }

@@ -79,8 +79,8 @@
       "pnl_usd": -5.88,
       "return_multiple": 0.8772,
       "hold_hours": 0.18,
-      "entry_pctile": 0.7338169642857143,
-      "exit_pctile": 0.6453683035714286
+      "entry_pctile": 0.7376237623762376,
+      "exit_pctile": 0.6504400440044005
     },
     {
       "token": "COIN",
@@ -94,8 +94,8 @@
       "pnl_usd": -23.77,
       "return_multiple": 0.5031,
       "hold_hours": 0.1,
-      "entry_pctile": 0.6594587053571429,
-      "exit_pctile": 0.27859933035714285
+      "entry_pctile": 0.6643289328932893,
+      "exit_pctile": 0.28891639163916394
     },
     {
       "token": "COIN",
@@ -109,8 +109,8 @@
       "pnl_usd": 5.32,
       "return_multiple": 1.1063,
       "hold_hours": 0.22,
-      "entry_pctile": 0.4213169642857143,
-      "exit_pctile": 0.5132533482142857
+      "entry_pctile": 0.4295929592959296,
+      "exit_pctile": 0.5202145214521452
     }
   ]
 }

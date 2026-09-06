@@ -1,24 +1,24 @@
 {
-  "rank": 9,
+  "rank": 7,
   "wallet_address": "0xCc8a0d686C77ee8c914BEaD18a26F158f270690d",
-  "composite_score": 33.13,
+  "composite_score": 22.78,
   "metrics": {
-    "total_positions": 6,
+    "total_positions": 9,
     "winning_positions": 4,
-    "win_rate": 0.8,
-    "median_return_multiple": 1.0299,
+    "win_rate": 0.4444,
+    "median_return_multiple": 1.0,
     "max_return_multiple": 1.0432,
     "total_realized_pnl_usd": 11.58,
-    "total_unrealized_pnl_usd": -12.19,
-    "avg_hold_duration_hours": 0.12,
-    "consistency_score": 0.352,
+    "total_unrealized_pnl_usd": 0,
+    "avg_hold_duration_hours": 0.1,
+    "consistency_score": 0.1956,
     "dip_buying_accuracy": 0.0,
-    "top_selling_accuracy": 0.2,
+    "top_selling_accuracy": 0.5556,
     "distinct_tokens": 1,
     "big_wins_10x_plus": 0,
-    "recent_win_rate": 0.8,
+    "recent_win_rate": 0.4443,
     "active_months": 1,
-    "last_active": "2026-09-05T15:14:09+00:00"
+    "last_active": "2026-09-05T16:14:49+00:00"
   },
   "top_trades": [
     {
@@ -68,24 +68,13 @@
     {
       "token": "CYBR",
       "ca": "0xB948C24BAc6cAF34604f39AA52B1deD5035BC4a4",
-      "entry_price_usd": 8.691731748361409e-05,
-      "exit_price_usd": 8.47945985588425e-05,
-      "return_multiple": 0.98,
-      "position_size_usd": 59.74,
-      "pnl_usd": -1.46,
+      "entry_price_usd": 0.00010413854893373732,
+      "exit_price_usd": 0.00010413854893373732,
+      "return_multiple": 1.0,
+      "position_size_usd": 113.47,
+      "pnl_usd": 0,
       "entry_date": "2026-09-05",
       "exit_date": "2026-09-05"
-    },
-    {
-      "token": "CYBR",
-      "ca": "0xB948C24BAc6cAF34604f39AA52B1deD5035BC4a4",
-      "entry_price_usd": 0.00010413854893373732,
-      "exit_price_usd": 9.295e-05,
-      "return_multiple": 0.89,
-      "position_size_usd": 113.47,
-      "pnl_usd": null,
-      "entry_date": "2026-09-05",
-      "exit_date": null
     }
   ],
   "verification": {
@@ -180,17 +169,62 @@
     {
       "token": "CYBR",
       "ca": "0xB948C24BAc6cAF34604f39AA52B1deD5035BC4a4",
-      "status": "open",
+      "status": "closed",
       "entry_ts": "2026-09-05T15:14:09",
-      "exit_ts": null,
+      "exit_ts": "2026-09-05T15:18:22",
       "entry_price_usd": 0.00010413854893373732,
-      "exit_price_usd": 9.295e-05,
+      "exit_price_usd": 0.00010413854893373732,
       "size_usd": 113.47,
-      "pnl_usd": null,
-      "return_multiple": 0.8926,
-      "hold_hours": 0.0,
+      "pnl_usd": 0,
+      "return_multiple": 1.0,
+      "hold_hours": 0.07,
       "entry_pctile": 0.987987987987988,
-      "exit_pctile": null
+      "exit_pctile": 0.987987987987988
+    },
+    {
+      "token": "CYBR",
+      "ca": "0xB948C24BAc6cAF34604f39AA52B1deD5035BC4a4",
+      "status": "closed",
+      "entry_ts": "2026-09-05T15:54:02",
+      "exit_ts": "2026-09-05T15:59:51",
+      "entry_price_usd": 0.00010413854893373732,
+      "exit_price_usd": 0.00010413854893373732,
+      "size_usd": 91.23,
+      "pnl_usd": 0,
+      "return_multiple": 1.0,
+      "hold_hours": 0.1,
+      "entry_pctile": 0.987987987987988,
+      "exit_pctile": 0.987987987987988
+    },
+    {
+      "token": "CYBR",
+      "ca": "0xB948C24BAc6cAF34604f39AA52B1deD5035BC4a4",
+      "status": "closed",
+      "entry_ts": "2026-09-05T16:07:40",
+      "exit_ts": "2026-09-05T16:08:00",
+      "entry_price_usd": 0.00010413854893373732,
+      "exit_price_usd": 0.00010413854893373732,
+      "size_usd": 55.32,
+      "pnl_usd": 0,
+      "return_multiple": 1.0,
+      "hold_hours": 0.01,
+      "entry_pctile": 0.987987987987988,
+      "exit_pctile": 0.987987987987988
+    },
+    {
+      "token": "CYBR",
+      "ca": "0xB948C24BAc6cAF34604f39AA52B1deD5035BC4a4",
+      "status": "closed",
+      "entry_ts": "2026-09-05T16:07:40",
+      "exit_ts": "2026-09-05T16:14:49",
+      "entry_price_usd": 0.00010413854893373732,
+      "exit_price_usd": 0.00010413854893373732,
+      "size_usd": 22.82,
+      "pnl_usd": 0,
+      "return_multiple": 1.0,
+      "hold_hours": 0.12,
+      "entry_pctile": 0.987987987987988,
+      "exit_pctile": 0.987987987987988
     }
   ]
 }

@@ -1,24 +1,24 @@
 {
-  "rank": 24,
+  "rank": 25,
   "wallet_address": "0x3A8982399F7a72f0B57f0833b87549bC37C1B523",
-  "composite_score": 6.87,
+  "composite_score": 10.0,
   "metrics": {
-    "total_positions": 8,
+    "total_positions": 9,
     "winning_positions": 0,
     "win_rate": 0.0,
     "median_return_multiple": 0.9993,
     "max_return_multiple": 0.9994,
-    "total_realized_pnl_usd": -0.03,
+    "total_realized_pnl_usd": -0.04,
     "total_unrealized_pnl_usd": 0,
     "avg_hold_duration_hours": 0.01,
     "consistency_score": 0.0,
-    "dip_buying_accuracy": 0.375,
-    "top_selling_accuracy": 0.125,
+    "dip_buying_accuracy": 0.6667,
+    "top_selling_accuracy": 0.0,
     "distinct_tokens": 1,
     "big_wins_10x_plus": 0,
     "recent_win_rate": 0.0,
     "active_months": 2,
-    "last_active": "2026-09-05T11:25:35+00:00"
+    "last_active": "2026-09-05T17:08:35+00:00"
   },
   "top_trades": [
     {
@@ -83,7 +83,7 @@
     "trades_verified": "3/3",
     "details": []
   },
-  "trading_style": "scalper",
+  "trading_style": "dip_buyer_scalper",
   "risk_flags": [
     "DUST_ONLY",
     "SINGLE_TOKEN_SAMPLE"
@@ -102,8 +102,8 @@
       "pnl_usd": -0.0,
       "return_multiple": 0.9994,
       "hold_hours": 0.01,
-      "entry_pctile": 0.6898496240601504,
-      "exit_pctile": 0.6766917293233082
+      "entry_pctile": 0.7103935418768921,
+      "exit_pctile": 0.7033299697275479
     },
     {
       "token": "ROBINHOOD",
@@ -117,8 +117,8 @@
       "pnl_usd": -0.0,
       "return_multiple": 0.9994,
       "hold_hours": 0.01,
-      "entry_pctile": 0.12314540059347182,
-      "exit_pctile": 0.11275964391691394
+      "entry_pctile": 0.2599444958371878,
+      "exit_pctile": 0.2534690101757632
     },
     {
       "token": "ROBINHOOD",
@@ -132,8 +132,8 @@
       "pnl_usd": -0.0,
       "return_multiple": 0.9993,
       "hold_hours": 0.01,
-      "entry_pctile": 0.11241610738255034,
-      "exit_pctile": 0.10906040268456375
+      "entry_pctile": 0.19148936170212766,
+      "exit_pctile": 0.1887141535615171
     },
     {
       "token": "ROBINHOOD",
@@ -147,8 +147,8 @@
       "pnl_usd": -0.0,
       "return_multiple": 0.9993,
       "hold_hours": 0.01,
-      "entry_pctile": 0.08438818565400844,
-      "exit_pctile": 0.08227848101265822
+      "entry_pctile": 0.13598519888991675,
+      "exit_pctile": 0.13506012950971322
     },
     {
       "token": "ROBINHOOD",
@@ -162,8 +162,8 @@
       "pnl_usd": -0.0,
       "return_multiple": 0.9993,
       "hold_hours": 0.01,
-      "entry_pctile": 0.8092783505154639,
-      "exit_pctile": 0.8041237113402062
+      "entry_pctile": 0.21554116558741906,
+      "exit_pctile": 0.211840888066605
     },
     {
       "token": "ROBINHOOD",
@@ -177,8 +177,8 @@
       "pnl_usd": -0.0,
       "return_multiple": 0.9993,
       "hold_hours": 0.02,
-      "entry_pctile": 0.50625,
-      "exit_pctile": 0.5
+      "entry_pctile": 0.10422535211267606,
+      "exit_pctile": 0.10328638497652583
     },
     {
       "token": "ROBINHOOD",
@@ -192,8 +192,8 @@
       "pnl_usd": -0.0,
       "return_multiple": 0.9992,
       "hold_hours": 0.01,
-      "entry_pctile": 0.21374045801526717,
-      "exit_pctile": 0.20610687022900764
+      "entry_pctile": 0.03023983315954119,
+      "exit_pctile": 0.029197080291970802
     },
     {
       "token": "ROBINHOOD",
@@ -207,8 +207,23 @@
       "pnl_usd": -0.0,
       "return_multiple": 0.9992,
       "hold_hours": 0.01,
-      "entry_pctile": 0.29770992366412213,
-      "exit_pctile": 0.2824427480916031
+      "entry_pctile": 0.041884816753926704,
+      "exit_pctile": 0.039790575916230364
+    },
+    {
+      "token": "ROBINHOOD",
+      "ca": "0x79Fe86b963255Ce884bdcaC6388C50a599Ba277f",
+      "status": "closed",
+      "entry_ts": "2026-09-05T17:07:35",
+      "exit_ts": "2026-09-05T17:08:35",
+      "entry_price_usd": 7.365845906159202e-05,
+      "exit_price_usd": 7.360142460856745e-05,
+      "size_usd": 6.17,
+      "pnl_usd": -0.0,
+      "return_multiple": 0.9992,
+      "hold_hours": 0.02,
+      "entry_pctile": 0.0780065005417118,
+      "exit_pctile": 0.07692307692307693
     }
   ]
 }

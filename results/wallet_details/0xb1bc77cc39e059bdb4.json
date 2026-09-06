@@ -1,0 +1,118 @@
+{
+  "rank": 2,
+  "wallet_address": "0xb1BC77CC39e059BdB4eeA82bF8eA71d5AE6c876F",
+  "composite_score": 32.28,
+  "metrics": {
+    "total_positions": 3,
+    "winning_positions": 2,
+    "win_rate": 0.6667,
+    "median_return_multiple": 1.1346,
+    "max_return_multiple": 1.6339,
+    "total_realized_pnl_usd": -48.75,
+    "total_unrealized_pnl_usd": 0,
+    "avg_hold_duration_hours": 0.48,
+    "consistency_score": 0.2933,
+    "dip_buying_accuracy": 0.3333,
+    "top_selling_accuracy": 0.0,
+    "distinct_tokens": 1,
+    "big_wins_10x_plus": 0,
+    "recent_win_rate": 0.6665,
+    "active_months": 1,
+    "last_active": "2026-09-05T15:51:12+00:00"
+  },
+  "top_trades": [
+    {
+      "token": "TISM",
+      "ca": "0x5D8F2592ef798295BFD42484BE16A7B30d1acC0E",
+      "entry_price_usd": 3.225683663813163e-05,
+      "exit_price_usd": 5.27043369415601e-05,
+      "return_multiple": 1.63,
+      "position_size_usd": 121.21,
+      "pnl_usd": 76.84,
+      "entry_date": "2026-09-05",
+      "exit_date": "2026-09-05"
+    },
+    {
+      "token": "TISM",
+      "ca": "0x5D8F2592ef798295BFD42484BE16A7B30d1acC0E",
+      "entry_price_usd": 1.9430468975870093e-05,
+      "exit_price_usd": 2.2046368882590772e-05,
+      "return_multiple": 1.13,
+      "position_size_usd": 174.23,
+      "pnl_usd": 23.46,
+      "entry_date": "2026-09-05",
+      "exit_date": "2026-09-05"
+    },
+    {
+      "token": "TISM",
+      "ca": "0x5D8F2592ef798295BFD42484BE16A7B30d1acC0E",
+      "entry_price_usd": 2.8208768028376667e-05,
+      "exit_price_usd": 1.116471111094378e-05,
+      "return_multiple": 0.4,
+      "position_size_usd": 246.68,
+      "pnl_usd": -149.05,
+      "entry_date": "2026-09-05",
+      "exit_date": "2026-09-05"
+    }
+  ],
+  "verification": {
+    "verdict": "verified",
+    "eth_oracle_ok": true,
+    "trades_verified": "2/3",
+    "details": [
+      "R2 mismatch stored=1.13x recomputed=2.27x"
+    ]
+  },
+  "trading_style": "scalper",
+  "risk_flags": [
+    "SINGLE_TOKEN_SAMPLE"
+  ],
+  "cluster_id": null,
+  "all_positions": [
+    {
+      "token": "TISM",
+      "ca": "0x5D8F2592ef798295BFD42484BE16A7B30d1acC0E",
+      "status": "closed",
+      "entry_ts": "2026-09-05T14:01:02",
+      "exit_ts": "2026-09-05T14:32:37",
+      "entry_price_usd": 1.9430468975870093e-05,
+      "exit_price_usd": 2.2046368882590772e-05,
+      "size_usd": 174.23,
+      "pnl_usd": 23.46,
+      "return_multiple": 1.1346,
+      "hold_hours": 0.53,
+      "entry_pctile": 0.07988980716253444,
+      "exit_pctile": 0.14600550964187328
+    },
+    {
+      "token": "TISM",
+      "ca": "0x5D8F2592ef798295BFD42484BE16A7B30d1acC0E",
+      "status": "closed",
+      "entry_ts": "2026-09-05T14:46:28",
+      "exit_ts": "2026-09-05T14:48:53",
+      "entry_price_usd": 3.225683663813163e-05,
+      "exit_price_usd": 5.27043369415601e-05,
+      "size_usd": 121.21,
+      "pnl_usd": 76.84,
+      "return_multiple": 1.6339,
+      "hold_hours": 0.04,
+      "entry_pctile": 0.3443526170798898,
+      "exit_pctile": 0.5454545454545454
+    },
+    {
+      "token": "TISM",
+      "ca": "0x5D8F2592ef798295BFD42484BE16A7B30d1acC0E",
+      "status": "closed",
+      "entry_ts": "2026-09-05T14:58:22",
+      "exit_ts": "2026-09-05T15:51:12",
+      "entry_price_usd": 2.8208768028376667e-05,
+      "exit_price_usd": 1.116471111094378e-05,
+      "size_usd": 246.68,
+      "pnl_usd": -149.05,
+      "return_multiple": 0.3958,
+      "hold_hours": 0.88,
+      "entry_pctile": 0.29614325068870523,
+      "exit_pctile": 0.013774104683195593
+    }
+  ]
+}
