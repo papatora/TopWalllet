@@ -1,10 +1,19 @@
 {
   "phase": "pipeline",
-  "cycle": 1,
+  "cycle": 2,
   "pid": 26931,
-  "top_wallets": null,
+  "top_wallets": 0,
   "last_exit": null,
-  "updated_at": "2026-09-06T20:00:09.650063+00:00",
-  "log_tail": "",
-  "pipeline_pid": 26933
+  "updated_at": "2026-09-06T20:01:42.471646+00:00",
+  "log_tail": "  \"wallets_ranked\": 0 | }",
+  "pipeline_pid": 27001,
+  "stats": {
+    "tokens_in_db": 0,
+    "pools_in_db": 0,
+    "wallets_in_db": 0,
+    "swap_events": 0,
+    "wallets_scored": 0,
+    "wallets_excluded": 0
+  },
+  "error": "[Errno 2] No such file or directory: 'python'"
 }
