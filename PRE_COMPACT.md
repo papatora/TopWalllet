@@ -16,7 +16,16 @@
 
 ---
 
-## SNAPSHOT S-4 — 2026-09-06, sesi lanjutan (state paling baru)
+## SNAPSHOT S-5 — 2026-09-06, sesi lanjutan (run resume berjalan)
+
+**Progress run resume (laporan berkala):**
+- enrich 396/703 (±52 wallet / 10 menit; Blockscout lambat hari ini), 0 gagal
+- Estimasi sisa: enrich ±1 jam → prices ±5 menit → analyze ±2 menit
+- Setelah analyze: `results/stats.json` harus `top_wallets_count > 0`,
+  `results/whale_entry_maps.json` harus ada (fitur baru)
+- Whale Entry Map SUDAH diimplement + integrasi + push (`bddc1cb`), 23 tests
+- PRE_COMPACT + ULTIMATE_PROMPT sudah di-push (`5be850c`)
+- Jangan restart pipeline saat enrich jalan — resume otomatis, biarkan selesai
 
 **Yang sedang dikerjakan saat snapshot ini dibuat:**
 - Resume run yang kemarin terputus di 916/1675 wallet (re-enrich penuh dengan
