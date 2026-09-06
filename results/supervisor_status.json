@@ -1,19 +1,19 @@
 {
   "phase": "error",
-  "cycle": 7,
+  "cycle": 10,
   "pid": 27427,
-  "top_wallets": null,
+  "top_wallets": 40,
   "last_exit": null,
-  "updated_at": "2026-09-06T21:18:24.937480+00:00",
-  "log_tail": "cout.com/api/v2/addresses/0x0355a5a10cdf2bb1d41ff557b582dfe3435274ce/token-transfers?type=ERC-20&token=0xe612c939d82981f8e17ccac3b59c1084c2aa02bb \"HTTP/1.1 200 OK\" | 21:18:24 INFO    httpx: HTTP Request: GET https://robinhoodchain.blockscout.com/api/v2/addresses/0x0355a5a10cdf2bb1d41ff557b582dfe3435274ce/token-transfers?type=ERC-20&token=0xe612c939d82981f8e17ccac3b59c1084c2aa02bb \"HTTP/1.1 200 OK\"",
-  "pipeline_pid": 27428,
+  "updated_at": "2026-09-06T22:53:58.379418+00:00",
+  "log_tail": "cout.com/api/v2/addresses/0x2e5453a5f77a80fe7bfd09d98fd53d2cf2f46bbc/token-transfers?type=ERC-20&token=0x15eae4a2526d109408c7f919e4bb592d68c42908 \"HTTP/1.1 200 OK\" | 22:53:58 INFO    httpx: HTTP Request: GET https://robinhoodchain.blockscout.com/api/v2/addresses/0x9c24c28b45abc94ef7d5b091fbb3aeb7e576e63c/token-transfers?type=ERC-20&token=0xdaccbeaf0062e782472d7ad7d762c38e59c18932 \"HTTP/1.1 200 OK\"",
+  "pipeline_pid": 29695,
   "stats": {
-    "tokens_in_db": 0,
-    "pools_in_db": 0,
-    "wallets_in_db": 0,
-    "swap_events": 0,
-    "wallets_scored": 0,
-    "wallets_excluded": 0
+    "tokens_in_db": 62,
+    "pools_in_db": 62,
+    "wallets_in_db": 1675,
+    "swap_events": 9233,
+    "wallets_scored": 112,
+    "wallets_excluded": 847
   },
   "error": "[Errno 2] No such file or directory: 'python'"
 }

@@ -3,3 +3,6 @@
 [2026-09-06T20:00:42.468444+00:00] 
 [2026-09-06T21:00:05.997670+00:00] facts={"utc": "2026-09-06T21:00:01.372188+00:00", "run_env": "vps", "status_file": true, "supervisor_updated_at": "2026-09-06T20:59:54.839736+00:00", "heartbeat_age_min": 0.1, "heartbeat_fresh": true, "supervisor_pid": 27427, "supervisor_alive": true, "pipeline_alive": true, "phase": "error", "cycle": 6, "top_wallets": null} | llm_action=NONE (unparseable LLM reply: ) | result=none
 [2026-09-06T21:01:14.206732+00:00] 
+[2026-09-06T21:18:58.069661+00:00] 
+[2026-09-06T22:00:05.340267+00:00] facts={"utc": "2026-09-06T22:00:01.333492+00:00", "run_env": "vps", "status_file": true, "supervisor_updated_at": "2026-09-06T21:31:14.217941+00:00", "heartbeat_age_min": 28.8, "heartbeat_fresh": true, "supervisor_pid": 27427, "supervisor_alive": true, "pipeline_alive": false, "phase": "error", "cycle": 8, "top_wallets": 40} | llm_action=NONE (unparseable LLM reply: ) | result=none
+[2026-09-06T22:01:18.108856+00:00] 

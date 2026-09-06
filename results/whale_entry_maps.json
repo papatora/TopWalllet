@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-06T20:32:32.046115+00:00",
+  "generated_at": "2026-09-06T22:46:00.769617+00:00",
   "maps": {
     "0x62cd5cd9d354a2a50affe9efa21c8918b9640a5b": {
       "current_price_usd": 0.000646371224939548,
@@ -397,18 +397,25 @@
     "0x6635c082c14b4206751600d96fe50428815c9fa9": {
       "current_price_usd": 0.00028465180110466326,
       "whale_count": 5,
-      "whale_avg_entry_price": 0.00012959938946755377,
-      "pct_whales_at_or_above_current": 0.0,
-      "jumbo_above_current": 0,
-      "conviction_score": 0.0,
-      "verdict": "DANGER",
+      "whale_avg_entry_price": 0.0003714411397041466,
+      "pct_whales_at_or_above_current": 0.6,
+      "jumbo_above_current": 1,
+      "conviction_score": 72.0,
+      "verdict": "STRONG",
       "whales": [
         {
           "wallet": "0x3c5083022114ea14fb3d8d06f5931c629c2bedd6",
-          "entry_vwap_usd": 0.000167018,
-          "entry_vs_current": 0.5867,
-          "cost_basis_usd": 3258.2,
+          "entry_vwap_usd": 0.0002714553,
+          "entry_vs_current": 0.9536,
+          "cost_basis_usd": 5295.57,
           "underwater": false
+        },
+        {
+          "wallet": "0x63da55851b8c0938a9db665eaf1198134b9ca731",
+          "entry_vwap_usd": 0.0005424883,
+          "entry_vs_current": 1.9058,
+          "cost_basis_usd": 4813.82,
+          "underwater": true
         },
         {
           "wallet": "0x1dc91c645f22dab607a77e2bd970602f7d594ad3",
@@ -418,25 +425,18 @@
           "underwater": false
         },
         {
-          "wallet": "0x63da55851b8c0938a9db665eaf1198134b9ca731",
-          "entry_vwap_usd": 9.21306e-05,
-          "entry_vs_current": 0.3237,
-          "cost_basis_usd": 817.53,
-          "underwater": false
-        },
-        {
           "wallet": "0x7955047f77c2165c40828a730a49c39c407c4696",
-          "entry_vwap_usd": 0.0001245311,
-          "entry_vs_current": 0.4375,
-          "cost_basis_usd": 242.72,
-          "underwater": false
+          "entry_vwap_usd": 0.0004412519,
+          "entry_vs_current": 1.5501,
+          "cost_basis_usd": 860.03,
+          "underwater": true
         },
         {
           "wallet": "0x569c7ecd379bedec9c98bd89b5c80b27784eb610",
-          "entry_vwap_usd": 9.21306e-05,
-          "entry_vs_current": 0.3237,
-          "cost_basis_usd": 84.04,
-          "underwater": false
+          "entry_vwap_usd": 0.0006530349,
+          "entry_vs_current": 2.2942,
+          "cost_basis_usd": 595.66,
+          "underwater": true
         }
       ]
     },
