@@ -1,5 +1,9 @@
 # HANDOFF — lanjutkan TopWallet tanpa kehilangan konteks
 
+> ⚠️ **BACA DULU: `SECURITY_POLICY.md`** — kerja berat WAJIB di VPS, lokal
+> hanya memory/results/kode/tests; supply-chain check sebelum install tool
+> apa pun. Supervisor menolak jalan di lokal (guard terpasang, dites).
+>
 > Dokumen ini ditulis agar sesi berikutnya bisa langsung lanjut. Baca ini
 > dulu, lalu PROGRESS.md untuk kronologi lengkap, dan **docs/ROADMAP.md untuk
 > scope asli yang diperluas** (Phase 2 = "bedah wallet": PnL truth engine,

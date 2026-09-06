@@ -88,6 +88,19 @@ READ FIRST: `HANDOFF.md` (resume state), `docs/ROADMAP.md` (the REAL expanded sc
 
 ## User constraints & preferences
 
+- ⚠️ **EXECUTION POLICY (non-negotiable, see SECURITY_POLICY.md): ALL heavy
+  work — scraping, pipeline stages, verification, supervisor, monitor, any
+  internet-exposed tool — MUST run on the VPS (78.31.250.202). The local
+  machine is the user's personal daily driver holding crypto wallets: run
+  NOTHING heavy there. Local is only for memory, results, wallet lists,
+  code edits, and offline unit tests. The supervisor script enforces this
+  (refuses without TOPWALLET_RUN_ENV=vps). Never bypass.
+- ⚠️ **SUPPLY-CHAIN RULE**: before installing ANY third-party tool/library
+  (OSS or not, popular or not), audit it: last release date, maintainer
+  health, typosquat/poisoning patterns, pinned exact version. Report to the
+  user and get explicit approval; install only inside the VPS venv. When in
+  doubt, write the small function yourself — this repo is dependency-minimal
+  by design.
 - Secrets live ONLY in `.env` (gitignored) — GitHub token, RPC endpoints.
   Never hardcode or commit them.
 - Do NOT use CAPTCHA-solving services or fingerprint spoofing to bypass
