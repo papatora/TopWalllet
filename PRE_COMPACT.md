@@ -16,6 +16,33 @@
 
 ---
 
+## SNAPSHOT S-6 — 2026-09-07 dini hari (supervisor overnight AKTIF)
+
+**State:**
+- User minta: verification yang lambat (Blockscout 500-an) jalan otomatis semalam
+  → dibuat **supervisor** (`scripts/supervisor.py`, commit `ec3cb2e`), SEDANG
+  JALAN di lokal (background): loop pipeline enrich,prices,analyze + heartbeat
+  `results/supervisor_status.json` (update tiap 30s) + watchdog per jam via
+  ZAI GLM-5.3-flash coding-plan endpoint (key di .env ZAI_API_KEY) →
+  `results/night_watch.log`
+- Patch resilience: BlockscoutClient health counter + circuit breaker
+  (is_degraded → verifier nunggu API pulih, tidak membakar retry), R2 progress
+  log per 10 wallet. 23 tests hijau.
+- Data: enrich 703/703 selesai (klasifikasi baru), prices 8.471 titik/60 pool.
+  Analyze+verification (101 wallet × 3 trade) berjalan di bawah supervisor —
+  besok cek hasilnya.
+- **Besok pagi cara cek (urut):**
+  1. `cat results/supervisor_status.json` → phase/cycle/top_wallets/updated_at
+  2. `cat results/night_watch.log` → penilaian GLM per jam
+  3. `python -m src.cli stats` → top wallet terverifikasi
+  4. `cat results/whale_entry_maps.json` → Whale Entry Map per token (fitur baru!)
+- Catatan fairness: run sebelumnya gugur 65 wallet saat Blockscout 500-san
+  berat (1.856 error) — sebagian mungkin gugur karena API down, bukan halu.
+  Verifier sekarang nunggu API pulih; supervisor bakal me-retry analyze.
+- VPS belum dideploy malam ini (tak ada sshpass di Windows untuk password
+  auth) — besok: `sudo bash setup.sh` di VPS (78.31.250.202) cukup satu
+  perintah; supervisor lokal ini tetap aman untuk semalam.
+
 ## SNAPSHOT S-5 — 2026-09-06, sesi lanjutan (run resume berjalan)
 
 **Progress run resume (laporan berkala):**
