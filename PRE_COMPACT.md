@@ -16,7 +16,31 @@
 
 ---
 
-## SNAPSHOT S-6 — 2026-09-07 dini hari (supervisor overnight AKTIF)
+## SNAPSHOT S-7 — 2026-09-07 (KEBIJAKAN BARU: VPS-ONLY, lokal supervisor dihentikan)
+
+**Insiden & koreksi:**
+- User marah (BENAR): agent menjalankan scraping+verification berat FULL LOCAL
+  semalaman padahal user sudah kasih VPS + proxies. Local = 1 IP statis (lambat,
+  di-rate-limit) + mesin pribadi (risiko supply-chain dari OSS tools).
+- **SEMUA supervisor/pipeline lokal SUDAH DIHENTIKAN** (0 python processes).
+- Policy baru mengikat: **`SECURITY_POLICY.md`** (WAJIB dibaca agent, isinya
+  aturan bernomor yang tidak bisa dinegosiasi):
+  - Rule 1: kerja berat/scraping/internet-exposed = VPS ONLY; lokal hanya
+    memory/results/code/unit-tests.
+  - Rule 2: supervisor menolak jalan tanpa `TOPWALLET_RUN_ENV=vps` (guard di
+    kode sudah dites menolak); bypass hanya `FORCE_LOCAL=true` oleh USER.
+  - Rule 3: supply-chain hygiene — sebelum install tool/library apa pun
+    (OSS sekalipun): cek kesehatan repo, tanggal rilis, typosquat, pin versi,
+    LAPOR ke user dulu, install hanya di venv VPS.
+  - Rule 4–6: secrets di .env, jangan halu PnL, checklist kerja agent.
+**State teknis:** enrich 703/703 + prices (8.471 titik) SUDAH tersimpan di
+data/topwallet.db lokal — nanti di-migrate/ulang di VPS (setup.sh). Whale map
++ verifier circuit-breaker + supervisor (dengan guard) sudah di-push.
+**Langkah berikutnya:** deploy VPS (perintah di SECURITY_POLICY.md bawah —
+user jalankan `ssh root@78.31.250.202` lalu paste setup), lalu semua cycle
+jalan di sana; lokal cuma git pull + baca hasil.
+
+## SNAPSHOT S-6 — 2026-09-07 dini hari (supervisor overnight AKTIF — KINI DIHENTIKAN, lihat S-7)
 
 **State:**
 - User minta: verification yang lambat (Blockscout 500-an) jalan otomatis semalam

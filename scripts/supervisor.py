@@ -146,6 +146,24 @@ def run_pipeline_cycle(cycle: int) -> None:
 
 
 def main() -> int:
+    # ── SECURITY POLICY guard (SECURITY_POLICY.md, Rule 2) ──────────────────
+    # The supervisor runs heavy scraping + verification: VPS ONLY. The local
+    # machine holds the user's wallets — supply-chain + performance rules
+    # forbid running this locally. Agents may NOT bypass; only the USER sets
+    # FORCE_LOCAL=true with their own hands.
+    run_env = os.getenv("TOPWALLET_RUN_ENV", "")
+    if run_env != "vps" and os.getenv("FORCE_LOCAL") != "true":
+        print(
+            "[supervisor] REFUSED: heavy pipeline must run on the VPS "
+            "(SECURITY_POLICY.md Rule 1-2). Start it there with:\n"
+            "  TOPWALLET_RUN_ENV=vps python scripts/supervisor.py\n"
+            "Local runs are limited to unit tests + reading results. "
+            "If (and only if) the USER explicitly accepts the risk, they can "
+            "run here with FORCE_LOCAL=true.",
+            flush=True,
+        )
+        return 2
+
     print(f"[supervisor] starting; status → {STATUS_FILE}", flush=True)
     write_status({"phase": "boot", "cycle": 0, "pid": os.getpid(),
                   "top_wallets": None, "last_exit": None})
