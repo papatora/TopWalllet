@@ -39,7 +39,9 @@ CEX_KEYWORDS = ("binance", "bybit", "okx", "gate", "mexc", "bitget", "kucoin",
                 "crypto.com", "stargate", "bridge", "router", "across", "socket")
 
 
-def _short(addr: str | None) -> str:
+def _short(addr) -> str:
+    if isinstance(addr, dict):
+        addr = addr.get("hash", "")
     return (addr or "").lower()
 
 
@@ -67,10 +69,11 @@ async def first_funding(bc: BlockscoutClient, wallet: str, max_pages: int = 4) -
     if oldest_incoming is None:
         return {}
     frm = oldest_incoming.get("from") or {}
+    frm_hash = frm.get("hash", "") if isinstance(frm, dict) else str(frm)
     return {
-        "funder": frm.get("hash", "").lower(),
-        "funder_label": frm.get("name") or "",
-        "funder_is_contract": bool(frm.get("is_contract")),
+        "funder": frm_hash.lower(),
+        "funder_label": frm.get("name") or "" if isinstance(frm, dict) else "",
+        "funder_is_contract": bool(frm.get("is_contract")) if isinstance(frm, dict) else False,
         "amount_eth": float(oldest_incoming.get("value", 0)) / 1e18,
         "block": oldest_incoming.get("block_number"),
         "ts": oldest_incoming.get("timestamp"),
