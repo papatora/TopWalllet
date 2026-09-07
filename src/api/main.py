@@ -14,7 +14,10 @@ from fastapi import FastAPI, HTTPException, Query
 
 from config.settings import settings
 
-app = FastAPI(title="TopWallet API", version="0.1.0")
+app = FastAPI(title="TopWallet API", version="0.2.0")
+
+from src.api.v2 import router as v2_router
+app.include_router(v2_router)
 
 
 def _results() -> Path:
