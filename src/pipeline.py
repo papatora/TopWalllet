@@ -721,8 +721,23 @@ class Pipeline:
         await session.commit()
 
         if do_export:
+            # --- wallet classification (docs/WALLET_TAXONOMY.md): assign
+            # labels + primary type to every wallet with swap history, before
+            # the ranked list ships. Never breaks the pipeline. ---
+            cls_counts: dict = {}
+            try:
+                from src.analyze.wallet_classifier import classify_all_wallets
+
+                cls_counts = await classify_all_wallets(session, ranked=ranked)
+                jlog(log, logging.INFO, "wallet classification complete",
+                     wallets_classified=cls_counts.get("wallets_classified", 0),
+                     labels_assigned=cls_counts.get("labels_assigned", 0))
+            except Exception as e:
+                jlog(log, logging.WARNING, "wallet classification failed",
+                     error=str(e)[:200])
             counts = await self._db_counts(session)
             counts.update({"wallets_scored": len(scored), "wallets_excluded": excluded})
+            counts.update({k: v for k, v in cls_counts.items() if isinstance(v, int)})
             export_results(ranked, symbols, counts, started)
             if do_push and settings.auto_push_results and settings.github_token:
                 from src.utils.github_pusher import push_results

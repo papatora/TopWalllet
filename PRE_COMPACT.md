@@ -240,3 +240,31 @@ hanya berisi PnL positif. Hasil grouping: results/wallet_scenario_groups.json.
 - Wallet yang lolos 3 pass = `TRIPLE_VERIFIED` → baru eligible copytrade tier
 - Implementasi: kolom `verification_passes` di WalletScore + supervisor menjalankan
   re-verify pass berkala (queue by oldest verification date)
+
+## SNAPSHOT S-13 — 2026-09-07 (3-STREAM WORK ORDER + GROUPING LISTS + ANTI-SKIP RULE)
+
+**Arahan user (WAJIB dieksekusi session berikutnya):**
+1. **3 STREAM PARALEL di VPS** (berdiri sendiri, tidak ganggu supervisor cycle):
+   - **STREAM 1 — DEPLOYER GROUPING**: bangun list deployer wallet (semua
+     wallet yang first-buy ≤300 blok pool creation) → kelompokkan per funder →
+     output `results/deployer_registry.md` + `.json`: deployer address, token
+     yang dia launch, funder-nya siapa, rug pattern (early entry + fast flip
+     count), cluster id. Tujuan: biar deepcheck per wallet tinggal lookup
+     "ini deployer apa bukan" tanpa hitung ulang.
+   - **STREAM 2 — AUDITOR (deep-check per wallet)**: full forensics 10–30
+     menit/wallet — buy/sell/timing, airdrop vs buy, dev atau bukan, hold
+     bersamaan (co-holders), funding chain sampai asal. **ATURAN KERAS:
+     rate limit TIDAK BOLEH bikin wallet di-skip** — wallet wajib selesai
+     dulu (tunggu rate limit pulih), baru lanjut wallet berikutnya.
+   - **STREAM 3 — RE-VERIFIER**: round-robin 3× per wallet (R1-R3 sekarang,
+     7 hari, 30 hari) — dari S-12.
+2. **GROUPING LISTS WAJIB ADA** (MD + JSON per kategori, auto-generated):
+   `deployer_registry.md`, `funding_sources.md` (funder → total wallet
+   didanai → total ETH → cluster), `wallet_labels.json` (dari classifier),
+   dipisah kategori biar deepcheck 1 wallet = lookup cepat semua kategori.
+3. **4K wallet existing: biarkan** — terus nambah otomatis. 3 stream di atas
+   memproses bertahap. Target akhir: menemukan GOLD/DIAMOND wallet di tumpukan
+   yang 98% serial rugger — tugas kita memfilter rugger itu.
+4. Privacy tx tidak menyembunyikan semuanya — on-chain data tetap ada,
+   tinggal deepcheck. Limitasi utama = API rate limit (sudah ada circuit
+   breaker; tambahkan queue anti-skip per stream).

@@ -148,6 +148,25 @@ class WalletScore(Base):
     cluster_id: Mapped[str | None] = mapped_column(String(64), nullable=True)
 
 
+class WalletLabel(Base):
+    """One classification label for a wallet (docs/WALLET_TAXONOMY.md).
+
+    A wallet can carry multiple labels (e.g. SNIPER + CLUSTER_MEMBER:cluster_f70d);
+    the primary type is derived at classification time (priority order 1→14).
+    `evidence` is a JSON blob citing real blocks/txs/funders/tokens from the DB.
+    Labels are NOT verdicts — SMART_TRACKER still requires the hard verifier.
+    """
+    __tablename__ = "wallet_labels"
+    __table_args__ = (UniqueConstraint("wallet_address", "label", name="uq_wallet_label"),)
+
+    wallet_address: Mapped[str] = mapped_column(
+        ForeignKey("wallets.address"), primary_key=True)
+    label: Mapped[str] = mapped_column(String(64), primary_key=True)
+    confidence: Mapped[float] = mapped_column(Float, default=0.0)  # 0–1
+    evidence: Mapped[str] = mapped_column(Text, default="{}")      # JSON blob
+    assigned_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
+
+
 class PipelineCheckpoint(Base):
     __tablename__ = "pipeline_checkpoints"
 
