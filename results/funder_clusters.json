@@ -1,0 +1,20 @@
+{
+  "generated_at": "2026-09-07T07:44:42.691092+00:00",
+  "cluster_id": "cluster_f70d",
+  "funder": {
+    "address": "0xf70da97812cb96acdf810712aa562db8dfa3dbef",
+    "eth_balance": 250.895,
+    "type": "EOA_operator",
+    "label": null
+  },
+  "funded_wallets": 26,
+  "notable": {
+    "0xccc88a9d1b4ed6b0ea": "20x funding (ops hub)",
+    "0x4cd00e387622c35bdd": "6x funding"
+  },
+  "top38_members_funded_by_cluster": [
+    "0xb1BC77CC39e0\u2026",
+    "0xbed4721cAC12\u2026"
+  ],
+  "note": "Fleet operator menguasai 26 wallet; 2 di antaranya lolos verifikasi Top-38. Cluster attribution phase 2 akan menandai seluruh 26 wallet ini saat pipeline menemukannya."
+}
