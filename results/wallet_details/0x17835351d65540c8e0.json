@@ -341,8 +341,8 @@
       "pnl_usd": -17.54,
       "return_multiple": 0.9821,
       "hold_hours": 0.01,
-      "entry_pctile": 0.21327433628318584,
-      "exit_pctile": 0.1920353982300885
+      "entry_pctile": 0.21289752650176677,
+      "exit_pctile": 0.1918656056587091
     },
     {
       "token": "NASDANQ",

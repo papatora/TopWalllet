@@ -1,11 +1,11 @@
 {
-  "phase": "pipeline",
+  "phase": "pipeline_done",
   "cycle": 3,
   "pid": 30631,
   "top_wallets": 40,
-  "last_exit": null,
-  "updated_at": "2026-09-07T04:42:16.532867+00:00",
-  "log_tail": "04:42:14 INFO    httpx: HTTP Request: POST https://rpc.mainnet.chain.robinhood.com \"HTTP/1.1 200 OK\" | 04:42:15 INFO    httpx: HTTP Request: POST https://rpc.mainnet.chain.robinhood.com \"HTTP/1.1 200 OK\"",
+  "last_exit": 0,
+  "updated_at": "2026-09-07T05:17:47.530782+00:00",
+  "log_tail": "resses/0x0355a5a10cdf2bb1d41ff557b582dfe3435274ce/token-transfers?type=ERC-20&token=0xe612c939d82981f8e17ccac3b59c1084c2aa02bb \"HTTP/1.1 200 OK\" | 05:17:43 INFO    httpx: HTTP Request: GET https://robinhoodchain.blockscout.com/api/v2/addresses/0x0355a5a10cdf2bb1d41ff557b582dfe3435274ce/token-transfers?type=ERC-20&token=0xe612c939d82981f8e17ccac3b59c1084c2aa02bb \"HTTP/1.1 500 Internal Server Error\"",
   "pipeline_pid": 33780,
   "stats": {
     "tokens_in_db": 62,
