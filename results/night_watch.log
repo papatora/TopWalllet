@@ -11,3 +11,6 @@
 [2026-09-06T23:01:22.129788+00:00] 
 [2026-09-07T00:00:03.623771+00:00] facts={"utc": "2026-09-07T00:00:01.234661+00:00", "run_env": "vps", "status_file": true, "supervisor_updated_at": "2026-09-06T23:59:31.274032+00:00", "heartbeat_age_min": 0.5, "heartbeat_fresh": true, "supervisor_pid": 27427, "supervisor_alive": true, "pipeline_alive": true, "phase": "pipeline", "cycle": 3, "top_wallets": 40} | llm_action=NONE (Everything alive, heartbeat fresh; no restart needed) | result=none
 [2026-09-07T00:01:24.625545+00:00] 
+[2026-09-07T00:33:04.659007+00:00] 
+[2026-09-07T01:00:07.992067+00:00] facts={"utc": "2026-09-07T01:00:01.976674+00:00", "run_env": "vps", "status_file": true, "supervisor_updated_at": "2026-09-07T00:33:01.621341+00:00", "heartbeat_age_min": 27.0, "heartbeat_fresh": true, "supervisor_pid": 27427, "supervisor_alive": true, "pipeline_alive": false, "phase": "pipeline_done", "cycle": 14, "top_wallets": 40} | llm_action=RESTART_SUPERVISOR (Supervisor alive but pipeline dead; restart supervisor) | result=supervisor started
+[2026-09-07T01:01:09.529464+00:00] 

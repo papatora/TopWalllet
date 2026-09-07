@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T00:22:21.469478+00:00",
+  "generated_at": "2026-09-07T01:27:05.223207+00:00",
   "maps": {
     "0x62cd5cd9d354a2a50affe9efa21c8918b9640a5b": {
       "current_price_usd": 0.000646371224939548,
@@ -349,48 +349,48 @@
       ]
     },
     "0x6c09a2a9585839b34a7ab31b07bf8cb169e7d71a": {
-      "current_price_usd": 6.086753844113045e-05,
+      "current_price_usd": 0.00010890359219573942,
       "whale_count": 5,
-      "whale_avg_entry_price": 4.952039762644766e-05,
-      "pct_whales_at_or_above_current": 0.2,
+      "whale_avg_entry_price": 6.989821574191301e-05,
+      "pct_whales_at_or_above_current": 0.0,
       "jumbo_above_current": 0,
-      "conviction_score": 14.0,
+      "conviction_score": 0.0,
       "verdict": "DANGER",
       "whales": [
         {
-          "wallet": "0x09e3eedf5462d1431be9af67d1fd52f1b11a84fb",
-          "entry_vwap_usd": 4.668e-05,
-          "entry_vs_current": 0.7669,
-          "cost_basis_usd": 1865.6,
+          "wallet": "0x3567dc298c6a1b21b71250988542be00ed7ce07d",
+          "entry_vwap_usd": 7.05432e-05,
+          "entry_vs_current": 0.6478,
+          "cost_basis_usd": 2245.55,
           "underwater": false
         },
         {
-          "wallet": "0x3567dc298c6a1b21b71250988542be00ed7ce07d",
-          "entry_vwap_usd": 5.0189e-05,
-          "entry_vs_current": 0.8246,
-          "cost_basis_usd": 1597.63,
+          "wallet": "0x09e3eedf5462d1431be9af67d1fd52f1b11a84fb",
+          "entry_vwap_usd": 5.61443e-05,
+          "entry_vs_current": 0.5155,
+          "cost_basis_usd": 2243.84,
           "underwater": false
         },
         {
           "wallet": "0x5c32fa43993a6897ff613f832596d5d801d7d755",
-          "entry_vwap_usd": 4.98903e-05,
-          "entry_vs_current": 0.8197,
-          "cost_basis_usd": 911.21,
+          "entry_vwap_usd": 7.69196e-05,
+          "entry_vs_current": 0.7063,
+          "cost_basis_usd": 1404.88,
           "underwater": false
         },
         {
           "wallet": "0x029969fd49493f70c962a4206e31e5ad9502cabe",
-          "entry_vwap_usd": 6.0437e-05,
-          "entry_vs_current": 0.9929,
-          "cost_basis_usd": 263.09,
+          "entry_vwap_usd": 0.0001032232,
+          "entry_vs_current": 0.9478,
+          "cost_basis_usd": 449.34,
           "underwater": false
         },
         {
           "wallet": "0x74a91fa178dc8b02c534b72bd0cfb30e623a181b",
-          "entry_vwap_usd": 6.10513e-05,
-          "entry_vs_current": 1.003,
-          "cost_basis_usd": 88.61,
-          "underwater": true
+          "entry_vwap_usd": 0.0001010807,
+          "entry_vs_current": 0.9282,
+          "cost_basis_usd": 146.71,
+          "underwater": false
         }
       ]
     },
