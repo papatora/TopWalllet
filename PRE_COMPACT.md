@@ -310,3 +310,11 @@ Target: **100K+ wallets**, universe 300-500 tokens, dan bangun produk:
 3. Setelah M1-M2: deploy web di VPS port via systemd + Caddy TLS
 4. Semua milestone: pytest hijau → PRE_COMPACT update → push → Obsidian sync
 5. Catatan SSH: jangan reconnect terlalu cepat (kena reset 10054, tunggu 30s+)
+
+## SNAPSHOT S-16 — M1 FEED DATA LAYER DONE (commit 7d23a6f, 58 tests green)
+- FeedEvent model + src/feed/events.py (make_event_id, freshness_band, backfill)
+- CLI: python -m src.cli backfill; dry-run: 6.197 events (ADD 2001/ENTRY 1918/
+  EXIT 1390/TRIM 827/CALL 60/ROTATION 1), idempotent
+- **NEXT = M2: API v2** (/feed /stream /wallet /token /whale-map /clusters
+  /status /methodology + hardening §8.2) → lalu M3 hero+feed page (URL untuk user)
+- VPS deploy M1: ssh → git reset --hard origin/main → restart supervisor
