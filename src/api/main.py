@@ -16,6 +16,12 @@ from config.settings import settings
 
 app = FastAPI(title="TopWallet API", version="0.2.0")
 
+from src.db.database import init_db
+
+@app.on_event("startup")
+async def _startup():
+    await init_db()
+
 from src.api.v2 import router as v2_router
 app.include_router(v2_router)
 
