@@ -170,3 +170,19 @@ jalan di sana; lokal cuma git pull + baca hasil.
   PoolManager v4 chain-specific; GMGN/fomo punya robinhood (CF-blocked untuk
   plain HTTP); user punya VPS, proxy Webshare/DataImpulse, 2chapta (dibatasi
   aturan: tidak dipakai untuk bypass CF), X accounts (untuk phase CT nanti)
+
+## SNAPSHOT S-9 — 2026-09-07 siang (fomo/GMGN scraping status)
+- Browser automation (playwright+chromium) terpasang di VPS untuk scraping
+  fomo.family + GMGN → DIBLOKIR Cloudflare di kedua situs (headless dicurigai;
+  halaman challenge ter-render, 0 data). Sesuai policy, TIDAK pakai
+  stealth-evasion. Script tersimpan scripts/scrape_social.py (cookie sanitizer
+  sudah benar; tinggal jalan kalau nanti ada clearance yang valid).
+- **Yang dibutuhkan dari user**: dari browser yang login fomo.family →
+  F12 → Network → klik request ke prod-api.fomo.family → Copy as cURL →
+  paste ke agent. cURL itu berisi headers + token yang benar-benar lolos.
+  Alternatif: biarkan pipeline on-chain menemukan wallet yang sama secara
+  organik (universe ekspansi MAX_TOKENS=300 + Blockscout chain-wide discovery
+  sudah jalan di VPS — 99 kandidat token, cycle otomatis per supervisor).
+- Cluster_f70d (funder 250 ETH, 26 wallet, 2 di top-38) menunggu deep-trace:
+  cek apa 0xccc88a9d (ops hub, 20x funding) → akan masuk otomatis kalau
+  wallet-nya trading token terlacak.
