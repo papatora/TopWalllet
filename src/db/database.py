@@ -20,7 +20,8 @@ def get_engine():
             # ensure the sqlite file's directory exists
             db_path = url.split("///")[-1]
             Path(db_path).parent.mkdir(parents=True, exist_ok=True)
-        _engine = create_async_engine(url, echo=False, pool_pre_ping=True)
+        _engine = create_async_engine(url, echo=False, pool_pre_ping=True,
+                                     connect_args={"timeout": 30} if url.startswith("sqlite") else {})
     return _engine
 
 
