@@ -26,3 +26,4 @@ logs/*.log.*
 Thumbs.db
 .idea/
 .vscode/
+fomo_cookies.json

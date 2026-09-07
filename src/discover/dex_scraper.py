@@ -130,6 +130,29 @@ class TokenDiscovery:
     async def _candidate_addresses(self) -> set[str]:
         chain = settings.chain
         candidates: set[str] = set()
+
+        # PRIMARY source: Blockscout chain-wide token list (market-cap ordered,
+        # covers EVERY token on the chain — DexScreener only surfaces trending)
+        from src.discover.holder_scraper import BlockscoutClient
+
+        bc = BlockscoutClient()
+        try:
+            bc_items = await bc.chain_tokens(max_pages=10)
+            exclude = {settings.usdg_address, settings.weth_address,
+                       "0x0000000000000000000000000000000000000000"}
+            for it in bc_items:
+                t = it.get("token") or it
+                addr = (t.get("address_hash") or t.get("address") or "").lower()
+                if addr.startswith("0x") and addr not in exclude:
+                    candidates.add(addr)
+            jlog(log, logging.INFO, "blockscout chain tokens harvested",
+                 candidates=len(candidates), pages=10)
+        except Exception as e:
+            jlog(log, logging.WARNING, "blockscout chain token harvest failed", error=str(e)[:150])
+        finally:
+            await bc.close()
+
+        # SECONDARY: DexScreener trending/profiles/search (adds fresh tokens)
         for coro in (self.client.token_profiles(), self.client.token_boosts()):
             for entry in await coro:
                 if entry.get("chainId") == chain:

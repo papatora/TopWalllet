@@ -109,6 +109,23 @@ class BlockscoutClient:
                 url = url.replace(self.base, "")
         return items[:max_items]
 
+    async def chain_tokens(self, max_pages: int = 8) -> list[dict]:
+        """Chain-wide ERC-20 token list, ordered by market cap (Blockscout).
+        This is the chain-COMPLETE universe — not just DexScreener-trending."""
+        items: list[dict] = []
+        url: str | None = "/api/v2/tokens"
+        for _ in range(max_pages):
+            if not url:
+                break
+            data = await self.get_json(url)
+            if not isinstance(data, dict):
+                break
+            items.extend(data.get("items", []))
+            url = data.get("next_page_url")
+            if url:
+                url = url.replace(self.base, "")
+        return items
+
     async def token_transfers(self, ca: str, max_pages: int) -> list[dict]:
         items: list[dict] = []
         url: str | None = f"/api/v2/tokens/{ca}/transfers"
