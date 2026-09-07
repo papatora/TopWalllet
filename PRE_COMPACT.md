@@ -339,3 +339,12 @@ Target: **100K+ wallets**, universe 300-500 tokens, dan bangun produk:
 - 60 tests green, commit 760b2e1
 - NEXT SESSION: (1) verifikasi /api/v2/feed 200 (2) jalankan backfill (3) M3
   frontend hero+feed per docs/ULTIMATE_PROMPT_SMART_MONEY_FEED.md §7 + §0
+
+## SNAPSHOT S-19 — SMART MONEY FEED LIVE 🎉
+- Frontend M3 LIVE: http://78.31.250.202:8000/ (hero + live feed, design system §7)
+- /api/v2/feed serving REAL events (EXIT/ENTRY/ADD dsb dari 6K+ backfill —
+  backfill2 masih melanjutkan sisanya, idempotent)
+- supervisor + api systemd active; SSH rate-limit sering 10054 — tunggu 2-3
+  menit antar koneksi
+- NEXT: M4 depth pages (wallet dossier /token whale-map /leaderboard /
+  methodology), M5 block follower, M6 clusters view + tiering
