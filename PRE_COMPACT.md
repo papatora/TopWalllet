@@ -360,3 +360,23 @@ Target: **100K+ wallets**, universe 300-500 tokens, dan bangun produk:
 - M4-M6 tersisa: wallet dossier page, whale map visual, cluster graph,
   block follower real-time, tiering S/A/B — semua spec di
   docs/ULTIMATE_PROMPT_SMART_MONEY_FEED.md
+
+## SNAPSHOT S-21 — 2026-09-07 malam (WEBSITE CLOSED, ecosystem mapping live)
+
+- **Website DITUTUP** per user (data masih sedikit + perlu revamp habis-habisan):
+  topwallet-api stopped+disabled, ufw port 8000 deleted. Bangun ulang NANTI
+  saat data matang (spec tetap: docs/ULTIMATE_PROMPT_SMART_MONEY_FEED.md).
+- **Fokus sekarang: PnL-in + kategori-in semua wallet.**
+- Classifier v2 results (results/wallet_labels.json, ter-push): 1.310 wallet,
+  **9 funder clusters** (ad06acf9=12, be41=8, 2e9839d9=7, f70d, dst), 107
+  INSIDER, 3 DEV, 2 CT_ATTRIBUTED, 2 SNIPER, sisanya GENERALIST.
+- Analyze cycle berjalan (verification R2 ±1 jam) → ranked baru dengan filter
+  PnL>1$ (23 wallet trash otomatis keluar dari 39 lama).
+- Wallet scenario groups: results/wallet_scenario_groups.json (hanya 1 wallet
+  PROFIT_POSITIVE saat ini — jujur; universe ekspansi terus menambah kandidat).
+- **NEXT SESSION (urutan):**
+  1. Cek hasil analyze cycle: ranked baru + labels ter-update
+  2. Build 3-stream (S-13): deployer_registry, funding_sources grouping lists,
+     auditor queue anti-skip, re-verifier round-robin
+  3. GMGN criteria → anti_gaming enrichment (bundler/insider/phishing per token)
+  4. Website revamp HANYA setelah data matang (300-500 token, ratusan verified)
