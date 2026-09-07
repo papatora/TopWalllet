@@ -342,7 +342,7 @@
       "return_multiple": 0.9821,
       "hold_hours": 0.01,
       "entry_pctile": 0.21365248226950354,
-      "exit_pctile": 0.19237588652482268
+      "exit_pctile": 0.1928888888888889
     },
     {
       "token": "NASDANQ",

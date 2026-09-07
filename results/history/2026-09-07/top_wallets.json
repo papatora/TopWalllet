@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-07T08:03:03.075718+00:00",
+  "generated_at": "2026-09-07T10:41:25.126215+00:00",
   "chain": "robinhood",
   "chain_id": 4663,
-  "total_ranked": 37,
+  "total_ranked": 39,
   "wallets": [
     {
       "rank": 1,
@@ -2166,6 +2166,200 @@
     },
     {
       "rank": 25,
+      "wallet_address": "0x5619fF7F7474a0F8D8a6323A2e83E61D4E75F7B5",
+      "composite_score": 10.01,
+      "metrics": {
+        "total_positions": 25,
+        "winning_positions": 0,
+        "win_rate": 0.0,
+        "median_return_multiple": 1.0,
+        "max_return_multiple": 1.004,
+        "total_realized_pnl_usd": 1.1,
+        "total_unrealized_pnl_usd": -37.39,
+        "avg_hold_duration_hours": 0.76,
+        "consistency_score": 0.0,
+        "dip_buying_accuracy": 0.0,
+        "top_selling_accuracy": 1.0,
+        "distinct_tokens": 1,
+        "big_wins_10x_plus": 0,
+        "recent_win_rate": 0.0,
+        "active_months": 1,
+        "last_active": "2026-09-07T10:22:16+00:00"
+      },
+      "top_trades": [
+        {
+          "token": "PIPEDOG",
+          "ca": "0x5Cb6F181081301b44905F3ae15419112ecaBd8A6",
+          "entry_price_usd": 0.003251015001470686,
+          "exit_price_usd": 0.0032640568246876354,
+          "return_multiple": 1.0,
+          "position_size_usd": 1360.69,
+          "pnl_usd": 5.46,
+          "entry_date": "2026-09-06",
+          "exit_date": "2026-09-06"
+        },
+        {
+          "token": "PIPEDOG",
+          "ca": "0x5Cb6F181081301b44905F3ae15419112ecaBd8A6",
+          "entry_price_usd": 0.003280214972811591,
+          "exit_price_usd": 0.003281554586557933,
+          "return_multiple": 1.0,
+          "position_size_usd": 1313.93,
+          "pnl_usd": 0.54,
+          "entry_date": "2026-09-06",
+          "exit_date": "2026-09-06"
+        },
+        {
+          "token": "PIPEDOG",
+          "ca": "0x5Cb6F181081301b44905F3ae15419112ecaBd8A6",
+          "entry_price_usd": 0.0032640568246876354,
+          "exit_price_usd": 0.0032640568246876354,
+          "return_multiple": 1.0,
+          "position_size_usd": 1329.48,
+          "pnl_usd": 0,
+          "entry_date": "2026-09-06",
+          "exit_date": "2026-09-06"
+        },
+        {
+          "token": "PIPEDOG",
+          "ca": "0x5Cb6F181081301b44905F3ae15419112ecaBd8A6",
+          "entry_price_usd": 0.003264721526554574,
+          "exit_price_usd": 0.003264721526554574,
+          "return_multiple": 1.0,
+          "position_size_usd": 1257.9,
+          "pnl_usd": 0,
+          "entry_date": "2026-09-06",
+          "exit_date": "2026-09-06"
+        },
+        {
+          "token": "PIPEDOG",
+          "ca": "0x5Cb6F181081301b44905F3ae15419112ecaBd8A6",
+          "entry_price_usd": 0.003264721526554574,
+          "exit_price_usd": 0.003264721526554574,
+          "return_multiple": 1.0,
+          "position_size_usd": 1232.6,
+          "pnl_usd": 0,
+          "entry_date": "2026-09-06",
+          "exit_date": "2026-09-06"
+        },
+        {
+          "token": "PIPEDOG",
+          "ca": "0x5Cb6F181081301b44905F3ae15419112ecaBd8A6",
+          "entry_price_usd": 0.003264721526554574,
+          "exit_price_usd": 0.003119,
+          "return_multiple": 0.96,
+          "position_size_usd": 837.67,
+          "pnl_usd": null,
+          "entry_date": "2026-09-07",
+          "exit_date": null
+        }
+      ],
+      "verification": {
+        "verdict": "verified",
+        "eth_oracle_ok": true,
+        "trades_verified": "3/3",
+        "details": []
+      },
+      "trading_style": "top_seller_scalper",
+      "risk_flags": [
+        "SINGLE_TOKEN_SAMPLE"
+      ],
+      "cluster_id": "cluster_f52857d7"
+    },
+    {
+      "rank": 26,
+      "wallet_address": "0x3A8982399F7a72f0B57f0833b87549bC37C1B523",
+      "composite_score": 10.0,
+      "metrics": {
+        "total_positions": 9,
+        "winning_positions": 0,
+        "win_rate": 0.0,
+        "median_return_multiple": 0.9993,
+        "max_return_multiple": 0.9994,
+        "total_realized_pnl_usd": -0.04,
+        "total_unrealized_pnl_usd": 0,
+        "avg_hold_duration_hours": 0.01,
+        "consistency_score": 0.0,
+        "dip_buying_accuracy": 0.6667,
+        "top_selling_accuracy": 0.0,
+        "distinct_tokens": 1,
+        "big_wins_10x_plus": 0,
+        "recent_win_rate": 0.0,
+        "active_months": 2,
+        "last_active": "2026-09-05T17:08:35+00:00"
+      },
+      "top_trades": [
+        {
+          "token": "ROBINHOOD",
+          "ca": "0x79Fe86b963255Ce884bdcaC6388C50a599Ba277f",
+          "entry_price_usd": 0.00013196558093417989,
+          "exit_price_usd": 0.0001318897546512808,
+          "return_multiple": 1.0,
+          "position_size_usd": 6.09,
+          "pnl_usd": -0.0,
+          "entry_date": "2026-08-28",
+          "exit_date": "2026-08-28"
+        },
+        {
+          "token": "ROBINHOOD",
+          "ca": "0x79Fe86b963255Ce884bdcaC6388C50a599Ba277f",
+          "entry_price_usd": 0.0001031190748428527,
+          "exit_price_usd": 0.00010305204766895384,
+          "return_multiple": 1.0,
+          "position_size_usd": 6.09,
+          "pnl_usd": -0.0,
+          "entry_date": "2026-08-31",
+          "exit_date": "2026-08-31"
+        },
+        {
+          "token": "ROBINHOOD",
+          "ca": "0x79Fe86b963255Ce884bdcaC6388C50a599Ba277f",
+          "entry_price_usd": 9.67282891773296e-05,
+          "exit_price_usd": 9.666337255586866e-05,
+          "return_multiple": 1.0,
+          "position_size_usd": 6.09,
+          "pnl_usd": -0.0,
+          "entry_date": "2026-09-03",
+          "exit_date": "2026-09-03"
+        },
+        {
+          "token": "ROBINHOOD",
+          "ca": "0x79Fe86b963255Ce884bdcaC6388C50a599Ba277f",
+          "entry_price_usd": 9.46053488178928e-05,
+          "exit_price_usd": 9.454114864395142e-05,
+          "return_multiple": 1.0,
+          "position_size_usd": 6.09,
+          "pnl_usd": -0.0,
+          "entry_date": "2026-08-31",
+          "exit_date": "2026-08-31"
+        },
+        {
+          "token": "ROBINHOOD",
+          "ca": "0x79Fe86b963255Ce884bdcaC6388C50a599Ba277f",
+          "entry_price_usd": 9.057536586873981e-05,
+          "exit_price_usd": 9.051254819949923e-05,
+          "return_multiple": 1.0,
+          "position_size_usd": 6.09,
+          "pnl_usd": -0.0,
+          "entry_date": "2026-09-01",
+          "exit_date": "2026-09-01"
+        }
+      ],
+      "verification": {
+        "verdict": "verified",
+        "eth_oracle_ok": true,
+        "trades_verified": "3/3",
+        "details": []
+      },
+      "trading_style": "dip_buyer_scalper",
+      "risk_flags": [
+        "DUST_ONLY",
+        "SINGLE_TOKEN_SAMPLE"
+      ],
+      "cluster_id": "cluster_f15168b7"
+    },
+    {
+      "rank": 27,
       "wallet_address": "0xF38013d1CAAA68251cD5FC0E0d18F3c97824374D",
       "composite_score": 10.0,
       "metrics": {
@@ -2257,7 +2451,7 @@
       "cluster_id": "cluster_f15168b7"
     },
     {
-      "rank": 26,
+      "rank": 28,
       "wallet_address": "0x505D2e7A715c9AF1D690204F43D75EaEa4EFaF10",
       "composite_score": 10.0,
       "metrics": {
@@ -2348,7 +2542,7 @@
       "cluster_id": "cluster_2e9839d9"
     },
     {
-      "rank": 27,
+      "rank": 29,
       "wallet_address": "0xad06Acf9A495f77a21E5c657E04B1E0258D23a32",
       "composite_score": 10.0,
       "metrics": {
@@ -2441,7 +2635,7 @@
       "cluster_id": "cluster_ad06acf9"
     },
     {
-      "rank": 28,
+      "rank": 30,
       "wallet_address": "0xde5d34705F2145541a75E49c5e8CC08F9Cd2d8Ce",
       "composite_score": 8.18,
       "metrics": {
@@ -2533,7 +2727,7 @@
       "cluster_id": "cluster_470e6be8"
     },
     {
-      "rank": 29,
+      "rank": 31,
       "wallet_address": "0x14FE9A5C647Fc916fe04FBD2822646d82AFA38D0",
       "composite_score": 6.25,
       "metrics": {
@@ -2625,7 +2819,7 @@
       "cluster_id": "cluster_470e6be8"
     },
     {
-      "rank": 30,
+      "rank": 32,
       "wallet_address": "0x7676a8a3dF4b74d391BF519029e7C7768Ca2A282",
       "composite_score": 6.0,
       "metrics": {
@@ -2717,7 +2911,7 @@
       "cluster_id": "cluster_f15168b7"
     },
     {
-      "rank": 31,
+      "rank": 33,
       "wallet_address": "0x977ae053E3A6909bA2bCfb1e316b6ff58606Ea56",
       "composite_score": 5.85,
       "metrics": {
@@ -2809,7 +3003,7 @@
       "cluster_id": "cluster_f15168b7"
     },
     {
-      "rank": 32,
+      "rank": 34,
       "wallet_address": "0xB1dC1e88579B075Dc209EF2ec1224bF8130201D5",
       "composite_score": 5.0,
       "metrics": {
@@ -2900,7 +3094,7 @@
       "cluster_id": "cluster_2e9839d9"
     },
     {
-      "rank": 33,
+      "rank": 35,
       "wallet_address": "0x70cf1B6e80aaE62Fe8e793EAc31870B9Ecf2D31A",
       "composite_score": 5.0,
       "metrics": {
@@ -2992,7 +3186,7 @@
       "cluster_id": "cluster_f15168b7"
     },
     {
-      "rank": 34,
+      "rank": 36,
       "wallet_address": "0xB9358D13906Da9F0B30fC322508b03D055E1aBd9",
       "composite_score": 4.51,
       "metrics": {
@@ -3083,7 +3277,7 @@
       "cluster_id": "cluster_2e9839d9"
     },
     {
-      "rank": 35,
+      "rank": 37,
       "wallet_address": "0x0630606D4abADdD08BE21506bC4585e57CF9fF98",
       "composite_score": 3.75,
       "metrics": {
@@ -3175,7 +3369,7 @@
       "cluster_id": "cluster_470e6be8"
     },
     {
-      "rank": 36,
+      "rank": 38,
       "wallet_address": "0x470E6BE8B2e62F9E5f697Ee854FAF15036DB588E",
       "composite_score": 2.14,
       "metrics": {
@@ -3267,7 +3461,7 @@
       "cluster_id": "cluster_470e6be8"
     },
     {
-      "rank": 37,
+      "rank": 39,
       "wallet_address": "0x5740db16B0a5F853A18cb467F1F1cDaA07125Da1",
       "composite_score": 2.14,
       "metrics": {

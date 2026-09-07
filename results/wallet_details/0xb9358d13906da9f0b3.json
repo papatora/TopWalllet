@@ -1,5 +1,5 @@
 {
-  "rank": 34,
+  "rank": 36,
   "wallet_address": "0xB9358D13906Da9F0B30fC322508b03D055E1aBd9",
   "composite_score": 4.51,
   "metrics": {
@@ -357,7 +357,7 @@
       "return_multiple": 0.9992,
       "hold_hours": 0.01,
       "entry_pctile": 0.34652956298200516,
-      "exit_pctile": 0.3429305912596401
+      "exit_pctile": 0.34310699588477367
     },
     {
       "token": "ROBINHOOD",

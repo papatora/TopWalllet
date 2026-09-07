@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T07:58:39.589152+00:00",
+  "generated_at": "2026-09-07T10:30:34.635230+00:00",
   "maps": {
     "0x62cd5cd9d354a2a50affe9efa21c8918b9640a5b": {
       "current_price_usd": 0.000646371224939548,
@@ -793,11 +793,11 @@
     },
     "0x5cb6f181081301b44905f3ae15419112ecabd8a6": {
       "current_price_usd": 0.003264721526554574,
-      "whale_count": 1,
-      "whale_avg_entry_price": 0.003249220010415246,
-      "pct_whales_at_or_above_current": 0.0,
+      "whale_count": 3,
+      "whale_avg_entry_price": 0.003252840267455029,
+      "pct_whales_at_or_above_current": 0.6667,
       "jumbo_above_current": 0,
-      "conviction_score": 0.0,
+      "conviction_score": 46.67,
       "verdict": "INSUFFICIENT_DATA",
       "whales": [
         {
@@ -806,6 +806,20 @@
           "entry_vs_current": 0.9953,
           "cost_basis_usd": 93323.89,
           "underwater": false
+        },
+        {
+          "wallet": "0x5619ff7f7474a0f8d8a6323a2e83e61d4e75f7b5",
+          "entry_vwap_usd": 0.0032653375,
+          "entry_vs_current": 1.0002,
+          "cost_basis_usd": 27018.06,
+          "underwater": true
+        },
+        {
+          "wallet": "0x3de507345e5d5a16ccb9bd8948fe89a8cf07aad1",
+          "entry_vwap_usd": 0.0032647215,
+          "entry_vs_current": 1.0,
+          "cost_basis_usd": 17.4,
+          "underwater": true
         }
       ]
     },
