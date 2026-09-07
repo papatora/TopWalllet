@@ -348,3 +348,15 @@ Target: **100K+ wallets**, universe 300-500 tokens, dan bangun produk:
   menit antar koneksi
 - NEXT: M4 depth pages (wallet dossier /token whale-map /leaderboard /
   methodology), M5 block follower, M6 clusters view + tiering
+
+## SNAPSHOT S-20 — 🎉 M3 LIVE: Smart Money Feed publicly accessible
+- **URL: http://78.31.250.202:8000/** (HTTP 200 from outside, verified)
+- Hero per spec §0 (editorial serif + mono, freshness stamp, live dot) +
+  live feed consuming /api/v2/feed (real events with proof links) +
+  light/dark + mobile + stale banner + methodology footer
+- API v2 fully public: /feed /wallets /wallet /token/whale-map /clusters
+  /status /methodology /stream (SSE)
+- Fix terakhir: HTMLResponse import hilang saat patch (NameError) → ditambah
+- M4-M6 tersisa: wallet dossier page, whale map visual, cluster graph,
+  block follower real-time, tiering S/A/B — semua spec di
+  docs/ULTIMATE_PROMPT_SMART_MONEY_FEED.md
