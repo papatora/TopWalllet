@@ -1,12 +1,12 @@
 {
-  "phase": "pipeline_done",
-  "cycle": 2,
+  "phase": "pipeline",
+  "cycle": 3,
   "pid": 30631,
   "top_wallets": 40,
-  "last_exit": 1,
-  "updated_at": "2026-09-07T03:22:42.790818+00:00",
-  "log_tail": "cout.com/api/v2/addresses/0x569c7ecd379bedec9c98bd89b5c80b27784eb610/token-transfers?type=ERC-20&token=0x6635c082c14b4206751600d96fe50428815c9fa9 \"HTTP/1.1 200 OK\" | 03:22:40 INFO    httpx: HTTP Request: GET https://robinhoodchain.blockscout.com/api/v2/addresses/0x569c7ecd379bedec9c98bd89b5c80b27784eb610/token-transfers?type=ERC-20&token=0x6635c082c14b4206751600d96fe50428815c9fa9 \"HTTP/1.1 200 OK\"",
-  "pipeline_pid": 31189,
+  "last_exit": null,
+  "updated_at": "2026-09-07T04:42:16.532867+00:00",
+  "log_tail": "04:42:14 INFO    httpx: HTTP Request: POST https://rpc.mainnet.chain.robinhood.com \"HTTP/1.1 200 OK\" | 04:42:15 INFO    httpx: HTTP Request: POST https://rpc.mainnet.chain.robinhood.com \"HTTP/1.1 200 OK\"",
+  "pipeline_pid": 33780,
   "stats": {
     "tokens_in_db": 62,
     "pools_in_db": 62,
