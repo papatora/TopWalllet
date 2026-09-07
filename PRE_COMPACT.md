@@ -268,3 +268,17 @@ hanya berisi PnL positif. Hasil grouping: results/wallet_scenario_groups.json.
 4. Privacy tx tidak menyembunyikan semuanya — on-chain data tetap ada,
    tinggal deepcheck. Limitasi utama = API rate limit (sudah ada circuit
    breaker; tambahkan queue anti-skip per stream).
+
+## SNAPSHOT S-14 — 2026-09-07 (CLASSIFIER SHIPPED — 14-type wallet taxonomy LIVE)
+
+Subagent selesai: wallet classification system implemented + pushed (`3a73afe`).
+- `wallet_labels` table + `src/analyze/wallet_classifier.py` + 14 tests (total 37 green)
+- Hook di analyze_wallets (safe, try/except) → `results/wallet_labels.json`
+- Dry-run DB nyata: **1.310 wallet terklasifikasi, 1.430 label** — 26 SNIPER,
+  107 INSIDER, 3 DEV, 2 CT_ATTRIBUTED, 1 CLUSTER_MEMBER:cluster_f70d
+  (0xb1bc…876f), sisanya GENERALIST
+- Deployed ke VPS (HEAD 3a73afe, supervisor active) → cycle berikutnya
+  otomatis mengklasifikasi semua wallet
+- Skipped rules (butuh data yang belum ada): PHISHING_SUSPECT (butuh transfers
+  table), DEV mint sub-rule, FRESH_GOOD/BAD (butuh wallet age + modal awal)
+- SSH rate-limit: jangan reconnect terlalu sering ke VPS (kena reset 10054)
