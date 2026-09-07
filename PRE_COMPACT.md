@@ -210,3 +210,14 @@ jalan di sana; lokal cuma git pull + baca hasil.
 hijau tiap milestone, PRE_COMPACT update tiap milestone. Context session ini
 hampir habis → **sesi berikutnya mulai dari dokumen ini** (baca §14 first
 ten actions). Cron monitor per jam tetap aktif.
+
+## SNAPSHOT S-11 — 2026-09-07 (DIRECTIVE: WALLET CLASSIFICATION SYSTEM)
+
+User: jangan muter di tempat — bangun **ekosistem klasifikasi wallet utuh**
+(TOP TRACKER / DEV / DEV_SERIAL_RUGGER / CT / CLUSTER A-B-C / BUNDLER /
+PHISHING / SNIPER / EARLY_BUYER_PNL / FRESH_GOOD / FRESH_BAD / dll).
+Blueprint deteksi = docs/GMGN_PANDUAN_LENGKAP.md (security grid, dev panel,
+bundler vs phishing, funding wallet). Spesifikasi lengkap + aturan deteksi +
+false-positive warnings = **docs/WALLET_TAXONOMY.md** (BARU).
+Implementasi: `wallet_labels` table + `src/analyze/wallet_classifier.py` +
+hook ke analyze/export. GMGN anchors (0x21…04b6 dkk) = CT_ATTRIBUTED targets.
