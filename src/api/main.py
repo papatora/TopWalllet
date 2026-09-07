@@ -11,6 +11,7 @@ import json
 from pathlib import Path
 
 from fastapi import FastAPI, HTTPException, Query
+from fastapi.responses import HTMLResponse
 
 from config.settings import settings
 
