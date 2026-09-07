@@ -282,3 +282,31 @@ Subagent selesai: wallet classification system implemented + pushed (`3a73afe`).
 - Skipped rules (butuh data yang belum ada): PHISHING_SUSPECT (butuh transfers
   table), DEV mint sub-rule, FRESH_GOOD/BAD (butuh wallet age + modal awal)
 - SSH rate-limit: jangan reconnect terlalu sering ke VPS (kena reset 10054)
+
+## SNAPSHOT S-15 — 2026-09-07 23:30 (ACTIVE WORK ORDER: SMART MONEY FEED M0-M6 + SCALING)
+
+**STATUS SAAT INI (verified):**
+- VPS: supervisor active, cycle berjalan; wallets ~4.8K+ (terus tumbuh), events 24K+
+- Classifier LIVE di VPS (commit 3a73afe, 37 tests): 1.310 wallet terklasifikasi
+  (26 SNIPER, 107 INSIDER, 3 DEV, 2 CT_ATTRIBUTED, 1 CLUSTER_MEMBER:f70d)
+- Hard filter PnL>1$ aktif; round-robin 3x protocol terdefinisi (S-12)
+- Semua sistem: systemd + supervisor + watchdog GLM + cron monitor ZCode per jam
+
+**ACTIVE WORK ORDER = docs/ULTIMATE_PROMPT_SMART_MONEY_FEED.md (baca penuh!)**
+Target: **100K+ wallets**, universe 300-500 tokens, dan bangun produk:
+- M1: feed_events table + shared classifier + backfill CLI + tests ← **LANGKAH BERIKUTNYA**
+- M2: API v2 (/feed /stream /status /wallet /token /whale-map /clusters) + hardening
+- M3: hero + live feed (SSE) + freshness contract (P0: jangan pernah "just now"
+  di atas data basi!) + design system §7 (editorial paper + serif + mono)
+- M4: depth pages (wallet dossier, whale entry map, leaderboard, methodology)
+- M5: block follower real-time + latency p50/p95
+- M6: forensics surface (clusters, f70d story, GENUINE/HALU/TREND_RIDER verdicts)
+- CONTINUOUS: universe ekspansi (naikkan MAX_TOKENS ke 300-500), restore bar 5×3
+  saat universe >200 token, wallet labels PHISHING/FRESH (butuh transfers table)
+
+**LANGSUNG KERJAKAN (jangan berhenti, usage unlimited):**
+1. M1 feed data layer (subagent atau langsung)
+2. Pantau VPS tiap ~5 menit: wallets/events harus naik; kalau stagnan → cek log
+3. Setelah M1-M2: deploy web di VPS port via systemd + Caddy TLS
+4. Semua milestone: pytest hijau → PRE_COMPACT update → push → Obsidian sync
+5. Catatan SSH: jangan reconnect terlalu cepat (kena reset 10054, tunggu 30s+)
