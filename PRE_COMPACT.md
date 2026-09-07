@@ -318,3 +318,13 @@ Target: **100K+ wallets**, universe 300-500 tokens, dan bangun produk:
 - **NEXT = M2: API v2** (/feed /stream /wallet /token /whale-map /clusters
   /status /methodology + hardening §8.2) → lalu M3 hero+feed page (URL untuk user)
 - VPS deploy M1: ssh → git reset --hard origin/main → restart supervisor
+
+## SNAPSHOT S-17 — M2 API v2 DEPLOYED (commit b0a7b2c, 60 tests green)
+- src/api/v2.py: /api/v2/feed (cursor pagination) /stream (SSE) /wallets
+  /wallet/{addr} /token/{ca}/whale-map /clusters /status /methodology
+  + rate limit 120/min + CA validation (400) + generated_at/data_age_seconds
+- Wired ke main.py; 60 tests green; API process RUNNING on VPS (pgrep OK,
+  curl internal 127.0.0.1 works per log) TAPI external access port 8000
+  masih gagal (exit 7) — ufw allow 8000 sudah ditambahkan. NEXT SESSION:
+  cek `ss -tlnp | grep 8000` di VPS (uvicorn bind address?), provider
+  firewall, lalu M3 (hero+feed frontend) + TLS Caddy.
