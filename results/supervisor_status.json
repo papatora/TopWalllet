@@ -1,19 +1,10 @@
 {
   "phase": "pipeline",
-  "cycle": 4,
-  "pid": 30631,
-  "top_wallets": 40,
+  "cycle": 1,
+  "pid": 33812,
+  "top_wallets": null,
   "last_exit": null,
-  "updated_at": "2026-09-07T06:51:21.281252+00:00",
-  "log_tail": "resses/0x0355a5a10cdf2bb1d41ff557b582dfe3435274ce/token-transfers?type=ERC-20&token=0xe612c939d82981f8e17ccac3b59c1084c2aa02bb \"HTTP/1.1 200 OK\" | 06:51:20 INFO    httpx: HTTP Request: GET https://robinhoodchain.blockscout.com/api/v2/addresses/0x8ac542184b21b67f0fb873fb7466c8b04b87d1d6/token-transfers?type=ERC-20&token=0x0d6bbdd979ef4802567425ae4ab352edaa468f1d \"HTTP/1.1 500 Internal Server Error\"",
-  "pipeline_pid": 34292,
-  "stats": {
-    "tokens_in_db": 62,
-    "pools_in_db": 62,
-    "wallets_in_db": 1675,
-    "swap_events": 9233,
-    "wallets_scored": 112,
-    "wallets_excluded": 0
-  },
-  "error": "[Errno 2] No such file or directory: 'python'"
+  "updated_at": "2026-09-06T20:08:30.928655+00:00",
+  "log_tail": "03:08:29 WARNING src.utils.rpc_client: getlogs range skipped | 03:08:29 INFO    httpx: HTTP Request: POST https://rpc.mainnet.chain.robinhood.com \"HTTP/1.1 200 OK\"",
+  "pipeline_pid": 36464
 }

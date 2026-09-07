@@ -32,13 +32,29 @@ copy-latency + position sizing sane (not one-coin-all-in lottery) + verified
 history length. Output: tiered list (S/A/B) with per-wallet "copy profile":
 typical entry→exit window, avg size, drawdown risk, token quality filter.
 
-### 2c. Cluster attribution — "cluster ini milik siapa"
+### 2c. Cluster attribution & FUNDING PROVENANCE — "cluster ini milik siapa, uangnya dari mana"
 Go beyond token-set Jaccard:
 - funding graph: shared funder address, nonce adjacency, bridge-in source
+- **funding provenance chain (user mandate, 2026-09-07)**: for every Top-PnL
+  wallet, trace its FIRST funding: funder address → is it a CEX hot wallet,
+  a bridge, another top wallet, or a known CT account? Classify:
+  `SELF_MADE` (fresh wallet, small capital, pure trading skill),
+  `CT_FUNDED` (funded by a tracked CT account — follow that CT!),
+  `INSIDER_FUNDED` (funded from deployer/dev proceeds),
+  `CLUSTER_OPERATED` (part of a fleet)
+- **dev-token fingerprinting (user mandate)**: check whether a "profitable
+  trader" is actually the DEPLOYER of thousands of tokens (PnL = insider
+  allocation, not skill). Signals: wallet linked to token creation events,
+  first-buy blocks ≈ pool-creation blocks across MANY tokens (we already
+  compute INSIDER_SUSPECT per token — aggregate it), funding sourced from
+  deployer fee vaults
 - counterparty graph: wash-pairs (already flagged), repeated same-block flows
-- cash-out venue: which CEX deposit addresses clusters drain to (identifies
-  operator geography/venue)
-- known-entity matching: exchange hot wallets, market makers, known KOL wallets
+- bubble-graph output (bubblemaps-style visual: wallet ↔ funder ↔ cluster)
+- cash-out venue: which CEX deposit addresses clusters drain to
+- known-entity matching: exchange hot wallets, market makers, GMGN Smart Money
+  list (ground-truth anchors from screenshots: 0x21…04b6, 0xa5…282f,
+  0xac…a92f, Rell, 0x44…c40d, 0x1e…3cee, 0x4b…83b8, 0x38…22c5 — these are
+  real top-PnL wallets with attached X identities to validate our engine)
 Output: cluster → operator hypothesis + confidence + evidence list.
 
 ### 2d. Fresh-wallet sniper pattern
