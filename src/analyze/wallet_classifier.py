@@ -367,8 +367,14 @@ def _cluster_signal(wallets, funding, clusters_file, score_cluster):
         members_raw = clusters_file.get("top38_members_funded_by_cluster") or []
         if cid and isinstance(cid, str):
             full = {m.lower() for m in members_raw if isinstance(m, str)}
-            prefixes = [m.lower() for m in members_raw
-                        if isinstance(m, str) and _trunc_prefix(m.lower()) != m.lower()]
+            prefixes = []
+            for m in members_raw:
+                if not isinstance(m, str):
+                    continue
+                ml = m.lower()
+                p = _trunc_prefix(ml)
+                if p != ml:
+                    prefixes.append(p)  # display-truncated member ('0xabc…')
             for w in wallets:
                 matched = w in full or any(w.startswith(p) for p in prefixes)
                 by_funder_hit = (funder and
