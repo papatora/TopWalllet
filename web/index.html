@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>smart money feed — robinhood chain</title>
+<meta name="description" content="see what smart money buys before the crowd — verified wallets on robinhood chain.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F0EEE6; --paper-raised:#F7F5EF; --ink:#191817; --ink-2:#3D3A34;
+  --ink-3:#6B6862; --rule:#DCD8CC; --chip-bg:#D9D6CC; --chip-ink:#2A2825;
+  --buy:#2F6F4F; --sell:#9B3B2F; --accent:#B4541F; --warn:#A9761B; --live:#3E7B52;
+}
+@media (prefers-color-scheme: dark){ :root{
+  --paper:#16150F; --paper-raised:#1E1D16; --ink:#F0EEE6; --ink-2:#CFCBBF;
+  --ink-3:#8C887E; --rule:#2E2C24; --chip-bg:#33302A; --chip-ink:#E6E2D6;
+  --buy:#6FA98A; --sell:#D08573; --accent:#E0855A; --warn:#D6A94E; --live:#6FA98A;
+}}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--paper);color:var(--ink-2);font-family:"JetBrains Mono","IBM Plex Mono",ui-monospace,Menlo,monospace;font-size:.875rem;line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+a{color:inherit;text-decoration:none}
+a:hover{color:var(--accent)}
+.hero{padding:128px 0 64px}
+.eyebrow{font-size:.8125rem;letter-spacing:.06em;text-transform:lowercase;color:var(--ink-3)}
+.eyebrow .dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--live);margin-right:.5em;animation:pulse 2s ease infinite}
+@keyframes pulse{50%{opacity:.35}}
+h1{font-family:"Instrument Serif",Georgia,"Times New Roman",serif;font-weight:400;font-size:clamp(2.75rem,7.5vw,5.25rem);line-height:1.02;letter-spacing:-.015em;color:var(--ink);text-transform:lowercase;margin:16px 0 24px;max-width:14em}
+.sub{font-size:clamp(.95rem,1.6vw,1.125rem);color:var(--ink-2);max-width:60ch}
+.chip{display:inline-flex;align-items:center;gap:.35em;padding:.15em .5em;border-radius:.35em;background:var(--chip-bg);color:var(--chip-ink);font-size:.66em;letter-spacing:.08em;text-transform:uppercase;font-weight:500;vertical-align:.12em;white-space:nowrap}
+.chip--buy{background:color-mix(in srgb,var(--buy) 18%,var(--chip-bg));color:var(--buy)}
+.chip--sell{background:color-mix(in srgb,var(--sell) 18%,var(--chip-bg));color:var(--sell)}
+.chip--call{background:color-mix(in srgb,var(--accent) 18%,var(--chip-bg));color:var(--accent)}
+.chip--warn{background:color-mix(in srgb,var(--warn) 20%,var(--chip-bg));color:var(--warn)}
+.feed{padding:32px 0 96px}
+.feed-head{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid var(--rule);padding-bottom:12px;margin-bottom:4px}
+.feed-head h2{font-size:.8125rem;letter-spacing:.06em;text-transform:lowercase;color:var(--ink-3);font-weight:400}
+ul.feed{list-style:none}
+li.row{display:grid;grid-template-columns:9ch 9ch 17ch 1fr auto;gap:12px;align-items:baseline;padding:14px 4px;border-bottom:1px solid var(--rule);font-variant-numeric:tabular-nums}
+li.row.new{animation:fadein 8s ease}
+@keyframes fadein{from{background:color-mix(in srgb,var(--live) 12%,transparent)}to{background:transparent}}
+.time{color:var(--ink-3)}
+.type{letter-spacing:.05em;font-weight:500}
+.type.buy,.type.add{color:var(--buy)}.type.sell,.type.exit,.type.trim{color:var(--sell)}.type.call{color:var(--accent)}
+.addr{color:var(--ink)}
+.tok .chip{font-size:.72em}
+.size{color:var(--ink);text-align:right}
+.meta{grid-column:3/6;color:var(--ink-3);font-size:.78rem}
+.meta .flag{color:var(--warn)}
+.meta a{color:var(--ink-3);text-decoration:underline;text-underline-offset:2px}
+.empty{padding:48px 0;color:var(--ink-3)}
+.stale{display:none;background:color-mix(in srgb,var(--warn) 15%,var(--paper-raised));border:1px solid var(--warn);color:var(--warn);padding:12px 16px;margin:24px 0;font-size:.8125rem}
+.stale.show{display:block}
+.foot{padding:24px 0 64px;color:var(--ink-3);font-size:.78rem;border-top:1px solid var(--rule)}
+.state{color:var(--live)}
+@media(max-width:640px){.hero{padding:64px 0 40px}li.row{grid-template-columns:8ch 1fr auto}li.row .addr{grid-column:1/3}.size{grid-column:3}.meta{grid-column:1/4}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <section class="hero">
+    <div class="eyebrow"><span class="dot" id="livedot"></span>smart money feed · <span id="fresh">loading…</span></div>
+    <h1>see what smart money buys before the crowd.</h1>
+    <p class="sub">tracking <span class="chip">robinhood</span> wallets in real time — calls, entries, exits. every row links to the on-chain proof. not financial advice.</p>
+    <div class="stale" id="stale"></div>
+  </section>
+  <section class="feed">
+    <div class="feed-head"><h2>live events</h2><span class="eyebrow state" id="state">connecting…</span></div>
+    <ul class="feed" id="feed" role="feed" aria-busy="true"></ul>
+    <div class="empty" id="empty" style="display:none">no smart-money events in the last 24h — the chain is quiet.</div>
+  </section>
+  <div class="foot">
+    <a href="/api/v2/status">status</a> · <a href="/api/v2/methodology">methodology</a> · <a href="/docs">api</a> ·
+    verified wallets only · past performance predicts nothing · read-only public data
+  </div>
+</div>
+<script>
+const $=id=>document.getElementById(id);
+let events=[];
+function band(s){if(s<0||s==null)return null;if(s<60)return["updated just now",0];if(s<900)return["updated "+Math.round(s/60)+"m ago",0];if(s<7200)return["updated "+Math.floor(s/3600)+"h "+Math.round(s%3600/60)+"m ago",1];if(s<86400)return["data is "+Math.round(s/3600)+"h old — pipeline may be down",2];return["stale — showing last known state",3]}
+function fresh(){const st=document.getElementById("fresh");const age=window.__age;const b=age!=null&&band(age);if(!b){st.textContent="loading…";return}st.textContent=b[0];if(b[1]>=2){const el=$("stale");el.textContent=b[1]>=3?"stale — showing last known state":"data is old — pipeline may be down. see /api/v2/status";el.classList.add("show")}}
+function esc(s){const d=document.createElement("div");d.textContent=s;return d.innerHTML}
+function row(ev){
+  const t=new Date(ev.ts);const hh=t.toTimeString().slice(0,8);
+  const a=ev.action||{};const w=ev.wallet||{};const tk=ev.token||{};
+  const cls=(ev.type||"").toLowerCase();
+  const glyph={ENTRY:"↑",ADD:"↑↑",CALL:"★",EXIT:"↓",TRIM:"↘",ROTATION:"↻"}[ev.type]||"·";
+  const flags=(w.risk_flags||[]).map(f=>`<span class="chip chip--warn">${esc(f)}</span>`).join(" ");
+  const size=a.amount_usd!=null?("$"+(+a.amount_usd).toLocaleString(undefined,{maximumFractionDigits:2})+" @ $"+(+a.price_usd).toPrecision(3)):"—";
+  return `<li class="row"><span class="time">${hh}</span><span class="type ${cls}">${glyph} ${esc(ev.type)}</span>`+
+    `<span class="addr"><a href="/#/wallet/${esc(w.address||"")}">${esc((w.address||"").slice(0,10))}…</a></span>`+
+    `<span class="tok"><span class="chip">${esc(tk.symbol||"—")}</span></span><span class="size">${size}${a.is_first_touch?" <span class='chip chip--call'>1st</span>":""}</span>`+
+    `<span class="meta">tier ${w.tier||"—"} · ${esc(w.verdict||"—")} · ${esc(w.style||"—")} ${flags} · lag ${ev.lag_seconds!=null?ev.lag_seconds.toFixed(1)+"s":"—"} · <a href="${(ev.proof||{}).tx_url||"#"}" target="_blank" rel="noopener">tx↗</a></span></li>`;
+}
+async function load(){
+  try{
+    const r=await fetch("/api/v2/feed?limit=60");if(!r.ok)throw 0;
+    const d=await r.json();window.__age=d.data_age_seconds;fresh();
+    events=d.events||[];render();
+    $("state").textContent="live";$("state").style.color="var(--live)";
+  }catch(e){$("state").textContent="reconnecting…";$("state").style.color="var(--warn)";}
+}
+function render(){
+  const f=$("feed");f.innerHTML=events.map(row).join("");
+  $("empty").style.display=events.length?"none":"block";
+}
+load();setInterval(load,10000);setInterval(fresh,1000);
+</script>
+</body>
+</html>

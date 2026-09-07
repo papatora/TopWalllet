@@ -19,6 +19,12 @@ app = FastAPI(title="TopWallet API", version="0.2.0")
 from src.api.v2 import router as v2_router
 app.include_router(v2_router)
 
+WEB = Path(__file__).resolve().parents[2] / "web" / "index.html"
+
+@app.get("/", include_in_schema=False)
+async def index():
+    return HTMLResponse(WEB.read_text(encoding="utf-8"))
+
 
 def _results() -> Path:
     settings.results_dir.mkdir(parents=True, exist_ok=True)
