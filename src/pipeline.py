@@ -319,6 +319,16 @@ class Pipeline:
                 t = min(c1 + margin, to_block)
                 if f > t:
                     continue
+                # skip clusters already priced (idempotent re-runs stay cheap)
+                already = (await session.execute(
+                    select(PricePoint.id).where(
+                        PricePoint.pool_address == pool.address,
+                        PricePoint.block_num >= f,
+                        PricePoint.block_num <= t,
+                    ).limit(1)
+                )).first()
+                if already:
+                    continue
                 try:
                     built_points += await service.build_series_for_pool(
                         pool, f, t,

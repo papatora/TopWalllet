@@ -174,11 +174,16 @@ class EvmRpcClient:
                 counts[i] = -1
         best = max(counts.values(), default=0)
         for i, n in counts.items():
-            if n < 0 or best <= 0 or n < best * 0.1:
-                # deaf or erroring indexer — park it for log queries only
+            if best > 0 and n >= 0 and n < best * 0.1:
+                # deaf indexer (others clearly have data) — park it for log queries
                 self._log_blocked_until[i] = time.time() + 3600
                 jlog(log, logging.INFO, "endpoint failed log probe; blocked for getLogs",
                      endpoint=self._mask(self.endpoints[i]), count=n)
+            elif best <= 0:
+                # probe itself hit a transient empty window — trust all endpoints,
+                # let adaptive scanning + skipped-range handling cope
+                jlog(log, logging.WARNING, "log probe returned no data anywhere; not blocking",
+                     count=n)
             else:
                 jlog(log, logging.INFO, "endpoint log probe ok",
                      endpoint=self._mask(self.endpoints[i]), count=n)
