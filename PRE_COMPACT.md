@@ -328,3 +328,14 @@ Target: **100K+ wallets**, universe 300-500 tokens, dan bangun produk:
   masih gagal (exit 7) — ufw allow 8000 sudah ditambahkan. NEXT SESSION:
   cek `ss -tlnp | grep 8000` di VPS (uvicorn bind address?), provider
   firewall, lalu M3 (hero+feed frontend) + TLS Caddy.
+
+## SNAPSHOT S-18 — M2 LIVE (API v2 public di http://78.31.250.202:8000)
+- /health + /api/v2/status + /api/v2/methodology VERIFIED dari luar ✓
+- /api/v2/feed 500 → feed_events table BELUM ada di VPS DB (dibuat otomatis
+  oleh init_db supervisor di cycle berikutnya, ≤1 jam) → lalu jalankan sekali:
+  `cd /opt/topwallet && .venv/bin/python -m src.cli backfill` (isi 6K+ events)
+- API = systemd topwallet-api (auto-restart), bind 0.0.0.0:8000, ufw allow,
+  sqlite busy timeout 30s, init_db startup DIHAPUS (lock contention)
+- 60 tests green, commit 760b2e1
+- NEXT SESSION: (1) verifikasi /api/v2/feed 200 (2) jalankan backfill (3) M3
+  frontend hero+feed per docs/ULTIMATE_PROMPT_SMART_MONEY_FEED.md §7 + §0
