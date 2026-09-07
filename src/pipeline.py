@@ -630,6 +630,13 @@ class Pipeline:
                 wallet.status = "skipped"
                 continue
             wallet_tokens[wallet.address] = set(by_token.keys())
+            # hard rule: ranked list is for TOP PNL — wallets with negative or
+            # dust realized PnL are excluded regardless of composite score
+            min_pnl = float(self.weights_cfg.get("thresholds", {}).get("min_realized_pnl_usd", 1.0))
+            if (metrics.total_realized_pnl_usd or 0) < min_pnl:
+                wallet.status = "skipped"
+                excluded += 1
+                continue
             score = composite_score(metrics, self.weights_cfg) if metrics else 0.0
             scored.append((wallet.address, metrics, positions, score, filters.flags, None))
 

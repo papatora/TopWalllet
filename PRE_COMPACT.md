@@ -221,3 +221,22 @@ bundler vs phishing, funding wallet). Spesifikasi lengkap + aturan deteksi +
 false-positive warnings = **docs/WALLET_TAXONOMY.md** (BARU).
 Implementasi: `wallet_labels` table + `src/analyze/wallet_classifier.py` +
 hook ke analyze/export. GMGN anchors (0x21…04b6 dkk) = CT_ATTRIBUTED targets.
+
+## SNAPSHOT S-12 — 2026-09-07 (ROUND-ROBIN PNL RECHECK + hard PnL>0 filter)
+
+**User mandate**: round-robin recheck wallet sama 3x (window 7d/1m) untuk
+buktikan PnL benar; kelompokkan per skenario (fresh modal kecil → besar, dst);
+buang yang sampah/halu/keluar filter.
+
+**Temuan brutal (analisis lokal 39 verified)**: hanya **1** profit-positive
+(0x35e63bbA, $21), 15 breakeven, **23 TRASH** (PnL negatif masuk ranked karena
+composite score). Fix: `min_realized_pnl_usd: 1.0` di scoring config → ranked
+hanya berisi PnL positif. Hasil grouping: results/wallet_scenario_groups.json.
+
+**ROUND-ROBIN PROTOCOL (jalankan di VPS, 3 pass per wallet)**:
+- Pass 1: verifier R1-R3 (sudah jalan)
+- Pass 2 (7 hari kemudian): re-derive ulang — PnL harus konsisten ±25%
+- Pass 3 (30 hari kemudian): re-derive final + cek wallet masih aktif
+- Wallet yang lolos 3 pass = `TRIPLE_VERIFIED` → baru eligible copytrade tier
+- Implementasi: kolom `verification_passes` di WalletScore + supervisor menjalankan
+  re-verify pass berkala (queue by oldest verification date)

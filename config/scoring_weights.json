@@ -2,11 +2,11 @@
   "weights": {
     "win_rate": 0.22,
     "median_return": 0.18,
-    "moonshots": 0.10,
+    "moonshots": 0.1,
     "dip_buying": 0.15,
-    "top_selling": 0.10,
+    "top_selling": 0.1,
     "consistency": 0.15,
-    "recency": 0.10
+    "recency": 0.1
   },
   "normalization": {
     "median_return_log_cap": 20.0,
@@ -27,6 +27,7 @@
     "min_distinct_tokens": 1,
     "big_wins_for_moonshot_style": 3,
     "min_position_size_usd": 1.0,
-    "win_threshold_multiple": 1.02
+    "win_threshold_multiple": 1.02,
+    "min_realized_pnl_usd": 1.0
   }
 }

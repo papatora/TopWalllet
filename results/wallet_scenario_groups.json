@@ -1,0 +1,606 @@
+{
+ "PROFIT_POSITIVE": [
+  {
+   "wallet": "0x35e63bbA009C1D6332294a3370Cc8317079A5388",
+   "rank": 1,
+   "score": 35.49,
+   "pnl": 20.91,
+   "win": 0.8333,
+   "med": 1.2305,
+   "max": 1.2906,
+   "tok": 1,
+   "flags": [
+    "SINGLE_TOKEN_SAMPLE"
+   ],
+   "style": "scalper",
+   "verified": "2/3"
+  }
+ ],
+ "NEGATIVE_PNL_TRASH": [
+  {
+   "wallet": "0xb1BC77CC39e059BdB4eeA82bF8eA71d5AE6c876F",
+   "rank": 2,
+   "score": 32.28,
+   "pnl": -48.75,
+   "win": 0.6667,
+   "med": 1.1346,
+   "max": 1.6339,
+   "tok": 1,
+   "flags": [
+    "SINGLE_TOKEN_SAMPLE"
+   ],
+   "style": "scalper",
+   "verified": "2/3"
+  },
+  {
+   "wallet": "0xbed4721cAC12305731Ffe086a2dF96feE8F5eF69",
+   "rank": 3,
+   "score": 29.51,
+   "pnl": -15.01,
+   "win": 0.6,
+   "med": 1.0632,
+   "max": 1.0697,
+   "tok": 1,
+   "flags": [
+    "SINGLE_TOKEN_SAMPLE"
+   ],
+   "style": "generalist",
+   "verified": "2/3"
+  },
+  {
+   "wallet": "0x47478832e81064f9078088b4a3f1A8358a612Cd9",
+   "rank": 4,
+   "score": 24.84,
+   "pnl": -51.16,
+   "win": 0.5,
+   "med": 1.0102,
+   "max": 1.3444,
+   "tok": 1,
+   "flags": [
+    "SINGLE_TOKEN_SAMPLE"
+   ],
+   "style": "scalper",
+   "verified": "3/3"
+  },
+  {
+   "wallet": "0x6e951d31343d7875627d33E3CDF182B8547C256d",
+   "rank": 13,
+   "score": 15.0,
+   "pnl": 0.0,
+   "win": 0.0,
+   "med": 1.0,
+   "max": 1.0,
+   "tok": 1,
+   "flags": [
+    "DUST_ONLY",
+    "SINGLE_TOKEN_SAMPLE"
+   ],
+   "style": "dip_buyer_scalper",
+   "verified": "3/3"
+  },
+  {
+   "wallet": "0x744b68D8ecFC86c614455B5Fc8f5723358De68CF",
+   "rank": 18,
+   "score": 13.03,
+   "pnl": -24.32,
+   "win": 0.3333,
+   "med": 0.8772,
+   "max": 1.1063,
+   "tok": 1,
+   "flags": [
+    "SINGLE_TOKEN_SAMPLE"
+   ],
+   "style": "scalper",
+   "verified": "3/3"
+  },
+  {
+   "wallet": "0x79CADb68a6302F89938717a81883ED6b7805AEf6",
+   "rank": 19,
+   "score": 12.86,
+   "pnl": -8.4,
+   "win": 0.0,
+   "med": 0.9918,
+   "max": 0.9957,
+   "tok": 1,
+   "flags": [
+    "SINGLE_TOKEN_SAMPLE"
+   ],
+   "style": "dip_buyer_scalper",
+   "verified": "3/3"
+  },
+  {
+   "wallet": "0x6Dd17Ff51c0B33c03FB3e51CA81447faEC545408",
+   "rank": 20,
+   "score": 11.77,
+   "pnl": -5.44,
+   "win": 0.0714,
+   "med": 1.0,
+   "max": 1.0541,
+   "tok": 1,
+   "flags": [
+    "SINGLE_TOKEN_SAMPLE"
+   ],
+   "style": "top_seller_scalper",
+   "verified": "3/3"
+  },
+  {
+   "wallet": "0x17835351d65540c8e03ebB6D74bBf71a25c9cdeC",
+   "rank": 21,
+   "score": 11.47,
+   "pnl": -123.68,
+   "win": 0.1667,
+   "med": 1.0031,
+   "max": 1.0994,
+   "tok": 1,
+   "flags": [
+    "SINGLE_TOKEN_SAMPLE"
+   ],
+   "style": "scalper",
+   "verified": "3/3"
+  },
+  {
+   "wallet": "0x1cc65D09d81e4656e72444217E201064226d2c3C",
+   "rank": 22,
+   "score": 11.25,
+   "pnl": -0.02,
+   "win": 0.0,
+   "med": 0.9992,
+   "max": 0.9993,
+   "tok": 1,
+   "flags": [
+    "DUST_ONLY",
+    "SINGLE_TOKEN_SAMPLE"
+   ],
+   "style": "dip_buyer_scalper",
+   "verified": "3/3"
+  },
+  {
+   "wallet": "0xf15168b7ADC036ce63EA44bBa723408d30dC4b4c",
+   "rank": 23,
+   "score": 10.45,
+   "pnl": -0.04,
+   "win": 0.0,
+   "med": 0.9993,
+   "max": 0.9996,
+   "tok": 1,
+   "flags": [
+    "DUST_ONLY",
+    "SINGLE_TOKEN_SAMPLE"
+   ],
+   "style": "dip_buyer_scalper",
+   "verified": "3/3"
+  },
+  {
+   "wallet": "0x3A8982399F7a72f0B57f0833b87549bC37C1B523",
+   "rank": 26,
+   "score": 10.0,
+   "pnl": -0.04,
+   "win": 0.0,
+   "med": 0.9993,
+   "max": 0.9994,
+   "tok": 1,
+   "flags": [
+    "DUST_ONLY",
+    "SINGLE_TOKEN_SAMPLE"
+   ],
+   "style": "dip_buyer_scalper",
+   "verified": "3/3"
+  },
+  {
+   "wallet": "0xF38013d1CAAA68251cD5FC0E0d18F3c97824374D",
+   "rank": 27,
+   "score": 10.0,
+   "pnl": -0.26,
+   "win": 0.0,
+   "med": 0.9993,
+   "max": 0.9995,
+   "tok": 1,
+   "flags": [
+    "DUST_ONLY",
+    "SINGLE_TOKEN_SAMPLE"
+   ],
+   "style": "scalper",
+   "verified": "3/3"
+  },
+  {
+   "wallet": "0x505D2e7A715c9AF1D690204F43D75EaEa4EFaF10",
+   "rank": 28,
+   "score": 10.0,
+   "pnl": -0.04,
+   "win": 0.0,
+   "med": 0.9992,
+   "max": 0.9993,
+   "tok": 2,
+   "flags": [
+    "DUST_ONLY"
+   ],
+   "style": "dip_buyer_scalper",
+   "verified": "3/3"
+  },
+  {
+   "wallet": "0xad06Acf9A495f77a21E5c657E04B1E0258D23a32",
+   "rank": 29,
+   "score": 10.0,
+   "pnl": -0.0,
+   "win": 0.0,
+   "med": 1.0,
+   "max": 1.0,
+   "tok": 1,
+   "flags": [
+    "SINGLE_TOKEN_SAMPLE"
+   ],
+   "style": "top_seller_scalper",
+   "verified": "2/3"
+  },
+  {
+   "wallet": "0xde5d34705F2145541a75E49c5e8CC08F9Cd2d8Ce",
+   "rank": 30,
+   "score": 8.18,
+   "pnl": -0.05,
+   "win": 0.0,
+   "med": 0.9992,
+   "max": 1.0001,
+   "tok": 1,
+   "flags": [
+    "DUST_ONLY",
+    "SINGLE_TOKEN_SAMPLE"
+   ],
+   "style": "scalper",
+   "verified": "3/3"
+  },
+  {
+   "wallet": "0x14FE9A5C647Fc916fe04FBD2822646d82AFA38D0",
+   "rank": 31,
+   "score": 6.25,
+   "pnl": -0.06,
+   "win": 0.0,
+   "med": 0.9992,
+   "max": 0.9994,
+   "tok": 1,
+   "flags": [
+    "DUST_ONLY",
+    "SINGLE_TOKEN_SAMPLE"
+   ],
+   "style": "scalper",
+   "verified": "3/3"
+  },
+  {
+   "wallet": "0x7676a8a3dF4b74d391BF519029e7C7768Ca2A282",
+   "rank": 32,
+   "score": 6.0,
+   "pnl": -0.02,
+   "win": 0.0,
+   "med": 0.9993,
+   "max": 0.9994,
+   "tok": 1,
+   "flags": [
+    "DUST_ONLY",
+    "SINGLE_TOKEN_SAMPLE"
+   ],
+   "style": "scalper",
+   "verified": "3/3"
+  },
+  {
+   "wallet": "0xB1dC1e88579B075Dc209EF2ec1224bF8130201D5",
+   "rank": 34,
+   "score": 5.0,
+   "pnl": -0.49,
+   "win": 0.0,
+   "med": 0.9993,
+   "max": 1.0,
+   "tok": 2,
+   "flags": [
+    "DUST_ONLY"
+   ],
+   "style": "scalper",
+   "verified": "3/3"
+  },
+  {
+   "wallet": "0x70cf1B6e80aaE62Fe8e793EAc31870B9Ecf2D31A",
+   "rank": 35,
+   "score": 5.0,
+   "pnl": -0.04,
+   "win": 0.0,
+   "med": 0.9993,
+   "max": 0.9996,
+   "tok": 1,
+   "flags": [
+    "DUST_ONLY",
+    "SINGLE_TOKEN_SAMPLE"
+   ],
+   "style": "scalper",
+   "verified": "3/3"
+  },
+  {
+   "wallet": "0xB9358D13906Da9F0B30fC322508b03D055E1aBd9",
+   "rank": 36,
+   "score": 4.51,
+   "pnl": -0.29,
+   "win": 0.0,
+   "med": 0.9993,
+   "max": 1.0037,
+   "tok": 2,
+   "flags": [
+    "DUST_ONLY"
+   ],
+   "style": "scalper",
+   "verified": "3/3"
+  },
+  {
+   "wallet": "0x0630606D4abADdD08BE21506bC4585e57CF9fF98",
+   "rank": 37,
+   "score": 3.75,
+   "pnl": -0.22,
+   "win": 0.0,
+   "med": 0.9992,
+   "max": 0.9993,
+   "tok": 1,
+   "flags": [
+    "DUST_ONLY",
+    "SINGLE_TOKEN_SAMPLE"
+   ],
+   "style": "scalper",
+   "verified": "3/3"
+  },
+  {
+   "wallet": "0x470E6BE8B2e62F9E5f697Ee854FAF15036DB588E",
+   "rank": 38,
+   "score": 2.14,
+   "pnl": -0.03,
+   "win": 0.0,
+   "med": 0.9992,
+   "max": 0.9993,
+   "tok": 1,
+   "flags": [
+    "DUST_ONLY",
+    "SINGLE_TOKEN_SAMPLE"
+   ],
+   "style": "scalper",
+   "verified": "3/3"
+  },
+  {
+   "wallet": "0x5740db16B0a5F853A18cb467F1F1cDaA07125Da1",
+   "rank": 39,
+   "score": 2.14,
+   "pnl": -0.03,
+   "win": 0.0,
+   "med": 0.9992,
+   "max": 0.9993,
+   "tok": 1,
+   "flags": [
+    "DUST_ONLY",
+    "SINGLE_TOKEN_SAMPLE"
+   ],
+   "style": "scalper",
+   "verified": "3/3"
+  }
+ ],
+ "BREAKEVEN": [
+  {
+   "wallet": "0x0d6b08700F9A0f5e7DE49e7076F5354D1915f909",
+   "rank": 5,
+   "score": 24.5,
+   "pnl": 40.47,
+   "win": 0.4,
+   "med": 1.0142,
+   "max": 1.3419,
+   "tok": 1,
+   "flags": [
+    "SINGLE_TOKEN_SAMPLE"
+   ],
+   "style": "top_seller_scalper",
+   "verified": "2/3"
+  },
+  {
+   "wallet": "0x805B2cC2bA44B9b1a3c5a1927d17CaeB35aDD5Bf",
+   "rank": 6,
+   "score": 23.65,
+   "pnl": 67.23,
+   "win": 0.3636,
+   "med": 1.0,
+   "max": 1.2067,
+   "tok": 1,
+   "flags": [
+    "SINGLE_TOKEN_SAMPLE"
+   ],
+   "style": "top_seller_scalper",
+   "verified": "2/3"
+  },
+  {
+   "wallet": "0xCc8a0d686C77ee8c914BEaD18a26F158f270690d",
+   "rank": 7,
+   "score": 22.78,
+   "pnl": 11.58,
+   "win": 0.4444,
+   "med": 1.0,
+   "max": 1.0432,
+   "tok": 1,
+   "flags": [
+    "SINGLE_TOKEN_SAMPLE"
+   ],
+   "style": "scalper",
+   "verified": "2/3"
+  },
+  {
+   "wallet": "0xD6f5aDDDBc26c2E2D8DBd881dBc81A4C605e445E",
+   "rank": 8,
+   "score": 21.86,
+   "pnl": 79.65,
+   "win": 0.3333,
+   "med": 1.0,
+   "max": 1.1969,
+   "tok": 1,
+   "flags": [
+    "SINGLE_TOKEN_SAMPLE"
+   ],
+   "style": "top_seller_scalper",
+   "verified": "3/3"
+  },
+  {
+   "wallet": "0xbcD3f0621EaCB9c72818E41c620Eb186E878194B",
+   "rank": 9,
+   "score": 18.99,
+   "pnl": 29.55,
+   "win": 0.2381,
+   "med": 1.0,
+   "max": 1.1894,
+   "tok": 1,
+   "flags": [
+    "SINGLE_TOKEN_SAMPLE"
+   ],
+   "style": "top_seller_scalper",
+   "verified": "2/3"
+  },
+  {
+   "wallet": "0x7f124B9A74A3c813655fD147597dEf070Da5c115",
+   "rank": 10,
+   "score": 17.73,
+   "pnl": 36.32,
+   "win": 0.2273,
+   "med": 1.0,
+   "max": 1.2183,
+   "tok": 1,
+   "flags": [
+    "SINGLE_TOKEN_SAMPLE"
+   ],
+   "style": "top_seller_scalper",
+   "verified": "2/3"
+  },
+  {
+   "wallet": "0x503d58571E578EbD618b19e201a85DaC81f35122",
+   "rank": 11,
+   "score": 17.46,
+   "pnl": 61.9,
+   "win": 0.2222,
+   "med": 1.0,
+   "max": 1.2534,
+   "tok": 1,
+   "flags": [
+    "SINGLE_TOKEN_SAMPLE"
+   ],
+   "style": "top_seller_scalper",
+   "verified": "2/3"
+  },
+  {
+   "wallet": "0x6eb9915ca009c77B33607FD9B1d83ac4Abf85e2e",
+   "rank": 12,
+   "score": 17.07,
+   "pnl": 29.0,
+   "win": 0.1852,
+   "med": 1.0,
+   "max": 1.1961,
+   "tok": 1,
+   "flags": [
+    "SINGLE_TOKEN_SAMPLE"
+   ],
+   "style": "top_seller_scalper",
+   "verified": "2/3"
+  },
+  {
+   "wallet": "0x2412bF70B7a7fd19a83F40f347155f6FFf88B001",
+   "rank": 14,
+   "score": 14.9,
+   "pnl": 19.67,
+   "win": 0.15,
+   "med": 1.0,
+   "max": 1.0731,
+   "tok": 1,
+   "flags": [
+    "SINGLE_TOKEN_SAMPLE"
+   ],
+   "style": "top_seller_scalper",
+   "verified": "3/3"
+  },
+  {
+   "wallet": "0x56f365F5701B7DdF8eBB27247617fCBB28fB8B21",
+   "rank": 15,
+   "score": 14.5,
+   "pnl": 13.1,
+   "win": 0.1364,
+   "med": 1.0,
+   "max": 1.0985,
+   "tok": 1,
+   "flags": [
+    "SINGLE_TOKEN_SAMPLE"
+   ],
+   "style": "top_seller_scalper",
+   "verified": "2/3"
+  },
+  {
+   "wallet": "0x02Fa109B0aB5a5B32bc86FAFFC63a916835C5EEA",
+   "rank": 16,
+   "score": 14.1,
+   "pnl": 13.57,
+   "win": 0.1111,
+   "med": 1.0,
+   "max": 1.1175,
+   "tok": 1,
+   "flags": [
+    "SINGLE_TOKEN_SAMPLE"
+   ],
+   "style": "top_seller_scalper",
+   "verified": "2/3"
+  },
+  {
+   "wallet": "0xeFbF4Fd8d48341C35991577fe10117c800795ee0",
+   "rank": 17,
+   "score": 14.08,
+   "pnl": 7.36,
+   "win": 0.2857,
+   "med": 1.015,
+   "max": 1.0678,
+   "tok": 1,
+   "flags": [
+    "SINGLE_TOKEN_SAMPLE"
+   ],
+   "style": "scalper",
+   "verified": "2/3"
+  },
+  {
+   "wallet": "0xECc95635d7385dd139230A4C7b36b6c8753Fd829",
+   "rank": 24,
+   "score": 10.02,
+   "pnl": 1.11,
+   "win": 0.0,
+   "med": 1.0,
+   "max": 1.0126,
+   "tok": 1,
+   "flags": [
+    "SINGLE_TOKEN_SAMPLE"
+   ],
+   "style": "top_seller_scalper",
+   "verified": "2/3"
+  },
+  {
+   "wallet": "0x5619fF7F7474a0F8D8a6323A2e83E61D4E75F7B5",
+   "rank": 25,
+   "score": 10.01,
+   "pnl": 1.1,
+   "win": 0.0,
+   "med": 1.0,
+   "max": 1.004,
+   "tok": 1,
+   "flags": [
+    "SINGLE_TOKEN_SAMPLE"
+   ],
+   "style": "top_seller_scalper",
+   "verified": "3/3"
+  },
+  {
+   "wallet": "0x977ae053E3A6909bA2bCfb1e316b6ff58606Ea56",
+   "rank": 33,
+   "score": 5.85,
+   "pnl": 0.04,
+   "win": 0.0,
+   "med": 0.9994,
+   "max": 1.0139,
+   "tok": 1,
+   "flags": [
+    "DUST_ONLY",
+    "SINGLE_TOKEN_SAMPLE"
+   ],
+   "style": "scalper",
+   "verified": "3/3"
+  }
+ ]
+}
