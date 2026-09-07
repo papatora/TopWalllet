@@ -42,7 +42,7 @@ else:
     _venv_py = REPO / ".venv" / "bin" / "python"
     PY = str(_venv_py) if _venv_py.exists() else "python3"
 
-PIPELINE_CMD = [PY, "-m", "src.cli", "pipeline", "--stages", "enrich,prices,analyze"]
+PIPELINE_CMD = [PY, "-m", "src.cli", "pipeline", "--stages", "discover,enrich,prices,analyze"]
 CHECK_INTERVAL = int(os.getenv("SUPERVISOR_CHECK_INTERVAL", "3600"))  # 1 hour
 LOOP_SLEEP = 120          # between crash-retries
 BACKOFF_MAX = 1800        # max crash backoff
