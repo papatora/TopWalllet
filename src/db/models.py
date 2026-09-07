@@ -167,6 +167,31 @@ class WalletLabel(Base):
     assigned_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
 
 
+class FeedEvent(Base):
+    """A persisted Smart-Money-Feed event (docs/ULTIMATE_PROMPT_SMART_MONEY_FEED.md §6.2).
+
+    The product's atom: immutable and idempotent. `id` is deterministic
+    ("evt_{chain_id}_{block}_{tx_hash}_{idx}", see src/feed/events.py), so a
+    replayed block range cannot double-post. `payload` carries the full §6.2
+    JSON object (wallet rank/score/tier/verdict, token meta, action, context,
+    confidence, proof); the flat columns exist so the feed API can filter and
+    sort without parsing JSON.
+    """
+    __tablename__ = "feed_events"
+
+    id: Mapped[str] = mapped_column(String(120), primary_key=True)
+    type: Mapped[str] = mapped_column(String(8), index=True)  # CALL|ENTRY|ADD|TRIM|EXIT|ROTATION (§6.3)
+    wallet_address: Mapped[str] = mapped_column(String(64), index=True)
+    token_address: Mapped[str] = mapped_column(String(64), index=True)
+    ts: Mapped[datetime] = mapped_column(DateTime(timezone=True))  # block timestamp (UTC)
+    block: Mapped[int] = mapped_column(BigInteger)
+    tx_hash: Mapped[str] = mapped_column(String(80), default="")
+    detected_at: Mapped[datetime] = mapped_column(DateTime(timezone=True))
+    published_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
+    lag_seconds: Mapped[float] = mapped_column(Float, default=0.0)  # detected_at − ts (§6.2)
+    payload: Mapped[str] = mapped_column(Text, default="{}")        # full §6.2 FeedEvent JSON
+
+
 class PipelineCheckpoint(Base):
     __tablename__ = "pipeline_checkpoints"
 

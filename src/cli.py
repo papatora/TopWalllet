@@ -7,6 +7,7 @@
   python -m src.cli monitor                      # real-time top-wallet monitor
   python -m src.cli scheduler                    # cron scheduler (weekly rerun)
   python -m src.cli api                          # FastAPI dashboard backend
+  python -m src.cli backfill                     # seed feed_events from swap history
 """
 from __future__ import annotations
 
@@ -55,6 +56,23 @@ async def _cmd_scheduler(_args) -> int:
     from src.scheduler import run_scheduler
 
     await run_scheduler()
+    return 0
+
+
+async def _cmd_backfill(args) -> int:
+    from src.db.database import get_session_factory, init_db
+    from src.feed.events import backfill, build_ranked_lookup
+
+    await init_db()
+    async with get_session_factory()() as session:
+        ranked_lookup = await build_ranked_lookup(session)
+        count = await backfill(
+            session, ranked_lookup,
+            start_block=args.start_block, end_block=args.end_block,
+        )
+    print(json.dumps({"feed_events_backfilled": count,
+                      "start_block": args.start_block,
+                      "end_block": args.end_block}, indent=2))
     return 0
 
 
@@ -122,6 +140,11 @@ def main(argv: list[str] | None = None) -> int:
     sub.add_parser("api", help="start FastAPI server on :8000")
     sub.add_parser("push", help="push results/ + PROGRESS.md to GitHub")
 
+    p_bf = sub.add_parser("backfill",
+                          help="seed feed_events from swap history (idempotent)")
+    p_bf.add_argument("--start-block", type=int, default=None)
+    p_bf.add_argument("--end-block", type=int, default=None)
+
     args = parser.parse_args(argv)
     setup_logging()
 
@@ -132,6 +155,7 @@ def main(argv: list[str] | None = None) -> int:
         "track-ca": _cmd_track_ca,
         "monitor": _cmd_monitor,
         "scheduler": _cmd_scheduler,
+        "backfill": _cmd_backfill,
         "stats": _cmd_stats,
         "api": _cmd_api,
         "push": _cmd_push,
