@@ -186,3 +186,27 @@ jalan di sana; lokal cuma git pull + baca hasil.
 - Cluster_f70d (funder 250 ETH, 26 wallet, 2 di top-38) menunggu deep-trace:
   cek apa 0xccc88a9d (ops hub, 20x funding) → akan masuk otomatis kalau
   wallet-nya trading token terlacak.
+
+## SNAPSHOT S-10 — 2026-09-07 (DIRECTIVE BARU: Smart Money Feed product v2)
+
+**User memberi 2 dokumen directive (tersimpan di docs/):**
+1. `docs/ULTIMATE_PROMPT_SMART_MONEY_FEED.md` — SPESIFIKASI LENGKAP produk:
+   build **Smart Money Feed** web (hero + live feed SSE + wallet dossier +
+   token page + Whale Entry Map + clusters + track-by-CA + /status +
+   /methodology). Milestone M0–M6 di §12. Data reality §4 (38 verified,
+   micro-scalpers — hero TIDAK BOHONG, label SINGLE_TOKEN_SAMPLE). Design
+   system §7 (editorial newspaper × terminal, warm paper, serif + mono).
+   API v2 §8.1, event model §6.2 (FeedEvent + proof wajib), signal taxonomy
+   §6.3 (CALL/ENTRY/ADD/TRIM/EXIT/ROTATION), freshness contract §6.9 (P0!).
+   First ten actions §14. Failure modes §15.
+2. `docs/GMGN_PANDUAN_LENGKAP.md` — kriteria analisis yang harus masuk
+   wallet/token forensics: security grid (Top10, Dev, Insiders, Snipers,
+   Phishing vs Bundler — dua dimensi berbeda!), dev fingerprint (Total Pairs,
+   % Migrated, Funding wallet, Rug History), bonding curve/migrated, callout
+   X, launchpad economics (Pons = Pump.fun-nya RH chain). Ini blueprint untuk
+   memperkaya anti_gaming + whale/token scoring (Phase 2 forensics).
+
+**Eksekusi:** milestone plan §12 M0→M6, kerjakan berurutan di VPS, pytest
+hijau tiap milestone, PRE_COMPACT update tiap milestone. Context session ini
+hampir habis → **sesi berikutnya mulai dari dokumen ini** (baca §14 first
+ten actions). Cron monitor per jam tetap aktif.
