@@ -82,7 +82,7 @@
     "eth_oracle_ok": true,
     "trades_verified": "2/3",
     "details": [
-      "R2 rederive returned no data"
+      "R2 mismatch stored=1.07x recomputed=2.14x"
     ]
   },
   "trading_style": "generalist",

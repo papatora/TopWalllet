@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-07T06:51:21.923143+00:00",
+  "generated_at": "2026-09-07T08:03:03.075718+00:00",
   "chain": "robinhood",
   "chain_id": 4663,
-  "total_ranked": 38,
+  "total_ranked": 37,
   "wallets": [
     {
       "rank": 1,
@@ -252,7 +252,7 @@
         "eth_oracle_ok": true,
         "trades_verified": "2/3",
         "details": [
-          "R2 rederive returned no data"
+          "R2 mismatch stored=1.07x recomputed=2.14x"
         ]
       },
       "trading_style": "generalist",
@@ -2166,98 +2166,6 @@
     },
     {
       "rank": 25,
-      "wallet_address": "0x3A8982399F7a72f0B57f0833b87549bC37C1B523",
-      "composite_score": 10.0,
-      "metrics": {
-        "total_positions": 9,
-        "winning_positions": 0,
-        "win_rate": 0.0,
-        "median_return_multiple": 0.9993,
-        "max_return_multiple": 0.9994,
-        "total_realized_pnl_usd": -0.04,
-        "total_unrealized_pnl_usd": 0,
-        "avg_hold_duration_hours": 0.01,
-        "consistency_score": 0.0,
-        "dip_buying_accuracy": 0.6667,
-        "top_selling_accuracy": 0.0,
-        "distinct_tokens": 1,
-        "big_wins_10x_plus": 0,
-        "recent_win_rate": 0.0,
-        "active_months": 2,
-        "last_active": "2026-09-05T17:08:35+00:00"
-      },
-      "top_trades": [
-        {
-          "token": "ROBINHOOD",
-          "ca": "0x79Fe86b963255Ce884bdcaC6388C50a599Ba277f",
-          "entry_price_usd": 0.00013196558093417989,
-          "exit_price_usd": 0.0001318897546512808,
-          "return_multiple": 1.0,
-          "position_size_usd": 6.09,
-          "pnl_usd": -0.0,
-          "entry_date": "2026-08-28",
-          "exit_date": "2026-08-28"
-        },
-        {
-          "token": "ROBINHOOD",
-          "ca": "0x79Fe86b963255Ce884bdcaC6388C50a599Ba277f",
-          "entry_price_usd": 0.0001031190748428527,
-          "exit_price_usd": 0.00010305204766895384,
-          "return_multiple": 1.0,
-          "position_size_usd": 6.09,
-          "pnl_usd": -0.0,
-          "entry_date": "2026-08-31",
-          "exit_date": "2026-08-31"
-        },
-        {
-          "token": "ROBINHOOD",
-          "ca": "0x79Fe86b963255Ce884bdcaC6388C50a599Ba277f",
-          "entry_price_usd": 9.67282891773296e-05,
-          "exit_price_usd": 9.666337255586866e-05,
-          "return_multiple": 1.0,
-          "position_size_usd": 6.09,
-          "pnl_usd": -0.0,
-          "entry_date": "2026-09-03",
-          "exit_date": "2026-09-03"
-        },
-        {
-          "token": "ROBINHOOD",
-          "ca": "0x79Fe86b963255Ce884bdcaC6388C50a599Ba277f",
-          "entry_price_usd": 9.46053488178928e-05,
-          "exit_price_usd": 9.454114864395142e-05,
-          "return_multiple": 1.0,
-          "position_size_usd": 6.09,
-          "pnl_usd": -0.0,
-          "entry_date": "2026-08-31",
-          "exit_date": "2026-08-31"
-        },
-        {
-          "token": "ROBINHOOD",
-          "ca": "0x79Fe86b963255Ce884bdcaC6388C50a599Ba277f",
-          "entry_price_usd": 9.057536586873981e-05,
-          "exit_price_usd": 9.051254819949923e-05,
-          "return_multiple": 1.0,
-          "position_size_usd": 6.09,
-          "pnl_usd": -0.0,
-          "entry_date": "2026-09-01",
-          "exit_date": "2026-09-01"
-        }
-      ],
-      "verification": {
-        "verdict": "verified",
-        "eth_oracle_ok": true,
-        "trades_verified": "3/3",
-        "details": []
-      },
-      "trading_style": "dip_buyer_scalper",
-      "risk_flags": [
-        "DUST_ONLY",
-        "SINGLE_TOKEN_SAMPLE"
-      ],
-      "cluster_id": "cluster_f15168b7"
-    },
-    {
-      "rank": 26,
       "wallet_address": "0xF38013d1CAAA68251cD5FC0E0d18F3c97824374D",
       "composite_score": 10.0,
       "metrics": {
@@ -2349,7 +2257,7 @@
       "cluster_id": "cluster_f15168b7"
     },
     {
-      "rank": 27,
+      "rank": 26,
       "wallet_address": "0x505D2e7A715c9AF1D690204F43D75EaEa4EFaF10",
       "composite_score": 10.0,
       "metrics": {
@@ -2438,6 +2346,99 @@
         "DUST_ONLY"
       ],
       "cluster_id": "cluster_2e9839d9"
+    },
+    {
+      "rank": 27,
+      "wallet_address": "0xad06Acf9A495f77a21E5c657E04B1E0258D23a32",
+      "composite_score": 10.0,
+      "metrics": {
+        "total_positions": 25,
+        "winning_positions": 0,
+        "win_rate": 0.0,
+        "median_return_multiple": 1.0,
+        "max_return_multiple": 1.0,
+        "total_realized_pnl_usd": -0.0,
+        "total_unrealized_pnl_usd": 0,
+        "avg_hold_duration_hours": 0.4,
+        "consistency_score": 0.0,
+        "dip_buying_accuracy": 0.0,
+        "top_selling_accuracy": 1.0,
+        "distinct_tokens": 1,
+        "big_wins_10x_plus": 0,
+        "recent_win_rate": 0.0,
+        "active_months": 1,
+        "last_active": "2026-09-05T17:54:29+00:00"
+      },
+      "top_trades": [
+        {
+          "token": "CYBR",
+          "ca": "0xB948C24BAc6cAF34604f39AA52B1deD5035BC4a4",
+          "entry_price_usd": 0.00010413854893373732,
+          "exit_price_usd": 0.00010413854893373732,
+          "return_multiple": 1.0,
+          "position_size_usd": 80.11,
+          "pnl_usd": 0.0,
+          "entry_date": "2026-09-05",
+          "exit_date": "2026-09-05"
+        },
+        {
+          "token": "CYBR",
+          "ca": "0xB948C24BAc6cAF34604f39AA52B1deD5035BC4a4",
+          "entry_price_usd": 0.00010413854893373732,
+          "exit_price_usd": 0.00010413854893373732,
+          "return_multiple": 1.0,
+          "position_size_usd": 75.4,
+          "pnl_usd": 0.0,
+          "entry_date": "2026-09-05",
+          "exit_date": "2026-09-05"
+        },
+        {
+          "token": "CYBR",
+          "ca": "0xB948C24BAc6cAF34604f39AA52B1deD5035BC4a4",
+          "entry_price_usd": 0.0001041385489337373,
+          "exit_price_usd": 0.00010413854893373732,
+          "return_multiple": 1.0,
+          "position_size_usd": 202.16,
+          "pnl_usd": 0.0,
+          "entry_date": "2026-09-05",
+          "exit_date": "2026-09-05"
+        },
+        {
+          "token": "CYBR",
+          "ca": "0xB948C24BAc6cAF34604f39AA52B1deD5035BC4a4",
+          "entry_price_usd": 0.00010413854893373732,
+          "exit_price_usd": 0.00010413854893373732,
+          "return_multiple": 1.0,
+          "position_size_usd": 69.49,
+          "pnl_usd": 0,
+          "entry_date": "2026-09-05",
+          "exit_date": "2026-09-05"
+        },
+        {
+          "token": "CYBR",
+          "ca": "0xB948C24BAc6cAF34604f39AA52B1deD5035BC4a4",
+          "entry_price_usd": 0.00010413854893373733,
+          "exit_price_usd": 0.00010413854893373732,
+          "return_multiple": 1.0,
+          "position_size_usd": 112.75,
+          "pnl_usd": 0,
+          "entry_date": "2026-09-05",
+          "exit_date": "2026-09-05"
+        }
+      ],
+      "verification": {
+        "verdict": "verified",
+        "eth_oracle_ok": true,
+        "trades_verified": "2/3",
+        "details": [
+          "R2 mismatch stored=1.00x recomputed=2.17x"
+        ]
+      },
+      "trading_style": "top_seller_scalper",
+      "risk_flags": [
+        "SINGLE_TOKEN_SAMPLE"
+      ],
+      "cluster_id": "cluster_ad06acf9"
     },
     {
       "rank": 28,
@@ -3356,75 +3357,6 @@
         "SINGLE_TOKEN_SAMPLE"
       ],
       "cluster_id": "cluster_470e6be8"
-    },
-    {
-      "rank": 38,
-      "wallet_address": "0xA7B5F842a0cf73B4866dd2eAA6dd78C8B71BD7B3",
-      "composite_score": 0.0,
-      "metrics": {
-        "total_positions": 3,
-        "winning_positions": 0,
-        "win_rate": 0.0,
-        "median_return_multiple": 0.704,
-        "max_return_multiple": 0.777,
-        "total_realized_pnl_usd": -631.72,
-        "total_unrealized_pnl_usd": 2812.51,
-        "avg_hold_duration_hours": 2.26,
-        "consistency_score": 0.0,
-        "dip_buying_accuracy": 0.0,
-        "top_selling_accuracy": 0.0,
-        "distinct_tokens": 1,
-        "big_wins_10x_plus": 0,
-        "recent_win_rate": 0.0,
-        "active_months": 1,
-        "last_active": "2026-08-29T20:53:35+00:00"
-      },
-      "top_trades": [
-        {
-          "token": "$CASHCATSLLC",
-          "ca": "0x26FE0F73Fb5EA558A2a67fd94198abBc078fC03e",
-          "entry_price_usd": 8.955578537796684e-05,
-          "exit_price_usd": 6.958526622518986e-05,
-          "return_multiple": 0.78,
-          "position_size_usd": 630.76,
-          "pnl_usd": -140.66,
-          "entry_date": "2026-08-27",
-          "exit_date": "2026-08-27"
-        },
-        {
-          "token": "$CASHCATSLLC",
-          "ca": "0x26FE0F73Fb5EA558A2a67fd94198abBc078fC03e",
-          "entry_price_usd": 7.989466454429788e-05,
-          "exit_price_usd": 5.040600325163027e-05,
-          "return_multiple": 0.63,
-          "position_size_usd": 1330.45,
-          "pnl_usd": -491.06,
-          "entry_date": "2026-08-28",
-          "exit_date": "2026-08-28"
-        },
-        {
-          "token": "$CASHCATSLLC",
-          "ca": "0x26FE0F73Fb5EA558A2a67fd94198abBc078fC03e",
-          "entry_price_usd": 5.639113070564196e-05,
-          "exit_price_usd": 0.0002355,
-          "return_multiple": 4.18,
-          "position_size_usd": 885.5,
-          "pnl_usd": null,
-          "entry_date": "2026-08-29",
-          "exit_date": null
-        }
-      ],
-      "verification": {
-        "verdict": "verified",
-        "eth_oracle_ok": true,
-        "trades_verified": "2/2",
-        "details": []
-      },
-      "trading_style": "scalper",
-      "risk_flags": [
-        "SINGLE_TOKEN_SAMPLE"
-      ],
-      "cluster_id": null
     }
   ]
 }

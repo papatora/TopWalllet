@@ -117,8 +117,8 @@
       "pnl_usd": -0.0,
       "return_multiple": 0.9994,
       "hold_hours": 0.01,
-      "entry_pctile": 0.8957528957528957,
-      "exit_pctile": 0.8938223938223938
+      "entry_pctile": 0.8956521739130435,
+      "exit_pctile": 0.893719806763285
     },
     {
       "token": "ROBINHOOD",

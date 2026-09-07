@@ -1,10 +1,10 @@
 {
   "phase": "pipeline",
   "cycle": 1,
-  "pid": 33812,
+  "pid": 36165,
   "top_wallets": null,
   "last_exit": null,
-  "updated_at": "2026-09-06T20:08:30.928655+00:00",
-  "log_tail": "03:08:29 WARNING src.utils.rpc_client: getlogs range skipped | 03:08:29 INFO    httpx: HTTP Request: POST https://rpc.mainnet.chain.robinhood.com \"HTTP/1.1 200 OK\"",
-  "pipeline_pid": 36464
+  "updated_at": "2026-09-07T08:02:38.193779+00:00",
+  "log_tail": "cout.com/api/v2/addresses/0xf27359c75d661b7e2e3ed5f3a2a717ba56fb3d1c/token-transfers?type=ERC-20&token=0x9395116762721d13c246f6b0a5c41bbb31777a8d \"HTTP/1.1 200 OK\" | 08:02:37 INFO    httpx: HTTP Request: GET https://robinhoodchain.blockscout.com/api/v2/addresses/0xf27359c75d661b7e2e3ed5f3a2a717ba56fb3d1c/token-transfers?type=ERC-20&token=0x9395116762721d13c246f6b0a5c41bbb31777a8d \"HTTP/1.1 200 OK\"",
+  "pipeline_pid": 36167
 }
