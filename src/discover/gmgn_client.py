@@ -82,18 +82,25 @@ class GmgnClient:
     def token_top_holders(self, chain: str, ca: str, limit: int = 100) -> list[dict]:
         d = self.get("/v1/market/token_top_holders",
                      {"chain": chain, "address": ca, "limit": limit})
-        return d.get("holders", d.get("rank", [])) if isinstance(d, dict) else []
+        if isinstance(d, dict):
+            return d.get("holders", d.get("rank", d.get("list", [])))
+        return []
 
     def token_top_traders(self, chain: str, ca: str, order_by: str = "profit",
                           limit: int = 100) -> list[dict]:
         d = self.get("/v1/market/token_top_traders",
                      {"chain": chain, "address": ca, "order_by": order_by, "limit": limit})
-        return d.get("traders", d.get("rank", [])) if isinstance(d, dict) else []
+        if isinstance(d, dict):
+            return d.get("traders", d.get("rank", d.get("list", [])))
+        return []
 
     def token_kline(self, chain: str, ca: str, interval: str = "5m", limit: int = 100) -> list:
+        # NOTE: API expects the candle size as `resolution` (interval accepted
+        # but optional); payload rows arrive under `list`.
         d = self.get("/v1/market/token_kline",
-                     {"chain": chain, "address": ca, "interval": interval, "limit": limit})
-        return d.get("klines", []) if isinstance(d, dict) else []
+                     {"chain": chain, "address": ca, "resolution": interval,
+                      "limit": limit})
+        return d.get("klines", d.get("list", [])) if isinstance(d, dict) else []
 
     # ── wallet ──
 
@@ -113,7 +120,7 @@ class GmgnClient:
 
     def created_tokens(self, chain: str, wallet: str) -> list[dict]:
         d = self.get("/v1/user/created_tokens", {"chain": chain, "wallet_address": wallet})
-        return d.get("tokens", []) if isinstance(d, dict) else []
+        return d.get("tokens", d.get("list", [])) if isinstance(d, dict) else []
 
     def close(self):
         self._client.close()
