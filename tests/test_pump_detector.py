@@ -5,9 +5,10 @@ from src.analyze.pump_detector import (
 
 
 def series():
-    # base 1.0 flat for a while, then pumps 10x, then cools
-    blocks = list(range(100, 100 + 20, 10)) + list(range(300, 300 + 40, 10)) + [400, 410, 420]
-    prices = [1.0] * 2 + [1.0, 1.1, 0.9, 1.0, 1.05, 0.95] + [1.2, 2.0, 3.5, 5.0, 7.0, 10.0, 9.0, 8.0] + [7.0, 6.5, 6.0]
+    # flat base (6 pts), 10x pump (7 pts), cool-down (3 pts) — 16 aligned points
+    blocks = [1000 + i * 100 for i in range(16)]
+    prices = [1.0, 1.05, 0.95, 1.0, 1.1, 0.98,
+              1.5, 2.5, 4.0, 5.5, 7.0, 8.5, 10.0, 9.0, 8.0, 7.5]
     return blocks, prices
 
 
@@ -47,8 +48,7 @@ def test_participant_categories():
 
 def test_multi_pump_hunter_ranking():
     by_pump = {
-        "tokenA": [PumpParticipant.__new__(PumpParticipant)] * 0 or [
-            _mk("0xgold", "ACCUMULATOR", 100), _mk("0xlucky", "EARLY_HUNTER", 50)],
+        "tokenA": [_mk("0xgold", "ACCUMULATOR", 100), _mk("0xlucky", "EARLY_HUNTER", 50)],
         "tokenB": [_mk("0xgold", "EARLY_HUNTER", 200)],
     }
     hunters = multi_pump_hunters(by_pump, min_pumps=2)
