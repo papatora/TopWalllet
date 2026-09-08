@@ -36,13 +36,20 @@ class WalletMetrics:
     active_months: int
     last_active: datetime | None
     median_position_size_usd: float
+    unrealized_pnl_usd: float = 0.0
+    unrealized_ratio: float = 0.0
+    bags_count: int = 0
 
 
 def compute_metrics(
     positions: list[CalcPosition],
     weights_cfg: dict,
     now: datetime | None = None,
+    unrealized_by_token: dict[str, float] | None = None,
 ) -> WalletMetrics | None:
+    """unrealized_by_token: {token: current_unrealized_pnl_usd} for open
+    positions (negative = underwater bag). Feeds the S-28 risk framework."""
+    unrealized_by_token = unrealized_by_token or {}
     cfg = weights_cfg.get("thresholds", {})
     norm = weights_cfg.get("normalization", {})
     styles = weights_cfg.get("styles", {})
@@ -139,6 +146,9 @@ def compute_metrics(
         active_months=len(months),
         last_active=last_active,
         median_position_size_usd=round(statistics.median(sizes), 2) if sizes else 0.0,
+        unrealized_pnl_usd=round(sum(unrealized_by_token.get(p.token, 0.0) for p in open_pos), 2),
+        unrealized_ratio=0.0,
+        bags_count=sum(1 for p in open_pos if unrealized_by_token.get(p.token, 0.0) < 0),
     )
 
 
