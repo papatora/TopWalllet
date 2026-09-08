@@ -459,3 +459,30 @@ TERBUKTI TIDAK HALU.**
 - Multi-chain: BSC + RH (aset user di dua chain itu).
 
 **Trending scanner (Task 2) mulai dibangun + jalan di VPS sekarang.**
+
+## SNAPSHOT S-28 — 0x43dcf4cb CONFIRMED GENUINE + UNREALIZED RISK FRAMEWORK (user insight)
+
+**Verifikasi manual user (GMGN, All chains):**
+- 0x43dcf4cb = GENUINE: Aug +$80,9K (20/23 hari profit, streak 13d), Sep
+  +$55,8K (streak 7d) — mesin harian konsisten, BUKAN hoki
+- **RED FLAG yang ditemukan user: Unrealized = -$61,7K** (setengah balance!)
+- Pertanyaan kunci user: token unrealized itu token deployan dia atau token
+  orang? → menentukan "trader averaging down" vs "dev trapped bag"
+
+**FRAMEWORK BARU — penilaian wallet = 3 angka, bukan 1:**
+1. `realized_pnl` — kebenaran yang sudah dicairkan (bank)
+2. `unrealized_pnl` — risiko terbuka; NEGARIF besar = pegang kantong
+3. `unrealized_provenance` — per token unrealized: wallet = deployernya?
+   (pakai early-entry fingerprint yang sudah ada) → token sendiri = dev bag,
+   token orang = investor bag
+
+**Scoring update (implement next):**
+- WalletScore tambah: unrealized_pnl, unrealized_ratio (unreal/balance),
+  bags_count (token unrealized minus)
+- Rule: realized positif + unrealized negatif besar → tier turun sementara
+  (monitor 7 hari: cut loss = sehat; nambah = trapped)
+- Tier S: realized++ AND unrealized ≥ 0 ATAU unrealized minor
+- R3 sudah melarang klaim unrealized di atas data >24h — konsisten
+
+**Dataset baru yang bisa diambil dari GMGN untuk ini:** wallet unrealized per
+token ada di wallet_activity/wallet_profits (endpoint sudah di client).
