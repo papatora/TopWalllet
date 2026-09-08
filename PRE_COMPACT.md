@@ -404,3 +404,28 @@ yang beli SEBELUM/awal pump. Contoh user: token Vape di BSC flat lalu +7207%
 3. VPS cron terpisah (5 menit): deteksi pump BARU real-time → feed + alert
 4. GMGN cross-check: pump RH chain vs BSC (Vape contoh user) — wallet yang
    sama di kedua chain = 100% operator, bukan kebetulan
+
+## SNAPSHOT S-25 — 2026-09-08 (GMGN OPENAPI UNLOCKED — game changer)
+
+**GMGN OpenAPI resmi WORKING (bukan scraping lagi!):**
+- Client: `src/discover/gmgn_client.py` (BASE https://openapi.gmgn.ai, X-APIKEY
+  gmgn_solbscbaseethmonadtron public test key + timestamp + client_id ±5s)
+- Verified live: market/rank (bsc+robinhood, interval 1m/5m/1h/6h/24h),
+  token/security, token/info, top holders/traders, kline, wallet stats/profits/
+  activity/created_tokens
+- RH trending 1h live: PONS +7.8%, ZZZ +39.2%, ELIZABAO +5463% (pump tokens!)
+- VAPE (BSC 0xa6b5…ffff) security via API: top10 17.49%, no honeypot, OSS
+
+**DIRECTIVE BARU USER (docs/DIRECTIVE_PUMP_ANALYZER_SCANNER.md):**
+- TASK 1: Pump Wallet Analyzer — analisis token dead→pump (VAPE + Life K-line
+  0x1a1e…4444, keduanya BSC), klasifikasi DEV/BUNDLER/SMART_MONEY + scoring
+- TASK 2: Smart Wallet Scanner trending-based (target 50K+ wallet, $10K+ PNL)
+- TASK 3: Dashboard web dark terminal aesthetic (anti-slop rules di dokumen)
+- TASK 4: Cross-analysis VAPE × Life K-line (shared wallets/funding/bundler →
+  grup terkoordinasi → track pump berikutnya). Sample tokens DEAD 268-352 hari
+  lalu pump vertikal — pattern identik = kemungkinan grup yang sama!
+- Endpoint + auth scheme + tag filter (smart_degen/sniper/bundler/dev/fresh_wallet)
+  lengkap di dokumen directive
+
+**NEXT SESSION: langsung eksekusi TASK 1+2+4 via subagent (GMGN client sudah
+jadi), lalu TASK 3 dashboard. Session ini context habis.**
