@@ -380,3 +380,27 @@ Target: **100K+ wallets**, universe 300-500 tokens, dan bangun produk:
      auditor queue anti-skip, re-verifier round-robin
   3. GMGN criteria → anti_gaming enrichment (bundler/insider/phishing per token)
   4. Website revamp HANYA setelah data matang (300-500 token, ratusan verified)
+
+## SNAPSHOT S-23 — STRATEGY PIVOT: PUMP-FIRST DISCOVERY (user mandate)
+
+**User insight (benar):** wallet-first scan salah — 12K wallet cuma ketemu top
+PnL $480. Yang benar: **PUMP-FIRST** — cari token yang PUMP (price velocity +
+volume spike, interval 1m/5m/1h/6h/24h ala GMGN trend), lalu ekstrak SIAPA
+yang beli SEBELUM/awal pump. Contoh user: token Vape di BSC flat lalu +7207%
+24h — wallet yang beli di zona flat (merah box) = hunter emas.
+
+**Implemented: `src/analyze/pump_detector.py`** (64 tests green):
+- `detect_pumps(blocks, prices, min_gain_pct=50)` — episode pump non-overlap
+  (rise ≥50% dalam window 200-300K blok, dari PricePoint series yang SUDAH ADA)
+- `classify_pump_participants()` — per pump: ACCUMULATOR (beli sebelum pump),
+  EARLY_HUNTER (first 10% pump), MID_RIDER, LATE_CHASER (exit liquidity)
+- `multi_pump_hunters(min_pumps=2)` — wallet yang early-catch ≥2 pump BERBEDA
+  di token BERBEDA = GOLD WALLET candidates, sorted
+
+**Integration plan (next):**
+1. Pipeline analyze: jalankan detektor per pool series → pumps + participants
+   → `results/pumps.json` + label wallet (ACCUMULATOR/EARLY_HUNTER per token)
+2. multi_pump_hunters → prioritaskan wallet ini untuk enrich mendalam + verify
+3. VPS cron terpisah (5 menit): deteksi pump BARU real-time → feed + alert
+4. GMGN cross-check: pump RH chain vs BSC (Vape contoh user) — wallet yang
+   sama di kedua chain = 100% operator, bukan kebetulan
