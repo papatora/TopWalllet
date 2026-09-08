@@ -4,11 +4,11 @@
     "chain": "bsc",
     "symbol": "Vape",
     "name": "CEA Industries",
-    "price": "0.00035451203",
+    "price": "0.00027548943",
     "total_supply": "1000000000",
-    "holder_count": 1866,
+    "holder_count": 1823,
     "security": {
-      "top_10_holder_rate": "0.1734",
+      "top_10_holder_rate": "0.1766",
       "is_honeypot": false,
       "honeypot": 0,
       "is_open_source": true,
@@ -36,15 +36,15 @@
     },
     "kline_window": {
       "interval": "5m",
-      "start": "2026-09-08T08:20:00+00:00",
-      "end": "2026-09-08T16:40:00+00:00"
+      "start": "2026-09-08T08:35:00+00:00",
+      "end": "2026-09-08T16:55:00+00:00"
     },
     "dead_period": {
-      "start": "2026-09-08T08:20:00+00:00",
+      "start": "2026-09-08T08:35:00+00:00",
       "end": "2026-09-08T10:35:00+00:00"
     },
     "pump_start": "2026-09-08T10:35:00+00:00",
-    "pump_start_index": 27,
+    "pump_start_index": 24,
     "pump_peak": {
       "ts": "2026-09-08T15:20:00+00:00",
       "price": 0.0054660001
@@ -66,8 +66,8 @@
         "rank_tag": "top4",
         "cluster_id": "BUNDLE_001",
         "buy_block": null,
-        "buy_bucket": -76,
-        "peers_same_adjacent_block": 28,
+        "buy_bucket": -106,
+        "peers_same_adjacent_block": 29,
         "buy_amount_usd": 0.0,
         "funding_source": null,
         "bundler_type": "time",
@@ -109,8 +109,8 @@
         "rank_tag": "top10",
         "cluster_id": "BUNDLE_001",
         "buy_block": null,
-        "buy_bucket": -75,
-        "peers_same_adjacent_block": 32,
+        "buy_bucket": -105,
+        "peers_same_adjacent_block": 33,
         "buy_amount_usd": 1145.7852712302767,
         "funding_source": null,
         "bundler_type": "time",
@@ -153,8 +153,8 @@
         "rank_tag": "top13",
         "cluster_id": "BUNDLE_001",
         "buy_block": null,
-        "buy_bucket": -76,
-        "peers_same_adjacent_block": 28,
+        "buy_bucket": -106,
+        "peers_same_adjacent_block": 29,
         "buy_amount_usd": 0.0,
         "funding_source": null,
         "bundler_type": "time",
@@ -196,8 +196,8 @@
         "rank_tag": "top15",
         "cluster_id": "BUNDLE_001",
         "buy_block": null,
-        "buy_bucket": -76,
-        "peers_same_adjacent_block": 28,
+        "buy_bucket": -106,
+        "peers_same_adjacent_block": 29,
         "buy_amount_usd": 0.0,
         "funding_source": null,
         "bundler_type": "time",
@@ -217,7 +217,7 @@
         "rank_tag": "top17",
         "cluster_id": "BUNDLE_001",
         "buy_block": null,
-        "buy_bucket": -73,
+        "buy_bucket": -103,
         "peers_same_adjacent_block": 8,
         "buy_amount_usd": 0.0,
         "funding_source": null,
@@ -323,7 +323,7 @@
           "bundler",
           "paper_hands"
         ],
-        "rank_tag": "top30",
+        "rank_tag": "top29",
         "cluster_id": "TAGGED",
         "buy_block": null,
         "buy_bucket": null,
@@ -343,33 +343,12 @@
           "gmgn",
           "bundler"
         ],
-        "rank_tag": "top31",
+        "rank_tag": "top30",
         "cluster_id": "TAGGED",
         "buy_block": null,
         "buy_bucket": null,
         "peers_same_adjacent_block": null,
         "buy_amount_usd": 0.0,
-        "funding_source": null,
-        "bundler_type": "tagged",
-        "is_new_wallet": false,
-        "received_transfer": false,
-        "risk_score": 7.5
-      },
-      {
-        "address": "0x92a8d5ce2ecc201be0d707f4922ab6484bb50d61",
-        "phase": "PRE_PUMP",
-        "first_trade_ts": "2026-09-08T03:26:25+00:00",
-        "tags": [
-          "gmgn",
-          "fomo",
-          "bundler"
-        ],
-        "rank_tag": "top32",
-        "cluster_id": "TAGGED",
-        "buy_block": null,
-        "buy_bucket": null,
-        "peers_same_adjacent_block": null,
-        "buy_amount_usd": 3151.3042921121405,
         "funding_source": null,
         "bundler_type": "tagged",
         "is_new_wallet": false,
@@ -385,34 +364,12 @@
           "bundler",
           "paper_hands"
         ],
-        "rank_tag": "top33",
+        "rank_tag": "top32",
         "cluster_id": "BUNDLE_001",
         "buy_block": null,
-        "buy_bucket": -75,
-        "peers_same_adjacent_block": 32,
+        "buy_bucket": -105,
+        "peers_same_adjacent_block": 33,
         "buy_amount_usd": 0.0,
-        "funding_source": null,
-        "bundler_type": "time",
-        "is_new_wallet": false,
-        "received_transfer": false,
-        "risk_score": 9.0
-      },
-      {
-        "address": "0x2ce9d43d1cba6ae31d7f07bfe0098dfa2d833373",
-        "phase": "POST_PUMP",
-        "first_trade_ts": "2026-09-08T15:14:43+00:00",
-        "tags": [
-          "kol",
-          "gmgn",
-          "fomo",
-          "bundler"
-        ],
-        "rank_tag": "top29",
-        "cluster_id": "BUNDLE_001",
-        "buy_block": null,
-        "buy_bucket": -76,
-        "peers_same_adjacent_block": 28,
-        "buy_amount_usd": 1706.1736605842627,
         "funding_source": null,
         "bundler_type": "time",
         "is_new_wallet": false,
@@ -428,16 +385,38 @@
           "transfer_in",
           "paper_hands"
         ],
-        "rank_tag": "top34",
+        "rank_tag": "top33",
         "cluster_id": "BUNDLE_001",
         "buy_block": null,
-        "buy_bucket": -75,
-        "peers_same_adjacent_block": 32,
+        "buy_bucket": -105,
+        "peers_same_adjacent_block": 33,
         "buy_amount_usd": 0.0,
         "funding_source": null,
         "bundler_type": "time",
         "is_new_wallet": false,
         "received_transfer": true,
+        "risk_score": 9.0
+      },
+      {
+        "address": "0x2ce9d43d1cba6ae31d7f07bfe0098dfa2d833373",
+        "phase": "POST_PUMP",
+        "first_trade_ts": "2026-09-08T15:14:43+00:00",
+        "tags": [
+          "kol",
+          "gmgn",
+          "fomo",
+          "bundler"
+        ],
+        "rank_tag": "top34",
+        "cluster_id": "BUNDLE_001",
+        "buy_block": null,
+        "buy_bucket": -106,
+        "peers_same_adjacent_block": 29,
+        "buy_amount_usd": 0.0,
+        "funding_source": null,
+        "bundler_type": "time",
+        "is_new_wallet": false,
+        "received_transfer": false,
         "risk_score": 9.0
       },
       {
@@ -452,7 +431,7 @@
         "rank_tag": "top35",
         "cluster_id": "BUNDLE_001",
         "buy_block": null,
-        "buy_bucket": -74,
+        "buy_bucket": -104,
         "peers_same_adjacent_block": 15,
         "buy_amount_usd": 0.0,
         "funding_source": null,
@@ -460,6 +439,27 @@
         "is_new_wallet": false,
         "received_transfer": true,
         "risk_score": 9.0
+      },
+      {
+        "address": "0x92a8d5ce2ecc201be0d707f4922ab6484bb50d61",
+        "phase": "PRE_PUMP",
+        "first_trade_ts": "2026-09-08T03:26:25+00:00",
+        "tags": [
+          "gmgn",
+          "fomo",
+          "bundler"
+        ],
+        "rank_tag": "top31",
+        "cluster_id": "TAGGED",
+        "buy_block": null,
+        "buy_bucket": null,
+        "peers_same_adjacent_block": null,
+        "buy_amount_usd": 3151.3042921121405,
+        "funding_source": null,
+        "bundler_type": "tagged",
+        "is_new_wallet": false,
+        "received_transfer": false,
+        "risk_score": 7.5
       },
       {
         "address": "0x58d2d787277484b3071625d8c832d18cfbcb0233",
@@ -473,7 +473,7 @@
         "rank_tag": "top39",
         "cluster_id": "BUNDLE_001",
         "buy_block": null,
-        "buy_bucket": -73,
+        "buy_bucket": -103,
         "peers_same_adjacent_block": 8,
         "buy_amount_usd": 1034.613002567939,
         "funding_source": null,
@@ -517,8 +517,8 @@
         "rank_tag": "top41",
         "cluster_id": "BUNDLE_001",
         "buy_block": null,
-        "buy_bucket": -76,
-        "peers_same_adjacent_block": 28,
+        "buy_bucket": -106,
+        "peers_same_adjacent_block": 29,
         "buy_amount_usd": 0.0,
         "funding_source": null,
         "bundler_type": "time",
@@ -539,8 +539,8 @@
         "rank_tag": "top42",
         "cluster_id": "BUNDLE_001",
         "buy_block": null,
-        "buy_bucket": -76,
-        "peers_same_adjacent_block": 28,
+        "buy_bucket": -106,
+        "peers_same_adjacent_block": 29,
         "buy_amount_usd": 0.0,
         "funding_source": null,
         "bundler_type": "time",
@@ -583,8 +583,8 @@
         "rank_tag": "top44",
         "cluster_id": "BUNDLE_001",
         "buy_block": null,
-        "buy_bucket": -76,
-        "peers_same_adjacent_block": 28,
+        "buy_bucket": -106,
+        "peers_same_adjacent_block": 29,
         "buy_amount_usd": 0.0,
         "funding_source": null,
         "bundler_type": "time",
@@ -605,8 +605,8 @@
         "rank_tag": "top48",
         "cluster_id": "BUNDLE_001",
         "buy_block": null,
-        "buy_bucket": -76,
-        "peers_same_adjacent_block": 28,
+        "buy_bucket": -106,
+        "peers_same_adjacent_block": 29,
         "buy_amount_usd": 0.0,
         "funding_source": null,
         "bundler_type": "time",
@@ -628,8 +628,93 @@
         "rank_tag": "top49",
         "cluster_id": "BUNDLE_001",
         "buy_block": null,
-        "buy_bucket": -76,
-        "peers_same_adjacent_block": 28,
+        "buy_bucket": -106,
+        "peers_same_adjacent_block": 29,
+        "buy_amount_usd": 0.0,
+        "funding_source": null,
+        "bundler_type": "time",
+        "is_new_wallet": false,
+        "received_transfer": false,
+        "risk_score": 9.0
+      },
+      {
+        "address": "0x0cbf80cdda815e0ce42da8faed2272367e03a599",
+        "phase": "POST_PUMP",
+        "first_trade_ts": "2026-09-08T15:14:47+00:00",
+        "tags": [
+          "gmgn",
+          "bundler",
+          "paper_hands"
+        ],
+        "rank_tag": "top51",
+        "cluster_id": "BUNDLE_001",
+        "buy_block": null,
+        "buy_bucket": -106,
+        "peers_same_adjacent_block": 29,
+        "buy_amount_usd": 0.0,
+        "funding_source": null,
+        "bundler_type": "time",
+        "is_new_wallet": false,
+        "received_transfer": false,
+        "risk_score": 9.0
+      },
+      {
+        "address": "0x0a88af6b65c913635a3f2ba9d4a7b225bd3bca38",
+        "phase": "POST_PUMP",
+        "first_trade_ts": "2026-09-08T15:15:08+00:00",
+        "tags": [
+          "gmgn",
+          "fomo",
+          "bundler",
+          "paper_hands"
+        ],
+        "rank_tag": "top52",
+        "cluster_id": "BUNDLE_001",
+        "buy_block": null,
+        "buy_bucket": -105,
+        "peers_same_adjacent_block": 33,
+        "buy_amount_usd": 0.0,
+        "funding_source": null,
+        "bundler_type": "time",
+        "is_new_wallet": false,
+        "received_transfer": false,
+        "risk_score": 9.0
+      },
+      {
+        "address": "0xd569e570b94265e5ebc7df1990f99ee68d3f60a1",
+        "phase": "POST_PUMP",
+        "first_trade_ts": "2026-09-08T15:14:47+00:00",
+        "tags": [
+          "gmgn",
+          "bundler",
+          "paper_hands"
+        ],
+        "rank_tag": "top54",
+        "cluster_id": "BUNDLE_001",
+        "buy_block": null,
+        "buy_bucket": -106,
+        "peers_same_adjacent_block": 29,
+        "buy_amount_usd": 0.0,
+        "funding_source": null,
+        "bundler_type": "time",
+        "is_new_wallet": false,
+        "received_transfer": false,
+        "risk_score": 9.0
+      },
+      {
+        "address": "0x08182bc88595582761d9639d4c1a8956be4b635e",
+        "phase": "POST_PUMP",
+        "first_trade_ts": "2026-09-08T15:14:47+00:00",
+        "tags": [
+          "gmgn",
+          "bundler",
+          "paper_hands"
+        ],
+        "rank_tag": "top56",
+        "cluster_id": "BUNDLE_001",
+        "buy_block": null,
+        "buy_bucket": -106,
+        "peers_same_adjacent_block": 29,
         "buy_amount_usd": 0.0,
         "funding_source": null,
         "bundler_type": "time",
@@ -658,19 +743,19 @@
         "risk_score": 7.5
       },
       {
-        "address": "0x0cbf80cdda815e0ce42da8faed2272367e03a599",
+        "address": "0x3222086a9737de86cbac41e8b05e6fa7b54f6b79",
         "phase": "POST_PUMP",
-        "first_trade_ts": "2026-09-08T15:14:47+00:00",
+        "first_trade_ts": "2026-09-08T15:14:51+00:00",
         "tags": [
           "gmgn",
           "bundler",
           "paper_hands"
         ],
-        "rank_tag": "top51",
+        "rank_tag": "top60",
         "cluster_id": "BUNDLE_001",
         "buy_block": null,
-        "buy_bucket": -76,
-        "peers_same_adjacent_block": 28,
+        "buy_bucket": -106,
+        "peers_same_adjacent_block": 29,
         "buy_amount_usd": 0.0,
         "funding_source": null,
         "bundler_type": "time",
@@ -679,68 +764,26 @@
         "risk_score": 9.0
       },
       {
-        "address": "0x0a88af6b65c913635a3f2ba9d4a7b225bd3bca38",
+        "address": "0xf4594393bff5753d09b6e3bd4d51b76d2789a14e",
         "phase": "POST_PUMP",
-        "first_trade_ts": "2026-09-08T15:15:08+00:00",
+        "first_trade_ts": "2026-09-08T15:32:36+00:00",
         "tags": [
           "gmgn",
           "fomo",
           "bundler",
           "paper_hands"
         ],
-        "rank_tag": "top52",
-        "cluster_id": "BUNDLE_001",
+        "rank_tag": "top61",
+        "cluster_id": "TAGGED",
         "buy_block": null,
-        "buy_bucket": -75,
-        "peers_same_adjacent_block": 32,
+        "buy_bucket": null,
+        "peers_same_adjacent_block": null,
         "buy_amount_usd": 0.0,
         "funding_source": null,
-        "bundler_type": "time",
+        "bundler_type": "tagged",
         "is_new_wallet": false,
         "received_transfer": false,
-        "risk_score": 9.0
-      },
-      {
-        "address": "0xd569e570b94265e5ebc7df1990f99ee68d3f60a1",
-        "phase": "POST_PUMP",
-        "first_trade_ts": "2026-09-08T15:14:47+00:00",
-        "tags": [
-          "gmgn",
-          "bundler",
-          "paper_hands"
-        ],
-        "rank_tag": "top54",
-        "cluster_id": "BUNDLE_001",
-        "buy_block": null,
-        "buy_bucket": -76,
-        "peers_same_adjacent_block": 28,
-        "buy_amount_usd": 0.0,
-        "funding_source": null,
-        "bundler_type": "time",
-        "is_new_wallet": false,
-        "received_transfer": false,
-        "risk_score": 9.0
-      },
-      {
-        "address": "0x08182bc88595582761d9639d4c1a8956be4b635e",
-        "phase": "POST_PUMP",
-        "first_trade_ts": "2026-09-08T15:14:47+00:00",
-        "tags": [
-          "gmgn",
-          "bundler",
-          "paper_hands"
-        ],
-        "rank_tag": "top56",
-        "cluster_id": "BUNDLE_001",
-        "buy_block": null,
-        "buy_bucket": -76,
-        "peers_same_adjacent_block": 28,
-        "buy_amount_usd": 0.0,
-        "funding_source": null,
-        "bundler_type": "time",
-        "is_new_wallet": false,
-        "received_transfer": false,
-        "risk_score": 9.0
+        "risk_score": 7.5
       },
       {
         "address": "0x0f32f96ed925c65aea7fa713460772e10944fce0",
@@ -763,49 +806,6 @@
         "risk_score": 7.5
       },
       {
-        "address": "0x3222086a9737de86cbac41e8b05e6fa7b54f6b79",
-        "phase": "POST_PUMP",
-        "first_trade_ts": "2026-09-08T15:14:51+00:00",
-        "tags": [
-          "gmgn",
-          "bundler",
-          "paper_hands"
-        ],
-        "rank_tag": "top61",
-        "cluster_id": "BUNDLE_001",
-        "buy_block": null,
-        "buy_bucket": -76,
-        "peers_same_adjacent_block": 28,
-        "buy_amount_usd": 0.0,
-        "funding_source": null,
-        "bundler_type": "time",
-        "is_new_wallet": false,
-        "received_transfer": false,
-        "risk_score": 9.0
-      },
-      {
-        "address": "0xf4594393bff5753d09b6e3bd4d51b76d2789a14e",
-        "phase": "POST_PUMP",
-        "first_trade_ts": "2026-09-08T15:32:36+00:00",
-        "tags": [
-          "gmgn",
-          "fomo",
-          "bundler",
-          "paper_hands"
-        ],
-        "rank_tag": "top62",
-        "cluster_id": "TAGGED",
-        "buy_block": null,
-        "buy_bucket": null,
-        "peers_same_adjacent_block": null,
-        "buy_amount_usd": 0.0,
-        "funding_source": null,
-        "bundler_type": "tagged",
-        "is_new_wallet": false,
-        "received_transfer": false,
-        "risk_score": 7.5
-      },
-      {
         "address": "0x98c8d69fd50a01ccc538ef0ba0142ae70c0c5601",
         "phase": "POST_PUMP",
         "first_trade_ts": "2026-09-08T15:16:37+00:00",
@@ -815,7 +815,7 @@
           "bundler",
           "paper_hands"
         ],
-        "rank_tag": "top63",
+        "rank_tag": "top62",
         "cluster_id": "TAGGED",
         "buy_block": null,
         "buy_bucket": null,
@@ -837,11 +837,11 @@
           "bundler",
           "paper_hands"
         ],
-        "rank_tag": "top64",
+        "rank_tag": "top63",
         "cluster_id": "BUNDLE_001",
         "buy_block": null,
-        "buy_bucket": -76,
-        "peers_same_adjacent_block": 28,
+        "buy_bucket": -106,
+        "peers_same_adjacent_block": 29,
         "buy_amount_usd": 0.0,
         "funding_source": null,
         "bundler_type": "time",
@@ -859,11 +859,11 @@
           "bundler",
           "paper_hands"
         ],
-        "rank_tag": "top66",
+        "rank_tag": "top65",
         "cluster_id": "BUNDLE_001",
         "buy_block": null,
-        "buy_bucket": -76,
-        "peers_same_adjacent_block": 28,
+        "buy_bucket": -106,
+        "peers_same_adjacent_block": 29,
         "buy_amount_usd": 0.0,
         "funding_source": null,
         "bundler_type": "time",
@@ -881,10 +881,10 @@
           "bundler",
           "paper_hands"
         ],
-        "rank_tag": "top69",
+        "rank_tag": "top68",
         "cluster_id": "BUNDLE_001",
         "buy_block": null,
-        "buy_bucket": -74,
+        "buy_bucket": -104,
         "peers_same_adjacent_block": 15,
         "buy_amount_usd": 0.0,
         "funding_source": null,
@@ -903,11 +903,11 @@
           "bundler",
           "paper_hands"
         ],
-        "rank_tag": "top70",
+        "rank_tag": "top69",
         "cluster_id": "BUNDLE_001",
         "buy_block": null,
-        "buy_bucket": -75,
-        "peers_same_adjacent_block": 32,
+        "buy_bucket": -105,
+        "peers_same_adjacent_block": 33,
         "buy_amount_usd": 0.0,
         "funding_source": null,
         "bundler_type": "time",
@@ -924,11 +924,11 @@
           "bundler",
           "paper_hands"
         ],
-        "rank_tag": "top72",
+        "rank_tag": "top71",
         "cluster_id": "BUNDLE_001",
         "buy_block": null,
-        "buy_bucket": -76,
-        "peers_same_adjacent_block": 28,
+        "buy_bucket": -106,
+        "peers_same_adjacent_block": 29,
         "buy_amount_usd": 0.0,
         "funding_source": null,
         "bundler_type": "time",
@@ -944,11 +944,11 @@
           "bundler",
           "paper_hands"
         ],
-        "rank_tag": "top73",
+        "rank_tag": "top72",
         "cluster_id": "BUNDLE_001",
         "buy_block": null,
-        "buy_bucket": -76,
-        "peers_same_adjacent_block": 28,
+        "buy_bucket": -106,
+        "peers_same_adjacent_block": 29,
         "buy_amount_usd": 0.0,
         "funding_source": null,
         "bundler_type": "time",
@@ -965,11 +965,11 @@
           "bundler",
           "paper_hands"
         ],
-        "rank_tag": "top74",
+        "rank_tag": "top73",
         "cluster_id": "BUNDLE_001",
         "buy_block": null,
-        "buy_bucket": -76,
-        "peers_same_adjacent_block": 28,
+        "buy_bucket": -106,
+        "peers_same_adjacent_block": 29,
         "buy_amount_usd": 0.0,
         "funding_source": null,
         "bundler_type": "time",
@@ -987,7 +987,7 @@
           "bundler",
           "paper_hands"
         ],
-        "rank_tag": "top78",
+        "rank_tag": "top77",
         "cluster_id": "TAGGED",
         "buy_block": null,
         "buy_bucket": null,
@@ -1011,7 +1011,7 @@
           "sniper",
           "paper_hands"
         ],
-        "rank_tag": "top79",
+        "rank_tag": "top78",
         "cluster_id": "TAGGED",
         "buy_block": null,
         "buy_bucket": null,
@@ -1024,26 +1024,6 @@
         "risk_score": 7.5
       },
       {
-        "address": "0x53d5479bf3943c6f9f8360f1a45016c639095b57",
-        "phase": "POST_PUMP",
-        "first_trade_ts": "2026-09-08T15:16:22+00:00",
-        "tags": [
-          "gmgn",
-          "transfer_in"
-        ],
-        "rank_tag": "top58",
-        "cluster_id": "BUNDLE_001",
-        "buy_block": null,
-        "buy_bucket": -73,
-        "peers_same_adjacent_block": 8,
-        "buy_amount_usd": 1101.0167991568408,
-        "funding_source": null,
-        "bundler_type": "time",
-        "is_new_wallet": false,
-        "received_transfer": true,
-        "risk_score": 9.0
-      },
-      {
         "address": "0xd32c339983928fce6de41fdf9625c8fa4bfeb4bb",
         "phase": "POST_PUMP",
         "first_trade_ts": "2026-09-08T15:15:18+00:00",
@@ -1052,11 +1032,95 @@
           "bundler",
           "paper_hands"
         ],
-        "rank_tag": "top80",
+        "rank_tag": "top79",
         "cluster_id": "BUNDLE_001",
         "buy_block": null,
-        "buy_bucket": -75,
-        "peers_same_adjacent_block": 32,
+        "buy_bucket": -105,
+        "peers_same_adjacent_block": 33,
+        "buy_amount_usd": 0.0,
+        "funding_source": null,
+        "bundler_type": "time",
+        "is_new_wallet": false,
+        "received_transfer": false,
+        "risk_score": 9.0
+      },
+      {
+        "address": "0x4fc816200c5d8ad36967eb616f4ffd418ac68f14",
+        "phase": "POST_PUMP",
+        "first_trade_ts": "2026-09-08T15:14:48+00:00",
+        "tags": [
+          "fresh_wallet",
+          "gmgn",
+          "bundler",
+          "paper_hands"
+        ],
+        "rank_tag": "top82",
+        "cluster_id": "BUNDLE_001",
+        "buy_block": null,
+        "buy_bucket": -106,
+        "peers_same_adjacent_block": 29,
+        "buy_amount_usd": 0.0,
+        "funding_source": null,
+        "bundler_type": "time",
+        "is_new_wallet": true,
+        "received_transfer": false,
+        "risk_score": 9.0
+      },
+      {
+        "address": "0x53d5479bf3943c6f9f8360f1a45016c639095b57",
+        "phase": "POST_PUMP",
+        "first_trade_ts": "2026-09-08T15:16:22+00:00",
+        "tags": [
+          "gmgn",
+          "transfer_in"
+        ],
+        "rank_tag": "top84",
+        "cluster_id": "BUNDLE_001",
+        "buy_block": null,
+        "buy_bucket": -103,
+        "peers_same_adjacent_block": 8,
+        "buy_amount_usd": 0.0,
+        "funding_source": null,
+        "bundler_type": "time",
+        "is_new_wallet": false,
+        "received_transfer": true,
+        "risk_score": 9.0
+      },
+      {
+        "address": "0x916f62ea088f6ff9a3cc5c92980a41bb6b1f3db5",
+        "phase": "POST_PUMP",
+        "first_trade_ts": "2026-09-08T15:14:50+00:00",
+        "tags": [
+          "gmgn",
+          "bundler",
+          "paper_hands"
+        ],
+        "rank_tag": "top87",
+        "cluster_id": "BUNDLE_001",
+        "buy_block": null,
+        "buy_bucket": -106,
+        "peers_same_adjacent_block": 29,
+        "buy_amount_usd": 0.0,
+        "funding_source": null,
+        "bundler_type": "time",
+        "is_new_wallet": false,
+        "received_transfer": false,
+        "risk_score": 9.0
+      },
+      {
+        "address": "0x3edc1881332f8c334b5ad75312c44fe75fe01851",
+        "phase": "POST_PUMP",
+        "first_trade_ts": "2026-09-08T15:14:58+00:00",
+        "tags": [
+          "gmgn",
+          "bundler",
+          "paper_hands"
+        ],
+        "rank_tag": "top88",
+        "cluster_id": "BUNDLE_001",
+        "buy_block": null,
+        "buy_bucket": -106,
+        "peers_same_adjacent_block": 29,
         "buy_amount_usd": 0.0,
         "funding_source": null,
         "bundler_type": "time",
@@ -1087,70 +1151,6 @@
         "risk_score": 7.5
       },
       {
-        "address": "0x4fc816200c5d8ad36967eb616f4ffd418ac68f14",
-        "phase": "POST_PUMP",
-        "first_trade_ts": "2026-09-08T15:14:48+00:00",
-        "tags": [
-          "fresh_wallet",
-          "gmgn",
-          "bundler",
-          "paper_hands"
-        ],
-        "rank_tag": "top83",
-        "cluster_id": "BUNDLE_001",
-        "buy_block": null,
-        "buy_bucket": -76,
-        "peers_same_adjacent_block": 28,
-        "buy_amount_usd": 0.0,
-        "funding_source": null,
-        "bundler_type": "time",
-        "is_new_wallet": true,
-        "received_transfer": false,
-        "risk_score": 9.0
-      },
-      {
-        "address": "0x916f62ea088f6ff9a3cc5c92980a41bb6b1f3db5",
-        "phase": "POST_PUMP",
-        "first_trade_ts": "2026-09-08T15:14:50+00:00",
-        "tags": [
-          "gmgn",
-          "bundler",
-          "paper_hands"
-        ],
-        "rank_tag": "top87",
-        "cluster_id": "BUNDLE_001",
-        "buy_block": null,
-        "buy_bucket": -76,
-        "peers_same_adjacent_block": 28,
-        "buy_amount_usd": 0.0,
-        "funding_source": null,
-        "bundler_type": "time",
-        "is_new_wallet": false,
-        "received_transfer": false,
-        "risk_score": 9.0
-      },
-      {
-        "address": "0x3edc1881332f8c334b5ad75312c44fe75fe01851",
-        "phase": "POST_PUMP",
-        "first_trade_ts": "2026-09-08T15:14:58+00:00",
-        "tags": [
-          "gmgn",
-          "bundler",
-          "paper_hands"
-        ],
-        "rank_tag": "top88",
-        "cluster_id": "BUNDLE_001",
-        "buy_block": null,
-        "buy_bucket": -76,
-        "peers_same_adjacent_block": 28,
-        "buy_amount_usd": 0.0,
-        "funding_source": null,
-        "bundler_type": "time",
-        "is_new_wallet": false,
-        "received_transfer": false,
-        "risk_score": 9.0
-      },
-      {
         "address": "0xf89280984e165538f80ec98c1209d4e8631b4451",
         "phase": "POST_PUMP",
         "first_trade_ts": "2026-09-08T15:15:18+00:00",
@@ -1162,8 +1162,8 @@
         "rank_tag": "top89",
         "cluster_id": "BUNDLE_001",
         "buy_block": null,
-        "buy_bucket": -75,
-        "peers_same_adjacent_block": 32,
+        "buy_bucket": -105,
+        "peers_same_adjacent_block": 33,
         "buy_amount_usd": 0.0,
         "funding_source": null,
         "bundler_type": "time",
@@ -1205,7 +1205,7 @@
         "rank_tag": "top91",
         "cluster_id": "BUNDLE_001",
         "buy_block": null,
-        "buy_bucket": -73,
+        "buy_bucket": -103,
         "peers_same_adjacent_block": 8,
         "buy_amount_usd": 0.0,
         "funding_source": null,
@@ -1270,7 +1270,7 @@
         "rank_tag": "top96",
         "cluster_id": "BUNDLE_001",
         "buy_block": null,
-        "buy_bucket": -74,
+        "buy_bucket": -104,
         "peers_same_adjacent_block": 15,
         "buy_amount_usd": 0.0,
         "funding_source": null,
@@ -1291,7 +1291,7 @@
         "rank_tag": "top98",
         "cluster_id": "BUNDLE_001",
         "buy_block": null,
-        "buy_bucket": -74,
+        "buy_bucket": -104,
         "peers_same_adjacent_block": 15,
         "buy_amount_usd": 0.0,
         "funding_source": null,
@@ -1342,28 +1342,6 @@
         "risk_score": 7.5
       },
       {
-        "address": "0x06970464c8b936cda744a454a33f2206dbbbfe49",
-        "phase": "POST_PUMP",
-        "first_trade_ts": "2026-09-08T12:47:44+00:00",
-        "tags": [
-          "kol",
-          "gmgn",
-          "wash_trader",
-          "bundler"
-        ],
-        "rank_tag": "top77",
-        "cluster_id": "TAGGED",
-        "buy_block": null,
-        "buy_bucket": null,
-        "peers_same_adjacent_block": null,
-        "buy_amount_usd": 1365.5829877133426,
-        "funding_source": null,
-        "bundler_type": "tagged",
-        "is_new_wallet": false,
-        "received_transfer": false,
-        "risk_score": 7.5
-      },
-      {
         "address": "0xa7d4ffc4eca3c71af150ce302560a9d04a1d2b9f",
         "phase": "PRE_PUMP",
         "first_trade_ts": "2026-09-08T03:36:05+00:00",
@@ -1400,13 +1378,56 @@
         "rank_tag": "top102",
         "cluster_id": "BUNDLE_001",
         "buy_block": null,
-        "buy_bucket": -75,
-        "peers_same_adjacent_block": 32,
+        "buy_bucket": -105,
+        "peers_same_adjacent_block": 33,
         "buy_amount_usd": 0.0,
         "funding_source": null,
         "bundler_type": "time",
         "is_new_wallet": false,
         "received_transfer": true,
+        "risk_score": 9.0
+      },
+      {
+        "address": "0x06970464c8b936cda744a454a33f2206dbbbfe49",
+        "phase": "POST_PUMP",
+        "first_trade_ts": "2026-09-08T12:47:44+00:00",
+        "tags": [
+          "kol",
+          "gmgn",
+          "wash_trader",
+          "bundler"
+        ],
+        "rank_tag": "top76",
+        "cluster_id": "TAGGED",
+        "buy_block": null,
+        "buy_bucket": null,
+        "peers_same_adjacent_block": null,
+        "buy_amount_usd": 1365.5829877133426,
+        "funding_source": null,
+        "bundler_type": "tagged",
+        "is_new_wallet": false,
+        "received_transfer": false,
+        "risk_score": 7.5
+      },
+      {
+        "address": "0x6231a2b8255067b80a15cc0974854ded5f1c5136",
+        "phase": "POST_PUMP",
+        "first_trade_ts": "2026-09-08T15:14:58+00:00",
+        "tags": [
+          "gmgn",
+          "bundler",
+          "paper_hands"
+        ],
+        "rank_tag": "top106",
+        "cluster_id": "BUNDLE_001",
+        "buy_block": null,
+        "buy_bucket": -106,
+        "peers_same_adjacent_block": 29,
+        "buy_amount_usd": 0.0,
+        "funding_source": null,
+        "bundler_type": "time",
+        "is_new_wallet": false,
+        "received_transfer": false,
         "risk_score": 9.0
       }
     ],
@@ -1422,7 +1443,7 @@
         "rank_tag": "top20",
         "buy_time_before_pump_hours": -2.69,
         "pnl_this_token": 9150.325326207161,
-        "pnl_other_tokens_30d": 136662.02625437267,
+        "pnl_other_tokens_30d": 136910.53897675753,
         "win_rate": 0.6396694214876033,
         "other_early_buys": [],
         "follow_worthy": false,
@@ -1435,7 +1456,7 @@
         "tags": [
           "gmgn"
         ],
-        "rank_tag": "top68",
+        "rank_tag": "top67",
         "buy_time_before_pump_hours": 5.27,
         "pnl_this_token": 3166.402880570878,
         "pnl_other_tokens_30d": 3166.402880570878,
@@ -1463,7 +1484,6 @@
     ]
   },
   "pre_pump_buyers": [
-    "0x199ad7f3f4a34b8fc78c2ce871d7a41a6dc7cbfc",
     "0xdfbaae9b5acdc368f692fc9b8c7f2298dd26ff6f",
     "0xbabd5c9532e0627967ed2211d904740e2083f04b",
     "0x4fe6c9d986d30791d87692490a4c0c280ad90abe",
@@ -1477,8 +1497,8 @@
     "0x3f22762992fd566783a298220f55d1b04aab8ae4",
     "0x92a8d5ce2ecc201be0d707f4922ab6484bb50d61",
     "0x818fe29feb62394f0facbc41de91072f846d3f41",
-    "0xa94d2eb35b6d9e2c3c9e53ac83d263d4d2f21137",
     "0xdc7974373cf35f7c77628880724d57513b4a7b26",
+    "0xa94d2eb35b6d9e2c3c9e53ac83d263d4d2f21137",
     "0x6fc4a0b5c5ef56f53328dbbc03454592b5b720a8",
     "0x037e581c062ec961d043e20dbe969864f69c67a6",
     "0xb803c758d1afa1f8bf3289c0da65ee2865e6972e",
@@ -1492,18 +1512,15 @@
     "0x2473e8a11ecc93e3e6eebb0a78cd3d2559f99890",
     "0x30b6d90dc881ecc2e17080af12af0b0146888485",
     "0xe21d9d77f6e5dce220f22000388c381fcd525044",
-    "0x0a60a3e5451f3aff46c11f82b154d5f6650e611e",
     "0xa7d4ffc4eca3c71af150ce302560a9d04a1d2b9f",
-    "0x312cf917f51a4971a269415a952903f624d2533d",
+    "0x0a60a3e5451f3aff46c11f82b154d5f6650e611e",
     "0xe28601398a5448d1147e6e8b0e0c6d686f0d216d"
   ],
   "classifications": [
     {
       "address": "0x199ad7f3f4a34b8fc78c2ce871d7a41a6dc7cbfc",
-      "classes": [
-        "SNIPER"
-      ],
-      "phase": "PRE_PUMP",
+      "classes": [],
+      "phase": "POST_PUMP",
       "tags": [
         "fomo",
         "transfer_in"
@@ -1662,42 +1679,12 @@
       ]
     },
     {
-      "address": "0xa0817e753a4dc9431c5ef720212d9ecca3dcc3fb",
-      "classes": [
-        "SNIPER"
-      ],
-      "phase": "POST_PUMP",
-      "tags": [
-        "gmgn"
-      ]
-    },
-    {
       "address": "0xedf3c91daaad35ab4c55e80b34e0106dd1b99b84",
       "classes": [
         "SNIPER"
       ],
       "phase": "PRE_PUMP",
       "tags": []
-    },
-    {
-      "address": "0xd92e046381370c21eb980fe1f176ca664731ff3d",
-      "classes": [
-        "SNIPER"
-      ],
-      "phase": "PRE_PUMP",
-      "tags": []
-    },
-    {
-      "address": "0x43dcf4cb1c6d84e54f0b11025a8fbb845e8e212a",
-      "classes": [
-        "SNIPER",
-        "SMART_MONEY"
-      ],
-      "phase": "POST_PUMP",
-      "tags": [
-        "gmgn",
-        "fomo"
-      ]
     },
     {
       "address": "0x6f440e7d3a7b22cb93f7e7bf08c0031421ed1e6d",
@@ -1712,6 +1699,36 @@
         "fomo",
         "paper_hands"
       ]
+    },
+    {
+      "address": "0xa0817e753a4dc9431c5ef720212d9ecca3dcc3fb",
+      "classes": [
+        "SNIPER"
+      ],
+      "phase": "POST_PUMP",
+      "tags": [
+        "gmgn"
+      ]
+    },
+    {
+      "address": "0x43dcf4cb1c6d84e54f0b11025a8fbb845e8e212a",
+      "classes": [
+        "SNIPER",
+        "SMART_MONEY"
+      ],
+      "phase": "POST_PUMP",
+      "tags": [
+        "gmgn",
+        "fomo"
+      ]
+    },
+    {
+      "address": "0xd92e046381370c21eb980fe1f176ca664731ff3d",
+      "classes": [
+        "SNIPER"
+      ],
+      "phase": "PRE_PUMP",
+      "tags": []
     },
     {
       "address": "0x2fbd041a069bb3d7099d55179169091cfeec4221",
@@ -1771,7 +1788,9 @@
     },
     {
       "address": "0x9999b0cdd35d7f3b281ba02efc0d228486940515",
-      "classes": [],
+      "classes": [
+        "SNIPER"
+      ],
       "phase": "POST_PUMP",
       "tags": [
         "sandwich_bot",
@@ -1833,6 +1852,59 @@
       ]
     },
     {
+      "address": "0x0fa3a520273545effec692de886683609fd0cf01",
+      "classes": [
+        "BUNDLER",
+        "SNIPER"
+      ],
+      "phase": "POST_PUMP",
+      "tags": [
+        "gmgn",
+        "bundler",
+        "paper_hands"
+      ]
+    },
+    {
+      "address": "0x480711a5ae20c0bc5408d60e6b6c3f270b8b3e49",
+      "classes": [
+        "BUNDLER",
+        "SNIPER"
+      ],
+      "phase": "POST_PUMP",
+      "tags": [
+        "fomo",
+        "transfer_in",
+        "paper_hands"
+      ]
+    },
+    {
+      "address": "0x2ce9d43d1cba6ae31d7f07bfe0098dfa2d833373",
+      "classes": [
+        "BUNDLER",
+        "SNIPER"
+      ],
+      "phase": "POST_PUMP",
+      "tags": [
+        "kol",
+        "gmgn",
+        "fomo",
+        "bundler"
+      ]
+    },
+    {
+      "address": "0x3933f10824b0fdb64f953d0653acf7e63f42ece5",
+      "classes": [
+        "BUNDLER",
+        "SNIPER"
+      ],
+      "phase": "POST_PUMP",
+      "tags": [
+        "fomo",
+        "transfer_in",
+        "paper_hands"
+      ]
+    },
+    {
       "address": "0x92a8d5ce2ecc201be0d707f4922ab6484bb50d61",
       "classes": [
         "BUNDLER",
@@ -1852,82 +1924,6 @@
       ],
       "phase": "PRE_PUMP",
       "tags": []
-    },
-    {
-      "address": "0x0fa3a520273545effec692de886683609fd0cf01",
-      "classes": [
-        "BUNDLER",
-        "SNIPER"
-      ],
-      "phase": "POST_PUMP",
-      "tags": [
-        "gmgn",
-        "bundler",
-        "paper_hands"
-      ]
-    },
-    {
-      "address": "0x2ce9d43d1cba6ae31d7f07bfe0098dfa2d833373",
-      "classes": [
-        "BUNDLER",
-        "SNIPER"
-      ],
-      "phase": "POST_PUMP",
-      "tags": [
-        "kol",
-        "gmgn",
-        "fomo",
-        "bundler"
-      ]
-    },
-    {
-      "address": "0x480711a5ae20c0bc5408d60e6b6c3f270b8b3e49",
-      "classes": [
-        "BUNDLER",
-        "SNIPER"
-      ],
-      "phase": "POST_PUMP",
-      "tags": [
-        "fomo",
-        "transfer_in",
-        "paper_hands"
-      ]
-    },
-    {
-      "address": "0x3933f10824b0fdb64f953d0653acf7e63f42ece5",
-      "classes": [
-        "BUNDLER",
-        "SNIPER"
-      ],
-      "phase": "POST_PUMP",
-      "tags": [
-        "fomo",
-        "transfer_in",
-        "paper_hands"
-      ]
-    },
-    {
-      "address": "0xe26f8148298bcdbf99d864090ad99e6bcfe2b1ed",
-      "classes": [
-        "SNIPER"
-      ],
-      "phase": "POST_PUMP",
-      "tags": [
-        "fomo",
-        "top_holder",
-        "transfer_in"
-      ]
-    },
-    {
-      "address": "0xa94d2eb35b6d9e2c3c9e53ac83d263d4d2f21137",
-      "classes": [
-        "SNIPER"
-      ],
-      "phase": "PRE_PUMP",
-      "tags": [
-        "fomo",
-        "transfer_in"
-      ]
     },
     {
       "address": "0x58d2d787277484b3071625d8c832d18cfbcb0233",
@@ -1998,6 +1994,17 @@
       ]
     },
     {
+      "address": "0xa94d2eb35b6d9e2c3c9e53ac83d263d4d2f21137",
+      "classes": [
+        "SNIPER"
+      ],
+      "phase": "PRE_PUMP",
+      "tags": [
+        "fomo",
+        "transfer_in"
+      ]
+    },
+    {
       "address": "0x2953ac8301f202695ff5c9ea82fc8ec7af4c1357",
       "classes": [
         "SNIPER"
@@ -2049,18 +2056,6 @@
         "fomo",
         "bundler",
         "paper_hands"
-      ]
-    },
-    {
-      "address": "0x89f6403e10b81931b99a25792ea3568bd5643302",
-      "classes": [
-        "BUNDLER",
-        "SNIPER"
-      ],
-      "phase": "POST_PUMP",
-      "tags": [
-        "gmgn",
-        "bundler"
       ]
     },
     {
@@ -2127,7 +2122,7 @@
       ]
     },
     {
-      "address": "0x0f32f96ed925c65aea7fa713460772e10944fce0",
+      "address": "0x89f6403e10b81931b99a25792ea3568bd5643302",
       "classes": [
         "BUNDLER",
         "SNIPER"
@@ -2136,6 +2131,18 @@
       "tags": [
         "gmgn",
         "bundler"
+      ]
+    },
+    {
+      "address": "0xe26f8148298bcdbf99d864090ad99e6bcfe2b1ed",
+      "classes": [
+        "SNIPER"
+      ],
+      "phase": "POST_PUMP",
+      "tags": [
+        "fomo",
+        "top_holder",
+        "transfer_in"
       ]
     },
     {
@@ -2185,6 +2192,18 @@
         "fomo",
         "bundler",
         "paper_hands"
+      ]
+    },
+    {
+      "address": "0x0f32f96ed925c65aea7fa713460772e10944fce0",
+      "classes": [
+        "BUNDLER",
+        "SNIPER"
+      ],
+      "phase": "POST_PUMP",
+      "tags": [
+        "gmgn",
+        "bundler"
       ]
     },
     {
@@ -2241,22 +2260,22 @@
       ]
     },
     {
-      "address": "0xd730a47a09307f4163d36ddbc1453ef03ee9707d",
-      "classes": [
-        "SNIPER"
-      ],
-      "phase": "POST_PUMP",
-      "tags": [
-        "gmgn"
-      ]
-    },
-    {
       "address": "0x472e619c30ea725ed9ca2f60e54a307d3044d05f",
       "classes": [
         "SNIPER",
         "SMART_MONEY"
       ],
       "phase": "PRE_PUMP",
+      "tags": [
+        "gmgn"
+      ]
+    },
+    {
+      "address": "0xd730a47a09307f4163d36ddbc1453ef03ee9707d",
+      "classes": [
+        "SNIPER"
+      ],
+      "phase": "POST_PUMP",
       "tags": [
         "gmgn"
       ]
@@ -2290,16 +2309,6 @@
       ]
     },
     {
-      "address": "0x6f2d7e39a36ef63c3ae970dbdee0cc699072b397",
-      "classes": [
-        "SNIPER"
-      ],
-      "phase": "PRE_PUMP",
-      "tags": [
-        "fomo"
-      ]
-    },
-    {
       "address": "0x283424370a9e1fa4d67b1a29fb6f265ab7c730a7",
       "classes": [
         "BUNDLER",
@@ -2310,6 +2319,16 @@
         "gmgn",
         "bundler",
         "paper_hands"
+      ]
+    },
+    {
+      "address": "0x6f2d7e39a36ef63c3ae970dbdee0cc699072b397",
+      "classes": [
+        "SNIPER"
+      ],
+      "phase": "PRE_PUMP",
+      "tags": [
+        "fomo"
       ]
     },
     {
@@ -2379,18 +2398,6 @@
       ]
     },
     {
-      "address": "0x53d5479bf3943c6f9f8360f1a45016c639095b57",
-      "classes": [
-        "BUNDLER",
-        "SNIPER"
-      ],
-      "phase": "POST_PUMP",
-      "tags": [
-        "gmgn",
-        "transfer_in"
-      ]
-    },
-    {
       "address": "0xd32c339983928fce6de41fdf9625c8fa4bfeb4bb",
       "classes": [
         "BUNDLER",
@@ -2401,20 +2408,6 @@
         "gmgn",
         "bundler",
         "paper_hands"
-      ]
-    },
-    {
-      "address": "0x64b23c2987aca16b3d3c55ad6f694058783c72ea",
-      "classes": [
-        "BUNDLER",
-        "SNIPER"
-      ],
-      "phase": "POST_PUMP",
-      "tags": [
-        "kol",
-        "gmgn",
-        "wash_trader",
-        "bundler"
       ]
     },
     {
@@ -2449,6 +2442,18 @@
       ],
       "phase": "PRE_PUMP",
       "tags": []
+    },
+    {
+      "address": "0x53d5479bf3943c6f9f8360f1a45016c639095b57",
+      "classes": [
+        "BUNDLER",
+        "SNIPER"
+      ],
+      "phase": "POST_PUMP",
+      "tags": [
+        "gmgn",
+        "transfer_in"
+      ]
     },
     {
       "address": "0x2473e8a11ecc93e3e6eebb0a78cd3d2559f99890",
@@ -2496,6 +2501,20 @@
         "gmgn",
         "bundler",
         "paper_hands"
+      ]
+    },
+    {
+      "address": "0x64b23c2987aca16b3d3c55ad6f694058783c72ea",
+      "classes": [
+        "BUNDLER",
+        "SNIPER"
+      ],
+      "phase": "POST_PUMP",
+      "tags": [
+        "kol",
+        "gmgn",
+        "wash_trader",
+        "bundler"
       ]
     },
     {
@@ -2650,28 +2669,6 @@
       ]
     },
     {
-      "address": "0x0a60a3e5451f3aff46c11f82b154d5f6650e611e",
-      "classes": [
-        "SNIPER"
-      ],
-      "phase": "PRE_PUMP",
-      "tags": []
-    },
-    {
-      "address": "0x06970464c8b936cda744a454a33f2206dbbbfe49",
-      "classes": [
-        "BUNDLER",
-        "SNIPER"
-      ],
-      "phase": "POST_PUMP",
-      "tags": [
-        "kol",
-        "gmgn",
-        "wash_trader",
-        "bundler"
-      ]
-    },
-    {
       "address": "0xa7d4ffc4eca3c71af150ce302560a9d04a1d2b9f",
       "classes": [
         "BUNDLER",
@@ -2702,12 +2699,26 @@
       ]
     },
     {
-      "address": "0x312cf917f51a4971a269415a952903f624d2533d",
+      "address": "0x0a60a3e5451f3aff46c11f82b154d5f6650e611e",
       "classes": [
         "SNIPER"
       ],
       "phase": "PRE_PUMP",
       "tags": []
+    },
+    {
+      "address": "0x06970464c8b936cda744a454a33f2206dbbbfe49",
+      "classes": [
+        "BUNDLER",
+        "SNIPER"
+      ],
+      "phase": "POST_PUMP",
+      "tags": [
+        "kol",
+        "gmgn",
+        "wash_trader",
+        "bundler"
+      ]
     },
     {
       "address": "0xe28601398a5448d1147e6e8b0e0c6d686f0d216d",
@@ -2720,15 +2731,28 @@
         "gmgn",
         "paper_hands"
       ]
+    },
+    {
+      "address": "0x6231a2b8255067b80a15cc0974854ded5f1c5136",
+      "classes": [
+        "BUNDLER",
+        "SNIPER"
+      ],
+      "phase": "POST_PUMP",
+      "tags": [
+        "gmgn",
+        "bundler",
+        "paper_hands"
+      ]
     }
   ],
   "summary": {
     "total_wallets_analyzed": 100,
     "dev_wallets_count": 0,
     "bundler_clusters_count": 1,
-    "bundler_wallets_count": 63,
+    "bundler_wallets_count": 64,
     "smart_money_count": 3,
-    "pre_pump_buyers_count": 33,
-    "post_pump_traders_count": 67
+    "pre_pump_buyers_count": 31,
+    "post_pump_traders_count": 69
   }
 }

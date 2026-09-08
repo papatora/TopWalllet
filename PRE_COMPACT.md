@@ -443,3 +443,19 @@ jadi), lalu TASK 3 dashboard. Session ini context habis.**
 - **Ini blueprint pencarian GOLD wallet**: yang pre-pump + win 100% di
   token berbeda = target copytrade. Telusuri 2 smart money VAPE + 26 wallet
   fleet f70d di pump berikutnya.
+
+## SNAPSHOT S-27 — GOLD WALLET CONFIRMED + SCALING TO 100K (user mandate)
+
+**0x43dcf4cb1c6d84e54f0b11025a8fbb845e8e212a DIVERIFIKASI MANUAL USER di GMGN
+(All chains): 7D PnL +55.17% / +$56K, win 76.27%, 344 token, 89% buy di MC
+$0-$100K (early low-cap buyer), phishing clean, tags $bib/$NFLXB. ENGINE
+TERBUKTI TIDAK HALU.**
+
+**Directive scaling (user):**
+- Target funnel: **100K wallet kandidat** → ultra deep-check memotong ~90%
+  → diamond list. Wallet dipilah: pure profit / hoki / dev / scammer /
+  rugger / deployer — cek cluster + tipe tx sama di jam/detik sama
+  (indikasi hot wallet / privacy tx funding).
+- Multi-chain: BSC + RH (aset user di dua chain itu).
+
+**Trending scanner (Task 2) mulai dibangun + jalan di VPS sekarang.**

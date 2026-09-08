@@ -1,0 +1,36 @@
+{
+  "cross_analysis": {
+    "tokens": [
+      {
+        "address": "0xa6b53819f5bf521945fceb1f9bbb3a7a7b4effff",
+        "chain": "bsc",
+        "smart_money_count": 3,
+        "pre_pump_buyers_count": 31
+      },
+      {
+        "address": "0x1a1e69f1e6182e2f8b9e8987e83c016ac9444444",
+        "chain": "bsc",
+        "smart_money_count": 1,
+        "pre_pump_buyers_count": 87
+      }
+    ],
+    "shared_wallets": [],
+    "shared_funding_sources": [],
+    "shared_bundler_clusters": [],
+    "pairwise": [
+      {
+        "pair": [
+          "0xa6b53819f5bf521945fceb1f9bbb3a7a7b4effff",
+          "0x1a1e69f1e6182e2f8b9e8987e83c016ac9444444"
+        ],
+        "overlap_wallets": [],
+        "overlap_count": 0,
+        "correlation_score": 0.0,
+        "verdict": "LOW_CORRELATION"
+      }
+    ],
+    "correlation_score": 0.0,
+    "verdict": "LOW_CORRELATION",
+    "recommendation": "LOW_CORRELATION \u2014 no significant wallet overlap detected."
+  }
+}
