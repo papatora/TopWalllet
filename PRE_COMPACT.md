@@ -429,3 +429,17 @@ yang beli SEBELUM/awal pump. Contoh user: token Vape di BSC flat lalu +7207%
 
 **NEXT SESSION: langsung eksekusi TASK 1+2+4 via subagent (GMGN client sudah
 jadi), lalu TASK 3 dashboard. Session ini context habis.**
+
+## SNAPSHOT S-26 — PUMP ANALYZER + VAPE LIVE ANALYSIS DONE (79 tests, commit 077318f)
+- `src/analyze/pump_analyzer.py` + CLI + 15 tests (total 79 green)
+- gmgn_client.py kline/top_traders payload bugs fixed by subagent
+- **VAPE LIVE (BSC)**: pump terdeteksi 2026-09-08T10:35Z (peak $0.00547),
+  100 traders → **63 BUNDLERS** (37 = satu klaster temporal BUNDLE_001,
+  26 ber-tag bundler resmi GMGN), **3 SMART MONEY** — 2 di antaranya masuk
+  5.3-6.8 JAM SEBELUM PUMP dengan win_rate 1.0 (30d PnL hingga $136K),
+  33 pre-pump buyers, 0 dev terdeteksi
+- Cross-analysis CLI siap: --chain2/--ca2 untuk Life K-line (rate limit
+  public key = jalankan bertahap)
+- **Ini blueprint pencarian GOLD wallet**: yang pre-pump + win 100% di
+  token berbeda = target copytrade. Telusuri 2 smart money VAPE + 26 wallet
+  fleet f70d di pump berikutnya.
