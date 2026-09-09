@@ -1,0 +1,211 @@
+{
+ "0x4e3468951d49f2eea976ed0d6e75ffcb44a9a544": {
+  "tokens": [
+   "MEME"
+  ],
+  "pnls": [
+   3552695.0329875234
+  ],
+  "winrates": [
+   0.0
+  ],
+  "tags": [
+   "sandwich_bot"
+  ]
+ },
+ "0xff2bcd8e3a12d6930518a45519da1c5e67129948": {
+  "tokens": [
+   "MEME"
+  ],
+  "pnls": [
+   458456.59698451724
+  ],
+  "winrates": [
+   0.0
+  ],
+  "tags": [
+   "fomo"
+  ]
+ },
+ "0xf7b95fa5c0291319c0d14d098b19ec9d3533fe48": {
+  "tokens": [
+   "MEME"
+  ],
+  "pnls": [
+   1114207.3701524113
+  ],
+  "winrates": [
+   0.0
+  ],
+  "tags": [
+   "fomo"
+  ]
+ },
+ "0x00d78daf782921b27a6b407d34f19842c10a4a6b": {
+  "tokens": [
+   "MEME"
+  ],
+  "pnls": [
+   707036.8928004842
+  ],
+  "winrates": [
+   0.0
+  ],
+  "tags": [
+   "fomo",
+   "gmgn"
+  ]
+ },
+ "0x8a494ed488c5bc157e0fb2983fdfb90e2d63b691": {
+  "tokens": [
+   "MEME"
+  ],
+  "pnls": [
+   689769.8999168337
+  ],
+  "winrates": [
+   0.0
+  ],
+  "tags": [
+   "gmgn"
+  ]
+ },
+ "0xda6fad6284d5920fad1418d29ac28ec146f4e61d": {
+  "tokens": [
+   "MEME"
+  ],
+  "pnls": [
+   505442.56864120363
+  ],
+  "winrates": [
+   0.0
+  ],
+  "tags": []
+ },
+ "0xfefea9427bef554cc572bc4e887a0b9642fd8f4e": {
+  "tokens": [
+   "MEME"
+  ],
+  "pnls": [
+   474075.8089005475
+  ],
+  "winrates": [
+   0.0
+  ],
+  "tags": [
+   "fomo"
+  ]
+ },
+ "0xdd9cdddb4a96a0e66d18e4860ca7195ab8d7c7bc": {
+  "tokens": [
+   "MEME"
+  ],
+  "pnls": [
+   433041.22866542987
+  ],
+  "winrates": [
+   0.0
+  ],
+  "tags": [
+   "gmgn"
+  ]
+ },
+ "0x16f5ef133d0d15b196a778d22bf1ec56f8f37c05": {
+  "tokens": [
+   "MEME"
+  ],
+  "pnls": [
+   424743.84573201527
+  ],
+  "winrates": [
+   0.0
+  ],
+  "tags": [
+   "fomo",
+   "gmgn"
+  ]
+ },
+ "0xa995ce21f88a1011daf09b50cd807fea3088d102": {
+  "tokens": [
+   "MEME"
+  ],
+  "pnls": [
+   410452.9003213527
+  ],
+  "winrates": [
+   0.0
+  ],
+  "tags": [
+   "gmgn"
+  ]
+ },
+ "0x7130d0ab931e62751deae5d2e38b640d329980da": {
+  "tokens": [
+   "MEME"
+  ],
+  "pnls": [
+   578147.6851358969
+  ],
+  "winrates": [
+   0.0
+  ],
+  "tags": [
+   "fomo"
+  ]
+ },
+ "0xa72a5b06927badb020d235f5f43ce56507ab2399": {
+  "tokens": [
+   "MEME"
+  ],
+  "pnls": [
+   355153.4525796066
+  ],
+  "winrates": [
+   0.0
+  ],
+  "tags": [
+   "fresh_wallet"
+  ]
+ },
+ "0xa4dedda59f2908b92ae192cfd494839373bcb3c4": {
+  "tokens": [
+   "MEME"
+  ],
+  "pnls": [
+   344431.68745440565
+  ],
+  "winrates": [
+   0.0
+  ],
+  "tags": [
+   "fomo"
+  ]
+ },
+ "0x4959ad9145030d5a2f3cce66ca4da8b3d35dbe1d": {
+  "tokens": [
+   "MEME"
+  ],
+  "pnls": [
+   309143.991881536
+  ],
+  "winrates": [
+   0.0
+  ],
+  "tags": [
+   "fomo",
+   "gmgn"
+  ]
+ },
+ "0xb96a9d9b39bef2478f8d1a3ca476458b7c687955": {
+  "tokens": [
+   "MEME"
+  ],
+  "pnls": [
+   221524.92559670028
+  ],
+  "winrates": [
+   0.0
+  ],
+  "tags": []
+ }
+}
