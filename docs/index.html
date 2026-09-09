@@ -41,8 +41,8 @@ tr:hover td{background:var(--elevated)}
 <header><h1>▮ TOP<span>WALLET</span></h1><div class="sub">robinhood chain · <span id="updated">loading…</span></div></header>
 <div class="stats" id="stats"></div>
 <div class="btns" id="btns"></div>
-<div id="loading">loading verified wallets…</div>
-<table id="tbl" style="display:none"><thead><tr><th>#</th><th>wallet</th><th>score</th><th>pnl usd</th><th>win</th><th>med</th><th>max</th><th>tokens</th><th>type / labels</th><th>verified</th><th>style</th></tr></thead><tbody id="tb"></tbody></table>
+<div id="loading" style="display:none"></div>
+<table id="tbl"><thead><tr><th>#</th><th>wallet</th><th>score</th><th>pnl usd</th><th>win</th><th>med</th><th>max</th><th>tokens</th><th>type / labels</th><th>verified</th><th>style</th></tr></thead><tbody id="tb"></tbody></table>
 <div class="empty" id="empty" style="display:none">no verified wallets yet — pipeline is grinding.</div>
 </div>
 <script>
@@ -84,18 +84,22 @@ function drawBtns(){
     `<button class="${k===cur?'on':''}" onclick="cur='${k}';draw()">${k} (${v.length})</button>`).join('');
 }
 function draw(){
-  const list=cur==='ALL'?R:R.filter(r=>(G[cur]||[]).includes(r.wallet_address));
   const tb=document.getElementById('tb');
-  tb.innerHTML=list.map((w,i)=>{
-    const m=w.metrics||{};
-    const pnl=m.total_realized_pnl_usd||0;
-    const pnlCls=pnl>0?'pnl':'pnl neg';
-    const v=w.verification||{};
-    const lbl=w._labels||[].map(l=>`<span class="tag">${esc(l)}</span>`).join('');
-    const ptag=w._ptype?`<span class="tag ${w._ptype.includes('DEV')?'dev':w._ptype.includes('SNIPER')?'sniper':'insider'}">${esc(w._ptype)}</span>`:'';
-    const tags=(w._labels||[]).map(l=>`<span class="tag">${esc(l)}</span>`).join('');
-    return `<tr><td>${w.rank}</td><td><a class="a" href="https://robinhoodchain.blockscout.com/address/${w.wallet_address}" target="_blank">${w.wallet_address.slice(0,10)}…${w.wallet_address.slice(-6)}</a></td><td>${w.composite_score}</td><td class="${pnlCls}">$${pnl.toLocaleString()}</td><td>${(m.win_rate*100).toFixed(0)}%</td><td>${m.median_return_multiple}x</td><td>${m.max_return_multiple}x</td><td>${m.distinct_tokens}</td><td>${ptag}${tags}</td><td>${v.trades_verified||'—'}</td><td>${esc(w.trading_style||'')}</td></tr>`;
-  }).join('');
+  try{
+    const list=cur==='ALL'?R:R.filter(r=>(G[cur]||[]).includes(r.wallet_address));
+    if(!list.length){tb.innerHTML='<tr><td colspan=11 class="empty">no wallets match this filter</td></tr>';return}
+    tb.innerHTML=list.map(function(w,i){
+      try{
+        var m=w.metrics||{};
+        var pnl=m.total_realized_pnl_usd||0;
+        var pnlCls=pnl>0?'pnl':'pnl neg';
+        var v=w.verification||{};
+        var lbls=(w._labels||[]).map(function(l){return '<span class="tag">'+esc(l)+'</span>'}).join('');
+        var ptag=w._ptype?'<span class="tag">'+esc(w._ptype)+'</span>':'';
+        return '<tr><td>'+(i+1)+'</td><td><a class="a" href="https://robinhoodchain.blockscout.com/address/'+w.wallet_address+'" target="_blank">'+w.wallet_address.slice(0,10)+'…'+w.wallet_address.slice(-6)+'</a></td><td>'+w.composite_score+'</td><td class="'+pnlCls+'">$'+pnl.toLocaleString()+'</td><td>'+((m.win_rate||0)*100).toFixed(0)+'%</td><td>'+(m.median_return_multiple||0)+'x</td><td>'+(m.max_return_multiple||0)+'x</td><td>'+(m.distinct_tokens||0)+'</td><td>'+ptag+lbls+'</td><td>'+(v.trades_verified||'—')+'</td><td>'+esc(w.trading_style||'')+'</td></tr>';
+      }catch(e){return '<tr><td colspan=11>row error: '+e.message+'</td></tr>'}
+    }).join('');
+  }catch(e){tb.innerHTML='<tr><td>draw error: '+e.message+'</td></tr>'}
 }
 load();
 </script>
