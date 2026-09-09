@@ -1,0 +1,494 @@
+[
+ {
+  "token": "PONS",
+  "ca": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+  "wallet": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+  "pnl": 15699096.432062538,
+  "win_rate": 0.0,
+  "tags": [
+   "sandwich_bot"
+  ],
+  "volume": 77392400
+ },
+ {
+  "token": "PONS",
+  "ca": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+  "wallet": "0x10cc6bd38112cac182db90b6a71d8bb5939526ba",
+  "pnl": 11368368.296938116,
+  "win_rate": 0.0,
+  "tags": [
+   "sandwich_bot",
+   "fresh_wallet",
+   "gmgn"
+  ],
+  "volume": 77392400
+ },
+ {
+  "token": "PONS",
+  "ca": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+  "wallet": "0xed50bdeea8adc232f159486192a4157281d722ff",
+  "pnl": 6696609.042177478,
+  "win_rate": 0.0,
+  "tags": [
+   "sandwich_bot",
+   "gmgn"
+  ],
+  "volume": 77392400
+ },
+ {
+  "token": "PONS",
+  "ca": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+  "wallet": "0x0cc7cedb0935ceab0b4a6b38ee7dcfd403b19a7b",
+  "pnl": 2480998.780040859,
+  "win_rate": 0.0,
+  "tags": [],
+  "volume": 77392400
+ },
+ {
+  "token": "PONS",
+  "ca": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+  "wallet": "0xf033364d8c1f89c97fb3888e4f06666a206f1804",
+  "pnl": 2124214.3809016505,
+  "win_rate": 0.0,
+  "tags": [],
+  "volume": 77392400
+ },
+ {
+  "token": "PONS",
+  "ca": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+  "wallet": "0x25c93dac3a72e48e67314709f058ccf56c0cf43a",
+  "pnl": 2020232.0102101145,
+  "win_rate": 0.0,
+  "tags": [
+   "gmgn"
+  ],
+  "volume": 77392400
+ },
+ {
+  "token": "PONS",
+  "ca": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+  "wallet": "0x50e43b43a8ee1e07e0ac978e92adff7dfbfb88e7",
+  "pnl": 1860714.8551769143,
+  "win_rate": 0.0,
+  "tags": [
+   "sandwich_bot"
+  ],
+  "volume": 77392400
+ },
+ {
+  "token": "PONS",
+  "ca": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+  "wallet": "0x22b58176fd87a0d98bac34b5cc75ffecb64add71",
+  "pnl": 1840685.7245752744,
+  "win_rate": 0.0,
+  "tags": [],
+  "volume": 77392400
+ },
+ {
+  "token": "PONS",
+  "ca": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+  "wallet": "0xec4b366a0d29853bb36db07f6c3229ead264ac02",
+  "pnl": 1812322.0919749052,
+  "win_rate": 0.0,
+  "tags": [],
+  "volume": 77392400
+ },
+ {
+  "token": "PONS",
+  "ca": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+  "wallet": "0x2956e29d6763465e59a0aa5e47d5ec92014df5d1",
+  "pnl": 1773060.9034864763,
+  "win_rate": 0.0,
+  "tags": [],
+  "volume": 77392400
+ },
+ {
+  "token": "PONS",
+  "ca": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+  "wallet": "0x51b6ca77deae9f17c1d89edfb301ae50053c57a5",
+  "pnl": 1667337.831457494,
+  "win_rate": 0.0,
+  "tags": [
+   "sandwich_bot",
+   "gmgn"
+  ],
+  "volume": 77392400
+ },
+ {
+  "token": "PONS",
+  "ca": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+  "wallet": "0x194d98d18113bdd5720a0a89fe2f98c75ece7344",
+  "pnl": 1544825.9686769254,
+  "win_rate": 0.0,
+  "tags": [
+   "fomo"
+  ],
+  "volume": 77392400
+ },
+ {
+  "token": "PONS",
+  "ca": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+  "wallet": "0x9fe8296fdc267e1229a96c51be8cc86b4517ff3a",
+  "pnl": 1483324.5186168514,
+  "win_rate": 0.0,
+  "tags": [],
+  "volume": 77392400
+ },
+ {
+  "token": "PONS",
+  "ca": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+  "wallet": "0xefba0f56eef05f6a7d614ce519d2e284b46d3583",
+  "pnl": 1469953.1680650392,
+  "win_rate": 0.0,
+  "tags": [],
+  "volume": 77392400
+ },
+ {
+  "token": "PONS",
+  "ca": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+  "wallet": "0x74fabbd2e02557dd31c1f7aef193f95197c5c32c",
+  "pnl": 1448073.088986252,
+  "win_rate": 0.0,
+  "tags": [],
+  "volume": 77392400
+ },
+ {
+  "token": "PONS",
+  "ca": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+  "wallet": "0x67862d84ba70e8cc913aeb2ed12019d93c9381f3",
+  "pnl": 1263586.1282457358,
+  "win_rate": 0.0,
+  "tags": [],
+  "volume": 77392400
+ },
+ {
+  "token": "PONS",
+  "ca": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+  "wallet": "0xb17a3bb23694ff691389707819938214a940c2e9",
+  "pnl": 1010798.7855043482,
+  "win_rate": 0.0,
+  "tags": [],
+  "volume": 77392400
+ },
+ {
+  "token": "PONS",
+  "ca": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+  "wallet": "0x7a192e71564ec66ee0763e328a3ac274942de4e1",
+  "pnl": 1008257.2453114549,
+  "win_rate": 0.0,
+  "tags": [
+   "gmgn"
+  ],
+  "volume": 77392400
+ },
+ {
+  "token": "PONS",
+  "ca": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+  "wallet": "0xc55ba66cab0298b3a67e1d0bf6a1613907941b09",
+  "pnl": 917171.6355096955,
+  "win_rate": 0.0,
+  "tags": [
+   "fomo"
+  ],
+  "volume": 77392400
+ },
+ {
+  "token": "PONS",
+  "ca": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+  "wallet": "0x0428ef4923513f73d53fd6c28875574fc7ed0413",
+  "pnl": 850136.0309985505,
+  "win_rate": 0.0,
+  "tags": [],
+  "volume": 77392400
+ },
+ {
+  "token": "PONS",
+  "ca": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+  "wallet": "0xff91e778a45e692e8d9bfdb396402fb4e2c6c603",
+  "pnl": 844039.9221507482,
+  "win_rate": 0.0,
+  "tags": [],
+  "volume": 77392400
+ },
+ {
+  "token": "PONS",
+  "ca": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+  "wallet": "0x736841752c5380187ba8a520ab4b60347f311200",
+  "pnl": 779490.7266315962,
+  "win_rate": 0.0,
+  "tags": [
+   "fresh_wallet"
+  ],
+  "volume": 77392400
+ },
+ {
+  "token": "PONS",
+  "ca": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+  "wallet": "0xfe277aa25a4f65a182c0ec135854794eb7131e79",
+  "pnl": 772499.9804042267,
+  "win_rate": 0.0,
+  "tags": [
+   "kol",
+   "fomo"
+  ],
+  "volume": 77392400
+ },
+ {
+  "token": "PONS",
+  "ca": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+  "wallet": "0x74bc11b4edc412d0f41bd4703b6f4ed8e0971445",
+  "pnl": 753256.3852167979,
+  "win_rate": 0.0,
+  "tags": [
+   "fomo"
+  ],
+  "volume": 77392400
+ },
+ {
+  "token": "PONS",
+  "ca": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+  "wallet": "0x01fc0a2311ceb30cee05ba4eadf0f13387051f21",
+  "pnl": 732164.3675382535,
+  "win_rate": 0.0,
+  "tags": [
+   "gmgn"
+  ],
+  "volume": 77392400
+ },
+ {
+  "token": "PONS",
+  "ca": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+  "wallet": "0x776b1e178bd80fea40999bf4291e30af1a56ec10",
+  "pnl": 726628.6162491086,
+  "win_rate": 0.0,
+  "tags": [
+   "fomo"
+  ],
+  "volume": 77392400
+ },
+ {
+  "token": "PONS",
+  "ca": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+  "wallet": "0x923cf33935dafd20636d7cb7e80da4354672514e",
+  "pnl": 711785.7669870163,
+  "win_rate": 0.0,
+  "tags": [],
+  "volume": 77392400
+ },
+ {
+  "token": "PONS",
+  "ca": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+  "wallet": "0x36de68e810781dd7699d8fc7fe7def8aae51cec2",
+  "pnl": 705304.0165863725,
+  "win_rate": 0.0,
+  "tags": [],
+  "volume": 77392400
+ },
+ {
+  "token": "PONS",
+  "ca": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+  "wallet": "0x4346169036c8d32c422df027e5f46e55b489d2ee",
+  "pnl": 687659.2373850973,
+  "win_rate": 0.0,
+  "tags": [
+   "kol",
+   "fomo"
+  ],
+  "volume": 77392400
+ },
+ {
+  "token": "PONS",
+  "ca": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+  "wallet": "0xbf567b7c88b73f2c5ada6f352452641a94c47fe4",
+  "pnl": 678909.1571842056,
+  "win_rate": 0.0,
+  "tags": [],
+  "volume": 77392400
+ },
+ {
+  "token": "PONS",
+  "ca": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+  "wallet": "0x6188a68ee8ef931b77e0b014c956a14435f001bb",
+  "pnl": 604900.1972926912,
+  "win_rate": 0.0,
+  "tags": [],
+  "volume": 77392400
+ },
+ {
+  "token": "PONS",
+  "ca": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+  "wallet": "0xdbcc96bcada067864902aad14e029fe7c422f147",
+  "pnl": 508949.7549124368,
+  "win_rate": 0.0,
+  "tags": [],
+  "volume": 77392400
+ },
+ {
+  "token": "PONS",
+  "ca": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+  "wallet": "0x0796dfa888ec410735b2fab969f0f2cdc96f6841",
+  "pnl": 507022.1773044604,
+  "win_rate": 0.0,
+  "tags": [],
+  "volume": 77392400
+ },
+ {
+  "token": "PONS",
+  "ca": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+  "wallet": "0xdc60c2d2debfa058f86005374edaacf453130688",
+  "pnl": 502205.0610552735,
+  "win_rate": 0.0,
+  "tags": [],
+  "volume": 77392400
+ },
+ {
+  "token": "PONS",
+  "ca": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+  "wallet": "0xf0e5c30b68e832e97eb67e1e9281baa5bd4ea5c7",
+  "pnl": 478338.2540785457,
+  "win_rate": 0.0,
+  "tags": [],
+  "volume": 77392400
+ },
+ {
+  "token": "PONS",
+  "ca": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+  "wallet": "0x71def18185d8ebcf26c053e1014d14d248b5fa42",
+  "pnl": 472012.4717369902,
+  "win_rate": 0.0,
+  "tags": [],
+  "volume": 77392400
+ },
+ {
+  "token": "PONS",
+  "ca": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+  "wallet": "0x6db7dcf200c2a26ab93a7a15e8c51714769785b6",
+  "pnl": 470290.9414837467,
+  "win_rate": 0.0,
+  "tags": [],
+  "volume": 77392400
+ },
+ {
+  "token": "PONS",
+  "ca": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+  "wallet": "0xaee728455cd103e735a368cb3d388561bb156a16",
+  "pnl": 461390.23081680626,
+  "win_rate": 0.0,
+  "tags": [],
+  "volume": 77392400
+ },
+ {
+  "token": "PONS",
+  "ca": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+  "wallet": "0x3ce6d89e95cfa492f882ee4f69842153c80ab5cf",
+  "pnl": 449300.93789394904,
+  "win_rate": 0.0,
+  "tags": [],
+  "volume": 77392400
+ },
+ {
+  "token": "PONS",
+  "ca": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+  "wallet": "0x81b98a0e207726584ce1ac687fcae6059b35ebcf",
+  "pnl": 446612.87983808795,
+  "win_rate": 0.0,
+  "tags": [],
+  "volume": 77392400
+ },
+ {
+  "token": "PONS",
+  "ca": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+  "wallet": "0x56e95b47a07210f1ea9fa418c7c5dc164c419ac0",
+  "pnl": 388916.729787372,
+  "win_rate": 0.0,
+  "tags": [],
+  "volume": 77392400
+ },
+ {
+  "token": "PONS",
+  "ca": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+  "wallet": "0xb953ee0e28c0557642f404bbb4f68a89593f875a",
+  "pnl": 339065.6927262237,
+  "win_rate": 0.0,
+  "tags": [],
+  "volume": 77392400
+ },
+ {
+  "token": "PONS",
+  "ca": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+  "wallet": "0x7e3ba68c49561aae7c23c1d20fef0f1d7615a3ad",
+  "pnl": 315308.74673112534,
+  "win_rate": 0.0,
+  "tags": [
+   "fomo"
+  ],
+  "volume": 77392400
+ },
+ {
+  "token": "PONS",
+  "ca": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+  "wallet": "0xffec0df753b6171e8cd6cf3d13d872c012242f00",
+  "pnl": 313596.30835765845,
+  "win_rate": 0.0,
+  "tags": [],
+  "volume": 77392400
+ },
+ {
+  "token": "PONS",
+  "ca": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+  "wallet": "0xf5086beb1f660e1d18e3967196fa4f6b2b7ad1b4",
+  "pnl": 285893.8133585253,
+  "win_rate": 0.0,
+  "tags": [],
+  "volume": 77392400
+ },
+ {
+  "token": "PONS",
+  "ca": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+  "wallet": "0xafa8d53589615aecad854a3d22a607ef431de364",
+  "pnl": 203943.47627608222,
+  "win_rate": 0.0,
+  "tags": [],
+  "volume": 77392400
+ },
+ {
+  "token": "PONS",
+  "ca": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+  "wallet": "0x176255bf344032eaaa45163d12284d1cf33253b8",
+  "pnl": 201211.5113097977,
+  "win_rate": 0.0,
+  "tags": [],
+  "volume": 77392400
+ },
+ {
+  "token": "PONS",
+  "ca": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+  "wallet": "0x22669afc9c5c2149768c236cd10a8ab47f2774f3",
+  "pnl": 190328.7911032973,
+  "win_rate": 0.0,
+  "tags": [
+   "fomo"
+  ],
+  "volume": 77392400
+ },
+ {
+  "token": "PONS",
+  "ca": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+  "wallet": "0xf4ccdc6f4bbfe46c61de9e31e00a028293bbd0f4",
+  "pnl": 183011.48080566493,
+  "win_rate": 0.0,
+  "tags": [
+   "fomo"
+  ],
+  "volume": 77392400
+ },
+ {
+  "token": "PONS",
+  "ca": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+  "wallet": "0x72774e2fe1992d5da8c6e9cef73fd2ab980c0b98",
+  "pnl": 162441.13271673434,
+  "win_rate": 0.0,
+  "tags": [],
+  "volume": 77392400
+ }
+]

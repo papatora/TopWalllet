@@ -1,0 +1,506 @@
+{
+ "pump_details": {
+  "USDG_56884785": {
+   "token": "USDG",
+   "gain_pct": 17052030506470806609192139039440896,
+   "start_block": 56884785,
+   "peak_block": 56931307,
+   "accumulators": 0,
+   "early_hunters": 0,
+   "acc_wallets": [],
+   "hunter_wallets": []
+  },
+  "USDG_56931444": {
+   "token": "USDG",
+   "gain_pct": 17043738820948489789932419107782656,
+   "start_block": 56931444,
+   "peak_block": 56964125,
+   "accumulators": 0,
+   "early_hunters": 0,
+   "acc_wallets": [],
+   "hunter_wallets": []
+  },
+  "USDG_56966835": {
+   "token": "USDG",
+   "gain_pct": 17036390340253021048481556421672960,
+   "start_block": 56966835,
+   "peak_block": 56970827,
+   "accumulators": 0,
+   "early_hunters": 0,
+   "acc_wallets": [],
+   "hunter_wallets": []
+  },
+  "USDG_57684462": {
+   "token": "USDG",
+   "gain_pct": 17036389952385093209937804431196160,
+   "start_block": 57684462,
+   "peak_block": 57688564,
+   "accumulators": 0,
+   "early_hunters": 0,
+   "acc_wallets": [],
+   "hunter_wallets": []
+  },
+  "USDG_57688565": {
+   "token": "USDG",
+   "gain_pct": 17036388336391624036710575931129856,
+   "start_block": 57688565,
+   "peak_block": 57689307,
+   "accumulators": 0,
+   "early_hunters": 0,
+   "acc_wallets": [],
+   "hunter_wallets": []
+  },
+  "MEME_53936939": {
+   "token": "MEME",
+   "gain_pct": 43717,
+   "start_block": 53936939,
+   "peak_block": 53949880,
+   "accumulators": 0,
+   "early_hunters": 0,
+   "acc_wallets": [],
+   "hunter_wallets": []
+  },
+  "Jacob_58140726": {
+   "token": "Jacob",
+   "gain_pct": 19280,
+   "start_block": 58140726,
+   "peak_block": 58239686,
+   "accumulators": 0,
+   "early_hunters": 0,
+   "acc_wallets": [],
+   "hunter_wallets": []
+  },
+  "ZZZ_54672541": {
+   "token": "ZZZ",
+   "gain_pct": 18672,
+   "start_block": 54672541,
+   "peak_block": 54768196,
+   "accumulators": 0,
+   "early_hunters": 0,
+   "acc_wallets": [],
+   "hunter_wallets": []
+  },
+  "BOLTAI_56759830": {
+   "token": "BOLTAI",
+   "gain_pct": 13224,
+   "start_block": 56759830,
+   "peak_block": 56766301,
+   "accumulators": 0,
+   "early_hunters": 0,
+   "acc_wallets": [],
+   "hunter_wallets": []
+  },
+  "9TO5_48370739": {
+   "token": "9TO5",
+   "gain_pct": 8252,
+   "start_block": 48370739,
+   "peak_block": 48508935,
+   "accumulators": 0,
+   "early_hunters": 0,
+   "acc_wallets": [],
+   "hunter_wallets": []
+  },
+  "CAPITALCAT_56765893": {
+   "token": "CAPITALCAT",
+   "gain_pct": 6086,
+   "start_block": 56765893,
+   "peak_block": 56792517,
+   "accumulators": 0,
+   "early_hunters": 0,
+   "acc_wallets": [],
+   "hunter_wallets": []
+  },
+  "PONIE_56529479": {
+   "token": "PONIE",
+   "gain_pct": 4810,
+   "start_block": 56529479,
+   "peak_block": 56579963,
+   "accumulators": 0,
+   "early_hunters": 0,
+   "acc_wallets": [],
+   "hunter_wallets": []
+  },
+  "appul_58117543": {
+   "token": "appul",
+   "gain_pct": 4670,
+   "start_block": 58117543,
+   "peak_block": 58136245,
+   "accumulators": 0,
+   "early_hunters": 0,
+   "acc_wallets": [],
+   "hunter_wallets": []
+  },
+  "O1BOT_57044576": {
+   "token": "O1BOT",
+   "gain_pct": 4514,
+   "start_block": 57044576,
+   "peak_block": 57056877,
+   "accumulators": 0,
+   "early_hunters": 0,
+   "acc_wallets": [],
+   "hunter_wallets": []
+  },
+  "ROBINHOOD_52766375": {
+   "token": "ROBINHOOD",
+   "gain_pct": 4332,
+   "start_block": 52766375,
+   "peak_block": 52778115,
+   "accumulators": 0,
+   "early_hunters": 0,
+   "acc_wallets": [],
+   "hunter_wallets": []
+  },
+  "SA_57917881": {
+   "token": "SA",
+   "gain_pct": 4256,
+   "start_block": 57917881,
+   "peak_block": 57932291,
+   "accumulators": 0,
+   "early_hunters": 0,
+   "acc_wallets": [],
+   "hunter_wallets": []
+  },
+  "INDEXR_56808468": {
+   "token": "INDEXR",
+   "gain_pct": 4202,
+   "start_block": 56808468,
+   "peak_block": 56905164,
+   "accumulators": 0,
+   "early_hunters": 0,
+   "acc_wallets": [],
+   "hunter_wallets": []
+  },
+  "memestock_55053285": {
+   "token": "memestock",
+   "gain_pct": 3766,
+   "start_block": 55053285,
+   "peak_block": 55102248,
+   "accumulators": 0,
+   "early_hunters": 0,
+   "acc_wallets": [],
+   "hunter_wallets": []
+  },
+  "MORE_56887757": {
+   "token": "MORE",
+   "gain_pct": 3493,
+   "start_block": 56887757,
+   "peak_block": 57044428,
+   "accumulators": 0,
+   "early_hunters": 0,
+   "acc_wallets": [],
+   "hunter_wallets": []
+  },
+  "NGRAM_57973164": {
+   "token": "NGRAM",
+   "gain_pct": 3429,
+   "start_block": 57973164,
+   "peak_block": 57988506,
+   "accumulators": 0,
+   "early_hunters": 0,
+   "acc_wallets": [],
+   "hunter_wallets": []
+  },
+  "PAYGENT_57961796": {
+   "token": "PAYGENT",
+   "gain_pct": 3297,
+   "start_block": 57961796,
+   "peak_block": 57965521,
+   "accumulators": 0,
+   "early_hunters": 0,
+   "acc_wallets": [],
+   "hunter_wallets": []
+  },
+  "ARB_56713946": {
+   "token": "ARB",
+   "gain_pct": 3280,
+   "start_block": 56713946,
+   "peak_block": 56758807,
+   "accumulators": 0,
+   "early_hunters": 0,
+   "acc_wallets": [],
+   "hunter_wallets": []
+  },
+  "Anthropic_57543788": {
+   "token": "Anthropic",
+   "gain_pct": 3224,
+   "start_block": 57543788,
+   "peak_block": 57580386,
+   "accumulators": 0,
+   "early_hunters": 0,
+   "acc_wallets": [],
+   "hunter_wallets": []
+  },
+  "CATSTRO_54848456": {
+   "token": "CATSTRO",
+   "gain_pct": 3105,
+   "start_block": 54848456,
+   "peak_block": 54861529,
+   "accumulators": 0,
+   "early_hunters": 0,
+   "acc_wallets": [],
+   "hunter_wallets": []
+  },
+  "SPY_56881380": {
+   "token": "SPY",
+   "gain_pct": 2994,
+   "start_block": 56881380,
+   "peak_block": 56910003,
+   "accumulators": 0,
+   "early_hunters": 0,
+   "acc_wallets": [],
+   "hunter_wallets": []
+  },
+  "STREAM_58183495": {
+   "token": "STREAM",
+   "gain_pct": 2357,
+   "start_block": 58183495,
+   "peak_block": 58219127,
+   "accumulators": 0,
+   "early_hunters": 0,
+   "acc_wallets": [],
+   "hunter_wallets": []
+  },
+  "StockCat_57353506": {
+   "token": "StockCat",
+   "gain_pct": 2217,
+   "start_block": 57353506,
+   "peak_block": 57365099,
+   "accumulators": 0,
+   "early_hunters": 0,
+   "acc_wallets": [],
+   "hunter_wallets": []
+  },
+  "SAYLORMOON_57575548": {
+   "token": "SAYLORMOON",
+   "gain_pct": 2215,
+   "start_block": 57575548,
+   "peak_block": 57600325,
+   "accumulators": 0,
+   "early_hunters": 0,
+   "acc_wallets": [],
+   "hunter_wallets": []
+  },
+  "500_57623297": {
+   "token": "500",
+   "gain_pct": 2211,
+   "start_block": 57623297,
+   "peak_block": 57651382,
+   "accumulators": 0,
+   "early_hunters": 0,
+   "acc_wallets": [],
+   "hunter_wallets": []
+  },
+  "AAPL_57529233": {
+   "token": "AAPL",
+   "gain_pct": 2111,
+   "start_block": 57529233,
+   "peak_block": 57540972,
+   "accumulators": 0,
+   "early_hunters": 0,
+   "acc_wallets": [],
+   "hunter_wallets": []
+  },
+  "ARGOS_56704346": {
+   "token": "ARGOS",
+   "gain_pct": 2031,
+   "start_block": 56704346,
+   "peak_block": 56729520,
+   "accumulators": 0,
+   "early_hunters": 0,
+   "acc_wallets": [],
+   "hunter_wallets": []
+  },
+  "BROS_57828057": {
+   "token": "BROS",
+   "gain_pct": 2015,
+   "start_block": 57828057,
+   "peak_block": 57833147,
+   "accumulators": 0,
+   "early_hunters": 0,
+   "acc_wallets": [],
+   "hunter_wallets": []
+  },
+  "PUMPED_58062000": {
+   "token": "PUMPED",
+   "gain_pct": 2011,
+   "start_block": 58062000,
+   "peak_block": 58075284,
+   "accumulators": 0,
+   "early_hunters": 0,
+   "acc_wallets": [],
+   "hunter_wallets": []
+  },
+  "WORKS_57896332": {
+   "token": "WORKS",
+   "gain_pct": 2008,
+   "start_block": 57896332,
+   "peak_block": 57955327,
+   "accumulators": 0,
+   "early_hunters": 0,
+   "acc_wallets": [],
+   "hunter_wallets": []
+  },
+  "\u306e\u30ea\u30b9_57621091": {
+   "token": "\u306e\u30ea\u30b9",
+   "gain_pct": 1959,
+   "start_block": 57621091,
+   "peak_block": 57635762,
+   "accumulators": 0,
+   "early_hunters": 0,
+   "acc_wallets": [],
+   "hunter_wallets": []
+  },
+  "ELONCOIN_57481442": {
+   "token": "ELONCOIN",
+   "gain_pct": 1958,
+   "start_block": 57481442,
+   "peak_block": 57491049,
+   "accumulators": 0,
+   "early_hunters": 0,
+   "acc_wallets": [],
+   "hunter_wallets": []
+  },
+  "RECEIPT_57775428": {
+   "token": "RECEIPT",
+   "gain_pct": 1728,
+   "start_block": 57775428,
+   "peak_block": 57805747,
+   "accumulators": 0,
+   "early_hunters": 0,
+   "acc_wallets": [],
+   "hunter_wallets": []
+  },
+  "Lucia_55050859": {
+   "token": "Lucia",
+   "gain_pct": 1691,
+   "start_block": 55050859,
+   "peak_block": 55071761,
+   "accumulators": 0,
+   "early_hunters": 0,
+   "acc_wallets": [],
+   "hunter_wallets": []
+  },
+  "MADE_57970204": {
+   "token": "MADE",
+   "gain_pct": 1685,
+   "start_block": 57970204,
+   "peak_block": 57977037,
+   "accumulators": 0,
+   "early_hunters": 0,
+   "acc_wallets": [],
+   "hunter_wallets": []
+  },
+  "MEME_53949881": {
+   "token": "MEME",
+   "gain_pct": 1648,
+   "start_block": 53949881,
+   "peak_block": 54054560,
+   "accumulators": 0,
+   "early_hunters": 0,
+   "acc_wallets": [],
+   "hunter_wallets": []
+  },
+  "PACE_56901915": {
+   "token": "PACE",
+   "gain_pct": 1614,
+   "start_block": 56901915,
+   "peak_block": 56907142,
+   "accumulators": 0,
+   "early_hunters": 0,
+   "acc_wallets": [],
+   "hunter_wallets": []
+  },
+  "USDG_54625629": {
+   "token": "USDG",
+   "gain_pct": 1604,
+   "start_block": 54625629,
+   "peak_block": 54638689,
+   "accumulators": 0,
+   "early_hunters": 0,
+   "acc_wallets": [],
+   "hunter_wallets": []
+  },
+  "YES_54982419": {
+   "token": "YES",
+   "gain_pct": 1597,
+   "start_block": 54982419,
+   "peak_block": 55004937,
+   "accumulators": 0,
+   "early_hunters": 0,
+   "acc_wallets": [],
+   "hunter_wallets": []
+  },
+  "MIGA_56739625": {
+   "token": "MIGA",
+   "gain_pct": 1580,
+   "start_block": 56739625,
+   "peak_block": 56762346,
+   "accumulators": 0,
+   "early_hunters": 0,
+   "acc_wallets": [],
+   "hunter_wallets": []
+  },
+  "CYBR_55173499": {
+   "token": "CYBR",
+   "gain_pct": 1575,
+   "start_block": 55173499,
+   "peak_block": 55210994,
+   "accumulators": 0,
+   "early_hunters": 0,
+   "acc_wallets": [],
+   "hunter_wallets": []
+  },
+  "dogshit_54999277": {
+   "token": "dogshit",
+   "gain_pct": 1560,
+   "start_block": 54999277,
+   "peak_block": 55034034,
+   "accumulators": 0,
+   "early_hunters": 0,
+   "acc_wallets": [],
+   "hunter_wallets": []
+  },
+  "BOXED_56804023": {
+   "token": "BOXED",
+   "gain_pct": 1553,
+   "start_block": 56804023,
+   "peak_block": 57053530,
+   "accumulators": 0,
+   "early_hunters": 0,
+   "acc_wallets": [],
+   "hunter_wallets": []
+  },
+  "MARKET_57967676": {
+   "token": "MARKET",
+   "gain_pct": 1539,
+   "start_block": 57967676,
+   "peak_block": 57986244,
+   "accumulators": 0,
+   "early_hunters": 0,
+   "acc_wallets": [],
+   "hunter_wallets": []
+  },
+  "PINK_57171823": {
+   "token": "PINK",
+   "gain_pct": 1352,
+   "start_block": 57171823,
+   "peak_block": 57176428,
+   "accumulators": 0,
+   "early_hunters": 0,
+   "acc_wallets": [],
+   "hunter_wallets": []
+  },
+  "TURRET_58233155": {
+   "token": "TURRET",
+   "gain_pct": 1340,
+   "start_block": 58233155,
+   "peak_block": 58241494,
+   "accumulators": 0,
+   "early_hunters": 0,
+   "acc_wallets": [],
+   "hunter_wallets": []
+  }
+ },
+ "multi_pump_hunters": [],
+ "total_pumps": 474
+}

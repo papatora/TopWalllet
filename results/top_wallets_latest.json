@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-09T06:35:42.485825+00:00",
+  "generated_at": "2026-09-09T15:47:30.901013+00:00",
   "chain": "robinhood",
   "chain_id": 4663,
-  "total_ranked": 2,
+  "total_ranked": 1,
   "wallets": [
     {
       "rank": 1,
@@ -72,75 +72,6 @@
         "SINGLE_TOKEN_SAMPLE"
       ],
       "cluster_id": null
-    },
-    {
-      "rank": 2,
-      "wallet_address": "0x6231959b717200A44836b6f74FEac10a4EAC475b",
-      "composite_score": 50.13,
-      "metrics": {
-        "total_positions": 3,
-        "winning_positions": 2,
-        "win_rate": 1.0,
-        "median_return_multiple": 1.2224,
-        "max_return_multiple": 1.2234,
-        "total_realized_pnl_usd": 118.25,
-        "total_unrealized_pnl_usd": -587.19,
-        "avg_hold_duration_hours": 0.28,
-        "consistency_score": 0.44,
-        "dip_buying_accuracy": 0.6667,
-        "top_selling_accuracy": 0.0,
-        "distinct_tokens": 1,
-        "big_wins_10x_plus": 0,
-        "recent_win_rate": 1.0,
-        "active_months": 1,
-        "last_active": "2026-09-08T18:56:14+00:00"
-      },
-      "top_trades": [
-        {
-          "token": "WORKS",
-          "ca": "0xF9DC3fFab9F84dB860b898285bBB51a419117c7b",
-          "entry_price_usd": 6.918662853287215e-05,
-          "exit_price_usd": 8.46453449318172e-05,
-          "return_multiple": 1.22,
-          "position_size_usd": 169.44,
-          "pnl_usd": 37.86,
-          "entry_date": "2026-09-08",
-          "exit_date": "2026-09-08"
-        },
-        {
-          "token": "WORKS",
-          "ca": "0xF9DC3fFab9F84dB860b898285bBB51a419117c7b",
-          "entry_price_usd": 8.921022547998105e-05,
-          "exit_price_usd": 0.00010896082766382054,
-          "return_multiple": 1.22,
-          "position_size_usd": 363.1,
-          "pnl_usd": 80.39,
-          "entry_date": "2026-09-08",
-          "exit_date": "2026-09-08"
-        },
-        {
-          "token": "WORKS",
-          "ca": "0xF9DC3fFab9F84dB860b898285bBB51a419117c7b",
-          "entry_price_usd": 9.747357025343373e-05,
-          "exit_price_usd": 4.476e-06,
-          "return_multiple": 0.05,
-          "position_size_usd": 615.45,
-          "pnl_usd": null,
-          "entry_date": "2026-09-08",
-          "exit_date": null
-        }
-      ],
-      "verification": {
-        "verdict": "verified",
-        "eth_oracle_ok": true,
-        "trades_verified": "2/2",
-        "details": []
-      },
-      "trading_style": "dip_buyer_scalper",
-      "risk_flags": [
-        "SINGLE_TOKEN_SAMPLE"
-      ],
-      "cluster_id": "cluster_85d5693d"
     }
   ]
 }

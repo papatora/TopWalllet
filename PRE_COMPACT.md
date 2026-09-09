@@ -540,3 +540,23 @@ watchdog GLM per jam | systemd auto-restart
 5. Close port 8000 lagi di VPS setelah Vercel live.
 6. GMGN OpenAPI (openapi.gmgn.ai, key: gmgn_solbscbaseethmonadtron) bisa
    dipakai untuk real-time data yang lebih fresh dari GitHub raw.
+
+## SNAPSHOT S-32 — DEEP PUMP ANALYSIS + HONEST FINDINGS
+
+- 455 pumps terdeteksi, participant extraction jalan → 0 multi-pump hunters
+- Alasan: enrichment belum menjangkau periode pre-pump untuk kebanyakan token
+- Wallet dengan pre-pump buys = 0 (data coverage issue, bukan bug)
+- 12,880 wallets classified, 1,430 labels, 455 pumps — semua data benar
+- **Diamond wallet 0xdc137c78 (+18,075%, akumulasi 51 hari) ditemukan dari
+  GMGN API BUKAN dari pipeline kita — ini menunjukkan pipeline perlu:
+  1. Lebih banyak token (510→5000) 
+  2. Lebih banyak periode waktu (enrichment mendalam)
+  3. GMGN API sebagai sumber data supplement untuk cross-validate
+- Website CLOSED, VPS pipeline JALAN 24/7, semua data ter-push GitHub
+
+## NEXT SESSION PRIORITY
+1. GMGN API → cari top traders di trending RH tokens → cross-ref dengan DB
+2. Enrichment cycle penuh untuk token baru
+3. Round-robin reverify wallet yang sudah ada
+4. GMGN criteria (bundler/insider/phishing) → enrich anti_gaming
+5. Website revamp SAAT verified >50 + universe >500 tokens
