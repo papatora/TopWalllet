@@ -522,3 +522,21 @@ token ada di wallet_activity/wallet_profits (endpoint sudah di client).
 **VPS state:** supervisor active cycle 2 | 447+ tokens | 16K+ wallets |
 65K+ events | pipeline PID running | trending scanner cron per 30 menit |
 watchdog GLM per jam | systemd auto-restart
+
+## SNAPSHOT S-31 — WEBSITE REVAMP PENDING (user: "design bolog, close dulu")
+
+**KESALAHAN:** website raw dibuka tanpa design skill + expose port VPS. User marah.
+**YANG HARUS DILAKUKAN SESSION BERIKUTNYA (PRIORITAS #1):**
+1. Pakai web-design skill untuk bikin dashboard **GMGN-style dark terminal**
+   (bukan editorial paper — user mau GMGN clone tapi lebih clean)
+2. Frontend baca data dari **GitHub raw URLs** (repo public, auto-pushed):
+   - https://raw.githubusercontent.com/papatora/TopWalllet/main/results/top_wallets_latest.json
+   - https://raw.githubusercontent.com/papatora/TopWalllet/main/results/wallet_labels.json
+   - https://raw.githubusercontent.com/papatora/TopWalllet/main/results/whale_entry_maps.json
+   - https://raw.githubusercontent.com/papatora/TopWalllet/main/results/stats.json
+   → TIDAK PERLU expose port VPS. Frontend statis di Vercel, baca data dari GitHub.
+3. Deploy ke **Vercel** (bukan VPS port). GitHub PAT tersedia di .env.
+4. Filter buttons per taxonomy (SNIPER/INSIDER/DEV/CLUSTER/dll)
+5. Close port 8000 lagi di VPS setelah Vercel live.
+6. GMGN OpenAPI (openapi.gmgn.ai, key: gmgn_solbscbaseethmonadtron) bisa
+   dipakai untuk real-time data yang lebih fresh dari GitHub raw.
