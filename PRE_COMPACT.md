@@ -497,3 +497,28 @@ token ada di wallet_activity/wallet_profits (endpoint sudah di client).
 - Hasil tersimpan: results/pump_scan.json
 - Insight: 455 pump dalam ~2 bulan = chain ini SANGAT aktif — rata-rata 7-8
   pump/hari. Ini feed data yang ideal untuk pump-first wallet discovery.
+
+## SNAPSHOT S-30 — PARTICIPANT EXTRACTION RUNNING + PUMP SCAN COMPLETE
+
+**455 real pumps detected** (results/pump_scan.json, ter-push c726465):
+- Top: MEME +43K%, Jacob +19K%, ZZZ +18K%, BOLTAI +13K%, 9TO5 +8K%
+- Multi-pump hunters = 0 (expected dengan universe kecil)
+
+**Participant extraction RUNNING di VPS** (scripts/participant_extract.py):
+- Ambil top 50 pumps by gain
+- Per pump: extract semua ACCUMULATOR (beli sebelum pump) + EARLY_HUNTER
+  (first 10% pump) + MID_RIDER + LATE_CHASER
+- Output: results/pump_participants.json
+- Hasil → GOLD wallet candidates untuk copytrade priority
+
+**Next session (urutan):**
+1. Cek results/pump_participants.json — siapa yang konsisten ACCUMULATOR
+   atau EARLY_HUNTER di ≥2 pumps? Itu GOLD candidates.
+2. Deep-check GOLD candidates: funding chain, wallet age, dev check (via GMGN API)
+3. 3-stream work order (S-13): deployer registry / auditor / re-verifier
+4. Website revamp saat verified wallets >50 dan universe >500 tokens
+5. M4-M6 per docs/ULTIMATE_PROMPT_SMART_MONEY_FEED.md
+
+**VPS state:** supervisor active cycle 2 | 447+ tokens | 16K+ wallets |
+65K+ events | pipeline PID running | trending scanner cron per 30 menit |
+watchdog GLM per jam | systemd auto-restart
