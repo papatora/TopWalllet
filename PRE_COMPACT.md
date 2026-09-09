@@ -486,3 +486,14 @@ TERBUKTI TIDAK HALU.**
 
 **Dataset baru yang bisa diambil dari GMGN untuk ini:** wallet unrealized per
 token ada di wallet_activity/wallet_profits (endpoint sudah di client).
+
+## SNAPSHOT S-29 — PUMP SCAN COMPLETE: 455 real pumps detected
+
+- Pump detector dijalankan pada seluruh PricePoint series di VPS
+- **455 real pumps** terdeteksi (gain 100%-43,717%, excl. stable noise)
+- Top pumps: MEME +43,717%, Jacob +19,280%, ZZZ +18,672%, BOLTAI +13,224%
+- Multi-pump hunters = 0 (wajar: universe masih 341 token, wallet baru mulai
+  menumpuk — hunters akan muncul saat universe >500 token)
+- Hasil tersimpan: results/pump_scan.json
+- Insight: 455 pump dalam ~2 bulan = chain ini SANGAT aktif — rata-rata 7-8
+  pump/hari. Ini feed data yang ideal untuk pump-first wallet discovery.
