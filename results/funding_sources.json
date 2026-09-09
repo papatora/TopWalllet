@@ -1,0 +1,318 @@
+{
+ "funders": {
+  "0xbe410ab5796844413d5a5c04684021be00a26182": {
+   "funded_count": 14,
+   "cluster": null,
+   "wallets": [
+    {
+     "wallet": "0x1cc65D09d81e4656e72444217E201064226d2c3C",
+     "rank": 22,
+     "amount_eth": 0.002,
+     "class": "WALLET_FUNDED"
+    },
+    {
+     "wallet": "0xf15168b7ADC036ce63EA44bBa723408d30dC4b4c",
+     "rank": 23,
+     "amount_eth": 0.002,
+     "class": "WALLET_FUNDED"
+    },
+    {
+     "wallet": "0x3A8982399F7a72f0B57f0833b87549bC37C1B523",
+     "rank": 25,
+     "amount_eth": 0.002,
+     "class": "WALLET_FUNDED"
+    },
+    {
+     "wallet": "0xF38013d1CAAA68251cD5FC0E0d18F3c97824374D",
+     "rank": 26,
+     "amount_eth": 0.002,
+     "class": "WALLET_FUNDED"
+    },
+    {
+     "wallet": "0x505D2e7A715c9AF1D690204F43D75EaEa4EFaF10",
+     "rank": 27,
+     "amount_eth": 0.002,
+     "class": "WALLET_FUNDED"
+    },
+    {
+     "wallet": "0x14FE9A5C647Fc916fe04FBD2822646d82AFA38D0",
+     "rank": 29,
+     "amount_eth": 0.002,
+     "class": "WALLET_FUNDED"
+    },
+    {
+     "wallet": "0x7676a8a3dF4b74d391BF519029e7C7768Ca2A282",
+     "rank": 30,
+     "amount_eth": 0.002,
+     "class": "WALLET_FUNDED"
+    },
+    {
+     "wallet": "0x977ae053E3A6909bA2bCfb1e316b6ff58606Ea56",
+     "rank": 31,
+     "amount_eth": 0.002,
+     "class": "WALLET_FUNDED"
+    },
+    {
+     "wallet": "0xB1dC1e88579B075Dc209EF2ec1224bF8130201D5",
+     "rank": 32,
+     "amount_eth": 0.002,
+     "class": "WALLET_FUNDED"
+    },
+    {
+     "wallet": "0x70cf1B6e80aaE62Fe8e793EAc31870B9Ecf2D31A",
+     "rank": 33,
+     "amount_eth": 0.002,
+     "class": "WALLET_FUNDED"
+    },
+    {
+     "wallet": "0xB9358D13906Da9F0B30fC322508b03D055E1aBd9",
+     "rank": 34,
+     "amount_eth": 0.002,
+     "class": "WALLET_FUNDED"
+    },
+    {
+     "wallet": "0x0630606D4abADdD08BE21506bC4585e57CF9fF98",
+     "rank": 35,
+     "amount_eth": 0.002,
+     "class": "WALLET_FUNDED"
+    },
+    {
+     "wallet": "0x470E6BE8B2e62F9E5f697Ee854FAF15036DB588E",
+     "rank": 36,
+     "amount_eth": 0.002,
+     "class": "WALLET_FUNDED"
+    },
+    {
+     "wallet": "0x5740db16B0a5F853A18cb467F1F1cDaA07125Da1",
+     "rank": 37,
+     "amount_eth": 0.002,
+     "class": "WALLET_FUNDED"
+    }
+   ]
+  },
+  "0xf70da97812cb96acdf810712aa562db8dfa3dbef": {
+   "funded_count": 2,
+   "cluster": [
+    "funder"
+   ],
+   "wallets": [
+    {
+     "wallet": "0xb1BC77CC39e059BdB4eeA82bF8eA71d5AE6c876F",
+     "rank": 2,
+     "amount_eth": 0.40965568792834356,
+     "class": "WALLET_FUNDED"
+    },
+    {
+     "wallet": "0xbed4721cAC12305731Ffe086a2dF96feE8F5eF69",
+     "rank": 3,
+     "amount_eth": 0.5306586024962292,
+     "class": "WALLET_FUNDED"
+    }
+   ]
+  },
+  "0x96923ef954eef10aeedd7c309261824136788735": {
+   "funded_count": 1,
+   "cluster": null,
+   "wallets": [
+    {
+     "wallet": "0x47478832e81064f9078088b4a3f1A8358a612Cd9",
+     "rank": 4,
+     "amount_eth": 0.13,
+     "class": "WALLET_FUNDED"
+    }
+   ]
+  },
+  "0xb00aa6178392decfb135e0f42ddcefe6e4bcc1df": {
+   "funded_count": 1,
+   "cluster": null,
+   "wallets": [
+    {
+     "wallet": "0x0d6b08700F9A0f5e7DE49e7076F5354D1915f909",
+     "rank": 5,
+     "amount_eth": 0.15006,
+     "class": "WALLET_FUNDED"
+    }
+   ]
+  },
+  "0x312c642eafe1bac14ce7638b4cb8a086491dd96f": {
+   "funded_count": 1,
+   "cluster": null,
+   "wallets": [
+    {
+     "wallet": "0xCc8a0d686C77ee8c914BEaD18a26F158f270690d",
+     "rank": 7,
+     "amount_eth": 0.15006,
+     "class": "WALLET_FUNDED"
+    }
+   ]
+  },
+  "0x3f63182fa634cadc02173c6325ef1ca53216efb0": {
+   "funded_count": 1,
+   "cluster": null,
+   "wallets": [
+    {
+     "wallet": "0xD6f5aDDDBc26c2E2D8DBd881dBc81A4C605e445E",
+     "rank": 8,
+     "amount_eth": 0.15006,
+     "class": "WALLET_FUNDED"
+    }
+   ]
+  },
+  "0xac7f7c1fbe62ebf33b0887246be02005c718a0d6": {
+   "funded_count": 1,
+   "cluster": null,
+   "wallets": [
+    {
+     "wallet": "0xbcD3f0621EaCB9c72818E41c620Eb186E878194B",
+     "rank": 9,
+     "amount_eth": 0.15006,
+     "class": "WALLET_FUNDED"
+    }
+   ]
+  },
+  "0xbb8bd7c0270b095b0460c5863bd5621fe603ae2c": {
+   "funded_count": 1,
+   "cluster": null,
+   "wallets": [
+    {
+     "wallet": "0x7f124B9A74A3c813655fD147597dEf070Da5c115",
+     "rank": 10,
+     "amount_eth": 0.15006,
+     "class": "WALLET_FUNDED"
+    }
+   ]
+  },
+  "0x7ea230a1e728eb1d6b7ea519b48c15cdadd1e560": {
+   "funded_count": 1,
+   "cluster": null,
+   "wallets": [
+    {
+     "wallet": "0x503d58571E578EbD618b19e201a85DaC81f35122",
+     "rank": 11,
+     "amount_eth": 0.15006,
+     "class": "WALLET_FUNDED"
+    }
+   ]
+  },
+  "0x79cb88a294f57ae0135c988b73b09ab63a89a52d": {
+   "funded_count": 1,
+   "cluster": null,
+   "wallets": [
+    {
+     "wallet": "0x6eb9915ca009c77B33607FD9B1d83ac4Abf85e2e",
+     "rank": 12,
+     "amount_eth": 0.15006,
+     "class": "WALLET_FUNDED"
+    }
+   ]
+  },
+  "0xa67d7eb4dc68fa6ce8e34ef8cadaf075b9893fbb": {
+   "funded_count": 1,
+   "cluster": null,
+   "wallets": [
+    {
+     "wallet": "0x6e951d31343d7875627d33E3CDF182B8547C256d",
+     "rank": 13,
+     "amount_eth": 0.2271526901673165,
+     "class": "WALLET_FUNDED"
+    }
+   ]
+  },
+  "0xd2ee233073b84111dc2bfaf23638b1b23b199689": {
+   "funded_count": 1,
+   "cluster": null,
+   "wallets": [
+    {
+     "wallet": "0x2412bF70B7a7fd19a83F40f347155f6FFf88B001",
+     "rank": 14,
+     "amount_eth": 0.15006,
+     "class": "WALLET_FUNDED"
+    }
+   ]
+  },
+  "0x6d72ef66beea48515d09a9b046d7cddc20f278ec": {
+   "funded_count": 1,
+   "cluster": null,
+   "wallets": [
+    {
+     "wallet": "0x56f365F5701B7DdF8eBB27247617fCBB28fB8B21",
+     "rank": 15,
+     "amount_eth": 0.15006,
+     "class": "WALLET_FUNDED"
+    }
+   ]
+  },
+  "0x13bcd8c12fc9f538f022e10bc615cea0331dc938": {
+   "funded_count": 1,
+   "cluster": null,
+   "wallets": [
+    {
+     "wallet": "0x02Fa109B0aB5a5B32bc86FAFFC63a916835C5EEA",
+     "rank": 16,
+     "amount_eth": 0.15006,
+     "class": "WALLET_FUNDED"
+    }
+   ]
+  },
+  "0x78866658746fbc731f3e4da20ac9e00311df4b35": {
+   "funded_count": 1,
+   "cluster": null,
+   "wallets": [
+    {
+     "wallet": "0xeFbF4Fd8d48341C35991577fe10117c800795ee0",
+     "rank": 17,
+     "amount_eth": 0.15006,
+     "class": "WALLET_FUNDED"
+    }
+   ]
+  },
+  "0xca7ded7e4f4ba8ab3b10009236ae6d1b95094589": {
+   "funded_count": 1,
+   "cluster": null,
+   "wallets": [
+    {
+     "wallet": "0x744b68D8ecFC86c614455B5Fc8f5723358De68CF",
+     "rank": 18,
+     "amount_eth": 0.18258410677590237,
+     "class": "WALLET_FUNDED"
+    }
+   ]
+  },
+  "0x4645409153fb5e6062be6005ba458b53120c7b34": {
+   "funded_count": 1,
+   "cluster": null,
+   "wallets": [
+    {
+     "wallet": "0x6Dd17Ff51c0B33c03FB3e51CA81447faEC545408",
+     "rank": 20,
+     "amount_eth": 0.15006,
+     "class": "WALLET_FUNDED"
+    }
+   ]
+  },
+  "0x116e96e45fae8228686e438bb023a5e21d210627": {
+   "funded_count": 1,
+   "cluster": null,
+   "wallets": [
+    {
+     "wallet": "0x17835351d65540c8e03ebB6D74bBf71a25c9cdeC",
+     "rank": 21,
+     "amount_eth": 4.410816637777e-06,
+     "class": "WALLET_FUNDED"
+    }
+   ]
+  },
+  "0xd95ce8b45ab1591f1b97cae0a8c36ad5645ad44c": {
+   "funded_count": 1,
+   "cluster": null,
+   "wallets": [
+    {
+     "wallet": "0xA7B5F842a0cf73B4866dd2eAA6dd78C8B71BD7B3",
+     "rank": 38,
+     "amount_eth": 0.6838901988195111,
+     "class": "WALLET_FUNDED"
+    }
+   ]
+  }
+ }
+}

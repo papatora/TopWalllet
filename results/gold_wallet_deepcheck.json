@@ -1,0 +1,268 @@
+[
+ {
+  "chain": "bsc",
+  "wallet": "0x472e619c30ea725ed9ca2f60e54a307d3044d05f",
+  "stats_30d": {
+   "wallet_address": "0x472e619c30ea725ed9ca2f60e54a307d3044d05f",
+   "native_balance": "0.973376545464040486",
+   "realized_profit": "3166.40288057087825719524",
+   "realized_profit_pnl": "3.9727371450004721",
+   "buy": 9,
+   "sell": 4,
+   "bought_cost": "3931.37531039196776730593",
+   "bought_fee": "79.26749597335317374508",
+   "sold_income": "3963.4359499637695804343",
+   "sold_fee": "75.70742425586542842105",
+   "total_cost": "4107.74180712262800149604",
+   "last_timestamp": 1788884928,
+   "pnl_stat": {
+    "token_num": 11,
+    "winrate": 1,
+    "pnl_lt_nd5_num": 0,
+    "pnl_nd5_0x_num": 0,
+    "pnl_0x_2x_num": 10,
+    "pnl_2x_5x_num": 1,
+    "pnl_gt_5x_num": 0,
+    "avg_holding_period": 22690.81818181818
+   },
+   "common": {
+    "avatar": "",
+    "name": "",
+    "ens": "",
+    "tag": "",
+    "tags": [
+     "gmgn_go",
+     "gmgn"
+    ],
+    "tag_rank": {
+     "gmgn": 0,
+     "gmgn_go": 0
+    },
+    "nick_name": "",
+    "created_at": 1760401332,
+    "twitter_name": "",
+    "twitter_username": "",
+    "is_blue_verified": false,
+    "twitter_bind": false,
+    "twitter_fans_num": 0,
+    "twitter_description": "",
+    "followers_count": 0,
+    "follow_count": 14,
+    "remark_count": 12,
+    "created_token_count": 0,
+    "fund_from": "",
+    "fund_from_ts": 1760401332,
+    "fund_tx_hash": "0x3e1600e420f36d4f1c75bd83d55739c463c91eaeaf1b5ea94079d7e8b08d8357",
+    "wallet_address": "",
+    "fund_from_address": "0xef44266d06db6e3f9d7626b3be2a852aa38e3583",
+    "fund_amount": "0.1734110330386446"
+   }
+  },
+  "profits_30d": {
+   "_http_status": 405,
+   "_error": "Method Not Allowed\n"
+  },
+  "created_tokens_count": 0,
+  "is_dev": false
+ },
+ {
+  "chain": "bsc",
+  "wallet": "0x30b6d90dc881ecc2e17080af12af0b0146888485",
+  "stats_30d": {
+   "wallet_address": "0x30b6d90dc881ecc2e17080af12af0b0146888485",
+   "native_balance": "3.8444074142886374",
+   "realized_profit": "2704.35404730508628982231",
+   "realized_profit_pnl": "5.0447921063184179",
+   "buy": 10,
+   "sell": 3,
+   "bought_cost": "533.35419316067582935076",
+   "bought_fee": "11.80454625359902525366",
+   "sold_income": "3240.42252947662742792639",
+   "sold_fee": "64.63828815271924651067",
+   "total_cost": "609.79703180657950111509",
+   "last_timestamp": 1788880638,
+   "pnl_stat": {
+    "token_num": 11,
+    "winrate": 1,
+    "pnl_lt_nd5_num": 0,
+    "pnl_nd5_0x_num": 0,
+    "pnl_0x_2x_num": 10,
+    "pnl_2x_5x_num": 0,
+    "pnl_gt_5x_num": 1,
+    "avg_holding_period": 34268.36363636364
+   },
+   "common": {
+    "avatar": "",
+    "name": "",
+    "ens": "",
+    "tag": "",
+    "tags": [
+     "gmgn_go",
+     "gmgn"
+    ],
+    "tag_rank": {
+     "gmgn": 0,
+     "gmgn_go": 0
+    },
+    "nick_name": "",
+    "created_at": 0,
+    "twitter_name": "",
+    "twitter_username": "",
+    "is_blue_verified": false,
+    "twitter_bind": false,
+    "twitter_fans_num": 0,
+    "twitter_description": "",
+    "followers_count": 0,
+    "follow_count": 0,
+    "remark_count": 0,
+    "created_token_count": 0,
+    "fund_from": "",
+    "fund_from_ts": 0,
+    "fund_tx_hash": "",
+    "wallet_address": "",
+    "fund_from_address": "",
+    "fund_amount": ""
+   }
+  },
+  "profits_30d": {
+   "_http_status": 405,
+   "_error": "Method Not Allowed\n"
+  },
+  "created_tokens_count": 0,
+  "is_dev": false
+ },
+ {
+  "chain": "bsc",
+  "wallet": "0xdc137c78c17500223031a2ca326c11062be0bad1",
+  "stats_30d": {
+   "wallet_address": "0xdc137c78c17500223031a2ca326c11062be0bad1",
+   "native_balance": "0.021135777730732332",
+   "realized_profit": "2981.42252485786634991343",
+   "realized_profit_pnl": "0.0947161213001347",
+   "buy": 76,
+   "sell": 76,
+   "bought_cost": "34382.01527274831497409009",
+   "bought_fee": "77.49696939963470190906",
+   "sold_income": "34458.87835743350532542379",
+   "sold_fee": "0.578458437584029613",
+   "total_cost": "34462.78479187295223565204",
+   "last_timestamp": 1788628116,
+   "pnl_stat": {
+    "token_num": 31,
+    "winrate": 1,
+    "pnl_lt_nd5_num": 0,
+    "pnl_nd5_0x_num": 0,
+    "pnl_0x_2x_num": 31,
+    "pnl_2x_5x_num": 0,
+    "pnl_gt_5x_num": 0,
+    "avg_holding_period": 1079917
+   },
+   "common": {
+    "avatar": "",
+    "name": "",
+    "ens": "",
+    "tag": "",
+    "tags": [
+     "arbitrager"
+    ],
+    "tag_rank": {
+     "arbitrager": 0
+    },
+    "nick_name": "",
+    "created_at": 1775033830,
+    "twitter_name": "",
+    "twitter_username": "",
+    "is_blue_verified": false,
+    "twitter_bind": false,
+    "twitter_fans_num": 0,
+    "twitter_description": "",
+    "followers_count": 0,
+    "follow_count": 14,
+    "remark_count": 19,
+    "created_token_count": 0,
+    "fund_from": "",
+    "fund_from_ts": 1769934852,
+    "fund_tx_hash": "0x9ad6a1514527b06b93230af1c7ece04f34b2feef1cb4a578afcbe0d7ad8251b4",
+    "wallet_address": "",
+    "fund_from_address": "0x1c233f466c11795cda5caf3432a04241cf1b1e34",
+    "fund_amount": "2.9"
+   }
+  },
+  "profits_30d": {
+   "_http_status": 405,
+   "_error": "Method Not Allowed\n"
+  },
+  "created_tokens_count": 0,
+  "is_dev": false
+ },
+ {
+  "chain": "bsc",
+  "wallet": "0x43dcf4cb1c6d84e54f0b11025a8fbb845e8e212a",
+  "stats_30d": {
+   "wallet_address": "0x43dcf4cb1c6d84e54f0b11025a8fbb845e8e212a",
+   "native_balance": "24.766221082332586695",
+   "realized_profit": "136910.53897675752944048435",
+   "realized_profit_pnl": "0.4733137264525911",
+   "buy": 1235,
+   "sell": 1145,
+   "bought_cost": "349792.2554381566538391675",
+   "bought_fee": "7958.28202543774872325778",
+   "sold_income": "341749.85904314293383817525",
+   "sold_fee": "5862.8266508123335789541",
+   "total_cost": "384500.53592450319916788962",
+   "last_timestamp": 1788887539,
+   "pnl_stat": {
+    "token_num": 1356,
+    "winrate": 0.6396694214876033,
+    "pnl_lt_nd5_num": 60,
+    "pnl_nd5_0x_num": 148,
+    "pnl_0x_2x_num": 1084,
+    "pnl_2x_5x_num": 50,
+    "pnl_gt_5x_num": 14,
+    "avg_holding_period": 870272.498141264
+   },
+   "common": {
+    "avatar": "",
+    "name": "",
+    "ens": "",
+    "tag": "",
+    "tags": [
+     "fomo",
+     "top_followed",
+     "top_renamed",
+     "gmgn"
+    ],
+    "tag_rank": {
+     "fomo": 0,
+     "gmgn": 0,
+     "top_followed": 0,
+     "top_renamed": 0
+    },
+    "nick_name": "",
+    "created_at": 1786270855,
+    "twitter_name": "",
+    "twitter_username": "",
+    "is_blue_verified": false,
+    "twitter_bind": false,
+    "twitter_fans_num": 0,
+    "twitter_description": "",
+    "followers_count": 0,
+    "follow_count": 2512,
+    "remark_count": 3004,
+    "created_token_count": 0,
+    "fund_from": "",
+    "fund_from_ts": 1786270855,
+    "fund_tx_hash": "0xe85e3e8304c46ff88d8d78cb91676306782fd7c5e8f03002a545b01ec47cec4d",
+    "wallet_address": "",
+    "fund_from_address": "0xc2c6acd377458010713e733e1b21dd6f670d091c",
+    "fund_amount": "0.1"
+   }
+  },
+  "profits_30d": {
+   "_http_status": 405,
+   "_error": "Method Not Allowed\n"
+  },
+  "created_tokens_count": 0,
+  "is_dev": false
+ }
+]
