@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TOPWALLET — robinhood chain smart money</title>
+<style>
+:root{--bg:#0a0a0a;--surface:#141414;--elevated:#1a1a1a;--border:#262626;--text:#fafafa;--text2:#a1a1aa;--green:#00ff88;--red:#ff3b30;--amber:#ffaa00;--blue:#3b82f6;--mono:'JetBrains Mono',ui-monospace,Menlo,monospace;--display:'Space Grotesk',sans-serif}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:var(--mono);font-size:13px;line-height:1.5}
+.wrap{max-width:1200px;margin:0 auto;padding:16px}
+header{display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid var(--border);margin-bottom:16px}
+h1{font-family:var(--display);font-size:16px;letter-spacing:.05em}
+h1 span{color:var(--green)}
+.sub{color:var(--text2);font-size:11px}
+.stats{display:flex;gap:20px;margin:16px 0;flex-wrap:wrap}
+.stat{background:var(--surface);border:1px solid var(--border);padding:12px 16px;border-radius:4px;min-width:120px}
+.stat b{display:block;font-size:22px;color:var(--green)}
+.stat span{color:var(--text2);font-size:10px;letter-spacing:.08em;text-transform:uppercase}
+.btns{display:flex;gap:6px;flex-wrap:wrap;margin:12px 0}
+.btns button{background:var(--surface);color:var(--text2);border:1px solid var(--border);padding:6px 12px;border-radius:3px;font-family:var(--mono);font-size:11px;cursor:pointer}
+.btns button:hover,.btns button.on{background:#1a2e1a;color:var(--green);border-color:var(--green)}
+table{width:100%;border-collapse:collapse}
+th{color:var(--text2);font-size:10px;letter-spacing:.1em;text-transform:uppercase;text-align:left;padding:8px 6px;border-bottom:1px solid var(--border)}
+td{padding:10px 6px;border-bottom:1px solid #1a1a1a;font-size:12px}
+tr:hover td{background:var(--elevated)}
+.pnl{color:var(--green);font-weight:bold}
+.pnl.neg{color:var(--red)}
+.tag{display:inline-block;background:#1a1a2e;color:#818cf8;padding:1px 6px;border-radius:3px;font-size:10px;margin-right:2px}
+.tag.dev{background:#2d1a1a;color:#f87171}
+.tag.sniper{background:#1a2d1a;color:#4ade80}
+.tag.insider{background:#2d2a1a;color:#fbbf24}
+.a{color:var(--blue);text-decoration:none}
+.a:hover{text-decoration:underline}
+.empty{padding:48px;text-align:center;color:var(--text2)}
+#loading{padding:48px;text-align:center;color:var(--text2)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><h1>▮ TOP<span>WALLET</span></h1><div class="sub">robinhood chain · <span id="updated">loading…</span></div></header>
+<div class="stats" id="stats"></div>
+<div class="btns" id="btns"></div>
+<div id="loading">loading verified wallets…</div>
+<table id="tbl" style="display:none"><thead><tr><th>#</th><th>wallet</th><th>score</th><th>pnl usd</th><th>win</th><th>med</th><th>max</th><th>tokens</th><th>type / labels</th><th>verified</th><th>style</th></tr></thead><tbody id="tb"></tbody></table>
+<div class="empty" id="empty" style="display:none">no verified wallets yet — pipeline is grinding.</div>
+</div>
+<script>
+const RAW='https://raw.githubusercontent.com/papatora/TopWalllet/main/results/';
+let R=[],G={},cur='ALL';
+function esc(s){const d=document.createElement('div');d.textContent=s;return d.innerHTML}
+async function load(){
+  try{
+    const [w,p,l]=await Promise.all([
+      fetch(RAW+'top_wallets_latest.json').then(r=>r.json()),
+      fetch(RAW+'stats.json').then(r=>r.json()).catch(()=>null),
+      fetch(RAW+'wallet_labels.json').then(r=>r.json()).catch(()=>null)
+    ]);
+    R=(w.wallets||[]).filter(x=>(x.metrics?.total_realized_pnl_usd||0)>=1);
+    const lbl=l?.wallets||{};
+    R.forEach(x=>{const li=lbl[x.wallet_address?.toLowerCase()];if(li){x._ptype=li.primary_type;x._labels=li.labels}else{x._ptype='';x._labels=[]}});
+    buildGroups();draw();drawBtns();
+    $('tbl').style.display='table';$('loading').style.display='none';
+    if(p&&p.updated_at)$('updated').textContent=p.updated_at.slice(0,16).replace('T',' ')+' UTC';
+    if(p&&p.stage_counts){
+      const sc=p.stage_counts;
+      $('stats').innerHTML=`<div class="stat"><b>${sc.tokens_in_db||0}</b><span>tokens</span></div><div class="stat"><b>${sc.wallets_in_db||0}</b><span>wallets scanned</span></div><div class="stat"><b>${sc.swap_events||0}</b><span>swap events</span></div><div class="stat"><b>${sc.wallets_scored||0}</b><span>scored</span></div><div class="stat"><b>${d.total_ranked||0}</b><span>verified & ranked</span></div>`;
+    }
+  }catch(e){$('loading').textContent='error loading data: '+e.message}
+}
+function buildGroups(){
+  G={ALL:R.map(r=>r.wallet_address)};
+  R.forEach(r=>{
+    if(r._ptype)G[r._ptype]=(G[r._ptype]||[]).concat([r.wallet_address]);
+    (r._labels||[]).forEach(l=>{G[l]=(G[l]||[]).concat([r.wallet_address])});
+    if((r.metrics?.total_realized_pnl_usd||0)>=100)G['PNL_$100+']=(G['PNL_$100+']||[]).concat([r.wallet_address]);
+    if((r.metrics?.total_realized_pnl_usd||0)>=1000)G['PNL_$1K+']=(G['PNL_$1K+']||[]).concat([r.wallet_address]);
+    if(r.metrics?.win_rate>=0.7)G['WIN_70%+']=(G['WIN_70%+']||[]).concat([r.wallet_address]);
+  });
+}
+function drawBtns(){
+  const el=document.getElementById('btns');
+  el.innerHTML=Object.entries(G).sort((a,b)=>b[1].length-a[1].length).map(([k,v])=>
+    `<button class="${k===cur?'on':''}" onclick="cur='${k}';draw()">${k} (${v.length})</button>`).join('');
+}
+function draw(){
+  const list=cur==='ALL'?R:R.filter(r=>(G[cur]||[]).includes(r.wallet_address));
+  const tb=document.getElementById('tb');
+  tb.innerHTML=list.map((w,i)=>{
+    const m=w.metrics||{};
+    const pnl=m.total_realized_pnl_usd||0;
+    const pnlCls=pnl>0?'pnl':'pnl neg';
+    const v=w.verification||{};
+    const lbl=w._labels||[].map(l=>`<span class="tag">${esc(l)}</span>`).join('');
+    const ptag=w._ptype?`<span class="tag ${w._ptype.includes('DEV')?'dev':w._ptype.includes('SNIPER')?'sniper':'insider'}">${esc(w._ptype)}</span>`:'';
+    const tags=(w._labels||[]).map(l=>`<span class="tag">${esc(l)}</span>`).join('');
+    return `<tr><td>${w.rank}</td><td><a class="a" href="https://robinhoodchain.blockscout.com/address/${w.wallet_address}" target="_blank">${w.wallet_address.slice(0,10)}…${w.wallet_address.slice(-6)}</a></td><td>${w.composite_score}</td><td class="${pnlCls}">$${pnl.toLocaleString()}</td><td>${(m.win_rate*100).toFixed(0)}%</td><td>${m.median_return_multiple}x</td><td>${m.max_return_multiple}x</td><td>${m.distinct_tokens}</td><td>${ptag}${tags}</td><td>${v.trades_verified||'—'}</td><td>${esc(w.trading_style||'')}</td></tr>`;
+  }).join('');
+}
+load();
+</script>
+</body>
+</html>
