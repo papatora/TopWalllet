@@ -1,0 +1,4705 @@
+{
+ "pumps": {
+  "MEME_53936939": {
+   "token": "MEME",
+   "addr": "0x385f4f8ae47651ce5f58f5265395a669f8281e18",
+   "start_block": 53936939,
+   "start_price": 3.529979534556804e-16,
+   "peak_block": 53949880,
+   "peak_price": 1.5467307204403102e-13,
+   "gain_pct": 43717,
+   "dur": 12941
+  },
+  "Jacob_58140726": {
+   "token": "Jacob",
+   "addr": "0x3df3644bcf4ce0d993e18c86c3080e53bfea06f1",
+   "start_block": 58140726,
+   "start_price": 4.003397247923315e-17,
+   "peak_block": 58239686,
+   "peak_price": 7.758410881996222e-15,
+   "gain_pct": 19280,
+   "dur": 98960
+  },
+  "ZZZ_54672541": {
+   "token": "ZZZ",
+   "addr": "0x7dbf38976f6d3b9c529e7d9484a71898b409ee6a",
+   "start_block": 54672541,
+   "start_price": 5.3077868411234416e-05,
+   "peak_block": 54768196,
+   "peak_price": 0.009964006704659868,
+   "gain_pct": 18672,
+   "dur": 95655
+  },
+  "BOLTAI_56759830": {
+   "token": "BOLTAI",
+   "addr": "0xd4534e3001fcb3248f15973c163e25e38acb9bf1",
+   "start_block": 56759830,
+   "start_price": 3.341817677352936e-06,
+   "peak_block": 56766301,
+   "peak_price": 0.0004452526708378531,
+   "gain_pct": 13224,
+   "dur": 6471
+  },
+  "9TO5_48370739": {
+   "token": "9TO5",
+   "addr": "0x223e93b1bed7de244445db2dea4c7900e8045acc",
+   "start_block": 48370739,
+   "start_price": 3.4457613995302222e-06,
+   "peak_block": 48508935,
+   "peak_price": 0.0002877878812453102,
+   "gain_pct": 8252,
+   "dur": 138196
+  },
+  "CAPITALCAT_56765893": {
+   "token": "CAPITALCAT",
+   "addr": "0x0521c5d59aac8c063224525bc44a0d38f02275c8",
+   "start_block": 56765893,
+   "start_price": 6.693317080052129e-06,
+   "peak_block": 56792517,
+   "peak_price": 0.0004140239268513029,
+   "gain_pct": 6086,
+   "dur": 26624
+  },
+  "BRIDGE_55051996": {
+   "token": "BRIDGE",
+   "addr": "0xb3fc49c53bc76b957835e9aef05548016d0364cc",
+   "start_block": 55051996,
+   "start_price": 1.1301603844753766e-05,
+   "peak_block": 55062529,
+   "peak_price": 0.0006798508292218063,
+   "gain_pct": 5916,
+   "dur": 10533
+  },
+  "PONIE_56529479": {
+   "token": "PONIE",
+   "addr": "0x9aa0c0ca88e6ae43a3d229afc373c0b9f2b53521",
+   "start_block": 56529479,
+   "start_price": 1.509397915912761e-06,
+   "peak_block": 56579963,
+   "peak_price": 7.411513087640343e-05,
+   "gain_pct": 4810,
+   "dur": 50484
+  },
+  "appul_58117543": {
+   "token": "appul",
+   "addr": "0x5a1831827b7ef689f92402281130a0370b1e0316",
+   "start_block": 58117543,
+   "start_price": 7.471857136188481e-06,
+   "peak_block": 58136245,
+   "peak_price": 0.0003564122066913256,
+   "gain_pct": 4670,
+   "dur": 18702
+  },
+  "O1BOT_57044576": {
+   "token": "O1BOT",
+   "addr": "0xf7d77243fbd0413a6528edc275b09d31c25cb201",
+   "start_block": 57044576,
+   "start_price": 4.343355720903326e-06,
+   "peak_block": 57056877,
+   "peak_price": 0.0002004134259470055,
+   "gain_pct": 4514,
+   "dur": 12301
+  },
+  "ROBINHOOD_52766375": {
+   "token": "ROBINHOOD",
+   "addr": "0x90a71817bda6dac8c3a28bbfd877b02d667ae2f9",
+   "start_block": 52766375,
+   "start_price": 4.0108142533412754e-17,
+   "peak_block": 52778115,
+   "peak_price": 1.7775407790929318e-15,
+   "gain_pct": 4332,
+   "dur": 11740
+  },
+  "SA_57917881": {
+   "token": "SA",
+   "addr": "0x50df2e835f2d48dfc8bf9bee86e4dba88a1e255a",
+   "start_block": 57917881,
+   "start_price": 7.457406212630106e-06,
+   "peak_block": 57932291,
+   "peak_price": 0.0003248175611711998,
+   "gain_pct": 4256,
+   "dur": 14410
+  },
+  "INDEXR_56808468": {
+   "token": "INDEXR",
+   "addr": "0x2a220e5bd63c1d4545894b6cfab7d3c8f610c84e",
+   "start_block": 56808468,
+   "start_price": 5.1868162528e-05,
+   "peak_block": 56905164,
+   "peak_price": 0.0022313524863235954,
+   "gain_pct": 4202,
+   "dur": 96696
+  },
+  "memestock_55053285": {
+   "token": "memestock",
+   "addr": "0x1d3fab9b96f3823b591f3dcba76aae400637c118",
+   "start_block": 55053285,
+   "start_price": 8.616716267989985e-06,
+   "peak_block": 55102248,
+   "peak_price": 0.00033310533452485106,
+   "gain_pct": 3766,
+   "dur": 48963
+  },
+  "MORE_56887757": {
+   "token": "MORE",
+   "addr": "0xc0f1a40512114b25cc1f30b5df0bb48691405555",
+   "start_block": 56887757,
+   "start_price": 3.4705581800145247e-06,
+   "peak_block": 57044428,
+   "peak_price": 0.00012469949899042944,
+   "gain_pct": 3493,
+   "dur": 156671
+  },
+  "NGRAM_57973164": {
+   "token": "NGRAM",
+   "addr": "0x11ce7a5a895b98300e901d2f8764437cc782db96",
+   "start_block": 57973164,
+   "start_price": 5.6360436651844425e-05,
+   "peak_block": 57988506,
+   "peak_price": 0.0019888180963912676,
+   "gain_pct": 3429,
+   "dur": 15342
+  },
+  "PAYGENT_57961796": {
+   "token": "PAYGENT",
+   "addr": "0x6a828e4c2b5a0648de3039ceb793dae12863fdad",
+   "start_block": 57961796,
+   "start_price": 0.0030613612246993,
+   "peak_block": 57965521,
+   "peak_price": 0.10400418957209101,
+   "gain_pct": 3297,
+   "dur": 3725
+  },
+  "ARB_56713946": {
+   "token": "ARB",
+   "addr": "0x0f238c10dc0fe40915ea63b9fc3f3ca2d81b84c4",
+   "start_block": 56713946,
+   "start_price": 6.870731326892426e-06,
+   "peak_block": 56758807,
+   "peak_price": 0.00023221870041737226,
+   "gain_pct": 3280,
+   "dur": 44861
+  },
+  "Anthropic_57543788": {
+   "token": "Anthropic",
+   "addr": "0x39594af09ec6bd85c0494c62eea6c59c15cfac97",
+   "start_block": 57543788,
+   "start_price": 1.1145227666366949e-05,
+   "peak_block": 57580386,
+   "peak_price": 0.0003705053197156024,
+   "gain_pct": 3224,
+   "dur": 36598
+  },
+  "CATSTRO_54848456": {
+   "token": "CATSTRO",
+   "addr": "0x157a752f3446fe891d6e2881006813703fbb3ad9",
+   "start_block": 54848456,
+   "start_price": 5.165528248533333e-05,
+   "peak_block": 54861529,
+   "peak_price": 0.00165580678959193,
+   "gain_pct": 3105,
+   "dur": 13073
+  },
+  "SPY_56881380": {
+   "token": "SPY",
+   "addr": "0xe87415417a9245edac806e588ae7a6d2247f54ba",
+   "start_block": 56881380,
+   "start_price": 6.215878212453919e-06,
+   "peak_block": 56910003,
+   "peak_price": 0.00019230515390513176,
+   "gain_pct": 2994,
+   "dur": 28623
+  },
+  "STREAM_58183495": {
+   "token": "STREAM",
+   "addr": "0x61752da5a4c354ec73646fa2135930a2e59ef94c",
+   "start_block": 58183495,
+   "start_price": 5.500935543363379e-05,
+   "peak_block": 58219127,
+   "peak_price": 0.0013514408262730372,
+   "gain_pct": 2357,
+   "dur": 35632
+  },
+  "StockCat_57353506": {
+   "token": "StockCat",
+   "addr": "0xbffda41a2713cbf438b3197564f12feaa5ecd82c",
+   "start_block": 57353506,
+   "start_price": 1.2400127309589923e-05,
+   "peak_block": 57365099,
+   "peak_price": 0.0002872537948251436,
+   "gain_pct": 2217,
+   "dur": 11593
+  },
+  "SAYLORMOON_57575548": {
+   "token": "SAYLORMOON",
+   "addr": "0x5b82fa862b29a5d0136efaf392fdbcb6afe1561e",
+   "start_block": 57575548,
+   "start_price": 1.4859130653192188e-05,
+   "peak_block": 57600325,
+   "peak_price": 0.00034401161729883956,
+   "gain_pct": 2215,
+   "dur": 24777
+  },
+  "500_57623297": {
+   "token": "500",
+   "addr": "0xbee455b5cd3a84b03871c779b018e7959be15bab",
+   "start_block": 57623297,
+   "start_price": 5.259988118933332e-05,
+   "peak_block": 57651382,
+   "peak_price": 0.0012155182649271784,
+   "gain_pct": 2211,
+   "dur": 28085
+  },
+  "AAPL_57529233": {
+   "token": "AAPL",
+   "addr": "0x9a6919a8a7f59428008f1de099d02e29c6baa789",
+   "start_block": 57529233,
+   "start_price": 6.257603089777755e-06,
+   "peak_block": 57540972,
+   "peak_price": 0.00013833083912685186,
+   "gain_pct": 2111,
+   "dur": 11739
+  },
+  "ARGOS_56704346": {
+   "token": "ARGOS",
+   "addr": "0x7f6197768dd96b9c324b988bbf2151e11ff7f3c7",
+   "start_block": 56704346,
+   "start_price": 1.4844845982261622e-05,
+   "peak_block": 56729520,
+   "peak_price": 0.0003163291666604255,
+   "gain_pct": 2031,
+   "dur": 25174
+  },
+  "BROS_57828057": {
+   "token": "BROS",
+   "addr": "0xb884fde0c8519078920940f6501ef71239cac4ec",
+   "start_block": 57828057,
+   "start_price": 7.459447495366311e-06,
+   "peak_block": 57833147,
+   "peak_price": 0.0001577486857792946,
+   "gain_pct": 2015,
+   "dur": 5090
+  },
+  "PUMPED_58062000": {
+   "token": "PUMPED",
+   "addr": "0xc6ee1cf421413dd2404da16e1052605e0a8e9149",
+   "start_block": 58062000,
+   "start_price": 8.328168506583493e-05,
+   "peak_block": 58075284,
+   "peak_price": 0.0017577731021744046,
+   "gain_pct": 2011,
+   "dur": 13284
+  },
+  "WORKS_57896332": {
+   "token": "WORKS",
+   "addr": "0xf9dc3ffab9f84db860b898285bbb51a419117c7b",
+   "start_block": 57896332,
+   "start_price": 6.07344349608612e-05,
+   "peak_block": 57955327,
+   "peak_price": 0.0012801055379514622,
+   "gain_pct": 2008,
+   "dur": 58995
+  },
+  "\u306e\u30ea\u30b9_57621091": {
+   "token": "\u306e\u30ea\u30b9",
+   "addr": "0x274117d3f589f0b6242402a3e37a7be3c2f1c83e",
+   "start_block": 57621091,
+   "start_price": 1.1080276612711302e-05,
+   "peak_block": 57635762,
+   "peak_price": 0.00022811776178160442,
+   "gain_pct": 1959,
+   "dur": 14671
+  },
+  "ELONCOIN_57481442": {
+   "token": "ELONCOIN",
+   "addr": "0x40f42cf51cabf06a5fb4531774c727c12b2a1c45",
+   "start_block": 57481442,
+   "start_price": 1.1216829783046349e-05,
+   "peak_block": 57491049,
+   "peak_price": 0.0002308475716540081,
+   "gain_pct": 1958,
+   "dur": 9607
+  },
+  "RECEIPT_57775428": {
+   "token": "RECEIPT",
+   "addr": "0xb97d9e5ad6244d27588fe0a624a8c78e512934ee",
+   "start_block": 57775428,
+   "start_price": 5.35331277824e-05,
+   "peak_block": 57805747,
+   "peak_price": 0.0009785211134387367,
+   "gain_pct": 1728,
+   "dur": 30319
+  },
+  "Lucia_55050859": {
+   "token": "Lucia",
+   "addr": "0x87d2476d386ea22bb2311d92cbc419453d8c2f56",
+   "start_block": 55050859,
+   "start_price": 1.4766072930451667e-05,
+   "peak_block": 55071761,
+   "peak_price": 0.00026449448681489167,
+   "gain_pct": 1691,
+   "dur": 20902
+  },
+  "MADE_57970204": {
+   "token": "MADE",
+   "addr": "0x0ff26c1b81511eb3fe722f49934ab285884ea9a3",
+   "start_block": 57970204,
+   "start_price": 5.130666960046168e-05,
+   "peak_block": 57977037,
+   "peak_price": 0.0009158566242123438,
+   "gain_pct": 1685,
+   "dur": 6833
+  },
+  "MEME_53949881": {
+   "token": "MEME",
+   "addr": "0x385f4f8ae47651ce5f58f5265395a669f8281e18",
+   "start_block": 53949881,
+   "start_price": 8.089282193625725e-15,
+   "peak_block": 54054560,
+   "peak_price": 1.414326545140155e-13,
+   "gain_pct": 1648,
+   "dur": 104679
+  },
+  "PACE_56901915": {
+   "token": "PACE",
+   "addr": "0x4ad2e9b5d56f14618bf52156ba4a8d3ea4a860d3",
+   "start_block": 56901915,
+   "start_price": 5.1868162528e-05,
+   "peak_block": 56907142,
+   "peak_price": 0.0008892553194349579,
+   "gain_pct": 1614,
+   "dur": 5227
+  },
+  "USDG_54625629": {
+   "token": "USDG",
+   "addr": "0xc20764d8cb3bb4d054c2c42aa5f59f97f60252d4",
+   "start_block": 54625629,
+   "start_price": 4.012353302885389e-17,
+   "peak_block": 54638689,
+   "peak_price": 6.836413852156119e-16,
+   "gain_pct": 1604,
+   "dur": 13060
+  },
+  "YES_54982419": {
+   "token": "YES",
+   "addr": "0x29ad28dd0db0fb84a348a2b6b5feecdce5290d33",
+   "start_block": 54982419,
+   "start_price": 1.4768313852041043e-05,
+   "peak_block": 55004937,
+   "peak_price": 0.0002505870015080261,
+   "gain_pct": 1597,
+   "dur": 22518
+  },
+  "MIGA_56739625": {
+   "token": "MIGA",
+   "addr": "0x6a334d53cba721163793621b153409008959e719",
+   "start_block": 56739625,
+   "start_price": 8.328168506583493e-05,
+   "peak_block": 56762346,
+   "peak_price": 0.001398965787839771,
+   "gain_pct": 1580,
+   "dur": 22721
+  },
+  "CYBR_55173499": {
+   "token": "CYBR",
+   "addr": "0xb948c24bac6caf34604f39aa52b1ded5035bc4a4",
+   "start_block": 55173499,
+   "start_price": 6.307939732052386e-06,
+   "peak_block": 55210994,
+   "peak_price": 0.00010568216347420071,
+   "gain_pct": 1575,
+   "dur": 37495
+  },
+  "dogshit_54999277": {
+   "token": "dogshit",
+   "addr": "0x2308d75f038bdea0f8ba19b62ea49ca429f6ff77",
+   "start_block": 54999277,
+   "start_price": 1.4909947426973125e-05,
+   "peak_block": 55034034,
+   "peak_price": 0.00024747153254700403,
+   "gain_pct": 1560,
+   "dur": 34757
+  },
+  "BOXED_56804023": {
+   "token": "BOXED",
+   "addr": "0x76af8d3b40a0d7b5197935d0e84c14f7a3782e87",
+   "start_block": 56804023,
+   "start_price": 1.0773204993347538e-05,
+   "peak_block": 57053530,
+   "peak_price": 0.0001780940210072903,
+   "gain_pct": 1553,
+   "dur": 249507
+  },
+  "MARKET_57967676": {
+   "token": "MARKET",
+   "addr": "0xb970dda8d2149ea41f4d7b7e2dc61b6cbf8b78c1",
+   "start_block": 57967676,
+   "start_price": 4.200927469309774e-06,
+   "peak_block": 57986244,
+   "peak_price": 6.886222024215583e-05,
+   "gain_pct": 1539,
+   "dur": 18568
+  },
+  "PINK_57171823": {
+   "token": "PINK",
+   "addr": "0xbc9cc4b93a08b2dfba87067a9c53e713db3314ce",
+   "start_block": 57171823,
+   "start_price": 0.0003554382025115767,
+   "peak_block": 57176428,
+   "peak_price": 0.005160111995847877,
+   "gain_pct": 1352,
+   "dur": 4605
+  },
+  "TURRET_58233155": {
+   "token": "TURRET",
+   "addr": "0x99d70a25bd7e95a30e14bcbb64752c92227de9d7",
+   "start_block": 58233155,
+   "start_price": 5.175221678562681e-05,
+   "peak_block": 58241494,
+   "peak_price": 0.0007452949349999118,
+   "gain_pct": 1340,
+   "dur": 8339
+  },
+  "MAXI_55314563": {
+   "token": "MAXI",
+   "addr": "0x7581ec9347669477711d146e0e43bddda474f415",
+   "start_block": 55314563,
+   "start_price": 6.919351741136163e-06,
+   "peak_block": 55315241,
+   "peak_price": 9.84863941442265e-05,
+   "gain_pct": 1323,
+   "dur": 678
+  },
+  "BANKLESS_50994676": {
+   "token": "BANKLESS",
+   "addr": "0x5e8907a3f45d7b30be6addbab0312e46e5061614",
+   "start_block": 50994676,
+   "start_price": 5.244854272485962e-05,
+   "peak_block": 51037217,
+   "peak_price": 0.0007452230678458254,
+   "gain_pct": 1321,
+   "dur": 42541
+  },
+  "NOTHING_55195471": {
+   "token": "NOTHING",
+   "addr": "0x6c09a2a9585839b34a7ab31b07bf8cb169e7d71a",
+   "start_block": 55195471,
+   "start_price": 1.588007355754112e-05,
+   "peak_block": 55241445,
+   "peak_price": 0.00021805047382346155,
+   "gain_pct": 1273,
+   "dur": 45974
+  },
+  "VECTOR_56935401": {
+   "token": "VECTOR",
+   "addr": "0x574778d38e761728e6e599b5dac8f3c0d60497dd",
+   "start_block": 56935401,
+   "start_price": 5.216410378666667e-05,
+   "peak_block": 56960139,
+   "peak_price": 0.0007019106147303944,
+   "gain_pct": 1246,
+   "dur": 24738
+  },
+  "Gun_57016912": {
+   "token": "Gun",
+   "addr": "0xf86410053a066ae60947940cb25a63deebf8650e",
+   "start_block": 57016912,
+   "start_price": 1.3990602181304563e-05,
+   "peak_block": 57041067,
+   "peak_price": 0.00018657269786283274,
+   "gain_pct": 1234,
+   "dur": 24155
+  },
+  "MAXI_56935112": {
+   "token": "MAXI",
+   "addr": "0x7581ec9347669477711d146e0e43bddda474f415",
+   "start_block": 56935112,
+   "start_price": 0.0002033618699751447,
+   "peak_block": 57047604,
+   "peak_price": 0.002601024327088562,
+   "gain_pct": 1179,
+   "dur": 112492
+  },
+  "Index_1670964": {
+   "token": "Index",
+   "addr": "0x56910d4409f3a0c78c64dd8d0545ff0705389870",
+   "start_block": 1670964,
+   "start_price": 5.2321309702663035e-06,
+   "peak_block": 1676562,
+   "peak_price": 6.565193359007515e-05,
+   "gain_pct": 1155,
+   "dur": 5598
+  },
+  "Treecoin_57680221": {
+   "token": "Treecoin",
+   "addr": "0xac9265cd1e395e435100dfe2f9a14ad84ec725f0",
+   "start_block": 57680221,
+   "start_price": 2.6604096246782484e-05,
+   "peak_block": 57706384,
+   "peak_price": 0.00032307578392699816,
+   "gain_pct": 1114,
+   "dur": 26163
+  },
+  "HOOD_50088998": {
+   "token": "HOOD",
+   "addr": "0x45c83b37c5baf4dad26f3845c28295e2de010962",
+   "start_block": 50088998,
+   "start_price": 5.2493977306901246e-05,
+   "peak_block": 50314572,
+   "peak_price": 0.0006312109024720441,
+   "gain_pct": 1102,
+   "dur": 225574
+  },
+  "MINEFLY_55029070": {
+   "token": "MINEFLY",
+   "addr": "0x4b7c218b07fe683e4fac3051496f1ea5be1c31ca",
+   "start_block": 55029070,
+   "start_price": 1.4764416706384992e-05,
+   "peak_block": 55036037,
+   "peak_price": 0.00017508134838502,
+   "gain_pct": 1086,
+   "dur": 6967
+  },
+  "4WALL_57571512": {
+   "token": "4WALL",
+   "addr": "0x8dfbfd3021e8b9c390a99c39747ea4d295187ba0",
+   "start_block": 57571512,
+   "start_price": 1.2128970867174083e-05,
+   "peak_block": 57600911,
+   "peak_price": 0.0001432136082691349,
+   "gain_pct": 1081,
+   "dur": 29399
+  },
+  "unipcs_58083589": {
+   "token": "unipcs",
+   "addr": "0x326722c4dcf82a6cd35a354fa65449eb00fe364a",
+   "start_block": 58083589,
+   "start_price": 5.174358246866666e-05,
+   "peak_block": 58089529,
+   "peak_price": 0.0006044181263456921,
+   "gain_pct": 1068,
+   "dur": 5940
+  },
+  "Foldy_56419728": {
+   "token": "Foldy",
+   "addr": "0xd006addff9c36a43c056252c578fb048a3c6f01d",
+   "start_block": 56419728,
+   "start_price": 4.218702381448965e-06,
+   "peak_block": 56622107,
+   "peak_price": 4.813846562857056e-05,
+   "gain_pct": 1041,
+   "dur": 202379
+  },
+  "PCAT_44708398": {
+   "token": "PCAT",
+   "addr": "0x14623dd0784cb5c484f8935c7c218d110332b538",
+   "start_block": 44708398,
+   "start_price": 2.821201785973327e-05,
+   "peak_block": 44849436,
+   "peak_price": 0.00032074826107389946,
+   "gain_pct": 1037,
+   "dur": 141038
+  },
+  "LDX_54377435": {
+   "token": "LDX",
+   "addr": "0x62cd5cd9d354a2a50affe9efa21c8918b9640a5b",
+   "start_block": 54377435,
+   "start_price": 5.079982636143332e-05,
+   "peak_block": 54648307,
+   "peak_price": 0.0005694574152497245,
+   "gain_pct": 1021,
+   "dur": 270872
+  },
+  "HCLUB_56896961": {
+   "token": "HCLUB",
+   "addr": "0x10603834f033c6d949b174415eda005a0b4727bb",
+   "start_block": 56896961,
+   "start_price": 8.269648717760727e-05,
+   "peak_block": 56910057,
+   "peak_price": 0.0008796680548800415,
+   "gain_pct": 964,
+   "dur": 13096
+  },
+  "CHAOS_57692680": {
+   "token": "CHAOS",
+   "addr": "0x04d6f2d2b21d77662c2848651b676f7177455928",
+   "start_block": 57692680,
+   "start_price": 5.3059581437333327e-05,
+   "peak_block": 57699843,
+   "peak_price": 0.0005617295887779918,
+   "gain_pct": 959,
+   "dur": 7163
+  },
+  "FLOAT_57060425": {
+   "token": "FLOAT",
+   "addr": "0xe46e85c9e66b69a8daabaff271084092de96cfdf",
+   "start_block": 57060425,
+   "start_price": 5.223520519466667e-05,
+   "peak_block": 57071068,
+   "peak_price": 0.000544235263342464,
+   "gain_pct": 942,
+   "dur": 10643
+  },
+  "RELL_57591841": {
+   "token": "RELL",
+   "addr": "0x9945e4165db9066bbd8bdddd3aa272e4c1f5be96",
+   "start_block": 57591841,
+   "start_price": 5.498524301228009e-06,
+   "peak_block": 57600600,
+   "peak_price": 5.6870250570977185e-05,
+   "gain_pct": 934,
+   "dur": 8759
+  },
+  "LOOT_57901270": {
+   "token": "LOOT",
+   "addr": "0x1abc0be1b77dc9b8cf057ebee337d630bb22de4e",
+   "start_block": 57901270,
+   "start_price": 5.132060910592e-05,
+   "peak_block": 57905315,
+   "peak_price": 0.0005180068862458722,
+   "gain_pct": 909,
+   "dur": 4045
+  },
+  "ROBBY_56869399": {
+   "token": "ROBBY",
+   "addr": "0xf28f00d39c6aa5ff851978a70b6dd7340891fd5f",
+   "start_block": 56869399,
+   "start_price": 4.062984349552588e-17,
+   "peak_block": 56906628,
+   "peak_price": 4.079689758598104e-16,
+   "gain_pct": 904,
+   "dur": 37229
+  },
+  "CRUMBS_58100491": {
+   "token": "CRUMBS",
+   "addr": "0x80baa4b3bfac6f4978700df824b1b3d98e889136",
+   "start_block": 58100491,
+   "start_price": 0.0007877541195877149,
+   "peak_block": 58101489,
+   "peak_price": 0.007855940190990987,
+   "gain_pct": 897,
+   "dur": 998
+  },
+  "HM_56990897": {
+   "token": "HM",
+   "addr": "0x14bffd9a2efc78013965fa4a215c9dd4b31e4db3",
+   "start_block": 56990897,
+   "start_price": 3.656874893772396e-06,
+   "peak_block": 57026355,
+   "peak_price": 3.578533240774672e-05,
+   "gain_pct": 879,
+   "dur": 35458
+  },
+  "WOOD_54869247": {
+   "token": "WOOD",
+   "addr": "0x6635c082c14b4206751600d96fe50428815c9fa9",
+   "start_block": 54869247,
+   "start_price": 0.0001271400503327299,
+   "peak_block": 54971640,
+   "peak_price": 0.0011352665288609804,
+   "gain_pct": 793,
+   "dur": 102393
+  },
+  "NDFW_56905536": {
+   "token": "NDFW",
+   "addr": "0x769bf41470faef03fc9bb8d62d0f5abe46c3e46a",
+   "start_block": 56905536,
+   "start_price": 5.5097516519499993e-05,
+   "peak_block": 56906644,
+   "peak_price": 0.00046152028539416017,
+   "gain_pct": 738,
+   "dur": 1108
+  },
+  "neuron_57343328": {
+   "token": "neuron",
+   "addr": "0xf8c6974a3c1820f87016db03e43a2cbf10f585a6",
+   "start_block": 57343328,
+   "start_price": 5.297259956799999e-05,
+   "peak_block": 57345720,
+   "peak_price": 0.00044353226332183684,
+   "gain_pct": 737,
+   "dur": 2392
+  },
+  "RUN_57840232": {
+   "token": "RUN",
+   "addr": "0x2efa6875fdbc0c394878ec92551e8eab041819d7",
+   "start_block": 57840232,
+   "start_price": 3.516292468624401e-06,
+   "peak_block": 57845395,
+   "peak_price": 2.9263880706308606e-05,
+   "gain_pct": 732,
+   "dur": 5163
+  },
+  "VC18Z_57087850": {
+   "token": "VC18Z",
+   "addr": "0x670231f7aea584cc192265357e391db6eb0adc63",
+   "start_block": 57087850,
+   "start_price": 5.267471630870973e-05,
+   "peak_block": 57089309,
+   "peak_price": 0.000428740966218467,
+   "gain_pct": 714,
+   "dur": 1459
+  },
+  "THC_58169097": {
+   "token": "THC",
+   "addr": "0x11fddcac2c8b3df9a06730ca888add8ba07ea27d",
+   "start_block": 58169097,
+   "start_price": 5.208983852153093e-05,
+   "peak_block": 58240134,
+   "peak_price": 0.0004211576792932128,
+   "gain_pct": 709,
+   "dur": 71037
+  },
+  "HOOKDAQ_55184492": {
+   "token": "HOOKDAQ",
+   "addr": "0x15eae4a2526d109408c7f919e4bb592d68c42908",
+   "start_block": 55184492,
+   "start_price": 5.063332702470233e-05,
+   "peak_block": 55262642,
+   "peak_price": 0.0004055151091754978,
+   "gain_pct": 701,
+   "dur": 78150
+  },
+  "DOPE_57079189": {
+   "token": "DOPE",
+   "addr": "0x5e43408043a699f586eaeccf6a5b774b58bb033b",
+   "start_block": 57079189,
+   "start_price": 0.0002001784157138326,
+   "peak_block": 57094472,
+   "peak_price": 0.0015513536988273921,
+   "gain_pct": 675,
+   "dur": 15283
+  },
+  "ARTON_57361177": {
+   "token": "ARTON",
+   "addr": "0xd6c5ed7dc12a7d7cabd8f968ad5f4debb766b253",
+   "start_block": 57361177,
+   "start_price": 5.297259956799999e-05,
+   "peak_block": 57363932,
+   "peak_price": 0.0004103983158183779,
+   "gain_pct": 675,
+   "dur": 2755
+  },
+  "MAXI_56653921": {
+   "token": "MAXI",
+   "addr": "0x7581ec9347669477711d146e0e43bddda474f415",
+   "start_block": 56653921,
+   "start_price": 2.6543301746990895e-05,
+   "peak_block": 56934811,
+   "peak_price": 0.00020435236960263516,
+   "gain_pct": 670,
+   "dur": 280890
+  },
+  "CATURN_57356920": {
+   "token": "CATURN",
+   "addr": "0xd46920a6fe69a4226e3c54eafda9a553f65a5149",
+   "start_block": 57356920,
+   "start_price": 1.4878538239322172e-05,
+   "peak_block": 57367785,
+   "peak_price": 0.00011241687931893506,
+   "gain_pct": 656,
+   "dur": 10865
+  },
+  "COIN_55057498": {
+   "token": "COIN",
+   "addr": "0x9395116762721d13c246f6b0a5c41bbb31777a8d",
+   "start_block": 55057498,
+   "start_price": 7.047234495176268e-05,
+   "peak_block": 55065775,
+   "peak_price": 0.0005290211737307323,
+   "gain_pct": 651,
+   "dur": 8277
+  },
+  "DIME_56779916": {
+   "token": "DIME",
+   "addr": "0x750e3e310ffe27b21fad96d13168e19309b6ab9d",
+   "start_block": 56779916,
+   "start_price": 5.1924582229333335e-05,
+   "peak_block": 56786677,
+   "peak_price": 0.0003852063618789364,
+   "gain_pct": 642,
+   "dur": 6761
+  },
+  "VANTRA_56992812": {
+   "token": "VANTRA",
+   "addr": "0x6709c6fb2a5fe6416dd8babad1edf39d335665cc",
+   "start_block": 56992812,
+   "start_price": 9.14231292667526e-06,
+   "peak_block": 56999140,
+   "peak_price": 6.670566055997222e-05,
+   "gain_pct": 630,
+   "dur": 6328
+  },
+  "HUNTER_57031473": {
+   "token": "HUNTER",
+   "addr": "0x09ee7780c0287d29eefed621318a7fff8d26f4f1",
+   "start_block": 57031473,
+   "start_price": 5.1989103274499995e-05,
+   "peak_block": 57071948,
+   "peak_price": 0.00037426897344755886,
+   "gain_pct": 620,
+   "dur": 40475
+  },
+  "cyberbeer_56613795": {
+   "token": "cyberbeer",
+   "addr": "0xd97460101c3aad03a0e69e7a82587aa4cf1dacb8",
+   "start_block": 56613795,
+   "start_price": 5.1233276766466674e-05,
+   "peak_block": 56652958,
+   "peak_price": 0.0003681666725040093,
+   "gain_pct": 619,
+   "dur": 39163
+  },
+  "\ud83d\udd96_58030738": {
+   "token": "\ud83d\udd96",
+   "addr": "0x1b2f48fcecaa15e56d335d185bedcfea2321cc89",
+   "start_block": 58030738,
+   "start_price": 6.418407811666665e-05,
+   "peak_block": 58079424,
+   "peak_price": 0.00045762567604797343,
+   "gain_pct": 613,
+   "dur": 48686
+  },
+  "CREDITLINE_56643331": {
+   "token": "CREDITLINE",
+   "addr": "0x9eebc9d0162eab236ad4672caef8dba40dc06c24",
+   "start_block": 56643331,
+   "start_price": 9.702778823005037e-05,
+   "peak_block": 56803970,
+   "peak_price": 0.0006759910974948228,
+   "gain_pct": 597,
+   "dur": 160639
+  },
+  "HOARD_58267024": {
+   "token": "HOARD",
+   "addr": "0xa639a9366368af7ffef56c363ec39aa68c0780f6",
+   "start_block": 58267024,
+   "start_price": 2.5342448429292817e-17,
+   "peak_block": 58278482,
+   "peak_price": 1.7647325054402825e-16,
+   "gain_pct": 596,
+   "dur": 11458
+  },
+  "ROOT_57584738": {
+   "token": "ROOT",
+   "addr": "0x33aa190de50a8b02e5bb80d1bfef39b2d0fc4152",
+   "start_block": 57584738,
+   "start_price": 4.8749591129237116e-05,
+   "peak_block": 57603069,
+   "peak_price": 0.00033706000443134627,
+   "gain_pct": 591,
+   "dur": 18331
+  },
+  "PARE_53201195": {
+   "token": "PARE",
+   "addr": "0x15d36b6a28d8327abc7afabf0f106ae2c9af5c4d",
+   "start_block": 53201195,
+   "start_price": 0.0010394205726632197,
+   "peak_block": 53338031,
+   "peak_price": 0.006966202448269359,
+   "gain_pct": 570,
+   "dur": 136836
+  },
+  "POPE_56611662": {
+   "token": "POPE",
+   "addr": "0x1c85e5fb478e91d8b769a509278f10e5e432754a",
+   "start_block": 56611662,
+   "start_price": 5.3640750861029604e-05,
+   "peak_block": 56822608,
+   "peak_price": 0.00035804259290514017,
+   "gain_pct": 567,
+   "dur": 210946
+  },
+  "FAME_57192244": {
+   "token": "FAME",
+   "addr": "0x3470f1cc6f710df466a2108432d227805cdcb599",
+   "start_block": 57192244,
+   "start_price": 4.161330196170158e-17,
+   "peak_block": 57207855,
+   "peak_price": 2.71904260452214e-16,
+   "gain_pct": 553,
+   "dur": 15611
+  },
+  "FEATHER_56719062": {
+   "token": "FEATHER",
+   "addr": "0x21888237f9b0776cd8e3018fb5ca87c22dcd4e10",
+   "start_block": 56719062,
+   "start_price": 0.00019904274869371992,
+   "peak_block": 56745425,
+   "peak_price": 0.001271369170357776,
+   "gain_pct": 539,
+   "dur": 26363
+  },
+  "tip_58198031": {
+   "token": "tip",
+   "addr": "0x2f1e5a4763affd9b406f7fc328b53615e8968545",
+   "start_block": 58198031,
+   "start_price": 8.646266182605139e-05,
+   "peak_block": 58213967,
+   "peak_price": 0.0005439530628376922,
+   "gain_pct": 529,
+   "dur": 15936
+  },
+  "BZZ_57755389": {
+   "token": "BZZ",
+   "addr": "0xb356b45e6c9243eb81893d72059fb22c9977a0ba",
+   "start_block": 57755389,
+   "start_price": 5.321522982906666e-05,
+   "peak_block": 57759794,
+   "peak_price": 0.00032863635712115604,
+   "gain_pct": 518,
+   "dur": 4405
+  },
+  "VLEAP_57682203": {
+   "token": "VLEAP",
+   "addr": "0x7a02073beb53536956423ebbceec4f4540e90117",
+   "start_block": 57682203,
+   "start_price": 2.8254402773542845e-07,
+   "peak_block": 57706096,
+   "peak_price": 1.7369529564329218e-06,
+   "gain_pct": 515,
+   "dur": 23893
+  },
+  "DEL_56917090": {
+   "token": "DEL",
+   "addr": "0xb670afd636871d3654ed0e78f8285c9e84717a1b",
+   "start_block": 56917090,
+   "start_price": 6.502202158584715e-06,
+   "peak_block": 56979226,
+   "peak_price": 3.983690467482178e-05,
+   "gain_pct": 513,
+   "dur": 62136
+  },
+  "PIDX_56731333": {
+   "token": "PIDX",
+   "addr": "0x9875b29113140585ff2c24dcd72e52c41e712261",
+   "start_block": 56731333,
+   "start_price": 3.167520675147064e-05,
+   "peak_block": 56775296,
+   "peak_price": 0.00019220907168653433,
+   "gain_pct": 507,
+   "dur": 43963
+  },
+  "BUNDLE_56721815": {
+   "token": "BUNDLE",
+   "addr": "0xe6c03d539c524f0a43ad348b50423894f589bae4",
+   "start_block": 56721815,
+   "start_price": 5.223520519466667e-05,
+   "peak_block": 56822133,
+   "peak_price": 0.00031645023015509287,
+   "gain_pct": 506,
+   "dur": 100318
+  },
+  "USDG_27596183": {
+   "token": "USDG",
+   "addr": "0xf052f9339afaba171724b3229a624db2a30eb115",
+   "start_block": 27596183,
+   "start_price": 4.832837103447772e-18,
+   "peak_block": 27896054,
+   "peak_price": 2.912818119223063e-17,
+   "gain_pct": 503,
+   "dur": 299871
+  },
+  "KOT_56493633": {
+   "token": "KOT",
+   "addr": "0xd76a8ca5a6e459be5225d212be6acf023a0e3194",
+   "start_block": 56493633,
+   "start_price": 1.9531875529399797e-05,
+   "peak_block": 56784152,
+   "peak_price": 0.0001167925602505156,
+   "gain_pct": 498,
+   "dur": 290519
+  },
+  "UP_6368343": {
+   "token": "UP",
+   "addr": "0x57c0e45cb534413d1c20a4240955d6bb250bb4f1",
+   "start_block": 6368343,
+   "start_price": 0.0014088327626078903,
+   "peak_block": 6378659,
+   "peak_price": 0.008366035796375912,
+   "gain_pct": 494,
+   "dur": 10316
+  },
+  "WAZMI_56609314": {
+   "token": "WAZMI",
+   "addr": "0x239ef63cfd3123cf7dce559850768d0118bb44b5",
+   "start_block": 56609314,
+   "start_price": 5.448275381995875e-05,
+   "peak_block": 56688705,
+   "peak_price": 0.00032272754063474143,
+   "gain_pct": 492,
+   "dur": 79391
+  },
+  "ROBINCAT_53605585": {
+   "token": "ROBINCAT",
+   "addr": "0xded852de9fe9ba9b6f27f39e8e81cf851a5c79cc",
+   "start_block": 53605585,
+   "start_price": 4.331809492925362e-15,
+   "peak_block": 53905578,
+   "peak_price": 2.5353204297276557e-14,
+   "gain_pct": 485,
+   "dur": 299993
+  },
+  "XDESCI_57275201": {
+   "token": "XDESCI",
+   "addr": "0xf62a758c3baab84d7c781f78e6f6ecf3a19a3c3d",
+   "start_block": 57275201,
+   "start_price": 5.297259956799999e-05,
+   "peak_block": 57284420,
+   "peak_price": 0.0003096006725548483,
+   "gain_pct": 484,
+   "dur": 9219
+  },
+  "BROTHERHOOD_54967012": {
+   "token": "BROTHERHOOD",
+   "addr": "0x6ee1915a26999f29bc7822419748442379883ea4",
+   "start_block": 54967012,
+   "start_price": 4.8549802302543284e-17,
+   "peak_block": 55055924,
+   "peak_price": 2.8275216745127636e-16,
+   "gain_pct": 482,
+   "dur": 88912
+  },
+  "FARM_58112858": {
+   "token": "FARM",
+   "addr": "0x0a839590e1ebd255bf6639646b4918974c1fae95",
+   "start_block": 58112858,
+   "start_price": 5.140031657007193e-05,
+   "peak_block": 58118417,
+   "peak_price": 0.0002966793993394829,
+   "gain_pct": 477,
+   "dur": 5559
+  },
+  "PHERA_57025633": {
+   "token": "PHERA",
+   "addr": "0x9d4a92aa4cd18c75316070bf60c34de1cab99999",
+   "start_block": 57025633,
+   "start_price": 4.0949789890327954,
+   "peak_block": 57054865,
+   "peak_price": 23.50823547119767,
+   "gain_pct": 474,
+   "dur": 29232
+  },
+  "EQUI_55751566": {
+   "token": "EQUI",
+   "addr": "0x9d783133a3ff9ba27fa1605547368cf9a316341e",
+   "start_block": 55751566,
+   "start_price": 0.00018145101571674324,
+   "peak_block": 56025915,
+   "peak_price": 0.001035435560163103,
+   "gain_pct": 471,
+   "dur": 274349
+  },
+  "BONK_57617052": {
+   "token": "BONK",
+   "addr": "0x435376ee4182b12b104873b8870c100a5b8f78b8",
+   "start_block": 57617052,
+   "start_price": 0.00024454492208939255,
+   "peak_block": 57637530,
+   "peak_price": 0.0013850549211749455,
+   "gain_pct": 466,
+   "dur": 20478
+  },
+  "HOODCHAN_58259300": {
+   "token": "HOODCHAN",
+   "addr": "0xe43341894e678efd52621a511afff8c60016fccc",
+   "start_block": 58259300,
+   "start_price": 4.20452226625559e-17,
+   "peak_block": 58268142,
+   "peak_price": 2.285067403366349e-16,
+   "gain_pct": 443,
+   "dur": 8842
+  },
+  "PENNY_56744236": {
+   "token": "PENNY",
+   "addr": "0x3d7587686ee3412f9546d566ddf108a29df47991",
+   "start_block": 56744236,
+   "start_price": 5.2252194026666675e-05,
+   "peak_block": 56762439,
+   "peak_price": 0.0002803328200652481,
+   "gain_pct": 436,
+   "dur": 18203
+  },
+  "CREO_55096290": {
+   "token": "CREO",
+   "addr": "0xe612c939d82981f8e17ccac3b59c1084c2aa02bb",
+   "start_block": 55096290,
+   "start_price": 4.570759647969348e-05,
+   "peak_block": 55122885,
+   "peak_price": 0.0002389847595398717,
+   "gain_pct": 423,
+   "dur": 26595
+  },
+  "SPIKE_57454917": {
+   "token": "SPIKE",
+   "addr": "0xf4684de90852c677c705ab87e87c9d40897798a4",
+   "start_block": 57454917,
+   "start_price": 5.283518103733333e-05,
+   "peak_block": 57456078,
+   "peak_price": 0.00027582954373075807,
+   "gain_pct": 422,
+   "dur": 1161
+  },
+  "NOTE_58021847": {
+   "token": "NOTE",
+   "addr": "0xc4f730335fb9e439ca5552f7b52b8e638c4245b0",
+   "start_block": 58021847,
+   "start_price": 3.133695318975479e-15,
+   "peak_block": 58025317,
+   "peak_price": 1.6122785625940585e-14,
+   "gain_pct": 414,
+   "dur": 3470
+  },
+  "PARLEY_56970463": {
+   "token": "PARLEY",
+   "addr": "0xcf3d41f9671dc2e86ee4c0271b79ae6fdce36c05",
+   "start_block": 56970463,
+   "start_price": 5.5487411561166656e-05,
+   "peak_block": 56970800,
+   "peak_price": 0.00027770496739499114,
+   "gain_pct": 400,
+   "dur": 337
+  },
+  "INUS_55972288": {
+   "token": "INUS",
+   "addr": "0x0571d39b4cfe543aebd36a68cdfd6935e7cb4bdb",
+   "start_block": 55972288,
+   "start_price": 3.6926428570508744e-06,
+   "peak_block": 55984696,
+   "peak_price": 1.8421353952117e-05,
+   "gain_pct": 399,
+   "dur": 12408
+  },
+  "DOGO_32774760": {
+   "token": "DOGO",
+   "addr": "0x77b0aa38451ccdc1b42587e2f80b9879a7f82356",
+   "start_block": 32774760,
+   "start_price": 0.013023381244418982,
+   "peak_block": 32781973,
+   "peak_price": 0.0626878785932131,
+   "gain_pct": 381,
+   "dur": 7213
+  },
+  "BAG_57759372": {
+   "token": "BAG",
+   "addr": "0x792ff19204ef6c756b4d8efe2441d050f5ece818",
+   "start_block": 57759372,
+   "start_price": 0.0003165690492517604,
+   "peak_block": 57913292,
+   "peak_price": 0.0015201836232287566,
+   "gain_pct": 380,
+   "dur": 153920
+  },
+  "EQUI_55057300": {
+   "token": "EQUI",
+   "addr": "0x9d783133a3ff9ba27fa1605547368cf9a316341e",
+   "start_block": 55057300,
+   "start_price": 7.286800587339374e-05,
+   "peak_block": 55282530,
+   "peak_price": 0.0003453159327204077,
+   "gain_pct": 374,
+   "dur": 225230
+  },
+  "VOCEM_56076849": {
+   "token": "VOCEM",
+   "addr": "0x3c9c8c50f78354fe3d2ecdcbe84769a46e9b5124",
+   "start_block": 56076849,
+   "start_price": 5.2252194026666675e-05,
+   "peak_block": 56091557,
+   "peak_price": 0.0002471562323053191,
+   "gain_pct": 373,
+   "dur": 14708
+  },
+  "ZER0_58265961": {
+   "token": "ZER0",
+   "addr": "0xe5707b7b817a5a111a9134aac9b653a66f720eaa",
+   "start_block": 58265961,
+   "start_price": 5.219941814733333e-05,
+   "peak_block": 58285981,
+   "peak_price": 0.0002461117484861812,
+   "gain_pct": 371,
+   "dur": 20020
+  },
+  "NORACHAN_58282443": {
+   "token": "NORACHAN",
+   "addr": "0x130c7f0c8e1cb727430d66ee650e4fcf650aa1ac",
+   "start_block": 58282443,
+   "start_price": 4.013349296272413e-17,
+   "peak_block": 58284667,
+   "peak_price": 1.8922805330001998e-16,
+   "gain_pct": 371,
+   "dur": 2224
+  },
+  "RECEIPT_57880049": {
+   "token": "RECEIPT",
+   "addr": "0xb97d9e5ad6244d27588fe0a624a8c78e512934ee",
+   "start_block": 57880049,
+   "start_price": 0.00022201815782718512,
+   "peak_block": 58130314,
+   "peak_price": 0.0010287380754603716,
+   "gain_pct": 363,
+   "dur": 250265
+  },
+  "GOBA_56146570": {
+   "token": "GOBA",
+   "addr": "0xc80d8807c27cfa1e83fdb1ec20c6834db1153dba",
+   "start_block": 56146570,
+   "start_price": 5.158348336428e-05,
+   "peak_block": 56146879,
+   "peak_price": 0.00023720018852584288,
+   "gain_pct": 360,
+   "dur": 309
+  },
+  "WOOD_54347020": {
+   "token": "WOOD",
+   "addr": "0x6635c082c14b4206751600d96fe50428815c9fa9",
+   "start_block": 54347020,
+   "start_price": 6.603140712976998e-05,
+   "peak_block": 54381839,
+   "peak_price": 0.00030263279293213824,
+   "gain_pct": 358,
+   "dur": 34819
+  },
+  "WHACKD_58100273": {
+   "token": "WHACKD",
+   "addr": "0xf2c8710b0d67798be20817cfe44a613c3f3a3275",
+   "start_block": 58100273,
+   "start_price": 5.140096846933152e-05,
+   "peak_block": 58100552,
+   "peak_price": 0.00023407761355371254,
+   "gain_pct": 355,
+   "dur": 279
+  },
+  "18932_14649453": {
+   "token": "18932",
+   "addr": "0xdaccbeaf0062e782472d7ad7d762c38e59c18932",
+   "start_block": 14649453,
+   "start_price": 3.05870047849848e-05,
+   "peak_block": 14658170,
+   "peak_price": 0.00013807827906029592,
+   "gain_pct": 351,
+   "dur": 8717
+  },
+  "18932_53954221": {
+   "token": "18932",
+   "addr": "0xdaccbeaf0062e782472d7ad7d762c38e59c18932",
+   "start_block": 53954221,
+   "start_price": 4.6684168569546995e-06,
+   "peak_block": 54229209,
+   "peak_price": 2.0902051371958358e-05,
+   "gain_pct": 348,
+   "dur": 274988
+  },
+  "TENDIES_3963875": {
+   "token": "TENDIES",
+   "addr": "0x45242320dbb855eea8fd36804c6487e10e97fcf9",
+   "start_block": 3963875,
+   "start_price": 0.0009794076072776848,
+   "peak_block": 4091230,
+   "peak_price": 0.004370833871706028,
+   "gain_pct": 346,
+   "dur": 127355
+  },
+  "ERUPT_58313450": {
+   "token": "ERUPT",
+   "addr": "0xe2e2e297f2a4a215378a27481c405bc32f3f1538",
+   "start_block": 58313450,
+   "start_price": 5.2331084368411076e-06,
+   "peak_block": 58313703,
+   "peak_price": 2.3301221387780988e-05,
+   "gain_pct": 345,
+   "dur": 253
+  },
+  "SAPIENS_57841654": {
+   "token": "SAPIENS",
+   "addr": "0x8fe9cf31dda8883b224bf14fea53d17f3e099ed6",
+   "start_block": 57841654,
+   "start_price": 5.133465686869334e-05,
+   "peak_block": 57846277,
+   "peak_price": 0.00022682090693111137,
+   "gain_pct": 342,
+   "dur": 4623
+  },
+  "ROBINCAT_51845862": {
+   "token": "ROBINCAT",
+   "addr": "0xded852de9fe9ba9b6f27f39e8e81cf851a5c79cc",
+   "start_block": 51845862,
+   "start_price": 1.6823543709755295e-15,
+   "peak_block": 51851101,
+   "peak_price": 7.386610474372285e-15,
+   "gain_pct": 339,
+   "dur": 5239
+  },
+  "cyberbeer_57371626": {
+   "token": "cyberbeer",
+   "addr": "0x901a8fd14283c827343d679db5a650ab36cc4434",
+   "start_block": 57371626,
+   "start_price": 5.39595604632674e-05,
+   "peak_block": 57384020,
+   "peak_price": 0.00023490235017490987,
+   "gain_pct": 335,
+   "dur": 12394
+  },
+  "RENT_56747376": {
+   "token": "RENT",
+   "addr": "0x685c1436884b201edaf9833c5d12178bc0b2e09e",
+   "start_block": 56747376,
+   "start_price": 4.062140879326132e-17,
+   "peak_block": 56751362,
+   "peak_price": 1.7409144707113263e-16,
+   "gain_pct": 329,
+   "dur": 3986
+  },
+  "DESKTOP_58088233": {
+   "token": "DESKTOP",
+   "addr": "0x3f2b4413448d3e5a60fcdf615c294aac7f779182",
+   "start_block": 58088233,
+   "start_price": 0.00024745316672805,
+   "peak_block": 58099405,
+   "peak_price": 0.0010576898783562533,
+   "gain_pct": 327,
+   "dur": 11172
+  },
+  "HAVOC_57845549": {
+   "token": "HAVOC",
+   "addr": "0x2851db89c5c8e9d5d5e94ea0aa4f388d6bf55200",
+   "start_block": 57845549,
+   "start_price": 5.1237232247288564e-05,
+   "peak_block": 57848948,
+   "peak_price": 0.00021753980140694346,
+   "gain_pct": 325,
+   "dur": 3399
+  },
+  "RWAPACT_54990582": {
+   "token": "RWAPACT",
+   "addr": "0x4b1b3cb23e1cd1eb03eff3123b6ccd698629cd65",
+   "start_block": 54990582,
+   "start_price": 5.1379994302e-05,
+   "peak_block": 54994858,
+   "peak_price": 0.00021743423461598034,
+   "gain_pct": 323,
+   "dur": 4276
+  },
+  "stockbook_57089928": {
+   "token": "stockbook",
+   "addr": "0xd50bcae5e17080c0e0c5e856feace68a6442f2a3",
+   "start_block": 57089928,
+   "start_price": 5.495523368813927e-05,
+   "peak_block": 57093635,
+   "peak_price": 0.00023007496152560497,
+   "gain_pct": 319,
+   "dur": 3707
+  },
+  "MEME_56012022": {
+   "token": "MEME",
+   "addr": "0x385f4f8ae47651ce5f58f5265395a669f8281e18",
+   "start_block": 56012022,
+   "start_price": 3.736284545804796e-14,
+   "peak_block": 56219746,
+   "peak_price": 1.5451763190136962e-13,
+   "gain_pct": 314,
+   "dur": 207724
+  },
+  "WHEEL_57352042": {
+   "token": "WHEEL",
+   "addr": "0x649792631ddbc52551fd765a17382b4d375b9b78",
+   "start_block": 57352042,
+   "start_price": 5.297259956799999e-05,
+   "peak_block": 57353623,
+   "peak_price": 0.0002153480130109202,
+   "gain_pct": 307,
+   "dur": 1581
+  },
+  "VOCEM_57277730": {
+   "token": "VOCEM",
+   "addr": "0x3c9c8c50f78354fe3d2ecdcbe84769a46e9b5124",
+   "start_block": 57277730,
+   "start_price": 9.324388907515154e-06,
+   "peak_block": 57491803,
+   "peak_price": 3.79823948979412e-05,
+   "gain_pct": 307,
+   "dur": 214073
+  },
+  "UNCS_57915405": {
+   "token": "UNCS",
+   "addr": "0x88d28f6b3db4d3ff94ae26c906a71de89bc5555d",
+   "start_block": 57915405,
+   "start_price": 4.09013035553391e-17,
+   "peak_block": 57920928,
+   "peak_price": 1.6649855142760253e-16,
+   "gain_pct": 307,
+   "dur": 5523
+  },
+  "BOXED_47564770": {
+   "token": "BOXED",
+   "addr": "0x76af8d3b40a0d7b5197935d0e84c14f7a3782e87",
+   "start_block": 47564770,
+   "start_price": 0.0001313043400179328,
+   "peak_block": 47702706,
+   "peak_price": 0.0005251932583011771,
+   "gain_pct": 300,
+   "dur": 137936
+  },
+  "OURO_56514853": {
+   "token": "OURO",
+   "addr": "0x8ea0eb3505f5b3bd2bbea0febae0ce850cc73ecc",
+   "start_block": 56514853,
+   "start_price": 0.0009846659285692656,
+   "peak_block": 56543327,
+   "peak_price": 0.0039008478617797355,
+   "gain_pct": 296,
+   "dur": 28474
+  },
+  "ABOX_56943405": {
+   "token": "ABOX",
+   "addr": "0x88432b4130df938808d677a35794868fa995086a",
+   "start_block": 56943405,
+   "start_price": 5.223520519466667e-05,
+   "peak_block": 56946373,
+   "peak_price": 0.0002028047825514829,
+   "gain_pct": 288,
+   "dur": 2968
+  },
+  "UNITY_57207468": {
+   "token": "UNITY",
+   "addr": "0x1fc0bd7022387a2d19e5cfa0d0a1cb365ec5fa41",
+   "start_block": 57207468,
+   "start_price": 5.341456149866666e-05,
+   "peak_block": 57209330,
+   "peak_price": 0.00020559579114779586,
+   "gain_pct": 285,
+   "dur": 1862
+  },
+  "MSFT_57844581": {
+   "token": "MSFT",
+   "addr": "0x323fd016dc9ba0600c140ea9bdb54a3e92fe5793",
+   "start_block": 57844581,
+   "start_price": 5.123718300680205e-05,
+   "peak_block": 57848331,
+   "peak_price": 0.00019672483653518225,
+   "gain_pct": 284,
+   "dur": 3750
+  },
+  "ROBSTR_57841093": {
+   "token": "ROBSTR",
+   "addr": "0x4183707bc1ea73507df12b198220467bd31efb40",
+   "start_block": 57841093,
+   "start_price": 5.123704376158079e-05,
+   "peak_block": 57846646,
+   "peak_price": 0.0001939128357984018,
+   "gain_pct": 278,
+   "dur": 5553
+  },
+  "FRANKLIN_55614369": {
+   "token": "FRANKLIN",
+   "addr": "0x1f49d48125e651a140f3d33aca35bd8c4660a53f",
+   "start_block": 55614369,
+   "start_price": 5.65244944964494e-18,
+   "peak_block": 55615499,
+   "peak_price": 2.105196962036563e-17,
+   "gain_pct": 272,
+   "dur": 1130
+  },
+  "DOGO_56854060": {
+   "token": "DOGO",
+   "addr": "0x77b0aa38451ccdc1b42587e2f80b9879a7f82356",
+   "start_block": 56854060,
+   "start_price": 0.0058442506708183154,
+   "peak_block": 56944717,
+   "peak_price": 0.021619004319554675,
+   "gain_pct": 270,
+   "dur": 90657
+  },
+  "MARLIN_56942823": {
+   "token": "MARLIN",
+   "addr": "0xab35d04e1ee39c789c4a65d522417b3c7f2e4723",
+   "start_block": 56942823,
+   "start_price": 5.216410378666667e-05,
+   "peak_block": 56982530,
+   "peak_price": 0.00018605981362937321,
+   "gain_pct": 257,
+   "dur": 39707
+  },
+  "HOOD_50740597": {
+   "token": "HOOD",
+   "addr": "0x45c83b37c5baf4dad26f3845c28295e2de010962",
+   "start_block": 50740597,
+   "start_price": 0.00015495714299039204,
+   "peak_block": 50989261,
+   "peak_price": 0.0005321459625094858,
+   "gain_pct": 243,
+   "dur": 248664
+  },
+  "HOODIECOIN_56981400": {
+   "token": "HOODIECOIN",
+   "addr": "0x55ae1d4c532fa686c168a0549dac36c25309f0ea",
+   "start_block": 56981400,
+   "start_price": 4.0617512507304555e-17,
+   "peak_block": 57062757,
+   "peak_price": 1.342911966634085e-16,
+   "gain_pct": 231,
+   "dur": 81357
+  },
+  "EGGLY_57601363": {
+   "token": "EGGLY",
+   "addr": "0x5e23b9903b20b6dc80c9ca1a5283b18b3cab76c8",
+   "start_block": 57601363,
+   "start_price": 3.97630456208106e-17,
+   "peak_block": 57604748,
+   "peak_price": 1.3060300426553006e-16,
+   "gain_pct": 228,
+   "dur": 3385
+  },
+  "PENGUIN_57657867": {
+   "token": "PENGUIN",
+   "addr": "0xe2ec718dbbb81d0a50bdf0d21342e34162b11415",
+   "start_block": 57657867,
+   "start_price": 9.556557836690905e-05,
+   "peak_block": 57828874,
+   "peak_price": 0.00031181188647587366,
+   "gain_pct": 226,
+   "dur": 171007
+  },
+  "BYCOCKET_57180428": {
+   "token": "BYCOCKET",
+   "addr": "0x173727cde55cf8fe46fd2d9ef4a19d7188a14d3b",
+   "start_block": 57180428,
+   "start_price": 4.024603554507386e-17,
+   "peak_block": 57205412,
+   "peak_price": 1.307678031489141e-16,
+   "gain_pct": 225,
+   "dur": 24984
+  },
+  "VOCEM_56622817": {
+   "token": "VOCEM",
+   "addr": "0x3c9c8c50f78354fe3d2ecdcbe84769a46e9b5124",
+   "start_block": 56622817,
+   "start_price": 1.0061316819981337e-05,
+   "peak_block": 56788836,
+   "peak_price": 3.2652433199251324e-05,
+   "gain_pct": 225,
+   "dur": 166019
+  },
+  "GAGE_57082390": {
+   "token": "GAGE",
+   "addr": "0x7163ae1b5aea2f09ebc609c52b4dcac0a7a4bc2d",
+   "start_block": 57082390,
+   "start_price": 5.120407693396518e-05,
+   "peak_block": 57121349,
+   "peak_price": 0.00016515388939416598,
+   "gain_pct": 223,
+   "dur": 38959
+  },
+  "AGENTSORA_57521629": {
+   "token": "AGENTSORA",
+   "addr": "0x84131db02c288f3e5a1c581faec1a38fd83268ba",
+   "start_block": 57521629,
+   "start_price": 0.00010379059331503837,
+   "peak_block": 57536370,
+   "peak_price": 0.000333380979643816,
+   "gain_pct": 221,
+   "dur": 14741
+  },
+  "PENGUIN_56273832": {
+   "token": "PENGUIN",
+   "addr": "0xe2ec718dbbb81d0a50bdf0d21342e34162b11415",
+   "start_block": 56273832,
+   "start_price": 7.189945636906169e-05,
+   "peak_block": 56424783,
+   "peak_price": 0.00022974286564013462,
+   "gain_pct": 220,
+   "dur": 150951
+  },
+  "PLINTH_57038217": {
+   "token": "PLINTH",
+   "addr": "0x39b6c478d38116143251497a9399cc5ccc5b4c31",
+   "start_block": 57038217,
+   "start_price": 4.395473354649907e-05,
+   "peak_block": 57049399,
+   "peak_price": 0.00014059102786727047,
+   "gain_pct": 220,
+   "dur": 11182
+  },
+  "TIMES_57838050": {
+   "token": "TIMES",
+   "addr": "0x991a20dd6737dcd15cf2c0d32577878ff578f581",
+   "start_block": 57838050,
+   "start_price": 5.123738575838176e-05,
+   "peak_block": 57847712,
+   "peak_price": 0.00016418792686381643,
+   "gain_pct": 220,
+   "dur": 9662
+  },
+  "CAPITALCAT_56937336": {
+   "token": "CAPITALCAT",
+   "addr": "0x45ec595691771b321f7e1ff95f0add462d29cb44",
+   "start_block": 56937336,
+   "start_price": 6.094843350866666e-05,
+   "peak_block": 56941772,
+   "peak_price": 0.00019427742910320403,
+   "gain_pct": 219,
+   "dur": 4436
+  },
+  "USDG_27115537": {
+   "token": "USDG",
+   "addr": "0xf052f9339afaba171724b3229a624db2a30eb115",
+   "start_block": 27115537,
+   "start_price": 4.3161179241976925e-18,
+   "peak_block": 27373634,
+   "peak_price": 1.354650754998479e-17,
+   "gain_pct": 214,
+   "dur": 258097
+  },
+  "FIREBALL_57357942": {
+   "token": "FIREBALL",
+   "addr": "0xd74af769df9fbfafdfbacdf682a2c9a1d572e5ef",
+   "start_block": 57357942,
+   "start_price": 5.3096439618249994e-05,
+   "peak_block": 57367155,
+   "peak_price": 0.00016618417978130933,
+   "gain_pct": 213,
+   "dur": 9213
+  },
+  "CASE_58094193": {
+   "token": "CASE",
+   "addr": "0x39af21c586b13337d0b83d8fc1ae7598f3297e95",
+   "start_block": 58094193,
+   "start_price": 5.145088958387813e-05,
+   "peak_block": 58096052,
+   "peak_price": 0.00015953610111211545,
+   "gain_pct": 210,
+   "dur": 1859
+  },
+  "INUS_56586063": {
+   "token": "INUS",
+   "addr": "0x0571d39b4cfe543aebd36a68cdfd6935e7cb4bdb",
+   "start_block": 56586063,
+   "start_price": 7.995658715936959e-06,
+   "peak_block": 56880908,
+   "peak_price": 2.445773806129367e-05,
+   "gain_pct": 206,
+   "dur": 294845
+  },
+  "ROBINHOOD_46647192": {
+   "token": "ROBINHOOD",
+   "addr": "0x3529e5b86e8749c8487a11ddc239c412228a40cc",
+   "start_block": 46647192,
+   "start_price": 0.00013102300811555277,
+   "peak_block": 46925171,
+   "peak_price": 0.0003997748277551913,
+   "gain_pct": 205,
+   "dur": 277979
+  },
+  "COIN_56752451": {
+   "token": "COIN",
+   "addr": "0x3431eb0cae76549fcf949ac37a30107ac33d7ecc",
+   "start_block": 56752451,
+   "start_price": 5.1868162528e-05,
+   "peak_block": 56760427,
+   "peak_price": 0.00015785518707844772,
+   "gain_pct": 204,
+   "dur": 7976
+  },
+  "USDG_55731235": {
+   "token": "USDG",
+   "addr": "0xf052f9339afaba171724b3229a624db2a30eb115",
+   "start_block": 55731235,
+   "start_price": 1.7469501292612273e-17,
+   "peak_block": 55757788,
+   "peak_price": 5.2991291244873034e-17,
+   "gain_pct": 203,
+   "dur": 26553
+  },
+  "ROBINHOOD_52021706": {
+   "token": "ROBINHOOD",
+   "addr": "0x8f100e99ddf699320724e37cb866770381d47382",
+   "start_block": 52021706,
+   "start_price": 5.6979654369848636e-05,
+   "peak_block": 52280481,
+   "peak_price": 0.00017157761059788826,
+   "gain_pct": 201,
+   "dur": 258775
+  },
+  "FAT_57551299": {
+   "token": "FAT",
+   "addr": "0x88b694d6e5c58f01534898fd962f41251d1779cd",
+   "start_block": 57551299,
+   "start_price": 5.293792267481629e-05,
+   "peak_block": 57566634,
+   "peak_price": 0.00015809599310886608,
+   "gain_pct": 199,
+   "dur": 15335
+  },
+  "ANTE_57092726": {
+   "token": "ANTE",
+   "addr": "0xbacb0f93181fbed67e1deb7a92db04bc25052163",
+   "start_block": 57092726,
+   "start_price": 5.1204053928129574e-05,
+   "peak_block": 57096531,
+   "peak_price": 0.00015113993781019038,
+   "gain_pct": 195,
+   "dur": 3805
+  },
+  "TRIBUTE_54969908": {
+   "token": "TRIBUTE",
+   "addr": "0xd41a1dc8a42e429a66d6ac479e6f8ebf96d6eab0",
+   "start_block": 54969908,
+   "start_price": 2.5206203510749718e-05,
+   "peak_block": 55230756,
+   "peak_price": 7.336473430911953e-05,
+   "gain_pct": 191,
+   "dur": 260848
+  },
+  "BANKLESS_53555973": {
+   "token": "BANKLESS",
+   "addr": "0x5e8907a3f45d7b30be6addbab0312e46e5061614",
+   "start_block": 53555973,
+   "start_price": 2.8564667237580247e-05,
+   "peak_block": 53723068,
+   "peak_price": 8.323369792979263e-05,
+   "gain_pct": 191,
+   "dur": 167095
+  },
+  "NOTE_58016985": {
+   "token": "NOTE",
+   "addr": "0xc4f730335fb9e439ca5552f7b52b8e638c4245b0",
+   "start_block": 58016985,
+   "start_price": 1.8827363993093206e-14,
+   "peak_block": 58017555,
+   "peak_price": 5.488037912294799e-14,
+   "gain_pct": 191,
+   "dur": 570
+  },
+  "STORIES_57095651": {
+   "token": "STORIES",
+   "addr": "0x068633ec35b8ece5b3371036ae3c909b1e51430a",
+   "start_block": 57095651,
+   "start_price": 5.341456149866666e-05,
+   "peak_block": 57098426,
+   "peak_price": 0.0001550046439178049,
+   "gain_pct": 190,
+   "dur": 2775
+  },
+  "CREDITLINE_54551850": {
+   "token": "CREDITLINE",
+   "addr": "0x9eebc9d0162eab236ad4672caef8dba40dc06c24",
+   "start_block": 54551850,
+   "start_price": 1.2171656898787686e-05,
+   "peak_block": 54825926,
+   "peak_price": 3.5108641615204485e-05,
+   "gain_pct": 188,
+   "dur": 274076
+  },
+  "WOOD_54605806": {
+   "token": "WOOD",
+   "addr": "0x6635c082c14b4206751600d96fe50428815c9fa9",
+   "start_block": 54605806,
+   "start_price": 4.550830319641235e-05,
+   "peak_block": 54869242,
+   "peak_price": 0.0001301215972908135,
+   "gain_pct": 186,
+   "dur": 263436
+  },
+  "LDX_54972886": {
+   "token": "LDX",
+   "addr": "0x62cd5cd9d354a2a50affe9efa21c8918b9640a5b",
+   "start_block": 54972886,
+   "start_price": 0.00024330792810390648,
+   "peak_block": 55271692,
+   "peak_price": 0.0006911728209480305,
+   "gain_pct": 184,
+   "dur": 298806
+  },
+  "Index_3907455": {
+   "token": "Index",
+   "addr": "0x56910d4409f3a0c78c64dd8d0545ff0705389870",
+   "start_block": 3907455,
+   "start_price": 0.001221969056049958,
+   "peak_block": 4131165,
+   "peak_price": 0.0034760197650313615,
+   "gain_pct": 184,
+   "dur": 223710
+  },
+  "Perpy_56783428": {
+   "token": "Perpy",
+   "addr": "0x23f65334409a48da50297663e179b5b9db0b2a82",
+   "start_block": 56783428,
+   "start_price": 5.1868162528e-05,
+   "peak_block": 56802168,
+   "peak_price": 0.00014452081472891165,
+   "gain_pct": 179,
+   "dur": 18740
+  },
+  "HARVEST_57189921": {
+   "token": "HARVEST",
+   "addr": "0x1b82111f2d7049d99960cedbfe74ad2503763932",
+   "start_block": 57189921,
+   "start_price": 5.14962791876035e-05,
+   "peak_block": 57190690,
+   "peak_price": 0.00014325801978390556,
+   "gain_pct": 178,
+   "dur": 769
+  },
+  "cyberbeer_56671055": {
+   "token": "cyberbeer",
+   "addr": "0xd97460101c3aad03a0e69e7a82587aa4cf1dacb8",
+   "start_block": 56671055,
+   "start_price": 1.1203750183396547e-05,
+   "peak_block": 56676237,
+   "peak_price": 3.098719690539176e-05,
+   "gain_pct": 177,
+   "dur": 5182
+  },
+  "EQUI_56213572": {
+   "token": "EQUI",
+   "addr": "0x9d783133a3ff9ba27fa1605547368cf9a316341e",
+   "start_block": 56213572,
+   "start_price": 0.0007268775537090449,
+   "peak_block": 56440400,
+   "peak_price": 0.0019961673542889203,
+   "gain_pct": 175,
+   "dur": 226828
+  },
+  "SENDER_57192758": {
+   "token": "SENDER",
+   "addr": "0x0bfba35ec191d77bb88cbb05807fa2eb0062ddcc",
+   "start_block": 57192758,
+   "start_price": 3.754294794848642e-06,
+   "peak_block": 57205771,
+   "peak_price": 1.0291332914772468e-05,
+   "gain_pct": 174,
+   "dur": 13013
+  },
+  "INUS_55989325": {
+   "token": "INUS",
+   "addr": "0x0571d39b4cfe543aebd36a68cdfd6935e7cb4bdb",
+   "start_block": 55989325,
+   "start_price": 6.1743882795322984e-06,
+   "peak_block": 56072249,
+   "peak_price": 1.6847029658031808e-05,
+   "gain_pct": 173,
+   "dur": 82924
+  },
+  "SHOOK_56937835": {
+   "token": "SHOOK",
+   "addr": "0x6f31c1df4478b1f53448e1c1af194ecf70bf4375",
+   "start_block": 56937835,
+   "start_price": 0.0007955136941964611,
+   "peak_block": 56945029,
+   "peak_price": 0.002166736257685771,
+   "gain_pct": 172,
+   "dur": 7194
+  },
+  "STNKPAD_56762823": {
+   "token": "STNKPAD",
+   "addr": "0x52738860e56571110869ca77431663ccaffa2d82",
+   "start_block": 56762823,
+   "start_price": 8.727593875000001e-05,
+   "peak_block": 56826096,
+   "peak_price": 0.00023574136531406446,
+   "gain_pct": 170,
+   "dur": 63273
+  },
+  "LKN_54969180": {
+   "token": "LKN",
+   "addr": "0x0d6bbdd979ef4802567425ae4ab352edaa468f1d",
+   "start_block": 54969180,
+   "start_price": 5.1114263293333335e-05,
+   "peak_block": 54988914,
+   "peak_price": 0.00013694296747274895,
+   "gain_pct": 168,
+   "dur": 19734
+  },
+  "SCRIB_56887624": {
+   "token": "SCRIB",
+   "addr": "0x319c5b3f8e46b70cb00769bc8020b4c08ddbc182",
+   "start_block": 56887624,
+   "start_price": 5.1868162528e-05,
+   "peak_block": 56904448,
+   "peak_price": 0.00013875853649271335,
+   "gain_pct": 168,
+   "dur": 16824
+  },
+  "BBRV2_56908212": {
+   "token": "BBRV2",
+   "addr": "0x3b34bb7cf51704011d64ada65061aefa9aeb78ef",
+   "start_block": 56908212,
+   "start_price": 5.1868162528e-05,
+   "peak_block": 56908946,
+   "peak_price": 0.00013860018618144999,
+   "gain_pct": 167,
+   "dur": 734
+  },
+  "RobinCard_56750830": {
+   "token": "RobinCard",
+   "addr": "0x72bebbe118dc1cdb38a10db09c11db53ec4c7977",
+   "start_block": 56750830,
+   "start_price": 5.407245910327232e-05,
+   "peak_block": 56760643,
+   "peak_price": 0.00014261725210556857,
+   "gain_pct": 164,
+   "dur": 9813
+  },
+  "MINEFLY_55130313": {
+   "token": "MINEFLY",
+   "addr": "0x6bedf70814dafd07ed1368bd81e3af204fff6d7b",
+   "start_block": 55130313,
+   "start_price": 5.753097884314536e-06,
+   "peak_block": 55173660,
+   "peak_price": 1.5029420684877726e-05,
+   "gain_pct": 161,
+   "dur": 43347
+  },
+  "USDG_54607405": {
+   "token": "USDG",
+   "addr": "0xf052f9339afaba171724b3229a624db2a30eb115",
+   "start_block": 54607405,
+   "start_price": 6.000420219447276e-18,
+   "peak_block": 54640257,
+   "peak_price": 1.5636302152746853e-17,
+   "gain_pct": 161,
+   "dur": 32852
+  },
+  "LAPTOP_56936369": {
+   "token": "LAPTOP",
+   "addr": "0x5c3938dedd3a74a6f1863d1cb3cdbeee85accb9e",
+   "start_block": 56936369,
+   "start_price": 5.413715527468059e-05,
+   "peak_block": 56949272,
+   "peak_price": 0.0001403029801781512,
+   "gain_pct": 159,
+   "dur": 12903
+  },
+  "PONSHIMI_57848209": {
+   "token": "PONSHIMI",
+   "addr": "0x0fb133f107fc5a3f3f94983c2a65b9b9d5f3092c",
+   "start_block": 57848209,
+   "start_price": 5.599580184771353e-05,
+   "peak_block": 57853820,
+   "peak_price": 0.00014511235153500724,
+   "gain_pct": 159,
+   "dur": 5611
+  },
+  "SCRIBBLE_57065881": {
+   "token": "SCRIBBLE",
+   "addr": "0x47965c987c6f6f14734d9203c5e75f37cc468402",
+   "start_block": 57065881,
+   "start_price": 5.154758422632e-05,
+   "peak_block": 57071954,
+   "peak_price": 0.0001327818282378404,
+   "gain_pct": 158,
+   "dur": 6073
+  },
+  "BANKLESS_56901912": {
+   "token": "BANKLESS",
+   "addr": "0x5e8907a3f45d7b30be6addbab0312e46e5061614",
+   "start_block": 56901912,
+   "start_price": 0.000396599314806561,
+   "peak_block": 57148941,
+   "peak_price": 0.0010202075298199416,
+   "gain_pct": 157,
+   "dur": 247029
+  },
+  "HUSDP_56954754": {
+   "token": "HUSDP",
+   "addr": "0x753b0f74502d3d66c278a563cb04503154e6eb0d",
+   "start_block": 56954754,
+   "start_price": 5.936199137866667e-05,
+   "peak_block": 56955154,
+   "peak_price": 0.0001513043572743818,
+   "gain_pct": 155,
+   "dur": 400
+  },
+  "ZINU_57408259": {
+   "token": "ZINU",
+   "addr": "0x6e2f6e9bbb1ecb1fad441b0ded03a1691e97b97d",
+   "start_block": 57408259,
+   "start_price": 3.7350925701291744e-05,
+   "peak_block": 57411154,
+   "peak_price": 9.513823871115804e-05,
+   "gain_pct": 155,
+   "dur": 2895
+  },
+  "NDFW_56907902": {
+   "token": "NDFW",
+   "addr": "0x769bf41470faef03fc9bb8d62d0f5abe46c3e46a",
+   "start_block": 56907902,
+   "start_price": 5.5283549464713325e-06,
+   "peak_block": 56908498,
+   "peak_price": 1.4056270171167809e-05,
+   "gain_pct": 154,
+   "dur": 596
+  },
+  "SPIKE_57458137": {
+   "token": "SPIKE",
+   "addr": "0xf4684de90852c677c705ab87e87c9d40897798a4",
+   "start_block": 57458137,
+   "start_price": 0.00010353287266769215,
+   "peak_block": 57470749,
+   "peak_price": 0.0002627352579283478,
+   "gain_pct": 154,
+   "dur": 12612
+  },
+  "PONIE_56980585": {
+   "token": "PONIE",
+   "addr": "0x9aa0c0ca88e6ae43a3d229afc373c0b9f2b53521",
+   "start_block": 56980585,
+   "start_price": 0.00010141821946131277,
+   "peak_block": 57054402,
+   "peak_price": 0.0002559525322070821,
+   "gain_pct": 152,
+   "dur": 73817
+  },
+  "OURO_57095431": {
+   "token": "OURO",
+   "addr": "0x8ea0eb3505f5b3bd2bbea0febae0ce850cc73ecc",
+   "start_block": 57095431,
+   "start_price": 0.003226322352340836,
+   "peak_block": 57346698,
+   "peak_price": 0.008127057355984598,
+   "gain_pct": 152,
+   "dur": 251267
+  },
+  "COMPUTER_58254216": {
+   "token": "COMPUTER",
+   "addr": "0x1c5f0a1aaa4f2ee657cbb95312e3b85dd54341d9",
+   "start_block": 58254216,
+   "start_price": 0.00013242420917016412,
+   "peak_block": 58286207,
+   "peak_price": 0.00033399821978256607,
+   "gain_pct": 152,
+   "dur": 31991
+  },
+  "MSFT_57848586": {
+   "token": "MSFT",
+   "addr": "0x323fd016dc9ba0600c140ea9bdb54a3e92fe5793",
+   "start_block": 57848586,
+   "start_price": 2.022304740268982e-05,
+   "peak_block": 57851897,
+   "peak_price": 5.07193001355849e-05,
+   "gain_pct": 151,
+   "dur": 3311
+  },
+  "HARVEST_57264381": {
+   "token": "HARVEST",
+   "addr": "0x51e6f3147dcdf3cf60bdc0ed771e73279f7136ac",
+   "start_block": 57264381,
+   "start_price": 5.3948013442156316e-05,
+   "peak_block": 57295919,
+   "peak_price": 0.00013504505200085082,
+   "gain_pct": 150,
+   "dur": 31538
+  },
+  "COMPONS_56730760": {
+   "token": "COMPONS",
+   "addr": "0xe634d91cb6495d20c498ce1d2d07b61b24ee3e9e",
+   "start_block": 56730760,
+   "start_price": 5.1868162528e-05,
+   "peak_block": 56735104,
+   "peak_price": 0.00012932087351409197,
+   "gain_pct": 149,
+   "dur": 4344
+  },
+  "WHACKD_58131330": {
+   "token": "WHACKD",
+   "addr": "0xf2c8710b0d67798be20817cfe44a613c3f3a3275",
+   "start_block": 58131330,
+   "start_price": 1.1543019366875473e-05,
+   "peak_block": 58142750,
+   "peak_price": 2.8759565800426442e-05,
+   "gain_pct": 149,
+   "dur": 11420
+  },
+  "ROBINHOOD_53820788": {
+   "token": "ROBINHOOD",
+   "addr": "0x90a71817bda6dac8c3a28bbfd877b02d667ae2f9",
+   "start_block": 53820788,
+   "start_price": 5.2776647028827745e-17,
+   "peak_block": 54108494,
+   "peak_price": 1.3090136343627085e-16,
+   "gain_pct": 148,
+   "dur": 287706
+  },
+  "UGLY_57177857": {
+   "token": "UGLY",
+   "addr": "0x94b931fa19faccffb01773507bef2f5fab3286ea",
+   "start_block": 57177857,
+   "start_price": 8.31683238749154e-05,
+   "peak_block": 57180834,
+   "peak_price": 0.00020596773377847826,
+   "gain_pct": 148,
+   "dur": 2977
+  },
+  "SPCX_58270388": {
+   "token": "SPCX",
+   "addr": "0xd762716c8eeec5d3606735c32817e5c21d41e3e2",
+   "start_block": 58270388,
+   "start_price": 5.219941814733333e-05,
+   "peak_block": 58283050,
+   "peak_price": 0.00012827764713163717,
+   "gain_pct": 146,
+   "dur": 12662
+  },
+  "STATICS_49788826": {
+   "token": "STATICS",
+   "addr": "0x2d8d6f4a93acd7a916a5a654ec8b690ba3b3eadd",
+   "start_block": 49788826,
+   "start_price": 0.009298462977824351,
+   "peak_block": 50088803,
+   "peak_price": 0.022711078352960656,
+   "gain_pct": 144,
+   "dur": 299977
+  },
+  "PTP_57520428": {
+   "token": "PTP",
+   "addr": "0xe3185c152dd3a0e75c1d10907508c5b54693fc70",
+   "start_block": 57520428,
+   "start_price": 5.3242734906666666e-05,
+   "peak_block": 57540385,
+   "peak_price": 0.00012916980315880015,
+   "gain_pct": 143,
+   "dur": 19957
+  },
+  "SUSHI_14184052": {
+   "token": "SUSHI",
+   "addr": "0x0bb40d7fbae7f0c69bc5910c601987dce697d85f",
+   "start_block": 14184052,
+   "start_price": 0.17042894521578764,
+   "peak_block": 14184438,
+   "peak_price": 0.4123896373050869,
+   "gain_pct": 142,
+   "dur": 386
+  },
+  "CRYPTOHOOD_57763943": {
+   "token": "CRYPTOHOOD",
+   "addr": "0xe6034f8a7773c890c0fa20042745e4857b1c7851",
+   "start_block": 57763943,
+   "start_price": 0.00012860650041112884,
+   "peak_block": 57771623,
+   "peak_price": 0.0003084324711499585,
+   "gain_pct": 140,
+   "dur": 7680
+  },
+  "PENDLE_56773876": {
+   "token": "PENDLE",
+   "addr": "0x5e49e1f85813f2b65858860a3fa231b4186f2e0e",
+   "start_block": 56773876,
+   "start_price": 2.1021072886780137,
+   "peak_block": 56775675,
+   "peak_price": 5.0146030467288885,
+   "gain_pct": 139,
+   "dur": 1799
+  },
+  "SWEEP_57215010": {
+   "token": "SWEEP",
+   "addr": "0x73f6bf7df8450bc7de6d8aa20754dc8678fdaed8",
+   "start_block": 57215010,
+   "start_price": 2.124375833408972e-05,
+   "peak_block": 57224997,
+   "peak_price": 5.047987390512942e-05,
+   "gain_pct": 138,
+   "dur": 9987
+  },
+  "NOTE_58020635": {
+   "token": "NOTE",
+   "addr": "0xc4f730335fb9e439ca5552f7b52b8e638c4245b0",
+   "start_block": 58020635,
+   "start_price": 7.264731696184539e-15,
+   "peak_block": 58021000,
+   "peak_price": 1.731517290258005e-14,
+   "gain_pct": 138,
+   "dur": 365
+  },
+  "DumbCrayonEater_58098182": {
+   "token": "DumbCrayonEater",
+   "addr": "0xbe55b472cd58d618e5024ade5f5585ad31afbf6c",
+   "start_block": 58098182,
+   "start_price": 1.3761369061936503e-05,
+   "peak_block": 58160629,
+   "peak_price": 3.273065921764872e-05,
+   "gain_pct": 138,
+   "dur": 62447
+  },
+  "RWAPACT_55502609": {
+   "token": "RWAPACT",
+   "addr": "0x4b1b3cb23e1cd1eb03eff3123b6ccd698629cd65",
+   "start_block": 55502609,
+   "start_price": 3.1317347204794e-05,
+   "peak_block": 55752477,
+   "peak_price": 7.424674554443227e-05,
+   "gain_pct": 137,
+   "dur": 249868
+  },
+  "pons_55043039": {
+   "token": "pons",
+   "addr": "0xe04b4d9a9e9a4136822f69879087070a697ee7c0",
+   "start_block": 55043039,
+   "start_price": 4.2085227038731896e-17,
+   "peak_block": 55078956,
+   "peak_price": 9.931148521421547e-17,
+   "gain_pct": 136,
+   "dur": 35917
+  },
+  "RUBEN_57517795": {
+   "token": "RUBEN",
+   "addr": "0x5942e47cc8057ac76a779f7499cd762cdd335b48",
+   "start_block": 57517795,
+   "start_price": 9.030551399805133e-05,
+   "peak_block": 57668227,
+   "peak_price": 0.0002127563016307154,
+   "gain_pct": 136,
+   "dur": 150432
+  },
+  "FATCAT_57459792": {
+   "token": "FATCAT",
+   "addr": "0x0531d44ec26cc032c5d7f304ee5b7e74b00c093b",
+   "start_block": 57459792,
+   "start_price": 4.160277619976567e-17,
+   "peak_block": 57467712,
+   "peak_price": 9.762472510866307e-17,
+   "gain_pct": 135,
+   "dur": 7920
+  },
+  "sharefomo_57988738": {
+   "token": "sharefomo",
+   "addr": "0x187b4f27bc21b2d4de3fe369b23332590eff6961",
+   "start_block": 57988738,
+   "start_price": 5.1326589710187416e-05,
+   "peak_block": 57992034,
+   "peak_price": 0.00012042555124338411,
+   "gain_pct": 135,
+   "dur": 3296
+  },
+  "SPCX_58290153": {
+   "token": "SPCX",
+   "addr": "0xd762716c8eeec5d3606735c32817e5c21d41e3e2",
+   "start_block": 58290153,
+   "start_price": 5.155519837893404e-06,
+   "peak_block": 58306188,
+   "peak_price": 1.210363931810904e-05,
+   "gain_pct": 135,
+   "dur": 16035
+  },
+  "NASDANQ_48994630": {
+   "token": "NASDANQ",
+   "addr": "0x51fb76be80ab6daaa345d818f4e06441816b4fea",
+   "start_block": 48994630,
+   "start_price": 0.000892213621164067,
+   "peak_block": 49228762,
+   "peak_price": 0.002091390246889047,
+   "gain_pct": 134,
+   "dur": 234132
+  },
+  "FRANKLIN_55202970": {
+   "token": "FRANKLIN",
+   "addr": "0x1f49d48125e651a140f3d33aca35bd8c4660a53f",
+   "start_block": 55202970,
+   "start_price": 2.2008911569035273e-17,
+   "peak_block": 55218712,
+   "peak_price": 5.155082706924715e-17,
+   "gain_pct": 134,
+   "dur": 15742
+  },
+  "PARE_54468804": {
+   "token": "PARE",
+   "addr": "0x15d36b6a28d8327abc7afabf0f106ae2c9af5c4d",
+   "start_block": 54468804,
+   "start_price": 0.0023259188291991635,
+   "peak_block": 54724532,
+   "peak_price": 0.005450830589246623,
+   "gain_pct": 134,
+   "dur": 255728
+  },
+  "GOBA_56148212": {
+   "token": "GOBA",
+   "addr": "0xc80d8807c27cfa1e83fdb1ec20c6834db1153dba",
+   "start_block": 56148212,
+   "start_price": 6.438184231629498e-05,
+   "peak_block": 56365379,
+   "peak_price": 0.00015042415551358229,
+   "gain_pct": 134,
+   "dur": 217167
+  },
+  "SHRIMPS_56596982": {
+   "token": "SHRIMPS",
+   "addr": "0xbe7dc72c1f13811d293b244b7b929fce5883bc36",
+   "start_block": 56596982,
+   "start_price": 2.9858170467980936e-05,
+   "peak_block": 56663492,
+   "peak_price": 6.981704598187674e-05,
+   "gain_pct": 134,
+   "dur": 66510
+  },
+  "AZEON_55081020": {
+   "token": "AZEON",
+   "addr": "0x8f46ac3ffb126fb5e5c7b7df31a76b2f338beb7e",
+   "start_block": 55081020,
+   "start_price": 5.307061433333334e-05,
+   "peak_block": 55085792,
+   "peak_price": 0.00012383516876058952,
+   "gain_pct": 133,
+   "dur": 4772
+  },
+  "ZKSWAP_57920656": {
+   "token": "ZKSWAP",
+   "addr": "0x91f9fca4ff29dc5a755777f94d2beacc3023bdb0",
+   "start_block": 57920656,
+   "start_price": 2.4713758929325128e-05,
+   "peak_block": 57924851,
+   "peak_price": 5.763707616643787e-05,
+   "gain_pct": 133,
+   "dur": 4195
+  },
+  "NORACHAN_58294496": {
+   "token": "NORACHAN",
+   "addr": "0x130c7f0c8e1cb727430d66ee650e4fcf650aa1ac",
+   "start_block": 58294496,
+   "start_price": 5.522487999998731e-17,
+   "peak_block": 58295826,
+   "peak_price": 1.2850568546810548e-16,
+   "gain_pct": 133,
+   "dur": 1330
+  },
+  "Robinhood_56078941": {
+   "token": "Robinhood",
+   "addr": "0xf56d0cf739ae58ed8b27cc939d7f9a03e6a68b07",
+   "start_block": 56078941,
+   "start_price": 5.2488863358870476e-08,
+   "peak_block": 56080740,
+   "peak_price": 1.2191859977602323e-07,
+   "gain_pct": 132,
+   "dur": 1799
+  },
+  "Rewards_57429711": {
+   "token": "Rewards",
+   "addr": "0xd2e80e1dda845fae1ae93be2c00b6b62877ffe47",
+   "start_block": 57429711,
+   "start_price": 6.51239847776489e-06,
+   "peak_block": 57648821,
+   "peak_price": 1.512847928151312e-05,
+   "gain_pct": 132,
+   "dur": 219110
+  },
+  "CONTRA_57707133": {
+   "token": "CONTRA",
+   "addr": "0x3acdde62ea42fcc43ebf4b85362cc7ff4fdfe439",
+   "start_block": 57707133,
+   "start_price": 3.1114804618451274e-05,
+   "peak_block": 57710263,
+   "peak_price": 7.187202033852315e-05,
+   "gain_pct": 131,
+   "dur": 3130
+  },
+  "LDX_54658090": {
+   "token": "LDX",
+   "addr": "0x62cd5cd9d354a2a50affe9efa21c8918b9640a5b",
+   "start_block": 54658090,
+   "start_price": 0.00026070101866494606,
+   "peak_block": 54913225,
+   "peak_price": 0.0006003647097472415,
+   "gain_pct": 130,
+   "dur": 255135
+  },
+  "FAME_57216674": {
+   "token": "FAME",
+   "addr": "0x3470f1cc6f710df466a2108432d227805cdcb599",
+   "start_block": 57216674,
+   "start_price": 6.469098156944543e-17,
+   "peak_block": 57220115,
+   "peak_price": 1.4889821024445038e-16,
+   "gain_pct": 130,
+   "dur": 3441
+  },
+  "GOBA_56365468": {
+   "token": "GOBA",
+   "addr": "0xc80d8807c27cfa1e83fdb1ec20c6834db1153dba",
+   "start_block": 56365468,
+   "start_price": 0.00014801923663241353,
+   "peak_block": 56644611,
+   "peak_price": 0.00033905580784795715,
+   "gain_pct": 129,
+   "dur": 279143
+  },
+  "VECTOR_56966264": {
+   "token": "VECTOR",
+   "addr": "0x574778d38e761728e6e599b5dac8f3c0d60497dd",
+   "start_block": 56966264,
+   "start_price": 1.9302509228287656e-05,
+   "peak_block": 56970894,
+   "peak_price": 4.423199960216387e-05,
+   "gain_pct": 129,
+   "dur": 4630
+  },
+  "MADE_58001308": {
+   "token": "MADE",
+   "addr": "0x0ff26c1b81511eb3fe722f49934ab285884ea9a3",
+   "start_block": 58001308,
+   "start_price": 4.778595253356138e-05,
+   "peak_block": 58006921,
+   "peak_price": 0.00010955082986529057,
+   "gain_pct": 129,
+   "dur": 5613
+  },
+  "ROBINHOOD_52807754": {
+   "token": "ROBINHOOD",
+   "addr": "0x90a71817bda6dac8c3a28bbfd877b02d667ae2f9",
+   "start_block": 52807754,
+   "start_price": 3.6840764022883493e-16,
+   "peak_block": 52834086,
+   "peak_price": 8.40373257604439e-16,
+   "gain_pct": 128,
+   "dur": 26332
+  },
+  "STONKBROKER_12670818": {
+   "token": "STONKBROKER",
+   "addr": "0xe934e36a439c94017b64a3fece66af12099abf50",
+   "start_block": 12670818,
+   "start_price": 0.00017583445559729504,
+   "peak_block": 12678494,
+   "peak_price": 0.0004004696935541096,
+   "gain_pct": 128,
+   "dur": 7676
+  },
+  "PERFECT_56790947": {
+   "token": "PERFECT",
+   "addr": "0x78716e1789790b99252f30bcad08e8bfa93d723d",
+   "start_block": 56790947,
+   "start_price": 5.0991121570479995e-05,
+   "peak_block": 56793407,
+   "peak_price": 0.00011585227018559045,
+   "gain_pct": 127,
+   "dur": 2460
+  },
+  "SPEDX_56918279": {
+   "token": "SPEDX",
+   "addr": "0xed234eb0549bc5fe7659f61a717670aacac1043c",
+   "start_block": 56918279,
+   "start_price": 4.070450664900343e-05,
+   "peak_block": 56925824,
+   "peak_price": 9.242363874517803e-05,
+   "gain_pct": 127,
+   "dur": 7545
+  },
+  "ABOX_56949487": {
+   "token": "ABOX",
+   "addr": "0x88432b4130df938808d677a35794868fa995086a",
+   "start_block": 56949487,
+   "start_price": 1.8133925600375423e-05,
+   "peak_block": 56950690,
+   "peak_price": 4.110884162894806e-05,
+   "gain_pct": 127,
+   "dur": 1203
+  },
+  "HARVEST_57255819": {
+   "token": "HARVEST",
+   "addr": "0x51e6f3147dcdf3cf60bdc0ed771e73279f7136ac",
+   "start_block": 57255819,
+   "start_price": 7.46224151468253e-05,
+   "peak_block": 57259721,
+   "peak_price": 0.00016915632082858904,
+   "gain_pct": 127,
+   "dur": 3902
+  },
+  "USDUG_57618586": {
+   "token": "USDUG",
+   "addr": "0x21d3e040df57fc0ff59f8d9972131aa4af901060",
+   "start_block": 57618586,
+   "start_price": 2.4130723135109067e-17,
+   "peak_block": 57619906,
+   "peak_price": 5.466232437078867e-17,
+   "gain_pct": 127,
+   "dur": 1320
+  },
+  "SAFEMOON_57523642": {
+   "token": "SAFEMOON",
+   "addr": "0x4f3081e412a6a44e33d0334a03f06284ab000220",
+   "start_block": 57523642,
+   "start_price": 4.969153324045654e-05,
+   "peak_block": 57739621,
+   "peak_price": 0.000112722524898713,
+   "gain_pct": 127,
+   "dur": 215979
+  },
+  "BANKLESS_55472601": {
+   "token": "BANKLESS",
+   "addr": "0x5e8907a3f45d7b30be6addbab0312e46e5061614",
+   "start_block": 55472601,
+   "start_price": 6.461242394668913e-05,
+   "peak_block": 55591249,
+   "peak_price": 0.0001451085442146693,
+   "gain_pct": 125,
+   "dur": 118648
+  },
+  "HOUND_57362751": {
+   "token": "HOUND",
+   "addr": "0x2a6347b604b0183dc6239e255f9328cfc62d8de7",
+   "start_block": 57362751,
+   "start_price": 5.297259956799999e-05,
+   "peak_block": 57364852,
+   "peak_price": 0.00011930961315014289,
+   "gain_pct": 125,
+   "dur": 2101
+  },
+  "NORACHAN_58285413": {
+   "token": "NORACHAN",
+   "addr": "0x130c7f0c8e1cb727430d66ee650e4fcf650aa1ac",
+   "start_block": 58285413,
+   "start_price": 7.862392261526666e-17,
+   "peak_block": 58291298,
+   "peak_price": 1.7694794447896807e-16,
+   "gain_pct": 125,
+   "dur": 5885
+  },
+  "BARBELL_56936042": {
+   "token": "BARBELL",
+   "addr": "0x307865e76e5be49a9bac077408f8ca4bc9bcf012",
+   "start_block": 56936042,
+   "start_price": 1.3698478556901866e-05,
+   "peak_block": 56942538,
+   "peak_price": 3.071202861431302e-05,
+   "gain_pct": 124,
+   "dur": 6496
+  },
+  "COQ_56080903": {
+   "token": "COQ",
+   "addr": "0x308691f69ab7a822c5b2007267f536f4125e93c9",
+   "start_block": 56080903,
+   "start_price": 1.4590406554032194e-05,
+   "peak_block": 56159257,
+   "peak_price": 3.273864231966546e-05,
+   "gain_pct": 124,
+   "dur": 78354
+  },
+  "WHEEL_57364226": {
+   "token": "WHEEL",
+   "addr": "0x649792631ddbc52551fd765a17382b4d375b9b78",
+   "start_block": 57364226,
+   "start_price": 4.4492396125879853e-05,
+   "peak_block": 57365625,
+   "peak_price": 9.917623499633196e-05,
+   "gain_pct": 123,
+   "dur": 1399
+  },
+  "SPCX_58284666": {
+   "token": "SPCX",
+   "addr": "0xd762716c8eeec5d3606735c32817e5c21d41e3e2",
+   "start_block": 58284666,
+   "start_price": 1.4480585080262383e-05,
+   "peak_block": 58287809,
+   "peak_price": 3.2362387639022396e-05,
+   "gain_pct": 123,
+   "dur": 3143
+  },
+  "USDG_30260301": {
+   "token": "USDG",
+   "addr": "0xf052f9339afaba171724b3229a624db2a30eb115",
+   "start_block": 30260301,
+   "start_price": 5.61011114085978e-18,
+   "peak_block": 30551375,
+   "peak_price": 1.2450747335176666e-17,
+   "gain_pct": 122,
+   "dur": 291074
+  },
+  "ZZZ_57566672": {
+   "token": "ZZZ",
+   "addr": "0x7dbf38976f6d3b9c529e7d9484a71898b409ee6a",
+   "start_block": 57566672,
+   "start_price": 0.015512615208570644,
+   "peak_block": 57811057,
+   "peak_price": 0.03448647511284773,
+   "gain_pct": 122,
+   "dur": 244385
+  },
+  "PARLEY_56973310": {
+   "token": "PARLEY",
+   "addr": "0xcf3d41f9671dc2e86ee4c0271b79ae6fdce36c05",
+   "start_block": 56973310,
+   "start_price": 3.7029173359176346e-05,
+   "peak_block": 57041241,
+   "peak_price": 8.22885430088314e-05,
+   "gain_pct": 122,
+   "dur": 67931
+  },
+  "USDG_54677206": {
+   "token": "USDG",
+   "addr": "0xc20764d8cb3bb4d054c2c42aa5f59f97f60252d4",
+   "start_block": 54677206,
+   "start_price": 5.3961225838958516e-17,
+   "peak_block": 54688107,
+   "peak_price": 1.1933555787499733e-16,
+   "gain_pct": 121,
+   "dur": 10901
+  },
+  "USDG_54740991": {
+   "token": "USDG",
+   "addr": "0xc20764d8cb3bb4d054c2c42aa5f59f97f60252d4",
+   "start_block": 54740991,
+   "start_price": 1.6986523173027935e-17,
+   "peak_block": 54898241,
+   "peak_price": 3.754808022764223e-17,
+   "gain_pct": 121,
+   "dur": 157250
+  },
+  "ROBINHOOD_54135950": {
+   "token": "ROBINHOOD",
+   "addr": "0x5d8c7212a3d5d2c22d3849a7a7918c6a61c31961",
+   "start_block": 54135950,
+   "start_price": 1.2750495816856983e-17,
+   "peak_block": 54147219,
+   "peak_price": 2.8227129149341023e-17,
+   "gain_pct": 121,
+   "dur": 11269
+  },
+  "SWTCH_57934828": {
+   "token": "SWTCH",
+   "addr": "0x12e5fdfa4dacb620dbd662a177f975b4d95ba230",
+   "start_block": 57934828,
+   "start_price": 3.060947855646173e-05,
+   "peak_block": 57938402,
+   "peak_price": 6.743815189889526e-05,
+   "gain_pct": 120,
+   "dur": 3574
+  },
+  "USDG_54642110": {
+   "token": "USDG",
+   "addr": "0xc20764d8cb3bb4d054c2c42aa5f59f97f60252d4",
+   "start_block": 54642110,
+   "start_price": 2.6584585480830027e-16,
+   "peak_block": 54643738,
+   "peak_price": 5.817767481148249e-16,
+   "gain_pct": 119,
+   "dur": 1628
+  },
+  "18932_14660156": {
+   "token": "18932",
+   "addr": "0xdaccbeaf0062e782472d7ad7d762c38e59c18932",
+   "start_block": 14660156,
+   "start_price": 4.82778018224954e-05,
+   "peak_block": 14672974,
+   "peak_price": 0.00010588533654679871,
+   "gain_pct": 119,
+   "dur": 12818
+  },
+  "KOFUKU_56688700": {
+   "token": "KOFUKU",
+   "addr": "0x69ed124e3d013b06e05aeef5e6b784ac4ab20197",
+   "start_block": 56688700,
+   "start_price": 4.472077796103848e-05,
+   "peak_block": 56704622,
+   "peak_price": 9.812352650979568e-05,
+   "gain_pct": 119,
+   "dur": 15922
+  },
+  "qINU_57703205": {
+   "token": "qINU",
+   "addr": "0x91d3005a582c2217cdf0f6db13be2f3a1725717c",
+   "start_block": 57703205,
+   "start_price": 37.85161654973004,
+   "peak_block": 57722550,
+   "peak_price": 82.77156042234354,
+   "gain_pct": 119,
+   "dur": 19345
+  },
+  "BLACKROCK_47478438": {
+   "token": "BLACKROCK",
+   "addr": "0x9de83d01bc3d0857435529d931679ba5dc31ddf4",
+   "start_block": 47478438,
+   "start_price": 0.00013661914301470876,
+   "peak_block": 47546270,
+   "peak_price": 0.00029865598710857846,
+   "gain_pct": 119,
+   "dur": 67832
+  },
+  "SPEDX_56932749": {
+   "token": "SPEDX",
+   "addr": "0xed234eb0549bc5fe7659f61a717670aacac1043c",
+   "start_block": 56932749,
+   "start_price": 1.7883534328530638e-05,
+   "peak_block": 56935941,
+   "peak_price": 3.892342386189181e-05,
+   "gain_pct": 118,
+   "dur": 3192
+  },
+  "BLENDR_57197430": {
+   "token": "BLENDR",
+   "addr": "0x8f54ee8b4edaea5c5eeea54048ea380e24d7d3e8",
+   "start_block": 57197430,
+   "start_price": 1.1800191684775033e-05,
+   "peak_block": 57204915,
+   "peak_price": 2.5684157292576384e-05,
+   "gain_pct": 118,
+   "dur": 7485
+  },
+  "XDESCI_57285600": {
+   "token": "XDESCI",
+   "addr": "0xf62a758c3baab84d7c781f78e6f6ecf3a19a3c3d",
+   "start_block": 57285600,
+   "start_price": 0.00011658486256077005,
+   "peak_block": 57287828,
+   "peak_price": 0.00025429509473494794,
+   "gain_pct": 118,
+   "dur": 2228
+  },
+  "USDUG_57630056": {
+   "token": "USDUG",
+   "addr": "0x21d3e040df57fc0ff59f8d9972131aa4af901060",
+   "start_block": 57630056,
+   "start_price": 9.4398189241852e-18,
+   "peak_block": 57649879,
+   "peak_price": 2.05963720933657e-17,
+   "gain_pct": 118,
+   "dur": 19823
+  },
+  "SAPIENS_57849072": {
+   "token": "SAPIENS",
+   "addr": "0x8fe9cf31dda8883b224bf14fea53d17f3e099ed6",
+   "start_block": 57849072,
+   "start_price": 7.648730385606276e-05,
+   "peak_block": 57855694,
+   "peak_price": 0.00016638473568808093,
+   "gain_pct": 118,
+   "dur": 6622
+  },
+  "DumbCrayonEater_58089487": {
+   "token": "DumbCrayonEater",
+   "addr": "0xbe55b472cd58d618e5024ade5f5585ad31afbf6c",
+   "start_block": 58089487,
+   "start_price": 5.140088536012195e-05,
+   "peak_block": 58090161,
+   "peak_price": 0.00011212250512456343,
+   "gain_pct": 118,
+   "dur": 674
+  },
+  "18932_49926120": {
+   "token": "18932",
+   "addr": "0xdaccbeaf0062e782472d7ad7d762c38e59c18932",
+   "start_block": 49926120,
+   "start_price": 5.396838587304409e-06,
+   "peak_block": 49933698,
+   "peak_price": 1.1735903649881989e-05,
+   "gain_pct": 117,
+   "dur": 7578
+  },
+  "WAZMI_56713256": {
+   "token": "WAZMI",
+   "addr": "0x239ef63cfd3123cf7dce559850768d0118bb44b5",
+   "start_block": 56713256,
+   "start_price": 6.193909212631156e-06,
+   "peak_block": 56713994,
+   "peak_price": 1.3419933649239269e-05,
+   "gain_pct": 117,
+   "dur": 738
+  },
+  "BOMB_54253291": {
+   "token": "BOMB",
+   "addr": "0x3a292281ceb20c09388d8f4d84c79866292fb93e",
+   "start_block": 54253291,
+   "start_price": 5.497044690110565e-18,
+   "peak_block": 54262334,
+   "peak_price": 1.1909355287149791e-17,
+   "gain_pct": 117,
+   "dur": 9043
+  },
+  "NASDANQ_27275651": {
+   "token": "NASDANQ",
+   "addr": "0x51fb76be80ab6daaa345d818f4e06441816b4fea",
+   "start_block": 27275651,
+   "start_price": 2.3308088581993213e-05,
+   "peak_block": 27283483,
+   "peak_price": 5.030196041779386e-05,
+   "gain_pct": 116,
+   "dur": 7832
+  },
+  "CREDITLINE_56153567": {
+   "token": "CREDITLINE",
+   "addr": "0x9eebc9d0162eab236ad4672caef8dba40dc06c24",
+   "start_block": 56153567,
+   "start_price": 2.7856564415558198e-05,
+   "peak_block": 56340637,
+   "peak_price": 6.017829223609096e-05,
+   "gain_pct": 116,
+   "dur": 187070
+  },
+  "BANKLESS_51082118": {
+   "token": "BANKLESS",
+   "addr": "0x5e8907a3f45d7b30be6addbab0312e46e5061614",
+   "start_block": 51082118,
+   "start_price": 0.00020503615227880496,
+   "peak_block": 51130218,
+   "peak_price": 0.0004435311544582914,
+   "gain_pct": 116,
+   "dur": 48100
+  },
+  "ROBINHOOD_53282174": {
+   "token": "ROBINHOOD",
+   "addr": "0x90a71817bda6dac8c3a28bbfd877b02d667ae2f9",
+   "start_block": 53282174,
+   "start_price": 9.566070112299542e-17,
+   "peak_block": 53476097,
+   "peak_price": 2.052048977126226e-16,
+   "gain_pct": 115,
+   "dur": 193923
+  },
+  "VC18Z_57089527": {
+   "token": "VC18Z",
+   "addr": "0x670231f7aea584cc192265357e391db6eb0adc63",
+   "start_block": 57089527,
+   "start_price": 0.00018371208054137386,
+   "peak_block": 57089813,
+   "peak_price": 0.0003949387470414165,
+   "gain_pct": 115,
+   "dur": 286
+  },
+  "VOCEM_56284870": {
+   "token": "VOCEM",
+   "addr": "0x3c9c8c50f78354fe3d2ecdcbe84769a46e9b5124",
+   "start_block": 56284870,
+   "start_price": 9.396755641521214e-06,
+   "peak_block": 56577235,
+   "peak_price": 2.0163523104193588e-05,
+   "gain_pct": 115,
+   "dur": 292365
+  },
+  "Navier_57505327": {
+   "token": "Navier",
+   "addr": "0x5963d3b9896bb4b57787fcd82087218a7e48cc43",
+   "start_block": 57505327,
+   "start_price": 4.7040131107923e-05,
+   "peak_block": 57521216,
+   "peak_price": 0.00010133067654479643,
+   "gain_pct": 115,
+   "dur": 15889
+  },
+  "DARK_57979293": {
+   "token": "DARK",
+   "addr": "0xebb4c5b97e4117e30ec82ce025e6f21dded05436",
+   "start_block": 57979293,
+   "start_price": 3.320926949646797e-05,
+   "peak_block": 58197303,
+   "peak_price": 7.145697836578855e-05,
+   "gain_pct": 115,
+   "dur": 218010
+  },
+  "SAFEHOUSE_57915981": {
+   "token": "SAFEHOUSE",
+   "addr": "0x98650ab3145285c10a40619402eaa025d277c659",
+   "start_block": 57915981,
+   "start_price": 2.30902596392366e-05,
+   "peak_block": 57925033,
+   "peak_price": 4.96618808612631e-05,
+   "gain_pct": 115,
+   "dur": 9052
+  },
+  "ROBINHOOD_44969894": {
+   "token": "ROBINHOOD",
+   "addr": "0x3529e5b86e8749c8487a11ddc239c412228a40cc",
+   "start_block": 44969894,
+   "start_price": 0.00011199534184295382,
+   "peak_block": 45250049,
+   "peak_price": 0.00023978174624381829,
+   "gain_pct": 114,
+   "dur": 280155
+  },
+  "TISM_55158185": {
+   "token": "TISM",
+   "addr": "0x5d8f2592ef798295bfd42484be16a7b30d1acc0e",
+   "start_block": 55158185,
+   "start_price": 5.5036314864158116e-05,
+   "peak_block": 55158652,
+   "peak_price": 0.00011769454849643057,
+   "gain_pct": 114,
+   "dur": 467
+  },
+  "GRAV_56764652": {
+   "token": "GRAV",
+   "addr": "0xcb7f25c0513c658b1510838d8bd63d56bd8ba2ca",
+   "start_block": 56764652,
+   "start_price": 4.6498373503064205e-05,
+   "peak_block": 56766869,
+   "peak_price": 9.972769542215565e-05,
+   "gain_pct": 114,
+   "dur": 2217
+  },
+  "HUSDP_56955479": {
+   "token": "HUSDP",
+   "addr": "0x753b0f74502d3d66c278a563cb04503154e6eb0d",
+   "start_block": 56955479,
+   "start_price": 6.229760409658859e-05,
+   "peak_block": 56959828,
+   "peak_price": 0.00013355701279560382,
+   "gain_pct": 114,
+   "dur": 4349
+  },
+  "PONSHIMI_57855215": {
+   "token": "PONSHIMI",
+   "addr": "0x0fb133f107fc5a3f3f94983c2a65b9b9d5f3092c",
+   "start_block": 57855215,
+   "start_price": 6.517451452699878e-05,
+   "peak_block": 57858416,
+   "peak_price": 0.00013937637807555096,
+   "gain_pct": 114,
+   "dur": 3201
+  },
+  "VIBECAT_57877450": {
+   "token": "VIBECAT",
+   "addr": "0x167ed0d522b2fa7414517c1f3362d322c62df296",
+   "start_block": 57877450,
+   "start_price": 5.630372708362481e-05,
+   "peak_block": 57886282,
+   "peak_price": 0.00012071390743987187,
+   "gain_pct": 114,
+   "dur": 8832
+  },
+  "pons_55102335": {
+   "token": "pons",
+   "addr": "0xe04b4d9a9e9a4136822f69879087070a697ee7c0",
+   "start_block": 55102335,
+   "start_price": 3.1715399548849256e-17,
+   "peak_block": 55115957,
+   "peak_price": 6.753815123231939e-17,
+   "gain_pct": 113,
+   "dur": 13622
+  },
+  "$CASHCATSLLC_47736470": {
+   "token": "$CASHCATSLLC",
+   "addr": "0x26fe0f73fb5ea558a2a67fd94198abbc078fc03e",
+   "start_block": 47736470,
+   "start_price": 4.425117782134157e-05,
+   "peak_block": 47742404,
+   "peak_price": 9.438462859211835e-05,
+   "gain_pct": 113,
+   "dur": 5934
+  },
+  "CREO_55128509": {
+   "token": "CREO",
+   "addr": "0xe612c939d82981f8e17ccac3b59c1084c2aa02bb",
+   "start_block": 55128509,
+   "start_price": 9.461958376301744e-05,
+   "peak_block": 55141043,
+   "peak_price": 0.0002013295783979189,
+   "gain_pct": 113,
+   "dur": 12534
+  },
+  "PARE_54078511": {
+   "token": "PARE",
+   "addr": "0x15d36b6a28d8327abc7afabf0f106ae2c9af5c4d",
+   "start_block": 54078511,
+   "start_price": 0.0017138449772619577,
+   "peak_block": 54378256,
+   "peak_price": 0.0036505134724291277,
+   "gain_pct": 113,
+   "dur": 299745
+  },
+  "CREDITLINE_55181211": {
+   "token": "CREDITLINE",
+   "addr": "0x9eebc9d0162eab236ad4672caef8dba40dc06c24",
+   "start_block": 55181211,
+   "start_price": 2.000899839546298e-05,
+   "peak_block": 55234499,
+   "peak_price": 4.258992196342562e-05,
+   "gain_pct": 113,
+   "dur": 53288
+  },
+  "HUSDP_56966194": {
+   "token": "HUSDP",
+   "addr": "0x753b0f74502d3d66c278a563cb04503154e6eb0d",
+   "start_block": 56966194,
+   "start_price": 6.0198319647534816e-05,
+   "peak_block": 56970392,
+   "peak_price": 0.00012812641298484267,
+   "gain_pct": 113,
+   "dur": 4198
+  },
+  "astro_57859426": {
+   "token": "astro",
+   "addr": "0x5d975754d9fc6a08b0d838adc85d8451e53cf1a4",
+   "start_block": 57859426,
+   "start_price": 8.911281453866538e-05,
+   "peak_block": 57880489,
+   "peak_price": 0.0001893780825089773,
+   "gain_pct": 113,
+   "dur": 21063
+  },
+  "FARM_58135088": {
+   "token": "FARM",
+   "addr": "0x0a839590e1ebd255bf6639646b4918974c1fae95",
+   "start_block": 58135088,
+   "start_price": 3.514815852960265e-05,
+   "peak_block": 58143742,
+   "peak_price": 7.489926434632124e-05,
+   "gain_pct": 113,
+   "dur": 8654
+  },
+  "MAD_58230031": {
+   "token": "MAD",
+   "addr": "0xb818ddfa44aad2157b0f7058aebcb52d4733d4c4",
+   "start_block": 58230031,
+   "start_price": 3.0091010272066337e-05,
+   "peak_block": 58245205,
+   "peak_price": 6.41696407535718e-05,
+   "gain_pct": 113,
+   "dur": 15174
+  },
+  "pons_55165449": {
+   "token": "pons",
+   "addr": "0xe04b4d9a9e9a4136822f69879087070a697ee7c0",
+   "start_block": 55165449,
+   "start_price": 6.056918581537882e-18,
+   "peak_block": 55207397,
+   "peak_price": 1.2823693807688446e-17,
+   "gain_pct": 112,
+   "dur": 41948
+  },
+  "NDFW_56906742": {
+   "token": "NDFW",
+   "addr": "0x769bf41470faef03fc9bb8d62d0f5abe46c3e46a",
+   "start_block": 56906742,
+   "start_price": 0.00015479251298282248,
+   "peak_block": 56907281,
+   "peak_price": 0.00032848845412797664,
+   "gain_pct": 112,
+   "dur": 539
+  },
+  "WHEEL_57355925": {
+   "token": "WHEEL",
+   "addr": "0x649792631ddbc52551fd765a17382b4d375b9b78",
+   "start_block": 57355925,
+   "start_price": 7.38379086776801e-05,
+   "peak_block": 57362633,
+   "peak_price": 0.00015637132790207174,
+   "gain_pct": 112,
+   "dur": 6708
+  },
+  "OTTER_57611225": {
+   "token": "OTTER",
+   "addr": "0x996fb12d7789eb33a2188a9f0ab53b18e89fe5c5",
+   "start_block": 57611225,
+   "start_price": 2.322730950568911e-05,
+   "peak_block": 57617842,
+   "peak_price": 4.9237658256303174e-05,
+   "gain_pct": 112,
+   "dur": 6617
+  },
+  "PEACHES_57619102": {
+   "token": "PEACHES",
+   "addr": "0x33f5929b6d963bb5f85dc97f97855ecffd62c8a0",
+   "start_block": 57619102,
+   "start_price": 2.82589353112942e-05,
+   "peak_block": 57619690,
+   "peak_price": 5.9930012709773084e-05,
+   "gain_pct": 112,
+   "dur": 588
+  },
+  "MADE_57980357": {
+   "token": "MADE",
+   "addr": "0x0ff26c1b81511eb3fe722f49934ab285884ea9a3",
+   "start_block": 57980357,
+   "start_price": 0.00023324164709480485,
+   "peak_block": 57981480,
+   "peak_price": 0.0004952880869953998,
+   "gain_pct": 112,
+   "dur": 1123
+  },
+  "USDG_54961822": {
+   "token": "USDG",
+   "addr": "0xc20764d8cb3bb4d054c2c42aa5f59f97f60252d4",
+   "start_block": 54961822,
+   "start_price": 1.393342395722547e-17,
+   "peak_block": 55182164,
+   "peak_price": 2.937986814287266e-17,
+   "gain_pct": 111,
+   "dur": 220342
+  },
+  "USDG_55816843": {
+   "token": "USDG",
+   "addr": "0xf052f9339afaba171724b3229a624db2a30eb115",
+   "start_block": 55816843,
+   "start_price": 1.9897716880644372e-17,
+   "peak_block": 56039704,
+   "peak_price": 4.194638959363465e-17,
+   "gain_pct": 111,
+   "dur": 222861
+  },
+  "ZZZ_54768202": {
+   "token": "ZZZ",
+   "addr": "0x7dbf38976f6d3b9c529e7d9484a71898b409ee6a",
+   "start_block": 54768202,
+   "start_price": 0.008640453873338193,
+   "peak_block": 55001377,
+   "peak_price": 0.018199017216000157,
+   "gain_pct": 111,
+   "dur": 233175
+  },
+  "Rynex_56910960": {
+   "token": "Rynex",
+   "addr": "0xcd71684fefc4f13414c25d02ae3f0650b2c4359c",
+   "start_block": 56910960,
+   "start_price": 5.223520519466667e-05,
+   "peak_block": 56917335,
+   "peak_price": 0.00011006900787956415,
+   "gain_pct": 111,
+   "dur": 6375
+  },
+  "BOXED_56106455": {
+   "token": "BOXED",
+   "addr": "0x76af8d3b40a0d7b5197935d0e84c14f7a3782e87",
+   "start_block": 56106455,
+   "start_price": 7.310520660243267e-06,
+   "peak_block": 56286846,
+   "peak_price": 1.542644021382494e-05,
+   "gain_pct": 111,
+   "dur": 180391
+  },
+  "HOODINU_57987228": {
+   "token": "HOODINU",
+   "addr": "0xcf5a2d4562162d06c19770a23e7a28ceefeccb57",
+   "start_block": 57987228,
+   "start_price": 1.1296485974171835e-05,
+   "peak_block": 58000628,
+   "peak_price": 2.3825699138539962e-05,
+   "gain_pct": 111,
+   "dur": 13400
+  },
+  "COIN_55071418": {
+   "token": "COIN",
+   "addr": "0x9395116762721d13c246f6b0a5c41bbb31777a8d",
+   "start_block": 55071418,
+   "start_price": 0.00014447093960021762,
+   "peak_block": 55078646,
+   "peak_price": 0.0003036407207131158,
+   "gain_pct": 110,
+   "dur": 7228
+  },
+  "TRIBUTE_53253728": {
+   "token": "TRIBUTE",
+   "addr": "0xd41a1dc8a42e429a66d6ac479e6f8ebf96d6eab0",
+   "start_block": 53253728,
+   "start_price": 2.7428923472522866e-05,
+   "peak_block": 53433389,
+   "peak_price": 5.7490022060606136e-05,
+   "gain_pct": 110,
+   "dur": 179661
+  },
+  "NASDANQ_27715756": {
+   "token": "NASDANQ",
+   "addr": "0x51fb76be80ab6daaa345d818f4e06441816b4fea",
+   "start_block": 27715756,
+   "start_price": 0.00017542857165675876,
+   "peak_block": 27732852,
+   "peak_price": 0.0003684014532300559,
+   "gain_pct": 110,
+   "dur": 17096
+  },
+  "WOOD_55038674": {
+   "token": "WOOD",
+   "addr": "0x6635c082c14b4206751600d96fe50428815c9fa9",
+   "start_block": 55038674,
+   "start_price": 0.00040107877895994003,
+   "peak_block": 55058067,
+   "peak_price": 0.0008396599767954591,
+   "gain_pct": 109,
+   "dur": 19393
+  },
+  "pons_55139746": {
+   "token": "pons",
+   "addr": "0xe04b4d9a9e9a4136822f69879087070a697ee7c0",
+   "start_block": 55139746,
+   "start_price": 1.448516404494921e-17,
+   "peak_block": 55149594,
+   "peak_price": 3.031454865689783e-17,
+   "gain_pct": 109,
+   "dur": 9848
+  },
+  "BILLY_55035724": {
+   "token": "BILLY",
+   "addr": "0xf441d39de6ef404376365f1f47eaefd4f29633b3",
+   "start_block": 55035724,
+   "start_price": 4.597797959382358e-05,
+   "peak_block": 55038625,
+   "peak_price": 9.611225527096755e-05,
+   "gain_pct": 109,
+   "dur": 2901
+  },
+  "SFH_57083257": {
+   "token": "SFH",
+   "addr": "0x1fade43e36e8ef7bc88672adf70f643d21511c38",
+   "start_block": 57083257,
+   "start_price": 4.0878888088718495e-05,
+   "peak_block": 57091488,
+   "peak_price": 8.541839939242937e-05,
+   "gain_pct": 109,
+   "dur": 8231
+  },
+  "SWEEP_57210998": {
+   "token": "SWEEP",
+   "addr": "0x73f6bf7df8450bc7de6d8aa20754dc8678fdaed8",
+   "start_block": 57210998,
+   "start_price": 3.893685077878927e-05,
+   "peak_block": 57211968,
+   "peak_price": 8.120273228013368e-05,
+   "gain_pct": 109,
+   "dur": 970
+  },
+  "AZEON_55138842": {
+   "token": "AZEON",
+   "addr": "0x8f46ac3ffb126fb5e5c7b7df31a76b2f338beb7e",
+   "start_block": 55138842,
+   "start_price": 1.2096203357357692e-05,
+   "peak_block": 55152982,
+   "peak_price": 2.519541277841347e-05,
+   "gain_pct": 108,
+   "dur": 14140
+  },
+  "SIFT_57100630": {
+   "token": "SIFT",
+   "addr": "0x0c794b5260729b9c56d5115d492b21641bdc9c41",
+   "start_block": 57100630,
+   "start_price": 1.9752403688338657e-05,
+   "peak_block": 57101077,
+   "peak_price": 4.1147278244929766e-05,
+   "gain_pct": 108,
+   "dur": 447
+  },
+  "neuron_57346959": {
+   "token": "neuron",
+   "addr": "0xf8c6974a3c1820f87016db03e43a2cbf10f585a6",
+   "start_block": 57346959,
+   "start_price": 4.0815033370074e-05,
+   "peak_block": 57347368,
+   "peak_price": 8.473334227680818e-05,
+   "gain_pct": 108,
+   "dur": 409
+  },
+  "OTTER_57625080": {
+   "token": "OTTER",
+   "addr": "0x996fb12d7789eb33a2188a9f0ab53b18e89fe5c5",
+   "start_block": 57625080,
+   "start_price": 8.791780069064108e-06,
+   "peak_block": 57634734,
+   "peak_price": 1.8318626397509363e-05,
+   "gain_pct": 108,
+   "dur": 9654
+  },
+  "qINU_57690619": {
+   "token": "qINU",
+   "addr": "0x91d3005a582c2217cdf0f6db13be2f3a1725717c",
+   "start_block": 57690619,
+   "start_price": 86.73215288774519,
+   "peak_block": 57694914,
+   "peak_price": 180.5451150905155,
+   "gain_pct": 108,
+   "dur": 4295
+  },
+  "HOODCHAN_58270904": {
+   "token": "HOODCHAN",
+   "addr": "0xe43341894e678efd52621a511afff8c60016fccc",
+   "start_block": 58270904,
+   "start_price": 8.409342986909679e-17,
+   "peak_block": 58290063,
+   "peak_price": 1.74711257640284e-16,
+   "gain_pct": 108,
+   "dur": 19159
+  },
+  "SWTCH_57989212": {
+   "token": "SWTCH",
+   "addr": "0x12e5fdfa4dacb620dbd662a177f975b4d95ba230",
+   "start_block": 57989212,
+   "start_price": 2.8345451957312277e-05,
+   "peak_block": 58065901,
+   "peak_price": 5.8866000386241036e-05,
+   "gain_pct": 108,
+   "dur": 76689
+  },
+  "LKN_54990497": {
+   "token": "LKN",
+   "addr": "0x0d6bbdd979ef4802567425ae4ab352edaa468f1d",
+   "start_block": 54990497,
+   "start_price": 6.40224718249586e-05,
+   "peak_block": 55009616,
+   "peak_price": 0.00013252193022616465,
+   "gain_pct": 107,
+   "dur": 19119
+  },
+  "DIME_56789487": {
+   "token": "DIME",
+   "addr": "0x750e3e310ffe27b21fad96d13168e19309b6ab9d",
+   "start_block": 56789487,
+   "start_price": 0.0001555689039953889,
+   "peak_block": 56794049,
+   "peak_price": 0.0003212612326607641,
+   "gain_pct": 107,
+   "dur": 4562
+  },
+  "HoodPad_56782752": {
+   "token": "HoodPad",
+   "addr": "0xcb5990596341d0260522cddf7a0a0e8c8187c62d",
+   "start_block": 56782752,
+   "start_price": 1.2666838625846085e-05,
+   "peak_block": 56789240,
+   "peak_price": 2.621656169907691e-05,
+   "gain_pct": 107,
+   "dur": 6488
+  },
+  "Tezzy_57038565": {
+   "token": "Tezzy",
+   "addr": "0xfc8505d9755e5824e7b11a1b9258d3925af114e3",
+   "start_block": 57038565,
+   "start_price": 0.0002347297464302886,
+   "peak_block": 57071791,
+   "peak_price": 0.00048550664494156095,
+   "gain_pct": 107,
+   "dur": 33226
+  },
+  "MANTA_57046630": {
+   "token": "MANTA",
+   "addr": "0x7bf33e89d82842c1505e3953669379e6330c5a95",
+   "start_block": 57046630,
+   "start_price": 6.190639822461791e-05,
+   "peak_block": 57047041,
+   "peak_price": 0.00012822271061481663,
+   "gain_pct": 107,
+   "dur": 411
+  },
+  "stockbook_57095357": {
+   "token": "stockbook",
+   "addr": "0xd50bcae5e17080c0e0c5e856feace68a6442f2a3",
+   "start_block": 57095357,
+   "start_price": 6.594637667191808e-06,
+   "peak_block": 57095937,
+   "peak_price": 1.3658179481784244e-05,
+   "gain_pct": 107,
+   "dur": 580
+  },
+  "PONCAT_57830687": {
+   "token": "PONCAT",
+   "addr": "0x886d84051b933a34fa92692461615bede617f57a",
+   "start_block": 57830687,
+   "start_price": 6.0232991440418196e-05,
+   "peak_block": 57852210,
+   "peak_price": 0.00012464591418209664,
+   "gain_pct": 107,
+   "dur": 21523
+  },
+  "ROBINHOOD_52793108": {
+   "token": "ROBINHOOD",
+   "addr": "0x90a71817bda6dac8c3a28bbfd877b02d667ae2f9",
+   "start_block": 52793108,
+   "start_price": 4.847311650818413e-16,
+   "peak_block": 52805680,
+   "peak_price": 9.996026602076464e-16,
+   "gain_pct": 106,
+   "dur": 12572
+  },
+  "CREO_55175703": {
+   "token": "CREO",
+   "addr": "0xe612c939d82981f8e17ccac3b59c1084c2aa02bb",
+   "start_block": 55175703,
+   "start_price": 5.0829710529519455e-05,
+   "peak_block": 55180939,
+   "peak_price": 0.00010453811457975299,
+   "gain_pct": 106,
+   "dur": 5236
+  },
+  "HOOKR_52870918": {
+   "token": "HOOKR",
+   "addr": "0x18e674231a58c239dc7daedcffe15ec3a24cff5c",
+   "start_block": 52870918,
+   "start_price": 0.008141958095025324,
+   "peak_block": 53084260,
+   "peak_price": 0.016750966792588654,
+   "gain_pct": 106,
+   "dur": 213342
+  },
+  "ZZZ_55425657": {
+   "token": "ZZZ",
+   "addr": "0x7dbf38976f6d3b9c529e7d9484a71898b409ee6a",
+   "start_block": 55425657,
+   "start_price": 0.015409259612198092,
+   "peak_block": 55634641,
+   "peak_price": 0.03168417752221673,
+   "gain_pct": 106,
+   "dur": 208984
+  },
+  "RENT_56754309": {
+   "token": "RENT",
+   "addr": "0x685c1436884b201edaf9833c5d12178bc0b2e09e",
+   "start_block": 56754309,
+   "start_price": 4.145538080743512e-17,
+   "peak_block": 56780340,
+   "peak_price": 8.559691309214477e-17,
+   "gain_pct": 106,
+   "dur": 26031
+  },
+  "cyberbeer_56664184": {
+   "token": "cyberbeer",
+   "addr": "0xd97460101c3aad03a0e69e7a82587aa4cf1dacb8",
+   "start_block": 56664184,
+   "start_price": 7.941352064037317e-05,
+   "peak_block": 56669824,
+   "peak_price": 0.0001633307878297835,
+   "gain_pct": 106,
+   "dur": 5640
+  },
+  "smoll_56597778": {
+   "token": "smoll",
+   "addr": "0x05ebe6ed9ed83adb08e0dd6ab6199a638dbba6c8",
+   "start_block": 56597778,
+   "start_price": 1.1097556570664482e-05,
+   "peak_block": 56598334,
+   "peak_price": 2.28751261590878e-05,
+   "gain_pct": 106,
+   "dur": 556
+  },
+  "PLINTH_57052288": {
+   "token": "PLINTH",
+   "addr": "0x39b6c478d38116143251497a9399cc5ccc5b4c31",
+   "start_block": 57052288,
+   "start_price": 4.0682741966039045e-05,
+   "peak_block": 57052931,
+   "peak_price": 8.382266875253452e-05,
+   "gain_pct": 106,
+   "dur": 643
+  },
+  "Navier_57523349": {
+   "token": "Navier",
+   "addr": "0x5963d3b9896bb4b57787fcd82087218a7e48cc43",
+   "start_block": 57523349,
+   "start_price": 4.5799293111674085e-06,
+   "peak_block": 57525146,
+   "peak_price": 9.423659539608592e-06,
+   "gain_pct": 106,
+   "dur": 1797
+  },
+  "BZZ_57761379": {
+   "token": "BZZ",
+   "addr": "0xb356b45e6c9243eb81893d72059fb22c9977a0ba",
+   "start_block": 57761379,
+   "start_price": 2.7931131250795907e-05,
+   "peak_block": 57762114,
+   "peak_price": 5.751113593784475e-05,
+   "gain_pct": 106,
+   "dur": 735
+  },
+  "CRYPTOHOOD_57776155": {
+   "token": "CRYPTOHOOD",
+   "addr": "0xe6034f8a7773c890c0fa20042745e4857b1c7851",
+   "start_block": 57776155,
+   "start_price": 7.754656450875526e-05,
+   "peak_block": 57778255,
+   "peak_price": 0.00015949252283536987,
+   "gain_pct": 106,
+   "dur": 2100
+  },
+  "AdStocks_57917408": {
+   "token": "AdStocks",
+   "addr": "0x0f2a36ffe592908558a07326a65c04fb56960abe",
+   "start_block": 57917408,
+   "start_price": 4.496546128271234e-05,
+   "peak_block": 57918482,
+   "peak_price": 9.282150894527885e-05,
+   "gain_pct": 106,
+   "dur": 1074
+  },
+  "RECEIPT_58130316": {
+   "token": "RECEIPT",
+   "addr": "0xb97d9e5ad6244d27588fe0a624a8c78e512934ee",
+   "start_block": 58130316,
+   "start_price": 0.001027147109031915,
+   "peak_block": 58245147,
+   "peak_price": 0.0021121966426356424,
+   "gain_pct": 106,
+   "dur": 114831
+  },
+  "pointfarmcap_58097542": {
+   "token": "pointfarmcap",
+   "addr": "0x0d79109924bac69b96f31942a3fffd38a1683462",
+   "start_block": 58097542,
+   "start_price": 1.6605787119167595e-05,
+   "peak_block": 58152076,
+   "peak_price": 3.414945040579818e-05,
+   "gain_pct": 106,
+   "dur": 54534
+  },
+  "PONSI_50399413": {
+   "token": "PONSI",
+   "addr": "0x40df1828c5aec639f9c0a0181622d2b650843e35",
+   "start_block": 50399413,
+   "start_price": 8.568499253846774e-06,
+   "peak_block": 50512522,
+   "peak_price": 1.7591627003691105e-05,
+   "gain_pct": 105,
+   "dur": 113109
+  },
+  "HOOD_52763316": {
+   "token": "HOOD",
+   "addr": "0x45c83b37c5baf4dad26f3845c28295e2de010962",
+   "start_block": 52763316,
+   "start_price": 0.00012894468975438355,
+   "peak_block": 53004776,
+   "peak_price": 0.00026457293178677407,
+   "gain_pct": 105,
+   "dur": 241460
+  },
+  "PCAT_55056032": {
+   "token": "PCAT",
+   "addr": "0x14623dd0784cb5c484f8935c7c218d110332b538",
+   "start_block": 55056032,
+   "start_price": 9.654422272692633e-05,
+   "peak_block": 55263484,
+   "peak_price": 0.0001976482894276179,
+   "gain_pct": 105,
+   "dur": 207452
+  },
+  "HOOKR_50530777": {
+   "token": "HOOKR",
+   "addr": "0x18e674231a58c239dc7daedcffe15ec3a24cff5c",
+   "start_block": 50530777,
+   "start_price": 0.009966590618966403,
+   "peak_block": 50749246,
+   "peak_price": 0.020427390919267225,
+   "gain_pct": 105,
+   "dur": 218469
+  },
+  "PROLOGUE_53575127": {
+   "token": "PROLOGUE",
+   "addr": "0xb9972ca7188e511174947e3936a5315ac7073277",
+   "start_block": 53575127,
+   "start_price": 0.009500784471509639,
+   "peak_block": 53821974,
+   "peak_price": 0.01946750031820249,
+   "gain_pct": 105,
+   "dur": 246847
+  },
+  "PARE_56229598": {
+   "token": "PARE",
+   "addr": "0x15d36b6a28d8327abc7afabf0f106ae2c9af5c4d",
+   "start_block": 56229598,
+   "start_price": 0.008806883150603956,
+   "peak_block": 56436622,
+   "peak_price": 0.018017391087952334,
+   "gain_pct": 105,
+   "dur": 207024
+  },
+  "DTF_55663849": {
+   "token": "DTF",
+   "addr": "0xee5576fa1bcaa380e591d01245f406f3f384eb01",
+   "start_block": 55663849,
+   "start_price": 0.004931943678203823,
+   "peak_block": 55936419,
+   "peak_price": 0.010091418596658016,
+   "gain_pct": 105,
+   "dur": 272570
+  },
+  "smoll_56604569": {
+   "token": "smoll",
+   "addr": "0x05ebe6ed9ed83adb08e0dd6ab6199a638dbba6c8",
+   "start_block": 56604569,
+   "start_price": 9.884136346388976e-06,
+   "peak_block": 56768614,
+   "peak_price": 2.024730529459976e-05,
+   "gain_pct": 105,
+   "dur": 164045
+  },
+  "CREDITLINE_53818108": {
+   "token": "CREDITLINE",
+   "addr": "0x9eebc9d0162eab236ad4672caef8dba40dc06c24",
+   "start_block": 53818108,
+   "start_price": 2.8546088568255863e-05,
+   "peak_block": 53821515,
+   "peak_price": 5.845436624374273e-05,
+   "gain_pct": 105,
+   "dur": 3407
+  },
+  "O1BOT_57059819": {
+   "token": "O1BOT",
+   "addr": "0xf7d77243fbd0413a6528edc275b09d31c25cb201",
+   "start_block": 57059819,
+   "start_price": 5.4647691423075234e-05,
+   "peak_block": 57062202,
+   "peak_price": 0.00011227158077660054,
+   "gain_pct": 105,
+   "dur": 2383
+  },
+  "cyberbeer_57397086": {
+   "token": "cyberbeer",
+   "addr": "0x901a8fd14283c827343d679db5a650ab36cc4434",
+   "start_block": 57397086,
+   "start_price": 6.30164510442387e-05,
+   "peak_block": 57405114,
+   "peak_price": 0.00012917272635396798,
+   "gain_pct": 105,
+   "dur": 8028
+  },
+  "neuron_57346442": {
+   "token": "neuron",
+   "addr": "0xf8c6974a3c1820f87016db03e43a2cbf10f585a6",
+   "start_block": 57346442,
+   "start_price": 4.631840468673262e-05,
+   "peak_block": 57346748,
+   "peak_price": 9.484703022455025e-05,
+   "gain_pct": 105,
+   "dur": 306
+  },
+  "VOCEM_56108866": {
+   "token": "VOCEM",
+   "addr": "0x3c9c8c50f78354fe3d2ecdcbe84769a46e9b5124",
+   "start_block": 56108866,
+   "start_price": 3.981024202765994e-05,
+   "peak_block": 56115852,
+   "peak_price": 8.153947200482533e-05,
+   "gain_pct": 105,
+   "dur": 6986
+  },
+  "Navier_57521488": {
+   "token": "Navier",
+   "addr": "0x5963d3b9896bb4b57787fcd82087218a7e48cc43",
+   "start_block": 57521488,
+   "start_price": 1.5376945165884428e-05,
+   "peak_block": 57521856,
+   "peak_price": 3.1515275285112975e-05,
+   "gain_pct": 105,
+   "dur": 368
+  },
+  "TRADOOR_57872281": {
+   "token": "TRADOOR",
+   "addr": "0xb47efcc461d3cd6b270daf15388a77a3fae64ad1",
+   "start_block": 57872281,
+   "start_price": 0.0002354535090387667,
+   "peak_block": 57923937,
+   "peak_price": 0.00048351969712992813,
+   "gain_pct": 105,
+   "dur": 51656
+  },
+  "PAYGENT_57967340": {
+   "token": "PAYGENT",
+   "addr": "0x6a828e4c2b5a0648de3039ceb793dae12863fdad",
+   "start_block": 57967340,
+   "start_price": 0.047658601424156156,
+   "peak_block": 57984427,
+   "peak_price": 0.09755061280399624,
+   "gain_pct": 105,
+   "dur": 17087
+  },
+  "MADE_57984572": {
+   "token": "MADE",
+   "addr": "0x0ff26c1b81511eb3fe722f49934ab285884ea9a3",
+   "start_block": 57984572,
+   "start_price": 0.00022270198065561531,
+   "peak_block": 57986748,
+   "peak_price": 0.00045593695490093853,
+   "gain_pct": 105,
+   "dur": 2176
+  },
+  "unipcs_58092905": {
+   "token": "unipcs",
+   "addr": "0x326722c4dcf82a6cd35a354fa65449eb00fe364a",
+   "start_block": 58092905,
+   "start_price": 0.00016643905102957704,
+   "peak_block": 58095112,
+   "peak_price": 0.00034077416290476527,
+   "gain_pct": 105,
+   "dur": 2207
+  },
+  "FARM_58121535": {
+   "token": "FARM",
+   "addr": "0x0a839590e1ebd255bf6639646b4918974c1fae95",
+   "start_block": 58121535,
+   "start_price": 6.0823618870729494e-05,
+   "peak_block": 58124229,
+   "peak_price": 0.00012453418822932192,
+   "gain_pct": 105,
+   "dur": 2694
+  },
+  "PCAT_20682458": {
+   "token": "PCAT",
+   "addr": "0x14623dd0784cb5c484f8935c7c218d110332b538",
+   "start_block": 20682458,
+   "start_price": 0.00016753174048578245,
+   "peak_block": 20685108,
+   "peak_price": 0.0003416156667511479,
+   "gain_pct": 104,
+   "dur": 2650
+  },
+  "BAG_50168568": {
+   "token": "BAG",
+   "addr": "0x616bcd920e1e1f354750bbaf2fb3b3fa3b4aae16",
+   "start_block": 50168568,
+   "start_price": 6.244553397611925e-05,
+   "peak_block": 50454870,
+   "peak_price": 0.00012715833395241492,
+   "gain_pct": 104,
+   "dur": 286302
+  },
+  "STATICS_50097465": {
+   "token": "STATICS",
+   "addr": "0x2d8d6f4a93acd7a916a5a654ec8b690ba3b3eadd",
+   "start_block": 50097465,
+   "start_price": 0.02097004937284988,
+   "peak_block": 50375597,
+   "peak_price": 0.04278594103498287,
+   "gain_pct": 104,
+   "dur": 278132
+  },
+  "ZZZ_55023755": {
+   "token": "ZZZ",
+   "addr": "0x7dbf38976f6d3b9c529e7d9484a71898b409ee6a",
+   "start_block": 55023755,
+   "start_price": 0.012364275475030564,
+   "peak_block": 55185109,
+   "peak_price": 0.02521398261646826,
+   "gain_pct": 104,
+   "dur": 161354
+  },
+  "PENNY_56776649": {
+   "token": "PENNY",
+   "addr": "0x3d7587686ee3412f9546d566ddf108a29df47991",
+   "start_block": 56776649,
+   "start_price": 3.994207355953373e-05,
+   "peak_block": 56782702,
+   "peak_price": 8.131227157229662e-05,
+   "gain_pct": 104,
+   "dur": 6053
+  },
+  "HUSDP_57030752": {
+   "token": "HUSDP",
+   "addr": "0x753b0f74502d3d66c278a563cb04503154e6eb0d",
+   "start_block": 57030752,
+   "start_price": 2.1936708643852333e-05,
+   "peak_block": 57034762,
+   "peak_price": 4.4786517601033026e-05,
+   "gain_pct": 104,
+   "dur": 4010
+  },
+  "STORIES_57100356": {
+   "token": "STORIES",
+   "addr": "0x068633ec35b8ece5b3371036ae3c909b1e51430a",
+   "start_block": 57100356,
+   "start_price": 4.4016480152114974e-05,
+   "peak_block": 57104626,
+   "peak_price": 8.997907785734847e-05,
+   "gain_pct": 104,
+   "dur": 4270
+  },
+  "SFH_57081822": {
+   "token": "SFH",
+   "addr": "0x1fade43e36e8ef7bc88672adf70f643d21511c38",
+   "start_block": 57081822,
+   "start_price": 5.315297474666666e-05,
+   "peak_block": 57082423,
+   "peak_price": 0.00010844088332537319,
+   "gain_pct": 104,
+   "dur": 601
+  },
+  "PINK_57179373": {
+   "token": "PINK",
+   "addr": "0xbc9cc4b93a08b2dfba87067a9c53e713db3314ce",
+   "start_block": 57179373,
+   "start_price": 0.0008908671309269428,
+   "peak_block": 57180786,
+   "peak_price": 0.0018159716155287426,
+   "gain_pct": 104,
+   "dur": 1413
+  },
+  "HARVEST_57206454": {
+   "token": "HARVEST",
+   "addr": "0x1b82111f2d7049d99960cedbfe74ad2503763932",
+   "start_block": 57206454,
+   "start_price": 6.841819024002464e-06,
+   "peak_block": 57213458,
+   "peak_price": 1.3970816790941565e-05,
+   "gain_pct": 104,
+   "dur": 7004
+  },
+  "XDESCI_57291478": {
+   "token": "XDESCI",
+   "addr": "0xf62a758c3baab84d7c781f78e6f6ecf3a19a3c3d",
+   "start_block": 57291478,
+   "start_price": 6.455955288547378e-05,
+   "peak_block": 57299838,
+   "peak_price": 0.00013148906731101049,
+   "gain_pct": 104,
+   "dur": 8360
+  },
+  "CONTRA_57712665": {
+   "token": "CONTRA",
+   "addr": "0x3acdde62ea42fcc43ebf4b85362cc7ff4fdfe439",
+   "start_block": 57712665,
+   "start_price": 2.4740468620206195e-05,
+   "peak_block": 57717658,
+   "peak_price": 5.0452464515642115e-05,
+   "gain_pct": 104,
+   "dur": 4993
+  },
+  "CHAOS_57737154": {
+   "token": "CHAOS",
+   "addr": "0x04d6f2d2b21d77662c2848651b676f7177455928",
+   "start_block": 57737154,
+   "start_price": 1.7051015343133092e-05,
+   "peak_block": 57744894,
+   "peak_price": 3.4772939534900236e-05,
+   "gain_pct": 104,
+   "dur": 7740
+  },
+  "NGRAM_57993896": {
+   "token": "NGRAM",
+   "addr": "0x11ce7a5a895b98300e901d2f8764437cc782db96",
+   "start_block": 57993896,
+   "start_price": 0.00026096931609029223,
+   "peak_block": 57997291,
+   "peak_price": 0.0005322315096860563,
+   "gain_pct": 104,
+   "dur": 3395
+  },
+  "HDORCL_57991202": {
+   "token": "HDORCL",
+   "addr": "0x6bce0ffa015e6cf8430c417d6d8ea5e03074bb8d",
+   "start_block": 57991202,
+   "start_price": 3.0228260876483575e-06,
+   "peak_block": 58000064,
+   "peak_price": 6.168382680370997e-06,
+   "gain_pct": 104,
+   "dur": 8862
+  },
+  "CRUMBS_58106030": {
+   "token": "CRUMBS",
+   "addr": "0x80baa4b3bfac6f4978700df824b1b3d98e889136",
+   "start_block": 58106030,
+   "start_price": 0.002589748950716753,
+   "peak_block": 58156007,
+   "peak_price": 0.005272301258684375,
+   "gain_pct": 104,
+   "dur": 49977
+  },
+  "WHACKD_58101291": {
+   "token": "WHACKD",
+   "addr": "0xf2c8710b0d67798be20817cfe44a613c3f3a3275",
+   "start_block": 58101291,
+   "start_price": 6.437375765626275e-05,
+   "peak_block": 58111121,
+   "peak_price": 0.0001316207122980092,
+   "gain_pct": 104,
+   "dur": 9830
+  },
+  "XHOOD_58231577": {
+   "token": "XHOOD",
+   "addr": "0xd6f2939e9acc2e38a3b166c465258deecf6136e0",
+   "start_block": 58231577,
+   "start_price": 8.490205177876052e-06,
+   "peak_block": 58241655,
+   "peak_price": 1.734496520938484e-05,
+   "gain_pct": 104,
+   "dur": 10078
+  },
+  "BROTHERHOOD_55112104": {
+   "token": "BROTHERHOOD",
+   "addr": "0x6ee1915a26999f29bc7822419748442379883ea4",
+   "start_block": 55112104,
+   "start_price": 6.566657668130412e-17,
+   "peak_block": 55284677,
+   "peak_price": 1.3314443460000157e-16,
+   "gain_pct": 103,
+   "dur": 172573
+  },
+  "ROBINHOOD_52856625": {
+   "token": "ROBINHOOD",
+   "addr": "0x90a71817bda6dac8c3a28bbfd877b02d667ae2f9",
+   "start_block": 52856625,
+   "start_price": 2.653226979444452e-16,
+   "peak_block": 52865678,
+   "peak_price": 5.39543601815294e-16,
+   "gain_pct": 103,
+   "dur": 9053
+  },
+  "USDG_24670315": {
+   "token": "USDG",
+   "addr": "0xf052f9339afaba171724b3229a624db2a30eb115",
+   "start_block": 24670315,
+   "start_price": 2.2766565084314274e-17,
+   "peak_block": 24679800,
+   "peak_price": 4.621697131701176e-17,
+   "gain_pct": 103,
+   "dur": 9485
+  },
+  "HOOKDAQ_55352330": {
+   "token": "HOOKDAQ",
+   "addr": "0x15eae4a2526d109408c7f919e4bb592d68c42908",
+   "start_block": 55352330,
+   "start_price": 6.79194377441671e-05,
+   "peak_block": 55624793,
+   "peak_price": 0.00013791606755390938,
+   "gain_pct": 103,
+   "dur": 272463
+  },
+  "PROLOGUE_52870552": {
+   "token": "PROLOGUE",
+   "addr": "0xb9972ca7188e511174947e3936a5315ac7073277",
+   "start_block": 52870552,
+   "start_price": 0.006420346484808062,
+   "peak_block": 52964874,
+   "peak_price": 0.013024535925412572,
+   "gain_pct": 103,
+   "dur": 94322
+  },
+  "RWAPACT_54996174": {
+   "token": "RWAPACT",
+   "addr": "0x4b1b3cb23e1cd1eb03eff3123b6ccd698629cd65",
+   "start_block": 54996174,
+   "start_price": 4.0423694189010436e-05,
+   "peak_block": 54998290,
+   "peak_price": 8.208273977306918e-05,
+   "gain_pct": 103,
+   "dur": 2116
+  },
+  "PENGUIN_56622117": {
+   "token": "PENGUIN",
+   "addr": "0xe2ec718dbbb81d0a50bdf0d21342e34162b11415",
+   "start_block": 56622117,
+   "start_price": 5.758953272796728e-05,
+   "peak_block": 56907373,
+   "peak_price": 0.00011718080470123357,
+   "gain_pct": 103,
+   "dur": 285256
+  },
+  "VECTOR_56964617": {
+   "token": "VECTOR",
+   "addr": "0x574778d38e761728e6e599b5dac8f3c0d60497dd",
+   "start_block": 56964617,
+   "start_price": 4.1682436608414094e-05,
+   "peak_block": 56965210,
+   "peak_price": 8.47399556743404e-05,
+   "gain_pct": 103,
+   "dur": 593
+  },
+  "SFH_57108868": {
+   "token": "SFH",
+   "addr": "0x1fade43e36e8ef7bc88672adf70f643d21511c38",
+   "start_block": 57108868,
+   "start_price": 2.2539057225284165e-05,
+   "peak_block": 57121250,
+   "peak_price": 4.57055933336259e-05,
+   "gain_pct": 103,
+   "dur": 12382
+  },
+  "BANKLESS_56063706": {
+   "token": "BANKLESS",
+   "addr": "0x5e8907a3f45d7b30be6addbab0312e46e5061614",
+   "start_block": 56063706,
+   "start_price": 0.00018550448659095768,
+   "peak_block": 56230630,
+   "peak_price": 0.0003770519359884333,
+   "gain_pct": 103,
+   "dur": 166924
+  },
+  "HARVEST_57190935": {
+   "token": "HARVEST",
+   "addr": "0x1b82111f2d7049d99960cedbfe74ad2503763932",
+   "start_block": 57190935,
+   "start_price": 5.1992078913920354e-05,
+   "peak_block": 57194674,
+   "peak_price": 0.00010546727309430097,
+   "gain_pct": 103,
+   "dur": 3739
+  },
+  "BAG_57250367": {
+   "token": "BAG",
+   "addr": "0x792ff19204ef6c756b4d8efe2441d050f5ece818",
+   "start_block": 57250367,
+   "start_price": 2.0301187698946898e-05,
+   "peak_block": 57349137,
+   "peak_price": 4.129965195507448e-05,
+   "gain_pct": 103,
+   "dur": 98770
+  },
+  "RELL_57601321": {
+   "token": "RELL",
+   "addr": "0x9945e4165db9066bbd8bdddd3aa272e4c1f5be96",
+   "start_block": 57601321,
+   "start_price": 2.459266007598928e-05,
+   "peak_block": 57605189,
+   "peak_price": 4.989331609266466e-05,
+   "gain_pct": 103,
+   "dur": 3868
+  },
+  "PEACHES_57625322": {
+   "token": "PEACHES",
+   "addr": "0x33f5929b6d963bb5f85dc97f97855ecffd62c8a0",
+   "start_block": 57625322,
+   "start_price": 9.873641530865291e-06,
+   "peak_block": 57630371,
+   "peak_price": 2.0030974725457936e-05,
+   "gain_pct": 103,
+   "dur": 5049
+  },
+  "stufless_57694817": {
+   "token": "stufless",
+   "addr": "0x1d91b76d674034c97e8a62a6fcdfb896ef4195cd",
+   "start_block": 57694817,
+   "start_price": 8.369194609447496e-06,
+   "peak_block": 57696008,
+   "peak_price": 1.695939788260489e-05,
+   "gain_pct": 103,
+   "dur": 1191
+  },
+  "SOCIAL_57798743": {
+   "token": "SOCIAL",
+   "addr": "0x5a78c818f4a91cf871a9a85ff4b84af9912bf3c3",
+   "start_block": 57798743,
+   "start_price": 4.006397042049543e-05,
+   "peak_block": 57857926,
+   "peak_price": 8.131961988508394e-05,
+   "gain_pct": 103,
+   "dur": 59183
+  },
+  "LOOT_57926714": {
+   "token": "LOOT",
+   "addr": "0x1abc0be1b77dc9b8cf057ebee337d630bb22de4e",
+   "start_block": 57926714,
+   "start_price": 8.666202338920933e-05,
+   "peak_block": 57930404,
+   "peak_price": 0.00017579187656153292,
+   "gain_pct": 103,
+   "dur": 3690
+  },
+  "PBALL_58061932": {
+   "token": "PBALL",
+   "addr": "0x7dcd62f730ead94ddaa72d2d9ad98015a46d7c44",
+   "start_block": 58061932,
+   "start_price": 3.093244478510034e-05,
+   "peak_block": 58076144,
+   "peak_price": 6.276252172055714e-05,
+   "gain_pct": 103,
+   "dur": 14212
+  },
+  "unipcs_58098391": {
+   "token": "unipcs",
+   "addr": "0x326722c4dcf82a6cd35a354fa65449eb00fe364a",
+   "start_block": 58098391,
+   "start_price": 6.357581171787777e-05,
+   "peak_block": 58098867,
+   "peak_price": 0.00012895264936255426,
+   "gain_pct": 103,
+   "dur": 476
+  },
+  "LOT_58196922": {
+   "token": "LOT",
+   "addr": "0x7410c0c0b1cbd77af45b05d92263427cc902129f",
+   "start_block": 58196922,
+   "start_price": 2.89822486771833e-05,
+   "peak_block": 58199968,
+   "peak_price": 5.877510917793206e-05,
+   "gain_pct": 103,
+   "dur": 3046
+  },
+  "ROBINHOOD_52947460": {
+   "token": "ROBINHOOD",
+   "addr": "0x90a71817bda6dac8c3a28bbfd877b02d667ae2f9",
+   "start_block": 52947460,
+   "start_price": 1.7144598898291889e-16,
+   "peak_block": 52966543,
+   "peak_price": 3.4683713042183874e-16,
+   "gain_pct": 102,
+   "dur": 19083
+  },
+  "USDG_54658170": {
+   "token": "USDG",
+   "addr": "0xc20764d8cb3bb4d054c2c42aa5f59f97f60252d4",
+   "start_block": 54658170,
+   "start_price": 8.409595145969639e-17,
+   "peak_block": 54668028,
+   "peak_price": 1.6954128027621196e-16,
+   "gain_pct": 102,
+   "dur": 9858
+  },
+  "ROBINHOOD_54151443": {
+   "token": "ROBINHOOD",
+   "addr": "0x5d8c7212a3d5d2c22d3849a7a7918c6a61c31961",
+   "start_block": 54151443,
+   "start_price": 1.0935230505514373e-17,
+   "peak_block": 54224836,
+   "peak_price": 2.2133663873742883e-17,
+   "gain_pct": 102,
+   "dur": 73393
+  },
+  "AZEON_55339018": {
+   "token": "AZEON",
+   "addr": "0x8f46ac3ffb126fb5e5c7b7df31a76b2f338beb7e",
+   "start_block": 55339018,
+   "start_price": 1.2720789424454412e-05,
+   "peak_block": 55639010,
+   "peak_price": 2.5642313668435216e-05,
+   "gain_pct": 102,
+   "dur": 299992
+  },
+  "PARE_56440498": {
+   "token": "PARE",
+   "addr": "0x15d36b6a28d8327abc7afabf0f106ae2c9af5c4d",
+   "start_block": 56440498,
+   "start_price": 0.014582312070264919,
+   "peak_block": 56677772,
+   "peak_price": 0.029420524975483864,
+   "gain_pct": 102,
+   "dur": 237274
+  },
+  "RENT_56752226": {
+   "token": "RENT",
+   "addr": "0x685c1436884b201edaf9833c5d12178bc0b2e09e",
+   "start_block": 56752226,
+   "start_price": 4.268183975346608e-17,
+   "peak_block": 56753632,
+   "peak_price": 8.614878039027347e-17,
+   "gain_pct": 102,
+   "dur": 1406
+  },
+  "CAPITALCAT_56792799": {
+   "token": "CAPITALCAT",
+   "addr": "0x0521c5d59aac8c063224525bc44a0d38f02275c8",
+   "start_block": 56792799,
+   "start_price": 0.00016278897098861235,
+   "peak_block": 56827649,
+   "peak_price": 0.00032867756061101284,
+   "gain_pct": 102,
+   "dur": 34850
+  },
+  "RWAPACT_55008465": {
+   "token": "RWAPACT",
+   "addr": "0x4b1b3cb23e1cd1eb03eff3123b6ccd698629cd65",
+   "start_block": 55008465,
+   "start_price": 3.3361585792219326e-05,
+   "peak_block": 55019484,
+   "peak_price": 6.722363890452044e-05,
+   "gain_pct": 102,
+   "dur": 11019
+  },
+  "CREDITLINE_56809218": {
+   "token": "CREDITLINE",
+   "addr": "0x9eebc9d0162eab236ad4672caef8dba40dc06c24",
+   "start_block": 56809218,
+   "start_price": 0.0001412373525127732,
+   "peak_block": 56811617,
+   "peak_price": 0.00028520340149435977,
+   "gain_pct": 102,
+   "dur": 2399
+  },
+  "CALICO_56858997": {
+   "token": "CALICO",
+   "addr": "0x3ecd371be00c7547dfc676e4c7a55b917f94576e",
+   "start_block": 56858997,
+   "start_price": 7.51632123475491e-05,
+   "peak_block": 56865404,
+   "peak_price": 0.0001517179292120511,
+   "gain_pct": 102,
+   "dur": 6407
+  },
+  "PONIE_56681014": {
+   "token": "PONIE",
+   "addr": "0x9aa0c0ca88e6ae43a3d229afc373c0b9f2b53521",
+   "start_block": 56681014,
+   "start_price": 5.252104981289095e-05,
+   "peak_block": 56980558,
+   "peak_price": 0.00010625436913493409,
+   "gain_pct": 102,
+   "dur": 299544
+  },
+  "MANTA_57053191": {
+   "token": "MANTA",
+   "addr": "0x7bf33e89d82842c1505e3953669379e6330c5a95",
+   "start_block": 57053191,
+   "start_price": 5.694378940216187e-05,
+   "peak_block": 57063896,
+   "peak_price": 0.00011509039812317678,
+   "gain_pct": 102,
+   "dur": 10705
+  },
+  "O1BOT_57065557": {
+   "token": "O1BOT",
+   "addr": "0xf7d77243fbd0413a6528edc275b09d31c25cb201",
+   "start_block": 57065557,
+   "start_price": 2.7923791963912324e-05,
+   "peak_block": 57068910,
+   "peak_price": 5.6321159582600605e-05,
+   "gain_pct": 102,
+   "dur": 3353
+  },
+  "FAME_57228739": {
+   "token": "FAME",
+   "addr": "0x3470f1cc6f710df466a2108432d227805cdcb599",
+   "start_block": 57228739,
+   "start_price": 6.667524095696157e-17,
+   "peak_block": 57229974,
+   "peak_price": 1.3446198941129653e-16,
+   "gain_pct": 102,
+   "dur": 1235
+  },
+  "BAG_58000152": {
+   "token": "BAG",
+   "addr": "0x792ff19204ef6c756b4d8efe2441d050f5ece818",
+   "start_block": 58000152,
+   "start_price": 0.0004657502394606618,
+   "peak_block": 58004414,
+   "peak_price": 0.0009412293637991122,
+   "gain_pct": 102,
+   "dur": 4262
+  },
+  "VANTRA_57082961": {
+   "token": "VANTRA",
+   "addr": "0x6709c6fb2a5fe6416dd8babad1edf39d335665cc",
+   "start_block": 57082961,
+   "start_price": 9.850232014303168e-06,
+   "peak_block": 57234502,
+   "peak_price": 1.9892206462635212e-05,
+   "gain_pct": 102,
+   "dur": 151541
+  },
+  "HOUND_57365906": {
+   "token": "HOUND",
+   "addr": "0x2a6347b604b0183dc6239e255f9328cfc62d8de7",
+   "start_block": 57365906,
+   "start_price": 3.5365166859700676e-05,
+   "peak_block": 57367619,
+   "peak_price": 7.13832955470219e-05,
+   "gain_pct": 102,
+   "dur": 1713
+  },
+  "FAT_57585372": {
+   "token": "FAT",
+   "addr": "0x88b694d6e5c58f01534898fd962f41251d1779cd",
+   "start_block": 57585372,
+   "start_price": 3.374162550562207e-05,
+   "peak_block": 57596623,
+   "peak_price": 6.812242493308519e-05,
+   "gain_pct": 102,
+   "dur": 11251
+  },
+  "SOCIAL_57783592": {
+   "token": "SOCIAL",
+   "addr": "0x5a78c818f4a91cf871a9a85ff4b84af9912bf3c3",
+   "start_block": 57783592,
+   "start_price": 5.229162166906272e-05,
+   "peak_block": 57795069,
+   "peak_price": 0.00010538982960086254,
+   "gain_pct": 102,
+   "dur": 11477
+  },
+  "Zeta_57989156": {
+   "token": "Zeta",
+   "addr": "0x2e9582e9ef9f4058b574945ad0d5be3e55dce5ec",
+   "start_block": 57989156,
+   "start_price": 2.6191453942584237e-05,
+   "peak_block": 57991562,
+   "peak_price": 5.2827970167909924e-05,
+   "gain_pct": 102,
+   "dur": 2406
+  },
+  "NOTE_58018033": {
+   "token": "NOTE",
+   "addr": "0xc4f730335fb9e439ca5552f7b52b8e638c4245b0",
+   "start_block": 58018033,
+   "start_price": 1.459531172855e-14,
+   "peak_block": 58018760,
+   "peak_price": 2.945275960067871e-14,
+   "gain_pct": 102,
+   "dur": 727
+  },
+  "9TO5_48712752": {
+   "token": "9TO5",
+   "addr": "0x223e93b1bed7de244445db2dea4c7900e8045acc",
+   "start_block": 48712752,
+   "start_price": 0.00012168846901547819,
+   "peak_block": 48757785,
+   "peak_price": 0.0002461240885995045,
+   "gain_pct": 102,
+   "dur": 45033
+  },
+  "ponsX_58017323": {
+   "token": "ponsX",
+   "addr": "0xb15f462b9a2204fe357ebd4624aad858bd29a6e5",
+   "start_block": 58017323,
+   "start_price": 1.7036877323347533e-05,
+   "peak_block": 58022301,
+   "peak_price": 3.435287567688944e-05,
+   "gain_pct": 102,
+   "dur": 4978
+  },
+  "ROBINHOOD_52077503": {
+   "token": "ROBINHOOD",
+   "addr": "0x3529e5b86e8749c8487a11ddc239c412228a40cc",
+   "start_block": 52077503,
+   "start_price": 6.122933059364172e-05,
+   "peak_block": 52272253,
+   "peak_price": 0.0001228207312156543,
+   "gain_pct": 101,
+   "dur": 194750
+  },
+  "HOOD_51132640": {
+   "token": "HOOD",
+   "addr": "0x45c83b37c5baf4dad26f3845c28295e2de010962",
+   "start_block": 51132640,
+   "start_price": 0.0002758549860477536,
+   "peak_block": 51201276,
+   "peak_price": 0.0005538929079670536,
+   "gain_pct": 101,
+   "dur": 68636
+  },
+  "USDG_58082350": {
+   "token": "USDG",
+   "addr": "0xf052f9339afaba171724b3229a624db2a30eb115",
+   "start_block": 58082350,
+   "start_price": 8.687197284878178e-18,
+   "peak_block": 58093874,
+   "peak_price": 1.7422256692697072e-17,
+   "gain_pct": 101,
+   "dur": 11524
+  },
+  "ROBINHOOD_54260282": {
+   "token": "ROBINHOOD",
+   "addr": "0x5d8c7212a3d5d2c22d3849a7a7918c6a61c31961",
+   "start_block": 54260282,
+   "start_price": 8.756741291210688e-18,
+   "peak_block": 54556379,
+   "peak_price": 1.7583004990745206e-17,
+   "gain_pct": 101,
+   "dur": 296097
+  },
+  "TISM_55162847": {
+   "token": "TISM",
+   "addr": "0x5d8f2592ef798295bfd42484be16a7b30d1acc0e",
+   "start_block": 55162847,
+   "start_price": 2.9207852163695674e-05,
+   "peak_block": 55204317,
+   "peak_price": 5.8845628863351465e-05,
+   "gain_pct": 101,
+   "dur": 41470
+  },
+  "PROLOGUE_49623259": {
+   "token": "PROLOGUE",
+   "addr": "0xb9972ca7188e511174947e3936a5315ac7073277",
+   "start_block": 49623259,
+   "start_price": 0.005542754870471968,
+   "peak_block": 49790042,
+   "peak_price": 0.011165847968859579,
+   "gain_pct": 101,
+   "dur": 166783
+  },
+  "RWAPACT_54999461": {
+   "token": "RWAPACT",
+   "addr": "0x4b1b3cb23e1cd1eb03eff3123b6ccd698629cd65",
+   "start_block": 54999461,
+   "start_price": 3.921848587295665e-05,
+   "peak_block": 55002752,
+   "peak_price": 7.865682227384042e-05,
+   "gain_pct": 101,
+   "dur": 3291
+  },
+  "RWAPACT_55075704": {
+   "token": "RWAPACT",
+   "addr": "0x4b1b3cb23e1cd1eb03eff3123b6ccd698629cd65",
+   "start_block": 55075704,
+   "start_price": 2.461172084440365e-05,
+   "peak_block": 55299055,
+   "peak_price": 4.953613722936162e-05,
+   "gain_pct": 101,
+   "dur": 223351
+  },
+  "GRAV_56774539": {
+   "token": "GRAV",
+   "addr": "0xcb7f25c0513c658b1510838d8bd63d56bd8ba2ca",
+   "start_block": 56774539,
+   "start_price": 4.120059245044586e-05,
+   "peak_block": 56778265,
+   "peak_price": 8.293872245434214e-05,
+   "gain_pct": 101,
+   "dur": 3726
+  },
+  "SCRIB_56909644": {
+   "token": "SCRIB",
+   "addr": "0x319c5b3f8e46b70cb00769bc8020b4c08ddbc182",
+   "start_block": 56909644,
+   "start_price": 5.0337457264300205e-05,
+   "peak_block": 56910038,
+   "peak_price": 0.00010135548464198681,
+   "gain_pct": 101,
+   "dur": 394
+  },
+  "Rynex_56920223": {
+   "token": "Rynex",
+   "addr": "0xcd71684fefc4f13414c25d02ae3f0650b2c4359c",
+   "start_block": 56920223,
+   "start_price": 1.78661306663888e-05,
+   "peak_block": 56925590,
+   "peak_price": 3.592919482053831e-05,
+   "gain_pct": 101,
+   "dur": 5367
+  },
+  "OPINIO_57197033": {
+   "token": "OPINIO",
+   "addr": "0xeba7bf6cbac6286d294533a2b22ea348a1241ad6",
+   "start_block": 57197033,
+   "start_price": 3.969716733460505e-05,
+   "peak_block": 57198958,
+   "peak_price": 7.99735966625489e-05,
+   "gain_pct": 101,
+   "dur": 1925
+  },
+  "PWA_57191206": {
+   "token": "PWA",
+   "addr": "0x9fd4a5bc38eee471b4fe7de2979354c88e86a9d0",
+   "start_block": 57191206,
+   "start_price": 3.6982157376781684e-05,
+   "peak_block": 57192564,
+   "peak_price": 7.45076892879586e-05,
+   "gain_pct": 101,
+   "dur": 1358
+  },
+  "PWA_57193083": {
+   "token": "PWA",
+   "addr": "0x9fd4a5bc38eee471b4fe7de2979354c88e86a9d0",
+   "start_block": 57193083,
+   "start_price": 5.207172140793564e-06,
+   "peak_block": 57194328,
+   "peak_price": 1.0479826074613205e-05,
+   "gain_pct": 101,
+   "dur": 1245
+  },
+  "XDESCI_57316092": {
+   "token": "XDESCI",
+   "addr": "0xf62a758c3baab84d7c781f78e6f6ecf3a19a3c3d",
+   "start_block": 57316092,
+   "start_price": 2.946535263835718e-05,
+   "peak_block": 57327145,
+   "peak_price": 5.925306921608857e-05,
+   "gain_pct": 101,
+   "dur": 11053
+  },
+  "neuron_57354739": {
+   "token": "neuron",
+   "addr": "0xf8c6974a3c1820f87016db03e43a2cbf10f585a6",
+   "start_block": 57354739,
+   "start_price": 1.874405417183751e-05,
+   "peak_block": 57356046,
+   "peak_price": 3.771497826134748e-05,
+   "gain_pct": 101,
+   "dur": 1307
+  },
+  "KOT_55857604": {
+   "token": "KOT",
+   "addr": "0xd76a8ca5a6e459be5225d212be6acf023a0e3194",
+   "start_block": 55857604,
+   "start_price": 1.6666583987275028e-05,
+   "peak_block": 56005918,
+   "peak_price": 3.346669148620912e-05,
+   "gain_pct": 101,
+   "dur": 148314
+  },
+  "LOOT_57907424": {
+   "token": "LOOT",
+   "addr": "0x1abc0be1b77dc9b8cf057ebee337d630bb22de4e",
+   "start_block": 57907424,
+   "start_price": 0.00013754387659355868,
+   "peak_block": 57915953,
+   "peak_price": 0.00027698011629331983,
+   "gain_pct": 101,
+   "dur": 8529
+  },
+  "ponsX_58013394": {
+   "token": "ponsX",
+   "addr": "0xb15f462b9a2204fe357ebd4624aad858bd29a6e5",
+   "start_block": 58013394,
+   "start_price": 5.380565499035647e-05,
+   "peak_block": 58015028,
+   "peak_price": 0.0001080473378712522,
+   "gain_pct": 101,
+   "dur": 1634
+  },
+  "appul_58138102": {
+   "token": "appul",
+   "addr": "0x5a1831827b7ef689f92402281130a0370b1e0316",
+   "start_block": 58138102,
+   "start_price": 0.00014544192949601475,
+   "peak_block": 58147030,
+   "peak_price": 0.0002922905542054547,
+   "gain_pct": 101,
+   "dur": 8928
+  },
+  "pointfarmcap_58089656": {
+   "token": "pointfarmcap",
+   "addr": "0x0d79109924bac69b96f31942a3fffd38a1683462",
+   "start_block": 58089656,
+   "start_price": 4.2065774967669394e-05,
+   "peak_block": 58090116,
+   "peak_price": 8.468576829548196e-05,
+   "gain_pct": 101,
+   "dur": 460
+  },
+  "pointfarmcap_58090538": {
+   "token": "pointfarmcap",
+   "addr": "0x0d79109924bac69b96f31942a3fffd38a1683462",
+   "start_block": 58090538,
+   "start_price": 2.8464473070891895e-05,
+   "peak_block": 58091241,
+   "peak_price": 5.7157432926152936e-05,
+   "gain_pct": 101,
+   "dur": 703
+  },
+  "pointfarmcap_58092928": {
+   "token": "pointfarmcap",
+   "addr": "0x0d79109924bac69b96f31942a3fffd38a1683462",
+   "start_block": 58092928,
+   "start_price": 1.9964355041721524e-05,
+   "peak_block": 58095280,
+   "peak_price": 4.01234613601915e-05,
+   "gain_pct": 101,
+   "dur": 2352
+  },
+  "DumbCrayonEater_58092963": {
+   "token": "DumbCrayonEater",
+   "addr": "0xbe55b472cd58d618e5024ade5f5585ad31afbf6c",
+   "start_block": 58092963,
+   "start_price": 2.372694650436939e-05,
+   "peak_block": 58095110,
+   "peak_price": 4.775310210112729e-05,
+   "gain_pct": 101,
+   "dur": 2147
+  },
+  "Quiver_55055567": {
+   "token": "Quiver",
+   "addr": "0xd2dd6f8a8a321a03cb0a2a7c9b7e66b5d3def24f",
+   "start_block": 55055567,
+   "start_price": 3.601005941367433e-05,
+   "peak_block": 55100314,
+   "peak_price": 7.211848263032117e-05,
+   "gain_pct": 100,
+   "dur": 44747
+  },
+  "USDG_27918708": {
+   "token": "USDG",
+   "addr": "0xf052f9339afaba171724b3229a624db2a30eb115",
+   "start_block": 27918708,
+   "start_price": 1.6864304322448752e-17,
+   "peak_block": 27967959,
+   "peak_price": 3.3756784811368787e-17,
+   "gain_pct": 100,
+   "dur": 49251
+  },
+  "RWAPACT_55804046": {
+   "token": "RWAPACT",
+   "addr": "0x4b1b3cb23e1cd1eb03eff3123b6ccd698629cd65",
+   "start_block": 55804046,
+   "start_price": 7.28330680597482e-05,
+   "peak_block": 55854989,
+   "peak_price": 0.00014566921448134237,
+   "gain_pct": 100,
+   "dur": 50943
+  },
+  "PARLEY_56971337": {
+   "token": "PARLEY",
+   "addr": "0xcf3d41f9671dc2e86ee4c0271b79ae6fdce36c05",
+   "start_block": 56971337,
+   "start_price": 6.216515004880776e-05,
+   "peak_block": 56971823,
+   "peak_price": 0.0001245473811733879,
+   "gain_pct": 100,
+   "dur": 486
+  },
+  "VC18Z_57090310": {
+   "token": "VC18Z",
+   "addr": "0x670231f7aea584cc192265357e391db6eb0adc63",
+   "start_block": 57090310,
+   "start_price": 0.0001850654385217208,
+   "peak_block": 57110364,
+   "peak_price": 0.0003702581623817002,
+   "gain_pct": 100,
+   "dur": 20054
+  },
+  "BLENDR_57185887": {
+   "token": "BLENDR",
+   "addr": "0x8f54ee8b4edaea5c5eeea54048ea380e24d7d3e8",
+   "start_block": 57185887,
+   "start_price": 2.858265373759165e-05,
+   "peak_block": 57194817,
+   "peak_price": 5.728412144145081e-05,
+   "gain_pct": 100,
+   "dur": 8930
+  },
+  "neuron_57348346": {
+   "token": "neuron",
+   "addr": "0xf8c6974a3c1820f87016db03e43a2cbf10f585a6",
+   "start_block": 57348346,
+   "start_price": 3.199613114433297e-05,
+   "peak_block": 57352077,
+   "peak_price": 6.40616583330233e-05,
+   "gain_pct": 100,
+   "dur": 3731
+  },
+  "PEACHES_57620622": {
+   "token": "PEACHES",
+   "addr": "0x33f5929b6d963bb5f85dc97f97855ecffd62c8a0",
+   "start_block": 57620622,
+   "start_price": 2.907922857266177e-05,
+   "peak_block": 57622364,
+   "peak_price": 5.820855227816199e-05,
+   "gain_pct": 100,
+   "dur": 1742
+  },
+  "BZZ_57763073": {
+   "token": "BZZ",
+   "addr": "0xb356b45e6c9243eb81893d72059fb22c9977a0ba",
+   "start_block": 57763073,
+   "start_price": 1.761321718771685e-05,
+   "peak_block": 57764740,
+   "peak_price": 3.531167943702217e-05,
+   "gain_pct": 100,
+   "dur": 1667
+  },
+  "ROBSTR_57847351": {
+   "token": "ROBSTR",
+   "addr": "0x4183707bc1ea73507df12b198220467bd31efb40",
+   "start_block": 57847351,
+   "start_price": 5.066009471213126e-06,
+   "peak_block": 57849932,
+   "peak_price": 1.0135364350297671e-05,
+   "gain_pct": 100,
+   "dur": 2581
+  },
+  "NGRAM_58000770": {
+   "token": "NGRAM",
+   "addr": "0x11ce7a5a895b98300e901d2f8764437cc782db96",
+   "start_block": 58000770,
+   "start_price": 0.0002619537258183049,
+   "peak_block": 58007662,
+   "peak_price": 0.0005240153727795395,
+   "gain_pct": 100,
+   "dur": 6892
+  },
+  "\ud83d\udd96_58093352": {
+   "token": "\ud83d\udd96",
+   "addr": "0x1b2f48fcecaa15e56d335d185bedcfea2321cc89",
+   "start_block": 58093352,
+   "start_price": 2.1696051467135716e-05,
+   "peak_block": 58096603,
+   "peak_price": 4.347771968380177e-05,
+   "gain_pct": 100,
+   "dur": 3251
+  },
+  "ACCR_58141240": {
+   "token": "ACCR",
+   "addr": "0x85acab234fce5d5287a7c24807a317581160420b",
+   "start_block": 58141240,
+   "start_price": 2.31337136058677e-05,
+   "peak_block": 58142839,
+   "peak_price": 4.6267533742660945e-05,
+   "gain_pct": 100,
+   "dur": 1599
+  },
+  "NORACHAN_58300883": {
+   "token": "NORACHAN",
+   "addr": "0x130c7f0c8e1cb727430d66ee650e4fcf650aa1ac",
+   "start_block": 58300883,
+   "start_price": 5.718985101633247e-17,
+   "peak_block": 58313242,
+   "peak_price": 1.1440029106424322e-16,
+   "gain_pct": 100,
+   "dur": 12359
+  }
+ },
+ "hunters": []
+}
