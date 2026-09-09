@@ -1,0 +1,46 @@
+{
+ "tiers": {
+  "TIER_A": [
+   {
+    "wallet": "0xff2bcd8e3a12d6930518a45519da1c5e67129948",
+    "pnl": 1010545.0329006646,
+    "wr": 0.3793103448275862,
+    "type": "HIGH_FREQ",
+    "pattern": "active_trading"
+   },
+   {
+    "wallet": "0xf7b95fa5c0291319c0d14d098b19ec9d3533fe48",
+    "pnl": 1094768.141880201,
+    "wr": 0.19117647058823528,
+    "type": "HIGH_FREQ",
+    "pattern": "active_trading"
+   },
+   {
+    "wallet": "0x00d78daf782921b27a6b407d34f19842c10a4a6b",
+    "pnl": 759171.2057411866,
+    "wr": 0.24792013311148087,
+    "type": "ULTRA_HFT",
+    "pattern": "active_trading"
+   },
+   {
+    "wallet": "0xda6fad6284d5920fad1418d29ac28ec146f4e61d",
+    "pnl": 502952.32405927323,
+    "wr": 0.15789473684210525,
+    "type": "MULTI_TOKEN",
+    "pattern": "active_trading"
+   }
+  ],
+  "TIER_B": [],
+  "REJECT": [
+   {
+    "wallet": "0xa72a5b06927badb020d235f5f43ce56507ab2399",
+    "pnl": 348943.1952769474,
+    "wr": 0.6666666666666666,
+    "type": "DEV_FEE_COLLECTOR",
+    "pattern": "fee_collecting"
+   }
+  ],
+  "WATCH": []
+ },
+ "report": []
+}

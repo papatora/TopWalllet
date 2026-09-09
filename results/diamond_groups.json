@@ -1,0 +1,99 @@
+{
+ "generated": "2026-09-08",
+ "chain": "bsc",
+ "total_wallets": 9,
+ "groups": {
+  "VAPE_COORDINATED": [
+   "0x472e619c30ea725ed9ca2f60e54a307d3044d05f",
+   "0x30b6d90dc881ecc2e17080af12af0b0146888485",
+   "0x43dcf4cb1c6d84e54f0b11025a8fbb845e8e212a"
+  ],
+  "SOLO_ACCUMULATOR": [
+   "0xdc137c78c17500223031a2ca326c11062be0bad1"
+  ],
+  "HIGH_FREQ_TRADERS": [
+   "0xff2bcd8e3a12d6930518a45519da1c5e67129948",
+   "0xf7b95fa5c0291319c0d14d098b19ec9d3533fe48",
+   "0x00d78daf782921b27a6b407d34f19842c10a4a6b"
+  ],
+  "DEV_OPERATORS": [
+   "0xa72a5b06927badb020d235f5f43ce56507ab2399"
+  ]
+ },
+ "wallets": {
+  "0x472e619c30ea725ed9ca2f60e54a307d3044d05f": {
+   "token": "VAPE",
+   "entry": "5.3h pre-pump",
+   "pnl_pct": 3166,
+   "wr": 100,
+   "source": "pump_analysis",
+   "chain": "bsc"
+  },
+  "0x30b6d90dc881ecc2e17080af12af0b0146888485": {
+   "token": "VAPE",
+   "entry": "6.8h pre-pump",
+   "pnl_pct": 2704,
+   "wr": 100,
+   "source": "pump_analysis",
+   "chain": "bsc"
+  },
+  "0x43dcf4cb1c6d84e54f0b11025a8fbb845e8e212a": {
+   "token": "VAPE",
+   "entry": "2.7h post-start",
+   "pnl_pct": 9150,
+   "wr": 64,
+   "pnl_30d": 136910,
+   "tok_30d": 1356,
+   "source": "pump_analysis",
+   "chain": "bsc"
+  },
+  "0xdc137c78c17500223031a2ca326c11062be0bad1": {
+   "token": "Life K-line",
+   "entry": "51 DAYS pre-pump",
+   "pnl_pct": 18075,
+   "wr": 100,
+   "source": "pump_analysis",
+   "chain": "bsc"
+  },
+  "0xff2bcd8e3a12d6930518a45519da1c5e67129948": {
+   "pnl_30d": 1010545,
+   "wr": 37.9,
+   "tok": 353,
+   "type": "HIGH_FREQ",
+   "source": "meme_top_traders",
+   "chain": "bsc"
+  },
+  "0xf7b95fa5c0291319c0d14d098b19ec9d3533fe48": {
+   "pnl_30d": 1094768,
+   "wr": 19.1,
+   "tok": 130,
+   "type": "HIGH_FREQ",
+   "source": "meme_top_traders",
+   "chain": "bsc"
+  },
+  "0x00d78daf782921b27a6b407d34f19842c10a4a6b": {
+   "pnl_30d": 759171,
+   "wr": 24.8,
+   "tok": 2000,
+   "type": "ULTRA_HFT",
+   "source": "meme_top_traders",
+   "chain": "bsc"
+  },
+  "0xda6fad6284d5920fad1418d29ac28ec146f4e61d": {
+   "pnl_30d": 502952,
+   "wr": 15.8,
+   "tok": 49,
+   "type": "MULTI_TOKEN",
+   "source": "meme_top_traders",
+   "chain": "bsc"
+  },
+  "0xa72a5b06927badb020d235f5f43ce56507ab2399": {
+   "pnl_30d": 348943,
+   "wr": 66.7,
+   "tok": 14,
+   "type": "DEV_FEE_COLLECTOR",
+   "source": "meme_top_traders",
+   "chain": "bsc"
+  }
+ }
+}
