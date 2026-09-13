@@ -560,3 +560,15 @@ watchdog GLM per jam | systemd auto-restart
 3. Round-robin reverify wallet yang sudah ada
 4. GMGN criteria (bundler/insider/phishing) → enrich anti_gaming
 5. Website revamp SAAT verified >50 + universe >500 tokens
+
+## SNAPSHOT S-33 — CRITICAL FIX: PRICE DECIMALS BUG (2M points cleared)
+
+**BUG**: sqrtPriceX96² gives ratio in SMALLEST units. USDG=6 decimals, WETH=18.
+Every 18-dec token in 6-dec pool was 10¹² off. Claude session found it.
+**FIX**: decimal adjustment 10^(dec0−dec1) applied in build_series_for_pool.
+**DEPLOYED**: VPS restarted, 2M bad price points cleared, 21K wallets reset.
+**Claude session also built**: local HTML website at Database Local only/html/
+(port 8787), Bubblemaps-style visualizer, Arkham-style explorer. Not committed.
+**VPS NOW**: re-running full pipeline with correct prices. This will take
+several hours (21K wallets to enrich + price series to rebuild). Results will
+be MUCH more accurate — realized PnL will be in real dollars, not 10¹² off.
