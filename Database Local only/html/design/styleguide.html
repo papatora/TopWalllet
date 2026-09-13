@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TopWallet Design System</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="/assets/css/tokens.css">
+<link rel="stylesheet" href="/assets/css/base.css">
+<link rel="stylesheet" href="/assets/css/components.css">
+<style>
+  .sg{max-width:1180px;margin:0 auto;padding:36px 28px 80px;display:flex;flex-direction:column;gap:40px}
+  .sg h1{font:600 28px/1.1 var(--sans);letter-spacing:-.02em}
+  .sg h2{font:600 15px/1 var(--sans);margin-bottom:14px}
+  .sg p.lead{color:var(--text-2);max-width:66ch;margin-top:8px}
+  .row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+  .swatches{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+  .sw{border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;background:var(--panel)}
+  .sw div{height:54px;background:var(--v)}
+  .sw span{display:block;padding:8px 10px;font:400 11px/1.5 var(--mono);color:var(--text-2)}
+  .type-row{display:grid;grid-template-columns:180px 1fr;gap:16px;align-items:baseline;padding:12px 0;border-bottom:1px solid var(--line-soft)}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a class="nav-brand" href="/"><svg class="i"><use href="/assets/icons/sprite.svg#i-logo"/></svg>TOPWALLET</a>
+  <div class="nav-links"><a class="nav-link" href="/#/">Dashboard</a><a class="nav-link is-active" href="#">Design system</a></div>
+  <div class="nav-right">
+    <label class="search"><svg class="i"><use href="/assets/icons/sprite.svg#i-search"/></svg><input class="search-input" placeholder="Search for tokens, addresses, entities"><span class="kbd">/</span></label>
+    <span class="chain"><span class="chain-dot"></span><b>Robinhood Chain</b>4663<svg class="i i-sm"><use href="/assets/icons/sprite.svg#i-lock"/></svg></span>
+  </div>
+</nav>
+<main class="sg">
+  <header>
+    <span class="eyebrow">design/DESIGN.md · visual test</span>
+    <h1 style="margin-top:10px">TopWallet design system</h1>
+    <p class="lead">Every component on the explorer is rendered here first. If something looks off in a view, fix it here, then the view inherits it.</p>
+  </header>
+
+  <section><h2>Color</h2><div class="swatches">
+    <div class="sw"><div style="--v:var(--bg)"></div><span>--bg #0A0C11</span></div>
+    <div class="sw"><div style="--v:var(--panel)"></div><span>--panel #10131A</span></div>
+    <div class="sw"><div style="--v:var(--panel-2)"></div><span>--panel-2 #151922</span></div>
+    <div class="sw"><div style="--v:var(--panel-3)"></div><span>--panel-3 #1B202A</span></div>
+    <div class="sw"><div style="--v:var(--line)"></div><span>--line #222834</span></div>
+    <div class="sw"><div style="--v:var(--text-2)"></div><span>--text-2 #A0A8B7</span></div>
+    <div class="sw"><div style="--v:var(--blue)"></div><span>--blue #1E6FF1 · action</span></div>
+    <div class="sw"><div style="--v:var(--green)"></div><span>--green #35C48A · in</span></div>
+    <div class="sw"><div style="--v:var(--red)"></div><span>--red #EF5B63 · out</span></div>
+    <div class="sw"><div style="--v:var(--amber)"></div><span>--amber #E7AE4B · warn</span></div>
+  </div></section>
+
+  <section><h2>Type</h2>
+    <div class="type-row"><span class="eyebrow">Page title</span><span style="font:600 28px/1 var(--sans);letter-spacing:-.02em">Leaderboard</span></div>
+    <div class="type-row"><span class="eyebrow">Big number</span><span class="num pos" style="font-size:24px;font-weight:500">+$206.90K</span></div>
+    <div class="type-row"><span class="eyebrow">Address</span><span class="addr">0x90c8ab209490d3d54af8817e182344a632e5f8e2</span></div>
+    <div class="type-row"><span class="eyebrow">Eyebrow</span><span class="eyebrow">Transfer volume</span></div>
+    <div class="type-row"><span class="eyebrow">Body</span><span class="t2">Every wallet here received its first funding from the same operator address.</span></div>
+  </section>
+
+  <section><h2>Controls</h2>
+    <div class="row">
+      <div class="seg"><button class="seg-btn">Screener</button><button class="seg-btn is-active">Leaderboard</button></div>
+      <div class="seg is-box"><button class="seg-btn is-active">Top traders</button><button class="seg-btn">Snipers</button></div>
+      <div class="seg is-sm"><button class="seg-btn">1D</button><button class="seg-btn">7D</button><button class="seg-btn is-active">ALL</button></div>
+      <button class="dd-btn"><svg class="i"><use href="/assets/icons/sprite.svg#i-trophy"/></svg>Net flow<svg class="i chev"><use href="/assets/icons/sprite.svg#i-chevron-down"/></svg></button>
+      <button class="btn btn-primary">+ Open in visualizer</button>
+      <button class="btn btn-ghost"><svg class="i i-sm"><use href="/assets/icons/sprite.svg#i-copy"/></svg>Copy</button>
+      <button class="btn-icon btn"><svg class="i"><use href="/assets/icons/sprite.svg#i-refresh"/></svg></button>
+    </div>
+    <div class="row" style="margin-top:14px">
+      <button class="fchip" style="--c:var(--c-insider)"><svg class="i"><use href="/assets/icons/sprite.svg#i-x"/></svg>Insider</button>
+      <button class="fchip"><svg class="i"><use href="/assets/icons/sprite.svg#i-x"/></svg>USD ≥ $1</button>
+      <span class="fchip" style="--c:#2EC4B6">Sort by time</span>
+      <span class="fchip" style="--c:var(--c-mev)">Flow all</span>
+      <span class="chip" style="--c:var(--c-sniper)">SNIPER</span>
+      <span class="chip" style="--c:var(--c-bundler)">BUNDLER SUSPECT</span>
+      <span class="chip" style="--c:var(--c-dev)">DEV</span>
+      <span class="chip" style="--c:var(--c-cluster)">CLUSTER be41</span>
+      <span class="tok-stack"><span class="tok" style="--h:210">pi</span><span class="tok" style="--h:40">gm</span><span class="tok" style="--h:130">ld</span><span class="tok tok-more">+4</span></span>
+      <span class="rank is-1">1</span><span class="rank is-2">2</span><span class="rank is-3">3</span><span class="rank">4</span>
+      <span class="side is-buy">BUY</span><span class="side is-sell">SELL</span>
+    </div>
+  </section>
+
+  <section><h2>Stat strip</h2>
+    <div class="stats" style="--n:4">
+      <div class="stat"><div class="eyebrow">Wallets classified</div><div class="stat-v">12,880</div><div class="stat-c">14 taxonomy types</div></div>
+      <div class="stat"><div class="eyebrow">Active traders</div><div class="stat-v">1,310</div><div class="stat-c">with swaps in snapshot</div></div>
+      <div class="stat"><div class="eyebrow">Net flow est.</div><div class="stat-v pos">+$14.70K</div><div class="stat-c">top wallet</div></div>
+      <div class="stat"><div class="eyebrow">Bundles</div><div class="stat-v">9</div><div class="stat-c">same-tx first-block buys</div></div>
+    </div>
+  </section>
+
+  <section><h2>Panel · tabs · table</h2>
+    <div class="panel">
+      <div class="tabs"><button class="tab is-active">Counterparties</button><button class="tab">Incoming</button><button class="tab">Outgoing</button>
+        <div class="tabs-end"><div class="seg is-sm"><button class="seg-btn">Group</button><button class="seg-btn is-active">Ungroup</button></div><button class="btn btn-ghost btn-sm"><svg class="i i-sm"><use href="/assets/icons/sprite.svg#i-filter"/></svg>Token</button></div></div>
+      <div class="table-wrap"><table class="table" style="--min:700px">
+        <thead><tr><th>#</th><th>Trader</th><th class="rt is-sort is-on">Net flow<span class="sort">▼</span></th><th class="rt is-sort">Bought<span class="sort">▼</span></th><th class="rt">Sold</th><th class="rt">Avg hold</th></tr></thead>
+        <tbody>
+          <tr class="is-link"><td><span class="rank is-1">1</span></td><td><span class="addr">0x6db609e8670af9abdd0fe18ba7b9a81424dbd066</span></td><td class="rt pos">+$31.39K</td><td class="rt pos">$0.00</td><td class="rt neg">$31.39K</td><td class="rt">—</td></tr>
+          <tr class="is-link"><td><span class="rank is-2">2</span></td><td><span class="addr">0x982a046e45ff0758ae3f8c789dd7508efaf4d466</span></td><td class="rt pos">+$14.70K</td><td class="rt pos">$753.09</td><td class="rt neg">$15.46K</td><td class="rt">40m</td></tr>
+        </tbody></table></div>
+      <div class="pager"><span>1–2 of 1,310</span><span class="end"><button class="btn btn-ghost btn-sm" disabled>Prev</button><button class="btn btn-ghost btn-sm">Next</button></span></div>
+    </div>
+  </section>
+</main>
+</body>
+</html>

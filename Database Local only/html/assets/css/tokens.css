@@ -1,0 +1,25 @@
+/* TopWallet Explorer — design tokens. Source of truth: design/DESIGN.md */
+:root{
+  color-scheme:dark;
+  --bg:#0A0C11; --bg-sunk:#07080C;
+  --panel:#10131A; --panel-2:#151922; --panel-3:#1B202A;
+  --line:#222834; --line-soft:#191D26; --line-strong:#2E3544;
+  --text:#EDF0F5; --text-2:#A0A8B7; --text-3:#667085; --text-4:#454C5B;
+
+  --blue:#1E6FF1; --blue-hi:#4C8DFF; --blue-soft:rgba(30,111,241,.14); --blue-line:rgba(76,141,255,.5);
+  --green:#35C48A; --green-soft:rgba(53,196,138,.12);
+  --red:#EF5B63; --red-soft:rgba(239,91,99,.12);
+  --amber:#E7AE4B;
+
+  --c-dev:#EF5B63; --c-sniper:#35C48A; --c-bundler:#E7AE4B; --c-insider:#A386FF; --c-airdrop:#58B4D1;
+  --c-ct:#4C8DFF; --c-mev:#FF8A4C; --c-smart:#F2C94C; --c-cluster:#E36CB3; --c-generalist:#7D8698;
+  --gold:#F2C94C; --silver:#B8C1D1; --bronze:#D38B4F;
+
+  --sans:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,"Cascadia Mono",Consolas,monospace;
+
+  --r-sm:4px; --r-md:6px; --r-lg:10px; --r-pill:999px;
+  --nav-h:56px; --row-h:56px;
+  --float-shadow:0 16px 40px rgba(0,0,0,.5);
+  --ease:cubic-bezier(.2,.7,.2,1);
+}

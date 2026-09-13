@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TopWallet Robinhood Intel</title>
+<meta name="theme-color" content="#0A0C11">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="/assets/css/tokens.css">
+<link rel="stylesheet" href="/assets/css/base.css">
+<link rel="stylesheet" href="/assets/css/components.css">
+<link rel="stylesheet" href="/assets/css/views.css">
+</head>
+<body>
+<nav class="nav" aria-label="Primary">
+  <a class="nav-brand" href="#/"><svg class="i" aria-hidden="true"><use href="/assets/icons/sprite.svg#i-logo"/></svg>TOPWALLET</a>
+  <div class="nav-links">
+    <a class="nav-link" href="#/" data-nav="dashboard">Dashboard</a>
+    <a class="nav-link" href="#/leaderboard" data-nav="leaderboard">Leaderboard</a>
+    <a class="nav-link" href="#/explorer" data-nav="explorer">Explorer</a>
+    <a class="nav-link" href="#/visualizer" data-nav="visualizer">Visualizer</a>
+    <a class="nav-link" href="#/tokens" data-nav="tokens">Tokens</a>
+  </div>
+  <div class="nav-right">
+    <div class="search" id="search">
+      <svg class="i" aria-hidden="true"><use href="/assets/icons/sprite.svg#i-search"/></svg>
+      <input class="search-input" id="search-input" placeholder="Search for tokens, addresses, entities" autocomplete="off" spellcheck="false" aria-label="Search">
+      <span class="kbd">/</span>
+      <div class="pop" id="search-pop" hidden></div>
+    </div>
+    <span class="chain" title="This explorer indexes Robinhood Chain only"><span class="chain-dot"></span><b>Robinhood Chain</b>4663<svg class="i i-sm" aria-hidden="true"><use href="/assets/icons/sprite.svg#i-lock"/></svg></span>
+    <button class="btn btn-icon" id="rebuild" title="Rebuild dataset from the local database" aria-label="Rebuild dataset"><svg class="i" aria-hidden="true"><use href="/assets/icons/sprite.svg#i-refresh"/></svg></button>
+  </div>
+</nav>
+
+<main id="app">
+  <div class="page boot">
+    <span class="skel" style="width:180px;height:26px"></span>
+    <div class="stats" style="--n:6;margin-top:22px">
+      <div class="stat"><span class="skel" style="width:60%"></span><span class="skel" style="width:40%;height:22px;margin-top:14px"></span></div>
+      <div class="stat"><span class="skel" style="width:60%"></span><span class="skel" style="width:40%;height:22px;margin-top:14px"></span></div>
+      <div class="stat"><span class="skel" style="width:60%"></span><span class="skel" style="width:40%;height:22px;margin-top:14px"></span></div>
+      <div class="stat"><span class="skel" style="width:60%"></span><span class="skel" style="width:40%;height:22px;margin-top:14px"></span></div>
+      <div class="stat"><span class="skel" style="width:60%"></span><span class="skel" style="width:40%;height:22px;margin-top:14px"></span></div>
+      <div class="stat"><span class="skel" style="width:60%"></span><span class="skel" style="width:40%;height:22px;margin-top:14px"></span></div>
+    </div>
+    <p class="t3 mono" style="margin-top:18px;font-size:12px">Loading local dataset…</p>
+  </div>
+</main>
+
+<footer class="foot" id="foot"></footer>
+<script type="module" src="/assets/js/app.js"></script>
+</body>
+</html>

@@ -151,12 +151,20 @@ class PriceService:
         if not quote_usd_by_block:
             return 0
 
-        # raw = sqrtPriceX96² = token1-per-token0 (token0 = lower address).
-        # Address-ordering surprises happen (quote-token metadata mismatches),
-        # so pick the orientation whose median best matches the token's known
-        # spot price from DexScreener; fall back to the ordering rule.
-        token_is_token0 = token_addr < quote_addr
-        spot = token.price_usd if token and token.price_usd else None
+        # ── DECIMAL FIX (S-32): sqrtPriceX96² gives the ratio in SMALLEST
+        # units. Human-readable price needs × 10^(dec0 − dec1) adjustment.
+        # Without this, a 18-dec token in a 6-dec pool is 10¹² off. ──
+        token_dec = token.decimals if token else 18
+
+        # quote token decimals: from Token table or on-chain
+        quote_token = await self.session.get(Token, pool.quote_token)
+        quote_dec = quote_token.decimals if quote_token and quote_token.decimals else 18
+        if pool.quote_token == "0x0000000000000000000000000000000000000000":
+            quote_dec = 18  # native ETH
+
+        jlog(log, logging.INFO, "decimal adjustment",
+             token_sym=token.symbol if token else "?",
+             token_dec=token_dec, quote_dec=quote_dec, pool=pool.address[:12])
 
         def build(invert: bool) -> list[tuple[int, datetime, float]]:
             out = []
@@ -167,7 +175,13 @@ class PriceService:
                 raw = _sqrt_to_raw_price(raw_points[block])
                 if raw <= 0:
                     continue
-                p = (1.0 / raw if invert else raw) * q
+                # decimal adjustment: raw is in smallest units of both tokens.
+                # human price = raw × 10^(dec0 − dec1) for token0's price,
+                # or (1/raw) × 10^(dec1 − dec0) for token1's price.
+                if invert:
+                    p = (1.0 / raw) * (10 ** (token_dec - quote_dec)) * q
+                else:
+                    p = raw * (10 ** (quote_dec - token_dec)) * q
                 if 0 < p < 10 ** 9:
                     out.append((block, ts_map[block], p))
             return out
@@ -180,8 +194,9 @@ class PriceService:
             logs_sorted = sorted(math.log10(p) for _, _, p in series)
             return abs(logs_sorted[len(logs_sorted) // 2] - math.log10(spot))
 
-        normal = build(False)     # price = raw × quote_usd
-        inverted = build(True)    # price = (1/raw) × quote_usd
+        normal = build(False)     # price = raw × adj × quote_usd
+        inverted = build(True)    # price = (1/raw) × adj × quote_usd
+        token_is_token0 = token_addr < quote_addr
         if spot:
             pick_inverted = med_log_dist(inverted) < med_log_dist(normal)
         else:
