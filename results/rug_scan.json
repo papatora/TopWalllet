@@ -1,0 +1,78 @@
+{
+ "token_reports": [
+  {
+   "ca": "0xceebf25b318201f1f949be2fabbfcee231737139",
+   "name": "Token1",
+   "status": "rug?",
+   "top10": "0.1313",
+   "insiders": "?",
+   "bundler": "?",
+   "phishing": "?",
+   "honeypot": false,
+   "traders_count": 0,
+   "top5_pnl": []
+  },
+  {
+   "ca": "0x0e3c3420da3ef7ee6aad373dd2cdd968f57a0788",
+   "name": "Token2",
+   "status": "rug?",
+   "top10": "?",
+   "insiders": "?",
+   "bundler": "?",
+   "phishing": "?",
+   "honeypot": "?",
+   "traders_count": 0,
+   "top5_pnl": []
+  },
+  {
+   "ca": "0xab528169dcc80d68837a33b1e2b866bb7d7ee301",
+   "name": "Token3",
+   "status": "rug?",
+   "top10": "?",
+   "insiders": "?",
+   "bundler": "?",
+   "phishing": "?",
+   "honeypot": "?",
+   "traders_count": 0,
+   "top5_pnl": []
+  },
+  {
+   "ca": "0x77b857e8445baa484b49c28d225fc16538be3be8",
+   "name": "Token4",
+   "status": "rug",
+   "top10": "?",
+   "insiders": "?",
+   "bundler": "?",
+   "phishing": "?",
+   "honeypot": "?",
+   "traders_count": 0,
+   "top5_pnl": []
+  },
+  {
+   "ca": "0xf2ce522ce04657b6f47f99b1ded10f4a33b71e18",
+   "name": "Token5",
+   "status": "pre-rug",
+   "top10": "?",
+   "insiders": "?",
+   "bundler": "?",
+   "phishing": "?",
+   "honeypot": "?",
+   "traders_count": 0,
+   "top5_pnl": []
+  },
+  {
+   "ca": "0x4b455ee2689b7ee65cff13011a33d406c27dcaa3",
+   "name": "Token6",
+   "status": "pre-rug",
+   "top10": "?",
+   "insiders": "?",
+   "bundler": "?",
+   "phishing": "?",
+   "honeypot": "?",
+   "traders_count": 0,
+   "top5_pnl": []
+  }
+ ],
+ "multi_token": {},
+ "all": {}
+}

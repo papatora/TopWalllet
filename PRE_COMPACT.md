@@ -572,3 +572,49 @@ Every 18-dec token in 6-dec pool was 10¹² off. Claude session found it.
 **VPS NOW**: re-running full pipeline with correct prices. This will take
 several hours (21K wallets to enrich + price series to rebuild). Results will
 be MUCH more accurate — realized PnL will be in real dollars, not 10¹² off.
+
+## ⚡ S-33 SUPPLEMENT — TARGET CALIBRATION + PENDING ITEMS (2026-09-08 23:30)
+
+**TARGET PNL BUKAN $10K — TARGET $1M+ seperti wallet "decu" di Solana:**
+- decu: +$1M realized, win 61.2%, konsisten harian $500-$6.25K, unrealized $0
+- Target: temukan wallet RH chain dengan profil serupa → copytrade agent
+- Saat ini: top ranked cuma $24 (micro-scalper) — universe masih terlalu kecil
+
+**UNTUK MENCAPAI 100K WALLET + $10K+ PNL — YANG HARUS DILAKUKAN:**
+1. GMGN paid API — public test key tidak punya coverage untuk semua token
+2. Universe expansion — trending scanner sudah jalan per 30 menit, akan menambah token secara otomatis
+3. Bubblemaps scraping — cookies sudah ada, tapi perlu browser automation (playwright) untuk bypass CF
+4. X/CT attribution — butuh X auth tokens dari kamu
+5. Unrealized risk scoring — sudah diimplement, perlu GMGN API untuk data lengkap
+
+**BAHAN DARI USER YANG BELUM DIPROSES:**
+- Bubblemaps cookies: `C:\Users\ROG\Downloads\bubblemaps cokkies.txt`
+- Arkham cookies: `C:\Users\ROG\Downloads\arkham cokkies.txt`
+- fomo.family cookies: sudah di-eksport sebelumnya (expired, perlu fresh)
+- X accounts: `C:\Users\ROG\Downloads\Telegram Desktop\X10akun.txt` (untuk phase CT)
+- 2chapta: `C:\Users\ROG\Downloads\Telegram Desktop\2chapta.txt` (untuk bypass non-CF)
+- Webshare proxies: 100 proxies + rotating endpoint
+- DataImpulse resident proxy: aktif
+- VPS creds: `C:\Users\ROG\Downloads\Telegram Desktop\Vps chunkserve 4cpu.txt`
+
+**TOKEN SAMPLE UNTUK ANALYSIS (BSC — bukan RH, untuk cross-chain validation):**
+- VAPE: 0xa6b53819f5bf521945fceb1f9bbb3a7a7b4effff — DEAD→PUMP pattern, sudah dianalisis
+- Life K-line: 0x1a1e69f1e6182e2f8b9e8987e83c016ac9444444 — DEAD 268 hari → PUMP, sudah dianalisis
+- Token1: 0xceebf25b318201f1f949be2fabbfcee231737139
+- Token2: 0x0e3c3420da3ef7ee6aad373dd2cdd968f57a0788
+- Token3: 0xab528169dcc80d68837a33b1e2b866bb7d7ee301
+- Token4 (RUG): 0x77b857e8445baa484b49c28d225fc16538be3be8
+- Token5 (pre-rug): 0xf2ce522ce04657b6f47f99b1ded10f4a33b71e18
+- Token6 (pre-rug): 0x4b455ee2689b7ee65cff13011a33d406c27dcaa3
+
+**RH TOKENS YANG SUDAH DIANALISIS:**
+- 富貴 Wealth: 0xceebf25b318201f1f949be2fabbfcee231737139 — $6.32M MC, $8.2M vol
+- SOUP: 0x0e3c3420da3ef7ee6aad373dd2cdd968f57a0788 — dead→pump pattern
+- WRESTLER: 0xab528169dcc80d68837a33b1e2b866bb7d7ee301 — pump and dump
+- WRESTLER top trader: 0x0310cfebe1d7a69f2414f6595bbe9d17c5342acc — kalender cuma Sep
+
+**CONTEXT NOTES:**
+- Context 78-81% (809K/1M) — MASIH BANYAK, jangan bilang limited
+- Usage LLM: UNLIMITED (user kasih ZAI API key + unlimited plan)
+- Jangan bilang "context limited" atau "extremely limited" — PROAKTIF TERUS
+- Update PRE_COMPACT SETIAP selesai milestone, bukan cuma saat mau habis
