@@ -1,0 +1,892 @@
+{
+ "wallets": {
+  "0xec52a53d7aa278b2027c83449b425cde8ff8015b": {
+   "tokens": [
+    {
+     "name": "Token1",
+     "ca": "0xceebf25b318201f1f949be2fabbfcee231737139",
+     "pnl": 238255.61927362595,
+     "win_rate": 0.0
+    }
+   ],
+   "tags": [
+    "gmgn"
+   ],
+   "total_pnl": 238255.61927362595,
+   "best_pnl": 238255.61927362595
+  },
+  "0xb3136d98619479d2a90ca87de23d47140172fd0a": {
+   "tokens": [
+    {
+     "name": "Token1",
+     "ca": "0xceebf25b318201f1f949be2fabbfcee231737139",
+     "pnl": 102322.9637150083,
+     "win_rate": 0.0
+    }
+   ],
+   "tags": [
+    "gmgn"
+   ],
+   "total_pnl": 102322.9637150083,
+   "best_pnl": 102322.9637150083
+  },
+  "0x04eebd82b42dae6db812b5f06442ce468ebe5a3a": {
+   "tokens": [
+    {
+     "name": "Token1",
+     "ca": "0xceebf25b318201f1f949be2fabbfcee231737139",
+     "pnl": 95038.53641643857,
+     "win_rate": 0.0
+    }
+   ],
+   "tags": [
+    "gmgn"
+   ],
+   "total_pnl": 95038.53641643857,
+   "best_pnl": 95038.53641643857
+  },
+  "0xddcbb60100d83a7e1e0c4e139189fdea37184c5a": {
+   "tokens": [
+    {
+     "name": "Token1",
+     "ca": "0xceebf25b318201f1f949be2fabbfcee231737139",
+     "pnl": 50141.08482573326,
+     "win_rate": 0.0
+    }
+   ],
+   "tags": [],
+   "total_pnl": 50141.08482573326,
+   "best_pnl": 50141.08482573326
+  },
+  "0x8e913b77481199fd00753c45d79d06134869996b": {
+   "tokens": [
+    {
+     "name": "Token1",
+     "ca": "0xceebf25b318201f1f949be2fabbfcee231737139",
+     "pnl": 28438.51988751905,
+     "win_rate": 0.0
+    }
+   ],
+   "tags": [],
+   "total_pnl": 28438.51988751905,
+   "best_pnl": 28438.51988751905
+  },
+  "0xe4cbc3497054f3f4c937e92f250dfbc3aa4cb53c": {
+   "tokens": [
+    {
+     "name": "Token1",
+     "ca": "0xceebf25b318201f1f949be2fabbfcee231737139",
+     "pnl": 36260.000117083095,
+     "win_rate": 0.0
+    }
+   ],
+   "tags": [],
+   "total_pnl": 36260.000117083095,
+   "best_pnl": 36260.000117083095
+  },
+  "0xfd81b3cf6b0a7ab0097b29bab3bbf05d97eab2d0": {
+   "tokens": [
+    {
+     "name": "Token1",
+     "ca": "0xceebf25b318201f1f949be2fabbfcee231737139",
+     "pnl": 15637.832759563698,
+     "win_rate": 0.0
+    }
+   ],
+   "tags": [
+    "fomo"
+   ],
+   "total_pnl": 15637.832759563698,
+   "best_pnl": 15637.832759563698
+  },
+  "0x0cc22adf80f60b25327bd355bfe5994c75a332e8": {
+   "tokens": [
+    {
+     "name": "Token1",
+     "ca": "0xceebf25b318201f1f949be2fabbfcee231737139",
+     "pnl": 30770.896055609097,
+     "win_rate": 0.0
+    }
+   ],
+   "tags": [
+    "gmgn",
+    "fomo"
+   ],
+   "total_pnl": 30770.896055609097,
+   "best_pnl": 30770.896055609097
+  },
+  "0xf2737a7ab09b82c66ab95b10871b42a937d46c4f": {
+   "tokens": [
+    {
+     "name": "Token1",
+     "ca": "0xceebf25b318201f1f949be2fabbfcee231737139",
+     "pnl": 22673.35729689765,
+     "win_rate": 0.0
+    }
+   ],
+   "tags": [
+    "gmgn"
+   ],
+   "total_pnl": 22673.35729689765,
+   "best_pnl": 22673.35729689765
+  },
+  "0x29fde8d32398c0fd7aad1e20b655846666666666": {
+   "tokens": [
+    {
+     "name": "Token1",
+     "ca": "0xceebf25b318201f1f949be2fabbfcee231737139",
+     "pnl": 13637.070238759741,
+     "win_rate": 0.0
+    }
+   ],
+   "tags": [],
+   "total_pnl": 13637.070238759741,
+   "best_pnl": 13637.070238759741
+  },
+  "0x935235a4cc0ecca37f8cc4c212d16bf1af47250a": {
+   "tokens": [
+    {
+     "name": "Token1",
+     "ca": "0xceebf25b318201f1f949be2fabbfcee231737139",
+     "pnl": 12185.08889155422,
+     "win_rate": 0.0
+    }
+   ],
+   "tags": [],
+   "total_pnl": 12185.08889155422,
+   "best_pnl": 12185.08889155422
+  },
+  "0xf5b80cc70acf0cc625b17ac9ad1a9abb2013616c": {
+   "tokens": [
+    {
+     "name": "Token1",
+     "ca": "0xceebf25b318201f1f949be2fabbfcee231737139",
+     "pnl": 21970.584689667467,
+     "win_rate": 0.0
+    }
+   ],
+   "tags": [
+    "gmgn",
+    "fresh_wallet"
+   ],
+   "total_pnl": 21970.584689667467,
+   "best_pnl": 21970.584689667467
+  },
+  "0xce1d7f8c2588a87d29fa1743ac9f8096c29598ef": {
+   "tokens": [
+    {
+     "name": "Token1",
+     "ca": "0xceebf25b318201f1f949be2fabbfcee231737139",
+     "pnl": 8485.227359269591,
+     "win_rate": 0.0
+    }
+   ],
+   "tags": [
+    "gmgn"
+   ],
+   "total_pnl": 8485.227359269591,
+   "best_pnl": 8485.227359269591
+  },
+  "0xe60d480d216449aa320db71e6fbb48667bd08b85": {
+   "tokens": [
+    {
+     "name": "Token1",
+     "ca": "0xceebf25b318201f1f949be2fabbfcee231737139",
+     "pnl": 2867.907273296771,
+     "win_rate": 0.0
+    }
+   ],
+   "tags": [
+    "fresh_wallet"
+   ],
+   "total_pnl": 2867.907273296771,
+   "best_pnl": 2867.907273296771
+  },
+  "0xc866e6867cb568ae03c8bb141089fc3012fca790": {
+   "tokens": [
+    {
+     "name": "Token1",
+     "ca": "0xceebf25b318201f1f949be2fabbfcee231737139",
+     "pnl": 21130.24613053445,
+     "win_rate": 0.0
+    }
+   ],
+   "tags": [
+    "gmgn",
+    "fomo"
+   ],
+   "total_pnl": 21130.24613053445,
+   "best_pnl": 21130.24613053445
+  },
+  "0xb90fceb1284946fcf9e4d77d2e3275dc573e0fd6": {
+   "tokens": [
+    {
+     "name": "Token1",
+     "ca": "0xceebf25b318201f1f949be2fabbfcee231737139",
+     "pnl": 20615.824752074113,
+     "win_rate": 0.0
+    }
+   ],
+   "tags": [],
+   "total_pnl": 20615.824752074113,
+   "best_pnl": 20615.824752074113
+  },
+  "0x1d083aacd58d912a78b75d915fa088849cbe644c": {
+   "tokens": [
+    {
+     "name": "Token1",
+     "ca": "0xceebf25b318201f1f949be2fabbfcee231737139",
+     "pnl": 7766.117265167556,
+     "win_rate": 0.0
+    }
+   ],
+   "tags": [
+    "gmgn"
+   ],
+   "total_pnl": 7766.117265167556,
+   "best_pnl": 7766.117265167556
+  },
+  "0xe7ef47d37d61f9505f5b696926e6c9e2aa79570b": {
+   "tokens": [
+    {
+     "name": "Token1",
+     "ca": "0xceebf25b318201f1f949be2fabbfcee231737139",
+     "pnl": 10707.162355631901,
+     "win_rate": 0.0
+    }
+   ],
+   "tags": [
+    "gmgn"
+   ],
+   "total_pnl": 10707.162355631901,
+   "best_pnl": 10707.162355631901
+  },
+  "0xb90d9ea599c2634069ae4d5eecc5ab7234a81a05": {
+   "tokens": [
+    {
+     "name": "Token1",
+     "ca": "0xceebf25b318201f1f949be2fabbfcee231737139",
+     "pnl": 20279.36994995942,
+     "win_rate": 0.0
+    }
+   ],
+   "tags": [
+    "fomo",
+    "kol"
+   ],
+   "total_pnl": 20279.36994995942,
+   "best_pnl": 20279.36994995942
+  },
+  "0x7b3d8e939ee08b52d06ab5e6f85791a6007e8d61": {
+   "tokens": [
+    {
+     "name": "Token1",
+     "ca": "0xceebf25b318201f1f949be2fabbfcee231737139",
+     "pnl": 20202.63812020473,
+     "win_rate": 0.0
+    }
+   ],
+   "tags": [
+    "gmgn",
+    "fomo",
+    "kol"
+   ],
+   "total_pnl": 20202.63812020473,
+   "best_pnl": 20202.63812020473
+  },
+  "0x8366a39cc670b4001a1121b8f6a443a643e40951": {
+   "tokens": [
+    {
+     "name": "Token2",
+     "ca": "0x0e3c3420da3ef7ee6aad373dd2cdd968f57a0788",
+     "pnl": 37637.09200340256,
+     "win_rate": 0.0
+    }
+   ],
+   "tags": [
+    "sandwich_bot"
+   ],
+   "total_pnl": 37637.09200340256,
+   "best_pnl": 37637.09200340256
+  },
+  "0x9a0ba45c46e6d839e290427c7243e4413b6166f5": {
+   "tokens": [
+    {
+     "name": "Token2",
+     "ca": "0x0e3c3420da3ef7ee6aad373dd2cdd968f57a0788",
+     "pnl": 6756.969485127679,
+     "win_rate": 0.0
+    }
+   ],
+   "tags": [
+    "gmgn"
+   ],
+   "total_pnl": 6756.969485127679,
+   "best_pnl": 6756.969485127679
+  },
+  "0xaed59a63f3e60bfc2c17d0062dcf7258781a10c1": {
+   "tokens": [
+    {
+     "name": "Token2",
+     "ca": "0x0e3c3420da3ef7ee6aad373dd2cdd968f57a0788",
+     "pnl": 5894.063115503341,
+     "win_rate": 0.0
+    }
+   ],
+   "tags": [
+    "fresh_wallet"
+   ],
+   "total_pnl": 5894.063115503341,
+   "best_pnl": 5894.063115503341
+  },
+  "0x9c649f8dbe8ec6b0f5a27f7d1f7d279a345df810": {
+   "tokens": [
+    {
+     "name": "Token2",
+     "ca": "0x0e3c3420da3ef7ee6aad373dd2cdd968f57a0788",
+     "pnl": 5225.153263867298,
+     "win_rate": 0.0
+    }
+   ],
+   "tags": [
+    "gmgn"
+   ],
+   "total_pnl": 5225.153263867298,
+   "best_pnl": 5225.153263867298
+  },
+  "0xa64137f1d4a1c71c7539db91141ccf01824cf538": {
+   "tokens": [
+    {
+     "name": "Token2",
+     "ca": "0x0e3c3420da3ef7ee6aad373dd2cdd968f57a0788",
+     "pnl": 4837.101702214815,
+     "win_rate": 0.0
+    }
+   ],
+   "tags": [
+    "gmgn"
+   ],
+   "total_pnl": 4837.101702214815,
+   "best_pnl": 4837.101702214815
+  },
+  "0xf444cc429600d07f732cef21e23b96f466186111": {
+   "tokens": [
+    {
+     "name": "Token2",
+     "ca": "0x0e3c3420da3ef7ee6aad373dd2cdd968f57a0788",
+     "pnl": 4753.817145296417,
+     "win_rate": 0.0
+    }
+   ],
+   "tags": [
+    "gmgn"
+   ],
+   "total_pnl": 4753.817145296417,
+   "best_pnl": 4753.817145296417
+  },
+  "0x3b3b9c3012759c7210e1b22e5d55912c8101cb40": {
+   "tokens": [
+    {
+     "name": "Token2",
+     "ca": "0x0e3c3420da3ef7ee6aad373dd2cdd968f57a0788",
+     "pnl": 4691.475044506024,
+     "win_rate": 0.0
+    }
+   ],
+   "tags": [
+    "gmgn"
+   ],
+   "total_pnl": 4691.475044506024,
+   "best_pnl": 4691.475044506024
+  },
+  "0xf902ebaf8daea855454cd97ba0fe3b0f62ad268e": {
+   "tokens": [
+    {
+     "name": "Token2",
+     "ca": "0x0e3c3420da3ef7ee6aad373dd2cdd968f57a0788",
+     "pnl": 4494.145344976607,
+     "win_rate": 0.0
+    }
+   ],
+   "tags": [
+    "gmgn"
+   ],
+   "total_pnl": 4494.145344976607,
+   "best_pnl": 4494.145344976607
+  },
+  "0x361e627129d5ead0264777005ff9e8d5fe6513de": {
+   "tokens": [
+    {
+     "name": "Token2",
+     "ca": "0x0e3c3420da3ef7ee6aad373dd2cdd968f57a0788",
+     "pnl": 4024.565830746103,
+     "win_rate": 0.0
+    }
+   ],
+   "tags": [
+    "gmgn",
+    "fresh_wallet"
+   ],
+   "total_pnl": 4024.565830746103,
+   "best_pnl": 4024.565830746103
+  },
+  "0xb1a8fc0083391a76cfa48b9ec1c7422aa5f71c1c": {
+   "tokens": [
+    {
+     "name": "Token2",
+     "ca": "0x0e3c3420da3ef7ee6aad373dd2cdd968f57a0788",
+     "pnl": 3701.0372439602297,
+     "win_rate": 0.0
+    }
+   ],
+   "tags": [
+    "gmgn"
+   ],
+   "total_pnl": 3701.0372439602297,
+   "best_pnl": 3701.0372439602297
+  },
+  "0x51b669fcabafd7bf40e17990ae6f345203b3d3c3": {
+   "tokens": [
+    {
+     "name": "Token2",
+     "ca": "0x0e3c3420da3ef7ee6aad373dd2cdd968f57a0788",
+     "pnl": 3635.9625409077303,
+     "win_rate": 0.0
+    }
+   ],
+   "tags": [
+    "gmgn"
+   ],
+   "total_pnl": 3635.9625409077303,
+   "best_pnl": 3635.9625409077303
+  },
+  "0x1bdf13fb51c6f08c9e4c554ec812281a19c47d9f": {
+   "tokens": [
+    {
+     "name": "Token2",
+     "ca": "0x0e3c3420da3ef7ee6aad373dd2cdd968f57a0788",
+     "pnl": 3250.727162236695,
+     "win_rate": 0.0
+    }
+   ],
+   "tags": [
+    "gmgn"
+   ],
+   "total_pnl": 3250.727162236695,
+   "best_pnl": 3250.727162236695
+  },
+  "0x831f4aeffb580f3f4db0906ba41ead246f4d2780": {
+   "tokens": [
+    {
+     "name": "Token2",
+     "ca": "0x0e3c3420da3ef7ee6aad373dd2cdd968f57a0788",
+     "pnl": 3179.994378659514,
+     "win_rate": 0.0
+    }
+   ],
+   "tags": [
+    "gmgn"
+   ],
+   "total_pnl": 3179.994378659514,
+   "best_pnl": 3179.994378659514
+  },
+  "0x1d99f3e7623714f0c2842b224801cd3e43210161": {
+   "tokens": [
+    {
+     "name": "Token2",
+     "ca": "0x0e3c3420da3ef7ee6aad373dd2cdd968f57a0788",
+     "pnl": 3161.896837624587,
+     "win_rate": 0.0
+    }
+   ],
+   "tags": [
+    "gmgn"
+   ],
+   "total_pnl": 3161.896837624587,
+   "best_pnl": 3161.896837624587
+  },
+  "0x5bdbd8894e0a91a89f5b1605d91c4130ca78974f": {
+   "tokens": [
+    {
+     "name": "Token2",
+     "ca": "0x0e3c3420da3ef7ee6aad373dd2cdd968f57a0788",
+     "pnl": 3030.609229784607,
+     "win_rate": 0.0
+    }
+   ],
+   "tags": [
+    "gmgn"
+   ],
+   "total_pnl": 3030.609229784607,
+   "best_pnl": 3030.609229784607
+  },
+  "0x8a7f3ddfaf4f19e4bf0a7e1f3dadfb84ce974f77": {
+   "tokens": [
+    {
+     "name": "Token2",
+     "ca": "0x0e3c3420da3ef7ee6aad373dd2cdd968f57a0788",
+     "pnl": 2887.401828397119,
+     "win_rate": 0.0
+    }
+   ],
+   "tags": [
+    "gmgn"
+   ],
+   "total_pnl": 2887.401828397119,
+   "best_pnl": 2887.401828397119
+  },
+  "0x48c9ca343cb884c7633a438a19e22075101170fa": {
+   "tokens": [
+    {
+     "name": "Token2",
+     "ca": "0x0e3c3420da3ef7ee6aad373dd2cdd968f57a0788",
+     "pnl": 2844.6396542770367,
+     "win_rate": 0.0
+    }
+   ],
+   "tags": [
+    "gmgn"
+   ],
+   "total_pnl": 2844.6396542770367,
+   "best_pnl": 2844.6396542770367
+  },
+  "0xdfcaf2c9ff07cf567a2108652106b41c5e1ea1a3": {
+   "tokens": [
+    {
+     "name": "Token2",
+     "ca": "0x0e3c3420da3ef7ee6aad373dd2cdd968f57a0788",
+     "pnl": 2706.903485341014,
+     "win_rate": 0.0
+    }
+   ],
+   "tags": [
+    "gmgn"
+   ],
+   "total_pnl": 2706.903485341014,
+   "best_pnl": 2706.903485341014
+  },
+  "0x7099113dfa3464b01aa911b10a6cb62871cf3d41": {
+   "tokens": [
+    {
+     "name": "Token2",
+     "ca": "0x0e3c3420da3ef7ee6aad373dd2cdd968f57a0788",
+     "pnl": 2699.311226666609,
+     "win_rate": 0.0
+    }
+   ],
+   "tags": [],
+   "total_pnl": 2699.311226666609,
+   "best_pnl": 2699.311226666609
+  },
+  "0xe465f5fe06e79bdc4e0add8546eca2368d1a0fd0": {
+   "tokens": [
+    {
+     "name": "Token2",
+     "ca": "0x0e3c3420da3ef7ee6aad373dd2cdd968f57a0788",
+     "pnl": 2678.424716892507,
+     "win_rate": 0.0
+    }
+   ],
+   "tags": [
+    "gmgn",
+    "smart_degen"
+   ],
+   "total_pnl": 2678.424716892507,
+   "best_pnl": 2678.424716892507
+  },
+  "0x0310cfebe1d7a69f2414f6595bbe9d17c5342acc": {
+   "tokens": [
+    {
+     "name": "Token3",
+     "ca": "0xab528169dcc80d68837a33b1e2b866bb7d7ee301",
+     "pnl": 280643.62764550926,
+     "win_rate": 0.0
+    }
+   ],
+   "tags": [
+    "sandwich_bot"
+   ],
+   "total_pnl": 280643.62764550926,
+   "best_pnl": 280643.62764550926
+  },
+  "0x115e01e8ec5cd4faf75894e946dde0beb5d3eb50": {
+   "tokens": [
+    {
+     "name": "Token3",
+     "ca": "0xab528169dcc80d68837a33b1e2b866bb7d7ee301",
+     "pnl": 51855.57421455201,
+     "win_rate": 0.0
+    }
+   ],
+   "tags": [
+    "fomo"
+   ],
+   "total_pnl": 51855.57421455201,
+   "best_pnl": 51855.57421455201
+  },
+  "0xbd699b738c071e5c44fcce36e62a8d6726e81a2b": {
+   "tokens": [
+    {
+     "name": "Token3",
+     "ca": "0xab528169dcc80d68837a33b1e2b866bb7d7ee301",
+     "pnl": 48746.10834214334,
+     "win_rate": 0.0
+    }
+   ],
+   "tags": [],
+   "total_pnl": 48746.10834214334,
+   "best_pnl": 48746.10834214334
+  },
+  "0xe9fe4c1d589c9c57d57f1110b6b6e57e5023a08e": {
+   "tokens": [
+    {
+     "name": "Token3",
+     "ca": "0xab528169dcc80d68837a33b1e2b866bb7d7ee301",
+     "pnl": 17445.9085176113,
+     "win_rate": 0.0
+    }
+   ],
+   "tags": [
+    "fomo"
+   ],
+   "total_pnl": 17445.9085176113,
+   "best_pnl": 17445.9085176113
+  },
+  "0xab40710a6ca53874680cf5b68c384c5918a80515": {
+   "tokens": [
+    {
+     "name": "Token3",
+     "ca": "0xab528169dcc80d68837a33b1e2b866bb7d7ee301",
+     "pnl": 14893.540616723958,
+     "win_rate": 0.0
+    }
+   ],
+   "tags": [],
+   "total_pnl": 14893.540616723958,
+   "best_pnl": 14893.540616723958
+  },
+  "0x7c505e3e3f66f5bb81a937500153ce1c8c24ca18": {
+   "tokens": [
+    {
+     "name": "Token3",
+     "ca": "0xab528169dcc80d68837a33b1e2b866bb7d7ee301",
+     "pnl": 14721.226122654536,
+     "win_rate": 0.0
+    }
+   ],
+   "tags": [
+    "gmgn"
+   ],
+   "total_pnl": 14721.226122654536,
+   "best_pnl": 14721.226122654536
+  },
+  "0x2344eee2d839a83412760a0ba43e6324c34a7c5f": {
+   "tokens": [
+    {
+     "name": "Token3",
+     "ca": "0xab528169dcc80d68837a33b1e2b866bb7d7ee301",
+     "pnl": 4277.159110475419,
+     "win_rate": 0.0
+    }
+   ],
+   "tags": [],
+   "total_pnl": 4277.159110475419,
+   "best_pnl": 4277.159110475419
+  },
+  "0x0a1a2095bde3603bb384a80b369aa2c0e0a40827": {
+   "tokens": [
+    {
+     "name": "Token3",
+     "ca": "0xab528169dcc80d68837a33b1e2b866bb7d7ee301",
+     "pnl": 11938.862718911616,
+     "win_rate": 0.0
+    }
+   ],
+   "tags": [],
+   "total_pnl": 11938.862718911616,
+   "best_pnl": 11938.862718911616
+  },
+  "0xde5c0e4c290e444fcc507d621658a21e720ff0a0": {
+   "tokens": [
+    {
+     "name": "Token3",
+     "ca": "0xab528169dcc80d68837a33b1e2b866bb7d7ee301",
+     "pnl": 3718.5854959304847,
+     "win_rate": 0.0
+    }
+   ],
+   "tags": [],
+   "total_pnl": 3718.5854959304847,
+   "best_pnl": 3718.5854959304847
+  },
+  "0x46eba4115c3bcda4ba332f5ba5245491896b665b": {
+   "tokens": [
+    {
+     "name": "Token3",
+     "ca": "0xab528169dcc80d68837a33b1e2b866bb7d7ee301",
+     "pnl": 9908.524628137844,
+     "win_rate": 0.0
+    }
+   ],
+   "tags": [],
+   "total_pnl": 9908.524628137844,
+   "best_pnl": 9908.524628137844
+  },
+  "0x2977b96b4235330075165ca5e3b0ef563745c354": {
+   "tokens": [
+    {
+     "name": "Token3",
+     "ca": "0xab528169dcc80d68837a33b1e2b866bb7d7ee301",
+     "pnl": 5871.386091183142,
+     "win_rate": 0.0
+    }
+   ],
+   "tags": [],
+   "total_pnl": 5871.386091183142,
+   "best_pnl": 5871.386091183142
+  },
+  "0xe1fce3748e95bf2bfcc2351c1fdb4de2740bd1a3": {
+   "tokens": [
+    {
+     "name": "Token3",
+     "ca": "0xab528169dcc80d68837a33b1e2b866bb7d7ee301",
+     "pnl": 8897.411891648575,
+     "win_rate": 0.0
+    }
+   ],
+   "tags": [
+    "fomo"
+   ],
+   "total_pnl": 8897.411891648575,
+   "best_pnl": 8897.411891648575
+  },
+  "0x2b3d9305adf669a17e26f3672b61622bd5c5499f": {
+   "tokens": [
+    {
+     "name": "Token3",
+     "ca": "0xab528169dcc80d68837a33b1e2b866bb7d7ee301",
+     "pnl": 6940.9775804631445,
+     "win_rate": 0.0
+    }
+   ],
+   "tags": [],
+   "total_pnl": 6940.9775804631445,
+   "best_pnl": 6940.9775804631445
+  },
+  "0x2ca328e20af8611182013324fa02b4c5b9e2f2ab": {
+   "tokens": [
+    {
+     "name": "Token3",
+     "ca": "0xab528169dcc80d68837a33b1e2b866bb7d7ee301",
+     "pnl": 7951.973245125113,
+     "win_rate": 0.0
+    }
+   ],
+   "tags": [],
+   "total_pnl": 7951.973245125113,
+   "best_pnl": 7951.973245125113
+  },
+  "0x8362b24587fce9c4c7e13e81633d688ae830a774": {
+   "tokens": [
+    {
+     "name": "Token3",
+     "ca": "0xab528169dcc80d68837a33b1e2b866bb7d7ee301",
+     "pnl": 8155.085251503648,
+     "win_rate": 0.0
+    }
+   ],
+   "tags": [
+    "gmgn"
+   ],
+   "total_pnl": 8155.085251503648,
+   "best_pnl": 8155.085251503648
+  },
+  "0xa1153c1d3466cf3a25494e73a6f46abf1eff38e8": {
+   "tokens": [
+    {
+     "name": "Token3",
+     "ca": "0xab528169dcc80d68837a33b1e2b866bb7d7ee301",
+     "pnl": 7973.348676409576,
+     "win_rate": 0.0
+    }
+   ],
+   "tags": [],
+   "total_pnl": 7973.348676409576,
+   "best_pnl": 7973.348676409576
+  },
+  "0xa68ec89a23ddbb5ba67337035bfcab81f587b730": {
+   "tokens": [
+    {
+     "name": "Token3",
+     "ca": "0xab528169dcc80d68837a33b1e2b866bb7d7ee301",
+     "pnl": 7362.906276231257,
+     "win_rate": 0.0
+    }
+   ],
+   "tags": [],
+   "total_pnl": 7362.906276231257,
+   "best_pnl": 7362.906276231257
+  },
+  "0x93ece09d8bcc96f93745b8ddef634d3bfc6fa677": {
+   "tokens": [
+    {
+     "name": "Token3",
+     "ca": "0xab528169dcc80d68837a33b1e2b866bb7d7ee301",
+     "pnl": 5272.526154296676,
+     "win_rate": 0.0
+    }
+   ],
+   "tags": [],
+   "total_pnl": 5272.526154296676,
+   "best_pnl": 5272.526154296676
+  },
+  "0xf5b77b30ef47f56e4ab7d6d28fbe3e91f894b9a9": {
+   "tokens": [
+    {
+     "name": "Token3",
+     "ca": "0xab528169dcc80d68837a33b1e2b866bb7d7ee301",
+     "pnl": 6788.838873780877,
+     "win_rate": 0.0
+    }
+   ],
+   "tags": [],
+   "total_pnl": 6788.838873780877,
+   "best_pnl": 6788.838873780877
+  },
+  "0xcbc04b6607e7ebe0373c3ee361ba396b8ecb721c": {
+   "tokens": [
+    {
+     "name": "Token3",
+     "ca": "0xab528169dcc80d68837a33b1e2b866bb7d7ee301",
+     "pnl": 6575.695635560015,
+     "win_rate": 0.0
+    }
+   ],
+   "tags": [
+    "gmgn",
+    "fomo",
+    "kol"
+   ],
+   "total_pnl": 6575.695635560015,
+   "best_pnl": 6575.695635560015
+  }
+ },
+ "tokens": [
+  {
+   "ca": "0xceebf25b318201f1f949be2fabbfcee231737139",
+   "name": "Token1"
+  },
+  {
+   "ca": "0x0e3c3420da3ef7ee6aad373dd2cdd968f57a0788",
+   "name": "Token2"
+  },
+  {
+   "ca": "0xab528169dcc80d68837a33b1e2b866bb7d7ee301",
+   "name": "Token3"
+  },
+  {
+   "ca": "0xa6b53819f5bf521945fceb1f9bbb3a7a7b4effff",
+   "name": "VAPE"
+  }
+ ]
+}
