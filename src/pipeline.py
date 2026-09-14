@@ -735,6 +735,18 @@ class Pipeline:
             except Exception as e:
                 jlog(log, logging.WARNING, "wallet classification failed",
                      error=str(e)[:200])
+            # on-chain verification verdicts (scripts/reverify_tags.py) override
+            # classifier output so proven wallets keep their corrected category
+            try:
+                from src.analyze.tag_overrides import apply_to_labels_file
+
+                n_ovr = apply_to_labels_file()
+                if n_ovr:
+                    jlog(log, logging.INFO, "on-chain tag overrides applied",
+                         wallets=n_ovr)
+            except Exception as e:
+                jlog(log, logging.WARNING, "tag overrides failed",
+                     error=str(e)[:160])
             counts = await self._db_counts(session)
             counts.update({"wallets_scored": len(scored), "wallets_excluded": excluded})
             counts.update({k: v for k, v in cls_counts.items() if isinstance(v, int)})
