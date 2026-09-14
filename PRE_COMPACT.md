@@ -706,3 +706,20 @@ desktop app (.exe) untuk start/stop server localhost 8787.
   0 (pipeline masih stage ENRICH utk 93K wallets; prices+analyze menyusul;
   sekali analyze jalan, classifier + overrides merge otomatis).
 - Blockscout sering 429 (pipeline enrich) → verifier lambat tapi gigih.
+
+### E. LOCAL EXPLORER SYNC 94K (S-35 lanjutan, user request)
+- scripts/extract_wallets.py (VPS, read-only): regen wallet_labels.json dari
+  TABEL DB (32,456 wallet, fresher dari file lama 12,880) + wallet_extract.csv
+  (94,176 rows: kategori, aktivitas, skor, cluster, status verified) +
+  wallet_extract_summary.json. INSIDER sekarang 3,470 — semua akan diverifikasi
+  on-chain oleh cron (Defer-safe).
+- DB snapshot selective dump (skip block_timestamps/feed_events/
+  wallet_token_interest — tidak dipakai explorer): 962MB -> 30MB gz ->
+  split 6MB -> download -> scripts/rebuild_local_db.py (backup otomatis
+  data/topwallet.pre-s35.db). Jangan decompress per-part: gabung bytes dulu,
+  gzip.decompress SEKALI (bug yang menghabiskan waktu 1x retry).
+- dataset.py + evidence.js: chip "on-chain: insider PROVEN/OVERTURNED/
+  airdrop spam target/unproven" di evidence panel explorer.
+- Local explorer SEKARANG: 94,435 wallets, 310K swaps, 32,456 classified,
+  dataset gz 11.6MB — jalan via topwallet-launcher.exe (tested HTTP 200).
+- Commit terakhir: b148346 (GitHub sinkron).
