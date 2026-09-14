@@ -63,3 +63,24 @@ HARUS dibangun dulu ( mereka tidak punya swap events sendiri).
 | Funding wallet | first ETH incoming source | ✅ via funding_provenance |
 | Dev's Best ATH | max pool price × supply | ⬜ perlu supply data |
 | Callout/X | GMGN callout API | ⬜ via GmgnClient (belum) |
+
+---
+
+## TAG VERIFICATION LAYER (S-35 — on-chain, bukan tag mentah)
+
+Classifier INSIDER = "sell without buy" DARI DATA LOKAL → false positive
+massal saat coverage bolong (1,345 wallet!). Layer verifikasi on-chain:
+
+| Verdict | Bukti on-chain | Re-posisi |
+|---|---|---|
+| TRADER_MISREAD | tx ada Swap log (v4/v3) — coverage bolong | TRADER_COVERAGE_GAP + re-enrich |
+| MINT_ALLOCATION | transfer dari 0x0 | INSIDER conf 0.95 |
+| CONFIRMED_INSIDER | transfer murni non-swap | INSIDER conf 0.85 |
+| AIRDROP_SPAM | pengirim >=20 wallet / <=100 blok | AIRDROP_FARMER + PHISHING_TARGET |
+| UNRESOLVED | tak ada jejak transfer | GENERALIST + re-enrich |
+
+CLUSTER: funding link diverifikasi tx on-chain; funder di-profil:
+CONTRACT_BATCHER / FUNDING_BOT_EOA / OPERATOR_EOA / CEX (known_entities).
+
+Overrides di-apply pipeline TIAP cycle (src/analyze/tag_overrides.py) —
+klasifikasi ulang tidak akan menimpa verdict on-chain.

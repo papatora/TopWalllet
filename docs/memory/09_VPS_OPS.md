@@ -60,3 +60,27 @@ MAX_TOKENS=300
 ENRICH_CONCURRENCY=6
 GMGN_API_KEY=gmgn_solbscbaseethmonadtron
 ```
+
+## GIT PUSH (updated S-35)
+```
+PAT baru di local .env + VPS .env (GITHUB_TOKEN). Push SAH dari VPS:
+  cd /opt/topwallet && set -a && . ./.env && set +a && \
+  git push https://x-access-token:$GITHUB_TOKEN@github.com/papatora/TopWalllet.git master:main
+⚠️ VPS branch = master, GitHub branch = main → SELALU push master:main
+⚠️ Local push bisa HANG (git-credential-manager dialog) → kalau harus kirim
+   commit lokal ke VPS: git bundle create /tmp/x.bundle <base>..main →
+   SFTP upload → git fetch /tmp/x.bundle main:tmp && git reset --hard tmp
+```
+
+## TAG RE-VERIFICATION (S-35)
+```
+Cron  */30 * * * *  reverify_tags.py --max-calls 1500 (flock anti-overlap)
+Monitor: cat results/tag_verification_progress.json (pairs done)
+         results/tag_verification.json (verdicts, persist per 10 pair)
+         results/tag_overrides.json (label corrections → auto-applied pipeline)
+Force ulang: rm results/tag_verification_progress.json
+⚠️ JANGAN pkill -f reverify_tags dari shell yang cmdline-nya mengandung
+   pattern sama (self-kill) → pakai pgrep -f '[r]everify_tags'
+⚠️ Nohup+setsid terbukti MATI diam-diam setelah ~10 menit (non-OOM) —
+   gunakan cron, bukan nohup, untuk pekerjaan latar panjang
+```

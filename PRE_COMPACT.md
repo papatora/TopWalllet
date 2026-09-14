@@ -641,3 +641,68 @@ tokens table → on-chain `decimals()`, cached). USDG = 6 verified on-chain. 84 
 reads `VPS_HOST` + `VPS_SSH_KEY`/`VPS_PASSWORD` from local `.env`.
 ⚠️ Password still in git history (`86b0450`, `96699d4`) → **ROTATE root password**
 (prefer SSH key + disable password login). History NOT rewritten.
+
+---
+
+## SNAPSHOT S-35 — ON-CHAIN TAG VERIFICATION + TAURI DESKTOP LAUNCHER (2026-09-14/15)
+
+**USER DIRECTIVE (sesi ini):** (1) re-verify semua cluster & wallet — insider
+beneran insider? phishing beneran phishing? JANGAN pakai tag mentah GMGN,
+cek on-chain, lalu re-position wallet ke kategori yang benar. (2) bikin
+desktop app (.exe) untuk start/stop server localhost 8787.
+
+### A. DISCOVERY: VPS TERNYATA JALAN KODE LAMA (critical fix)
+- VPS git head = 10dcc8a (broken S-33 decimals!) — commit 781b287..0d62727
+  TIDAK PERNAH sampai VPS/GitHub karena local repo tidak punya remote origin
+  + local GITHUB_TOKEN invalid. "S-34 one-shot finisher" tidak melakukan apa
+  yang dia klaim. price_points=0 di VPS akibatnya.
+- FIX: git bundle → SFTP → git reset --hard di VPS (patch loop gagal, bundle
+ 路径 lebih reliable). VPS branch ternyata bernama `master` (bukan main!) —
+  push pakai `master:main`.
+- **USER kasih GitHub PAT baru** ("github pat.txt" di Downloads) — terpasang
+  di local .env + VPS .env. Push sukses. ⚠️ PAT ada di file Downloads user.
+- Pipeline di-restart 17:29 UTC dengan kode decimals benar. DB VPS sekarang
+  WAL mode (reader tidak lagi bentrok dengan writer).
+
+### B. TAG VERIFICATION ENGINE (jalan sekarang di VPS)
+- Masalah: 1,345 wallet dilabel INSIDER (10.4%!) — diderive dari swap_events
+  lokal ("sell without buy") → false positive massal saat coverage bolong.
+- `scripts/reverify_tags.py` verifikasi on-chain per (wallet, token):
+  - TRADER_MISREAD: tx ternyata ada Swap log (v4 PoolManager/v3 topic) →
+    bukan insider, kita kelewatan beli-nya → antre re-enrich
+  - MINT_ALLOCATION: transfer dari 0x0 → insider terbukti (conf 0.95)
+  - CONFIRMED_INSIDER: transfer murni non-swap → insider terbukti (0.85)
+  - AIRDROP_SPAM: pengirim nyebar >=20 wallet dalam <=100 blok →
+    AIRDROP_FARMER + PHISHING_TARGET (deteksi phishing on-chain pertama!)
+  - UNRESOLVED: tak ada jejak transfer → turun GENERALIST + antre enrich
+- Cluster: funding link funder→member diverifikasi tx on-chain + profil
+  funder (CONTRACT_BATCHER / FUNDING_BOT_EOA / OPERATOR_EOA / CEX)
+- Output: results/tag_verification.json (evidence), tag_overrides.json
+  (koreksi label, di-apply pipeline tiap cycle via tag_overrides.py),
+  reenrich_queue.json. Checkpoint per 10 pair (persist parsial).
+- ANTI-SKIP: bc_get 3 putaran × 6 retry backoff; receipts 5× inline retry.
+- CRON: `*/30 * * * * --max-calls 1500` + flock anti-overlap (.reverify.lock).
+  Nohup detached ternyata MATI diam-diam ~9 menit (bukan OOM — RAM 7GB free;
+  dugaan systemd session cleanup) → cron+checkpoint = solusi tahan-penyakit.
+- Overlap label di VPS saat ini: INSIDER 1345, BUNDLER_SUSPECT 211, SNIPER
+  287, DEV 19, CLUSTER 16 (be41: 14 @0.002ETH uniform, f70d: 26 funder
+  250.9 ETH), MEV 5, CT 15.
+
+### C. TAURI DESKTOP LAUNCHER (selesai + GUI-tested)
+- `desktop/` — Tauri v2 app. exe 7.6MB portable + NSIS installer 1.7MB di
+  desktop/src-tauri/target/release/.
+- Fitur: status dot (mati/hijau-jalan/amber-port-eksternal), Mulai/Stop/
+  Buka Website, live log (events), auto-detect Python (python→py→
+  LOCALAPPDATA glob) + folder server.py (env→ini file→walk-up exe→default
+  user path), kill child saat window close, CREATE_NO_WINDOW.
+- GUI test PASS: start → HTTP 200; stop → conn refused; status dot benar.
+- TIP build: a11y WebView2 tidak expose tombol HTML → test via screenshot.
+  `into_string()` Cow → `to_string()`; Manager trait wajib di-import.
+- Local push git HANG karena git-credential-manager dialog invisible —
+  sudah di-close. Jalur push yang benar: bundle → VPS → push dari sana.
+
+### D. STATE VPS SEKARANG
+- wallets 93,459 | tokens 1,330 | pools 1,342 | swaps 302,541 | price_points
+  0 (pipeline masih stage ENRICH utk 93K wallets; prices+analyze menyusul;
+  sekali analyze jalan, classifier + overrides merge otomatis).
+- Blockscout sering 429 (pipeline enrich) → verifier lambat tapi gigih.
