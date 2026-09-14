@@ -136,6 +136,21 @@ def build() -> dict:
             "realized": m.get("total_realized_pnl_usd"), "unrealized": m.get("total_unrealized_pnl_usd"),
             "win_rate": m.get("win_rate"), "positions": m.get("total_positions"),
         }
+    # on-chain tag verification (scripts/reverify_tags.py): wallet -> status
+    try:
+        _tv = _load("results/tag_verification.json").get("insider", {})
+        _best = {}
+        for _k, _v in _tv.items():
+            _w, _verdict = _k.split(":", 1)[0], _v.get("verdict")
+            _st = {"CONFIRMED_INSIDER": "insider PROVEN", "MINT_ALLOCATION": "insider PROVEN (mint)",
+                   "TRADER_MISREAD": "insider OVERTURNED (coverage gap)", "AIRDROP_SPAM": "airdrop spam target",
+                   "UNRESOLVED": "insider unproven"}.get(_verdict)
+            if _st and (_w not in _best or _st.startswith("insider PROVEN")):
+                _best[_w] = _st
+        for _w, _st in _best.items():
+            scores.setdefault(_w, {}).update(tag=_st)
+    except Exception:
+        pass
     for grp, rows in _load("results/wallet_scenario_groups.json").items():
         for r in rows:
             scores.setdefault(r["wallet"].lower(), {}).update(group=grp, verified=r.get("verified"), rank=r.get("rank"))

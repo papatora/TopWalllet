@@ -27,7 +27,7 @@ export function evidenceBlocks(i) {
     return `<div class="evi"><div class="evi-h">${chip(L)}<span class="end">confidence ${w[3][j].toFixed(2)}</span></div><div class="evi-d">${esc(lm.desc)}</div>${body ? `<div class="evi-b kv">${body}</div>` : ''}</div>`;
   });
   const sc = e._score;
-  if (sc) out.push(`<div class="evi"><div class="evi-h"><span class="chip" style="--c:var(--blue-hi)">PIPELINE SCORE</span>${sc.verified ? `<span class="end">verifier ${esc(sc.verified)}</span>` : ''}</div>
+  if (sc) out.push(`<div class="evi"><div class="evi-h"><span class="chip" style="--c:var(--blue-hi)">PIPELINE SCORE</span>${sc.verified ? `<span class="end">verifier ${esc(sc.verified)}</span>` : ''}${sc.tag ? `<span class="end" style="color:var(--green)">on-chain: ${esc(sc.tag)}</span>` : ''}</div>
     <div class="evi-d">Scored by the analyze stage. Realized PnL here is the verified calculation, not the estimate.</div><div class="evi-b kv">
     ${sc.score != null ? row('Composite score', sc.score) : ''}${sc.style ? row('Style', esc(sc.style)) : ''}
     ${sc.realized != null ? row('Realized PnL · verified', `<span class="${sc.realized >= 0 ? 'pos' : 'neg'}">${usd(sc.realized, true)}</span>`) : ''}
