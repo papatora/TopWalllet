@@ -564,6 +564,20 @@ async def run(max_calls: int, pairs_limit: int | None) -> int:
     verdict_by_wallet: dict[str, list[dict]] = defaultdict(list)
     t0 = time.time()
     aborted = False
+
+    def persist() -> None:
+        """Tulis hasil parsial — dipanggil tiap checkpoint DAN di akhir, jadi
+        monitoring bisa membaca verdict saat run masih berjalan."""
+        (rd / "tag_verification.json").write_text(
+            json.dumps(verification, indent=1, default=str), encoding="utf-8")
+        (rd / "tag_overrides.json").write_text(
+            json.dumps({"generated_at": _now(), "source": "scripts/reverify_tags.py",
+                        "wallets": overrides}, indent=1), encoding="utf-8")
+        (rd / "reenrich_queue.json").write_text(
+            json.dumps({"generated_at": _now(), "wallets": reenrich}, indent=1),
+            encoding="utf-8")
+        prog_path.write_text(json.dumps({"done": done}), encoding="utf-8")
+
     try:
         for i, (wallet, token) in enumerate(pairs):
             if v.calls >= max_calls:
@@ -588,7 +602,14 @@ async def run(max_calls: int, pairs_limit: int | None) -> int:
             verdict_by_wallet[wallet].append(res)
             done[f"{wallet}:{token}"] = _now()
             if (i + 1) % 25 == 0:
-                prog_path.write_text(json.dumps({"done": done}), encoding="utf-8")
+                for w, vl in verdict_by_wallet.items():
+                    ov = override_for(w, vl)
+                    if ov:
+                        overrides[w] = ov
+                    if any(x.get("verdict") in ("TRADER_MISREAD", "UNRESOLVED") for x in vl):
+                        reenrich[w] = {"reason": "tag_verification", "at": _now(),
+                                       "tokens": [x["token"] for x in vl]}
+                persist()
                 jlog(log, logging.INFO, "progress", pairs_done=i + 1,
                      total=len(pairs), calls=v.calls,
                      elapsed_min=round((time.time() - t0) / 60, 1))
@@ -629,15 +650,7 @@ async def run(max_calls: int, pairs_limit: int | None) -> int:
                 reenrich[wallet] = {"reason": "tag_verification", "at": _now(),
                                     "tokens": [x["token"] for x in vlist]}
 
-        (rd / "tag_verification.json").write_text(
-            json.dumps(verification, indent=1, default=str), encoding="utf-8")
-        (rd / "tag_overrides.json").write_text(
-            json.dumps({"generated_at": _now(), "source": "scripts/reverify_tags.py",
-                        "wallets": overrides}, indent=1), encoding="utf-8")
-        (rd / "reenrich_queue.json").write_text(
-            json.dumps({"generated_at": _now(), "wallets": reenrich}, indent=1),
-            encoding="utf-8")
-        prog_path.write_text(json.dumps({"done": done}), encoding="utf-8")
+        persist()
 
         counts: dict[str, int] = defaultdict(int)
         for w, vl in verdict_by_wallet.items():
