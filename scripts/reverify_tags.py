@@ -64,6 +64,32 @@ TRANSFER_PAGES = 8         # kedalaman histori per (wallet, token)
 SENDER_PAGES = 6
 
 
+class Defer(Exception):
+    """Data Blockscout terbukti tidak lengkap (throttled/degraded) —
+    pair TIDAK diberi verdict dan diulang run berikutnya (bukan skip)."""
+
+
+def _token_addr(item: dict) -> str:
+    """Alamat token ERC-20 dari item transfer — dukung 2 bentuk API
+    (lama: token.address; baru: token.address_hash)."""
+    tok = item.get("token") or {}
+    return ((tok.get("address") or tok.get("address_hash") or "") or "").lower()
+
+
+def _item_amount(item: dict) -> float:
+    total = item.get("total") or {}
+    raw = total.get("value") or item.get("value") or "0"
+    tok = item.get("token") or {}
+    try:
+        dec = int(tok.get("decimals") or 18)
+    except (ValueError, TypeError):
+        dec = 18
+    try:
+        return int(raw) / (10 ** dec) if raw else 0.0
+    except (ValueError, TypeError):
+        return 0.0
+
+
 # ---------------------------------------------------------------- helpers
 
 def _sqlite_path(url: str) -> Path | None:
@@ -83,22 +109,14 @@ def _transfer_items(items: list[dict], wallet: str, token: str) -> list[dict]:
     """Normalize Blockscout token-transfer items for (wallet, token)."""
     out = []
     for it in items:
-        tok = ((it.get("token") or {}).get("address") or "").lower()
+        tok = _token_addr(it)
         if tok != token.lower():
             continue
         src = ((it.get("from") or {}).get("hash") or "").lower()
         dst = ((it.get("to") or {}).get("hash") or "").lower()
         if not dst:
             continue
-        try:
-            dec = int(((it.get("token") or {}).get("decimals") or "18").rstrip() or 18)
-        except ValueError:
-            dec = 18
-        raw = ((it.get("total") or {}).get("value") or "0")
-        try:
-            amount = int(raw) / (10 ** dec) if raw else 0.0
-        except (ValueError, TypeError):
-            amount = 0.0
+        amount = _item_amount(it)
         out.append({
             "direction": "in" if dst == wallet.lower() else "out",
             "counterparty": src if dst == wallet.lower() else dst,
@@ -162,10 +180,10 @@ class TagVerifier:
         return None
 
     async def bc_get(self, path: str, params: dict | None = None) -> dict | list | None:
-        """Anti-skip fetch: BlockscoutClient.get_json TIDAK pernah raise —
-        404 dan gagal-transien sama-sama None. Bedakan dengan beberapa putaran:
-        None bertahan-tahan setelah backoff panjang = memang tanpa data (sah).
-        Rate limit ditangani backoff eksponensial bertingkat — tidak ada skip."""
+        """Anti-skip fetch. BlockscoutClient.get_json TIDAK membedakan 404
+        dari throttling (sama-sama None). None yang bertahan setelah 3 putaran
+        backoff panjang → Defer (API sedang tidak sehat; pair diulang run
+        berikutnya, BUKAN diberi verdict dari data kosong)."""
         for round_ in range(3):
             data = await self.bc.get_json(path, params=params, retries=6)
             self.calls += 1
@@ -175,7 +193,7 @@ class TagVerifier:
             jlog(log, logging.WARNING, "blockscout kosong — cek ulang (anti-skip)",
                  path=path[:80], round=round_ + 1, wait_s=wait)
             await asyncio.sleep(wait)
-        return None  # konsisten kosong setelah 3 putaran → benar-benar tanpa data
+        raise Defer(f"Blockscout None persisten: {path[:60]}")
 
     async def receipt_retry(self, tx_hash: str) -> dict | None:
         """eth_getTransactionReceipt dengan retry inline (rate limit RPC)."""
@@ -261,6 +279,15 @@ class TagVerifier:
         transfers = _transfer_items(items_list, wallet, token)
         res["transfers_total"] = len(transfers)
 
+        # DB-oracle guard: wallet TERBUKTI punya sells di DB (yang datanya
+        # berasal dari Blockscout sendiri). Kalau API bilang 0 transfer,
+        # respons jelas tidak lengkap (throttled/bentuk baru) → jangan
+        # div verdict sekarang.
+        if not transfers and sells:
+            res["calls"] = self.calls - c0
+            raise Defer(f"0 transfer utk {wallet[:10]}:{token[:10]} "
+                        f"padahal DB punya {len(sells)} sells — API incomplete")
+
         known_txs = self.local_swap_txs(wallet)
         candidates = [t for t in transfers
                       if t["direction"] == "in" and t["amount"] > 0
@@ -328,6 +355,9 @@ class TagVerifier:
             )
             s_list = s_items.get("items", []) if isinstance(s_items, dict) else []
             s_out = _transfer_items(s_list, sender, token)
+            if not s_out:
+                # pengirim PASTI punya out-transfer ( dia yang kirim ke wallet )
+                raise Defer(f"0 transfer utk sender {sender[:10]} — API incomplete")
             best, blk = _max_spread(s_out)
             max_windows[sender] = {"max_recipients": best, "window_block": blk,
                                    "out_total": len(s_out)}
@@ -573,6 +603,7 @@ async def run(max_calls: int, pairs_limit: int | None) -> int:
             reenrich = {}
 
     verdict_by_wallet: dict[str, list[dict]] = defaultdict(list)
+    deferred = 0
     t0 = time.time()
     aborted = False
 
@@ -597,6 +628,14 @@ async def run(max_calls: int, pairs_limit: int | None) -> int:
                 break
             try:
                 res = await v.verify_insider_pair(wallet, token)
+            except Defer as e:
+                # API tidak lengkap utk pair ini SAAT INI: jangan verdict,
+                # jangan tandai done — cron berikutnya mengulang pair ini
+                deferred += 1
+                if deferred % 10 == 1:
+                    jlog(log, logging.INFO, "pair ditunda (API incomplete)",
+                         total_deferred=deferred, sample=str(e)[:100])
+                continue
             except Exception as e:
                 # infra error setelah retry panjang: catat ERROR + tandai done
                 # supaya resume TIDAK mengulang pair beracun ini terus-menerus
@@ -668,7 +707,8 @@ async def run(max_calls: int, pairs_limit: int | None) -> int:
             for x in vl:
                 counts[x.get("verdict", "?")] += 1
         jlog(log, logging.INFO, "reverify finished", pairs_done=len(done),
-             calls=v.calls, verdicts=dict(counts), aborted=aborted)
+             calls=v.calls, verdicts=dict(counts), deferred=deferred,
+             aborted=aborted)
 
     await v.rpc.close()
     await v.bc.close()
