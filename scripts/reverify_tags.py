@@ -136,9 +136,30 @@ class TagVerifier:
         self.bc = BlockscoutClient(rps=max(settings.blockscout_rps * 0.6, 1.0))
         self.max_calls = max_calls
         self.calls = 0
+        self.db = self._open_db()
+
+    def _open_db(self) -> sqlite3.Connection | None:
+        """Open the pipeline's SQLite read-mostly. The DB historically runs in
+        journal 'delete' mode → readers lock while enrichment writes. Switch to
+        WAL (best-effort, one-time, benefits API + verifier alike) and set a
+        long busy timeout. Persistent failure → None (verifier degrades to
+        evidence-only mode instead of fighting the pipeline)."""
         db_path = _sqlite_path(settings.database_url)
-        self.db = (sqlite3.connect(f"file:{db_path}?mode=ro", uri=True)
-                   if db_path and db_path.exists() else None)
+        if not db_path or not db_path.exists():
+            return None
+        for attempt in range(3):
+            try:
+                conn = sqlite3.connect(str(db_path), timeout=30)
+                conn.execute("PRAGMA busy_timeout=30000")
+                mode = conn.execute("PRAGMA journal_mode=WAL").fetchone()
+                if attempt == 0:
+                    jlog(log, logging.INFO, "verifier db open", journal_mode=str(mode))
+                return conn
+            except sqlite3.OperationalError as e:
+                jlog(log, logging.WARNING, "db open retry",
+                     attempt=attempt + 1, err=str(e)[:120])
+                time.sleep(10 * (attempt + 1))
+        return None
 
     async def bc_get(self, path: str, params: dict | None = None) -> dict | list | None:
         """Anti-skip fetch: BlockscoutClient.get_json TIDAK pernah raise —
