@@ -504,6 +504,17 @@ def override_for(wallet: str, verdicts: list[dict]) -> dict | None:
 
 async def run(max_calls: int, pairs_limit: int | None) -> int:
     rd = Path(settings.results_dir)
+
+    # anti-overlap: satu instance verifier per VPS (cron aman dari tumpangan)
+    import fcntl
+
+    lock_fh = open(rd / ".reverify.lock", "w")
+    try:
+        fcntl.flock(lock_fh, fcntl.LOCK_EX | fcntl.LOCK_NB)
+    except OSError:
+        jlog(log, logging.INFO, "verifier lain masih jalan — exit")
+        return 0
+
     labels_path = rd / "wallet_labels.json"
     labels = json.loads(labels_path.read_text(encoding="utf-8"))
     wallets = labels.get("wallets", {})
@@ -601,7 +612,7 @@ async def run(max_calls: int, pairs_limit: int | None) -> int:
             verification.setdefault("insider", {})[f"{wallet}:{token}"] = res
             verdict_by_wallet[wallet].append(res)
             done[f"{wallet}:{token}"] = _now()
-            if (i + 1) % 25 == 0:
+            if (i + 1) % 10 == 0:
                 for w, vl in verdict_by_wallet.items():
                     ov = override_for(w, vl)
                     if ov:
