@@ -618,3 +618,26 @@ be MUCH more accurate — realized PnL will be in real dollars, not 10¹² off.
 - Usage LLM: UNLIMITED (user kasih ZAI API key + unlimited plan)
 - Jangan bilang "context limited" atau "extremely limited" — PROAKTIF TERUS
 - Update PRE_COMPACT SETIAP selesai milestone, bukan cuma saat mau habis
+
+---
+
+## SNAPSHOT S-34 — S-33 DECIMALS FIX WAS BROKEN → REPLACED + VPS CREDS OUT OF SOURCE (2026-09-14)
+
+**S-33 (`10dcc8a`) had 3 bugs** (verified with tests/test_price_decimals.py):
+1. `spot = token.price_usd …` line got deleted → `NameError: spot` on EVERY
+   `build_series_for_pool` → after S-33 cleared 2M points the VPS likely rebuilt
+   **zero** price points. Check VPS log for `series build failed` / `spot`.
+2. USDG decimals only looked up in `tokens` table (USDG isn't there) → still 18 → still 1e-12.
+3. token0 branch used `10^(quote_dec − token_dec)` (sign flipped) → 1e-24.
+
+**Replaced by `781b287`**: `quote_per_token()` = (raw or 1/raw) × 10^(token_dec − quote_dec)
+(same exponent both orientations) + `PriceService._quote_decimals()` (native=18 →
+tokens table → on-chain `decimals()`, cached). USDG = 6 verified on-chain. 84 tests pass.
+- `scripts/backfill_quote_decimals.py`: local-only, dry-run default, per-point idempotent
+  rescale of old USDG points (only needed if old bad points still exist).
+- After deploy: VPS must re-run prices → analyze → feed.
+
+**Security `22a646c`**: VPS password removed from scripts/HANDOFF → `scripts/_vps.py`
+reads `VPS_HOST` + `VPS_SSH_KEY`/`VPS_PASSWORD` from local `.env`.
+⚠️ Password still in git history (`86b0450`, `96699d4`) → **ROTATE root password**
+(prefer SSH key + disable password login). History NOT rewritten.
