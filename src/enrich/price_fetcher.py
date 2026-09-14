@@ -7,8 +7,9 @@ supported, Birdeye is Solana-centric), so TopWallet derives prices itself:
     the pool's poolId topic. The log data carries sqrtPriceX96 after each swap.
   * Uniswap v3 pools  — Swap logs from the pool contract itself.
 
-  price_raw      = (sqrtPriceX96 / 2^96)^2        # token1 per token0
+  price_raw      = (sqrtPriceX96 / 2^96)^2        # token1 wei per token0 wei
   token0/token1  = ordered by numeric address     # EVM convention
+  quote_per_tok  = price_raw (or 1/price_raw) × 10^(token_dec − quote_dec)
   price_usd      = price_in_quote * quote_usd     # USDG≈$1; ETH via its USDG pool
 
 Every point is persisted (price_points) so re-runs are incremental and the
@@ -52,6 +53,22 @@ def _sqrt_to_raw_price(sqrt_x96: int) -> float:
     return (sqrt_x96 / Q96) ** 2
 
 
+def quote_per_token(sqrt_x96: int, token_is_token0: bool,
+                    token_decimals: int, quote_decimals: int) -> float:
+    """Human price (quote units per 1 whole token) from a pool's sqrtPriceX96.
+
+    sqrtPriceX96² is token1_wei / token0_wei — smallest units, so it only equals
+    the human ratio when both sides share decimals. In either orientation the
+    human quote-per-token is (raw or 1/raw) × 10^(token_dec − quote_dec); e.g.
+    an 18-dec token vs 6-dec USDG needs ×1e12.
+    """
+    raw = _sqrt_to_raw_price(sqrt_x96)
+    if raw <= 0:
+        return 0.0
+    scale = 10.0 ** (token_decimals - quote_decimals)
+    return (raw if token_is_token0 else 1.0 / raw) * scale
+
+
 class PriceService:
     def __init__(self, rpc: EvmRpcClient, session: AsyncSession):
         self.rpc = rpc
@@ -63,6 +80,7 @@ class PriceService:
         self._v4_topic = v4_swap_topic0()
         self.head_hint: int | None = None
         self._eth_spot: float | None = None
+        self._decimals_cache: dict[str, int] = {}              # quote token → decimals
 
     # ---------------- setup ----------------
 
@@ -151,20 +169,14 @@ class PriceService:
         if not quote_usd_by_block:
             return 0
 
-        # ── DECIMAL FIX (S-32): sqrtPriceX96² gives the ratio in SMALLEST
-        # units. Human-readable price needs × 10^(dec0 − dec1) adjustment.
-        # Without this, a 18-dec token in a 6-dec pool is 10¹² off. ──
-        token_dec = token.decimals if token else 18
-
-        # quote token decimals: from Token table or on-chain
-        quote_token = await self.session.get(Token, pool.quote_token)
-        quote_dec = quote_token.decimals if quote_token and quote_token.decimals else 18
-        if pool.quote_token == "0x0000000000000000000000000000000000000000":
-            quote_dec = 18  # native ETH
-
-        jlog(log, logging.INFO, "decimal adjustment",
-             token_sym=token.symbol if token else "?",
-             token_dec=token_dec, quote_dec=quote_dec, pool=pool.address[:12])
+        # raw = sqrtPriceX96² = token1-per-token0 (token0 = lower address).
+        # Address-ordering surprises happen (quote-token metadata mismatches),
+        # so pick the orientation whose median best matches the token's known
+        # spot price from DexScreener; fall back to the ordering rule.
+        token_is_token0 = token_addr < quote_addr
+        spot = token.price_usd if token and token.price_usd else None
+        token_dec = token.decimals if token and token.decimals is not None else 18
+        quote_dec = await self._quote_decimals(pool.quote_token)
 
         def build(invert: bool) -> list[tuple[int, datetime, float]]:
             out = []
@@ -172,16 +184,10 @@ class PriceService:
                 q = quote_usd_by_block.get(block)
                 if not q:
                     continue
-                raw = _sqrt_to_raw_price(raw_points[block])
-                if raw <= 0:
+                qpt = quote_per_token(raw_points[block], not invert, token_dec, quote_dec)
+                if qpt <= 0:
                     continue
-                # decimal adjustment: raw is in smallest units of both tokens.
-                # human price = raw × 10^(dec0 − dec1) for token0's price,
-                # or (1/raw) × 10^(dec1 − dec0) for token1's price.
-                if invert:
-                    p = (1.0 / raw) * (10 ** (token_dec - quote_dec)) * q
-                else:
-                    p = raw * (10 ** (quote_dec - token_dec)) * q
+                p = qpt * q
                 if 0 < p < 10 ** 9:
                     out.append((block, ts_map[block], p))
             return out
@@ -194,9 +200,8 @@ class PriceService:
             logs_sorted = sorted(math.log10(p) for _, _, p in series)
             return abs(logs_sorted[len(logs_sorted) // 2] - math.log10(spot))
 
-        normal = build(False)     # price = raw × adj × quote_usd
-        inverted = build(True)    # price = (1/raw) × adj × quote_usd
-        token_is_token0 = token_addr < quote_addr
+        normal = build(False)     # price = raw × quote_usd
+        inverted = build(True)    # price = (1/raw) × quote_usd
         if spot:
             pick_inverted = med_log_dist(inverted) < med_log_dist(normal)
         else:
@@ -266,6 +271,35 @@ class PriceService:
             self.session.add(BlockTimestamp(block_num=b, ts=ts))
         await self.session.flush()
         return ts_map
+
+    async def _quote_decimals(self, quote_token: str) -> int:
+        """ERC-20 decimals of a pool's quote side (native ETH = 18).
+
+        Quote tokens (USDG, stock tokens) are usually NOT in the tokens table,
+        so ask the chain via decimals() and cache. Defaulting to 18 is what
+        mis-scaled every USDG (6-dec) series by 1e-12.
+        """
+        addr = quote_token.lower()
+        if addr in self._decimals_cache:
+            return self._decimals_cache[addr]
+        dec: int | None = None
+        if addr == "0x0000000000000000000000000000000000000000":
+            dec = 18
+        else:
+            row = await self.session.get(Token, addr)
+            if row is not None and row.decimals is not None:
+                dec = row.decimals
+            else:
+                try:
+                    res = await self.rpc.call("eth_call", [{"to": addr, "data": "0x313ce567"}, "latest"])
+                    dec = int(res, 16) if res and res != "0x" else None
+                except Exception as e:
+                    jlog(log, logging.WARNING, "quote decimals lookup failed", token=addr, error=str(e)[:120])
+        if dec is None or not 0 <= dec <= 36:
+            jlog(log, logging.WARNING, "quote decimals unknown, assuming 18", token=addr)
+            dec = 18
+        self._decimals_cache[addr] = dec
+        return dec
 
     async def _quote_usd(self, pool: Pool, block: int) -> float | None:
         symbol = pool.quote_symbol.upper()
