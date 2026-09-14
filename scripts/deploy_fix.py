@@ -1,10 +1,9 @@
 """VPS deploy fix pass: clone repo properly, rebuild venv, restart service."""
 import time
-import paramiko
 
-ssh = paramiko.SSHClient()
-ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-ssh.connect("78.31.250.202", port=22, username="root", password="lala123456", timeout=25)
+from _vps import connect
+
+ssh = connect()
 
 def run(ssh, cmd, timeout=900, quiet=False):
     _, stdout, stderr = ssh.exec_command(cmd, timeout=timeout)

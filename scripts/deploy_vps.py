@@ -1,8 +1,7 @@
 """One-shot VPS deployment for TopWallet (reads secrets from local files only)."""
 import sys, time, json, re
-import paramiko
 
-HOST, PORT, USER, PASS = "78.31.250.202", 22, "root", "lala123456"
+from _vps import connect
 
 # local .env values to replicate on the VPS
 env = {}
@@ -46,10 +45,8 @@ def run(ssh, cmd, timeout=600, quiet=False):
         print(f"  [{code}] {cmd[:70]}  ->  " + (" | ".join(tail[-2:])[:160] if tail else "(empty)"))
     return code, out, err
 
-ssh = paramiko.SSHClient()
-ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 print("connecting…")
-ssh.connect(HOST, port=PORT, username=USER, password=PASS, timeout=25)
+ssh = connect()
 print("connected.")
 
 run(ssh, "uname -m && grep PRETTY /etc/os-release && python3 --version && nproc && df -h / | tail -1")

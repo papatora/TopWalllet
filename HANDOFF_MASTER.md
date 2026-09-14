@@ -20,7 +20,7 @@ Copytrade agent akan menggunakan list ini untuk auto-follow trading mereka.
 
 ## 2. STATUS SAAT INI (2026-09-08)
 
-### VPS (78.31.250.202, root/lala123456)
+### VPS (78.31.250.202, root — creds in local .env: VPS_SSH_KEY / VPS_PASSWORD)
 - Supervisor: **ACTIVE**, cycle berjalan otomatis
 - **Wallets: ~4,873+** (terus bertambah dari trending scanner per 30 menit)
 - **Tokens: 447+** (Blockscout chain-wide + DexScreener trending)
