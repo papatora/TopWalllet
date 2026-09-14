@@ -27,3 +27,8 @@ Thumbs.db
 .idea/
 .vscode/
 fomo_cookies.json
+
+# desktop launcher build artifacts
+desktop/node_modules/
+desktop/src-tauri/target/
+desktop/src-tauri/gen/

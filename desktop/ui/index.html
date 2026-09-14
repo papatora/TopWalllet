@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8" />
+<title>TopWallet — Local Server</title>
+<style>
+  :root {
+    --bg: #0b1220; --panel: #111a2e; --line: #1e2a44;
+    --text: #e6ebf4; --muted: #8b98b3;
+    --green: #2ecc71; --red: #e74c3c; --amber: #f39c12;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg); color: var(--text);
+    font: 14px/1.5 "Segoe UI", system-ui, sans-serif;
+    padding: 22px; user-select: none;
+  }
+  h1 { font-size: 17px; font-weight: 600; letter-spacing: .3px; }
+  .sub { color: var(--muted); font-size: 12px; margin-bottom: 18px; }
+  .card {
+    background: var(--panel); border: 1px solid var(--line);
+    border-radius: 12px; padding: 16px; margin-bottom: 14px;
+  }
+  .status-row { display: flex; align-items: center; gap: 10px; }
+  .dot {
+    width: 12px; height: 12px; border-radius: 50%;
+    background: var(--red); box-shadow: 0 0 8px var(--red);
+  }
+  .dot.on { background: var(--green); box-shadow: 0 0 8px var(--green); }
+  .dot.ext { background: var(--amber); box-shadow: 0 0 8px var(--amber); }
+  #status { font-weight: 600; }
+  #url { color: var(--muted); font-size: 12px; }
+  .btns { display: flex; gap: 10px; margin-top: 14px; }
+  button {
+    flex: 1; padding: 11px 0; border: 0; border-radius: 9px;
+    font-size: 14px; font-weight: 600; cursor: pointer; color: #fff;
+    transition: filter .12s;
+  }
+  button:hover:not(:disabled) { filter: brightness(1.15); }
+  button:disabled { opacity: .38; cursor: not-allowed; }
+  #btnStart { background: #1f8f4e; }
+  #btnStop  { background: #a83232; }
+  #btnOpen  { background: #2b3a5c; }
+  .meta { font-size: 12px; color: var(--muted); }
+  .meta b { color: var(--text); font-weight: 500; word-break: break-all; }
+  #log {
+    height: 210px; overflow-y: auto; background: #070d18;
+    border: 1px solid var(--line); border-radius: 9px;
+    padding: 10px; font: 11px/1.55 Consolas, monospace; color: #9fb0cd;
+    white-space: pre-wrap; word-break: break-all; user-select: text;
+  }
+  .err { color: #ff9b8a; }
+</style>
+</head>
+<body>
+  <h1>TopWallet — Local Server</h1>
+  <div class="sub">Explorer lokal · Robinhood Chain snapshot · hanya 127.0.0.1</div>
+
+  <div class="card">
+    <div class="status-row">
+      <div class="dot" id="dot"></div>
+      <div>
+        <div id="status">Memeriksa…</div>
+        <div id="url">http://127.0.0.1:8787</div>
+      </div>
+    </div>
+    <div class="btns">
+      <button id="btnStart">▶&nbsp; Mulai Server</button>
+      <button id="btnStop" disabled>■&nbsp; Stop Server</button>
+      <button id="btnOpen">🌐&nbsp; Buka Website</button>
+    </div>
+  </div>
+
+  <div class="card meta">
+    Python: <b id="metaPy">—</b><br />
+    Folder server: <b id="metaDir">—</b>
+  </div>
+
+  <div class="card">
+    <div class="meta" style="margin-bottom:8px">Log server</div>
+    <div id="log"></div>
+  </div>
+
+<script>
+  const { invoke } = window.__TAURI__.core;
+  const { listen } = window.__TAURI__.event;
+  const $ = (id) => document.getElementById(id);
+  let managed = false;
+
+  function setUI(s) {
+    // s: { ours, port_open }
+    managed = s.ours;
+    const dot = $("dot"), st = $("status");
+    if (s.ours) {
+      dot.className = "dot on";
+      st.textContent = "Server BERJALAN (dikelola launcher)";
+    } else if (s.port_open) {
+      dot.className = "dot ext";
+      st.textContent = "Port 8787 terpakai (server eksternal)";
+    } else {
+      dot.className = "dot";
+      st.textContent = "Server MATI";
+    }
+    $("btnStart").disabled = s.ours || s.port_open;
+    $("btnStop").disabled = !s.ours;
+  }
+
+  function log(line, isErr) {
+    const el = $("log");
+    const div = document.createElement("div");
+    if (isErr) div.className = "err";
+    div.textContent = line;
+    el.appendChild(div);
+    el.scrollTop = el.scrollHeight;
+    while (el.childElementCount > 400) el.removeChild(el.firstChild);
+  }
+
+  async function refresh() {
+    try { setUI(await invoke("server_status")); } catch {}
+  }
+
+  $("btnStart").onclick = async () => {
+    $("btnStart").disabled = true;
+    try {
+      const dir = await invoke("start_server");
+      $("metaDir").textContent = dir;
+      log("[launcher] server dinyalakan", false);
+    } catch (e) {
+      log("[launcher] GAGAL: " + e, true);
+    }
+    setTimeout(refresh, 600);
+  };
+  $("btnStop").onclick = async () => {
+    try { await invoke("stop_server"); } catch (e) { log("[launcher] " + e, true); }
+    setTimeout(refresh, 600);
+  };
+  $("btnOpen").onclick = () => invoke("open_website");
+
+  listen("server-log", (ev) => log(ev.payload));
+
+  (async () => {
+    try {
+      const cfg = await invoke("get_config");
+      $("metaPy").textContent = cfg.python
+        ? cfg.python + " " + (cfg.python_args || []).join(" ")
+        : "TIDAK DITEMUKAN — install Python 3";
+      $("metaDir").textContent = cfg.html_dir || "TIDAK DITEMUKAN — isi topwallet-launcher.ini";
+    } catch (e) { log("[launcher] config error: " + e, true); }
+    refresh();
+    setInterval(refresh, 3000);
+  })();
+</script>
+</body>
+</html>
