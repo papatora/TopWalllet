@@ -195,6 +195,14 @@ export function render(root, _params, query) {
             <div class="t2" style="font-size:12px;margin-top:3px">${isW ? (walletName(sel.ref) ? esc(walletName(sel.ref)) + ' · ' : '') + (sel.vol ? usd(sel.vol) + ' volume est.' : 'no priced swaps in range') : sel.kind === 'token' ? `${sel.traders} traders in scope · ${usd(sel.vol)} est.` : e ? `${e.members.length} wallets · ${e.kind === 'cluster' ? 'shared first funding' : 'one tx, block ' + nf(e.data.block)}` : ''}</div></div>
         </div>
         ${isW ? `<div class="chips" style="margin-top:10px">${S.wallets[sel.ref][2].map(l => chip(S.labels[l])).join('')}</div>` : ''}
+        ${(sel.kind === 'funder' || sel.kind === 'bundle') ? (() => {
+          const e = S.entities[sel.ref];
+          const folded = sel.foldedCount || 0;
+          return `<div style="margin-top:10px;padding:9px 10px;background:var(--panel-2);border:1px solid var(--line);border-radius:8px">
+            <div class="t3">GRUP — berisi ${e.members.length} wallet${folded ? ` (${folded} terlipat)` : ''}</div>
+            <div class="t3" style="margin:2px 0 4px">Volume grup est. <b>${usd((sel.foldedVol || 0) + (sel.vol || 0))}</b></div>
+            <div style="max-height:96px;overflow-y:auto">${e.members.slice(0, 12).map(mi => `<div class="kv-row"><span style="font-family:var(--mono);font-size:10.5px">${short(S.wallets[mi][0], 8, 6)}</span><a class="link" href="${walletHref(mi)}">open</a></div>`).join('')}${e.members.length > 12 ? `<div class="t3" style="margin-top:4px">+${e.members.length - 12} lainnya…</div>` : ''}</div></div>`;
+        })() : ''}
         ${isW && S.origins && S.origins[sel.ref] ? (() => {
           const o = S.origins[sel.ref];
           const rows = (o.senders || []).map(s => {
@@ -232,7 +240,12 @@ export function render(root, _params, query) {
       lines.push(`<div>Volume est. <b>${usd(n.vol)}</b></div>`, `<div>Net <span class="${n.net >= 0 ? 'pos' : 'neg'}">${usd(n.net, true)}</span> · ${n.swaps} swaps</div>`);
       if (n.cluster != null) lines.push(`<div style="color:${n.clusterColor}">Cluster ${n.cluster + 1}</div>`);
     } else if (n.kind === 'token') lines.push(`<div><b>${esc(n.label)}</b> <span class="t3">Uniswap pool</span></div>`, `<div>${n.traders} traders · ${usd(n.vol)} est.</div>`);
-    else lines.push(`<div><b>${esc(n.label)}</b></div>`, `<div class="t3">${n.kind === 'funder' ? 'Funding source' : 'Bundle transaction'}</div>`);
+    else {
+      const e = S.entities[n.ref];
+      lines.push(`<div><b>${esc(n.label)}</b></div>`, `<div class="t3">${n.kind === 'funder' ? 'Funding source' : 'Bundle transaction'}</div>`);
+      if (n.foldedCount) lines.push(`<div>Berisi <b>${n.foldedCount}</b> wallet terlipat · vol est. <b>${usd(n.foldedVol || 0)}</b></div>`);
+      else if (e) lines.push(`<div>${e.members.length} wallets</div>`);
+    }
     lines.push(`<div class="t3" style="margin-top:4px">click select · drag to pin · double-click open</div>`);
     tip.innerHTML = lines.join(''); tip.hidden = false;
     tip.style.left = Math.min(x + 16, root.clientWidth - tip.offsetWidth - 10) + 'px';

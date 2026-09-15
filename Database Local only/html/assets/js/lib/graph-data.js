@@ -86,17 +86,13 @@ export function buildScope({ mode, ref, limit = 250, from = 0, to = Infinity }) 
     me.focus = true;
     title = walletName(ref) || short(ref != null ? S.wallets[ref][0] : ''); sub = 'wallet neighborhood';
   } else {
-    const ranked = S.active.map(i => [i, stats(i, from, to).vol]).filter(r => r[1] > 0).sort((x, y) => y[1] - x[1]);
-    const volRank = new Map(ranked);
-    const candidates = new Set(ranked.map(r => r[0]));
-    for (const e of S.entities) for (const i of e.members) candidates.add(i);
-    // budget TOTAL = limit: semua kandidat (termasuk anggota cluster/bundle)
-    // di-rank by volume — wallet tanpa aktivitas di range (dinding abu-abu) buang
-    const merged = [...candidates].map(i => [i, volRank.get(i) ?? (S.statsAll.get(i)?.vol ?? 0)])
-      .sort((a, b) => b[1] - a[1]).slice(0, limit);
-    const inScope = new Set(merged.map(r => r[0]));
+    const ranked = S.active.map(i => [i, stats(i, from, to).vol]).filter(r => r[1] > 0)
+      .sort((x, y) => y[1] - x[1]).slice(0, limit);
+    const rankedSet = new Set(ranked.map(r => r[0]));
+    const inScope = new Set(rankedSet);
+    for (const e of S.entities) for (const i of e.members) inScope.add(i);
     const tokCount = new Map(), tokVol = new Map();
-    for (const i of inScope) {
+    for (const i of rankedSet) {
       for (const k of S.statsAll.get(i)?.toks || []) {
         tokCount.set(k, (tokCount.get(k) || 0) + 1);
         const v = stats(i, from, to, k).vol;
@@ -107,11 +103,26 @@ export function buildScope({ mode, ref, limit = 250, from = 0, to = Infinity }) 
     const POOL_CAP = 20;
     const keepToks = new Set([...tokVol.entries()].sort((a, b) => b[1] - a[1])
       .slice(0, POOL_CAP).map(e => e[0]).filter(k => (tokCount.get(k) || 0) >= 2));
+    // anggota cluster/bundle di luar top-N TIDAK dibuang — dilipat ke hub-nya:
+    // satu bubble grup sebesar total volume anggota, hover/click = isi anggota
+    const foldedInto = new Map();
+    for (const e of S.entities) {
+      const ei = S.entities.indexOf(e);
+      for (const i of e.members) if (!rankedSet.has(i)) foldedInto.set(i, ei);
+    }
     for (const i of inScope) {
+      const ei = foldedInto.get(i);
+      if (ei != null) {
+        const h = hub(ei);
+        h.foldedCount = (h.foldedCount || 0) + 1;
+        h.foldedVol = (h.foldedVol || 0) + (S.statsAll.get(i)?.vol ?? 0);
+        continue;
+      }
       wallet(i); addHubsFor(i);
       for (const k of S.statsAll.get(i)?.toks || []) if (keepToks.has(k)) tradeLink(i, k);
     }
-    title = 'Robinhood network'; sub = `top ${ranked.length} wallets · top ${keepToks.size} pools by volume · clusters & bundles`;
+    title = 'Robinhood network';
+    sub = `top ${rankedSet.size} wallets · ${foldedInto.size} folded into hubs · top ${keepToks.size} pools`;
   }
 
   // de-duplicate links (a wallet can hit the same hub twice via overlapping memberships)
@@ -137,6 +148,7 @@ export function buildScope({ mode, ref, limit = 250, from = 0, to = Infinity }) 
   const maxTr = Math.max(1, ...all.filter(n => n.kind === 'token').map(n => n.traders));
   for (const n of all) {
     if (n.kind === 'wallet' || n.kind === 'entity') n.r = n.vol > 0 ? 7 + 27 * Math.sqrt(n.vol / maxVol) : 6;
+    else if (n.kind === 'funder' || n.kind === 'bundle') n.r = 8 + 18 * Math.sqrt((n.foldedVol || 0) / maxVol);
     else if (n.kind === 'token') n.r = 15 + 11 * Math.sqrt(n.traders / maxTr);
     else n.r = 17;
     if (n.focus) n.r = Math.max(n.r, 22);
