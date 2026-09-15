@@ -18,39 +18,20 @@ Copytrade agent akan menggunakan list ini untuk auto-follow trading mereka.
 
 ---
 
-## 2. STATUS SAAT INI (2026-09-08)
-
-### VPS (78.31.250.202, root — creds in local .env: VPS_SSH_KEY / VPS_PASSWORD)
-- Supervisor: **ACTIVE**, cycle berjalan otomatis
-- **Wallets: ~4,873+** (terus bertambah dari trending scanner per 30 menit)
-- **Tokens: 447+** (Blockscout chain-wide + DexScreener trending)
-- **Swap events: 65K+**
-- **Pumps detected: 455** (dari pump_scan.json)
-- **Classified: 11,240 wallets** dengan 12,627 labels
-- **Ranked: 2 wallets** (hard filter PnL>$1 — hanya yang beneran profit)
-- **GMGN trending scanner**: cron per 30 menit, active
-
-### Website
-- **CLOSED** (VPS port 8000 ditutup + GitHub Pages di-disable)
-- Alasan: data belum matang + design perlu revamp total
-- Spec dashboard: docs/ULTIMATE_PROMPT_SMART_MONEY_FEED.md (M0-M6)
-- Bangun ulang SAAT verified wallets >50 dan universe >500 tokens
-
-### Codebase (semua di repo, pushed)
-- src/discover/gmgn_client.py — GMGN OpenAPI client (LIVE, verified)
-- src/analyze/pump_analyzer.py — pump analysis + cross-analysis
-- src/analyze/pump_detector.py — pump detection dari PricePoint series
-- src/analyze/wallet_classifier.py — 14-type taxonomy (LIVE)
-- src/analyze/funding_provenance.py — first funder tracing
-- src/analyze/whale_map.py — whale entry conviction scoring
-- src/analyze/pnl_verifier.py — R1/R2/R3 hard verification
-- src/analyze/grouping.py — deployer registry + funding sources
-- scripts/supervisor.py — overnight loop (VPS only, guard TOPWALLET_RUN_ENV)
-- scripts/watchdog.py — hourly LLM check (ZAI API)
-- scripts/trending_scanner.py — GMGN trending → wallet pool (cron 30min)
+## 2. STATUS SAAT INI (update S-38, 2026-09-15 — detail di PRE_COMPACT S-35..S-38)
+- VPS: enrich 94K wallets (Etherscan V2 aktif, 2 key rotasi). Setelah itu
+  prices → analyze otomatis. Verifier on-chain cron 30 menit (1,646 pair
+  diverifikasi: 730 insider PROVEN, 806 dibantalkan, 90 airdrop spam).
+- Explorer lokal: 3 tema (dark/white/space), Guide, leaderboard filter tag,
+  label baru (BOT/SNIPER_BOT/WHALE/WHALE_SUS), INDUKAN lineage, pool cap,
+  fold-to-group, FREEZE/RESET/fullscreen/collapse panel. Launcher exe di Desktop.
+- Arkham: API resmi butuh key institusi; flow user = login manual di chromium
+  temp + harvest tag CEX via computer-use/python.
+- VOLUME SWEEP: spec lengkap di docs/DIRECTIVE_VOLUME_SWEEP.md (prioritas 1
+  pasca-compact).
+- Push git: SELALU dari VPS (master:main). Lokal→VPS = git bundle.
 
 ---
-
 ## 3. DIAMOND WALLET CANDIDATES (dari VAPE + Life K-line analysis)
 
 **⚠️ SEMUA WALLET INI DI BSC CHAIN — cek di gmgn.ai/bsc/address/{address}**
