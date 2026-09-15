@@ -61,7 +61,7 @@ export function render(root, _params, query) {
     onPinChange: () => drawChips(),
   });
   let scope, graph;
-  if (saved.paused) queueMicrotask(() => { g.setPaused(true); syncPanels(); });
+  // paused sengaja tidak di-restore — mulai unfrozen agar layout settle dulu
   window.__viz = g; // console handle for local debugging
 
   const rebuild = ({ refit = true } = {}) => {
@@ -365,7 +365,7 @@ export function render(root, _params, query) {
       st.hidden.clear(); st.collapsed.clear(); st.range = null; st.grouped = true;
       st.listQ = ''; st.page = 0; st.expLayer = ''; st.hideLeft = false; st.hideRight = false;
       g.setPaused(false);
-      for (const n of g.nodes) { n.pinned = false; n.fx = n.fy = null; }
+      for (const n of (scope?.nodes || [])) { n.pinned = false; n.fx = n.fy = null; }
       g.userMoved = false;
       persist(); rebuild(); applyVisibility(0.5);
       g.userMoved = false; g.fit();
@@ -446,7 +446,8 @@ export function render(root, _params, query) {
   const zoomEl = $('#zoom');
   const zoomTimer = setInterval(() => { if (!root.isConnected) { clearInterval(zoomTimer); g.destroy(); return; } zoomEl.textContent = Math.round(g.view.k * 100) + '%'; }, 250);
   if (window.__timeRO) window.__timeRO.disconnect();
-  window.__timeRO = new ResizeObserver(() => scope && drawTimeline()).observe($('#time'));
+  window.__timeRO = new ResizeObserver(() => scope && drawTimeline());
+  window.__timeRO.observe($('#time'));
 
   rebuild();
 }
