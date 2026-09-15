@@ -55,7 +55,9 @@ export function buildScope({ mode, ref, limit = 250, from = 0, to = Infinity }) 
   if (mode === 'token') {
     const k = ref, a = S.tokAgg.get(k), f = S.tokFlags.get(k) || {};
     token(k);
-    for (const i of a?.wallets || []) tradeLink(i, k);
+    const traders = [...(a?.wallets || [])].map(i => [i, stats(i, from, to, k).vol])
+      .sort((x, y) => y[1] - x[1]).slice(0, limit).map(r => r[0]);
+    for (const i of traders) tradeLink(i, k);
     for (const [lab, set] of Object.entries(f)) for (const i of set) {
       const has = links.some(l => l.kind === 'trade' && l.s.ref === i && l.t.ref === k);
       if (has) links.find(l => l.kind === 'trade' && l.s.ref === i && l.t.ref === k).flag = lab;
@@ -91,7 +93,8 @@ export function buildScope({ mode, ref, limit = 250, from = 0, to = Infinity }) 
     const entityMember = new Set();
     for (const e of S.entities) for (const i of e.members) entityMember.add(i);
 
-    const isPlain = i => !S.wallets[i][2].some(li => S.labels[li] !== 'GENERALIST');
+    const SPECIAL_LABELS = new Set(['INSIDER','WHALE','WHALE_SUS','SNIPER','SNIPER_BOT','DEV','MEV_BOT','CT_ATTRIBUTED','SMART_TRACKER','PHISHING_TARGET','AIRDROP_FARMER','BOT','TRADER_COVERAGE_GAP']);
+    const isPlain = i => !S.wallets[i][2].some(li => SPECIAL_LABELS.has(S.labels[li]));
     const SPECIAL = i => entityMember.has(i) && !isPlain(i);   // anggota entitas tapi punya label khusus
 
     // individual = top-N wallet NON-anggota-entitas + anggota entitas BERLABEL
@@ -129,7 +132,11 @@ export function buildScope({ mode, ref, limit = 250, from = 0, to = Infinity }) 
       };
       groupOf.set(id, node);
       nodes.set(id, node);
-      links.push({ s: node, t: hub(ei), kind: 'fund', vol });
+      const h = hub(ei);
+      h.vol = (h.vol || 0) + vol;
+      h.foldedVol = (h.foldedVol || 0) + vol;
+      h.foldedCount = (h.foldedCount || 0) + plainMembers.length;
+      links.push({ s: node, t: h, kind: 'fund', vol });
     }
     for (const i of inScope) {
       if (groupOf.has('g:' + S.entities.findIndex(e => e.members.includes(i)) )) {
@@ -143,12 +150,7 @@ export function buildScope({ mode, ref, limit = 250, from = 0, to = Infinity }) 
     title = 'Robinhood network';
     sub = `top ${rankedSet.size} wallets · ${groupOf.size} grup receh · top ${keepToks.size} pools`;
 
-    function foldedEntityOf(i) {
-      if (rankedSet.has(i)) return null;
-      if (!isPlain(i)) return null;          // berlabel khusus → individual
-      for (const [ei, extras] of extrasByEntity) if (extras.includes(i)) return ei;
-      return null;
-    }
+
   }
 
   // de-duplicate links (a wallet can hit the same hub twice via overlapping memberships)

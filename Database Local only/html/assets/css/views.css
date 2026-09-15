@@ -78,7 +78,7 @@
 .fchip.is-on{background:color-mix(in srgb,var(--c,var(--blue-hi)) 16%,transparent)}
 .fchip a{display:inline-grid;place-items:center;color:inherit}
 .viz-chips .dd .pop{top:32px;left:0;right:auto;min-width:200px}
-.viz-rail{position:absolute;z-index:4;right:412px;top:112px;display:flex;flex-direction:column;align-items:center;gap:2px;padding:4px;background:rgba(16,19,26,.96);border:1px solid var(--line);border-radius:var(--r-md)}
+.viz-rail{position:absolute;z-index:4;right:412px;top:112px;display:flex;flex-direction:column;align-items:center;gap:2px;padding:4px;background:var(--viz-panel,rgba(16,19,26,.96));border:1px solid var(--line);border-radius:var(--r-md)}
 .rail-btn{width:32px;height:32px;display:grid;place-items:center;border-radius:4px;color:var(--text-2);font:500 18px/1 var(--sans)}
 .rail-btn:hover{background:var(--panel-3);color:var(--text)}
 .rail-btn.is-on{background:var(--blue-soft);color:var(--blue-hi)}
@@ -131,7 +131,7 @@
 .ent-item.is-active{background:var(--panel-2);box-shadow:inset 2px 0 0 var(--blue)}
 .ent-item .t{font:500 12.5px/1.2 var(--mono);color:var(--text)}
 .ent-item .d{margin-top:3px;font:500 10px/1.2 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--text-3)}
-.viz-time{position:absolute;left:16px;right:16px;bottom:14px;height:76px;z-index:3;background:rgba(16,19,26,.96);border:1px solid var(--line);border-radius:var(--r-lg);padding:5px 12px}
+.viz-time{position:absolute;left:16px;right:16px;bottom:14px;height:76px;z-index:3;background:var(--viz-panel,rgba(16,19,26,.96));border:1px solid var(--line);border-radius:var(--r-lg);padding:5px 12px}
 .viz-time svg{display:block;cursor:ew-resize}
 
 /* ---------- token & address profile ---------- */

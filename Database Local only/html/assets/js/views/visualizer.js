@@ -39,8 +39,8 @@ export function render(root, _params, query) {
     </div>
     <aside class="viz-panel viz-left" id="left"></aside>
     <aside class="viz-panel viz-right" id="right"></aside>
-    <button class="viz-tab" id="tabLeft" data-act="show-left" hidden title="Buka panel kiri">${icon('chevron-right')}</button>
-    <button class="viz-tab" id="tabRight" data-act="show-right" hidden title="Buka address list">${icon('chevron-left')}</button>
+    <button class="viz-tab viz-tab-left" id="tabLeft" data-act="show-left" hidden title="Buka panel kiri">${icon('chevron-right')}</button>
+    <button class="viz-tab viz-tab-right" id="tabRight" data-act="show-right" hidden title="Buka address list">${icon('chevron-left')}</button>
     <div class="viz-rail">
       <button class="rail-btn" data-act="fit" title="Fit to screen">${icon('grid')}</button>
       <button class="rail-btn" data-act="zin" title="Zoom in">+</button>
@@ -61,6 +61,7 @@ export function render(root, _params, query) {
     onPinChange: () => drawChips(),
   });
   let scope, graph;
+  if (saved.paused) queueMicrotask(() => g.setPaused(true));
   window.__viz = g; // console handle for local debugging
 
   const rebuild = ({ refit = true } = {}) => {
@@ -244,8 +245,8 @@ export function render(root, _params, query) {
             <div class="t3" style="margin:2px 0 4px">Volume grup est. <b>${usd((sel.foldedVol || 0) + (sel.vol || 0))}</b></div>
             <div style="max-height:96px;overflow-y:auto">${e.members.slice(0, 12).map(mi => `<div class="kv-row"><span style="font-family:var(--mono);font-size:10.5px">${short(S.wallets[mi][0], 8, 6)}</span><a class="link" href="${walletHref(mi)}">open</a></div>`).join('')}${e.members.length > 12 ? `<div class="t3" style="margin-top:4px">+${e.members.length - 12} lainnya…</div>` : ''}</div></div>`;
         })() : ''}
-        ${isW && S.origins && S.origins[sel.ref] ? (() => {
-          const o = S.origins[sel.ref];
+        ${isW && S.origins && S.origins[S.wallets[sel.ref][0]] ? (() => {
+          const o = S.origins[S.wallets[sel.ref][0]];
           const rows = (o.senders || []).map(s => {
             const who = s.kind === 'MASS_SPREAD' ? 'mass-spreader (bot sebaran)' : s.kind === 'FUNDER' ? 'funder cluster' : s.kind === 'TRANSFER' ? 'wallet pengirim' : s.kind || 'pengirim';
             return `<div class="kv-row"><span>${who}</span><a class="link mono" style="font-size:11px" href="${addrExt(s.addr)}" target="_blank" rel="noopener">${s.addr.slice(0, 10)}…</a></div>`;
@@ -359,7 +360,7 @@ export function render(root, _params, query) {
       st.hidden.clear(); st.collapsed.clear(); st.range = null; st.grouped = true;
       st.listQ = ''; st.page = 0; st.expLayer = ''; st.hideLeft = false; st.hideRight = false;
       g.setPaused(false); g.userMoved = false;
-      persist(); draw();
+      persist(); rebuild(); applyVisibility(0.5);
       g.userMoved = false; g.fit();
       syncPanels();
       toast('Visualizer kembali ke default');
@@ -407,20 +408,6 @@ export function render(root, _params, query) {
     if (act === 'fit') g.fit();
     else if (act === 'zin') g.zoomBy(1.25);
     else if (act === 'zout') g.zoomBy(0.8);
-    else if (act === 'freeze') { g.opt.frozen = !g.opt.frozen; t.closest('[data-act]').classList.toggle('is-on', g.opt.frozen); toast(g.opt.frozen ? 'Layout frozen' : 'Layout live'); }
-    else if (act === 'unpin') { g.unpinAll(); drawChips(); }
-    else if (act === 'unhide') { st.hidden.clear(); applyVisibility(0.4); }
-    else if (act === 'group') { st.grouped = !st.grouped; drawRight(); }
-    else if (act === 'range-clear') { st.range = null; rebuild({ refit: false }); }
-    else if (act === 'toggle-flow') { st.show.flow = !st.show.flow; persist(); applyVisibility(0); }
-    else if (act === 'open' && g.sel) openNode(g.sel);
-    else if (act === 'more') { if (g.sel) openNode(g.sel); else if (scopeDef.mode === 'token') location.hash = tokenHref(scopeDef.ref); else if (scopeDef.mode === 'wallet') location.hash = walletHref(scopeDef.ref); else location.hash = '#/explorer'; }
-    else if (act === 'expand' && g.sel) {
-      const n = g.sel;
-      if (n.kind === 'token') location.hash = `#/visualizer?token=${n.addr}`;
-      else if (n.kind === 'funder' || n.kind === 'bundle') location.hash = `#/visualizer?entity=${n.ref}`;
-      else location.hash = `#/visualizer?wallet=${n.addr}`;
-    }
   });
   root.addEventListener('change', e => {
     const lay = e.target.closest('[data-layer]');

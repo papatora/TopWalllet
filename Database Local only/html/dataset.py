@@ -86,9 +86,9 @@ def build() -> dict:
         # Some pools (notably USDG-quoted) store price_points on the wrong scale (~1e-12x).
         # When the latest point is >30x away from the token's snapshot price, rescale the
         # whole series onto the snapshot price and record it as calibrated.
-        scale, snap, last = 1.0, tokens[i][3], rows[-1][1]
-        if snap and last and not (1 / 30 <= last / snap <= 30):
-            scale = snap / last
+        scale, snap_px, last = 1.0, tokens[i][3], rows[-1][1]
+        if snap_px and last and not (1 / 30 <= last / snap_px <= 30):
+            scale = snap_px / last
             calibrated.append([i, round(scale, 6) if scale >= 1e-6 else scale])
         elif not last:
             continue
@@ -309,7 +309,7 @@ def build() -> dict:
             "swap_from": ts_min, "swap_to": ts_max,
             "swaps_total": priced + unpriced, "priced": priced, "unpriced": unpriced, "outliers": outliers,
             "type_counts": Counter(v["primary_type"] for v in W.values()),
-            "label_counts": Counter(l for v in W.values() for l in v["labels"]),
+            "label_counts": Counter(l for v in W.values() for l in v["labels"]) + Counter(l for ls in derived.values() for l in ls),
             "checkpoints": checkpoints, "calibrated": calibrated,
         },
         "types": types, "labels": label_names, "tokens": tokens, "spark": {str(k): v for k, v in spark.items()},

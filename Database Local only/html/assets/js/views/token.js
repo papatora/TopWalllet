@@ -34,7 +34,10 @@ export function render(root, [addr]) {
     } else {
       body = `<table class="table is-compact" style="--min:760px"><thead><tr><th>Label</th><th>Wallet</th><th>Evidence</th><th class="rt">Net flow est.</th></tr></thead><tbody>${flagged.map(([lab, i]) => {
         const e = S.ev[i]?.[lab] || {}, s = stats(i, 0, Infinity, k);
-        const ev = lab === 'SNIPER' ? `+${e.snipes?.find(x => x.token === k)?.delta_blocks ?? '?'} blocks after pool open` : lab === 'BUNDLER_SUSPECT' ? `${e.distinct_wallets} wallets, one tx, block ${nf(e.block)}` : lab === 'DEV' ? `first buyer, ${e.fast_flips} fast flips` : lab === 'INSIDER' ? `${e.sell_count} sells without a buy` : 'incoming only';
+        const ev = lab === 'SNIPER' ? `+${e.snipes?.find(x => x.token === k)?.delta_blocks ?? '?'} blocks after pool open` : lab === 'BUNDLER_SUSPECT' ? `${e.distinct_wallets} wallets, one tx, block ${nf(e.block)}` : lab === 'DEV' ? `first buyer, ${e.fast_flips} fast flips` : lab === 'INSIDER' ? (e.kind === 'MINT_ALLOCATION' ? 'alokasi mint dari 0x0'
+                                    : e.kind === 'CONFIRMED_INSIDER' ? `transfer murni dari ${Object.keys(e.senders || {}).length} pengirim`
+                                    : `${e.sell_count ?? ''} sells without a buy`.trim())
+                                    : 'incoming only';
         return `<tr class="is-link" data-href="${walletHref(i)}"><td>${chip(lab)}</td><td>${whoCell(i, { full: false })}</td><td class="t2" style="font-family:var(--sans)">${esc(ev)}</td><td class="rt ${s.swaps ? (s.net >= 0 ? 'pos' : 'neg') : 't3'}">${s.swaps ? usd(s.net, true) : '—'}</td></tr>`; }).join('') || emptyRow(4, 'No wallet on this token carries a sniper, bundler, dev or insider label.')}</tbody></table>`;
     }
 

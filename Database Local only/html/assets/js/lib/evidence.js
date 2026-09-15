@@ -22,12 +22,12 @@ export function evidenceBlocks(i) {
     else if (L === 'INSIDER') {
       if (d.kind === 'MINT_ALLOCATION') {
         body = row('Bukti on-chain', '<b>PROVEN</b> — mint langsung dari 0x0, tanpa Swap log')
-          + row('Jumlah', usd(d.mint?.amount || 0))
+          + row('Jumlah', `${nf(d.mint?.amount || 0)} unit token`)
           + (d.mint?.blocks || []).slice(0, 3).map(b => row(`block ${nf(b)}`, '')).join('')
           + row('Tokens', (d.tokens || []).map(tok).join(', '));
       } else if (d.kind === 'CONFIRMED_INSIDER') {
         const lines = Object.entries(d.senders || {}).map(([sa, si]) =>
-          row(addrL(sa), `${si.kind === 'MASS_SPREAD' ? 'mass-spreader (' + spreadTxt(si.spread) + ')' : si.kind === 'FUNDER' ? 'funder cluster' : 'transfer personal'}`)).join('');
+          row(addrL(sa), `${(si || {}).kind === 'MASS_SPREAD' ? 'mass-spreader (' + spreadTxt((si || {}).spread) + ')' : (si || {}).kind === 'FUNDER' ? 'funder cluster' : 'transfer personal'}`)).join('');
         body = row('Bukti on-chain', '<b>PROVEN</b> — terima transfer murni, tanpa Swap log di tx')
           + (lines ? `<div class="kv-row"><span>Indukan (pengirim)</span><span></span></div>` + lines : '')
           + row('Tokens', (d.tokens || []).map(tok).join(', '));

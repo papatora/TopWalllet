@@ -160,7 +160,7 @@ load().then(() => { footer(); route(); }).catch(err => {
 (function () {
   const fx = document.getElementById('spacefx');
   if (!fx) return;
-  fx.insertAdjacentHTML('afterbegin', '<canvas id="sfcv" style="position:absolute;inset:0;width:100%;height:100%"></canvas>');
+  if (!document.getElementById('sfcv')) fx.insertAdjacentHTML('afterbegin', '<canvas id="sfcv" style="position:absolute;inset:0;width:100%;height:100%"></canvas>');
   const cv = document.getElementById('sfcv');
   const ctx = cv.getContext('2d');
   let W, H, DPR, comet = null, nextSpawn = 0, last = performance.now(), raf = null;

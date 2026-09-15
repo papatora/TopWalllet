@@ -27,8 +27,8 @@ export class GraphCanvas {
     this.paused = false;
     this.sel = null; this.hover = null; this.neigh = null;
     const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
-    this.c = this.readTheme();
-    new MutationObserver(() => { this.c = this.readTheme(); this.dirty = true; })
+    this.c = Object.assign(this.readTheme(), { ent_fill: css('--ent-fill') || '#F4F6FA', ent_text: css('--ent-text') || '#07080C' });
+    new MutationObserver(() => { this.c = Object.assign(this.readTheme(), { ent_fill: css('--ent-fill') || '#F4F6FA', ent_text: css('--ent-text') || '#07080C' }); this.dirty = true; })
       .observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
     this.labelColor = t => {
       const key = t?.startsWith('CLUSTER_MEMBER') ? 'cluster' : ({ DEV: 'dev', SNIPER: 'sniper', BUNDLER_SUSPECT: 'bundler', INSIDER: 'insider', AIRDROP_FARMER: 'airdrop', CT_ATTRIBUTED: 'ct', MEV_BOT: 'mev', SMART_TRACKER: 'smart', BOT: 'bot', SNIPER_BOT: 'bot', WHALE: 'whale', WHALE_SUS: 'whalesus', PHISHING_TARGET: 'phishing', TRADER_COVERAGE_GAP: 'gap' }[t] || 'generalist');
@@ -329,9 +329,9 @@ export class GraphCanvas {
 
   drawEntity(n) {
     const { ctx, c } = this, lw = 1 / this.view.k, r = Math.max(n.r, 14), col = ETYPE_COLOR[n.etype] || ETYPE_COLOR.OTHER;
-    ctx.fillStyle = this.opt.icons ? '#F4F6FA' : 'rgba(120,130,150,.2)'; ctx.beginPath(); ctx.arc(n.x, n.y, r, 0, TAU); ctx.fill();
+    ctx.fillStyle = this.opt.icons ? (c.ent_fill || '#F4F6FA') : 'rgba(120,130,150,.2)'; ctx.beginPath(); ctx.arc(n.x, n.y, r, 0, TAU); ctx.fill();
     ctx.strokeStyle = col; ctx.lineWidth = 2 * lw; ctx.stroke();
-    ctx.fillStyle = this.opt.icons ? '#07080C' : c.text2; ctx.font = `700 ${r * 0.62}px Inter, sans-serif`;
+    ctx.fillStyle = this.opt.icons ? (c.ent_text || '#07080C') : c.text2; ctx.font = `700 ${r * 0.62}px Inter, sans-serif`;
     ctx.fillText(n.label.replace(/[^a-z0-9]/gi, '').slice(0, 2).toUpperCase(), n.x, n.y + r * 0.22);
     if (this.opt.icons) { ctx.fillStyle = col; ctx.beginPath(); ctx.arc(n.x + r * 0.74, n.y + r * 0.74, Math.max(3.5 * lw, r * 0.22), 0, TAU); ctx.fill(); }
   }
