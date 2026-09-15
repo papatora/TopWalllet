@@ -195,6 +195,13 @@ export function render(root, _params, query) {
             <div class="t2" style="font-size:12px;margin-top:3px">${isW ? (walletName(sel.ref) ? esc(walletName(sel.ref)) + ' · ' : '') + (sel.vol ? usd(sel.vol) + ' volume est.' : 'no priced swaps in range') : sel.kind === 'token' ? `${sel.traders} traders in scope · ${usd(sel.vol)} est.` : e ? `${e.members.length} wallets · ${e.kind === 'cluster' ? 'shared first funding' : 'one tx, block ' + nf(e.data.block)}` : ''}</div></div>
         </div>
         ${isW ? `<div class="chips" style="margin-top:10px">${S.wallets[sel.ref][2].map(l => chip(S.labels[l])).join('')}</div>` : ''}
+        ${sel.kind === 'group' ? (() => {
+          const mem = sel.members || [];
+          return `<div style="margin-top:10px;padding:9px 10px;background:var(--panel-2);border:1px solid var(--line);border-radius:8px">
+            <div class="t3">GRUP — berisi ${mem.length} wallet receh</div>
+            <div class="t3" style="margin:2px 0 4px">Volume grup est. <b>${usd(sel.vol || 0)}</b></div>
+            <div style="max-height:96px;overflow-y:auto">${mem.slice(0, 12).map(mi => `<div class="kv-row"><span style="font-family:var(--mono);font-size:10.5px">${short(S.wallets[mi][0], 8, 6)}</span><a class="link" href="${walletHref(mi)}">open</a></div>`).join('')}${mem.length > 12 ? `<div class="t3" style="margin-top:4px">+${mem.length - 12} lainnya…</div>` : ''}</div></div>`;
+        })() : ''}
         ${(sel.kind === 'funder' || sel.kind === 'bundle') ? (() => {
           const e = S.entities[sel.ref];
           const folded = sel.foldedCount || 0;

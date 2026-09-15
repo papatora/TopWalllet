@@ -26,7 +26,9 @@ export class GraphCanvas {
     this.paused = false;
     this.sel = null; this.hover = null; this.neigh = null;
     const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
-    this.c = { text: css('--text'), text2: css('--text-2'), text3: css('--text-3'), panel: css('--panel'), sunk: css('--bg-sunk'), green: css('--green'), red: css('--red'), blue: css('--blue-hi'), pink: css('--c-cluster'), amber: css('--c-bundler'), line: css('--line-strong') };
+    this.c = this.readTheme();
+    new MutationObserver(() => { this.c = this.readTheme(); this.dirty = true; })
+      .observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
     this.labelColor = t => {
       const key = t?.startsWith('CLUSTER_MEMBER') ? 'cluster' : ({ DEV: 'dev', SNIPER: 'sniper', BUNDLER_SUSPECT: 'bundler', INSIDER: 'insider', AIRDROP_FARMER: 'airdrop', CT_ATTRIBUTED: 'ct', MEV_BOT: 'mev', SMART_TRACKER: 'smart', BOT: 'bot', SNIPER_BOT: 'bot', WHALE: 'whale', WHALE_SUS: 'whalesus', PHISHING_TARGET: 'phishing', TRADER_COVERAGE_GAP: 'gap' }[t] || 'generalist');
       return css('--c-' + key);
@@ -166,6 +168,10 @@ export class GraphCanvas {
     this.raf = requestAnimationFrame(this.frame.bind(this));
   }
 
+  readTheme() {
+    return { text: css('--text'), text2: css('--text-2'), text3: css('--text-3'), panel: css('--panel'), sunk: css('--bg-sunk'), green: css('--green'), red: css('--red'), blue: css('--blue-hi'), pink: css('--c-cluster'), amber: css('--c-bundler'), line: css('--line-strong') };
+  }
+
   nodeColor(n) {
     const m = this.opt.colorMode;
     if (n.kind === 'token') return m === 'flow' ? '#5B6B8C' : '#4E5E80'; // pool: beda dari wallet
@@ -234,6 +240,7 @@ export class GraphCanvas {
       if (n.kind === 'wallet') this.drawBubble(n);
       else if (n.kind === 'token') this.drawToken(n);
       else if (n.kind === 'entity') this.drawEntity(n);
+      else if (n.kind === 'group') this.drawGroup(n);
       else this.drawHub(n);
       if (n === this.sel || n === this.hover) {
         ctx.strokeStyle = n === this.sel ? '#FFFFFF' : 'rgba(255,255,255,.5)'; ctx.lineWidth = 1.6 * lw;
@@ -285,6 +292,18 @@ export class GraphCanvas {
     ctx.fillStyle = this.opt.icons ? `hsl(${h} 80% 78%)` : c.text2;
     ctx.font = `600 ${Math.max(8, n.r * 0.55)}px "IBM Plex Mono",monospace`;
     ctx.fillText(n.label.replace(/[^a-z0-9]/gi, '').slice(0, 3).toUpperCase() || '?', n.x, n.y + n.r * 0.2);
+  }
+
+  drawGroup(n) {
+    const { ctx, c } = this, lw = 1 / this.view.k;
+    ctx.fillStyle = c.panel; ctx.beginPath(); ctx.arc(n.x, n.y, n.r, 0, TAU); ctx.fill();
+    ctx.setLineDash([4 * lw, 3 * lw]);
+    ctx.strokeStyle = 'rgba(140,152,184,.9)'; ctx.lineWidth = 1.6 * lw; ctx.stroke();
+    ctx.setLineDash([]);
+    ctx.fillStyle = c.text2; ctx.font = `600 ${Math.max(7, n.r * 0.42)}px "IBM Plex Mono",monospace`;
+    ctx.fillText('×' + (n.members ? n.members.length : n.foldedCount || '?'), n.x, n.y + n.r * 0.18);
+    ctx.fillStyle = c.text3; ctx.font = `400 ${Math.max(7, n.r * 0.3)}px "IBM Plex Mono",monospace`;
+    ctx.fillText('grup', n.x, n.y + n.r * 0.5);
   }
 
   drawHub(n) {
