@@ -954,3 +954,14 @@ stale = jebakan berulang → setelah ubah dataset.py, SELALU POST
 extract_wallets.py (results tertimpa versi commit).
 
 ## STATUS AKHIR: siap compact. Pasca-compact → DIRECTIVE_VOLUME_SWEEP.md.
+
+### H. ROUND G — KONVERGENSI TERKONFIRMASI (S-37-H)
+Round G (verifikasi independen): 7/7 fix pasca-F VALID; runtime PASS (server,
+/api/dataset 14,5MB, buildScope 4 mode × 3 preset = 0 dangling/0 no-r);
+headless Edge smoke test: app boot + render benar. SKOR 9/10 — KONVERGEN,
+0 P0/P1 baru. Sisa P2 kosmetik: .fchip.is-off tanpa CSS, dashboard sort
+micro-perf, caret search explorer, sub-layer entity $0.00 (1 baris).
+Yang tidak bisa diperbaiki di sisi explorer (butuh VPS/data): backfill
+price_points, re-enrich TRADER_COVERAGE_GAP, known_entities CEX (Arkham/key).
+Defender: folder target\release sudah di ASR exclusion; Desktop pakai
+SHORTCUT (.lnk) ke exe tsb — exe copy di Desktop dihapus (terblokir ASR).
