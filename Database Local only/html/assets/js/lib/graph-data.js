@@ -86,9 +86,15 @@ export function buildScope({ mode, ref, limit = 250, from = 0, to = Infinity }) 
     me.focus = true;
     title = walletName(ref) || short(ref != null ? S.wallets[ref][0] : ''); sub = 'wallet neighborhood';
   } else {
-    const ranked = S.active.map(i => [i, stats(i, from, to).vol]).filter(r => r[1] > 0).sort((x, y) => y[1] - x[1]).slice(0, limit);
-    const inScope = new Set(ranked.map(r => r[0]));
-    for (const e of S.entities) for (const i of e.members) inScope.add(i);
+    const ranked = S.active.map(i => [i, stats(i, from, to).vol]).filter(r => r[1] > 0).sort((x, y) => y[1] - x[1]);
+    const volRank = new Map(ranked);
+    const candidates = new Set(ranked.map(r => r[0]));
+    for (const e of S.entities) for (const i of e.members) candidates.add(i);
+    // budget TOTAL = limit: semua kandidat (termasuk anggota cluster/bundle)
+    // di-rank by volume — wallet tanpa aktivitas di range (dinding abu-abu) buang
+    const merged = [...candidates].map(i => [i, volRank.get(i) ?? (S.statsAll.get(i)?.vol ?? 0)])
+      .sort((a, b) => b[1] - a[1]).slice(0, limit);
+    const inScope = new Set(merged.map(r => r[0]));
     const tokCount = new Map(), tokVol = new Map();
     for (const i of inScope) {
       for (const k of S.statsAll.get(i)?.toks || []) {

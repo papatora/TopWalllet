@@ -13,7 +13,7 @@ const st = {
   show: { ...DEFAULT_SHOW, ...(saved.show || {}) }, colorMode: saved.colorMode || 'label', limit: saved.limit || 150,
   grouped: true, listQ: '', range: null, hidden: new Set(), collapsed: new Set(),
 };
-const persist = () => { try { localStorage.setItem(LS, JSON.stringify({ show: st.show, colorMode: st.colorMode, limit: st.limit })); } catch { /* storage blocked */ } };
+const persist = () => { try { localStorage.setItem(LS, JSON.stringify({ show: st.show, colorMode: st.colorMode, limit: st.limit, paused: g?.paused || false })); } catch { /* storage blocked */ } };
 
 const LAYERS = [
   ['dex', 'DEX pools', 'coin'], ['etype_CEX', 'CEX', 'wallet'], ['etype_BRIDGE', 'Bridges', 'tx'], ['etype_CONTRACT', 'Contracts', 'code'],
@@ -85,6 +85,7 @@ export function render(root, _params, query) {
     const pins = g.pinnedCount();
     $('#chips').innerHTML = `
       <span class="fchip" style="--c:${scopeColor}">${scopeDef.mode !== 'network' ? `<a href="#/visualizer" title="Back to network">${icon('x')}</a>` : icon('graph')}${esc(scopeDef.mode)} · ${esc(scope?.title || '')}</span>
+      <button class="fchip" data-act="freeze" style="--c:#E7AE4B">${g.paused ? icon('bolt') + ' Resume' : icon('clock') + ' Freeze'}</button>
       <div class="dd" data-dd="color"><button class="fchip" data-dd-toggle style="--c:#2EC4B6">Color · ${st.colorMode}${icon('chevron-down')}</button>
         <div class="pop" hidden>${['cluster', 'label', 'flow'].map(m => `<button class="pop-item ${m === st.colorMode ? 'is-active' : ''}" data-dd-value="${m}">${{ cluster: 'Cluster (Bubblemaps)', label: 'Classification', flow: 'Net flow' }[m]}</button>`).join('')}</div></div>
       ${st.range ? `<button class="fchip" data-act="range-clear" style="--c:var(--blue-hi)">${icon('x')}${date(st.range[0])} → ${date(st.range[1] - 1)}</button>` : ''}
@@ -297,6 +298,8 @@ export function render(root, _params, query) {
     const foc = t.closest('[data-focus]');
     if (foc) { const n = graph.nodes.find(x => x.id === foc.dataset.focus); if (n) { g.select(n); g.centerOn(n); } return; }
     const pre = t.closest('[data-preset]');
+    const fz = e.target.closest('[data-act="freeze"]');
+    if (fz) { g.setPaused(!g.paused); fz.innerHTML = (g.paused ? icon('bolt') + ' Resume' : icon('clock') + ' Freeze'); persist(); toast(g.paused ? 'Animasi dibekukan — hemat lag, klik Resume untuk lanjut' : 'Animasi jalan lagi'); return; }
     if (pre) { const p = PRESETS[pre.dataset.preset]; st.show = { ...p.show }; st.colorMode = p.colorMode; persist(); toast(pre.dataset.preset === 'raw' ? 'Bubblemaps raw: wallets and cluster bonds only' : 'Arkham: entities, pools and flows on'); return applyVisibility(0.5); }
     const md = t.closest('[data-mode]');
     if (md) {

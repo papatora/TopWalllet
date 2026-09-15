@@ -52,6 +52,19 @@ export function render() {
       ${row('Funder', 'Sumber dana pertama yang dipakai banyak wallet (indukan armada).')}
       ${row(' klik / double-click', 'klik = pilih & lihat kartu detail (termasuk INDUKAN untuk insider) · double-click = buka profil wallet · drag = pin posisi')}
       </div>`)}
+    ${sec('Visualizer — kamus lengkap', `
+      ${row('Bubble abu-abu', 'wallet GENERALIST — tidak ada sinyal khusus (bukan error). Makin besar = volume est. makin besar')}
+      ${row('Wallet cap (kiri bawah)', 'jumlah wallet maksimal di map — di-rank by volume; wallet tanpa aktivitas di range dibuang')}
+      ${row('DEX pools (LAYERS)', 'node pool kontrak (kotak kubus). OFF = map cuma antar-wallet — paling enak buat baca pola wallet. Pool memang menyerap semua swap, jadi wajar kalau terbesar')}
+      ${row('Bundle tx / Funders', 'titik transaksi launch berbarenga & indukan dana cluster — klik untuk lihat anggotanya')}
+      ${row('Trade edges / Flow dots', 'garis arah aliran dana & titik animasinya. OFF = lebih bersih + lebih enteng')}
+      ${row('Color: Cluster / Classification / Net flow', 'warnei per cluster · warna per label (insider ungu, sniper hijau, whale emas, dst.) · hijau=net beli, merah=net jual')}
+      ${row('FREEZE / Resume', 'bekukan animasi fisika — map jadi gambar statis, lag hilang. Resume untuk lanjut')}
+      ${row('Group/UNGROUP clusters', 'ON: daftar kanan dikelompokkan per cluster (bisa collapse per cluster). OFF: daftar datar urut volume. Cluster di map digambar warna sama + garis ke hub indukan')}
+      ${row('Preset ARKHAM', 'entities (CEX/bridge) + pool + aliran dana tampil')}
+      ${row('Preset BUBBLEMAPS RAW', 'gaya bubblemaps: cuma wallet + ikatan cluster, semua layer lain mati')}
+      ${row('klik / double-click / drag', 'pilih & kartu detail (insider: ada INDUKAN) · buka profil · pin posisi')}
+      ${row('Timeline bawah', 'drag rentang hari untuk filter map per periode')}`)}
     ${sec('Membaca INDUKAN (asal token insider)', `
       Kalau wallet punya label insider terverifikasi, kartu node & halaman profil menampilkan <b>INDUKAN — ASAL TOKEN</b>: dari wallet siapa token itu diterima, jenisnya (mint dev / cluster / transfer personal), dan pola sebaran pengirimnya (mis. "mass-spreader 30 wallet/≤100 blok"). Itu menjawab "wallet ini di-induki siapa".`)}
     ${sec('Glosarium label', chips)}

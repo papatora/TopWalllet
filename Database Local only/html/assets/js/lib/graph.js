@@ -23,6 +23,7 @@ export class GraphCanvas {
     this.nodes = []; this.links = [];
     this.view = { k: 1, x: 0, y: 0 };
     this.opt = { colorMode: 'cluster', icons: true, labels: true, flow: true, frozen: false };
+    this.paused = false;
     this.sel = null; this.hover = null; this.neigh = null;
     const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
     this.c = { text: css('--text'), text2: css('--text-2'), text3: css('--text-3'), panel: css('--panel'), sunk: css('--bg-sunk'), green: css('--green'), red: css('--red'), blue: css('--blue-hi'), pink: css('--c-cluster'), amber: css('--c-bundler'), line: css('--line-strong') };
@@ -144,8 +145,16 @@ export class GraphCanvas {
     cv.addEventListener('dblclick', e => { const [sx, sy] = pos(e), n = this.hit(sx, sy); if (n) this.cb.onOpen?.(n); });
   }
 
+  setPaused(p) { this.paused = !!p; this.dirty = true; }
+
   frame(t) {
     if (this.dead) return;
+    if (this.paused) {
+      if (this.dirty) this.draw(t / 1000);   // interaksi masih render, animasi mati
+      this.dirty = false;
+      this.raf = requestAnimationFrame(this.frame.bind(this));
+      return;
+    }
     if (this.sim.active && !this.opt.frozen) {
       this.sim.tick(); if (this.sim.alpha > 0.3) this.sim.tick();
       this.dirty = true;
