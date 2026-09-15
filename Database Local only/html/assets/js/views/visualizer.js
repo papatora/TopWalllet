@@ -193,6 +193,17 @@ export function render(root, _params, query) {
             <div class="t2" style="font-size:12px;margin-top:3px">${isW ? (walletName(sel.ref) ? esc(walletName(sel.ref)) + ' · ' : '') + (sel.vol ? usd(sel.vol) + ' volume est.' : 'no priced swaps in range') : sel.kind === 'token' ? `${sel.traders} traders in scope · ${usd(sel.vol)} est.` : e ? `${e.members.length} wallets · ${e.kind === 'cluster' ? 'shared first funding' : 'one tx, block ' + nf(e.data.block)}` : ''}</div></div>
         </div>
         ${isW ? `<div class="chips" style="margin-top:10px">${S.wallets[sel.ref][2].map(l => chip(S.labels[l])).join('')}</div>` : ''}
+        ${isW && S.origins && S.origins[sel.ref] ? (() => {
+          const o = S.origins[sel.ref];
+          const rows = (o.senders || []).map(s => {
+            const who = s.kind === 'MASS_SPREAD' ? 'mass-spreader (bot sebaran)' : s.kind === 'FUNDER' ? 'funder cluster' : s.kind === 'TRANSFER' ? 'wallet pengirim' : s.kind || 'pengirim';
+            return `<div class="kv-row"><span>${who}</span><a class="link mono" style="font-size:11px" href="${addrExt(s.addr)}" target="_blank" rel="noopener">${s.addr.slice(0, 10)}…</a></div>`;
+          }).join('');
+          return `<div style="margin-top:10px;padding:9px 10px;background:var(--panel,#111a2e);border:1px solid var(--line,#1e2a44);border-radius:8px">
+            <div class="t3" style="letter-spacing:.5px">INDUKAN — ASAL TOKEN</div>
+            <div class="t2" style="font-size:11.5px;margin:2px 0 4px">${esc(o.label || o.kind)}</div>
+            ${rows || '<div class="t3">mint langsung dari 0x0</div>'}</div>`;
+        })() : ''}
         <div class="node-acts">
           <button class="btn btn-ghost btn-sm" data-act="open" title="Open page">${icon('external', 'i-sm')}Open</button>
           <button class="btn btn-ghost btn-sm" data-copy="${sel.addr}" title="Copy">${icon('copy', 'i-sm')}</button>

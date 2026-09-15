@@ -214,6 +214,49 @@ def build() -> dict:
     checkpoints = {s: u for s, _c, u in con.execute("select stage,cursor,updated_at from pipeline_checkpoints")}
     con.close()
 
+    # ---- lineage / "indukan": dari mana wallet insider dapat token ----------
+    funders: dict[str, set] = {}
+    for a, v in W.items():
+        for lab in v.get("labels", []):
+            if lab.startswith("CLUSTER_MEMBER"):
+                f = ((v.get("evidence") or {}).get(lab) or {}).get("funder") or ""
+                if f:
+                    funders.setdefault(f.lower(), set()).add(a)
+    origins: dict[str, dict] = {}
+    for a, v in W.items():
+        evd = v.get("evidence") or {}
+        ins = evd.get("INSIDER") or {}
+        senders = ins.get("senders") or {}
+        o = None
+        if ins.get("mint"):
+            o = {"kind": "MINT", "label": "Mint dev (dari 0x0)",
+                 "senders": [], "tokens": ins.get("tokens", [])}
+        elif senders:
+            slist = []
+            for sa, si in senders.items():
+                si = si or {}
+                sp = si.get("spread") or {}
+                kind = si.get("kind") or (
+                    "MASS_SPREAD" if (sp.get("max_recipients") or 0) >= 20 else "TRANSFER")
+                slist.append({"addr": sa, "kind": kind, "spread": sp})
+            if any(s["addr"] in funders for s in slist):
+                o = {"kind": "CLUSTER", "label": "Cluster / fleet operator",
+                     "senders": slist, "tokens": ins.get("tokens", [])}
+            else:
+                o = {"kind": "TRANSFER", "label": "Transfer personal (OTC/hibah?)",
+                     "senders": slist, "tokens": ins.get("tokens", [])}
+        if o is None:
+            for lab in v.get("labels", []):
+                if lab.startswith("CLUSTER_MEMBER"):
+                    f = ((evd.get(lab) or {}).get("funder") or "").lower()
+                    if f:
+                        o = {"kind": "CLUSTER", "label": "Funding cluster",
+                             "senders": [{"addr": f, "kind": "FUNDER"}],
+                             "tokens": [], "cluster": lab.split(":", 1)[1]}
+                    break
+        if o:
+            origins[a] = o
+
     return {
         "meta": {
             "chain": "Robinhood Chain", "chain_id": 4663, "explorer": EXPLORER,
@@ -227,7 +270,7 @@ def build() -> dict:
         },
         "types": types, "labels": label_names, "tokens": tokens, "spark": {str(k): v for k, v in spark.items()},
         "wallets": rows,
-        "swaps": {str(k): v for k, v in swaps_by_w.items()}, "ev": {str(k): v for k, v in ev.items()},
+        "swaps": {str(k): v for k, v in swaps_by_w.items()}, "ev": {str(k): v for k, v in ev.items()}, "origins": origins,
         "bundles": sorted(bundles.values(), key=lambda b: -len(b["members"])),
         "clusters": list(clusters.values()),
         "known": known,
