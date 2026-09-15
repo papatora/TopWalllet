@@ -118,6 +118,29 @@ fn port_open() -> bool {
     TcpStream::connect(("127.0.0.1", 8787)).is_ok()
 }
 
+/// PID proses yang LISTEN di port 8787 (apa pun itu — python milik kita
+/// atau proses eksternal), via netstat bawaan Windows.
+fn port_owner_pid() -> Option<u32> {
+    let out = Command::new("cmd")
+        .args(["/C", "netstat -ano -p TCP"])
+        .creation_flags(CREATE_NO_WINDOW)
+        .output()
+        .ok()?;
+    let s = String::from_utf8_lossy(&out.stdout);
+    for line in s.lines() {
+        if line.contains(":8787") && line.contains("LISTENING") {
+            if let Some(pid) = line.split_whitespace().last() {
+                if let Ok(v) = pid.parse::<u32>() {
+                    if v > 0 {
+                        return Some(v);
+                    }
+                }
+            }
+        }
+    }
+    None
+}
+
 // ---------------- commands ----------------
 
 #[tauri::command]
@@ -185,6 +208,14 @@ fn stop_server(state: State<ServerState>, app: AppHandle) -> Result<(), String> 
         let _ = c.wait();
         let _ = app.emit("server-log", "[launcher] server dihentikan");
     }
+    // proses lain yang masih memegang port (eksternal) → paksa mati
+    if let Some(pid) = port_owner_pid() {
+        let _ = Command::new("cmd")
+            .args(["/C", &format!("taskkill /F /PID {pid}"),])
+            .creation_flags(CREATE_NO_WINDOW)
+            .output();
+        let _ = app.emit("server-log", format!("[launcher] proses PID {pid} di-port 8787 dipaksa mati"));
+    }
     Ok(())
 }
 
@@ -201,7 +232,7 @@ fn server_status(state: State<ServerState>) -> serde_json::Value {
             }
         }
     }
-    serde_json::json!({ "ours": ours, "port_open": port_open() })
+    serde_json::json!({ "ours": ours, "port_open": port_open(), "port_pid": port_owner_pid() })
 }
 
 #[tauri::command]

@@ -54,6 +54,7 @@ export function render() {
       </div>`)}
     ${sec('Visualizer — kamus lengkap', `
       ${row('Bubble abu-abu', 'wallet GENERALIST — tidak ada sinyal khusus (bukan error). Makin besar = volume est. makin besar')}
+      ${row('Bubble grup putus-putus (×N)', 'N wallet receh anggota cluster/bundle yang dilipat jadi satu — klik untuk daftar anggotanya')}
       ${row('Bubble GRUP (hub cluster/bundle)', 'wallet receh anggota cluster/bundle tidak digambar satu-satu — dilipat jadi SATU bubble sebesar total volume anggotanya. Hover/klik = "berisi N wallet" + daftar anggotanya')}
       ${row('Wallet cap (kiri bawah)', 'jumlah wallet maksimal di map — di-rank by volume; wallet tanpa aktivitas di range dibuang')}
       ${row('DEX pools (LAYERS)', 'node pool kontrak (kotak kubus). OFF = map cuma antar-wallet — paling enak buat baca pola wallet. Pool memang menyerap semua swap, jadi wajar kalau terbesar')}

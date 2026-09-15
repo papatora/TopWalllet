@@ -5,6 +5,39 @@
 
 ---
 
+
+> ## 🚨 AFTER-COMPACT PLAYBOOK (baca ini PERTAMA — context sebelum compact 690K)
+> Compact 690K→10K pasti lossy. Dokumen kebenaran: **PRE_COMPACT.md bagian
+> S-35..S-38-H** (paling baru), **docs/FIXED_LEDGER.md**, **DEBATE_ROUND_A..G.md**,
+> **docs/DIRECTIVE_VOLUME_SWEEP.md**, docs/memory/01-09.
+>
+> ### JANGAN (blind-fix trap — semua ini SUDAH selesai & terverifikasi):
+> - Fix ulang "css is not defined" / "groupNodes" / "snap shadow" / Reset draw()
+>   — semuanya SUDAH difix + diverifikasi subagent (FIXED_LEDGER.md ✅)
+> - Jadikan Blockscout primer — Etherscan V2 primer (2 key, rotasi, jalan)
+> - Re-implement komet CSS — komet canvas user sudah jalan (tema space)
+> - Restore paused saat reload — sengaja tidak (deterministik)
+> - Kirim cookies ke Arkham API — user akan LOGIN MANUAL di chromium temp
+>
+> ### LAKUKAN (urutan pasca-compact):
+> 1. Cek VPS: `python scripts/_vps_ops_once.py` pola (ssh helper) — supervisor
+>    aktif? enrich selesai? price_points & wallet_scores terisi = analyze jalan.
+> 2. EKSTRAKSI DATA VPS → LOKAL (belum dilakukan!): `python scripts/
+>    extract_wallets.py` di VPS → dump selektif + split → download →
+>    `python scripts/rebuild_local_db.py` lokal → POST /api/rebuild.
+> 3. Implementasi VOLUME SWEEP: docs/DIRECTIVE_VOLUME_SWEEP.md (prioritas 1).
+> 4. Arkham flow: chromium temp dibuka → USER LOGIN manual → computer-use/
+>    python browse wallet → harvest tag CEX → known_entities.json.
+> 5. Setiap fix baru → UPDATE FIXED_LEDGER.md + dossier + commit + push via VPS.
+>
+> ### EXPLORER LOKAL: Desktop "TopWallet Launcher" shortcut → Mulai Server →
+> 127.0.0.1:8787. Stop di tombol yang sama (bisa paksa proses eksternal).
+> Kalau Defender blok exe: folder target
+elease sudah ASR-excluded — pakai
+> shortcut, jangan salin exe mentah ke Desktop.
+
+
+
 ## 1. TARGET AKHIR (jangan lupa)
 
 **Cari wallet-wallet DIAMOND untuk COPYTRADE AGENT** — wallet dengan PnL beneran

@@ -91,18 +91,20 @@
     // s: { ours, port_open }
     managed = s.ours;
     const dot = $("dot"), st = $("status");
+    const ext = !s.ours && s.port_pid > 0;
     if (s.ours) {
       dot.className = "dot on";
       st.textContent = "Server BERJALAN (dikelola launcher)";
     } else if (s.port_open) {
       dot.className = "dot ext";
-      st.textContent = "Port 8787 terpakai (server eksternal)";
+      st.textContent = "Port 8787 dipakai proses lain (PID " + (s.port_pid || "?") + ")";
     } else {
       dot.className = "dot";
       st.textContent = "Server MATI";
     }
     $("btnStart").disabled = s.ours || s.port_open;
-    $("btnStop").disabled = !s.ours;
+    $("btnStop").disabled = !s.ours && !s.port_pid;
+    $("btnStop").textContent = s.ours ? "■  Stop Server" : (s.port_pid ? "■  Stop (paksa PID " + s.port_pid + ")" : "■  Stop Server");
   }
 
   function log(line, isErr) {
@@ -132,7 +134,7 @@
   };
   $("btnStop").onclick = async () => {
     try { await invoke("stop_server"); } catch (e) { log("[launcher] " + e, true); }
-    setTimeout(refresh, 600);
+    setTimeout(refresh, 800);
   };
   $("btnOpen").onclick = () => invoke("open_website");
 
@@ -147,7 +149,7 @@
       $("metaDir").textContent = cfg.html_dir || "TIDAK DITEMUKAN — isi topwallet-launcher.ini";
     } catch (e) { log("[launcher] config error: " + e, true); }
     refresh();
-    setInterval(refresh, 3000);
+    setInterval(refresh, 1500);
   })();
 </script>
 </body>
