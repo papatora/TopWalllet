@@ -1,35 +1,31 @@
-# 01 — CURRENT STATE (VPS + Pipeline)
+# 01 — CURRENT STATE (VPS + Pipeline) — update S-38 (2026-09-16)
 
-> Baca ini dulu. Data terakhir verified: 2026-09-14 18:20 UTC (S-35).
+> Baca ini dulu. Setelah itu: HANDOFF_MASTER (playbook top) + FIXED_LEDGER.md
+> + docs/DIRECTIVE_VOLUME_SWEEP.md. Data verified: 2026-09-16.
 
 ## VPS
-- Host: `78.31.250.202` · user: `root` · password di local `.env` (VPS_PASSWORD)
-- Supervisor: **ACTIVE** (systemd `topwallet-supervisor`, auto-restart)
-  - Sedang stage ENRICH utk ~93K wallets (lama, berjam-jam)
-  - Setelah enrich → prices (kode decimals S-34 benar, price_points 0 saat ini)
-  - Setelah analyze → classifier + tag_overrides merge otomatis
-- Trending scanner: cron per 30 menit (GMGN API)
-- Watchdog GLM: cron per jam
-- **Re-verify tags: cron per 30 menit** (`reverify_tags.py --max-calls 1500`,
-  flock anti-overlap, checkpoint per 10 pair)
-- GitHub PAT baru terpasang local+VPS (S-35); push HANYA dari VPS
-  (local push bisa hang di git-credential-manager → pakai jalur bundle)
+- Supervisor AKTIF: enrich 94K wallets (Etherscan V2 primer, 2 key rotasi).
+  Setelah enrich → prices → analyze OTOMATIS (PnL terverifikasi masuk).
+- Verifier on-chain: cron 30 menit (1,646 pair done: 730 proven, 806
+  overturned, 90 airdrop spam). Defer-safe, flock, checkpoint.
+- GitHub push dari VPS (branch master:main). Lokal push suka hang.
 
-## DATABASE (SQLite WAL: /opt/topwallet/data/topwallet.db)
-- Tokens: **1,330** · Pools: **1,342**
-- Wallets: **93,459** (meledak dari 16K — trending scanner bekerja)
-- Swap events: **302,541** · Price points: **0** (menunggu stage prices)
+## DATABASE LOKAL (snapshot S-38)
+- 94,786 wallets · 365K swaps · 1,378 tokens · 32,456 classified
+- 100% swaps priced (est. fallback snapshot) — PnL verified menyusul
+- Labels: INSIDER 2,611 (proven) · TRADER_COVERAGE_GAP 772 · AIRDROP_FARMER
+  87 · BUNDLER 447 · SNIPER 127 · DEV 32 · BOT 22 · WHALE 19 · SNIPER_BOT 4
+  · WHALE_SUS 3 · dst.
 
-## LABELS (snapshot analyze terakhir, sebelum enrich 93K selesai)
-- INSIDER 1,345 (⚠️ mayoritas curiga false positive — verifikasi on-chain
-  jalan via reverify_tags; verdict: TRADER_MISREAD / CONFIRMED_INSIDER /
-  MINT_ALLOCATION / AIRDROP_SPAM / UNRESOLVED)
-- BUNDLER_SUSPECT 211 · SNIPER 287 · DEV 19 · CLUSTER 16 (be41, f70d)
-- Hasil verification: results/tag_verification.json + tag_overrides.json
+## EXPLORER LOKAL (semua fitur verified Round A-G)
+- Launcher: Desktop "TopWallet Launcher" shortcut → targetelease exe
+  (folder ASR-excluded). Mulai/Stop/Stop-paksa/Buka Website/Fullscreen.
+- 3 tema (badge chain klik), Guide tab, leaderboard filter tag,
+  INDUKAN lineage, sub-layer per-item hide, freeze/reset, fold-to-group.
+- Kunci: Etherscan 2 key di .env lokal+VPS. GMGN key. 2chapta key (VPS .env).
 
-## LOKAL
-- Repo: `C:\Users\ROG\Documents\ClaudeCode\SniperToken\TopWalllet`
-- Branch: `main` (VPS: `master` — push `master:main`) · Tests: **87 green**
-- Desktop launcher: `desktop/src-tauri/target/release/topwallet-launcher.exe`
-  (start/stop server localhost 8787 — GUI-tested, jalan)
-- Explorer lokal: jalankan exe → "Mulai Server" → http://127.0.0.1:8787
+## ATURAN CEPAT
+- Push git SELALU dari VPS; lokal→VPS = bundle (lihat 09_VPS_OPS).
+- Setelah ubah dataset.py → POST /api/rebuild (server cache stale trap).
+- Jangan bunuh server 8787 user tanpa cek — sekarang launcher yang kelola.
+- Blockscout fallback saja; Etherscan primer. SCRAPING = VPS only.
