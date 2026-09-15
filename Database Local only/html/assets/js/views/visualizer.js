@@ -87,6 +87,9 @@ export function render(root, _params, query) {
     const tl = $('#tabLeft'), tr = $('#tabRight');
     if (tl) tl.hidden = !st.hideLeft;
     if (tr) tr.hidden = !st.hideRight;
+    document.querySelectorAll('[data-act="freeze"]').forEach(b => {
+      b.innerHTML = (g.paused ? icon('bolt', 'i-sm') + ' Resume' : icon('clock', 'i-sm') + ' Freeze');
+    });
   }
 
   /* ---------- chips ---------- */
@@ -112,7 +115,9 @@ export function render(root, _params, query) {
   /* ---------- left: trace overview + scope + layers ---------- */
   function drawLeft() {
     const wallets = scope.nodes.filter(n => n.kind === 'wallet' || n.kind === 'entity');
-    const vol = wallets.reduce((a, n) => a + n.vol, 0), toks = scope.nodes.filter(n => n.kind === 'token').length;
+    const vol = wallets.reduce((a, n) => a + n.vol, 0)
+      + scope.nodes.filter(n => n.kind === 'group').reduce((a, n) => a + n.vol, 0);
+    const toks = scope.nodes.filter(n => n.kind === 'token').length;
     const modes = [['network', 'Network'], ['token', 'Token'], ['entity', 'Entity'], ['wallet', 'Wallet']];
     let picker = '';
     if (scopeDef.mode === 'token' || scopeDef.mode === 'network') {
@@ -180,7 +185,7 @@ export function render(root, _params, query) {
         sub = `<div style="max-height:150px;overflow-y:auto;border:1px solid var(--line-soft);border-radius:6px;margin:2px 0 6px">` +
           (subs.length ? subs.map(it => {
             const hid = st.hidden.has(it.id);
-            return `<div class="al-row ${hid ? 'is-hidden' : ''}" style="padding:4px 10px"><button class="al-eye" data-eye="${it.id}" title="${hid ? 'Show' : 'Hide'}">${icon(hid ? 'x' : 'eye', 'i-sm')}</button><span class="al-addr" style="font-size:11px">${esc(it.label)}</span><span class="t3 mono" style="margin-left:auto">${usd(it.vol || 0)}</span></div>`;
+            return `<div class="al-row ${hid ? 'is-hidden' : ''}" style="padding:4px 10px"><button class="al-eye" data-eye="${it.id}" title="${hid ? 'Show' : 'Hide'}">${icon(hid ? 'x' : 'eye', 'i-sm')}</button><span class="al-addr" style="font-size:11px">${esc(it.label)}</span><span class="t3 mono" style="margin-left:auto">${usd(it.foldedVol ?? it.vol ?? 0)}</span></div>`;
           }).join('') : `<div class="t3" style="padding:6px 10px">kosong di scope ini</div>`) + `</div>`;
       }
       const main = `<label class="switch-row"><span class="t2">${icon(ic, 'i-sm')}${l}</span>${n != null ? `<span class="t3 mono">${nf(n)}</span>` : ''}<input type="checkbox" data-layer="${k}" ${st.show[k] ? 'checked' : ''}><span class="switch"></span></label>`;
@@ -264,7 +269,7 @@ export function render(root, _params, query) {
         </div></div>`;
     }
     el.innerHTML = `<div class="panel-h" style="min-height:50px"><button class="al-eye" data-act="hide-right" title="Sembunyikan address list">${icon('x', 'i-sm')}</button><span class="panel-title">Address list</span>
-        <span class="end"><button class="fchip ${st.grouped ? '' : 'is-on'}" data-act="group" style="--c:var(--c-cluster);height:24px">${st.grouped ? 'Ungroup clusters' : 'Group clusters'}</button></span></div>
+        <span class="end"><button class="fchip ${st.grouped ? 'is-on' : ''}" data-act="group" style="--c:var(--c-cluster);height:24px">${st.grouped ? 'Ungroup clusters' : 'Group clusters'}</button></span></div>
       ${card}
       <div class="al-search"><label class="ex-search">${icon('search')}<input id="al-q" placeholder="Search addresses" value="${esc(st.listQ)}" autocomplete="off" spellcheck="false"></label><span class="micro">${nf(wallets.length)}</span></div>
       <div class="scroll al-list">${list || '<p class="t3" style="padding:16px">No wallet matches.</p>'}</div>`;
@@ -423,6 +428,7 @@ export function render(root, _params, query) {
     else if (act === 'expand') {
       if (g.sel && g.sel.kind === 'wallet') location.hash = `#/visualizer?wallet=${g.sel.addr}`;
       else if (g.sel && g.sel.kind === 'token') location.hash = `#/visualizer?token=${S.tokens[g.sel.ref][0]}`;
+      else if (g.sel && (g.sel.kind === 'entity')) location.hash = `#/visualizer?entity=${g.sel.ref}`;
       else if (g.sel && (g.sel.kind === 'funder' || g.sel.kind === 'bundle' || g.sel.kind === 'group')) location.hash = `#/visualizer?entity=${g.sel.ref}`;
       return;
     }

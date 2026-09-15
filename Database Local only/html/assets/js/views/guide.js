@@ -44,7 +44,7 @@ export function render() {
 
     ${sec('Cara baca Visualizer', `
       <b>Ukuran bubble</b> = volume est. yang lewat di wallet/token itu dalam scope aktif.
-      <b>Garis</b> = arah aliran dana (klik FLOW untuk ganti All/In/Out).
+      <b>Garis</b> = arah aliran dana. Tombol FLOW: ALL = titik animasi aliran aktif, OFF = garis polos (lebih ringan).
       <b>Warna</b> = cluster (Group clusters) atau label.
       <div style="margin-top:10px">
       ${row('Node kotak/kubus besar (DEX pool)', 'Pool kontrak — wajar volumenya menarik ke mana-mana karena SEMUA swap lewat dia. Bukan aktivitas mencurigakan. Sembunyikan lewat LAYERS → DEX pools kalau mau fokus antar-wallet.')}

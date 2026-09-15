@@ -196,6 +196,10 @@ export function visibleGraph(scope, show, hidden) {
     if (n.kind === 'token') return show.dex;
     if (n.kind === 'funder') return show.funders;
     if (n.kind === 'bundle') return show.bundles;
+    if (n.kind === 'group') {
+      const e = S.entities[n.ref];
+      return e ? (e.kind === 'cluster' ? show.funders : show.bundles) : true;
+    }
     if (n.kind === 'entity') return show['etype_' + n.etype] !== false;
     if (n.kind === 'wallet' && !n.hasSwaps && !show.labelOnly && !n.focus) return false;
     return true;

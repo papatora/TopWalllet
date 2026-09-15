@@ -28,8 +28,8 @@ export class GraphCanvas {
     this.sel = null; this.hover = null; this.neigh = null;
     const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
     this.c = Object.assign(this.readTheme(), { ent_fill: css('--ent-fill') || '#F4F6FA', ent_text: css('--ent-text') || '#07080C' });
-    this.themeObs = new MutationObserver(() => { this.c = Object.assign(this.readTheme(), { ent_fill: css('--ent-fill') || '#F4F6FA', ent_text: css('--ent-text') || '#07080C' }); this.dirty = true; })
-      .observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+    this.themeObs = new MutationObserver(() => { this.c = Object.assign(this.readTheme(), { ent_fill: css('--ent-fill') || '#F4F6FA', ent_text: css('--ent-text') || '#07080C' }); this.dirty = true; });
+    this.themeObs.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
     this.labelColor = t => {
       const key = t?.startsWith('CLUSTER_MEMBER') ? 'cluster' : ({ DEV: 'dev', SNIPER: 'sniper', BUNDLER_SUSPECT: 'bundler', INSIDER: 'insider', AIRDROP_FARMER: 'airdrop', CT_ATTRIBUTED: 'ct', MEV_BOT: 'mev', SMART_TRACKER: 'smart', BOT: 'bot', SNIPER_BOT: 'bot', WHALE: 'whale', WHALE_SUS: 'whalesus', PHISHING_TARGET: 'phishing', TRADER_COVERAGE_GAP: 'gap' }[t] || 'generalist');
       return css('--c-' + key);
@@ -254,7 +254,7 @@ export class GraphCanvas {
       else if (n.kind === 'group') this.drawGroup(n);
       else this.drawHub(n);
       if (n === this.sel || n === this.hover) {
-        ctx.strokeStyle = n === this.sel ? '#FFFFFF' : 'rgba(255,255,255,.5)'; ctx.lineWidth = 1.6 * lw;
+        ctx.strokeStyle = n === this.sel ? this.c.text : 'rgba(128,140,170,.55)'; ctx.lineWidth = 1.6 * lw;
         ctx.beginPath(); ctx.arc(n.x, n.y, n.r + 4 * lw + 1, 0, TAU); ctx.stroke();
       }
       if (n.pinned && this.opt.icons) { ctx.fillStyle = c.blue; ctx.beginPath(); ctx.arc(n.x - n.r * 0.72, n.y - n.r * 0.72, 2.6 * Math.max(lw, 0.8), 0, TAU); ctx.fill(); }
@@ -277,7 +277,7 @@ export class GraphCanvas {
     else { g.addColorStop(0, 'rgba(78,104,170,.42)'); g.addColorStop(1, 'rgba(38,54,98,.30)'); }
     ctx.fillStyle = g; ctx.beginPath(); ctx.arc(n.x, n.y, n.r, 0, TAU); ctx.fill();
     ctx.strokeStyle = col ? rgba(col, 0.9) : 'rgba(96,124,196,.55)'; ctx.lineWidth = (col ? 1.5 : 1) * lw; ctx.stroke();
-    if (n.focus) { ctx.strokeStyle = '#FFFFFF'; ctx.lineWidth = 2 * lw; ctx.stroke(); }
+    if (n.focus) { ctx.strokeStyle = this.c.text; ctx.lineWidth = 2 * lw; ctx.stroke(); }
     if (this.opt.icons) {
       const br = Math.max(2.6 * lw, Math.min(5, n.r * 0.26));
       ctx.fillStyle = n.hasSwaps ? c.green : '#454C5B'; ctx.strokeStyle = c.sunk; ctx.lineWidth = 1.5 * lw;
