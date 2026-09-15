@@ -928,3 +928,29 @@ rug-event detector ke pipeline.
 - Cookie web tidak cukup untuk API. Solusi user: login manual di chromium
   temp (flow di atas). 2captcha key valid (saldo $2.3) tersimpan VPS .env
   TWOCAPTCHA_KEY — dipakai kalau nanti ketemu challenge sungguhan.
+
+### G. DEBATE ROUNDS A-F (subagent verification) — EXPLORER FINISHING (S-37-G)
+Metode: subagent adversarial berantai (A audit → B verifikasi+hunt → C → D
+→ E → F final pre-ship). Dossier: DEBATE_ROUND_A/B/C/D/E/F.md di repo root.
+
+**TOTAL TEMUAN & FIX: 2 P0 + 7 P1 + ~15 P2 — SEMUA P0/P1 TUNTAS.**
+- P0: dataset.py `snap` dict tertimpa skalar (crash laten saat price_points
+  terisi); visualizer Reset memanggil draw() yang tidak ada (ReferenceError).
+- P1: fold v3 tidak pernah aktif (isPlain salah — CLUSTER_MEMBER/BUNDLER
+  labels = keanggotaan, bukan identitas); INDUKAN lookup by index (harusnya
+  by address); label_counts tanpa derived; hub foldedVol tak pernah di-set;
+  collapse tab tanpa class posisi; 8 tombol mati (group/unpin/range-clear/
+  toggle-flow/unhide/open/more/expand); expand entity salah target;
+  sub-layer & hub card $0.00 (single-source foldedVol); white mode canvas/
+  panel hardcoded; freeze label stale.
+- Perf: alphaDecay 0.035 (settle 2x cepat); token mode cap traders.
+- Round F skor siap-ship 8,5/10, 0 P0/0 P1 tersisa. Sisa P2 kosmetik +
+  perf L600 (freeze tersedia).
+
+**PELAJARAN (aturan baru):** klaim UI/data WAJIB diverifikasi runtime
+(server + served dataset + harness) sebelum dibilang selesai. Server cache
+stale = jebakan berulang → setelah ubah dataset.py, SELALU POST
+/api/rebuild atau restart. Setelah git reset --hard di VPS, re-run
+extract_wallets.py (results tertimpa versi commit).
+
+## STATUS AKHIR: siap compact. Pasca-compact → DIRECTIVE_VOLUME_SWEEP.md.
