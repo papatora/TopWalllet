@@ -43,7 +43,6 @@ export function evidenceBlocks(i) {
         + row('Tokens', (d.tokens || []).map(tok).join(', '))
         + row('Artinya', 'token dikirim bot sebaran — wallet ini target/korban, bukan insider');
     }
-    else if (L === 'AIRDROP_FARMER') body = row('Swaps', d.swaps) + row('Tokens', (d.tokens || []).map(tok).join(', ')) + row('Pattern', 'incoming only, zero buys');
     else if (L === 'CT_ATTRIBUTED') body = row('Name', esc(d.name || '—')) + row('X account', d.twitter_username ? `<a class="link" href="https://x.com/${encodeURIComponent(d.twitter_username)}" target="_blank" rel="noopener">@${esc(d.twitter_username)}</a>` : '—') + row('Source', esc(d.source || ''));
     else if (L.startsWith('CLUSTER_MEMBER')) body = row('Funder', `<a class="link" href="${addrExt(d.funder)}" target="_blank" rel="noopener">${d.funder.slice(0, 10)}…</a>`) + row('Members', d.member_count ?? d.funded_wallets ?? '—') + entLink(d.cluster_id);
     else if (L === 'MEV_BOT') body = row('Round trips', d.round_trips) + row('Median hold', d.median_hold_minutes + ' min');

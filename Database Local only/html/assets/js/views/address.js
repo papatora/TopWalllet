@@ -53,6 +53,7 @@ export function render(root, [addr]) {
             <div class="panel-h"><span class="panel-title">Overview</span></div>
             <div class="panel-b" style="padding-top:6px;padding-bottom:6px"><div class="kv">
               <div class="kv-row"><span>Primary type</span><span>${chip(ptype)}</span></div>
+              ${(S.origins && S.origins[w[0]]) ? (() => { const o = S.origins[w[0]]; return `<div class=\"kv-row\"><span>INDUKAN</span><span>${esc(o.label || o.kind)}</span></div><div class=\"kv-row\"><span>Pengirim</span><span>${(o.senders || []).map(s => `<a class=\"link mono\" href=\"${addrExt(s.addr)}\" target=\"_blank\" rel=\"noopener\">${s.addr.slice(0, 10)}…</a>`).join(' · ') || 'mint 0x0'}</span></div>`; })() : ''}
               <div class="kv-row"><span>Top confidence</span><span>${Math.max(...w[3]).toFixed(2)}</span></div>
               <div class="kv-row"><span>Labels</span><span>${w[2].length}</span></div>
               <div class="kv-row"><span>Swaps</span><span>${nf(sw.length)}</span></div>

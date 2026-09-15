@@ -203,8 +203,6 @@ html[data-theme="space"]{ background:#020308; }
 }
 @keyframes sftwinkle-a { from { opacity:.55; } to { opacity:1; } }
 @keyframes sftwinkle-b { from { opacity:1; } to { opacity:.5; } }
-}
-}
 
 .viz-panel.is-hidden{ display:none; }
 .viz-tab{

@@ -242,7 +242,7 @@ export function render(root, _params, query) {
           const folded = sel.foldedCount || 0;
           return `<div style="margin-top:10px;padding:9px 10px;background:var(--panel-2);border:1px solid var(--line);border-radius:8px">
             <div class="t3">GRUP — berisi ${e.members.length} wallet${folded ? ` (${folded} terlipat)` : ''}</div>
-            <div class="t3" style="margin:2px 0 4px">Volume grup est. <b>${usd((sel.foldedVol || 0) + (sel.vol || 0))}</b></div>
+            <div class="t3" style="margin:2px 0 4px">Volume grup est. <b>${usd(sel.foldedVol || 0)}</b></div>
             <div style="max-height:96px;overflow-y:auto">${e.members.slice(0, 12).map(mi => `<div class="kv-row"><span style="font-family:var(--mono);font-size:10.5px">${short(S.wallets[mi][0], 8, 6)}</span><a class="link" href="${walletHref(mi)}">open</a></div>`).join('')}${e.members.length > 12 ? `<div class="t3" style="margin-top:4px">+${e.members.length - 12} lainnya…</div>` : ''}</div></div>`;
         })() : ''}
         ${isW && S.origins && S.origins[S.wallets[sel.ref][0]] ? (() => {
@@ -408,6 +408,24 @@ export function render(root, _params, query) {
     if (act === 'fit') g.fit();
     else if (act === 'zin') g.zoomBy(1.25);
     else if (act === 'zout') g.zoomBy(0.8);
+    else if (act === 'group') { st.grouped = !st.grouped; return drawRight(); }
+    else if (act === 'unpin') { for (const n of g.nodes) { n.pinned = false; n.fx = n.fy = null; } g.sim.reheat(0.2); return drawChips(); }
+    else if (act === 'range-clear') { st.range = null; return rebuild(); }
+    else if (act === 'toggle-flow') { st.show.flow = !st.show.flow; persist(); return applyVisibility(0); }
+    else if (act === 'unhide') { st.hidden.clear(); return applyVisibility(0.3); }
+    else if (act === 'open') { if (g.sel) openNode(g.sel); return; }
+    else if (act === 'more') {
+      if (g.sel && (g.sel.kind === 'wallet' || g.sel.kind === 'entity')) location.hash = walletHref(g.sel.ref);
+      else if (g.sel && g.sel.kind === 'token') location.hash = tokenHref(g.sel.ref);
+      else if (g.sel && (g.sel.kind === 'group' || g.sel.kind === 'funder' || g.sel.kind === 'bundle')) location.hash = walletHref(S.entities[g.sel.ref].members[0]);
+      return;
+    }
+    else if (act === 'expand') {
+      if (g.sel && g.sel.kind === 'wallet') location.hash = `#/visualizer?wallet=${g.sel.addr}`;
+      else if (g.sel && g.sel.kind === 'token') location.hash = `#/visualizer?token=${S.tokens[g.sel.ref][0]}`;
+      else if (g.sel && (g.sel.kind === 'funder' || g.sel.kind === 'bundle' || g.sel.kind === 'group')) location.hash = `#/visualizer?entity=${g.sel.ref}`;
+      return;
+    }
   });
   root.addEventListener('change', e => {
     const lay = e.target.closest('[data-layer]');

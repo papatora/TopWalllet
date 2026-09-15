@@ -82,7 +82,7 @@
 .chip::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
 .chip.no-dot::before{display:none}
 .chips{display:flex;flex-wrap:wrap;gap:4px}
-.fchip{display:inline-flex;align-items:center;gap:6px;height:26px;padding:0 10px;border:1px solid color-mix(in srgb,var(--c,var(--blue-hi)) 60%,transparent);border-radius:var(--r-pill);font:500 11.5px/1 var(--mono);letter-spacing:.03em;text-transform:uppercase;color:var(--c,var(--blue-hi));background:rgba(7,8,12,.6);white-space:nowrap}
+.fchip{display:inline-flex;align-items:center;gap:6px;height:26px;padding:0 10px;border:1px solid color-mix(in srgb,var(--c,var(--blue-hi)) 60%,transparent);border-radius:var(--r-pill);font:500 11.5px/1 var(--mono);letter-spacing:.03em;text-transform:uppercase;color:var(--c,var(--blue-hi));background:var(--chip-bg,rgba(7,8,12,.6));white-space:nowrap}
 button.fchip:hover{background:color-mix(in srgb,var(--c,var(--blue-hi)) 12%,transparent)}
 .fchip .i{width:11px;height:11px}
 
@@ -149,7 +149,7 @@ button.fchip:hover{background:color-mix(in srgb,var(--c,var(--blue-hi)) 12%,tran
 .pager .end{margin-left:auto;display:flex;align-items:center;gap:6px}
 
 /* ---------- pill (inline meta) ---------- */
-.pill{display:inline-flex;align-items:center;gap:6px;height:28px;padding:0 9px;border:1px solid var(--line-strong);border-radius:var(--r-md);font:400 12.5px/1 var(--mono);background:rgba(7,8,12,.35)}
+.pill{display:inline-flex;align-items:center;gap:6px;height:28px;padding:0 9px;border:1px solid var(--line-strong);border-radius:var(--r-md);font:400 12.5px/1 var(--mono);background:var(--chip-bg,rgba(7,8,12,.35))}
 .pill .i{width:13px;height:13px;color:var(--text-2)}
 
 /* ---------- key/value list ---------- */

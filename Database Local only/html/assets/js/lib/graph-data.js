@@ -93,7 +93,9 @@ export function buildScope({ mode, ref, limit = 250, from = 0, to = Infinity }) 
     const entityMember = new Set();
     for (const e of S.entities) for (const i of e.members) entityMember.add(i);
 
-    const SPECIAL_LABELS = new Set(['INSIDER','WHALE','WHALE_SUS','SNIPER','SNIPER_BOT','DEV','MEV_BOT','CT_ATTRIBUTED','SMART_TRACKER','PHISHING_TARGET','AIRDROP_FARMER','BOT','TRADER_COVERAGE_GAP']);
+    // label keanggotaan (SNIPER/BUNDLER_SUSPECT/CLUSTER_MEMBER) = FOLDABLE;
+    // hanya label "identitas" yang membuat wallet tetap individual
+    const SPECIAL_LABELS = new Set(['INSIDER','WHALE','WHALE_SUS','DEV','MEV_BOT','CT_ATTRIBUTED','SMART_TRACKER','PHISHING_TARGET','AIRDROP_FARMER','BOT','SNIPER_BOT','TRADER_COVERAGE_GAP']);
     const isPlain = i => !S.wallets[i][2].some(li => SPECIAL_LABELS.has(S.labels[li]));
     const SPECIAL = i => entityMember.has(i) && !isPlain(i);   // anggota entitas tapi punya label khusus
 
@@ -133,7 +135,6 @@ export function buildScope({ mode, ref, limit = 250, from = 0, to = Infinity }) 
       groupOf.set(id, node);
       nodes.set(id, node);
       const h = hub(ei);
-      h.vol = (h.vol || 0) + vol;
       h.foldedVol = (h.foldedVol || 0) + vol;
       h.foldedCount = (h.foldedCount || 0) + plainMembers.length;
       links.push({ s: node, t: h, kind: 'fund', vol });

@@ -28,7 +28,7 @@ export class GraphCanvas {
     this.sel = null; this.hover = null; this.neigh = null;
     const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
     this.c = Object.assign(this.readTheme(), { ent_fill: css('--ent-fill') || '#F4F6FA', ent_text: css('--ent-text') || '#07080C' });
-    new MutationObserver(() => { this.c = Object.assign(this.readTheme(), { ent_fill: css('--ent-fill') || '#F4F6FA', ent_text: css('--ent-text') || '#07080C' }); this.dirty = true; })
+    this.themeObs = new MutationObserver(() => { this.c = Object.assign(this.readTheme(), { ent_fill: css('--ent-fill') || '#F4F6FA', ent_text: css('--ent-text') || '#07080C' }); this.dirty = true; })
       .observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
     this.labelColor = t => {
       const key = t?.startsWith('CLUSTER_MEMBER') ? 'cluster' : ({ DEV: 'dev', SNIPER: 'sniper', BUNDLER_SUSPECT: 'bundler', INSIDER: 'insider', AIRDROP_FARMER: 'airdrop', CT_ATTRIBUTED: 'ct', MEV_BOT: 'mev', SMART_TRACKER: 'smart', BOT: 'bot', SNIPER_BOT: 'bot', WHALE: 'whale', WHALE_SUS: 'whalesus', PHISHING_TARGET: 'phishing', TRADER_COVERAGE_GAP: 'gap' }[t] || 'generalist');
@@ -41,7 +41,7 @@ export class GraphCanvas {
     this.raf = requestAnimationFrame(this.frame.bind(this));
   }
 
-  destroy() { cancelAnimationFrame(this.raf); this.ro.disconnect(); this.dead = true; }
+  destroy() { cancelAnimationFrame(this.raf); this.ro.disconnect(); this.themeObs?.disconnect(); this.dead = true; }
 
   setGraph(nodes, links, { reheat = 0.8 } = {}) {
     this.nodes = nodes; this.links = links;
@@ -153,7 +153,9 @@ export class GraphCanvas {
     if (this.paused) {
       // bekukan posisi: matikan gaya simulasi supaya tidak ada node liar saat resume
       this.sim.alphaTarget = 0; this.sim.alpha = 0;
-      this.userMoved || this.fit();
+      if (!this.userMoved) this.fit();
+    } else {
+      this.sim.reheat(0.15);   // resume: gerak halus lagi
     }
     this.dirty = true;
   }
