@@ -37,7 +37,7 @@ export function tokStack(ks, max = 3) {
   return `<span class="tok-stack">${ks.slice(0, max).map(k => tokAv(k)).join('')}${extra > 0 ? `<span class="tok tok-more">+${extra}</span>` : ''}</span>`;
 }
 export const rank = r => `<span class="rank ${r <= 3 ? 'is-' + r : ''}">${r}</span>`;
-export const hexBadge = (n, col) => `<svg class="hex" viewBox="0 0 38 38" aria-label="Rank ${n}"><path d="M19 2.5 33.3 10.75v16.5L19 35.5 4.7 27.25v-16.5z" fill="rgba(7,8,12,.35)" stroke="${col}" stroke-width="2" stroke-linejoin="round"/><text x="19" y="24" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-weight="600" font-size="14" fill="${col}">${n}</text></svg>`;
+export const hexBadge = (n, col) => `<svg class="hex" viewBox="0 0 38 38" aria-label="Rank ${n}"><path d="M19 2.5 33.3 10.75v16.5L19 35.5 4.7 27.25v-16.5z" style="fill:var(--chip-bg,rgba(7,8,12,.35))" stroke="${col}" stroke-width="2" stroke-linejoin="round"/><text x="19" y="24" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-weight="600" font-size="14" fill="${col}">${n}</text></svg>`;
 
 export const walletHref = i => `#/address/${S.wallets[i][0]}`;
 export const tokenHref = k => `#/token/${S.tokens[k][0]}`;

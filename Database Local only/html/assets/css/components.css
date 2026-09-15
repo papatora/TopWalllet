@@ -103,6 +103,9 @@ button.fchip:hover{background:color-mix(in srgb,var(--c,var(--blue-hi)) 12%,tran
 .rank.is-1{background:rgba(242,201,76,.16);color:var(--gold)}
 .rank.is-2{background:rgba(184,193,209,.14);color:var(--silver)}
 .rank.is-3{background:rgba(211,139,79,.16);color:var(--bronze)}
+[data-theme="white"] .rank.is-1{color:#8A6D1A}
+[data-theme="white"] .rank.is-2{color:#5C6675}
+[data-theme="white"] .rank.is-3{color:#9A5F2E}
 
 /* ---------- panel ---------- */
 .panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;min-width:0}

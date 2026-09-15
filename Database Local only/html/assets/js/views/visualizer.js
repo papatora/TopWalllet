@@ -320,9 +320,9 @@ export function render(root, _params, query) {
     el.innerHTML = `<div class="time-head"><span class="micro">Timeline · ${st.range ? 'drag to change range · double-click to reset' : 'drag across days to filter the map'}</span></div>
       <svg id="tsvg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">
         ${st.range ? `<rect x="${selA * slot}" y="0" width="${(selB - selA) * slot}" height="38" fill="rgba(30,111,241,.16)" stroke="rgba(76,141,255,.6)"/>` : ''}
-        <line x1="0" x2="${W}" y1="38" y2="38" stroke="#222834"/>
-        ${days.map((d, j) => { const n = d.nb + d.ns, h = n ? Math.max(2, n / peak * 32) : 0, inR = !st.range || (j >= selA && j < selB); return h ? `<rect x="${j * slot + slot * .14}" y="${38 - h}" width="${Math.max(1, slot * .72)}" height="${h}" rx="1" fill="${inR ? '#1E6FF1' : '#1B2A44'}"/>` : ''; }).join('')}
-        ${ticks.map(([d, j]) => `<text x="${j * slot + slot / 2}" y="51" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="9.5" fill="#667085">${date(d.t)}</text>`).join('')}
+        <line x1="0" x2="${W}" y1="38" y2="38" style="stroke:var(--line)"/>
+        ${days.map((d, j) => { const n = d.nb + d.ns, h = n ? Math.max(2, n / peak * 32) : 0, inR = !st.range || (j >= selA && j < selB); return h ? `<rect x="${j * slot + slot * .14}" y="${38 - h}" width="${Math.max(1, slot * .72)}" height="${h}" rx="1" fill="${inR ? 'var(--blue)' : 'var(--line-strong)'}"/>` : ''; }).join('')}
+        ${ticks.map(([d, j]) => `<text x="${j * slot + slot / 2}" y="51" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="9.5" style="fill:var(--text-3)">${date(d.t)}</text>`).join('')}
       </svg>`;
     const svg = el.querySelector('#tsvg');
     let a0 = null;
