@@ -27,7 +27,7 @@ export class GraphCanvas {
     const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
     this.c = { text: css('--text'), text2: css('--text-2'), text3: css('--text-3'), panel: css('--panel'), sunk: css('--bg-sunk'), green: css('--green'), red: css('--red'), blue: css('--blue-hi'), pink: css('--c-cluster'), amber: css('--c-bundler'), line: css('--line-strong') };
     this.labelColor = t => {
-      const key = t?.startsWith('CLUSTER_MEMBER') ? 'cluster' : ({ DEV: 'dev', SNIPER: 'sniper', BUNDLER_SUSPECT: 'bundler', INSIDER: 'insider', AIRDROP_FARMER: 'airdrop', CT_ATTRIBUTED: 'ct', MEV_BOT: 'mev', SMART_TRACKER: 'smart' }[t] || 'generalist');
+      const key = t?.startsWith('CLUSTER_MEMBER') ? 'cluster' : ({ DEV: 'dev', SNIPER: 'sniper', BUNDLER_SUSPECT: 'bundler', INSIDER: 'insider', AIRDROP_FARMER: 'airdrop', CT_ATTRIBUTED: 'ct', MEV_BOT: 'mev', SMART_TRACKER: 'smart', BOT: 'bot', SNIPER_BOT: 'bot', WHALE: 'whale', WHALE_SUS: 'whalesus', PHISHING_TARGET: 'phishing', TRADER_COVERAGE_GAP: 'gap' }[t] || 'generalist');
       return css('--c-' + key);
     };
     this.resize = this.resize.bind(this);
@@ -159,9 +159,14 @@ export class GraphCanvas {
 
   nodeColor(n) {
     const m = this.opt.colorMode;
+    if (n.kind === 'token') return m === 'flow' ? '#5B6B8C' : '#4E5E80'; // pool: beda dari wallet
     if (m === 'label') return this.labelColor(n.type);
     if (m === 'flow') return n.net > 0 ? this.c.green : n.net < 0 ? this.c.red : '#7D8698';
-    return n.clusterColor || null;
+    // cluster mode: kalau semuanya jadi SATU mega-cluster (terhubung pool),
+    // jatuh ke warna label — mencegah dinding satu warna.
+    const cc = n.clusterColor || null;
+    if (cc === '#F2C94C' && this.singleCluster) return this.labelColor(n.type);
+    return cc;
   }
 
   curve(l) {

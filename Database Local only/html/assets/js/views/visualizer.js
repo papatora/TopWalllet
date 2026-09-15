@@ -6,11 +6,11 @@ import { buildScope, visibleGraph, ENTITY_TYPES } from '../lib/graph-data.js';
 import { GraphCanvas } from '../lib/graph.js';
 import { bucketDays } from '../lib/charts.js';
 
-const LS = 'tw.viz.v1';
+const LS = 'tw.viz.v12';
 const DEFAULT_SHOW = { dex: true, funders: true, bundles: true, tradeEdges: true, labelOnly: true, icons: true, labels: true, flow: true, etype_CEX: true, etype_DEX: true, etype_BRIDGE: true, etype_CONTRACT: true, etype_FUND: true, etype_OTHER: true };
 const saved = (() => { try { return JSON.parse(localStorage.getItem(LS)) || {}; } catch { return {}; } })();
 const st = {
-  show: { ...DEFAULT_SHOW, ...(saved.show || {}) }, colorMode: saved.colorMode || 'cluster', limit: saved.limit || 150,
+  show: { ...DEFAULT_SHOW, ...(saved.show || {}) }, colorMode: saved.colorMode || 'label', limit: saved.limit || 150,
   grouped: true, listQ: '', range: null, hidden: new Set(), collapsed: new Set(),
 };
 const persist = () => { try { localStorage.setItem(LS, JSON.stringify({ show: st.show, colorMode: st.colorMode, limit: st.limit })); } catch { /* storage blocked */ } };
@@ -74,6 +74,7 @@ export function render(root, _params, query) {
   const applyVisibility = (heat = 0.5) => {
     graph = visibleGraph(scope, st.show, st.hidden);
     Object.assign(g.opt, { colorMode: st.colorMode, icons: st.show.icons, labels: st.show.labels, flow: st.show.flow });
+      g.singleCluster = (scope.clusters.length <= 1);
     g.setGraph(graph.nodes, graph.links, { reheat: heat });
     drawChips(); drawRight(); drawLayers();
   };

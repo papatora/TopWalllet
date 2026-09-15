@@ -1,7 +1,7 @@
 /* Components — every view composes these. Spec: design/DESIGN.md §5 */
 
 /* ---------- nav ---------- */
-.nav{position:sticky;top:0;z-index:50;height:var(--nav-h);display:flex;align-items:center;gap:30px;padding:0 20px;background:rgba(10,12,17,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line-soft)}
+.nav{position:sticky;top:0;z-index:50;height:var(--nav-h);display:flex;align-items:center;gap:30px;padding:0 20px;background:var(--nav-bg);backdrop-filter:blur(10px);border-bottom:1px solid var(--line-soft)}
 .nav-brand{display:flex;align-items:center;gap:9px;font:600 15px/1 var(--sans);letter-spacing:.06em;color:var(--text)}
 .nav-brand .i{width:24px;height:24px}
 .nav-links{display:flex;align-items:stretch;height:100%;gap:2px}
