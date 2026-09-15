@@ -16,6 +16,12 @@ export const LABEL = {
   SMART_TRACKER:   { c: 'var(--c-smart)', icon: 'star', desc: 'Passed verifier R1–R3 and the consistency bar.' },
   CLUSTER:         { c: 'var(--c-cluster)', icon: 'cluster', desc: 'Shares a first-funding source with 3+ other wallets.' },
   GENERALIST:      { c: 'var(--c-generalist)', icon: 'wallet', desc: 'No taxonomy signal matched.' },
+  PHISHING_TARGET: { c: 'var(--c-phishing)', icon: 'gift', desc: 'Received tokens from a mass-spreader (>=20 wallets / <=100 blocks) - airdrop/scam campaign target.' },
+  TRADER_COVERAGE_GAP: { c: 'var(--c-gap)', icon: 'refresh', desc: 'Former insider label overturned on-chain - the wallet really bought; awaiting re-enrichment.' },
+  BOT:             { c: 'var(--c-bot)', icon: 'bot', desc: 'Machine cadence: constant multi-second swaps across many random tokens.' },
+  SNIPER_BOT:      { c: 'var(--c-bot)', icon: 'bolt', desc: 'Bot that specializes in sniping MANY fresh tokens at the earliest blocks.' },
+  WHALE:           { c: 'var(--c-whale)', icon: 'trophy', desc: 'Organic whale: est. net PnL >=$100K with NO airdrop/insider/cluster linkage.' },
+  WHALE_SUS:       { c: 'var(--c-whalesus)', icon: 'eye', desc: 'High est. PnL but linked to airdrop/insider/cluster - wealth may come from allocations.' },
 };
 export const labelMeta = n => LABEL[n?.startsWith('CLUSTER_MEMBER') ? 'CLUSTER' : n] || LABEL.GENERALIST;
 export const pretty = n => n?.startsWith('CLUSTER_MEMBER:') ? 'CLUSTER ' + n.split('_').pop() : String(n).replace(/_/g, ' ');

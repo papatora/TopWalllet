@@ -2,7 +2,8 @@ import { S, stats, walletName, tokName } from '../lib/store.js';
 import { esc, nf, usd, dur, date } from '../lib/fmt.js';
 import { icon, chip, tokStack, rank, hexBadge, thead, pager, dropdown, emptyRow, walletHref, whoCell } from '../lib/ui.js';
 
-const st = { tab: 'traders', metric: 'net', win: '0', sort: 'net', dir: -1, page: 0, per: 50 };
+const st = { tab: 'traders', metric: 'net', win: '0', sort: 'net', dir: -1, page: 0, per: 50, tag: '' };
+const TAG_OPTIONS = () => [{ v: '', l: 'All tags' }].concat(S.labels.filter(l => !l.startsWith('CLUSTER_MEMBER')).map(l => ({ v: l, l })));
 const METRICS = [{ v: 'net', l: 'Net flow' }, { v: 'vol', l: 'Volume' }, { v: 'swaps', l: 'Swaps' }];
 const WINDOWS = [{ v: '1', l: '1D' }, { v: '7', l: '7D' }, { v: '30', l: '30D' }, { v: '0', l: 'All' }];
 const TRADER_COLS = [
@@ -20,17 +21,25 @@ const SNIPER_COLS = [
 
 function traderRows() {
   const from = +st.win ? S.meta.swap_to - +st.win * 86400 : 0;
-  const rows = [];
+  let rows = [];
   for (const ai of S.active) { const s = from ? stats(ai, from) : S.statsAll.get(ai); if (s.swaps) rows.push([ai, s]); }
+  if (st.tag) rows = rows.filter(([ai]) => (S.wallets[ai][2] || []).some(li => { const n = S.labels[li]; return n === st.tag || n.startsWith(st.tag + ':'); }));
   const key = st.sort;
   rows.sort((a, b) => ((b[1][key] ?? -1e18) - (a[1][key] ?? -1e18)) * -st.dir);
   return rows;
+}
+
+function matchTag(ai) {
+  if (!st.tag) return true;
+  return (S.wallets[ai][2] || []).some(li => { const n = S.labels[li]; return n === st.tag || n.startsWith(st.tag + ':'); });
 }
 function sniperRows() {
   const rows = [];
   for (const [key, e] of Object.entries(S.ev)) {
     const sn = e.SNIPER; if (!sn) continue;
-    const i = +key, deltas = sn.snipes.map(s => s.delta_blocks);
+    const i = +key;
+    if (!matchTag(i)) continue;
+    const deltas = sn.snipes.map(s => s.delta_blocks);
     rows.push([i, { snipes: sn.snipe_count, fastest: Math.min(...deltas), toks: [...new Set(sn.snipes.map(s => s.token))], net: S.statsAll.get(i)?.net ?? null }]);
   }
   const key = st.sort;
@@ -56,7 +65,7 @@ export function render(root) {
       <div class="page-head">
         <h1 class="page-title">Leaderboard</h1>
         <div class="seg" data-tabs><button class="seg-btn ${traders ? 'is-active' : ''}" data-tab="traders">Top traders</button><button class="seg-btn ${!traders ? 'is-active' : ''}" data-tab="snipers">Snipers</button></div>
-        <div class="end">${traders ? dropdown('metric', 'trophy', METRICS, st.metric) + dropdown('win', 'clock', WINDOWS, st.win) : ''}</div>
+        <div class="end">${traders ? dropdown('metric', 'trophy', METRICS, st.metric) + dropdown('win', 'clock', WINDOWS, st.win) + dropdown('tag', 'filter', TAG_OPTIONS(), st.tag) : ''}</div>
       </div>
       <div class="page-sub"><span>${icon('wallet')}${nf(rows.length)} ${traders ? 'active wallets' : 'sniper wallets'}</span>${traders ? `<span>${icon('clock')}${winTxt}</span><span>${icon('info')}USD estimated from pool price points · not verified PnL</span>` : `<span>${icon('bolt')}First buy within 10 blocks of a pool’s first swap</span>`}</div>
 
@@ -107,6 +116,7 @@ export function render(root) {
     const { id, value } = e.detail;
     if (id === 'metric') { st.metric = value; st.sort = value; st.dir = -1; }
     if (id === 'win') st.win = value;
+    if (id === 'tag') st.tag = value;
     st.page = 0; draw();
   });
 }

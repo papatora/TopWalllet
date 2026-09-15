@@ -56,11 +56,14 @@ def build() -> dict:
         return tok_idx[a]
 
     liquidity: dict[str, float] = {}
+    snap: dict[str, float] = {}
     for addr, sym, name, price, liq, vol, first in con.execute(
         "select address,symbol,name,price_usd,liquidity_usd,volume_24h_usd,first_seen from tokens"
     ):
         tokens[tk(addr)][1:7] = [sym, name, price, liq, vol, _epoch(first)]
         liquidity[addr.lower()] = liq
+        if price:
+            snap[addr.lower()] = price
 
     # ---- price series per token (pool with most points) --------------------
     pool_for: dict[str, tuple] = {}
@@ -114,6 +117,9 @@ def build() -> dict:
         if wa not in widx:
             continue
         p = price_at(ta, block)
+        if p is None:
+            sp = snap.get(ta)
+            p = sp  # fallback: harga snapshot terakhir token (kasar, tetap "est.")
         usd = round(amt * p, 2) if p is not None else -1
         if usd > (liquidity.get(ta) or 1_000_000):  # bigger than the whole pool = bad price point
             usd = -1
@@ -159,9 +165,45 @@ def build() -> dict:
             top_rank=r["rank"], score=r["composite_score"],
             realized=r["metrics"]["total_realized_pnl_usd"], win_rate=r["metrics"]["win_rate"])
 
+    # ---- derived behavioural labels (dari pola swap, bukan tag eksternal) ---
+    import statistics as _stats
+
+    first_ts: dict[int, int] = {}
+    for wl in swaps_by_w.values():
+        for e in wl:
+            ta, tsv = e[0], e[1]
+            if ta not in first_ts or tsv < first_ts[ta]:
+                first_ts[ta] = tsv
+
+    LINKAGE = {"AIRDROP_FARMER", "PHISHING_TARGET", "INSIDER"}
+    derived: dict[int, list[str]] = {}
+    for wi, wl in swaps_by_w.items():
+        if len(wl) < 20:
+            continue
+        tss = sorted(e[1] for e in wl)
+        gaps = [b - a for a, b in zip(tss, tss[1:]) if b >= a]
+        med_gap = _stats.median(gaps) if gaps else 10 ** 9
+        toks = {e[0] for e in wl}
+        net = sum(e[3] if e[2] == 1 else -e[3] for e in wl if e[3] >= 0)
+        early_buys = sum(1 for e in wl if e[2] == 0 and e[1] - first_ts.get(e[0], e[1]) <= 120)
+        botlike = med_gap <= 20 and len(wl) >= 150
+        labs = []
+        if botlike:
+            labs.append("BOT")
+            if early_buys >= 6 and len(toks) >= 8:
+                labs.append("SNIPER_BOT")
+        addr = order[wi]
+        wlabs = set(W[addr]["labels"]) if addr in W else set()
+        linked = bool(wlabs & LINKAGE) or any(l.startswith("CLUSTER_MEMBER") for l in wlabs)
+        if net >= 100_000 and len(wl) >= 20:
+            labs.append("WHALE_SUS" if linked else "WHALE")
+        if labs:
+            derived[wi] = labs
+
     # ---- wallets, labels, evidence -------------------------------------------
     types = sorted({v["primary_type"] for v in W.values()})
-    label_names = sorted({l for v in W.values() for l in v["labels"]})
+    label_names = sorted({l for v in W.values() for l in v["labels"]}
+                         | {l for ls in derived.values() for l in ls})
     t_i = {t: i for i, t in enumerate(types)}
     l_i = {l: i for i, l in enumerate(label_names)}
 
@@ -198,8 +240,10 @@ def build() -> dict:
             e_out["_score"] = scores[a]
         if e_out:
             ev[i] = e_out
-        rows.append([a, t_i[v["primary_type"]], [l_i[l] for l in v["labels"]],
-                     [round(v["confidence"].get(l, 0), 2) for l in v["labels"]], name])
+        dl = derived.get(i, [])
+        rows.append([a, t_i[v["primary_type"]], [l_i[l] for l in v["labels"] + dl],
+                     [round(v["confidence"].get(l, 0), 2) for l in v["labels"]] + [0.8] * len(dl),
+                     name])
 
     fc = _load("results/funder_clusters.json")
     if fc.get("cluster_id") in clusters:

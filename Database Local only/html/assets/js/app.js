@@ -8,6 +8,7 @@ import * as explorer from './views/explorer.js';
 import * as visualizer from './views/visualizer.js';
 import * as tokens from './views/tokens.js';
 import * as token from './views/token.js';
+import * as guide from './views/guide.js';
 import * as address from './views/address.js';
 
 const $ = s => document.querySelector(s);
@@ -17,6 +18,7 @@ const ROUTES = [
   [/^\/explorer$/, explorer, 'explorer'],
   [/^\/visualizer$/, visualizer, 'visualizer'],
   [/^\/tokens$/, tokens, 'tokens'],
+  [/^\/guide$/, guide, 'guide'],
   [/^\/token\/(0x[0-9a-f]+)$/i, token, 'tokens'],
   [/^\/address\/(0x[0-9a-f]+)$/i, address, ''],
 ];
@@ -135,6 +137,18 @@ function footer() {
     '<a href="/design/styleguide.html">Design system</a>', 'Local only',
   ].map(s => `<span>${s}</span>`).join('');
 }
+
+// theme cycler: dark -> white -> space (persist di localStorage)
+const THEMES = ['dark', 'white', 'space'];
+function applyTheme(t) {
+  document.documentElement.dataset.theme = t;
+  localStorage.setItem('tw-theme', t);
+}
+applyTheme(localStorage.getItem('tw-theme') || 'dark');
+document.getElementById('themeBtn')?.addEventListener('click', () => {
+  const cur = document.documentElement.dataset.theme || 'dark';
+  applyTheme(THEMES[(THEMES.indexOf(cur) + 1) % THEMES.length]);
+});
 
 window.addEventListener('hashchange', route);
 load().then(() => { footer(); route(); }).catch(err => {

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg">
   <!-- 24px grid, 1.8 stroke, currentColor. Reference: <svg class="i"><use href="/assets/icons/sprite.svg#i-name"/></svg> -->
-  <symbol id="i-logo" viewBox="0 0 24 24"><path d="M12 2.2 20.8 7.3v9.4L12 21.8 3.2 16.7V7.3z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/><path d="M12 7.1 16.4 9.6v4.8L12 16.9 7.6 14.4V9.6z" fill="#1E6FF1"/></symbol>
+  <symbol id="i-logo" viewBox="0 0 24 24"><path d="M12 1.8l3 6.4 7 .7-5.3 4.7 1.6 6.9L12 16.9 5.7 20.5l1.6-6.9L2 9l7-.7z" fill="currentColor"/></symbol>
   <symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></symbol>
   <symbol id="i-chevron-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></symbol>
   <symbol id="i-chevron-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></symbol>
