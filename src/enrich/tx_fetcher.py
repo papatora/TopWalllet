@@ -66,7 +66,9 @@ def _parse_ts(value) -> datetime | None:
 
 class TxFetcher:
     def __init__(self, blockscout: BlockscoutClient | None = None):
-        self.blockscout = blockscout or BlockscoutClient()
+        from src.utils.etherscan_client import make_explorer_client
+
+        self.blockscout = blockscout or make_explorer_client()
 
     async def fetch_wallet_events(
         self,

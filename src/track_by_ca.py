@@ -55,9 +55,10 @@ async def run_track_by_ca(ca: str, top_n: int = 50) -> dict | None:
     await init_db()
     ca = ca.lower()
     rpc = EvmRpcClient()
-    from src.discover.holder_scraper import BlockscoutClient, WalletHit, extract_wallet_hits
+    from src.discover.holder_scraper import WalletHit, extract_wallet_hits
+    from src.utils.etherscan_client import make_explorer_client
 
-    blockscout = BlockscoutClient()
+    blockscout = make_explorer_client()
     session_factory = get_session_factory()
     started = datetime.now(timezone.utc)
 

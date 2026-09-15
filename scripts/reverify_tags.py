@@ -50,7 +50,6 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from config.settings import settings  # noqa: E402
-from src.discover.holder_scraper import BlockscoutClient  # noqa: E402
 from src.utils.logger import jlog  # noqa: E402
 from src.utils.rpc_client import EvmRpcClient, V3_SWAP_TOPIC0, v4_swap_topic0  # noqa: E402
 
@@ -150,8 +149,10 @@ def _max_spread(outgoing: list[dict]) -> tuple[int, int]:
 
 class TagVerifier:
     def __init__(self, max_calls: int):
+        from src.utils.etherscan_client import make_explorer_client
+
         self.rpc = EvmRpcClient(rps=max(settings.rpc_rps, 1.0))
-        self.bc = BlockscoutClient(rps=max(settings.blockscout_rps * 0.6, 1.0))
+        self.bc = make_explorer_client(rps=max(settings.blockscout_rps * 0.6, 1.0))
         self.max_calls = max_calls
         self.calls = 0
         self.db = self._open_db()
@@ -178,22 +179,6 @@ class TagVerifier:
                      attempt=attempt + 1, err=str(e)[:120])
                 time.sleep(10 * (attempt + 1))
         return None
-
-    async def bc_get(self, path: str, params: dict | None = None) -> dict | list | None:
-        """Anti-skip fetch. BlockscoutClient.get_json TIDAK membedakan 404
-        dari throttling (sama-sama None). None yang bertahan setelah 3 putaran
-        backoff panjang → Defer (API sedang tidak sehat; pair diulang run
-        berikutnya, BUKAN diberi verdict dari data kosong)."""
-        for round_ in range(3):
-            data = await self.bc.get_json(path, params=params, retries=6)
-            self.calls += 1
-            if data is not None:
-                return data
-            wait = min(90.0, 10.0 * (2 ** round_))
-            jlog(log, logging.WARNING, "blockscout kosong — cek ulang (anti-skip)",
-                 path=path[:80], round=round_ + 1, wait_s=wait)
-            await asyncio.sleep(wait)
-        raise Defer(f"Blockscout None persisten: {path[:60]}")
 
     async def receipt_retry(self, tx_hash: str) -> dict | None:
         """eth_getTransactionReceipt dengan retry inline (rate limit RPC)."""
@@ -271,11 +256,9 @@ class TagVerifier:
             res["calls"] = self.calls - c0
             return res
 
-        items = await self.bc_get(
-            f"/api/v2/addresses/{wallet.lower()}/token-transfers",
-            params={"type": "ERC-20", "token": token.lower()},
-        )
-        items_list = items.get("items", []) if isinstance(items, dict) else []
+        self.calls += 1
+        items_list = await self.bc.address_token_transfers(
+            wallet.lower(), TRANSFER_PAGES, token_filter=token.lower())
         transfers = _transfer_items(items_list, wallet, token)
         res["transfers_total"] = len(transfers)
 
@@ -349,11 +332,9 @@ class TagVerifier:
 
         max_windows = {}
         for sender in list(senders)[:5]:
-            s_items = await self.bc_get(
-                f"/api/v2/addresses/{sender}/token-transfers",
-                params={"type": "ERC-20", "token": token.lower()},
-            )
-            s_list = s_items.get("items", []) if isinstance(s_items, dict) else []
+            self.calls += 1
+            s_list = await self.bc.address_token_transfers(
+                sender, SENDER_PAGES, token_filter=token.lower())
             s_out = _transfer_items(s_list, sender, token)
             if not s_out:
                 # pengirim PASTI punya out-transfer ( dia yang kirim ke wallet )
@@ -393,23 +374,19 @@ class TagVerifier:
 
     async def verify_cluster_member(self, member: str, funder: str) -> dict:
         res: dict = {"funder": funder, "checked_at": _now()}
+        self.calls += 1
         try:
-            data = await self.bc_get(
-                f"/api/v2/addresses/{member.lower()}/transactions",
-                params={"filter": "to"},
-            )
+            items = await self.bc.address_transactions(member.lower(), 4)
         except Exception as e:
             res["verdict"] = "ERROR"
             res["reason"] = str(e)[:150]
             return res
-        items = (data or {}).get("items", []) if isinstance(data, dict) else []
         hits = []
-        for it in items[:100]:
+        for it in items:
             src = ((it.get("from") or {}).get("hash") or "").lower()
             if src == funder.lower():
-                val = it.get("value") or "0"
                 try:
-                    eth = int(val) / 1e18
+                    eth = int(it.get("value") or 0) / 1e18
                 except ValueError:
                     eth = 0.0
                 hits.append({"tx": (it.get("hash") or "").lower(),
@@ -420,32 +397,37 @@ class TagVerifier:
             res["funding_txs"] = hits[:3]
         else:
             res["verdict"] = "LINK_NOT_FOUND"
-            res["reason"] = "tidak ada tx masuk dari funder di 100 tx terakhir"
+            res["reason"] = "tidak ada tx masuk dari funder dalam histori terjangkau"
         return res
 
     async def profile_funder(self, funder: str) -> dict:
+        """Profil funder via interface umum + RPC (tanpa endpoint Blockscout)."""
         prof: dict = {}
-        addr = await self.bc_get(f"/api/v2/addresses/{funder.lower()}")
-        if isinstance(addr, dict):
-            prof["is_contract"] = bool(addr.get("is_contract"))
-            prof["creator"] = ((addr.get("creator") or {}).get("hash") or "").lower() or None
-            bal = addr.get("coin_balance") or "0"
-            try:
-                prof["eth_balance"] = round(int(bal) / 1e18, 4)
-            except ValueError:
-                pass
-        txs = await self.bc_get(
-            f"/api/v2/addresses/{funder.lower()}/transactions", params={"filter": "from"})
-        items = (txs or {}).get("items", []) if isinstance(txs, dict) else []
+        # is_contract + saldo via RPC langsung (bekerja utk explorer apa pun)
+        try:
+            code = await self.rpc.call("eth_getCode", [funder, "latest"])
+            prof["is_contract"] = bool(code and code not in ("0x", "0x0"))
+            bal = await self.rpc.call("eth_getBalance", [funder, "latest"])
+            prof["eth_balance"] = round(int(bal, 16) / 1e18, 4)
+        except Exception as e:
+            prof["rpc_error"] = str(e)[:100]
+        try:
+            txs = await self.bc.address_transactions(funder.lower(), 4)
+        except Exception as e:
+            txs = []
+            prof["tx_error"] = str(e)[:100]
         amounts, dests = [], set()
-        for it in items[:100]:
+        for it in txs:
+            src = ((it.get("from") or {}).get("hash") or "").lower()
+            if src != funder.lower():
+                continue
             dst = ((it.get("to") or {}).get("hash") or "").lower()
             dests.add(dst)
             try:
                 amounts.append(round(int(it.get("value") or 0) / 1e18, 6))
             except ValueError:
                 amounts.append(0.0)
-        prof["sample_out_txs"] = len(items)
+        prof["sample_out_txs"] = len(amounts)
         prof["distinct_destinations"] = len(dests)
         if amounts:
             from collections import Counter

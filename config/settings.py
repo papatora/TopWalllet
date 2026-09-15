@@ -55,6 +55,10 @@ class Settings:
     rpc_rps: float = _env_float("RPC_RPS", 3.0)
     blockscout_url: str = os.getenv("BLOCKSCOUT_API_URL", "https://robinhoodchain.blockscout.com")
     blockscout_rps: float = _env_float("BLOCKSCOUT_RPS", 8.0)
+    # Etherscan V2 (robin.etherscan.io) — explorer primer; Blockscout fallback
+    etherscan_api_key: str = os.getenv("ETHERSCAN_API_KEY", "")
+    etherscan_rps: float = _env_float("ETHERSCAN_RPS", 4.5)  # free tier = 5
+    explorer_url: str = os.getenv("EXPLORER_URL", "https://robin.etherscan.io")
 
     # contracts
     pool_manager: str = os.getenv("UNISWAP_V4_POOL_MANAGER", DEFAULT_POOL_MANAGER).lower()

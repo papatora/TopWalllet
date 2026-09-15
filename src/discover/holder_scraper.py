@@ -96,6 +96,36 @@ class BlockscoutClient:
                 await asyncio.sleep(1.5 * (2 ** attempt))
         return None
 
+    async def address_transactions(self, wallet: str, max_pages: int) -> list[dict]:
+        """Native-ETH txs wallet, terlama dulu — interface sama dengan
+        EtherscanV2Client.address_transactions (dipakai funding provenance)."""
+        items: list[dict] = []
+        url: str | None = f"/api/v2/addresses/{wallet}/transactions"
+        for _ in range(max_pages):
+            if not url:
+                break
+            data = await self.get_json(url)
+            if not isinstance(data, dict):
+                break
+            for it in data.get("items", []):
+                items.append({
+                    "from": {"hash": ((it.get("from") or {}).get("hash") or "").lower(),
+                             "is_contract": bool((it.get("from") or {}).get("is_contract")),
+                             "name": (it.get("from") or {}).get("name") or ""},
+                    "to": {"hash": ((it.get("to") or {}).get("hash") or "").lower(),
+                           "is_contract": bool((it.get("to") or {}).get("is_contract"))},
+                    "value": str(it.get("value") or "0"),
+                    "hash": (it.get("hash") or "").lower(),
+                    "block_number": int(it.get("block_number") or 0),
+                    "timestamp": int(it.get("timestamp") or 0) if str(it.get("timestamp") or "").isdigit() else 0,
+                    "internal": False,
+                })
+            url = data.get("next_page_url")
+            if url:
+                url = url.replace(self.base, "")
+        items.sort(key=lambda x: x["block_number"])
+        return items
+
     async def token_holders(self, ca: str, max_items: int) -> list[dict]:
         items: list[dict] = []
         url: str | None = f"/api/v2/tokens/{ca}/holders"

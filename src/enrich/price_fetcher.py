@@ -328,9 +328,9 @@ class PriceService:
         return self._eth_spot
 
     async def _blockscout_coin_price(self) -> float | None:
-        from src.discover.holder_scraper import BlockscoutClient
+        from src.utils.etherscan_client import make_explorer_client
 
-        stats = await BlockscoutClient().stats()
+        stats = await make_explorer_client().stats()
         try:
             return float(stats.get("coin_price"))
         except (TypeError, ValueError):

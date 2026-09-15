@@ -135,7 +135,9 @@ class TokenDiscovery:
         # covers EVERY token on the chain — DexScreener only surfaces trending)
         from src.discover.holder_scraper import BlockscoutClient
 
-        bc = BlockscoutClient()
+        from src.utils.etherscan_client import make_explorer_client
+
+        bc = make_explorer_client()
         try:
             bc_items = await bc.chain_tokens(max_pages=10)
             exclude = {settings.usdg_address, settings.weth_address,

@@ -63,7 +63,9 @@ async def _top_wallets(session) -> list[str]:
 async def run_monitor() -> None:
     setup_logging()
     await init_db()
-    blockscout = BlockscoutClient()
+    from src.utils.etherscan_client import make_explorer_client
+
+    blockscout = make_explorer_client()
     session_factory = get_session_factory()
     state = _load_state()
     jlog(log, logging.INFO, "monitor started", interval=settings.monitor_interval_seconds,

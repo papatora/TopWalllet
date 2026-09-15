@@ -62,7 +62,9 @@ class Pipeline:
     def __init__(self, overrides: dict | None = None):
         self.overrides = overrides or {}
         self.rpc = EvmRpcClient()
-        self.blockscout = BlockscoutClient()
+        from src.utils.etherscan_client import make_explorer_client
+
+        self.blockscout = make_explorer_client()
         self.tx_fetcher = TxFetcher(self.blockscout)
         self.weights_cfg = settings.load_weights()
         self.session_factory = get_session_factory()
@@ -175,7 +177,7 @@ class Pipeline:
         return counts
 
     async def _token_decimals(self, address: str) -> int:
-        data = await self.blockscout.get_json(f"/api/v2/tokens/{address}")
+        data = await self.blockscout.token_info(address)
         try:
             return int((data or {}).get("decimals") or 18)
         except (TypeError, ValueError):

@@ -47,25 +47,15 @@ def _short(addr) -> str:
 
 async def first_funding(bc: BlockscoutClient, wallet: str, max_pages: int = 4) -> dict:
     """Oldest incoming native-ETH transfer that is NOT the wallet itself.
-    Blockscout lists newest-first; RH chain is young so a few pages usually
-    cover a wallet's whole life."""
-    url: str | None = f"/api/v2/addresses/{wallet}/transactions?filter=to"
+    Interface umum address_transactions(): hasil terlama-dulu, jadi incoming
+    PERTAMA adalah funding pertama (Etherscan maupun Blockscout fallback)."""
     oldest_incoming = None
-    for _ in range(max_pages):
-        if not url:
+    for tx in await bc.address_transactions(wallet, max_pages):
+        to_a = _short(tx.get("to", {}))
+        from_a = _short(tx.get("from", {}))
+        if to_a == wallet.lower() and from_a != wallet.lower() and tx.get("value"):
+            oldest_incoming = tx
             break
-        data = await bc.get_json(url)
-        if not isinstance(data, dict):
-            break
-        items = data.get("items", [])
-        for tx in items:
-            to_a = _short(tx.get("to", {}))
-            from_a = _short(tx.get("from", {}))
-            if to_a == wallet.lower() and from_a != wallet.lower() and tx.get("value"):
-                oldest_incoming = tx  # list is newest-first: keep the last seen
-        url = data.get("next_page_url")
-        if url:
-            url = url.replace(bc.base, "")
     if oldest_incoming is None:
         return {}
     frm = oldest_incoming.get("from") or {}
@@ -141,7 +131,9 @@ async def dev_fingerprint(session, wallet: str) -> dict:
 async def main(top_n: int) -> int:
     setup_logging()
     await init_db()
-    bc = BlockscoutClient()
+    from src.utils.etherscan_client import make_explorer_client
+
+    bc = make_explorer_client()
     session_factory = get_session_factory()
 
     data = json.loads((settings.results_dir / "top_wallets_latest.json").read_text())

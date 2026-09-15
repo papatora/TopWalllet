@@ -412,9 +412,9 @@ async def backfill(
             "confidence": {"score": round(min(score, 1.0), 2) if reasons else None,
                            "reasons": reasons},
             "proof": {
-                "tx_url": f"{settings.blockscout_url}/tx/{s.tx_hash}",
-                "wallet_url": f"{settings.blockscout_url}/address/{s.wallet_address}",
-                "token_url": f"{settings.blockscout_url}/token/{s.token_address}",
+                "tx_url": f"{settings.explorer_url}/tx/{s.tx_hash}",
+                "wallet_url": f"{settings.explorer_url}/address/{s.wallet_address}",
+                "token_url": f"{settings.explorer_url}/token/{s.token_address}",
                 "derivation": DERIVATION,
             },
         }
