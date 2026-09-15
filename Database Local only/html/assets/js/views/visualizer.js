@@ -281,11 +281,14 @@ export function render(root, _params, query) {
       lines.push(`<div>Volume est. <b>${usd(n.vol)}</b></div>`, `<div>Net <span class="${n.net >= 0 ? 'pos' : 'neg'}">${usd(n.net, true)}</span> · ${n.swaps} swaps</div>`);
       if (n.cluster != null) lines.push(`<div style="color:${n.clusterColor}">Cluster ${n.cluster + 1}</div>`);
     } else if (n.kind === 'token') lines.push(`<div><b>${esc(n.label)}</b> <span class="t3">Uniswap pool</span></div>`, `<div>${n.traders} traders · ${usd(n.vol)} est.</div>`);
+    else if (n.kind === 'group') {
+      lines.push(`<div><b>${esc(n.label)}</b></div>`, `<div class="t3">Grup wallet receh (bukan insider)</div>`);
+      lines.push(`<div>Berisi <b>${(n.members || []).length}</b> wallet · vol est. <b>${usd(n.vol || 0)}</b> — klik untuk daftar</div>`);
+    }
     else {
       const e = S.entities[n.ref];
       lines.push(`<div><b>${esc(n.label)}</b></div>`, `<div class="t3">${n.kind === 'funder' ? 'Funding source' : 'Bundle transaction'}</div>`);
-      if (n.foldedCount) lines.push(`<div>Berisi <b>${n.foldedCount}</b> wallet terlipat · vol est. <b>${usd(n.foldedVol || 0)}</b></div>`);
-      else if (e) lines.push(`<div>${e.members.length} wallets</div>`);
+      if (e) lines.push(`<div>${e.members.length} wallets</div>`);
     }
     lines.push(`<div class="t3" style="margin-top:4px">click select · drag to pin · double-click open</div>`);
     tip.innerHTML = lines.join(''); tip.hidden = false;
@@ -354,7 +357,7 @@ export function render(root, _params, query) {
     if (rz) {
       st.show = { ...DEFAULT_SHOW }; st.colorMode = 'label'; st.limit = 150;
       st.hidden.clear(); st.collapsed.clear(); st.range = null; st.grouped = true;
-      st.listQ = ''; st.page = 0; st.expLayer = '';
+      st.listQ = ''; st.page = 0; st.expLayer = ''; st.hideLeft = false; st.hideRight = false;
       g.setPaused(false); g.userMoved = false;
       persist(); draw();
       g.userMoved = false; g.fit();

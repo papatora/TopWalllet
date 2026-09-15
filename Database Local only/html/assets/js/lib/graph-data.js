@@ -86,11 +86,20 @@ export function buildScope({ mode, ref, limit = 250, from = 0, to = Infinity }) 
     me.focus = true;
     title = walletName(ref) || short(ref != null ? S.wallets[ref][0] : ''); sub = 'wallet neighborhood';
   } else {
-    const ranked = S.active.map(i => [i, stats(i, from, to).vol]).filter(r => r[1] > 0)
-      .sort((x, y) => y[1] - x[1]).slice(0, limit);
+    const rankedAll = S.active.map(i => [i, stats(i, from, to).vol])
+      .filter(r => r[1] > 0).sort((x, y) => y[1] - x[1]);
+    const entityMember = new Set();
+    for (const e of S.entities) for (const i of e.members) entityMember.add(i);
+
+    const isPlain = i => !S.wallets[i][2].some(li => S.labels[li] !== 'GENERALIST');
+    const SPECIAL = i => entityMember.has(i) && !isPlain(i);   // anggota entitas tapi punya label khusus
+
+    // individual = top-N wallet NON-anggota-entitas + anggota entitas BERLABEL
+    const ranked = rankedAll.filter(([i]) => !entityMember.has(i) || SPECIAL(i)).slice(0, limit);
     const rankedSet = new Set(ranked.map(r => r[0]));
     const inScope = new Set(rankedSet);
     for (const e of S.entities) for (const i of e.members) inScope.add(i);
+
     const tokCount = new Map(), tokVol = new Map();
     for (const i of rankedSet) {
       for (const k of S.statsAll.get(i)?.toks || []) {
@@ -99,44 +108,35 @@ export function buildScope({ mode, ref, limit = 250, from = 0, to = Infinity }) 
         tokVol.set(k, (tokVol.get(k) || 0) + v);
       }
     }
-    // pool nodes dibatasi top by volume — tanpa ini ratusan pool bikin map tidak terbaca
     const POOL_CAP = 20;
     const keepToks = new Set([...tokVol.entries()].sort((a, b) => b[1] - a[1])
       .slice(0, POOL_CAP).map(e => e[0]).filter(k => (tokCount.get(k) || 0) >= 2));
-    // anggota cluster/bundle di luar top-N:
-    //   * yang BERLABEL (bukan GENERALIST) → tetap digambar individual
-    //   * receh GENERALIST → dichunk per ~20 jadi node 'group' terhubung ke hub
-    const GROUP_SIZE = 20;
-    const extrasByEntity = new Map();
+
+    // SATU circle grup per entitas: semua anggota receh (bukan top individual,
+    // tidak berlabel khusus) digabung — hover/klik = isi anggotanya
+    const groupOf = new Map();   // walletIdx -> group node
     for (const e of S.entities) {
       const ei = S.entities.indexOf(e);
-      const extras = e.members.filter(i => !rankedSet.has(i));
-      if (extras.length) extrasByEntity.set(ei, extras);
-    }
-    const isPlain = i => !S.wallets[i][2].some(li => S.labels[li] !== 'GENERALIST');
-    const groupNodes = new Map();   // 'g:{ei}:{k}' -> node
-    function groupNode(ei, walletIdx) {
-      const gi = Math.floor([...extrasByEntity.get(ei)].indexOf(walletIdx) / GROUP_SIZE);
-      const id = `g:${ei}:${gi}`;
-      if (!groupNodes.has(id)) {
-        const e = S.entities[ei];
-        const members = extrasByEntity.get(ei).slice(gi * GROUP_SIZE, (gi + 1) * GROUP_SIZE);
-        const vol = members.reduce((s, m) => s + (S.statsAll.get(m)?.vol ?? 0), 0);
-        const node = {
-          id, kind: 'group', ref: ei, addr: e.center,
-          label: `${e.kind === 'cluster' ? 'Cluster' : 'Bundle'} ${e.title.replace(/^(Cluster|Bundle) /, '')} · ${gi + 1}`,
-          short: `grup ${gi + 1}`, etype: null, type: 'GENERALIST',
-          vol, net: 0, swaps: 0, members, focus: false,
-        };
-        groupNodes.set(id, node);
-        nodes.set(id, node);
-        links.push({ s: node, t: hub(ei), kind: 'fund', vol });
-      }
-      return groupNodes.get(id);
+      const plainMembers = e.members.filter(i => !rankedSet.has(i) && !SPECIAL(i));
+      if (!plainMembers.length) continue;
+      const id = 'g:' + ei;
+      const vol = plainMembers.reduce((s, m) => s + (S.statsAll.get(m)?.vol ?? 0), 0);
+      const node = {
+        id, kind: 'group', ref: ei, addr: e.center,
+        label: `${e.kind === 'cluster' ? 'Cluster' : 'Bundle'} ${e.title.replace(/^(Cluster|Bundle) /, '')} (${plainMembers.length} wallet)`,
+        short: `grup ${plainMembers.length}w`, etype: null, type: 'GENERALIST',
+        vol, net: 0, swaps: 0, members: plainMembers, focus: false,
+      };
+      groupOf.set(id, node);
+      nodes.set(id, node);
+      links.push({ s: node, t: hub(ei), kind: 'fund', vol });
     }
     for (const i of inScope) {
-      const ei = foldedEntityOf(i);
-      if (ei != null) { groupNode(ei, i); continue; }
+      if (groupOf.has('g:' + S.entities.findIndex(e => e.members.includes(i)) )) {
+        // anggota yang sudah terwakili grup → tidak digambar individual;
+        // kecuali dia spesial (sudah di ranked di atas)
+        if (!SPECIAL(i) && !rankedSet.has(i)) continue;
+      }
       wallet(i); addHubsFor(i);
       for (const k of S.statsAll.get(i)?.toks || []) if (keepToks.has(k)) tradeLink(i, k);
     }
