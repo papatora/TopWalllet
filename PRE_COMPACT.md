@@ -723,3 +723,35 @@ desktop app (.exe) untuk start/stop server localhost 8787.
 - Local explorer SEKARANG: 94,435 wallets, 310K swaps, 32,456 classified,
   dataset gz 11.6MB — jalan via topwallet-launcher.exe (tested HTTP 200).
 - Commit terakhir: b148346 (GitHub sinkron).
+
+## SNAPSHOT S-36 — ETHERSCAN V2 MIGRATION + VERIFIKASI OVERNIGHT (2026-09-15)
+
+**USER DIRECTIVE:** (1) extract data semalam → update DB lokal. (2) PENTING:
+robinhood scan ternyata expand ke robin.etherscan.io (Etherscan V2) — lebih
+baik dari Blockscout; MIGRASI, jangan pakai Blockscout lagi.
+
+### A. VERIFIKASI OVERNIGHT — 1,646 pair selesai (cron anti-skip bekerja)
+- 712 CONFIRMED_INSIDER + 18 MINT_ALLOCATION = 730 insider TERBUKTI on-chain
+- 806 TRADER_MISREAD = label insider SALAH (mereka beneran beli; coverage
+  scan bolong) → TRADER_COVERAGE_GAP 772, antre re-enrich
+- 90 AIRDROP_SPAM → AIRDROP_FARMER (distribusi phishing ≥20 wallet/≤100 blk)
+- INSIDER bersih: 3,470 → 2,611 (semua yang tersisa sudah teruji on-chain)
+- 4 ERROR (dilewati dengan tanda, resume nanti)
+
+### B. ETHERSCAN V2 MIGRATION (commit 4451678, live di VPS)
+- robin.etherscan.io = Etherscan V2 chainid 4663. API: api.etherscan.io/v2,
+  WAJIB ETHERSCAN_API_KEY (gratis: etherscan.io/myapikey, 5rps/100K per hari)
+  → key belum ada, user harus daftar & isi .env (local+VPS) lalu restart.
+- src/utils/etherscan_client.py: EtherscanV2Client dengan METHOD SAMA +
+  item berbentuk Blockscout (from.hash/token.address/total.value) → seluruh
+  pipeline berganti via make_explorer_client() factory tanpa refactor.
+  Blockscout = fallback legacy selama key kosong (warning log tiap start).
+- tokentx sort=asc (jangkau histori terdalam dalam cap 10K — obat penyakit
+  coverage-hole Blockscout); token_holders free-tier = derivasi trader aktif
+  (holderlist itu PRO); metadata token via eth_call; stats=ethprice;
+  chain_tokens=[] (discovery tetap DexScreener+GMGN); link UI → explorer_url.
+- funding_provenance + reverify_tags + wallet_monitor + track_by_ca +
+  dex_scraper + price_fetcher + feed links: semua pindah ke factory /
+  interface umum address_transactions(). Funder profile verifier sekarang
+  via RPC murni (eth_getCode/eth_getBalance) — explorer-agnostic.
+- 91 tests green. VPS deploy + restart OK; GitHub sinkron.
