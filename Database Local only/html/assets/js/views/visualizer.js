@@ -85,7 +85,6 @@ export function render(root, _params, query) {
     const pins = g.pinnedCount();
     $('#chips').innerHTML = `
       <span class="fchip" style="--c:${scopeColor}">${scopeDef.mode !== 'network' ? `<a href="#/visualizer" title="Back to network">${icon('x')}</a>` : icon('graph')}${esc(scopeDef.mode)} · ${esc(scope?.title || '')}</span>
-      <button class="fchip" data-act="freeze" style="--c:#E7AE4B">${g.paused ? icon('bolt') + ' Resume' : icon('clock') + ' Freeze'}</button>
       <div class="dd" data-dd="color"><button class="fchip" data-dd-toggle style="--c:#2EC4B6">Color · ${st.colorMode}${icon('chevron-down')}</button>
         <div class="pop" hidden>${['cluster', 'label', 'flow'].map(m => `<button class="pop-item ${m === st.colorMode ? 'is-active' : ''}" data-dd-value="${m}">${{ cluster: 'Cluster (Bubblemaps)', label: 'Classification', flow: 'Net flow' }[m]}</button>`).join('')}</div></div>
       ${st.range ? `<button class="fchip" data-act="range-clear" style="--c:var(--blue-hi)">${icon('x')}${date(st.range[0])} → ${date(st.range[1] - 1)}</button>` : ''}
@@ -134,6 +133,11 @@ export function render(root, _params, query) {
         </div></div>
         <div class="viz-sec"><div class="seg is-sm" style="width:100%;display:flex">${modes.map(([m, l]) => `<button class="seg-btn ${scopeDef.mode === m ? 'is-active' : ''}" style="flex:1" data-mode="${m}">${l}</button>`).join('')}</div>
           ${scopeDef.mode === 'network' ? `<div class="kv-row" style="margin-top:8px"><span>Wallet cap</span><span><select class="viz-select" id="limit">${[50, 150, 300, 600].map(v => `<option ${v === st.limit ? 'selected' : ''}>${v}</option>`).join('')}</select></span></div>` : ''}</div>
+        <div class="viz-sec"><h5 class="micro">Tampilan</h5>
+          <div style="display:flex;gap:8px">
+            <button class="btn btn-ghost btn-sm" data-act="freeze" style="flex:1">${g.paused ? icon('bolt', 'i-sm') + ' Resume' : icon('clock', 'i-sm') + ' Freeze'}</button>
+            <button class="btn btn-ghost btn-sm" data-act="resetviz" style="flex:1" title="Kembalikan semua ke default">${icon('refresh', 'i-sm')} Reset</button>
+          </div></div>
         <div id="layers"></div>
         <div style="padding:6px 0 10px">${picker}</div>
       </div>`;
@@ -150,9 +154,29 @@ export function render(root, _params, query) {
       if (key === 'labelOnly') return scope.nodes.filter(n => n.kind === 'wallet' && !n.hasSwaps).length;
       return null;
     };
-    el.innerHTML = `<div class="viz-sec"><h5 class="micro">Layers</h5>${LAYERS.map(([k, l, ic]) => { const n = count(k);
-      return `<label class="switch-row"><span class="t2">${icon(ic, 'i-sm')}${l}</span>${n != null ? `<span class="t3 mono">${nf(n)}</span>` : ''}<input type="checkbox" data-layer="${k}" ${st.show[k] ? 'checked' : ''}><span class="switch"></span></label>`; }).join('')}
-      ${!Object.keys(S.known || {}).length ? '' : ''}<p class="t3" style="font-size:11px;margin-top:8px;line-height:1.45">CEX / bridge icons come from <span class="mono">data/known_entities.json</span>. No CEX address is registered for Robinhood Chain yet.</p></div>`;
+    const subOf = k => {
+      if (k === 'dex') return scope.nodes.filter(n => n.kind === 'token');
+      if (k === 'funders') return scope.nodes.filter(n => n.kind === 'funder');
+      if (k === 'bundles') return scope.nodes.filter(n => n.kind === 'bundle');
+      return null;
+    };
+    const rows = LAYERS.map(([k, l, ic]) => {
+      const n = count(k);
+      const subs = subOf(k);
+      const chev = subs ? `<button class="al-eye" data-explayer="${k}" title="Buka sub-layer (hide per-item)" style="color:var(--text-3)">${icon(st.expLayer === k ? 'chevron-down' : 'chevron-right', 'i-sm')}</button>` : '';
+      let sub = '';
+      if (chev && st.expLayer === k) {
+        sub = `<div style="max-height:150px;overflow-y:auto;border:1px solid var(--line-soft);border-radius:6px;margin:2px 0 6px">` +
+          (subs.length ? subs.map(it => {
+            const hid = st.hidden.has(it.id);
+            return `<div class="al-row ${hid ? 'is-hidden' : ''}" style="padding:4px 10px"><button class="al-eye" data-eye="${it.id}" title="${hid ? 'Show' : 'Hide'}">${icon(hid ? 'x' : 'eye', 'i-sm')}</button><span class="al-addr" style="font-size:11px">${esc(it.label)}</span><span class="t3 mono" style="margin-left:auto">${usd(it.vol || 0)}</span></div>`;
+          }).join('') : `<div class="t3" style="padding:6px 10px">kosong di scope ini</div>`) + `</div>`;
+      }
+      const main = `<label class="switch-row"><span class="t2">${icon(ic, 'i-sm')}${l}</span>${n != null ? `<span class="t3 mono">${nf(n)}</span>` : ''}<input type="checkbox" data-layer="${k}" ${st.show[k] ? 'checked' : ''}><span class="switch"></span></label>`;
+      return main + sub + (chev ? `<div style="margin:-6px 0 6px;text-align:right">${chev}</div>` : '');
+    }).join('');
+    el.innerHTML = `<div class="viz-sec"><h5 class="micro">Layers</h5>${rows}
+      <p class="t3" style="font-size:11px;margin-top:8px;line-height:1.45">CEX / bridge icons come from <span class="mono">data/known_entities.json</span>. No CEX address is registered for Robinhood Chain yet.</p></div>`;
   }
 
   /* ---------- right: selected node card + address list ---------- */
@@ -314,6 +338,17 @@ export function render(root, _params, query) {
     const t = e.target;
     const eye = t.closest('[data-eye]');
     if (eye) { e.stopPropagation(); const id = eye.dataset.eye; st.hidden.has(id) ? st.hidden.delete(id) : st.hidden.add(id); if (g.sel?.id === id) g.select(null); return applyVisibility(0.3); }
+    const ex = e.target.closest('[data-explayer]');
+    if (ex) { st.expLayer = st.expLayer === ex.dataset.explayer ? '' : ex.dataset.explayer; return drawLayers(); }
+    const rz = e.target.closest('[data-act="resetviz"]');
+    if (rz) {
+      st.show = { ...DEFAULT_SHOW }; st.colorMode = 'label'; st.limit = 150;
+      st.hidden.clear(); st.collapsed.clear(); st.range = null; st.grouped = true;
+      st.listQ = ''; st.page = 0; st.expLayer = '';
+      g.setPaused(false); g.userMoved = false;
+      persist(); draw(); toast('Visualizer kembali ke default');
+      return;
+    }
     const col = t.closest('[data-collapse]'); if (col) { const c = +col.dataset.collapse; st.collapsed.has(c) ? st.collapsed.delete(c) : st.collapsed.add(c); return drawRight(); }
     const foc = t.closest('[data-focus]');
     if (foc) { const n = graph.nodes.find(x => x.id === foc.dataset.focus); if (n) { g.select(n); g.centerOn(n); } return; }
