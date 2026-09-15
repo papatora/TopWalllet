@@ -34,7 +34,7 @@ export function buildScope({ mode, ref, limit = 250, from = 0, to = Infinity }) 
     const e = S.entities[ei], id = (e.kind === 'cluster' ? 'f:' : 'b:') + e.id;
     if (!nodes.has(id)) {
       const reg = known[e.center];
-      nodes.set(id, { id, kind: e.kind === 'cluster' ? 'funder' : 'bundle', ref: ei, addr: e.center, label: reg?.name || (e.kind === 'cluster' ? 'Funder ' + short(e.center) : 'Bundle ' + short(e.center)), short: e.title, etype: reg?.type || null });
+      nodes.set(id, { id, kind: e.kind === 'cluster' ? 'funder' : 'bundle', ref: ei, addr: e.center, label: reg?.name || (e.kind === 'cluster' ? 'Funder ' + short(e.center) : 'Bundle ' + short(e.center)), short: e.title, etype: reg?.type || null, r: 12, vol: 0 });
     }
     return nodes.get(id);
   };
@@ -141,7 +141,7 @@ export function buildScope({ mode, ref, limit = 250, from = 0, to = Infinity }) 
       for (const k of S.statsAll.get(i)?.toks || []) if (keepToks.has(k)) tradeLink(i, k);
     }
     title = 'Robinhood network';
-    sub = `top ${rankedSet.size} wallets · ${groupNodes.size} grup receh · top ${keepToks.size} pools`;
+    sub = `top ${rankedSet.size} wallets · ${groupOf.size} grup receh · top ${keepToks.size} pools`;
 
     function foldedEntityOf(i) {
       if (rankedSet.has(i)) return null;
