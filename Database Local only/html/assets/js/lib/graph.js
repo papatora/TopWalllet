@@ -8,6 +8,7 @@ const GLYPH = {
   bundle: new Path2D('M12 3 20 7.5v9L12 21l-8-4.5v-9zM4 7.5 12 12l8-4.5M12 12v9'),
 };
 const ETYPE_COLOR = { CEX: '#F2C94C', DEX: '#FF4FA3', BRIDGE: '#4C8DFF', CONTRACT: '#7D8698', FUND: '#35C48A', OTHER: '#A386FF' };
+const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
 
 function rgba(hex, a) {
   const h = hex.replace('#', ''), n = parseInt(h.length === 3 ? h.replace(/./g, c => c + c) : h, 16);
