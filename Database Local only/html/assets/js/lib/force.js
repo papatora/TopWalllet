@@ -2,7 +2,7 @@
 // Nodes: {x,y,vx,vy,r, fx?,fy? (pinned)}. Links: {s:node, t:node, len?, k?}.
 export class ForceSim {
   constructor(nodes = [], links = []) {
-    this.alpha = 1; this.alphaMin = 0.004; this.alphaDecay = 0.018; this.alphaTarget = 0;
+    this.alpha = 1; this.alphaMin = 0.004; this.alphaDecay = 0.035; this.alphaTarget = 0;
     this.velocityDecay = 0.55;
     this.charge = 1500; this.gravity = 0.03; this.linkK = 0.07;
     this.set(nodes, links);

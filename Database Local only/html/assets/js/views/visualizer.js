@@ -61,7 +61,7 @@ export function render(root, _params, query) {
     onPinChange: () => drawChips(),
   });
   let scope, graph;
-  if (saved.paused) queueMicrotask(() => g.setPaused(true));
+  if (saved.paused) queueMicrotask(() => { g.setPaused(true); syncPanels(); });
   window.__viz = g; // console handle for local debugging
 
   const rebuild = ({ refit = true } = {}) => {
@@ -108,7 +108,7 @@ export function render(root, _params, query) {
   }
   const PRESETS = {
     arkham: { show: { ...DEFAULT_SHOW }, colorMode: 'label' },
-    raw: { show: { ...DEFAULT_SHOW, dex: false, funders: false, bundles: false, tradeEdges: false, icons: false, labels: false, flow: false, etype_CEX: false, etype_DEX: false, etype_BRIDGE: false, etype_CONTRACT: false, etype_FUND: false, etype_OTHER: false }, colorMode: 'cluster' },
+    raw: { show: { ...DEFAULT_SHOW, dex: false, tradeEdges: false, icons: false, labels: false, flow: false, etype_CEX: false, etype_DEX: false, etype_BRIDGE: false, etype_CONTRACT: false, etype_FUND: false, etype_OTHER: false }, colorMode: 'cluster' },
   };
   const isPreset = p => st.colorMode === PRESETS[p].colorMode && Object.entries(PRESETS[p].show).every(([k, v]) => st.show[k] === v);
 
@@ -247,7 +247,7 @@ export function render(root, _params, query) {
           const folded = sel.foldedCount || 0;
           return `<div style="margin-top:10px;padding:9px 10px;background:var(--panel-2);border:1px solid var(--line);border-radius:8px">
             <div class="t3">GRUP — berisi ${e.members.length} wallet${folded ? ` (${folded} terlipat)` : ''}</div>
-            <div class="t3" style="margin:2px 0 4px">Volume grup est. <b>${usd(sel.foldedVol || 0)}</b></div>
+            <div class="t3" style="margin:2px 0 4px">Volume grup est. <b>${usd(e.members.reduce((s, m) => s + (S.statsAll.get(m)?.vol || 0), 0))}</b></div>
             <div style="max-height:96px;overflow-y:auto">${e.members.slice(0, 12).map(mi => `<div class="kv-row"><span style="font-family:var(--mono);font-size:10.5px">${short(S.wallets[mi][0], 8, 6)}</span><a class="link" href="${walletHref(mi)}">open</a></div>`).join('')}${e.members.length > 12 ? `<div class="t3" style="margin-top:4px">+${e.members.length - 12} lainnya…</div>` : ''}</div></div>`;
         })() : ''}
         ${isW && S.origins && S.origins[S.wallets[sel.ref][0]] ? (() => {
@@ -364,7 +364,9 @@ export function render(root, _params, query) {
       st.show = { ...DEFAULT_SHOW }; st.colorMode = 'label'; st.limit = 150;
       st.hidden.clear(); st.collapsed.clear(); st.range = null; st.grouped = true;
       st.listQ = ''; st.page = 0; st.expLayer = ''; st.hideLeft = false; st.hideRight = false;
-      g.setPaused(false); g.userMoved = false;
+      g.setPaused(false);
+      for (const n of g.nodes) { n.pinned = false; n.fx = n.fy = null; }
+      g.userMoved = false;
       persist(); rebuild(); applyVisibility(0.5);
       g.userMoved = false; g.fit();
       syncPanels();
@@ -428,7 +430,7 @@ export function render(root, _params, query) {
     else if (act === 'expand') {
       if (g.sel && g.sel.kind === 'wallet') location.hash = `#/visualizer?wallet=${g.sel.addr}`;
       else if (g.sel && g.sel.kind === 'token') location.hash = `#/visualizer?token=${S.tokens[g.sel.ref][0]}`;
-      else if (g.sel && (g.sel.kind === 'entity')) location.hash = `#/visualizer?entity=${g.sel.ref}`;
+      else if (g.sel && g.sel.kind === 'entity') location.hash = `#/visualizer?wallet=${S.wallets[g.sel.ref][0]}`;
       else if (g.sel && (g.sel.kind === 'funder' || g.sel.kind === 'bundle' || g.sel.kind === 'group')) location.hash = `#/visualizer?entity=${g.sel.ref}`;
       return;
     }
@@ -443,7 +445,8 @@ export function render(root, _params, query) {
 
   const zoomEl = $('#zoom');
   const zoomTimer = setInterval(() => { if (!root.isConnected) { clearInterval(zoomTimer); g.destroy(); return; } zoomEl.textContent = Math.round(g.view.k * 100) + '%'; }, 250);
-  new ResizeObserver(() => scope && drawTimeline()).observe($('#time'));
+  if (window.__timeRO) window.__timeRO.disconnect();
+  window.__timeRO = new ResizeObserver(() => scope && drawTimeline()).observe($('#time'));
 
   rebuild();
 }
