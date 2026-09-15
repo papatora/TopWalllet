@@ -148,7 +148,15 @@ export class GraphCanvas {
     cv.addEventListener('dblclick', e => { const [sx, sy] = pos(e), n = this.hit(sx, sy); if (n) this.cb.onOpen?.(n); });
   }
 
-  setPaused(p) { this.paused = !!p; this.dirty = true; }
+  setPaused(p) {
+    this.paused = !!p;
+    if (this.paused) {
+      // bekukan posisi: matikan gaya simulasi supaya tidak ada node liar saat resume
+      this.sim.alphaTarget = 0; this.sim.alpha = 0;
+      this.userMoved || this.fit();
+    }
+    this.dirty = true;
+  }
 
   frame(t) {
     if (this.dead) return;

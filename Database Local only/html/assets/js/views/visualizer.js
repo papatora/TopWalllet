@@ -39,12 +39,13 @@ export function render(root, _params, query) {
     </div>
     <aside class="viz-panel viz-left" id="left"></aside>
     <aside class="viz-panel viz-right" id="right"></aside>
+    <button class="viz-tab" id="tabLeft" data-act="show-left" hidden title="Buka panel kiri">${icon('chevron-right')}</button>
+    <button class="viz-tab" id="tabRight" data-act="show-right" hidden title="Buka address list">${icon('chevron-left')}</button>
     <div class="viz-rail">
       <button class="rail-btn" data-act="fit" title="Fit to screen">${icon('grid')}</button>
       <button class="rail-btn" data-act="zin" title="Zoom in">+</button>
       <span class="rail-zoom" id="zoom">100%</span>
       <button class="rail-btn" data-act="zout" title="Zoom out">−</button>
-      <button class="rail-btn" data-act="freeze" title="Freeze layout">${icon('lock')}</button>
       <button class="rail-btn" data-act="unpin" title="Unpin all dragged nodes">${icon('refresh')}</button>
     </div>
     <div class="viz-time" id="time"></div>
@@ -76,8 +77,16 @@ export function render(root, _params, query) {
     Object.assign(g.opt, { colorMode: st.colorMode, icons: st.show.icons, labels: st.show.labels, flow: st.show.flow });
       g.singleCluster = (scope.clusters.length <= 1);
     g.setGraph(graph.nodes, graph.links, { reheat: heat });
-    drawChips(); drawRight(); drawLayers();
+    drawChips(); drawRight(); drawLayers(); syncPanels();
   };
+
+  function syncPanels() {
+    $('#left')?.classList.toggle('is-hidden', !!st.hideLeft);
+    $('#right')?.classList.toggle('is-hidden', !!st.hideRight);
+    const tl = $('#tabLeft'), tr = $('#tabRight');
+    if (tl) tl.hidden = !st.hideLeft;
+    if (tr) tr.hidden = !st.hideRight;
+  }
 
   /* ---------- chips ---------- */
   function drawChips() {
@@ -122,7 +131,7 @@ export function render(root, _params, query) {
       picker = `<div class="viz-sec"><div class="who">${tokAv(k)}<span><div style="color:var(--text)">${esc(tokName(k))}</div><div class="t3 mono" style="font-size:11px">${short(S.tokens[k][0])}</div></span></div><a class="btn btn-ghost btn-sm" style="margin-top:10px" href="${tokenHref(k)}">${icon('coin', 'i-sm')}Token page</a></div>` + picker;
     }
     $('#left').innerHTML = `
-      <div class="panel-h" style="min-height:50px"><span class="panel-title" style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(scope.title)}</span><span class="end micro">${esc(scope.sub.split(' ')[0])}</span></div>
+      <div class="panel-h" style="min-height:50px"><span class="panel-title" style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(scope.title)}</span><span class="end micro">${esc(scope.sub.split(' ')[0])}</span><button class="al-eye" data-act="hide-left" title="Sembunyikan panel kiri">${icon('x', 'i-sm')}</button></div>
       <div class="scroll">
         <div class="viz-sec"><h5 class="micro">Trace overview</h5><div class="kv">
           <div class="kv-row"><span>Transfer volume est.</span><span>${usd(vol)}</span></div>
@@ -137,6 +146,7 @@ export function render(root, _params, query) {
           <div style="display:flex;gap:8px">
             <button class="btn btn-ghost btn-sm" data-act="freeze" style="flex:1">${g.paused ? icon('bolt', 'i-sm') + ' Resume' : icon('clock', 'i-sm') + ' Freeze'}</button>
             <button class="btn btn-ghost btn-sm" data-act="resetviz" style="flex:1" title="Kembalikan semua ke default">${icon('refresh', 'i-sm')} Reset</button>
+            <button class="btn btn-ghost btn-sm" data-act="fs" style="flex:1" title="Fullscreen">${icon('grid', 'i-sm')} Full</button>
           </div></div>
         <div id="layers"></div>
         <div style="padding:6px 0 10px">${picker}</div>
@@ -252,7 +262,7 @@ export function render(root, _params, query) {
           ${sel.kind !== 'bundle' && sel.kind !== 'funder' ? `<button class="btn btn-primary btn-sm" data-act="expand">+ Expand</button>` : `<button class="btn btn-primary btn-sm" data-act="expand">+ Map entity</button>`}
         </div></div>`;
     }
-    el.innerHTML = `<div class="panel-h" style="min-height:50px"><span class="panel-title">Address list</span>
+    el.innerHTML = `<div class="panel-h" style="min-height:50px"><button class="al-eye" data-act="hide-right" title="Sembunyikan address list">${icon('x', 'i-sm')}</button><span class="panel-title">Address list</span>
         <span class="end"><button class="fchip ${st.grouped ? '' : 'is-on'}" data-act="group" style="--c:var(--c-cluster);height:24px">${st.grouped ? 'Ungroup clusters' : 'Group clusters'}</button></span></div>
       ${card}
       <div class="al-search"><label class="ex-search">${icon('search')}<input id="al-q" placeholder="Search addresses" value="${esc(st.listQ)}" autocomplete="off" spellcheck="false"></label><span class="micro">${nf(wallets.length)}</span></div>
@@ -346,15 +356,38 @@ export function render(root, _params, query) {
       st.hidden.clear(); st.collapsed.clear(); st.range = null; st.grouped = true;
       st.listQ = ''; st.page = 0; st.expLayer = '';
       g.setPaused(false); g.userMoved = false;
-      persist(); draw(); toast('Visualizer kembali ke default');
+      persist(); draw();
+      g.userMoved = false; g.fit();
+      syncPanels();
+      toast('Visualizer kembali ke default');
       return;
     }
+    const fsb = e.target.closest('[data-act="fs"]');
+    if (fsb) {
+      if (document.fullscreenElement) document.exitFullscreen();
+      else document.documentElement.requestFullscreen?.();
+      return;
+    }
+    const hl = e.target.closest('[data-act="hide-left"]');
+    if (hl) { st.hideLeft = true; syncPanels(); return; }
+    const hr = e.target.closest('[data-act="hide-right"]');
+    if (hr) { st.hideRight = true; syncPanels(); return; }
+    const sl = e.target.closest('[data-act="show-left"]');
+    if (sl) { st.hideLeft = false; syncPanels(); return; }
+    const sr = e.target.closest('[data-act="show-right"]');
+    if (sr) { st.hideRight = false; syncPanels(); return; }
     const col = t.closest('[data-collapse]'); if (col) { const c = +col.dataset.collapse; st.collapsed.has(c) ? st.collapsed.delete(c) : st.collapsed.add(c); return drawRight(); }
     const foc = t.closest('[data-focus]');
     if (foc) { const n = graph.nodes.find(x => x.id === foc.dataset.focus); if (n) { g.select(n); g.centerOn(n); } return; }
     const pre = t.closest('[data-preset]');
     const fz = e.target.closest('[data-act="freeze"]');
-    if (fz) { g.setPaused(!g.paused); fz.innerHTML = (g.paused ? icon('bolt') + ' Resume' : icon('clock') + ' Freeze'); persist(); toast(g.paused ? 'Animasi dibekukan — hemat lag, klik Resume untuk lanjut' : 'Animasi jalan lagi'); return; }
+    if (fz) {
+      g.setPaused(!g.paused);
+      persist(); g.fit();
+      document.querySelectorAll('[data-act="freeze"]').forEach(b => b.innerHTML = (g.paused ? icon('bolt', 'i-sm') + ' Resume' : icon('clock', 'i-sm') + ' Freeze'));
+      toast(g.paused ? 'Animasi dibekukan — hemat lag' : 'Animasi jalan lagi');
+      return;
+    }
     if (pre) { const p = PRESETS[pre.dataset.preset]; st.show = { ...p.show }; st.colorMode = p.colorMode; persist(); toast(pre.dataset.preset === 'raw' ? 'Bubblemaps raw: wallets and cluster bonds only' : 'Arkham: entities, pools and flows on'); return applyVisibility(0.5); }
     const md = t.closest('[data-mode]');
     if (md) {

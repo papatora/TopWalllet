@@ -154,3 +154,74 @@ window.addEventListener('hashchange', route);
 load().then(() => { footer(); route(); }).catch(err => {
   $('#app').innerHTML = `<div class="page"><h1 class="page-title">Dataset unavailable</h1><p class="t2" style="margin-top:10px;max-width:64ch">${esc(err.message)} Start it with <span class="mono">python server.py</span> inside <span class="mono">Database Local only/html</span>, then reload.</p></div>`;
 });
+
+
+// ---- Galaxy comet (tema space) — port dari script user, hanya animasi di tema space ----
+(function () {
+  const fx = document.getElementById('spacefx');
+  if (!fx) return;
+  fx.insertAdjacentHTML('afterbegin', '<canvas id="sfcv" style="position:absolute;inset:0;width:100%;height:100%"></canvas>');
+  const cv = document.getElementById('sfcv');
+  const ctx = cv.getContext('2d');
+  let W, H, DPR, comet = null, nextSpawn = 0, last = performance.now(), raf = null;
+
+  function resize() {
+    W = innerWidth; H = innerHeight;
+    DPR = Math.min(2, devicePixelRatio || 1);
+    cv.width = W * DPR; cv.height = H * DPR;
+    ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+  }
+  addEventListener('resize', resize);
+  resize();
+
+  function spawn() {
+    const speed = 520 + Math.random() * 220;
+    const angle = (31 + Math.random() * 9) * Math.PI / 180;
+    comet = {
+      x: W + 50, y: -20 - Math.random() * 120,
+      vx: -Math.cos(angle) * speed, vy: Math.sin(angle) * speed,
+      age: 0, life: 1.7 + Math.random() * 0.7, length: 85 + Math.random() * 55,
+    };
+  }
+
+  function drawComet() {
+    const c = comet;
+    const speed = Math.hypot(c.vx, c.vy);
+    const ux = c.vx / speed, uy = c.vy / speed;
+    const fade = Math.min(1, c.age / 0.12, (c.life - c.age) / 0.28);
+    const tx = c.x - ux * c.length, ty = c.y - uy * c.length;
+    const g = ctx.createLinearGradient(tx, ty, c.x, c.y);
+    g.addColorStop(0, 'rgba(255,255,255,0)');
+    g.addColorStop(0.55, `rgba(235,240,255,${0.25 * fade})`);
+    g.addColorStop(1, `rgba(255,255,255,${0.98 * fade})`);
+    ctx.save();
+    ctx.lineCap = 'round'; ctx.lineWidth = 2.4; ctx.strokeStyle = g;
+    ctx.shadowBlur = 12; ctx.shadowColor = `rgba(220,230,255,${0.55 * fade})`;
+    ctx.beginPath(); ctx.moveTo(tx, ty); ctx.lineTo(c.x, c.y); ctx.stroke();
+    ctx.shadowBlur = 15; ctx.fillStyle = `rgba(255,255,255,${fade})`;
+    ctx.beginPath(); ctx.arc(c.x, c.y, 2.1, 0, Math.PI * 2); ctx.fill();
+    ctx.restore();
+  }
+
+  function frame(now) {
+    const dt = Math.min(0.033, (now - last) / 1000);
+    last = now;
+    ctx.clearRect(0, 0, W, H);
+    if (!comet || comet.age > comet.life) {
+      if (now >= nextSpawn) { spawn(); nextSpawn = now + 900 + Math.random() * 1800; }
+    }
+    if (comet) {
+      comet.age += dt; comet.x += comet.vx * dt; comet.y += comet.vy * dt;
+      drawComet();
+    }
+    raf = requestAnimationFrame(frame);
+  }
+
+  function sync() {
+    const on = document.documentElement.dataset.theme === 'space';
+    if (on && !raf) { resize(); last = performance.now(); raf = requestAnimationFrame(frame); }
+    if (!on && raf) { cancelAnimationFrame(raf); raf = null; ctx.clearRect(0, 0, W, H); comet = null; }
+  }
+  new MutationObserver(sync).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+  sync();
+})();
