@@ -767,3 +767,23 @@ baik dari Blockscout; MIGRASI, jangan pakai Blockscout lagi.
 - Sync lokal hari ini: DB 94,786 wallets / 365K swaps / dataset explorer
   32,456 classified (INSIDER 2,611 terverifikasi + TRADER_COVERAGE_GAP 772
   + AIRDROP_FARMER 87). Sync ulang besok — data akan jauh lebih kaya.
+
+### D. EXPLORER BATCH UI + LABEL BARU (S-36-D, commit 6b483a8)
+- Launcher exe disalin ke Desktop user ("TopWallet Launcher.exe") — user
+  semula tidak tahu app-nya sudah jadi (hanya ada di folder target).
+- 3 tema: dark (default) / white / space (starfield) — klik badge
+  "Robinhood Chain 4663" untuk cycle; persist localStorage. Logo: bintang.
+- Guide tab baru: cara baca visualizer (DEX pool = kontrak yang wajar
+  menyerap semua swap — sembunyikan via LAYERS), INDUKAN, glosarium label,
+  skala keyakinan.
+- Leaderboard $0 FIX: fallback harga snapshot token utk swap tanpa price
+  point → 100% swap ter-priced (tetap "est."). Filter by tag ditambahkan.
+- Label baru dari pola swap: BOT (kaden multi-detik ≥150 swap), SNIPER_BOT
+  (bot + ≥6 early buys di ≥8 token), WHALE (est net ≥$100K TANPA linkage
+  airdrop/insider/cluster), WHALE_SUS (≥$100K TAPI terhubung). Count awal:
+  BOT 22, SNIPER_BOT 4, WHALE 19, WHALE_SUS 3 — preliminary sampai analyze.
+- scripts/arkham_labels.py siap (butuh ARKHAM_API_KEY resmi; cookie web
+  TIDAK tembus Cloudflare — sesuai kebijakan kita). Sementara: manual edit
+  known_entities.json utk tag CEX/bridge (visualizer sudah render).
+- Catatan proses: server manual user jalan di 8787 — JANGAN dibunuh; setelah
+  update file, user cukup klik tombol rebuild (⟳) atau restart server.
