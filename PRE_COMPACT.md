@@ -755,3 +755,15 @@ baik dari Blockscout; MIGRASI, jangan pakai Blockscout lagi.
   interface umum address_transactions(). Funder profile verifier sekarang
   via RPC murni (eth_getCode/eth_getBalance) — explorer-agnostic.
 - 91 tests green. VPS deploy + restart OK; GitHub sinkron.
+
+### C. KEYS AKTIF — ETHERSCAN PRIMER SEKARANG (S-36 lanjutan, 2026-09-15)
+- USER kirim 2 Etherscan API key → terpasang di .env local+VPS sebagai
+  "KEY1,KEY2" (comma-separated). Keys TIDAK ditulis di repo (env only).
+- EtherscanV2Client: round-robin rotasi per call + lompat key saat rate-limit;
+  factory mengalikan rps dgn jumlah key (2 key ≈ 10 rps total, 200K/hari).
+- Deploy ed2f892, supervisor restart: log "etherscan aktif keys=2" (bukan
+  fallback lagi). Enrich mengalir cepat: swap +4K dalam 2 menit pertama
+  (histori dalam blok Juni 2026 terjangkau — Blockscout tidak pernah bisa).
+- Sync lokal hari ini: DB 94,786 wallets / 365K swaps / dataset explorer
+  32,456 classified (INSIDER 2,611 terverifikasi + TRADER_COVERAGE_GAP 772
+  + AIRDROP_FARMER 87). Sync ulang besok — data akan jauh lebih kaya.
