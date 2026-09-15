@@ -862,3 +862,69 @@ dikenal (bukan cuma trending baru); (2) deteksi RUG (dev pull liquidity)
 belum eksplisit — rug_scan ada tapi perlu dipasang ke classifier; (3) korban
 rug = LATE_CHASER (sudah terklasifikasi). Next: tambah sweep token lama +
 rug-event detector ke pipeline.
+
+---
+
+# ════ PRE-COMPACT HANDOFF S-38 (2026-09-15 23:00 UTC) — BACA SEBELUM LANJUT ════
+
+> User akan COMPACT segera (context 539K/1M). Snapshot ini = sumber kebenaran.
+> Setelah compact: baca file ini + docs/DIRECTIVE_VOLUME_SWEEP.md + docs/memory/.
+
+## STATE SAAT INI (semua sudah di-push, commit terakhir cek `git log`)
+- VPS: supervisor AKTIF, masih ENRICH 94K wallets (Blockscout fallback, lambat
+  karena ETHERSCAN_API_KEY sudah terpasang — cek log "etherscan aktif keys=2").
+  Setelah enrich → prices → analyze OTOMATIS (price_points & wallet_scores
+  akan terisi; PnL terverifikasi masuk explorer; deteksi cluster ulang jalan).
+- Verifier on-chain: cron 30 menit, 1,646 pair sudah diverifikasi (730 insider
+  PROVEN, 806 TRADER_MISREAD, 90 AIRDROP_SPAM). Cron jalan terus.
+- GitHub sync: push dari VPS (branch master:main, token x-access-token).
+  Lokal push suka hang (git-credential-manager) — pakai jalur bundle→VPS.
+- Lokal: server explorer jalan di 8787 (start via Desktop\TopWallet Launcher.exe
+  atau cmd manual). DB lokal snapshot S-38: 94,786 wallets / 365K swaps /
+  32,456 classified / 100% swaps priced (est.) / origins (INDUKAN) 737 wallet.
+
+## EKSPLOREER — FITUR BARU SEMUA (verified push)
+- 3 tema (dark/white/space starfield+komet canvas user), klik badge chain.
+- Logo bintang + favicon bintang.
+- Leaderboard: filter by tag; $0 FIXED via snapshot-price fallback (est.).
+- Guide tab: kamus label + cara baca visualizer.
+- Visualizer: pool cap top-20 by volume; fold GENERALIST receh chunk-20 ke
+  bubble grup "×20" (berlabel TIDAK dilipat); FREEZE/RESUME (settle+fit);
+  RESET (kembalikan kamera); fullscreen; panel kiri/kanan collapsible;
+  sub-layer chevron di LAYERS (hide per-item pool/funder/bundle);
+  INDUKAN lineage di kartu node & profil.
+
+## TASK TERSEDIA (urutan)
+1. **VOLUME SWEEP WALLET HARVESTER** — SPEC LENGKAP di
+   docs/DIRECTIVE_VOLUME_SWEEP.md (BACA ITU). Inti: port logika tagging bot
+   Telegram user (floor $100K + DOUBLE + TROUGH + SUSTAIN, polling 5m GMGN)
+   tapi output = PANEN WALLET (top traders/sniper/bundler/dev/korban rug)
+   ke antrean enrich, bukan notif. Termasuk rug-risk filter vol/liqu.
+2. Rug-event detector + old-token pump sweep (satu keluarga dgn sweep).
+3. Arkham flow (BESOK, user login dulu di chromium temp):
+   chromium temp dibuka → USER LOGIN Arkham manual → computer-use/python
+   browse wallet di arkm.com → harvest wallet yang PUNYA TAG CEX & tag lain
+   → known_entities.json → visualizer render. LEGAL (akun sendiri), lemot
+   tak apa. JANGAN pakai cookies file (user mau login langsung).
+4. Setelah analyze VPS jalan: sync DB lokal + rebuild dataset explorer.
+5. Naming final insider/airdrop (DEV_ALLOC/CLUSTER_ALLOC/TRANSFER_IN/
+   AIRDROP_DUST/DUST_FARMER) — proposal sudah disampaikan, MENUNGGU user OK
+   sebelum rename formal.
+
+## LANDMINE BARU (selain docs/memory/05)
+- graph.js butuh helper `css()` — SUDAH didefinisikan (crash kemarin).
+- Rail freeze lama DIHAPUS (dobel + overflow). Freeze resmi di panel kiri.
+- Jangan bunuh python server.py 8787 milik user tanpa izin (sekarang dijalankan
+  hidden via PowerShell dari launcher flow).
+- git reset --hard di VPS MENIMPA results/ ke versi commit → setelah reset,
+  re-run scripts/extract_wallets.py kalau butuh labels fresh.
+- Blockscout = fallback saja; primer Etherscan V2 (api.etherscan.io/v2,
+  chainid=4663, 2 key rotasi).
+
+## ARKHAM PROBE RESULT (jangan ulangi)
+- api.arkhamintelligence.com 307 → api.arkm.com (host baru).
+- api.arkm.com TIDAK CF-blocked: jawab "invalid timestamp format, please sign
+  up for an api key" — butuh key resmi (institution-gated, user bilang susah).
+- Cookie web tidak cukup untuk API. Solusi user: login manual di chromium
+  temp (flow di atas). 2captcha key valid (saldo $2.3) tersimpan VPS .env
+  TWOCAPTCHA_KEY — dipakai kalau nanti ketemu challenge sungguhan.
