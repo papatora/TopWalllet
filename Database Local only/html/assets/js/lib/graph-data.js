@@ -89,13 +89,23 @@ export function buildScope({ mode, ref, limit = 250, from = 0, to = Infinity }) 
     const ranked = S.active.map(i => [i, stats(i, from, to).vol]).filter(r => r[1] > 0).sort((x, y) => y[1] - x[1]).slice(0, limit);
     const inScope = new Set(ranked.map(r => r[0]));
     for (const e of S.entities) for (const i of e.members) inScope.add(i);
-    const tokCount = new Map();
-    for (const i of inScope) for (const k of S.statsAll.get(i)?.toks || []) tokCount.set(k, (tokCount.get(k) || 0) + 1);
+    const tokCount = new Map(), tokVol = new Map();
+    for (const i of inScope) {
+      for (const k of S.statsAll.get(i)?.toks || []) {
+        tokCount.set(k, (tokCount.get(k) || 0) + 1);
+        const v = stats(i, from, to, k).vol;
+        tokVol.set(k, (tokVol.get(k) || 0) + v);
+      }
+    }
+    // pool nodes dibatasi top by volume — tanpa ini ratusan pool bikin map tidak terbaca
+    const POOL_CAP = 20;
+    const keepToks = new Set([...tokVol.entries()].sort((a, b) => b[1] - a[1])
+      .slice(0, POOL_CAP).map(e => e[0]).filter(k => (tokCount.get(k) || 0) >= 2));
     for (const i of inScope) {
       wallet(i); addHubsFor(i);
-      for (const k of S.statsAll.get(i)?.toks || []) if (tokCount.get(k) >= 2) tradeLink(i, k);
+      for (const k of S.statsAll.get(i)?.toks || []) if (keepToks.has(k)) tradeLink(i, k);
     }
-    title = 'Robinhood network'; sub = `top ${ranked.length} wallets by volume + every cluster & bundle`;
+    title = 'Robinhood network'; sub = `top ${ranked.length} wallets · top ${keepToks.size} pools by volume · clusters & bundles`;
   }
 
   // de-duplicate links (a wallet can hit the same hub twice via overlapping memberships)

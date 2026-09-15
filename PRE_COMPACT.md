@@ -820,3 +820,18 @@ fresh: +$15.9M/+ $4.5M dst, est.), viz coloring per-label + pool steel,
 Guide tab, filter tag leaderboard, label BARU: BOT 22 / SNIPER_BOT 4 /
 WHALE 19 / WHALE_SUS 3 (preliminary), origins/INDUKAN 737 wallet.
 Launcher exe ada di Desktop user. Server user jalan di 8787 (JANGAN dibunuh).
+
+### E. FLOW ARKHAM (user define, eksekusi BESOK) + viz declutter (S-37-E)
+**FLOW ARKHAM (yg user mau, LEGAL, tanpa cookies file):**
+1. Buka browser chromium bawaan (browser-use / temp profile) di depan user.
+2. USER login manual ke akun Arkham-nya di chromium itu (session hidup di
+   profile, tidak perlu ekspor cookies).
+3. Pakai computer-use ATAU python (automation browser) untuk browse wallet
+   random di arkm.com — halaman wallet menampilkan tag entity (CEX dll).
+4. Ambil/harvest wallet-wallet yang PUNYA tag CEX (dan tag lainnya) → kumpulin
+   alamat + nama entity → merge ke known_entities.json → visualizer render.
+Catatan user: cara ini LEGAL (akun sendiri) tapi LEMOT — tak apa.
+**VIZ DECLUTTER (fix numpuk):** network scope dulu bikin token node untuk
+SEMUA token yg disentuh ≥2 wallet top — dulu 29 token, sekarang ratusan
+(universe 1,378 token). Fix: pool nodes dicap top-20 BY VOLUME saja
+(graph-data.js POOL_CAP). favicon.svg diganti bintang emas (tab browser).
