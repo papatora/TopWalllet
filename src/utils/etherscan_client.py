@@ -91,16 +91,33 @@ class EtherscanV2Client:
 
     def __init__(self, api_key: str | None = None, chain_id: int | None = None,
                  rps: float | None = None):
-        self.api_key = api_key or settings.etherscan_api_key
+        # dukung multi-key "KEY1,KEY2" → rotasi round-robin (2 key = 2x limit)
+        raw = (api_key or settings.etherscan_api_key or "").strip()
+        self.api_keys = [k.strip() for k in raw.split(",") if k.strip()]
+        self._key_idx = 0
         self.chain_id = chain_id or settings.chain_id
         self.base_api = "https://api.etherscan.io/v2/api"
         self.base = settings.explorer_url.rstrip("/")  # untuk link /tx/ /address/
         self._limiter = AsyncLimiter(max(rps or settings.etherscan_rps, 0.1), 1.0)
         self._client: httpx.AsyncClient | None = None
-        if not self.api_key:
+        if not self.api_keys:
             jlog(log, logging.WARNING,
                  "ETHERSCAN_API_KEY kosong — request akan ditolak API; "
                  "isi .env lalu restart, fallback Blockscout dipakai sementara")
+        else:
+            jlog(log, logging.INFO, "etherscan aktif",
+                 keys=len(self.api_keys), chain_id=self.chain_id)
+
+    def _key(self) -> str:
+        """Key berikutnya (round-robin); rate-limit memanggil _rotate()."""
+        k = self.api_keys[self._key_idx % len(self.api_keys)]
+        self._key_idx += 1
+        return k
+
+    def _rotate(self) -> None:
+        """Lompat ke key berikutnya segera (dipanggil saat kena limit)."""
+        if len(self.api_keys) > 1:
+            self._key_idx += 1
 
     @property
     def is_etherscan(self) -> bool:
@@ -115,7 +132,7 @@ class EtherscanV2Client:
         """Satu panggilan API dengan anti-skip: rate-limit/NOTOK di-retry
         backoff; 'No transactions found' → list kosong (bukan error)."""
         client = await self._http()
-        params = {"chainid": self.chain_id, "apikey": self.api_key, **params}
+        params = {"chainid": self.chain_id, "apikey": self._key(), **params}
         last_err = ""
         for attempt in range(retries):
             try:
@@ -123,6 +140,7 @@ class EtherscanV2Client:
                     resp = await client.get(self.base_api, params=params)
                 if resp.status_code == 429:
                     last_err = "http 429"
+                    self._rotate()
                     await asyncio.sleep(min(60.0, 2.0 * (2 ** attempt)))
                     continue
                 resp.raise_for_status()
@@ -132,11 +150,16 @@ class EtherscanV2Client:
                     if "No transactions found" in msg:
                         return []
                     last_err = msg[:120]
-                    # Missing key / invalid → percuma di-retry
+                    # Missing/invalid key → percuma di-retry
                     if "Missing/Invalid API Key" in msg:
                         jlog(log, logging.ERROR, "etherscan key ditolak — "
-                             "pasang ETHERSCAN_API_KEY di .env")
+                             "cek ETHERSCAN_API_KEY di .env")
                         return None
+                    # rate limit per key → rotasi + backoff singkat
+                    if "rate limit" in msg.lower() or "max calls" in msg.lower():
+                        self._rotate()
+                        await asyncio.sleep(min(15.0, 1.0 + attempt))
+                        continue
                     await asyncio.sleep(min(60.0, 2.0 * (2 ** attempt)))
                     continue
                 return data
@@ -228,7 +251,7 @@ class EtherscanV2Client:
         async def call(data_sel: str) -> str:
             async with self._limiter:
                 resp = await client.get(self.base_api, params={
-                    "chainid": self.chain_id, "apikey": self.api_key,
+                    "chainid": self.chain_id, "apikey": self._key(),
                     "module": "proxy", "action": "eth_call",
                     "to": ca.lower(), "data": data_sel})
             try:
@@ -273,7 +296,8 @@ def make_explorer_client(rps: float | None = None):
     if settings.etherscan_api_key:
         from src.utils.etherscan_client import EtherscanV2Client
 
-        return EtherscanV2Client(rps=rps)
+        n_keys = len([k for k in settings.etherscan_api_key.split(",") if k.strip()])
+        return EtherscanV2Client(rps=(rps or settings.etherscan_rps) * max(n_keys, 1))
     logging.getLogger("topwallet.etherscan").warning(
         "ETHERSCAN_API_KEY belum di-set — memakai Blockscout fallback "
         "(robin.etherscan.io jauh lebih stabil; daftar gratis di "
