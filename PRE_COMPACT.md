@@ -835,3 +835,30 @@ Catatan user: cara ini LEGAL (akun sendiri) tapi LEMOT — tak apa.
 SEMUA token yg disentuh ≥2 wallet top — dulu 29 token, sekarang ratusan
 (universe 1,378 token). Fix: pool nodes dicap top-20 BY VOLUME saja
 (graph-data.js POOL_CAP). favicon.svg diganti bintang emas (tab browser).
+
+### F. VIZ POLISH R2 + JAWABAN STRATEGI DATA VPS (S-37-F, commit 6f76204)
+- Freeze bug: rail kanan punya tombol freeze bawaan (lock) — handler baru
+  menimpa isinya jadi teks Resume/Freeze → overflow. Rail freeze DIHAPUS;
+  Freeze resmi = panel kiri. setPaused sekarang SETTLE (alpha=0) + fit()
+  → tidak ada node liar saat Resume. Reset kembalikan kamera juga (fit).
+- Tambah: Fullscreen toggle; panel kiri/kanan collapsible (x = hide,
+  chevron tab = munculkan lagi).
+- Komet CSS ku DIHAPUS — diganti script CANVAS user (white_comet_widget.html):
+  fisika natural dari kanan-atas, spawn 0.9-2.7s, gated tema space.
+- Starfield v3: 120 bintang 2 layer kelap-kelip + 3 nebula. White mode
+  visualizer: panel + canvas theme-aware (MutationObserver data-theme).
+- Fold v2: hanya GENERALIST receh dilipat (chunk 20 → node 'group' dashed
+  "×20" nempel hub); wallet BERLABEL (whale/insider/sniper/dll) selalu
+  individual — kategori tidak dicampur ke grup abu-abu.
+- Pool cap 20 by volume. Guide: kamus visualizer lengkap.
+**STRATEGI DATA VPS (pertanyaan user) — ASSESSMENT:**
+Sudah jalan: trending scanner (GMGN per 30 min) → token panas baru →
+top traders/holders di-scrape → enrich full history per wallet → classifier
+(sell-no-buy=insider, ≤10 blok=sniper, same-tx≥5=bundler, ≤300 blok+flip=dev,
+MEV) → pump detector (accumulator/early hunter) → verifier R1-R3.
+GAP vs strategi user: (1) token LAMA yang tiba-tiba pump (dead→pump, 3d/10d)
+tidak tersentuh trending — perlu sweep volume 24h berkala utk SEMUA token
+dikenal (bukan cuma trending baru); (2) deteksi RUG (dev pull liquidity)
+belum eksplisit — rug_scan ada tapi perlu dipasang ke classifier; (3) korban
+rug = LATE_CHASER (sudah terklasifikasi). Next: tambah sweep token lama +
+rug-event detector ke pipeline.
