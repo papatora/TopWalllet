@@ -17,7 +17,7 @@ export function render(root) {
   const biggest = S.all.filter(r => r[4] >= 0).sort((a, b) => b[4] - a[4]).slice(0, 8);
   const hotTokens = [...S.tokAgg.entries()].sort((a, b) => b[1].wallets.size - a[1].wallets.size).slice(0, 8);
 
-  root.innerHTML = `<div class="page">
+  root.innerHTML = `<div class="page page-dash">
     <div class="page-head" style="grid-template-columns:1fr auto">
       <div><div class="eyebrow">Robinhood Chain · local snapshot</div><h1 class="page-title" style="margin-top:8px">Overview</h1></div>
       <div class="end"><a class="btn btn-ghost" href="#/visualizer">${icon('graph', 'i-sm')}Open visualizer</a><a class="btn btn-primary" href="#/leaderboard">${icon('trophy', 'i-sm')}Leaderboard</a></div>
@@ -35,6 +35,7 @@ export function render(root) {
     <div class="grid grid-21">
       <section class="panel">
         <div class="panel-h"><span class="panel-title">Swap flow</span><span class="legend"><span style="--c:var(--green)"><i></i>Buys</span><span style="--c:var(--red)"><i></i>Sells</span></span>
+          <span class="flow-badge"><i></i>INDEXED ${date(m.swap_from)} → ${date(m.swap_to)}</span>
           <div class="end"><div class="seg is-sm" data-mode><button class="seg-btn ${st.mode === 'usd' ? 'is-active' : ''}" data-v="usd">USD est.</button><button class="seg-btn ${st.mode === 'count' ? 'is-active' : ''}" data-v="count">Count</button></div></div></div>
         <div class="panel-b"><div id="flow"></div></div>
         <div class="panel-note">Daily buys above the line, sells below. USD is estimated from the nearest pool price point; ${nf(m.unpriced)} swaps without a usable price are counted but not valued.</div>
@@ -81,7 +82,38 @@ export function render(root) {
         </div></div>
       </section>
     </div>
+
+    <div class="dash-ticker" title="Swap terakhir yang ter-index di database lokal — bukan feed live">
+      <span class="tk-label"><i></i>LATEST INDEXED</span>
+      <span class="tk-clip"><span class="tk-track" id="tkTrack"></span></span>
+    </div>
   </div>`;
+
+  // count-up: angka target NYATA dari dataset, cuma dianimasikan masuknya
+  if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    root.querySelectorAll('.stat-v').forEach(el => {
+      const target = parseFloat((el.textContent || '').replace(/,/g, ''));
+      if (!Number.isFinite(target) || target === 0) return;
+      const t0 = performance.now(), dur = 900 + Math.random() * 400;
+      const tick = now => {
+        const p = Math.min(1, (now - t0) / dur), e = 1 - Math.pow(1 - p, 3);
+        el.textContent = nf(Math.round(target * e));
+        if (p < 1) requestAnimationFrame(tick);
+      };
+      requestAnimationFrame(tick);
+    });
+  }
+
+  // ticker = 14 swap TER-AKHIR menurut data (satu pass, tanpa sort penuh)
+  const recent = [];
+  for (const r of S.all) {
+    if (r[4] == null) continue;
+    if (recent.length < 14) { recent.push(r); recent.sort((a, b) => b[2] - a[2]); }
+    else if (r[2] > recent[13][2]) { recent[13] = r; recent.sort((a, b) => b[2] - a[2]); }
+  }
+  const items = recent.map(r =>
+    `<span class="tk"><b>${short(S.wallets[r[0]][0])}</b><span class="${r[3] ? 'neg' : 'pos'}">${r[3] ? 'SELL' : 'BUY'}</span><span>${usd(r[4])}</span><span class="t3">${esc(tokName(r[1]))}</span><span class="t3">${date(r[2], true)}</span></span>`).join('');
+  root.querySelector('#tkTrack').innerHTML = items + items; // duplikat = loop mulus
 
   const drawFlow = () => flowChart(root.querySelector('#flow'), {
     days: st.mode === 'usd' ? days : days.map(d => ({ ...d, buy: d.nb, sell: d.ns })),

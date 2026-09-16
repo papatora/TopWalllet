@@ -167,3 +167,63 @@ body:has(.viz) .foot{display:none}
   .nav{gap:14px}.nav-link{padding:0 7px}
 }
 @media (max-width:860px){.chain{display:none}.viz-left{display:none}.nav-links{overflow-x:auto}}
+
+/* ===== DASHBOARD FX (S-40) — dekoratif murni, 0 klaim data live.
+   Semua warna lewat var tema (dark/white/space aman). ===== */
+.page-dash{animation:dashIn .6s cubic-bezier(.2,.75,.2,1) both}
+@keyframes dashIn{from{opacity:0;transform:translateY(8px)}}
+
+.page-dash .stat{position:relative;overflow:hidden;transition:background .25s,transform .25s}
+.page-dash .stat::after{content:"";position:absolute;left:-80%;bottom:0;width:70%;height:1px;
+  background:var(--blue);opacity:.55;animation:dashScan 5.5s linear infinite}
+.page-dash .stat:nth-child(2n)::after{animation-delay:1.4s}
+.page-dash .stat:nth-child(3n)::after{animation-delay:2.7s}
+@keyframes dashScan{to{left:140%}}
+.page-dash .stat:hover{background:var(--bg-sunk);transform:translateY(-2px);z-index:2}
+
+.page-dash .panel{transition:border-color .25s,box-shadow .25s}
+.page-dash .panel:hover{border-color:var(--line-strong);box-shadow:0 14px 44px rgba(0,0,0,.16)}
+.page-dash .panel-h{position:relative}
+.page-dash .panel-h::after{content:"";position:absolute;left:0;bottom:-1px;width:0;height:1px;
+  background:var(--blue);box-shadow:0 0 12px var(--blue);transition:width .5s}
+.page-dash .panel:hover .panel-h::after{width:100%}
+
+.page-dash #flow{position:relative}
+.page-dash #flow::before{content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(circle at 85% 50%,rgba(61,139,255,.05),transparent 30%),
+             radial-gradient(circle at 55% 25%,rgba(47,211,138,.03),transparent 24%)}
+.page-dash #flow::after{content:"";position:absolute;top:0;bottom:0;left:20%;width:1px;pointer-events:none;
+  background:linear-gradient(transparent,var(--line-strong),transparent);opacity:.5;
+  animation:dashCursor 8s linear infinite}
+@keyframes dashCursor{from{left:16%}to{left:92%}}
+
+.page-dash .flow-badge{display:inline-flex;align-items:center;gap:7px;margin-left:12px;
+  font:10px var(--mono);letter-spacing:.6px;color:var(--text-3);
+  border:1px solid var(--line);border-radius:5px;padding:4px 9px}
+.page-dash .flow-badge i{width:6px;height:6px;border-radius:50%;background:var(--text-3)}
+
+.page-dash .mix-row{position:relative;overflow:hidden;transition:background .2s,padding-left .2s}
+.page-dash .mix-row::after{content:"";position:absolute;top:0;bottom:0;width:40px;pointer-events:none;
+  background:linear-gradient(90deg,transparent,color-mix(in srgb,var(--text) 6%,transparent),transparent);
+  transform:translateX(-60px);animation:dashShimmer 6s linear infinite}
+@keyframes dashShimmer{to{transform:translateX(600px)}}
+.page-dash .mix-row:hover{background:var(--bg-sunk)}
+
+/* ticker swap TER-INDEKS (data asli, marquee visual — bukan feed live) */
+.dash-ticker{margin-top:18px;height:34px;border:1px solid var(--line);border-radius:8px;
+  background:var(--panel);display:flex;align-items:center;overflow:hidden;
+  font:10.5px var(--mono);color:var(--text-3);white-space:nowrap}
+.dash-ticker .tk-label{flex:0 0 auto;padding:0 12px;height:100%;display:flex;align-items:center;gap:7px;
+  border-right:1px solid var(--line-soft);color:var(--text-2);letter-spacing:1px;font-weight:700}
+.dash-ticker .tk-label i{width:6px;height:6px;border-radius:50%;background:var(--blue);animation:dashLive 1.8s infinite}
+@keyframes dashLive{50%{opacity:.25}}
+.dash-ticker .tk-clip{overflow:hidden;flex:1}
+.dash-ticker .tk-track{display:inline-flex;gap:34px;padding-left:34px;animation:dashTicker 48s linear infinite}
+.dash-ticker:hover .tk-track{animation-play-state:paused}
+@keyframes dashTicker{to{transform:translateX(-50%)}}
+.dash-ticker .tk{display:inline-flex;gap:7px;align-items:center}
+.dash-ticker .tk b{color:var(--text-2);font-weight:600}
+
+@media (prefers-reduced-motion:reduce){
+  .page-dash *,.dash-ticker,.dash-ticker *{animation:none!important;transition:none!important}
+}
