@@ -286,6 +286,22 @@ async def process_queue(queue: list[dict], budget: int) -> list[dict]:
     return done
 
 
+def pipeline_busy() -> bool:
+    """True bila pipeline supervisor sedang menjalankan cycle — track-ca
+    (RPC getLogs berat) ditahan supaya tidak rebutan rate-limit RPC.
+    Status lebih tua dari 1 jam dianggap stale = tidak busy (supervisor
+    mati di tengah run tidak boleh membekukan antrean selamanya)."""
+    try:
+        raw = json.loads((Path(settings.results_dir) /
+                          "supervisor_status.json").read_text(encoding="utf-8"))
+        if raw.get("phase") in (None, "pipeline_done", "idle"):
+            return False
+        upd = datetime.fromisoformat(str(raw.get("updated_at")))
+        return (datetime.now(timezone.utc) - upd).total_seconds() < 3600
+    except (OSError, ValueError, TypeError):
+        return False
+
+
 async def run_cycle() -> dict:
     st = load_state()
     st["runs"] = int(st.get("runs") or 0) + 1
@@ -369,8 +385,14 @@ async def run_cycle() -> dict:
 
     # queue processing AFTER state is committed — pop/error ter-persist di
     # finally, jadi crash di tengah track-ca tidak menduplikasi kerja berat
+    done: list[dict] = []
     try:
-        done = await process_queue(queue, TRACK_BUDGET)
+        if pipeline_busy():
+            append_log({"ts": datetime.now(timezone.utc).isoformat(),
+                        "event": "queue_deferred",
+                        "reason": "supervisor pipeline sedang jalan"})
+        else:
+            done = await process_queue(queue, TRACK_BUDGET)
     finally:
         save_state(st)
 

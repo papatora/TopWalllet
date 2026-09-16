@@ -84,8 +84,14 @@ class DexScreenerClient:
         data = await self._get(f"/latest/dex/search?q={query}", self._search_limiter)
         return (data or {}).get("pairs", [])
 
-    async def token_pairs(self, chain: str, addresses: list[str]) -> list[dict]:
+    async def token_pairs(self, chain: str, addresses: list[str],
+                          strict: bool = False) -> list[dict]:
+        # strict=True: outage (429/5xx menetap -> _get None) melempar
+        # RuntimeError, BUKAN balik [] — penelebon (track-by-CA via volume
+        # sweep) membedakan "token mati" dari "resolver lagi down".
         data = await self._get(f"/tokens/v1/{chain}/{{}}".format(",".join(addresses)), self._search_limiter)
+        if data is None and strict:
+            raise RuntimeError("dexscreener unavailable (429/5xx menetap)")
         return data or []
 
     async def close(self):

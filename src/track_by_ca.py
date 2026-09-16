@@ -33,7 +33,9 @@ log = logging.getLogger(__name__)
 
 
 async def _resolve_token(client: DexScreenerClient, ca: str) -> TokenData | None:
-    pairs = await client.token_pairs(settings.chain, [ca])
+    # strict: DexScreener down (429/5xx menetap) = EXCEPTION -> volume sweep
+    # menganggapnya transien (retry 6x), bukan "token mati" (retry 3x).
+    pairs = await client.token_pairs(settings.chain, [ca], strict=True)
     if not pairs:
         return None
     best = max(pairs, key=lambda p: ((p.get("liquidity") or {}).get("usd") or 0))
