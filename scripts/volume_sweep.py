@@ -329,8 +329,7 @@ async def run_cycle() -> dict:
             rec = {"ts": now_iso, "event": "fired", "chain": CHAIN,
                    "token": ca, "symbol": sym, "volume_5m": vol,
                    "liquidity": liq, "reason": reason, "rug_risk": rug,
-                   "gmgn_traders": len(traders),
-                   "queued": was_new or any(e["ca"] == ca for e in queue)}
+                   "gmgn_traders": len(traders), "queued": was_new}
             fired.append(rec)
             append_log(rec)
 

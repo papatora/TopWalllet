@@ -111,7 +111,7 @@ def _retry(fn, *args, retries: int = 2, **kwargs):
     res = fn(*args, **kwargs)
     for attempt in range(retries - 1):
         if not (isinstance(res, dict)
-                and ("_http_error" in res or res.get("_http_status") != 200)):
+                and ("_http_error" in res or res.get("_http_status", 200) != 200)):
             return res
         time.sleep(1.5 * (attempt + 1))
         res = fn(*args, **kwargs)

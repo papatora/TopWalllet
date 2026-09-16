@@ -9,6 +9,7 @@ Run from repo root AFTER all parts downloaded:
 """
 import gzip
 import sqlite3
+import zlib
 import sys
 import time
 from pathlib import Path
@@ -30,8 +31,9 @@ blob = b"".join(p.read_bytes() for p in PARTS)
 sql_path = DATA / "local_snapshot.sql"
 try:
     sql_path.write_bytes(gzip.decompress(blob))
-except OSError as e:
-    sys.exit(f"gzip rusak — part download parsial? re-download. ({e})")
+except (OSError, EOFError, zlib.error) as e:
+    sys.exit(f"gzip rusak — part download parsial/campur dump lama? "
+             f"hapus part lokal lalu re-download. ({e})")
 blob = None
 print(f"sql: {sql_path.stat().st_size/1e6:.0f} MB")
 
@@ -73,7 +75,8 @@ con.close()
 
 if not ok:
     sql_path.unlink(missing_ok=True)
-    sys.exit("REBUILD GAGAL validasi — DB lama utuh, NEW dibuang, "
+    NEW.unlink(missing_ok=True)
+    sys.exit("REBUILD GAGAL validasi — DB lama utuh, NEW dihapus, "
              "parts dipertahankan untuk investigasi")
 
 # 5. lolos validasi -> replace: lama jadi .prev.db (rolling), pertahankan
