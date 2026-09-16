@@ -28,7 +28,10 @@
 > ### LAKUKAN (urutan pasca-compact):
 > 1. Cek VPS: supervisor aktif? **price_points & wallet_scores > 0?** (masih 0
 >    saat S-39 ditulis; kalau tetap 0 berhari-hari → grep Traceback
->    supervisor_pipeline.log; retry token_info sudah difix di S-39)
+>    supervisor_pipeline.log; retry token_info sudah difix di S-39.
+>    Error `403 DexScreener` / `SSL WRONG_VERSION_NUMBER` = proxy Webshare
+>    flaky (lihat FIXED_LEDGER limitasi) — bukan bug kode; perbarui proxy
+>    kalau mau track-ca makin lancar)
 > 2. Pantau sweep: results/volume_sweep_log.jsonl (event track_ca_done /
 >    queue_deferred), results/by_ca/<ca>.json, antrean di
 >    data/volume_sweep_state.json (caQueue).

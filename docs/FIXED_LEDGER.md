@@ -106,6 +106,15 @@ Legenda: ✅ FIXED+VERIFIED · ⚠️ LIMITASI DIKETAHUI (bukan bug, jangan "dip
   (P3, OS membereskan).
 - S-39: race wallet_pool.json scanner-vs-sweep = last-writer-wins antar
   penulis atomik (report-only, self-healing saat token re-fire).
+- S-39: **proxy Webshare (PROXY_URLS_FILE, 1 proxy) flaky** — DexScreener
+  (dan sebagian traffic lain) lewat proxy → intermittent `403 SITE_PERMANENTLY_
+  BLOCKED` + `SSL WRONG_VERSION_NUMBER`. curl direct SELALU berhasil; ini
+  infrastruktur proxy, bukan kode. Queue sweep me-retry (6x/30 menit) dan
+  token re-fire via sustain/double — biarkan; kalau mau tuntas: perbarui
+  daftar proxy Webshare atau tambah proxy kedua di PROXY_URLS_FILE.
+- S-39: `database is locked` lama di log = era 3-writer (sudah lewat);
+  era sekarang single-writer + orphan-killer. Kalau muncul LAGI berarti
+  ada proses asing yang menulis DB — cek dulu `ps -eo pid,cmd | grep python`.
 
 ## 🔜 DIJADWALKAN (belum diimplementasi — jangan anggap sudah ada)
 - Rug-event detector (liquidity pull ≤30 menit) + old-token pump sweep +
