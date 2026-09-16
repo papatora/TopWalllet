@@ -23,6 +23,12 @@ n = 0
 with gzip.open("/opt/topwallet/data/local_snapshot.sql.gz", "wb",
                compresslevel=6) as f:
     for line in src.iterdump():
+        # iterdump statements can span physical lines (SQLAlchemy DDL is
+        # multi-line) — filter at STATEMENT level, never per physical line.
+        u = line.lstrip().upper()
+        if u.startswith(("CREATE ", "DELETE FROM SQLITE_SEQUENCE",
+                         "INSERT INTO SQLITE_SEQUENCE")):
+            continue
         if any(k in line for k in SK):
             continue
         f.write((line + "\n").encode())

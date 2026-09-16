@@ -34,8 +34,9 @@ if DB.exists() and not BACKUP.exists():
     print(f"backup DB lama -> {BACKUP.name}")
 DB.unlink(missing_ok=True)
 
-# 3. schema via SQLAlchemy (metadata proyek) — dump dipakai DATA-ONLY agar
-#    tidak bentrok dengan create_all (CREATE TABLE ganda = crash)
+# 3. schema via SQLAlchemy — dump dari dump_snapshot.py SUDAH data-only
+#    (schema statements dibuang di sisi VPS, statement-level). create_all
+#    di sini menjamin semua tabel model ada (termasuk yang di-skip dump).
 sys.path.insert(0, str(REPO))
 from sqlalchemy import create_engine  # noqa: E402
 from src.db.models import Base  # noqa: E402
@@ -44,22 +45,14 @@ eng = create_engine(f"sqlite:///{DB}")
 Base.metadata.create_all(eng)
 eng.dispose()
 
-# 4. apply dump (cepat: journal off) — buang baris schema & sqlite_sequence
+# 4. apply dump (cepat: journal off)
 con = sqlite3.connect(DB)
 con.execute("PRAGMA journal_mode=MEMORY")
 con.execute("PRAGMA synchronous=OFF")
 t0 = time.time()
-lines = []
-for ln in sql_path.read_text(encoding="utf-8").splitlines():
-    u = ln.lstrip().upper()
-    if u.startswith(("CREATE ", "DELETE FROM SQLITE_SEQUENCE")):
-        continue
-    if u.startswith("INSERT INTO SQLITE_SEQUENCE"):
-        continue
-    lines.append(ln)
-con.executescript("\n".join(lines))
+con.executescript(sql_path.read_text(encoding="utf-8"))
 con.commit()
-print(f"dump applied in {time.time()-t0:.0f}s ({len(lines)} stmts)")
+print(f"dump applied in {time.time()-t0:.0f}s")
 
 # 5. validasi
 for t in ("tokens", "pools", "wallets", "wallet_labels", "swap_events"):
