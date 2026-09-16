@@ -249,16 +249,28 @@ class EtherscanV2Client:
         info: dict[str, Any] = {"address": ca.lower()}
 
         async def call(data_sel: str) -> str:
-            async with self._limiter:
-                resp = await client.get(self.base_api, params={
-                    "chainid": self.chain_id, "apikey": self._key(),
-                    "module": "proxy", "action": "eth_call",
-                    "to": ca.lower(), "data": data_sel})
-            try:
-                r = resp.json()
-                return (r.get("result") or "") if isinstance(r, dict) else ""
-            except ValueError:
-                return ""
+            # eth_call di luar _call() — retry sendiri: ReadTimeout di sini
+            # dulu membunuh seluruh cycle pipeline (prices/analyze mati di
+            # tengah jalan, supervisor restart bolak-balik).
+            last_err = ""
+            for attempt in range(4):
+                try:
+                    async with self._limiter:
+                        resp = await client.get(self.base_api, params={
+                            "chainid": self.chain_id, "apikey": self._key(),
+                            "module": "proxy", "action": "eth_call",
+                            "to": ca.lower(), "data": data_sel})
+                    try:
+                        r = resp.json()
+                        return (r.get("result") or "") if isinstance(r, dict) else ""
+                    except ValueError:
+                        return ""
+                except httpx.HTTPError as e:
+                    last_err = str(e)[:100]
+                    await asyncio.sleep(min(20.0, 1.5 * (2 ** attempt)))
+            jlog(log, logging.WARNING, "eth_call metadata gagal setelah retry",
+                 token=ca, err=last_err)
+            return ""
 
         dec_hex, sym_hex = await asyncio.gather(call(SEL_DECIMALS), call(SEL_SYMBOL))
         n = decode_abi_uint(dec_hex)
