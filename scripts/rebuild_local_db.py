@@ -54,11 +54,20 @@ con.executescript(sql_path.read_text(encoding="utf-8"))
 con.commit()
 print(f"dump applied in {time.time()-t0:.0f}s")
 
-# 5. validasi
+# 5. validasi SEBELUM parts dihapus — dump kosong/parsial tidak boleh
+#    diam-diam dianggap sukses (counts minimum per 2026-09; naikkan manual
+#    bila universe membesar)
+MIN_ROWS = {"wallets": 50_000, "swap_events": 100_000, "tokens": 500}
+ok = True
 for t in ("tokens", "pools", "wallets", "wallet_labels", "swap_events"):
     n = con.execute(f"select count(*) from {t}").fetchone()[0]
     print(t, n)
+    if t in MIN_ROWS and n < MIN_ROWS[t]:
+        print(f"!! {t}={n} di bawah minimum {MIN_ROWS[t]} — parts DIPERTAHANKAN")
+        ok = False
 con.close()
+if not ok:
+    sys.exit("REBUILD GAGAL validasi — DB baru dibiarkan, parts disimpan")
 
 # 6. bersihkan part
 for p in PARTS:

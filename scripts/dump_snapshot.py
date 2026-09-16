@@ -14,14 +14,17 @@ Split + download (lokal):
 import gzip
 import sqlite3
 import time
+from pathlib import Path
 
 SK = ("block_timestamps", "feed_events", "wallet_token_interest")
+OUT = Path("/opt/topwallet/data/local_snapshot.sql.gz")
+TMP = OUT.with_suffix(".gz.tmp")
 t0 = time.time()
 src = sqlite3.connect("file:/opt/topwallet/data/topwallet.db?mode=ro", uri=True)
 src.execute("PRAGMA busy_timeout=30000")
+src.execute("BEGIN")  # satu read-snapshot: pipeline menulis di antara tabel
 n = 0
-with gzip.open("/opt/topwallet/data/local_snapshot.sql.gz", "wb",
-               compresslevel=6) as f:
+with gzip.open(TMP, "wb", compresslevel=6) as f:
     for line in src.iterdump():
         # iterdump statements can span physical lines (SQLAlchemy DDL is
         # multi-line) — filter at STATEMENT level, never per physical line.
@@ -33,5 +36,7 @@ with gzip.open("/opt/topwallet/data/local_snapshot.sql.gz", "wb",
             continue
         f.write((line + "\n").encode())
         n += 1
+src.execute("ROLLBACK")  # tutup snapshot (tidak ada write)
 src.close()
+TMP.replace(OUT)  # atomik: crash = file lama utuh, bukan gz terpotong
 print(f"lines={n} secs={time.time() - t0:.0f}")

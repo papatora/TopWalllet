@@ -49,12 +49,18 @@ class GmgnClient:
         p = {"timestamp": int(time.time()), "client_id": str(uuid.uuid4())}
         if params:
             p.update(params)
-        r = self._client.get(BASE + path, params=p,
-                             headers={"X-APIKEY": self.key, "Accept": "application/json"})
-        self._last = time.time()
-        if r.status_code != 200:
-            return {"_http_status": r.status_code, "_error": r.text[:200]}
-        data = r.json()
+        try:
+            r = self._client.get(BASE + path, params=p,
+                                 headers={"X-APIKEY": self.key, "Accept": "application/json"})
+            self._last = time.time()
+            if r.status_code != 200:
+                return {"_http_status": r.status_code, "_error": r.text[:200]}
+            data = r.json()  # gateway kadang balas 200 + HTML → ValueError
+        except (httpx.HTTPError, ValueError) as e:
+            # Timeout/gateway/JSON rusak: None, JANGAN lempar — semua caller
+            # isinstance-guard; exception di sini pernah membunuh cycle
+            # (pola sama dengan crash ReadTimeout Etherscan).
+            return {"_http_error": str(e)[:120]}
         # GMGN wraps: {code, data: {code, data: {...}}} — unwrap one level
         if isinstance(data, dict) and "data" in data:
             inner = data["data"]
