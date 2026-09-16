@@ -133,7 +133,8 @@ def kill_orphan_pipelines() -> int:
     """systemctl restart mematikan supervisor tapi TIDAK selalu child
     pipeline-nya — pipeline yatim menumpuk (3 writer bersamaan pada
     2026-09-16) → sqlite 'database is locked' → cycle crash. Bunuh semua
-    proses `src.cli pipeline` lama sebelum spawn yang baru."""
+    proses `src.cli pipeline` lama + SUPERVISOR JATUH (ppid 1) sebelum
+    jalan — dua supervisor = perang pipeline (kasus ghost 355690)."""
     killed = 0
     me = os.getpid()
     for pid_dir in Path("/proc").iterdir():
@@ -144,14 +145,17 @@ def kill_orphan_pipelines() -> int:
                 b"\0", b" ").decode("utf-8", "replace")
         except OSError:
             continue
-        if "src.cli" in cmd and "pipeline" in cmd:
+        is_pipeline = "src.cli" in cmd and "pipeline" in cmd
+        is_supervisor = "supervisor.py" in cmd
+        if is_pipeline or is_supervisor:
             try:
                 os.kill(int(pid_dir.name), signal.SIGKILL)
                 killed += 1
             except OSError:
                 pass
     if killed:
-        print(f"[supervisor] {killed} pipeline yatim dibunuh sebelum cycle")
+        print(f"[supervisor] {killed} proses yatim (pipeline/supervisor) dibunuh",
+              flush=True)
         time.sleep(3)  # beri waktu lock SQLite lepas
     return killed
 
