@@ -227,46 +227,55 @@ def merge_pool(entries: dict[str, dict]) -> bool:
 
 
 def append_log(record: dict) -> None:
-    LOG_FILE.parent.mkdir(parents=True, exist_ok=True)
-    with LOG_FILE.open("a", encoding="utf-8") as f:
-        f.write(json.dumps(record, default=str) + "\n")
+    try:
+        LOG_FILE.parent.mkdir(parents=True, exist_ok=True)
+        with LOG_FILE.open("a", encoding="utf-8") as f:
+            f.write(json.dumps(record, default=str) + "\n")
+    except OSError as e:  # disk penuh dsb. — jangan matikan cycle
+        print(f"[log] gagal menulis volume_sweep_log: {e}")
 
 
 async def process_queue(queue: list[dict], budget: int) -> list[dict]:
-    """FIFO run_track_by_ca for queued tokens. Success pops; None (no
-    DexScreener pair, token likely dead) or exceptions retry then drop.
-    One token's failure never kills the cycle."""
+    """FIFO run_track_by_ca for queued tokens. Setiap ATTEMPT menghabiskan
+    budget (token error jangan membuka pintu ke entry berikutnya di cycle
+    yang sama — outage DexScreener 100 entry = 100 pipeline berat). Success
+    pops; None (resolver yakin token mati) drop di QUEUE_DROP_TRIES;
+    exception (transien: network, lock) drop di 2x itu."""
     done: list[dict] = []
     if budget <= 0 or not queue:
         return done
     from src.track_by_ca import run_track_by_ca
 
-    processed = 0
+    attempts = 0
     for entry in list(queue):
-        if processed >= budget:
+        if attempts >= budget:
             break
         ca = entry["ca"]
+        attempts += 1
         try:
             payload = await run_track_by_ca(ca, top_n=50)
         except Exception as e:  # lock contention, network, apapun — retry
             entry["tries"] = int(entry.get("tries") or 0) + 1
             entry["error"] = str(e)[:160]
-            if entry["tries"] >= QUEUE_DROP_TRIES:
+            if entry["tries"] >= QUEUE_DROP_TRIES * 2:
                 queue.remove(entry)
-            append_log({"ts": datetime.now(timezone.utc).isoformat(),
-                        "event": "track_ca_error", "token": ca,
-                        "tries": entry["tries"], "error": entry["error"]})
+                append_log({"ts": datetime.now(timezone.utc).isoformat(),
+                            "event": "track_ca_dropped", "token": ca,
+                            "tries": entry["tries"], "error": entry["error"]})
+            else:
+                append_log({"ts": datetime.now(timezone.utc).isoformat(),
+                            "event": "track_ca_error", "token": ca,
+                            "tries": entry["tries"], "error": entry["error"]})
             continue
         if payload is None:
             entry["tries"] = int(entry.get("tries") or 0) + 1
             if entry["tries"] >= QUEUE_DROP_TRIES:
                 queue.remove(entry)
-            append_log({"ts": datetime.now(timezone.utc).isoformat(),
-                        "event": "track_ca_unresolved", "token": ca,
-                        "tries": entry["tries"]})
+                append_log({"ts": datetime.now(timezone.utc).isoformat(),
+                            "event": "track_ca_unresolved_drop", "token": ca,
+                            "tries": entry["tries"]})
             continue
         queue.remove(entry)
-        processed += 1
         ranked = payload.get("ranked_wallets") or []
         rec = {"ts": datetime.now(timezone.utc).isoformat(),
                "event": "track_ca_done", "token": ca,
@@ -309,7 +318,7 @@ async def run_cycle() -> dict:
                 rug = liq > 0 and (vol / liq) >= RUG_RATIO
                 st["rug"][key] = rug
             tags.commit(key, vol, now_ms)  # bot.js: commit BEFORE slow sends
-            queue_push(queue, ca, reason, vol, now_iso)
+            was_new = queue_push(queue, ca, reason, vol, now_iso)
 
             # GMGN top traders feed the pool REPORT only; wallet harvest
             # itself happens inside run_track_by_ca (on-chain, complete).
@@ -321,7 +330,7 @@ async def run_cycle() -> dict:
                    "token": ca, "symbol": sym, "volume_5m": vol,
                    "liquidity": liq, "reason": reason, "rug_risk": rug,
                    "gmgn_traders": len(traders),
-                   "queued": queue[-1]["ca"] == ca}
+                   "queued": was_new or any(e["ca"] == ca for e in queue)}
             fired.append(rec)
             append_log(rec)
 
@@ -359,9 +368,12 @@ async def run_cycle() -> dict:
         merge_pool(pool_entries)
         g.close()
 
-    # queue processing AFTER state is committed — a crash here loses nothing
-    done = await process_queue(queue, TRACK_BUDGET)
-    save_state(st)  # queue changed during processing
+    # queue processing AFTER state is committed — pop/error ter-persist di
+    # finally, jadi crash di tengah track-ca tidak menduplikasi kerja berat
+    try:
+        done = await process_queue(queue, TRACK_BUDGET)
+    finally:
+        save_state(st)
 
     return {"tokens_polled": len(items), "fired": fired,
             "processed": done, "queue_len": len(queue)}

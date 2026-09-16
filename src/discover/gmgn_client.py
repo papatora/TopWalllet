@@ -54,6 +54,8 @@ class GmgnClient:
                                  headers={"X-APIKEY": self.key, "Accept": "application/json"})
             self._last = time.time()
             if r.status_code != 200:
+                # jangan fully-silent: outage seminggu harus kelihatan di log
+                print(f"[gmgn] http {r.status_code} {path}: {r.text[:120]}")
                 return {"_http_status": r.status_code, "_error": r.text[:200]}
             data = r.json()  # gateway kadang balas 200 + HTML → ValueError
         except (httpx.HTTPError, ValueError) as e:

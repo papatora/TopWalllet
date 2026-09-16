@@ -106,10 +106,12 @@ def _pick(d: dict | None, keys: tuple[str, ...]) -> dict:
 
 
 def _retry(fn, *args, retries: int = 2, **kwargs):
-    """Client wrapper: GMGN returns {'_http_status': 429, ...} when throttled."""
+    """Client wrapper: GMGN returns {'_http_status': 429, ...} when throttled
+    and {'_http_error': ...} when the call itself failed (timeout/JSON)."""
     res = fn(*args, **kwargs)
     for attempt in range(retries - 1):
-        if not (isinstance(res, dict) and res.get("_http_status") == 429):
+        if not (isinstance(res, dict)
+                and ("_http_error" in res or res.get("_http_status") != 200)):
             return res
         time.sleep(1.5 * (attempt + 1))
         res = fn(*args, **kwargs)

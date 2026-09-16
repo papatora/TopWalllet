@@ -70,6 +70,8 @@ async def run_track_by_ca(ca: str, top_n: int = 50) -> dict | None:
         token_data = await _resolve_token(client, ca)
         await client.close()
         if token_data is None and (token_row is None or not pool_rows):
+            await blockscout.close()
+            await rpc.close()
             return None
 
         from src.pipeline import Pipeline as _P
@@ -83,7 +85,8 @@ async def run_track_by_ca(ca: str, top_n: int = 50) -> dict | None:
             pool_rows = (await session.execute(select(Pool).where(Pool.token_address == ca))).scalars().all()
 
         # discover every wallet that touched this token
-        exclude = {settings.pool_manager, settings.weth_address, settings.usdg_address}
+        exclude = {settings.pool_manager, settings.weth_address, settings.usdg_address,
+                   "0x" + "0" * 40, "0x" + "0" * 38 + "dead"}  # zero + burn
         exclude |= {p.address for p in pool_rows}
         transfers = await blockscout.token_transfers(ca, max(8, settings.trader_pages_per_token * 3))
         hits = extract_wallet_hits(ca, [], transfers, exclude)
@@ -113,11 +116,16 @@ async def run_track_by_ca(ca: str, top_n: int = 50) -> dict | None:
         wallets = (await session.execute(
             select(Wallet).where(Wallet.address.in_(addresses), Wallet.status.in_(["pending", "in_progress"]))
         )).scalars().all()
-        await helper.stage_enrich_for(session, wallets)
+        await helper.enrich_wallets(session, wallets)
         await session.commit()
 
-        # analyze restricted to this wallet set
-        ranked = await helper.analyze_wallets(session, restrict_to=addresses, started=started)
+        # analyze restricted to this wallet set. do_export/do_push False:
+        # hasil SATU token tidak boleh menimpa export global (dulu analyze
+        # di sini me-wipe wallet_scores global + push subset ke GitHub).
+        # persist_replace False: skor global di-merge per-wallet.
+        ranked = await helper.analyze_wallets(
+            session, restrict_to=addresses, started=started,
+            do_export=False, do_push=False, persist_replace=False)
         ranked = ranked[:top_n]
 
         symbols = {ca: (token_row.symbol if token_row else ca[:8])}

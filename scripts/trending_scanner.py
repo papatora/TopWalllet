@@ -28,13 +28,20 @@ STATS_BUDGET = 400  # wallet_stats calls per run (rate-limit aware)
 
 def load_pool():
     if os.path.exists(POOL_FILE):
-        return json.load(open(POOL_FILE))
+        try:
+            return json.load(open(POOL_FILE))
+        except (ValueError, OSError) as e:
+            print(f"pool file korup, mulai baru: {e}")  # jangan crash permanen
     return {"wallets": {}, "updated_at": None, "runs": 0}
 
 
 def save_pool(pool):
+    # atomic: volume_sweep.merge_pool menulis file yang sama secara konkuren
     pool["updated_at"] = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
-    json.dump(pool, open(POOL_FILE, "w"), indent=1)
+    tmp = POOL_FILE + ".tmp"
+    with open(tmp, "w") as f:
+        json.dump(pool, f, indent=1)
+    os.replace(tmp, POOL_FILE)
 
 
 def main():

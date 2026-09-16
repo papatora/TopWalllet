@@ -548,6 +548,7 @@ class Pipeline:
         started: datetime | None = None,
         do_export: bool = True,
         do_push: bool = True,
+        persist_replace: bool = True,
     ) -> list:
         """Score enriched wallets; optionally export/push (full pipeline only).
 
@@ -719,7 +720,7 @@ class Pipeline:
             jlog(log, logging.INFO, "strict verification filter",
                  before=before, shipped=len(ranked))
 
-        await self._persist_scores(session, ranked)
+        await self._persist_scores(session, ranked, replace=persist_replace)
         await session.commit()
 
         if do_export:
@@ -797,8 +798,18 @@ class Pipeline:
             return None
         return (exit_amt * px) / (entry_amt * pe)
 
-    async def _persist_scores(self, session: AsyncSession, ranked) -> None:
-        await session.execute(delete(WalletScore))
+    async def _persist_scores(self, session: AsyncSession, ranked,
+                              replace: bool = True) -> None:
+        # replace=True (pipeline global): wipe + isi ulang. replace=False
+        # (track-by-CA subset): hapus skor HANYA wallet dalam subset — skor
+        # global wallet lain tidak boleh hilang.
+        if replace:
+            await session.execute(delete(WalletScore))
+        else:
+            addrs = [e.wallet_address for e in ranked]
+            if addrs:
+                await session.execute(
+                    delete(WalletScore).where(WalletScore.wallet_address.in_(addrs)))
         for entry in ranked:
             session.add(WalletScore(
                 wallet_address=entry.wallet_address,
