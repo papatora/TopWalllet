@@ -6,9 +6,10 @@
 ---
 
 
-> ## 🚨 AFTER-COMPACT PLAYBOOK (baca ini PERTAMA — context sebelum compact 690K)
-> Compact 690K→10K pasti lossy. Dokumen kebenaran: **PRE_COMPACT.md bagian
-> S-35..S-38-H** (paling baru), **docs/FIXED_LEDGER.md**, **DEBATE_ROUND_A..G.md**,
+> ## 🚨 AFTER-COMPACT PLAYBOOK (baca ini PERTAMA — context sebelum compact 690K+)
+> Compact →10K pasti lossy. Dokumen kebenaran: **PRE_COMPACT.md bagian
+> S-35..S-39** (paling baru), **docs/FIXED_LEDGER.md**, **DEBATE_ROUND_A..G.md**
+> (explorer) + debat sweep A/B/C (ringkas di PRE_COMPACT S-39),
 > **docs/DIRECTIVE_VOLUME_SWEEP.md**, docs/memory/01-09.
 >
 > ### JANGAN (blind-fix trap — semua ini SUDAH selesai & terverifikasi):
@@ -18,23 +19,32 @@
 > - Re-implement komet CSS — komet canvas user sudah jalan (tema space)
 > - Restore paused saat reload — sengaja tidak (deterministik)
 > - Kirim cookies ke Arkham API — user akan LOGIN MANUAL di chromium temp
+> - "Perbaiki" track-ca yang jalan 5-15 menit / cron skip — itu flock NORMAL;
+>   error transien (RPC 429, DexScreener 403, SSL) di-retry queue otomatis
+> - Implement ulang volume sweep — SUDAH LIVE (cron */5 VPS, S-39, debat A/B/C
+>   8/10 SHIP); cukup pantau log + by_ca/
+> - Re-ekstraksi DB lokal — SUDAH (94.961 wallet, MD5-verified, S-39)
 >
 > ### LAKUKAN (urutan pasca-compact):
-> 1. Cek VPS: `python scripts/_vps_ops_once.py` pola (ssh helper) — supervisor
->    aktif? enrich selesai? price_points & wallet_scores terisi = analyze jalan.
-> 2. EKSTRAKSI DATA VPS → LOKAL (belum dilakukan!): `python scripts/
->    extract_wallets.py` di VPS → dump selektif + split → download →
->    `python scripts/rebuild_local_db.py` lokal → POST /api/rebuild.
-> 3. Implementasi VOLUME SWEEP: docs/DIRECTIVE_VOLUME_SWEEP.md (prioritas 1).
-> 4. Arkham flow: chromium temp dibuka → USER LOGIN manual → computer-use/
->    python browse wallet → harvest tag CEX → known_entities.json.
-> 5. Setiap fix baru → UPDATE FIXED_LEDGER.md + dossier + commit + push via VPS.
+> 1. Cek VPS: supervisor aktif? **price_points & wallet_scores > 0?** (masih 0
+>    saat S-39 ditulis; kalau tetap 0 berhari-hari → grep Traceback
+>    supervisor_pipeline.log; retry token_info sudah difix di S-39)
+> 2. Pantau sweep: results/volume_sweep_log.jsonl (event track_ca_done /
+>    queue_deferred), results/by_ca/<ca>.json, antrean di
+>    data/volume_sweep_state.json (caQueue).
+> 3. ARKHAM FLOW (butuh USER): buka chromium temp → USER LOGIN manual →
+>    computer-use/python browse wallet → harvest tag CEX → known_entities.json.
+> 4. Rug-event detector + old-token pump sweep (bahan sudah mengalir via
+>    by_ca/ + wallet_pool.json).
+> 5. Setiap fix baru → UPDATE FIXED_LEDGER.md + PRE_COMPACT snapshot +
+>    commit + push via VPS. Klaim "method ada" WAJIB di-pin test binding
+>    (pola: tests/test_track_ca_binding.py).
 >
 > ### EXPLORER LOKAL: Desktop "TopWallet Launcher" shortcut → Mulai Server →
-> 127.0.0.1:8787. Stop di tombol yang sama (bisa paksa proses eksternal).
-> Kalau Defender blok exe: folder target
-elease sudah ASR-excluded — pakai
-> shortcut, jangan salin exe mentah ke Desktop.
+> 127.0.0.1:8787 (dataset dibangun fresh dari DB S-39 saat start pertama).
+> Stop di tombol yang sama (bisa paksa proses eksternal). Kalau Defender
+> blok exe: folder target\release sudah ASR-excluded — pakai shortcut,
+> jangan salin exe mentah ke Desktop.
 
 
 

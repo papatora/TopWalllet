@@ -965,3 +965,65 @@ Yang tidak bisa diperbaiki di sisi explorer (butuh VPS/data): backfill
 price_points, re-enrich TRADER_COVERAGE_GAP, known_entities CEX (Arkham/key).
 Defender: folder target\release sudah di ASR exclusion; Desktop pakai
 SHORTCUT (.lnk) ke exe tsb — exe copy di Desktop dihapus (terblokir ASR).
+
+## SNAPSHOT S-39 — VOLUME SWEEP LIVE + SINKRON LOKAL (2026-09-16)
+
+**MODE KERJA USER:** long-form otonom penuh — kerjakan sampai tuntas berjam-jam,
+verifikasi ulang lewat debat subagent adversarial berantai, perbaiki setiap
+bug yang ditemukan, baru update dokumen. Jangan minta input kecil-kecil.
+
+### A. DIAGNOSA VPS PAGI (sebelum ngapain)
+- Enrich 94.786 wallet = 100% SELESAI (semua status 'enriched').
+- BLOKER: price_points & wallet_scores = 0 karena cycle pipeline MATI dengan
+  httpx.ReadTimeout di `etherscan_client.token_info` — inner eth_call TANPA
+  retry (di luar _call). FIX: retry 4x backoff di inner call → cycle lanjot.
+  Log "etherscan aktif" muncul lagi tiap restart supervisor.
+- Verifier on-chain terus jalan: INSIDER 2.511 proven, TRADER_COVERAGE_GAP
+  868, AIRDROP_FARMER 91 (extract_wallets 2026-09-16).
+
+### B. VOLUME SWEEP WALLET HARVESTER — LIVE (commit 25fd6e2)
+- scripts/volume_sweep.py, cron */5 di VPS, flock + guard TOPWALLET_RUN_ENV.
+- Tag gate = port setia bot.js user (VolumeNotification): FIRST (vol≥$100K 5m),
+  DOUBLE (≥2× anchor), TROUGH (dip ≤$350K DAN ≤0.7× anchor — guard tambahan
+  WAJIB karena floor 100K < trough 350K; di bot floor 500K>350K jadi tidak
+  perlu), SUSTAIN (≥45 menit hot). Commit anchor seragam sebelum kerja lambat.
+- Rug-risk: vol/liquidity ≥15 saat FIRST → flag (tetap dipanen).
+- PANEN lewat src/track_by_ca.run_track_by_ca(ca): resolve pool DexScreener →
+  upsert Token+Pool → discover SEMUA wallet on-chain → stage_prices →
+  enrich_wallets → analyze_wallets(restricted, NO export/push/wipe) →
+  results/by_ca/<ca>.json. Antrean di state file (caQueue, cap 100).
+- Budget: 1 token/cycle; 1 track-ca bisa 5-15 menit — cron skip oleh flock,
+  NORMAL. Error transien (RPC 429, DexScreener 403 intermittent, SSL) →
+  retry; drop di 6x exception / 3x None (None = resolver yakin token mati).
+- DexScreener strict=True: outage (429/5xx menetap) = exception, bukan "[]
+  = token mati". Track-ca DEFER kalau supervisor pipeline sedang jalan
+  (pipeline_busy() cek supervisor_status.json + staleness 1 jam).
+- DEBAT A/B/C (subagent adversarial berantai, pola yang user mau):
+  A menemukan P1×4 (endpoint salah → panen kosong; trough spam; wallet
+  enrich kosong karena token tak di pools; race PK) → rewrite total via
+  track_by_ca. B menemukan P0 `stage_enrich_for` TIDAK PERNAH ADA (crash
+  setelah kerja mahal) + analyze_wallets MENGHAPUS global wallet_scores/
+  export (do_export/do_push/persist_replace=False + merge per-wallet) →
+  diperbaiki + PIN test_track_ca_binding.py (regex helper.* vs Pipeline).
+  C konvergensi: 8/10 SHIP; sisa P2 _retry sukses-dict (regresiku) sudah
+  dibetulkan. 111 tests green.
+- PELAJARAN: (1) klaim "method ada" WAJIB di-pin test binding; (2) verifikasi
+  MD5 per-part, bukan ukuran — part split -b 6M fixed-size dari dump beda
+  bisa sama ukuran (pernah campur 2 dump = gzip korup 2x rebuild gagal);
+  (3) JANGAN asumsi inferensi tipe (res.get("_http_status") != 200 saat None).
+
+### C. SINKRON LOKAL S-39 (selesai)
+- dump_snapshot.py baru: atomic tmp+rename + BEGIN read-snapshot + DATA-ONLY
+  statement-level (iterdump multi-line DDL = JANGAN filter per-baris fisik).
+- rebuild_local_db.py baru: build ke topwallet.new.db → validasi MIN_ROWS →
+  replace (DB lama tak tersentuh saat gagal); backup rolling .prev.db.
+- DB lokal: 94.961 wallet / 442K swaps / 1.442 token / 1.454 pool — MD5
+  verified. Explorer server mati saat sync → dataset fresh terbangun saat
+  user start launcher berikutnya.
+
+### D. STATE & LANJUTAN
+- VPS: supervisor aktif, prices→analyze menunggu (cek price_points>0).
+- Sweep: pantau results/volume_sweep_log.jsonl + results/by_ca/ + queue.
+- Next: Arkham flow (user login manual dulu di chromium temp) → rug-event
+  detector + old-token pump sweep → naming label (menunggu user).
+- Keputusan user tersisa: filter stock tokens dari sweep atau biarkan.

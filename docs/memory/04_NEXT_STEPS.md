@@ -1,25 +1,34 @@
-# 04 — NEXT STEPS (update S-38, 2026-09-15)
+# 04 — NEXT STEPS (update S-39, 2026-09-16)
 
-## PRIORITAS 1 — VOLUME SWEEP WALLET HARVESTER
-Spec lengkap: docs/DIRECTIVE_VOLUME_SWEEP.md (BACA DULU).
-Port logika tagging bot Telegram user (floor $100K 5m + DOUBLE 2x + TROUGH
-+SUSTAIN) tapi output = PANEN WALLET (top traders/sniper/bundler/dev/korban
-rug) → antrean enrich → verifier on-chain. Filter rug-risk = vol/liqu ratio.
+## SELESAI S-39 (jangan dikerjakan lagi)
+- ✅ VOLUME SWEEP WALLET HARVESTER — LIVE di VPS (cron */5). Debat A/B/C
+  tuntas. Spec: docs/DIRECTIVE_VOLUME_SWEEP.md; kode: scripts/volume_sweep.py
+  + jalur panen via src/track_by_ca.py (run_track_by_ca).
+- ✅ Ekstraksi data VPS → DB lokal (94.961 wallet, MD5-verified).
+- ✅ Fix bloker pipeline: etherscan token_info retry (ReadTimeout tidak lagi
+  bunuh cycle → prices/analyze lanjot).
 
-## PRIORITAS 2 — ARKHAM FLOW (user login dulu)
-Chromium temp dibuka → user login Arkham manual → computer-use/python browse
+## PRIORITAS 1 — PANTAU VPS (pasif)
+- price_points & wallet_scores terisi setelah cycle prices+analyze sukses
+  (cek: select count(*) — masih 0 saat S-39 ditulis; kalau masih 0 berhari-hari,
+  baru debugging: grep Traceback supervisor_pipeline.log).
+- results/by_ca/<ca>.json muncul per token terpanen; queue di
+  data/volume_sweep_state.json (caQueue). Error transien (RPC 429, DexScreener
+  403/SSL) normal — queue retry; drop di 6x exception / 3x None.
+
+## PRIORITAS 2 — ARKHAM FLOW (butuh USER login dulu)
+Chromium temp dibuka → USER login Arkham manual → computer-use/python browse
 wallet → harvest wallet bertag CEX → known_entities.json → visualizer.
 LEGAL (akun sendiri). Lemot tak apa.
 
 ## PRIORITAS 3 — RUG-EVENT DETECTOR + OLD-TOKEN PUMP SWEEP
-Sweep volume 24h semua token dikenal (dead token yang revive), deteksi
+Sweep volume 24h semua token dikenal (dead token revive), deteksi
 liquidity-pull ≤30 menit → RUGGED + RUGGER kandidat (top sell sebelum dump).
-
-## BERJALAN OTOMATIS (pantau saja)
-- VPS enrich 94K wallet → prices → analyze (Etherscan aktif, 2 key rotasi)
-- Verifier on-chain cron 30 menit (730 insider proven s.d. 2026-09-15)
-- Results push ke GitHub tiap cycle
+Satu keluarga dengan volume sweep — sebagian data sudah mengalir lewat
+results/by_ca/ + wallet_pool.json.
 
 ## MENUNGGU KEPUTUSAN USER
 - Naming final: DEV_ALLOC/CLUSTER_ALLOC/TRANSFER_IN/AIRDROP_DUST/DUST_FARMER
 - Website publik (Vercel) — data matang dulu
+- Stock tokens (NVDA/GOOGL/SPY di RH chain) ikut dipanen sweep — khusukkan
+  filter atau biarkan? (sekarang: biarkan, mereka wallet RH chain sah)

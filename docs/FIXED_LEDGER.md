@@ -43,12 +43,34 @@ Legenda: ✅ FIXED+VERIFIED · ⚠️ LIMITASI DIKETAHUI (bukan bug, jangan "dip
 ## Pipeline / Data
 - ✅ Etherscan V2 PRIMER (api.etherscan.io/v2, chainid 4663, 2 key rotasi,
   round-robin + rotasi saat rate-limit). Blockscout = fallback legacy.
-- ✅ dataset.py: fallback pricing snapshot (P0 snap shadow FIXED — snap_px);
-  label_counts + derived.
-- ✅ Verifikasi on-chain INSIDER/CLUSTER: 1,646 pair (730 proven, 806
-  dibantalkan, 90 airdrop spam); cron 30 menit + flock + Defer anti-skip.
-- ✅ extract_wallets.py: CSV 94K + labels regen dari DB + summary.
-- ✅ rebuild_local_db.py: dump selektif VPS → DB lokal (backup otomatis).
+- ✅ S-39: etherscan_client.token_info eth_call retry+backoff — ReadTimeout
+  dulu MEMBUNUH cycle pipeline (prices/analyze tak pernah sampai);
+  supervisor restart bolak-balik. Tertutup, diverifikasi log "etherscan aktif".
+- ✅ S-39: GMGN get() guarded (httpx/JSON error → error-dict, bukan raise) +
+  print visibility saat non-200; pump_analyzer._retry mengenal _http_error
+  dan TIDAK me-retry respons sukses (regresi Round C sudah dibetulkan).
+- ✅ S-39: dataset.py: fallback pricing snapshot (P0 snap shadow FIXED —
+  snap_px); label_counts + derived.
+- ✅ S-39: Verifikasi on-chain INSIDER/CLUSTER: 1,646+ pair (730+ proven);
+  cron 30 menit + flock + Defer anti-skip.
+- ✅ S-39: VOLUME SWEEP WALLET HARVESTER LIVE — scripts/volume_sweep.py
+  (cron */5): tag gate port bot.js (FIRST/DOUBLE/TROUGH/SUSTAIN, floor $100K
+  5m, trough guard "genuine drop ≤0.7× anchor", rug-risk vol/liq ≥15) →
+  antrean CA → run_track_by_ca (resolve pool DexScreener → upsert Token+Pool
+  → discover SEMUA wallet on-chain → prices → enrich → analyze →
+  results/by_ca/<ca>.json). Diverifikasi debat A/B/C (subagent adversarial):
+  P0 stage_enrich_for tidak pernah ada → enrich_wallets + PIN regresi
+  test_track_ca_binding.py; analyze_wallets tak lagi wipe global
+  wallet_scores/export (do_export/do_push/persist_replace=False);
+  trough bleed ≤1 fire; budget queue per-attempt; drop terpisah
+  exception(6x)/None(3x); DexScreener strict (outage ≠ token mati);
+  track-ca DEFER saat supervisor pipeline jalan (rebutan RPC).
+- ✅ S-39: sync path VPS→lokal — scripts/dump_snapshot.py (atomik tmp+rename,
+  read-snapshot BEGIN, DATA-ONLY statement-level) + rebuild_local_db.py
+  (build ke topwallet.new.db → validasi MIN_ROWS → replace; backup rolling
+  .prev.db). Verifikasi part pakai MD5 (ukuran bisa sama antar dump!).
+- ✅ S-39: extract_wallets.py: CSV 94,961 + labels regen dari DB.
+- ✅ S-39: trending_scanner save_pool atomik + load tahan file korup.
 
 ## Launcher Desktop
 - ✅ Tauri exe jalan; deteksi Python + folder server; Mulai/Stop/Buka.
@@ -67,12 +89,24 @@ Legenda: ✅ FIXED+VERIFIED · ⚠️ LIMITASI DIKETAHUI (bukan bug, jangan "dip
 - USD = ESTIMASI harga snapshot sampai VPS selesai prices+analyze.
 - Sub-layer list mode entity masih all-time vol (minor).
 - `paused` sengaja tidak di-restore saat reload (mulai selalu unfrozen).
+- S-39: satu track-ca bisa jalan 5-15 menit (discovery+prices+enrich) — cron
+  */5 berikutnya skip via flock; itu normal, bukan macet.
+- S-39: error transien track-ca (RPC 429, DexScreener 403 intermittently,
+  SSL blip) normal di log — queue me-retry (6x exception/3x None) lalu drop.
+- S-39: stock tokens RH chain (NVDA/GOOGL/SPY/PONS dkk.) ikut dipanen sweep
+  kalau volume 5m-nya tembus floor — sengaja (wallet RH chain sah), menunggu
+  keputusan user kalau mau difilter.
+- S-39: track_by_ca menutup client di jalur sukses & None-return; jalur
+  exception mid-run meninggalkan client terbuka sampai proses cron selesai
+  (P3, OS membereskan).
+- S-39: race wallet_pool.json scanner-vs-sweep = last-writer-wins antar
+  penulis atomik (report-only, self-healing saat token re-fire).
 
 ## 🔜 DIJADWALKAN (belum diimplementasi — jangan anggap sudah ada)
-- VOLUME SWEEP WALLET HARVESTER — spec: docs/DIRECTIVE_VOLUME_SWEEP.md
-  (floor $100K 5m + DOUBLE/TROUGH/SUSTAIN, panen wallet, filter rug-risk).
 - Rug-event detector (liquidity pull ≤30 menit) + old-token pump sweep +
-  serial rugger correlation.
+  serial rugger correlation (sebagian bahan sudah mengalir via by_ca/).
 - Arkham flow: chromium temp + user login manual + harvest tag CEX.
-- Re-enrich TRADER_COVERAGE_GAP (772) + 772-an wallet coverage gap.
+- Re-enrich TRADER_COVERAGE_GAP (868) + coverage gap.
 - Sub-layer entity-mode vol range-aware (minor).
+- Pump-scan kalau dipakai lagi: _retry sudah benar; honeypot "silent clean"
+  saat GMGN error sudah terselesaikan lewat _http_error handling.
