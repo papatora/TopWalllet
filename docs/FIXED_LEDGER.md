@@ -71,6 +71,11 @@ Legenda: ✅ FIXED+VERIFIED · ⚠️ LIMITASI DIKETAHUI (bukan bug, jangan "dip
   .prev.db). Verifikasi part pakai MD5 (ukuran bisa sama antar dump!).
 - ✅ S-39: extract_wallets.py: CSV 94,961 + labels regen dari DB.
 - ✅ S-39: trending_scanner save_pool atomik + load tahan file korup.
+- ✅ S-39: supervisor kill_orphan_pipelines() — systemctl restart TIDAK
+  membunuh child pipeline lama → 3 writer bersamaan → sqlite "database is
+  locked" crash. Sekarang tiap cycle bunuh `src.cli pipeline` yatim dulu
+  (scan /proc). LOCK lain: engine connect timeout 30s sudah ada; 2 pipeline
+  manual JANGAN dijalankan bareng (landmine #7 tetap berlaku).
 
 ## Launcher Desktop
 - ✅ Tauri exe jalan; deteksi Python + folder server; Mulai/Stop/Buka.

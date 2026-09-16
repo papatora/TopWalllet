@@ -20,6 +20,7 @@ from __future__ import annotations
 
 import json
 import os
+import signal
 import subprocess
 import sys
 import time
@@ -128,7 +129,35 @@ def read_stats() -> dict:
         return {}
 
 
+def kill_orphan_pipelines() -> int:
+    """systemctl restart mematikan supervisor tapi TIDAK selalu child
+    pipeline-nya — pipeline yatim menumpuk (3 writer bersamaan pada
+    2026-09-16) → sqlite 'database is locked' → cycle crash. Bunuh semua
+    proses `src.cli pipeline` lama sebelum spawn yang baru."""
+    killed = 0
+    me = os.getpid()
+    for pid_dir in Path("/proc").iterdir():
+        if not pid_dir.name.isdigit() or int(pid_dir.name) == me:
+            continue
+        try:
+            cmd = (pid_dir / "cmdline").read_bytes().replace(
+                b"\0", b" ").decode("utf-8", "replace")
+        except OSError:
+            continue
+        if "src.cli" in cmd and "pipeline" in cmd:
+            try:
+                os.kill(int(pid_dir.name), signal.SIGKILL)
+                killed += 1
+            except OSError:
+                pass
+    if killed:
+        print(f"[supervisor] {killed} pipeline yatim dibunuh sebelum cycle")
+        time.sleep(3)  # beri waktu lock SQLite lepas
+    return killed
+
+
 def run_pipeline_cycle(cycle: int) -> None:
+    kill_orphan_pipelines()
     write_status({"cycle": cycle, "phase": "pipeline", "last_exit": None,
                   "log_tail": tail(REPO / "logs" / "supervisor_pipeline.log", 2)})
     log_fh = open(REPO / "logs" / "supervisor_pipeline.log", "a", encoding="utf-8")
