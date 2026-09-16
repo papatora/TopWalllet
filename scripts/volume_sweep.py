@@ -63,7 +63,11 @@ RUG_RATIO = float(os.getenv("VOLUME_SWEEP_RUG_RATIO", "15"))
 TOP_TRADERS = int(os.getenv("VOLUME_SWEEP_TOP_TRADERS", "50"))
 MAX_WALLETS = int(os.getenv("VOLUME_SWEEP_MAX_WALLETS", "150"))
 CHAIN = os.getenv("VOLUME_SWEEP_CHAIN", "robinhood")
-ASC_PAGES = int(os.getenv("VOLUME_SWEEP_ASC_PAGES", "3"))
+ASC_PAGES = int(os.getenv("VOLUME_SWEEP_ASC_PAGES", "2"))
+# Etherscan tokentx sort=asc lambat di token bersejarah panjang — batasi
+# berapa token yang boleh kena fetch asc per siklus (burst 'first' hari
+# deploy bisa 10+ token sekaligus; sisanya tetap dipanen via GMGN traders).
+ASC_BUDGET = int(os.getenv("VOLUME_SWEEP_ASC_BUDGET", "3"))
 SNIPER_BLOCKS = 10
 EARLY_BLOCKS = 300
 BUNDLE_MIN_WALLETS = 4
@@ -295,23 +299,28 @@ async def persist_wallets(rows: list[dict]) -> int:
     return inserted
 
 
-async def harvest(ca: str, reason: str, rug_risk: bool,
+async def harvest(ca: str, reason: str, rug_risk: bool, do_asc: bool,
                   g: GmgnClient, explorer) -> dict:
     """Collect candidate wallets for one qualifying token. Priority:
     snipers > early/bundle > GMGN top traders; late entrants appended when
-    rug_risk (they are the rug's exit liquidity — mapping material)."""
+    rug_risk (they are the rug's exit liquidity — mapping material).
+    do_asc=False skips the slow Etherscan asc fetch (GMGN traders only)."""
     evidence: dict = {"gmgn_traders": 0, "transfers": 0}
+    cls: dict = {"b0": 0, "b1": 0, "sniper": [], "early": [], "bundles": [],
+                 "late": [], "excluded": []}
 
-    # earliest transfers first (sort=asc) — ASC_PAGES*200 rows reach the
-    # token's birth blocks even for tokens with deep history. Blockscout
-    # fallback tidak kenal kwarg sort (degraded: dapat baris terbaru).
-    try:
-        asc = await explorer.address_token_transfers(ca, max_pages=ASC_PAGES,
-                                                     sort="asc")
-    except TypeError:
-        asc = await explorer.address_token_transfers(ca, max_pages=ASC_PAGES)
-    cls = classify_transfers(asc)
-    evidence["transfers"] = len(asc)
+    if do_asc:
+        # earliest transfers first (sort=asc) — ASC_PAGES*200 rows reach the
+        # token's birth blocks even for tokens with deep history. Blockscout
+        # fallback tidak kenal kwarg sort (degraded: dapat baris terbaru).
+        try:
+            asc = await explorer.address_token_transfers(
+                ca, max_pages=ASC_PAGES, sort="asc")
+        except TypeError:
+            asc = await explorer.address_token_transfers(ca,
+                                                         max_pages=ASC_PAGES)
+        cls = classify_transfers(asc)
+        evidence["transfers"] = len(asc)
 
     traders = g.token_top_traders(CHAIN, ca, limit=TOP_TRADERS)
     traders = traders if isinstance(traders, list) else []
@@ -358,6 +367,7 @@ async def run_cycle() -> dict:
     now_ms = time.time() * 1000
     fired: list[dict] = []
     pool_entries: dict[str, dict] = {}
+    asc_left = ASC_BUDGET
 
     try:
         items = g.trending(CHAIN, "5m", order_by="volume", limit=50)
@@ -380,7 +390,10 @@ async def run_cycle() -> dict:
                 st["rug"][key] = rug
             tags.commit(key, vol, now_ms)  # bot.js: commit BEFORE slow sends
 
-            h = await harvest(ca, reason, rug, g, explorer)
+            do_asc = asc_left > 0
+            if do_asc:
+                asc_left -= 1
+            h = await harvest(ca, reason, rug, do_asc, g, explorer)
             inserted = await persist_wallets(h["rows"])
 
             sym = str(pick(it, ("symbol", "token_symbol", "name")) or "?")
@@ -388,7 +401,7 @@ async def run_cycle() -> dict:
                    "chain": CHAIN, "token": ca, "symbol": sym,
                    "volume_5m": vol, "liquidity": liq, "reason": reason,
                    "rug_risk": rug, "wallets_found": len(h["rows"]),
-                   "wallets_new": inserted,
+                   "wallets_new": inserted, "asc": do_asc,
                    "sniper": len(h["classify"]["sniper"]),
                    "bundles": len(h["classify"]["bundles"]),
                    "b0": h["classify"]["b0"], "b1": h["classify"]["b1"]}
