@@ -6,6 +6,7 @@ works on any EVM chain, and batch calls keep getLogs-based pricing cheap.
 from __future__ import annotations
 
 import asyncio
+import os
 import random
 import time
 from typing import Any
@@ -44,7 +45,8 @@ class EvmRpcClient:
 
     async def _http(self) -> httpx.AsyncClient:
         if self._client is None or self._client.is_closed:
-            proxies = settings.proxy_urls or None
+            # proxy RPC opt-in: Robinhood RPC 403 dari IP proxy; direct aman
+            proxies = settings.proxy_urls if os.getenv("RPC_USE_PROXY") == "1" else None
             self._client = httpx.AsyncClient(
                 timeout=httpx.Timeout(30.0, connect=10.0),
                 headers={"User-Agent": "TopWallet/0.1"},
@@ -90,8 +92,10 @@ class EvmRpcClient:
                 last_err = e
                 await asyncio.sleep(0.5)
                 continue
-            if resp.status_code == 429 or resp.status_code >= 500:
-                self._cool_until[idx] = time.time() + (20 if resp.status_code == 429 else 10)
+            if resp.status_code in (403, 429) or resp.status_code >= 500:
+                # 403 (CF/rate-limit per-IP) dulu MELEMPAR tanpa retry —
+                # satu 403 mematikan seluruh cycle prices. Cool + rotate.
+                self._cool_until[idx] = time.time() + (30 if resp.status_code == 403 else 20 if resp.status_code == 429 else 10)
                 jlog(log, logging.WARNING, "rpc endpoint cooled", endpoint=self._mask(url), status=resp.status_code)
                 last_err = RpcError(f"{resp.status_code} from endpoint {idx}")
                 await asyncio.sleep(0.5)

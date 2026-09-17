@@ -9,6 +9,7 @@ trade classification hang off later.
 from __future__ import annotations
 
 import asyncio
+import os
 import logging
 from dataclasses import dataclass, field
 
@@ -53,7 +54,12 @@ class DexScreenerClient:
 
     async def _http(self) -> httpx.AsyncClient:
         if self._client is None:
-            proxy = settings.proxy_urls[0] if settings.proxy_urls else None
+            # proxy IP terbukti diblok CF DexScreener permanen (403 SITE_
+            # PERMANENTLY_BLOCKED, 212 gagal beruntun 2026-09-17) — direct
+            # dari IP VPS selalu 200. Proxy jadi opt-in eksplisit.
+            proxy = (settings.proxy_urls[0]
+                     if settings.proxy_urls and os.getenv("DEXSCREENER_USE_PROXY") == "1"
+                     else None)
             self._client = httpx.AsyncClient(timeout=20.0, headers=UA, proxy=proxy)
         return self._client
 
