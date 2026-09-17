@@ -106,6 +106,12 @@ Legenda: ✅ FIXED+VERIFIED · ⚠️ LIMITASI DIKETAHUI (bukan bug, jangan "dip
   (P3, OS membereskan).
 - S-39: race wallet_pool.json scanner-vs-sweep = last-writer-wins antar
   penulis atomik (report-only, self-healing saat token re-fire).
+- S-39: stock tokens RH chain DI-SKIP dari volume sweep (keputusan user
+  2026-09-17: "nyepam terus"). Daftar = config/sweep_skip_tokens.json
+  (addresses lowercase + symbols exact-match, seed 8 token teramati + ticker
+  besar). Edit file di VPS untuk ubah; fallback embedded kalau file hilang.
+  Hati-hati symbol ambigu: HOOD = token degen TheGreenHood, BUKAN stock —
+  sengaja tidak masuk daftar symbol.
 - S-39: **proxy Webshare (PROXY_URLS_FILE, 1 proxy) flaky** — DexScreener
   (dan sebagian traffic lain) lewat proxy → intermittent `403 SITE_PERMANENTLY_
   BLOCKED` + `SSL WRONG_VERSION_NUMBER`. curl direct SELALU berhasil; ini

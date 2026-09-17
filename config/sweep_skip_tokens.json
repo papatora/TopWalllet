@@ -1,0 +1,14 @@
+{
+  "_doc": "Token RH chain yang DI-SKIP volume sweep (stock/ETF/commodity/wrapped) — keputusan user 2026-09-17. Edit bebas: hapus entry untuk mulai memanen lagi, tambah entry untuk skip. addresses = lowercase, symbols = uppercase exact-match. Hati-hati symbol ambigu (HOOD = token degen TheGreenHood, BUKAN stock).",
+  "addresses": [
+    "0xd0601ce157db5bdc3162bbac2a2c8af5320d9eec",
+    "0x2e0847e8910a9732eb3fb1bb4b70a580adad4fe3",
+    "0x4a0e65a3eccec6dbe60ae065f2e7bb85fae35eea",
+    "0x117cc2133c37b721f49de2a7a74833232b3b4c0c",
+    "0x39dbed3a2bd333467115de45665cc57f813c4571",
+    "0xc9a981fee1f9dec688bb123ccdecc63d0debfc4e",
+    "0xcec185eb182c47d1ba1efc84e6959e18cd620be4",
+    "0xec262a75e413fafd0df80480274532c79d42da09"
+  ],
+  "symbols": ["NVDA", "GOOGL", "SPY", "SPCX", "MSTR", "GLD", "PONS", "TSLA", "AAPL", "MSFT", "AMZN", "META", "PLTR", "NFLX", "AMD", "INTC", "QQQ", "IWM", "SLV", "UBER", "ABNB", "CBTC", "CBETH", "CBSOL", "CBXRP", "CBDOGE"]
+}

@@ -74,6 +74,37 @@ STATE_FILE = Path(REPO_ROOT) / "data" / "volume_sweep_state.json"
 POOL_FILE = Path(settings.results_dir) / "wallet_pool.json"
 LOG_FILE = Path(settings.results_dir) / "volume_sweep_log.jsonl"
 LOCK_FILE = Path(REPO_ROOT) / "data" / ".volume_sweep.lock"
+SKIP_FILE = Path(REPO_ROOT) / "config" / "sweep_skip_tokens.json"
+
+# Stock/ETF/commodity/wrapped tokens RH chain — KE SAMPINGKAN dulu (keputusan
+# user 2026-09-17: "nyepam terus"). File data/sweep_skip_tokens.json bisa
+# diedit di VPS; kalau file hilang, fallback ke daftar ini.
+DEFAULT_SKIP = {
+    "addresses": [
+        "0xd0601ce157db5bdc3162bbac2a2c8af5320d9eec",  # NVDA
+        "0x2e0847e8910a9732eb3fb1bb4b70a580adad4fe3",  # GOOGL
+        "0x4a0e65a3eccec6dbe60ae065f2e7bb85fae35eea",  # SPCX
+        "0x117cc2133c37b721f49de2a7a74833232b3b4c0c",  # SPY
+        "0x39dbed3a2bd333467115de45665cc57f813c4571",  # PONS
+        "0xc9a981fee1f9dec688bb123ccdecc63d0debfc4e",  # GLD
+        "0xcec185eb182c47d1ba1efc84e6959e18cd620be4",  # cbBTC
+        "0xec262a75e413fafd0df80480274532c79d42da09",  # MSTR
+    ],
+    "symbols": ["NVDA", "GOOGL", "SPY", "SPCX", "MSTR", "GLD", "PONS",
+                "TSLA", "AAPL", "MSFT", "AMZN", "META", "PLTR", "NFLX",
+                "AMD", "INTC", "QQQ", "IWM", "SLV", "UBER", "ABNB",
+                "CBTC", "CBETH", "CBSOL", "CBXRP", "CBDOGE"],
+}
+
+
+def load_skip() -> tuple[set[str], set[str]]:
+    try:
+        raw = json.loads(SKIP_FILE.read_text(encoding="utf-8"))
+        return ({a.lower() for a in raw.get("addresses", [])},
+                {s.upper() for s in raw.get("symbols", [])})
+    except (OSError, ValueError):
+        return (set(DEFAULT_SKIP["addresses"]),
+                set(DEFAULT_SKIP["symbols"]))
 
 ZERO_ADDR = "0x" + "0" * 40
 BURN_ADDR = "0x" + "0" * 38 + "dead"
@@ -164,12 +195,13 @@ def load_state() -> dict:
                 "rug": raw.get("rug") or {},
                 "lastSeen": raw.get("lastSeen") or {},
                 "caQueue": raw.get("caQueue") or [],
+                "skipSeen": raw.get("skipSeen") or {},
                 "runs": raw.get("runs") or 0,
             }
     except (ValueError, OSError) as e:
         print(f"[state] failed to load {STATE_FILE}, starting fresh: {e}")
     return {"tags": {}, "tagTrough": {}, "tagHotSince": {}, "rug": {},
-            "lastSeen": {}, "caQueue": [], "runs": 0}
+            "lastSeen": {}, "caQueue": [], "skipSeen": {}, "runs": 0}
 
 
 def save_state(st: dict) -> None:
@@ -307,6 +339,7 @@ async def run_cycle() -> dict:
     st["runs"] = int(st.get("runs") or 0) + 1
     tags = TagState(st["tags"], st["tagTrough"], st["tagHotSince"])
     queue: list[dict] = st["caQueue"]
+    skip_addrs, skip_syms = load_skip()
     g = GmgnClient(rps=1.5)
     now_ms = time.time() * 1000
     now_iso = datetime.now(timezone.utc).isoformat()
@@ -321,6 +354,15 @@ async def run_cycle() -> dict:
             if not ca or len(ca) != 42:
                 continue
             key = token_key(CHAIN, ca)
+            sym_u = str(pick(it, ("symbol", "token_symbol", "name")) or "").upper()
+            # stock/ETF/wrapped KE SAMPINGKAN — sebelum tag gate, jangan
+            # polusi state/log (fire-nya kontinu tiap poll)
+            if ca in skip_addrs or sym_u in skip_syms:
+                if key not in st["skipSeen"]:
+                    st["skipSeen"][key] = now_iso
+                    append_log({"ts": now_iso, "event": "skipped_stock",
+                                "token": ca, "symbol": sym_u})
+                continue
             vol = float(pick(it, ("volume", "vol", "volume_5m", "vol_5m")) or 0)
             liq = float(pick(it, ("liquidity", "liq", "liquidity_usd")) or 0)
             st["lastSeen"][key] = now_iso
@@ -378,6 +420,9 @@ async def run_cycle() -> dict:
         st["tagTrough"] = {k: v for k, v in tags.troughs.items() if k in keep}
         st["tagHotSince"] = {k: v for k, v in tags.hot.items() if k in keep}
         st["rug"] = {k: v for k, v in st["rug"].items() if k in keep}
+        # skipSeen: cukup 200 terbaru (biar file tidak gembung)
+        ss = sorted(st.get("skipSeen", {}).items(), key=lambda kv: kv[1])
+        st["skipSeen"] = dict(ss[-200:])
         st["caQueue"] = queue
         save_state(st)
         merge_pool(pool_entries)
