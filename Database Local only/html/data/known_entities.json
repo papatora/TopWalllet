@@ -1,0 +1,68 @@
+{
+ "_readme": "Robinhood Chain (4663) address registry for the visualizer. Add verified addresses only. type: CEX | DEX | BRIDGE | CONTRACT | FUND | OTHER. Matching wallets/funders render as entity icons (Arkham style) and can be hidden per type. Rebuild the dataset (refresh button in the nav) after editing.",
+ "entities": {
+  "0x0000000000000000000000000000000000000000": {
+   "name": "Null address",
+   "type": "CONTRACT"
+  },
+  "0x000000000000000000000000000000000000dead": {
+   "name": "Burn address",
+   "type": "CONTRACT"
+  },
+  "0x000000431ddc2612c8db1f76a49ba0f78b754443": {
+   "name": "wordfangs.eth",
+   "type": "OTHER",
+   "source": "arkham",
+   "verified_at": "2026-09-17T17:25:30.532190+00:00"
+  },
+  "0x000461a73d3985eef4923655782aa5d0de75c111": {
+   "name": "eca.eth",
+   "type": "OTHER",
+   "source": "arkham",
+   "verified_at": "2026-09-17T17:26:25.888159+00:00"
+  },
+  "0x1195c074f898b7644ba732407619c9804dfe6dce": {
+   "name": "SnuggleVaultAdminSatellite",
+   "type": "OTHER",
+   "source": "arkham",
+   "verified_at": "2026-09-17T18:17:02.151472+00:00"
+  },
+  "0x1319402928807ca1188014bd55f43c63eb794f2d": {
+   "name": "Proxy",
+   "type": "OTHER",
+   "source": "arkham",
+   "verified_at": "2026-09-17T18:17:40.581684+00:00"
+  },
+  "0x1543ba8e1b86ac069dfc04a9e768f33b7ca00447": {
+   "name": "Index Basket cashdog (IB-CASHDOG)",
+   "type": "OTHER",
+   "source": "arkham",
+   "verified_at": "2026-09-17T18:18:06.572295+00:00"
+  },
+  "0x3d90f66b534dd8482b181e24655a9e8265316be9": {
+   "name": "LiquidMesh: Proxy (EIP-1967 Transparent)",
+   "type": "OTHER",
+   "source": "arkham",
+   "verified_at": "2026-09-17T18:26:08.655566+00:00"
+  },
+  "0x42b19e5e3f28c4148c518444546f102f6ba87ab1": {
+   "name": "Uniswap",
+   "type": "DEX",
+   "source": "arkham",
+   "verified_at": "2026-09-17T18:27:47.539002+00:00"
+  },
+  "0x4a86009a36fcec5aa341ffceb3205a911fcf6f60": {
+   "name": "Proxy (EIP-1967 Transparent)",
+   "type": "OTHER",
+   "source": "arkham",
+   "verified_at": "2026-09-17T18:29:35.175009+00:00"
+  },
+  "0x5a6751623861a8b6dbbbcc445638caba55add302": {
+   "name": "\"WazzupCrypto\" on OpenSea",
+   "type": "OTHER",
+   "source": "arkham",
+   "verified_at": "2026-09-17T18:34:02.163822+00:00"
+  }
+ },
+ "_updated": "2026-09-17T18:46:22.181922+00:00"
+}

@@ -18,15 +18,23 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import random
 import re
+import sys
 import time
 from datetime import datetime, timezone
 from pathlib import Path
 
-from playwright.sync_api import sync_playwright
+from dotenv import load_dotenv
 
 REPO = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(REPO / "scripts"))
+load_dotenv(REPO / ".env")
+
+from cf_solver import INJECT_JS, solve_turnstile  # noqa: E402
+
+from playwright.sync_api import sync_playwright  # noqa: E402
 OUT = REPO / "results" / "arkham_entities.json"
 CDP = "http://127.0.0.1:9222"
 
@@ -119,6 +127,21 @@ def main() -> int:
                     page.wait_for_load_state("domcontentloaded", timeout=20000)
                     page.wait_for_timeout(4000)
                     rec = parse_title(page.title(), addr)
+                if rec.get("cf"):
+                    # masih CF → 2captcha Turnstile solve + inject
+                    token = solve_turnstile(page.url, page.content())
+                    if token:
+                        try:
+                            act = page.evaluate(INJECT_JS, token)
+                            page.wait_for_load_state(
+                                "domcontentloaded", timeout=20000)
+                            page.wait_for_timeout(6000)
+                            rec = parse_title(page.title(), addr)
+                            print(f"[{i}/{len(todo)}] 2captcha inject → {act}",
+                                  flush=True)
+                        except Exception as e:
+                            print(f"[{i}/{len(todo)}] inject err {str(e)[:80]}",
+                                  flush=True)
                 if rec.get("cf"):
                     cf_streak += 1
                     print(f"[{i}/{len(todo)}] {addr[:12]} CF-CHALLENGE "
