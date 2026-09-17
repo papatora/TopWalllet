@@ -1,0 +1,8 @@
+{
+  "name": "topwallet-launcher",
+  "version": "1.0.0",
+  "description": "TopWallet local explorer launcher (start/stop server 8787)",
+  "main": "main.js",
+  "scripts": { "start": "electron ." },
+  "devDependencies": { "electron": "33.2.0" }
+}

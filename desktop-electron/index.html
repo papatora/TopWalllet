@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'">
+<title>TopWallet Launcher</title>
+<style>
+:root{
+  --bg:#0b0e18; --panel:#111527; --panel2:#0d1120; --line:#232a45;
+  --text:#e8ebf7; --mut:#7d87ad; --blue:#3d8bff; --green:#2fd38a;
+  --amber:#f2b74a; --red:#ef5d70;
+}
+*{box-sizing:border-box;margin:0}
+html,body{height:100%}
+body{
+  background:var(--bg);color:var(--text);
+  font-family:'Segoe UI',system-ui,sans-serif;
+  display:flex;flex-direction:column;user-select:none;
+}
+body::before{
+  content:"";position:fixed;inset:0;pointer-events:none;opacity:.5;
+  background-image:
+    radial-gradient(circle at 15% 25%,#fff 0 1px,transparent 1.4px),
+    radial-gradient(circle at 45% 70%,#6f7ba6 0 1px,transparent 1.4px),
+    radial-gradient(circle at 78% 20%,#fff 0 1px,transparent 1.4px),
+    radial-gradient(circle at 88% 62%,#8792bc 0 1px,transparent 1.4px);
+  background-size:260px 200px,380px 300px,340px 240px,440px 330px;
+}
+.top{display:flex;align-items:center;gap:10px;padding:14px 18px;
+  border-bottom:1px solid var(--line);position:relative}
+.logo{font-weight:800;letter-spacing:.4px}
+.logo span{margin-right:8px}
+.chain{margin-left:auto;font-size:11px;color:var(--mut);
+  border:1px solid var(--line);border-radius:6px;padding:5px 10px}
+.wrap{flex:1;display:flex;flex-direction:column;gap:14px;padding:18px;overflow:hidden}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px;position:relative}
+.status-row{display:flex;align-items:center;gap:12px}
+.dot{width:11px;height:11px;border-radius:50%;background:#5a6284;flex:0 0 auto}
+.dot.run{background:var(--green);box-shadow:0 0 12px var(--green);animation:pulse 1.8s infinite}
+.dot.ext{background:var(--amber);box-shadow:0 0 12px var(--amber)}
+@keyframes pulse{50%{box-shadow:0 0 3px var(--green)}}
+.status-txt{font-size:14px;font-weight:700}
+.status-sub{font-size:11px;color:var(--mut);margin-top:3px;font-family:Consolas,monospace}
+.btns{display:flex;gap:9px;margin-top:14px;flex-wrap:wrap}
+button{
+  background:#0d1224;color:#c6cfeb;border:1px solid #2a3458;border-radius:7px;
+  padding:10px 15px;font-weight:700;font-size:12px;cursor:pointer;
+  transition:filter .15s,transform .15s;
+}
+button:hover{filter:brightness(1.2);transform:translateY(-1px)}
+button:disabled{opacity:.4;cursor:default;transform:none}
+button.primary{background:#287ff0;border-color:#287ff0;color:#fff}
+button.danger{border-color:#5c2b34;color:#ff8b9a}
+.log{
+  flex:1;background:var(--panel2);border:1px solid var(--line);border-radius:10px;
+  padding:12px;font:11px Consolas,ui-monospace,monospace;color:#8b95ba;
+  overflow-y:auto;white-space:pre-wrap;min-height:120px;
+}
+.log .hint{color:#525b7d}
+footer{padding:8px 18px;font-size:10px;color:#525b7d;border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+  <div class="top">
+    <div class="logo"><span>★</span>TOPWALLET LAUNCHER</div>
+    <div class="chain">Robinhood Chain · 4663</div>
+  </div>
+  <div class="wrap">
+    <div class="card">
+      <div class="status-row">
+        <div class="dot" id="dot"></div>
+        <div>
+          <div class="status-txt" id="stxt">Memeriksa…</div>
+          <div class="status-sub" id="ssub">127.0.0.1:8787</div>
+        </div>
+      </div>
+      <div class="btns">
+        <button class="primary" id="bStart">▶ Mulai Server</button>
+        <button id="bStop">■ Stop</button>
+        <button class="danger" id="bForce">⛔ Stop-paksa</button>
+        <button id="bOpen">↗ Buka Website</button>
+      </div>
+    </div>
+    <div class="log" id="log"><div class="hint">log server muncul di sini…</div></div>
+  </div>
+  <footer>Explorer: http://127.0.0.1:8787 · Stop-paksa mematikan proses APAPUN yang memegang port 8787</footer>
+<script>
+const $ = (id) => document.getElementById(id);
+let forcePid = null;
+function render(s){
+  const dot=$('dot'), t=$('stxt'), sub=$('ssub');
+  if (s.running && s.mine){ dot.className='dot run'; t.textContent='Server jalan (milik launcher)';
+    sub.textContent=`127.0.0.1:8787 · PID ${s.pid}`; forcePid=null; }
+  else if (s.running){ dot.className='dot ext'; t.textContent='Port dipakai proses eksternal';
+    sub.textContent=`127.0.0.1:8787 · PID ${s.pid} — Stop-paksa untuk mematikan`; forcePid=s.pid; }
+  else { dot.className='dot'; t.textContent='Server mati';
+    sub.textContent='127.0.0.1:8787 · bebas'; forcePid=null; }
+  $('bStop').disabled = !s.running;
+  $('bForce').disabled = !s.running;
+}
+function toast(msg){ const d=document.createElement('div'); d.textContent=msg; $('log').appendChild(d); $('log').scrollTop=1e9; }
+$('bStart').onclick = async () => { toast('▶ ' + (await window.launcher.start()).msg); refresh(); };
+$('bStop').onclick = async () => { toast('■ ' + (await window.launcher.stop(false)).msg); refresh(); };
+$('bForce').onclick = async () => { toast('⛔ ' + (await window.launcher.stop(true)).msg); refresh(); };
+$('bOpen').onclick = () => window.launcher.open();
+async function refresh(){ render(await window.launcher.status()); }
+window.launcher.onLog((line) => { toast(line); });
+refresh(); setInterval(refresh, 2000);
+</script>
+</body>
+</html>
