@@ -1,12 +1,14 @@
-# 01 — CURRENT STATE (VPS + Pipeline) — update S-39 (2026-09-16)
+# 01 — CURRENT STATE (VPS + Pipeline) — update S-40 (2026-09-18)
 
 > Baca ini dulu. Setelah itu: HANDOFF_MASTER (playbook top) + FIXED_LEDGER.md
 > + docs/DIRECTIVE_VOLUME_SWEEP.md. Data verified: 2026-09-16 ~18:00 UTC.
 
 ## VPS
-- Supervisor AKTIF. Enrich 94.786 wallet **100% selesai**. Setelah fix retry
-  Etherscan (S-39), prices → analyze lanjot otomatis (price_points/wallet_scores
-  menyusul terisi — cek count DB untuk progress).
+- Supervisor AKTIF. Enrich 94.786 wallet **100% selesai**. prices stage
+  grinding (direct RPC sejak S-40; 403 di-cool+rotate, TIDAK crash lagi) —
+  price_points/wallet_scores masih 0 s.d. S-40; pantau count harian.
+- Jaringan: proxy Webshare DIBLOK CF — dexscreener+rpc wajib direct
+  (default sejak 07da67e).
 - Verifier on-chain: cron 30 menit (2.511 INSIDER proven; TRADER_COVERAGE_GAP
   868; AIRDROP_FARMER 91 per extract 2026-09-16). Defer-safe, flock.
 - **VOLUME SWEEP LIVE**: cron */5, scripts/volume_sweep.py. Tag gate port

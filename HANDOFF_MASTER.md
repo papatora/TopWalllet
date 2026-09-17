@@ -25,23 +25,22 @@
 >   8/10 SHIP); cukup pantau log + by_ca/
 > - Re-ekstraksi DB lokal — SUDAH (94.961 wallet, MD5-verified, S-39)
 >
-> ### LAKUKAN (urutan pasca-compact):
-> 1. Cek VPS: supervisor aktif? **price_points & wallet_scores > 0?** (masih 0
->    saat S-39 ditulis; kalau tetap 0 berhari-hari → grep Traceback
->    supervisor_pipeline.log; retry token_info sudah difix di S-39.
->    Error `403 DexScreener` / `SSL WRONG_VERSION_NUMBER` = proxy Webshare
->    flaky (lihat FIXED_LEDGER limitasi) — bukan bug kode; perbarui proxy
->    kalau mau track-ca makin lancar)
-> 2. Pantau sweep: results/volume_sweep_log.jsonl (event track_ca_done /
->    queue_deferred), results/by_ca/<ca>.json, antrean di
->    data/volume_sweep_state.json (caQueue).
-> 3. ARKHAM FLOW (butuh USER): buka chromium temp → USER LOGIN manual →
->    computer-use/python browse wallet → harvest tag CEX → known_entities.json.
-> 4. Rug-event detector + old-token pump sweep (bahan sudah mengalir via
->    by_ca/ + wallet_pool.json).
-> 5. Setiap fix baru → UPDATE FIXED_LEDGER.md + PRE_COMPACT snapshot +
->    commit + push via VPS. Klaim "method ada" WAJIB di-pin test binding
->    (pola: tests/test_track_ca_binding.py).
+> ### LAKUKAN (urutan pasca-compact — S-40):
+> 1. ARKHAM RECHECK (dalam progress): `python scripts/arkham_open.py brave`
+>    → pastikan login hidup → jalankan `scripts/arkham_orchestrator.py`
+>    (bg task; status live = results/arkham_status.json) → klik CF checkbox
+>    di Brave kalau muncul. Tuntas 611 → merge → POST /api/rebuild.
+> 2. Fix cf_solver: sitekey Turnstile ada DI DALAM iframe
+>    challenges.cloudflare.com — ekstrak via page.frames, baru order
+>    2captcha TurnstileTaskProxyless (API-nya sendiri belum pernah ter-tes).
+> 3. Cek VPS: **price_points > 0?** (masih 0 s.d. S-40; kalau 0 terus,
+>    grep Traceback; 403/SSL = proxy Webshare — direct sudah default).
+> 4. Goal #1 re-verify cluster (Trace Address funder f70d/be41 di arkham).
+> 5. Goal #3 DIAMOND via Grok/X — kredensial akun X ada file Downloads user
+>    (JANGAN masuk git; simpan ke VPS .env); referensi tool: AgentX.
+> 6. Goal #4 app paste-CA (rating 0-10, cluster, deployer, funding).
+> 7. Setiap fix → UPDATE FIXED_LEDGER.md + PRE_COMPACT + push via VPS.
+>    Klaim "method ada" WAJIB di-pin test binding.
 >
 > ### EXPLORER LOKAL: Desktop "TopWallet Launcher" shortcut → Mulai Server →
 > 127.0.0.1:8787 (dataset dibangun fresh dari DB S-39 saat start pertama).

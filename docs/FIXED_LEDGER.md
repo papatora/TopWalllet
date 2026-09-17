@@ -87,6 +87,18 @@ Legenda: ✅ FIXED+VERIFIED · ⚠️ LIMITASI DIKETAHUI (bukan bug, jangan "dip
   Desktop pakai SHORTCUT (.lnk) ke exe di folder itu. Jangan salin exe-nya
   langsung ke Desktop lagi.
 
+- ✅ S-40: launcher native WinForms (tools/launcher/launcher.cs →
+  desktop/TopWalletLauncher.exe via csc.exe bawaan Windows) menggantikan
+  Tauri yang not-responding 100%. Electron di-park (binary download diblok
+  jaringan user). Shortcut Desktop menunjuk exe baru.
+- ✅ S-40: dexscreener + rpc direct-by-default (proxy Webshare diblok CF
+  permanen — penjelasan semua 403); rpc 403 cool+rotate, bukan crash.
+- ✅ S-40: arkham harvester deteksi "Something went wrong" (error app
+  Arkham ≠ unlabeled) + retry + stop-safe 8x beruntun.
+- ✅ S-40: skip stock tokens via config/sweep_skip_tokens.json.
+- ✅ S-40: explorer server mati saat user tes Stop-paksa = FITUR bekerja,
+  bukan bug. Restart cukup dari launcher (Mulai) atau hidden-start.
+
 ## ⚠️ LIMITASI DIKETAHUI (bukan bug — JANGAN "diperbaiki")
 - Wallet cap 600: churn reheat ±7 detik (sim O(n²)) — pakai FREEZE; decay
   sudah 0.035 (2× lebih cepat dari semula).
@@ -118,6 +130,13 @@ Legenda: ✅ FIXED+VERIFIED · ⚠️ LIMITASI DIKETAHUI (bukan bug, jangan "dip
   infrastruktur proxy, bukan kode. Queue sweep me-retry (6x/30 menit) dan
   token re-fire via sustain/double — biarkan; kalau mau tuntas: perbarui
   daftar proxy Webshare atau tambah proxy kedua di PROXY_URLS_FILE.
+- S-40: **cf_solver BELUM berfungsi** — selalu gagal "sitekey tidak
+  ketemu": sitekey Turnstile ada DI DALAM iframe challenges.cloudflare.com,
+  ekstraksi harus dari page.frames (besok). Klik manual CF sesekali masih
+  diperlukan sampai fix.
+- S-40: SNIPERS/BUNDLERS "—" di token top-traders = data sah (cuma 90
+  token rug kecil yang punya sniper berlabel; 0 di token blue-chip).
+  Lihat scope "Flagged" di halaman Tokens.
 - S-39: `database is locked` lama di log = era 3-writer (sudah lewat);
   era sekarang single-writer + orphan-killer. Kalau muncul LAGI berarti
   ada proses asing yang menulis DB — cek dulu `ps -eo pid,cmd | grep python`.

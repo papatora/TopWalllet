@@ -1027,3 +1027,93 @@ bug yang ditemukan, baru update dokumen. Jangan minta input kecil-kecil.
 - Next: Arkham flow (user login manual dulu di chromium temp) → rug-event
   detector + old-token pump sweep → naming label (menunggu user).
 - Keputusan user tersisa: filter stock tokens dari sweep atau biarkan.
+
+## SNAPSHOT S-40 — ARKHAM FLOW + LAUNCHER NATIVE + ROOT-CAUSE JARINGAN (2026-09-17/18)
+
+### A. VOLUME SWEEP — FILTER STOCK (keputusan user)
+- Token stock/ETF/wrapped RH chain DI-SKIP ("nyepam terus"): daftar di
+  config/sweep_skip_tokens.json (8 alamat teramati + 26 ticker). Edit file
+  di VPS untuk ubah. HOOD sengaja TIDAK di-daftar symbol (bentrok dgn
+  TheGreenHood degen). Log sekali per token: skipped_stock. Commit dbe838f.
+
+### B. ROOT-CAUSE JARINGAN VPS (penjelasan semua misteri 403/429)
+- **Proxy Webshare (PROXY_URLS_FILE) DIBLOK CF PERMANEN** — dex_scraper +
+  rpc_client dipaksa lewat proxy → DexScreener 403 SITE_PERMANENTLY_BLOCKED
+  (212 gagal beruntun) + RPC Robinhood 403 → prices crash. curl direct
+  SELALU 200. FIX (07da67e): keduanya direct-by-default (proxy = opt-in env
+  DEXSCREENER_USE_PROXY/RPC_USE_PROXY) + RPC 403 ikut cool+rotate (dulu
+  langsung raise → cycle mati). Setelah fix: prices grinding tanpa crash
+  (3.4K rotasi) tapi price_points MASIH 0 — first-run 1.567 token berat;
+  biarkan, pantau count-nya tiap hari.
+
+### C. LAUNCHER — TAURI PENSIUN, NATIVE WINFORMS JADI (goal #2)
+- Tauri not-responding 100% saat buka/tutup (keluhan user). Electron dicoba
+  (permintaan user) tapi **binary-nya gagal di-download jaringan user**
+  (GitHub + npmmirror sama gagal senyap) — scaffold di-park di
+  desktop-electron/ (node_modules di-gitignore).
+- JADI: **tools/launcher/launcher.cs → desktop/TopWalletLauncher.exe (14KB)**
+  dikompile dgn csc.exe BAWAAN WINDOWS (zero install). Fitur = Tauri
+  (Mulai/Stop/Stop-paksa/Buka/log live; semua async, mustahil nge-freeze).
+  Shortcut Desktop "TopWallet Launcher.lnk" → exe baru (shortcut Tauri lama
+  di-rename). User sudah coba & tombol Stop-paksa-nya terbukti bekerja
+  (membunuh server hidden-ku 😄 — itu bukan bug).
+
+### D. ARKHAM FLOW — BRAVE + CDP + HARVESTER (jalan setengah jalan)
+- IAB ZCode GAGAL login (WebView fingerprint diblok). Solusi:
+  **scripts/arkham_open.py brave** → Brave ASLI + profile khusus
+  data/arkham-profile-brave + remote-debugging :9222 → user LOGIN MANUAL →
+  session persist. Playwright attach via connect_over_cdp.
+- Harvest (scripts/arkham_harvest.py): buka arkm.com/explorer/address/<ca>,
+  **entity terlihat di TITLE** ("Binance: Hot Wallet (0x28C) | Arkham");
+  tanpa label = title polos. Checkpoint atomic per address →
+  results/arkham_entities.json; merge ke known_entities via arkham_merge.py
+  (TYPE_MAP category → CEX/DEX/BRIDGE/FUND/OTHER).
+- ANTREAN: v1 (top volume) SALAH SASARAN — wallet degen fresh, 3% labeled.
+  v2 = INDUKAN senders (431 wallet dev) + funder; ditemukan jg: mayoritas
+  dev RH chain TIDAK berlabel Arkham (wallet segar) → intel cluster
+  sebenarnya lewat goal #3 (Grok/X), bukan label Arkham.
+- RINTANGAN + STATUS: (1) CF challenge berkala → solver 2captcha
+  (scripts/cf_solver.py) TERPASANG tapi **GAGAL di step-1: sitekey tidak
+  ketemu** — sitekey ada DI DALAM iframe challenges.cloudflare.com, bukan
+  HTML luar; API 2captcha belum pernah ter-order. FIX besok: ekstrak
+  sitekey/cData dari frame (page.frames) → baru order. Sampai itu, klik
+  manual di window Brave tetap dibutuhkan sesekali. (2) **"Something went
+  wrong" = error Arkham sendiri saat dilempiri** — dulu tercatat sbg
+  "unlabeled" (KONTOminasi!) → sekarang dideteksi (arkham_error), retry,
+  dicatat sbg error; 379 unlabeled terkontaminasi sudah di-purge dan
+  di-recheck. (3) Banner TOS perlu di-agree sekali (sudah).
+- PROGRESS: 399/611 dicek (379 di antaranya terkontaminasi → recheck penuh
+  berjalan dgn orchestrator), **20 labeled terverifikasi**: Uniswap (DEX),
+  SnuggleVaultAdminSatellite, LiquidMesh Proxy, Index Basket cashdog,
+  "WazzupCrypto" OpenSea, eca.eth, wordfangs.eth, dll → known_entities.json.
+- ORKESTRATOR: scripts/arkham_orchestrator.py = loop panen→merge sampai
+  habis (status live: results/arkham_status.json; exit 1 = butuh klik CF).
+- SAAT INI: DI-STOP (user mau tidur). Lanjut: jalankan orchestrator lagi,
+  klik CF kalau muncul; habis → merge → rebuild dataset explorer.
+
+### E. AUDIT WEB EXPLORER (semua halaman di-screenshot)
+- "Something wrong" pertama ternyata SERVER MATI (Stop-paksa user — fitur
+  OK). Setelah hidup: dashboard/leaderboard/explorer/tokens sehat dgn data
+  fresh. Kolom SNIPERS/BUNDLERS "—" di token top = SAH (cuma 90 token rug
+  kecil ber-sniper berlabel; lihat scope "Flagged"). Price trend kosong +
+  W/L degenerat = nunggu analyze VPS. UX catatan: default sort explorer
+  mungkin ganti ke net-flow (belum).
+
+### F. GOAL #3 PREP (X/Grok CT-attribution)
+- User sediakan 10+10 akun X (file di Downloads\Telegram Desktop\
+  X10akun.txt + "10x akun extra.txt" — **KREDENSIAL: JANGAN pernah masuk
+  git/repo/laporan; simpan ke VPS .env saat implementasi**). Tool referensi:
+  github.com/DezXBT/AgentX. User menekankan: X search sering miss; manfaatkan
+  GROK (free tier via akun X) untuk tanya "wallet ini siapa" — Grok bisa
+  nemu yang X-search gak ketemu. Target: label DIAMOND utk wallet trading
+  asli PnL bagus tanpa indikasi insider/airdrop/phishing (pola: selalu beli
+  bawah → pump; boleh sniper-bot kalau PnL konsisten bagus — user bilang
+  "kamu yg tau lah, proaktif").
+
+### G. URUTAN BESOK
+1. Lanjut recheck arkham (orchestrator + klik CF) → merge final → rebuild
+   dataset explorer → naming tampil.
+2. Fix cf_solver sitekey-from-frame → tes order 2captcha pertama.
+3. Goal #1: Trace Address funder cluster (f70d/be41) via arkham → re-verify.
+4. Goal #3: DIAMOND hunt (Grok/X). 5. Goal #4: app paste-CA.
+6. Pantau price_points VPS (analyze) — masih 0 s.d. malam ini.

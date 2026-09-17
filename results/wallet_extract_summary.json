@@ -1,0 +1,347 @@
+{
+ "generated_at": "2026-09-15T15:04:30.398788+00:00",
+ "universe": {
+  "wallets_total": 94786,
+  "wallets_with_swaps": 42779,
+  "wallets_classified": 32456,
+  "wallets_unclassified": 62330,
+  "swap_events": 365059,
+  "tokens_in_db": 1378
+ },
+ "primary_types": {
+  "GENERALIST": 28340,
+  "INSIDER": 2611,
+  "TRADER_COVERAGE_GAP": 772,
+  "BUNDLER_SUSPECT": 447,
+  "SNIPER": 127,
+  "AIRDROP_FARMER": 87,
+  "DEV": 32,
+  "CT_ATTRIBUTED": 15,
+  "CLUSTER_MEMBER:cluster_be41": 14,
+  "MEV_BOT": 9,
+  "CLUSTER_MEMBER:cluster_f70d": 2
+ },
+ "verification": {
+  "TRADER_MISREAD": 806,
+  "CONFIRMED_INSIDER": 712,
+  "AIRDROP_SPAM": 90,
+  "MINT_ALLOCATION": 18,
+  "ERROR": 4
+ },
+ "clusters": {
+  "cluster_be41": {
+   "members": 14,
+   "funder": "0xbe410ab5796844413d5a5c04684021be00a26182"
+  },
+  "cluster_f70d": {
+   "members": 2,
+   "funder": "0xf70da97812cb96acdf810712aa562db8dfa3dbef"
+  }
+ },
+ "top_by_swaps": [
+  {
+   "wallet": "0xc87b51c71707cfdd08cd374a596a6946cb1d6a66",
+   "swaps": 4132,
+   "tokens": 130,
+   "primary_type": "GENERALIST"
+  },
+  {
+   "wallet": "0x2a4d34cd09a36f59ae3bedc0880cd5da929321d7",
+   "swaps": 2397,
+   "tokens": 68,
+   "primary_type": "GENERALIST"
+  },
+  {
+   "wallet": "0x53e68553ca08f512423628d64c01b0a14dfcda99",
+   "swaps": 1586,
+   "tokens": 43,
+   "primary_type": "GENERALIST"
+  },
+  {
+   "wallet": "0xc207df8dc9ee5113c6374c70c2a29bb87e94cfdf",
+   "swaps": 1203,
+   "tokens": 28,
+   "primary_type": "GENERALIST"
+  },
+  {
+   "wallet": "0xd01d7d0f1d7db0aa59fd346762aa4a9c10da2257",
+   "swaps": 1170,
+   "tokens": 69,
+   "primary_type": "GENERALIST"
+  },
+  {
+   "wallet": "0x05607d87494c3f9d6e43be2c2e5ed23a95574548",
+   "swaps": 1071,
+   "tokens": 43,
+   "primary_type": "GENERALIST"
+  },
+  {
+   "wallet": "0x47bf6b73b6c560c4140f9b893419b4a8ed5543f5",
+   "swaps": 751,
+   "tokens": 18,
+   "primary_type": "MEV_BOT"
+  },
+  {
+   "wallet": "0x1c66ae54d5e4ee86980c90edbc55ddb29161b4ea",
+   "swaps": 726,
+   "tokens": 38,
+   "primary_type": "GENERALIST"
+  },
+  {
+   "wallet": "0x5c87ecc36bb97380469be09ef95dc4daf50165ec",
+   "swaps": 663,
+   "tokens": 17,
+   "primary_type": "GENERALIST"
+  },
+  {
+   "wallet": "0xbfd0cec1d90aee7c10b923419fb9b043845eaecd",
+   "swaps": 659,
+   "tokens": 17,
+   "primary_type": "DEV"
+  },
+  {
+   "wallet": "0x4acb6c4321253548a7d4bb9c84032cc4ee04bfd7",
+   "swaps": 584,
+   "tokens": 55,
+   "primary_type": "UNCLASSIFIED"
+  },
+  {
+   "wallet": "0xb6fa4b1b14859d7d1c6cd2e2be026c5b9b5074d6",
+   "swaps": 544,
+   "tokens": 15,
+   "primary_type": "TRADER_COVERAGE_GAP"
+  },
+  {
+   "wallet": "0xf5c4f3dc02c3fb9279495a8fef7b0741da956157",
+   "swaps": 514,
+   "tokens": 325,
+   "primary_type": "TRADER_COVERAGE_GAP"
+  },
+  {
+   "wallet": "0x1c35438a169cc8480e955e0d24ad6964280b8cf2",
+   "swaps": 399,
+   "tokens": 11,
+   "primary_type": "GENERALIST"
+  },
+  {
+   "wallet": "0xac032e1a03b4b5f32cc10de7addfcd0cf1342440",
+   "swaps": 398,
+   "tokens": 11,
+   "primary_type": "GENERALIST"
+  },
+  {
+   "wallet": "0x1f801796e001b0766c198e7e018922f05e331ebd",
+   "swaps": 378,
+   "tokens": 11,
+   "primary_type": "GENERALIST"
+  },
+  {
+   "wallet": "0x5f1c5951c5b1cc112ba9e89b9467edca33063453",
+   "swaps": 369,
+   "tokens": 17,
+   "primary_type": "GENERALIST"
+  },
+  {
+   "wallet": "0xca5b3bbb368db39d223a9fa57a577f9a98a03638",
+   "swaps": 369,
+   "tokens": 162,
+   "primary_type": "TRADER_COVERAGE_GAP"
+  },
+  {
+   "wallet": "0x18f8ee7f717b6acdc7506f05ff98b80fa08ce8b8",
+   "swaps": 360,
+   "tokens": 20,
+   "primary_type": "SNIPER"
+  },
+  {
+   "wallet": "0xc0b3535e207830706656016b62806d8fe9e6ae6e",
+   "swaps": 354,
+   "tokens": 62,
+   "primary_type": "GENERALIST"
+  },
+  {
+   "wallet": "0x6d1bcb7072582ddba60450f9cc94e1eb1315a68b",
+   "swaps": 345,
+   "tokens": 11,
+   "primary_type": "GENERALIST"
+  },
+  {
+   "wallet": "0x64ac9cf2244b6b9f2305915d2170fe98c1e1b920",
+   "swaps": 343,
+   "tokens": 11,
+   "primary_type": "GENERALIST"
+  },
+  {
+   "wallet": "0xb2fce99e88f9c2a5a9c522d0bb1acf1cddf7e1b9",
+   "swaps": 335,
+   "tokens": 19,
+   "primary_type": "GENERALIST"
+  },
+  {
+   "wallet": "0xad01c20d5886137e056775af56915de824c8fce5",
+   "swaps": 321,
+   "tokens": 181,
+   "primary_type": "TRADER_COVERAGE_GAP"
+  },
+  {
+   "wallet": "0xb5de07c35473758a1055ead6e3fd77ee1289ca4e",
+   "swaps": 321,
+   "tokens": 15,
+   "primary_type": "GENERALIST"
+  },
+  {
+   "wallet": "0xf4bbb2b6cc81a3a7339cdbfa085aa59d65525b00",
+   "swaps": 301,
+   "tokens": 9,
+   "primary_type": "GENERALIST"
+  },
+  {
+   "wallet": "0xb5b93f7647118dbc8ba73f8b67e1ed6e6acad4be",
+   "swaps": 294,
+   "tokens": 9,
+   "primary_type": "GENERALIST"
+  },
+  {
+   "wallet": "0x000000000000000000000000000000000000dead",
+   "swaps": 293,
+   "tokens": 12,
+   "primary_type": "GENERALIST"
+  },
+  {
+   "wallet": "0x547dd6e4b0296446837d15776e1d9318ba20824f",
+   "swaps": 286,
+   "tokens": 7,
+   "primary_type": "GENERALIST"
+  },
+  {
+   "wallet": "0xcf392f62151fe078a5c26c6fd7e6bc5f15d9735a",
+   "swaps": 285,
+   "tokens": 11,
+   "primary_type": "GENERALIST"
+  },
+  {
+   "wallet": "0x549c902c63787a66424f8422e8968481694892f3",
+   "swaps": 272,
+   "tokens": 6,
+   "primary_type": "GENERALIST"
+  },
+  {
+   "wallet": "0xf08ad284b5f314f1db27a5c327396cf6b6f028d2",
+   "swaps": 261,
+   "tokens": 54,
+   "primary_type": "SNIPER"
+  },
+  {
+   "wallet": "0x25ccf46fcd73f758d9f457c52cec091a691ec327",
+   "swaps": 255,
+   "tokens": 6,
+   "primary_type": "GENERALIST"
+  },
+  {
+   "wallet": "0x18ea5238af7db263383c1076d3652b77e22c0347",
+   "swaps": 249,
+   "tokens": 12,
+   "primary_type": "GENERALIST"
+  },
+  {
+   "wallet": "0xbf530f1bfb23bf332d1f1e41be026a5895fcced4",
+   "swaps": 249,
+   "tokens": 16,
+   "primary_type": "GENERALIST"
+  },
+  {
+   "wallet": "0xc6757edfb71417360e04a0f9a0dbc4ad82ba0ae2",
+   "swaps": 240,
+   "tokens": 6,
+   "primary_type": "GENERALIST"
+  },
+  {
+   "wallet": "0x12f2e8f86716b56cc8dbbcd591e14bff61fd5838",
+   "swaps": 239,
+   "tokens": 8,
+   "primary_type": "UNCLASSIFIED"
+  },
+  {
+   "wallet": "0xfcce7b17307085c8edffcefdcff5de5f1f4875aa",
+   "swaps": 238,
+   "tokens": 14,
+   "primary_type": "GENERALIST"
+  },
+  {
+   "wallet": "0x2b71d95cad309f5b92694b6ee0999115a89a1a19",
+   "swaps": 231,
+   "tokens": 13,
+   "primary_type": "GENERALIST"
+  },
+  {
+   "wallet": "0xb754e001604508f841d768e64d38b7c98c859c05",
+   "swaps": 231,
+   "tokens": 14,
+   "primary_type": "GENERALIST"
+  },
+  {
+   "wallet": "0xdfbbd4d45c1cac8e437d74dcbb71545839c83951",
+   "swaps": 228,
+   "tokens": 31,
+   "primary_type": "GENERALIST"
+  },
+  {
+   "wallet": "0xe09b3cccfabf44960e806fc5dd7c48a9214da02b",
+   "swaps": 227,
+   "tokens": 6,
+   "primary_type": "GENERALIST"
+  },
+  {
+   "wallet": "0x3ae42e04c0affd1394c6a6025451c903e9a65d9b",
+   "swaps": 221,
+   "tokens": 9,
+   "primary_type": "GENERALIST"
+  },
+  {
+   "wallet": "0x24e7a8963c07dc0ad58098172ab2b9826bc90fb2",
+   "swaps": 218,
+   "tokens": 6,
+   "primary_type": "GENERALIST"
+  },
+  {
+   "wallet": "0x464fc339add314932920d3e060745bd7ea3e92ad",
+   "swaps": 217,
+   "tokens": 12,
+   "primary_type": "GENERALIST"
+  },
+  {
+   "wallet": "0x88cf4a2a954a21736ad1bb007c67066d6a5e98cb",
+   "swaps": 217,
+   "tokens": 9,
+   "primary_type": "GENERALIST"
+  },
+  {
+   "wallet": "0xf145f6f5ac4fbfa726be34425ebdceb61c0607e5",
+   "swaps": 215,
+   "tokens": 8,
+   "primary_type": "GENERALIST"
+  },
+  {
+   "wallet": "0x91dc0fbd6d30783abea7291b512bfe59d2294a3c",
+   "swaps": 210,
+   "tokens": 5,
+   "primary_type": "GENERALIST"
+  },
+  {
+   "wallet": "0x70da00d844a1372d81ccb537804b3c8e43a3f57c",
+   "swaps": 208,
+   "tokens": 5,
+   "primary_type": "GENERALIST"
+  },
+  {
+   "wallet": "0xb0bdb450ebdf39e5957527e4637257b4f131f7c2",
+   "swaps": 205,
+   "tokens": 17,
+   "primary_type": "GENERALIST"
+  }
+ ],
+ "files": {
+  "csv": "results/wallet_extract.csv",
+  "labels": "results/wallet_labels.json"
+ }
+}

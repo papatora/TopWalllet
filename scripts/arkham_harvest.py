@@ -91,6 +91,15 @@ def detect_category(body_head: str) -> str:
     return ""
 
 
+def arkham_error(page) -> bool:
+    """Arkham kadang me-render 'Something went wrong' (error app-nya, bukan
+    CF) saat dilempiri request — halaman begitu BUKAN bukti 'unlabeled'."""
+    try:
+        return "something went wrong" in page.inner_text("body")[:900].lower()
+    except Exception:
+        return False
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--queue", default=str(REPO / "results" / "arkham_queue.json"))
@@ -107,6 +116,7 @@ def main() -> int:
     if not todo:
         return 0
     cf_streak = 0
+    err_streak = 0
     labeled = 0
     with sync_playwright() as p:
         b = p.chromium.connect_over_cdp(CDP)
@@ -152,6 +162,27 @@ def main() -> int:
                     time.sleep(8)
                     continue
                 cf_streak = 0
+                if arkham_error(page):
+                    # retry sekali sebelum menyatakan error
+                    time.sleep(6)
+                    page.reload(timeout=40000)
+                    page.wait_for_load_state("domcontentloaded", timeout=20000)
+                    page.wait_for_timeout(4500)
+                    if arkham_error(page):
+                        now2 = datetime.now(timezone.utc).isoformat()
+                        done[addr] = {"error": "something went wrong",
+                                      "checked_at": now2}
+                        save_out(done)
+                        err_streak += 1
+                        print(f"[{i}/{len(todo)}] {addr[:12]} ARKHAM-ERROR "
+                              f"(streak {err_streak})", flush=True)
+                        if err_streak >= 8:
+                            print("Arkham error 8x beruntun — situs lagi "
+                                  "sakit, berhenti dulu")
+                            break
+                        time.sleep(6)
+                        continue
+                err_streak = 0
                 if rec.get("entity"):
                     labeled += 1
                     body = page.inner_text("body")[:2500]

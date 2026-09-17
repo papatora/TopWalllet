@@ -62,7 +62,67 @@
    "type": "OTHER",
    "source": "arkham",
    "verified_at": "2026-09-17T18:34:02.163822+00:00"
+  },
+  "0x14e1f3c9cc91c53cb698690a632b51763fb080f9": {
+   "name": "Proxy (EIP-1967 Beacon)",
+   "type": "OTHER",
+   "source": "arkham",
+   "verified_at": "2026-09-17T18:53:25.475880+00:00"
+  },
+  "0x4ef94cd1ab45ebbb50f9e73cd6e45c5027caa3f7": {
+   "name": "Uniswap",
+   "type": "DEX",
+   "source": "arkham",
+   "verified_at": "2026-09-17T18:53:57.232328+00:00"
+  },
+  "0x89593d890abcb7170c71a9b468792adf72437bc8": {
+   "name": "up",
+   "type": "DEX",
+   "source": "arkham",
+   "verified_at": "2026-09-17T18:57:58.904346+00:00"
+  },
+  "0x8abf9bcd988d45d620ffc271088d88cf528388c6": {
+   "name": "up",
+   "type": "DEX",
+   "source": "arkham",
+   "verified_at": "2026-09-17T18:59:11.968509+00:00"
+  },
+  "0x8cab1a08db8f4a456afc0fb5a4a7b5c1a73e5621": {
+   "name": "up",
+   "type": "DEX",
+   "source": "arkham",
+   "verified_at": "2026-09-17T18:59:43.970568+00:00"
+  },
+  "0x9362adfa40631bafcf939892279980f83ed7fbfb": {
+   "name": "Proxy (EIP-1967 Beacon)",
+   "type": "OTHER",
+   "source": "arkham",
+   "verified_at": "2026-09-17T19:01:50.623453+00:00"
+  },
+  "0x9e0fb6dfb40bb8a8f7495e2f16c40373e2c90eae": {
+   "name": "up",
+   "type": "DEX",
+   "source": "arkham",
+   "verified_at": "2026-09-17T19:04:56.984770+00:00"
+  },
+  "0xa163b2891fce06434fee3815b37c804eaa7e3159": {
+   "name": "Proxy (EIP-1167 Minimal)",
+   "type": "OTHER",
+   "source": "arkham",
+   "verified_at": "2026-09-17T19:05:38.724422+00:00"
+  },
+  "0xb55586f824a02b7c58c8586dbb2b157f46904172": {
+   "name": "Proxy (EIP-1167 Minimal)",
+   "type": "OTHER",
+   "source": "arkham",
+   "verified_at": "2026-09-17T19:09:45.129444+00:00"
+  },
+  "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f": {
+   "name": "Relay.link: RelayRouterV3",
+   "type": "BRIDGE",
+   "source": "arkham",
+   "verified_at": "2026-09-17T19:10:47.612979+00:00"
   }
  },
- "_updated": "2026-09-17T18:46:22.181922+00:00"
+ "_updated": "2026-09-17T19:19:07.160610+00:00"
 }
