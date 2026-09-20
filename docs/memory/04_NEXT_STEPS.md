@@ -21,12 +21,19 @@
 ## PRIORITAS SETELAH ARKHAM TUNTAS
 1. Goal #1 — re-verify cluster: Trace Address funder f70d/be41 di arkm.com
    + cross-check label entity → koreksi confidence cluster kita.
-2. Goal #3 — DIAMOND hunt: atribusi CT via GROK (akun X user; file
+2. **Goal #5 (usulan user 2026-09-20) — RE-VERIFY CLUSTER VIA BUBBLEMAPS**:
+   setelah labeling by Robinscan/Etherscan, cross-validate deteksi cluster
+   pakai bubblemaps.io (pendekatan berbeda; Etherscan = RAW + NOISE — tx
+   count & kompresi timestamp bisa bikin salah label). Bubblemaps diyakini
+   lebih akurat utk struktur cluster. Implementasi: kirim address cluster
+   kita → bandingkan anggota cluster bubblemaps vs milik kita → catat
+   selisih → koreksi confidence/label. Jalankan SETELAH goal #1.
+3. Goal #3 — DIAMOND hunt: atribusi CT via GROK (akun X user; file
    kredensial di Downloads, JANGAN masuk git; simpan ke VPS .env; tool
    referensi github.com/DezXBT/AgentX). Label baru: DIAMOND (trading asli,
    PnL tinggi, tanpa indikasi insider/airdrop/phishing; pola beli-bawah-
    pump; sniper-bot dengan PnL konsisten boleh dipertimbangkan).
-3. Goal #4 — app paste-CA: paste CA/link GMGN/DexScreener → rating 0-10,
+4. Goal #4 — app paste-CA: paste CA/link GMGN/DexScreener → rating 0-10,
    cluster, deployer, funding, sosial, ada di DB kita atau tidak.
 
 ## BERJALAN OTOMATIS (pantau saja)

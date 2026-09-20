@@ -122,7 +122,283 @@
    "type": "BRIDGE",
    "source": "arkham",
    "verified_at": "2026-09-17T19:10:47.612979+00:00"
+  },
+  "0x2316081e4b93e10496057f28c3fe18bba1362817": {
+   "name": "Proxy (EIP-1967 Beacon)",
+   "type": "OTHER",
+   "source": "arkham",
+   "verified_at": "2026-09-20T17:55:01.713207+00:00"
+  },
+  "0x236ba666519e862f592f1736f8ad1881430c25c3": {
+   "name": "Proxy (EIP-1967 Beacon)",
+   "type": "OTHER",
+   "source": "arkham",
+   "verified_at": "2026-09-20T17:55:18.946035+00:00"
+  },
+  "0x265466bc6c8815e6a3159feb788d28d55b61cc92": {
+   "name": "PonsV2BondingCurve",
+   "type": "OTHER",
+   "source": "arkham",
+   "verified_at": "2026-09-20T17:55:39.618303+00:00"
+  },
+  "0x2c9b14be21fbd6396852f269a2b5de17817a5f53": {
+   "name": "Proxy (EIP-1967 Beacon)",
+   "type": "OTHER",
+   "source": "arkham",
+   "verified_at": "2026-09-20T17:56:17.666542+00:00"
+  },
+  "0x2dbaf98620ac5bbe3441f756feff82702d095b1a": {
+   "name": "MEXC: Hot Wallet",
+   "type": "CEX",
+   "source": "arkham",
+   "verified_at": "2026-09-20T17:56:39.137260+00:00"
+  },
+  "0x39b38686a19836ac10162c490e4558e120cbbe5f": {
+   "name": "0x",
+   "type": "DEX",
+   "source": "arkham",
+   "verified_at": "2026-09-20T17:58:57.481116+00:00"
+  },
+  "0x458596e25809736dc787f985d48493c37c28eeb7": {
+   "name": "PonsV2BondingCurve",
+   "type": "OTHER",
+   "source": "arkham",
+   "verified_at": "2026-09-20T18:07:20.634469+00:00"
+  },
+  "0x534577f108201cdd0f121ed5f7ff97b8994bbd07": {
+   "name": "up",
+   "type": "DEX",
+   "source": "arkham",
+   "verified_at": "2026-09-20T18:11:23.382782+00:00"
+  },
+  "0x59c47bc5542d32b318d546f3fd45323df2aea52e": {
+   "name": "Proxy (EIP-1967 Beacon)",
+   "type": "OTHER",
+   "source": "arkham",
+   "verified_at": "2026-09-20T18:12:58.029914+00:00"
+  },
+  "0x5a705de8982235a7fa45bb83dcacf03a211389c7": {
+   "name": "1inch",
+   "type": "OTHER",
+   "source": "arkham",
+   "verified_at": "2026-09-20T18:13:31.887099+00:00"
+  },
+  "0x5aa6f2d13b04eeef150dc029ab1e7567d31eb47f": {
+   "name": "Proxy (EIP-1967 Beacon)",
+   "type": "OTHER",
+   "source": "arkham",
+   "verified_at": "2026-09-20T18:13:52.478112+00:00"
+  },
+  "0x5bed8fde4b9a605b2b7f7027c6d8b0f08c911165": {
+   "name": "up",
+   "type": "DEX",
+   "source": "arkham",
+   "verified_at": "2026-09-20T18:14:41.245812+00:00"
+  },
+  "0x5dd66518b00707f03466100cfef9eb827a9adf43": {
+   "name": "Proxy (EIP-1967 Beacon)",
+   "type": "OTHER",
+   "source": "arkham",
+   "verified_at": "2026-09-20T18:15:24.930350+00:00"
+  },
+  "0x65050a9b7e5075a2ba5ced7b1b64ee66262c40dc": {
+   "name": "GMGN",
+   "type": "OTHER",
+   "source": "arkham",
+   "verified_at": "2026-09-20T18:16:36.735582+00:00"
+  },
+  "0x66ea6757416367ac404cc55764008925d8b53a44": {
+   "name": "up",
+   "type": "DEX",
+   "source": "arkham",
+   "verified_at": "2026-09-20T18:17:41.303535+00:00"
+  },
+  "0x68699b1ca916ff6c9aa28c81bd94f3e49474ac52": {
+   "name": "Proxy (EIP-1967 Beacon)",
+   "type": "OTHER",
+   "source": "arkham",
+   "verified_at": "2026-09-20T18:18:01.090217+00:00"
+  },
+  "0x6e4d8093e169865d60c707d00f050b0fa70bbe96": {
+   "name": "up",
+   "type": "DEX",
+   "source": "arkham",
+   "verified_at": "2026-09-20T18:19:55.761549+00:00"
+  },
+  "0x736d76699c26d0d966744cae304c000d471f7f35": {
+   "name": "Pons",
+   "type": "OTHER",
+   "source": "arkham",
+   "verified_at": "2026-09-20T18:22:03.331062+00:00"
+  },
+  "0x73991a25c818bf1f1128deaab1492d45638de0d3": {
+   "name": "Uniswap",
+   "type": "DEX",
+   "source": "arkham",
+   "verified_at": "2026-09-20T18:22:13.784396+00:00"
+  },
+  "0x76df63aa3878987aff589965060ace7a42ca7ec6": {
+   "name": "Proxy (EIP-1167 Minimal)",
+   "type": "OTHER",
+   "source": "arkham",
+   "verified_at": "2026-09-20T18:22:45.295563+00:00"
+  },
+  "0x7b53d8ef21ad2585ce6fa6b8c811db1cbde08a4e": {
+   "name": "Proxy (EIP-1967 Beacon)",
+   "type": "OTHER",
+   "source": "arkham",
+   "verified_at": "2026-09-20T18:24:58.105235+00:00"
+  },
+  "0x895282c7187b6cfb3f450d8a86c3355434dbbfd4": {
+   "name": "BeaconProxy",
+   "type": "OTHER",
+   "source": "arkham",
+   "verified_at": "2026-09-20T18:31:01.438058+00:00"
+  },
+  "0x8f10b468b06c6fd214b65f87778827f7d113f996": {
+   "name": "Kyber Network",
+   "type": "DEX",
+   "source": "arkham",
+   "verified_at": "2026-09-20T18:35:21.928514+00:00"
+  },
+  "0x91b192836073610774c964d56accacc0ceb7ac00": {
+   "name": "PonsV2BondingCurve",
+   "type": "OTHER",
+   "source": "arkham",
+   "verified_at": "2026-09-20T18:36:58.820293+00:00"
+  },
+  "0x9689992f5b5c09447f15906d8d11214944488341": {
+   "name": "ERC1967Proxy",
+   "type": "OTHER",
+   "source": "arkham",
+   "verified_at": "2026-09-20T18:38:24.315957+00:00"
+  },
+  "0x9794e87cbc9c845a8c737bcc02b2c3579d62ae0c": {
+   "name": "Kernel (Proxy)",
+   "type": "OTHER",
+   "source": "arkham",
+   "verified_at": "2026-09-20T18:39:02.953486+00:00"
+  },
+  "0x99f9e0735307ad10ca01a3532f1726590ba51b31": {
+   "name": "up",
+   "type": "DEX",
+   "source": "arkham",
+   "verified_at": "2026-09-20T18:40:38.775707+00:00"
+  },
+  "0x9eead18cf127923f87d1caea33f28ea0469f48cf": {
+   "name": "up",
+   "type": "DEX",
+   "source": "arkham",
+   "verified_at": "2026-09-20T18:42:35.816201+00:00"
+  },
+  "0xa1edc3320192ed3cefaa061250fc5b7ce161be31": {
+   "name": "Bucket: Core (BCORE)",
+   "type": "OTHER",
+   "source": "arkham",
+   "verified_at": "2026-09-20T18:43:36.553524+00:00"
+  },
+  "0xa6342975441fe36d9ba9a8eb23ca20b166a87f7a": {
+   "name": "up",
+   "type": "DEX",
+   "source": "arkham",
+   "verified_at": "2026-09-20T18:45:44.193202+00:00"
+  },
+  "0xb1000000096bd2f8ca9b6883182eccaf31e7c3fd": {
+   "name": "Proxy (EIP-1967 Transparent)",
+   "type": "OTHER",
+   "source": "arkham",
+   "verified_at": "2026-09-20T18:48:30.166699+00:00"
+  },
+  "0xb477751b76cf82d00a686a1232f5fcd772414af3": {
+   "name": "LiFi",
+   "type": "OTHER",
+   "source": "arkham",
+   "verified_at": "2026-09-20T18:49:44.058105+00:00"
+  },
+  "0xbe75cbe76b1c19f76bc23a42dd16121fe0689359": {
+   "name": "Proxy (EIP-1967 Beacon)",
+   "type": "OTHER",
+   "source": "arkham",
+   "verified_at": "2026-09-20T18:54:03.517790+00:00"
+  },
+  "0xbe9ac977eda1addcd96a9af4cfe2bbdababeba74": {
+   "name": "Proxy (EIP-1167 Minimal)",
+   "type": "OTHER",
+   "source": "arkham",
+   "verified_at": "2026-09-20T18:54:24.117403+00:00"
+  },
+  "0xc4a21f9d6485fc5893dd4a491b320a83daf4da1d": {
+   "name": "Uniswap",
+   "type": "DEX",
+   "source": "arkham",
+   "verified_at": "2026-09-20T19:00:40.042931+00:00"
+  },
+  "0xcaadcbbb903510209bb3a9e271118bbd7da624d0": {
+   "name": "PrivateVault (Proxy)",
+   "type": "OTHER",
+   "source": "arkham",
+   "verified_at": "2026-09-20T19:03:21.163717+00:00"
+  },
+  "0xcb6e046a3a71583678a5ac5442481389b45f5e1e": {
+   "name": "Index Basket MOMMY (IB-MOMMY)",
+   "type": "OTHER",
+   "source": "arkham",
+   "verified_at": "2026-09-20T19:03:41.164312+00:00"
+  },
+  "0xcee5d9356415a28407f723b1f5837f79de7d67ec": {
+   "name": "up",
+   "type": "DEX",
+   "source": "arkham",
+   "verified_at": "2026-09-20T19:06:01.435078+00:00"
+  },
+  "0xd1e65160c0c5745da95bf3ac899fccf666ccda64": {
+   "name": "Index Basket MEMESTOCK (IB-MEMESTOCK)",
+   "type": "OTHER",
+   "source": "arkham",
+   "verified_at": "2026-09-20T19:07:48.608051+00:00"
+  },
+  "0xd3b960a172585ded23aad080eba8d786101aafb3": {
+   "name": "Proxy (EIP-1167 Minimal)",
+   "type": "OTHER",
+   "source": "arkham",
+   "verified_at": "2026-09-20T19:08:43.384209+00:00"
+  },
+  "0xdb6220112ea5f0700eee1520db39be0f33f74bf1": {
+   "name": "Proxy (EIP-1967 Beacon)",
+   "type": "OTHER",
+   "source": "arkham",
+   "verified_at": "2026-09-20T19:12:47.858460+00:00"
+  },
+  "0xddabc5fc33f359d0c52d783d2091a101ca79e05f": {
+   "name": "up",
+   "type": "DEX",
+   "source": "arkham",
+   "verified_at": "2026-09-20T19:15:02.265679+00:00"
+  },
+  "0xdf040d9df9fd77cd3318f54a8cdc44112a354c30": {
+   "name": "Proxy",
+   "type": "OTHER",
+   "source": "arkham",
+   "verified_at": "2026-09-20T19:16:04.833331+00:00"
+  },
+  "0xe48080d4611ad2bd53f576ce9253f761aa4dfb92": {
+   "name": "Proxy (EIP-1967 Beacon)",
+   "type": "OTHER",
+   "source": "arkham",
+   "verified_at": "2026-09-20T19:18:46.568826+00:00"
+  },
+  "0xe492912f37c2a4eca45d42dc67548f4c6cd7ce2b": {
+   "name": "Proxy (EIP-1967 Transparent)",
+   "type": "OTHER",
+   "source": "arkham",
+   "verified_at": "2026-09-20T19:18:57.980512+00:00"
+  },
+  "0xe6cb8468b8ac502513440e4ae60f061e9c55113f": {
+   "name": "BeaconProxy",
+   "type": "OTHER",
+   "source": "arkham",
+   "verified_at": "2026-09-20T19:21:16.883684+00:00"
   }
  },
- "_updated": "2026-09-17T19:19:07.160610+00:00"
+ "_updated": "2026-09-20T19:22:17.689406+00:00"
 }
