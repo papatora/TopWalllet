@@ -17,6 +17,7 @@ from datetime import datetime, timezone
 from statistics import median
 
 from sqlalchemy import delete, func, select
+from sqlalchemy.exc import OperationalError
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from config.settings import settings, STABLE_SYMBOLS
@@ -90,14 +91,28 @@ class Pipeline:
         async with self.session_factory() as session:
             for stage in stages:
                 jlog(log, logging.INFO, f"=== stage: {stage} ===")
-                if stage == "discover":
-                    counts.update(await self.stage_discover(session))
-                elif stage == "enrich":
-                    counts.update(await self.stage_enrich(session))
-                elif stage == "prices":
-                    counts.update(await self.stage_prices(session))
-                elif stage == "analyze":
-                    counts.update(await self.stage_analyze(session, started))
+                # S-41: writer lain (sweep track-ca, reverify) kadang megang
+                # write lock >30s → 'database is locked' mematikan cycle.
+                # Semua stage idempoten/resume-safe → retry dengan backoff.
+                for attempt in range(3):
+                    try:
+                        if stage == "discover":
+                            counts.update(await self.stage_discover(session))
+                        elif stage == "enrich":
+                            counts.update(await self.stage_enrich(session))
+                        elif stage == "prices":
+                            counts.update(await self.stage_prices(session))
+                        elif stage == "analyze":
+                            counts.update(await self.stage_analyze(session, started))
+                        break
+                    except OperationalError as e:
+                        if "database is locked" not in str(e).lower() or attempt == 2:
+                            raise
+                        jlog(log, logging.WARNING, "stage kena db lock — retry",
+                             stage=stage, attempt=attempt + 1,
+                             err=str(e)[:120])
+                        await session.rollback()
+                        await asyncio.sleep(60 * (attempt + 1))
                 await self._checkpoint(session, stage)
         await self.blockscout.close()
         await self.rpc.close()
