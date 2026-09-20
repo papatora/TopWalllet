@@ -555,6 +555,12 @@ class Pipeline:
         Returns the ranked wallet list so track-by-CA can render its own output.
         """
         started = started or datetime.now(timezone.utc)
+        # S-41: stage prices meninggalkan jutaan PricePoint ORM di sesi —
+        # autoflush pada SETIAP query (32K+ SELECT per-wallet) membangun
+        # unitofwork raksasa berulang → beku 7 jam @40% CPU (py-spy:
+        # unitofwork.__init__ via Query-invoked autoflush). Matikan
+        # autoflush utk fase berat ini; commit eksplisit di bawah yang flush.
+        session.autoflush = False
         service = PriceService(self.rpc, session)
         await service.load_pools()
         self._verify_service = service  # used by the hard PnL verifier
@@ -758,6 +764,7 @@ class Pipeline:
                 from src.utils.github_pusher import push_results
 
                 push_results()
+        session.autoflush = True
         return ranked
 
     async def _rederive_trade(self, wallet: str, pos) -> float | None:
