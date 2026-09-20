@@ -123,6 +123,13 @@ class EtherscanV2Client:
     def is_etherscan(self) -> bool:
         return True
 
+    @property
+    def is_degraded(self) -> bool:
+        # pnl_verifier membaca atribut ini dari client apa pun (Blockscout
+        # punya; Etherscan tidak punya konsep degraded) — dulu AttributeError
+        # mematikan track-ca di tahap analyze.
+        return False
+
     async def _http(self) -> httpx.AsyncClient:
         if self._client is None:
             self._client = httpx.AsyncClient(timeout=30.0)
