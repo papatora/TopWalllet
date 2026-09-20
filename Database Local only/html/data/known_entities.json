@@ -398,7 +398,91 @@
    "type": "OTHER",
    "source": "arkham",
    "verified_at": "2026-09-20T19:21:16.883684+00:00"
+  },
+  "0x00757438f320d3e53acc25b168361a9f7e66d17d": {
+   "name": "@hotgirlsmovie: deadliestheadache.eth",
+   "type": "OTHER",
+   "source": "arkham",
+   "verified_at": "2026-09-20T19:37:37.688735+00:00"
+  },
+  "0x0076357dd31209873aac09bb13a3fa40f906123f": {
+   "name": "\"NeverAtOdds\" on Polymarket",
+   "type": "OTHER",
+   "source": "arkham",
+   "verified_at": "2026-09-20T19:37:48.269327+00:00"
+  },
+  "0x007d380773d4b3765e29dba833f2bc0eb0b30246": {
+   "name": "\"Ehhhjh\" on OpenSea",
+   "type": "OTHER",
+   "source": "arkham",
+   "verified_at": "2026-09-20T19:40:25.059270+00:00"
+  },
+  "0x008317faa65ba4d28442870a468c2325f1b8cbe1": {
+   "name": "\"PIXELBOXa\" on OpenSea",
+   "type": "OTHER",
+   "source": "arkham",
+   "verified_at": "2026-09-20T19:41:05.419958+00:00"
+  },
+  "0x00c47ef3198a2db24e1ff1d42981117631661b0c": {
+   "name": "\"Boomsticks\" on Polymarket",
+   "type": "OTHER",
+   "source": "arkham",
+   "verified_at": "2026-09-20T19:54:58.637695+00:00"
+  },
+  "0x00cb97487391d0ac7819c77098dbfd75b1d76787": {
+   "name": "\"JNS\" on Polymarket",
+   "type": "OTHER",
+   "source": "arkham",
+   "verified_at": "2026-09-20T19:57:05.041087+00:00"
+  },
+  "0x00d3133dcacaf0480fcebcc8c50ebb66923d2b18": {
+   "name": "@Fr33man_Sev: marlon.eth",
+   "type": "OTHER",
+   "source": "arkham",
+   "verified_at": "2026-09-20T19:58:42.790623+00:00"
+  },
+  "0xed090594a014208a177bb23fbb921aa3997eb1f9": {
+   "name": "Proxy",
+   "type": "OTHER",
+   "source": "arkham",
+   "verified_at": "2026-09-20T19:23:59.799746+00:00"
+  },
+  "0xedfa21195df0633fe8fb409db83e848633c38ead": {
+   "name": "PonsV2BondingCurve",
+   "type": "OTHER",
+   "source": "arkham",
+   "verified_at": "2026-09-20T19:24:09.272259+00:00"
+  },
+  "0xf70da97812cb96acdf810712aa562db8dfa3dbef": {
+   "name": "Relay.link: Bridge Solver",
+   "type": "BRIDGE",
+   "source": "arkham",
+   "verified_at": "2026-09-20T19:28:41.750404+00:00"
+  },
+  "0xf7fc95b08510ccd175f8efae86455a0c80770946": {
+   "name": "Proxy (EIP-1967 Beacon)",
+   "type": "OTHER",
+   "source": "arkham",
+   "verified_at": "2026-09-20T19:28:53.671192+00:00"
+  },
+  "0xfe6a8afa829a1189be8fd484053fc6ab205adc7d": {
+   "name": "Proxy (EIP-1967 Beacon)",
+   "type": "OTHER",
+   "source": "arkham",
+   "verified_at": "2026-09-20T19:32:03.816466+00:00"
+  },
+  "0xff0fb4b6af08c4b33855f24b6ae0ecc262d61ba0": {
+   "name": "up",
+   "type": "DEX",
+   "source": "arkham",
+   "verified_at": "2026-09-20T19:32:24.441915+00:00"
+  },
+  "0x0128d624c77dab2d912af2b262bc613f26699ef7": {
+   "name": "\"D27\" on OpenSea",
+   "type": "OTHER",
+   "source": "arkham",
+   "verified_at": "2026-09-20T20:19:22.907499+00:00"
   }
  },
- "_updated": "2026-09-20T19:22:17.689406+00:00"
+ "_updated": "2026-09-20T20:21:42.544350+00:00"
 }
