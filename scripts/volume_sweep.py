@@ -319,19 +319,26 @@ async def process_queue(queue: list[dict], budget: int) -> list[dict]:
 
 
 def pipeline_busy() -> bool:
-    """True bila pipeline supervisor sedang menjalankan cycle — track-ca
-    (RPC getLogs berat) ditahan supaya tidak rebutan rate-limit RPC.
-    Status lebih tua dari 1 jam dianggap stale = tidak busy (supervisor
-    mati di tengah run tidak boleh membekukan antrean selamanya)."""
+    """True bila ada PROSES pipeline yang sedang jalan (scan /proc). File
+    status supervisor TIDAK bisa dipercaya untuk ini — phase hanya ditulis
+    di AKHIR cycle, jadi selama analyze 30-60 menit phase tetap
+    'pipeline_done' dan track-ca menulis bareng → 'database is locked'
+    (crash analyze 2026-09-20)."""
     try:
-        raw = json.loads((Path(settings.results_dir) /
-                          "supervisor_status.json").read_text(encoding="utf-8"))
-        if raw.get("phase") in (None, "pipeline_done", "idle"):
-            return False
-        upd = datetime.fromisoformat(str(raw.get("updated_at")))
-        return (datetime.now(timezone.utc) - upd).total_seconds() < 3600
-    except (OSError, ValueError, TypeError):
+        me = os.getpid()
+        for pid_dir in Path("/proc").iterdir():
+            if not pid_dir.name.isdigit() or int(pid_dir.name) == me:
+                continue
+            try:
+                cmd = (pid_dir / "cmdline").read_bytes().replace(
+                    b"\0", b" ").decode("utf-8", "replace")
+            except OSError:
+                continue
+            if "src.cli" in cmd and "pipeline" in cmd:
+                return True
+    except OSError:  # /proc tidak ada (Windows dev)
         return False
+    return False
 
 
 async def run_cycle() -> dict:
