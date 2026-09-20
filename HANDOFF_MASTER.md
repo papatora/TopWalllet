@@ -42,6 +42,13 @@
 > 7. Setiap fix → UPDATE FIXED_LEDGER.md + PRE_COMPACT + push via VPS.
 >    Klaim "method ada" WAJIB di-pin test binding.
 >
+> ### KONVENSI PELAPORAN (WAJIB — feedback user 2026-09-21):
+> Setiap sebut masalah/status/progress WAJIB pakai tag lokasi di depan:
+> **[VPS]** = pipeline/analyze/scraping/supervisor (78.31.250.202) ·
+> **[PC]** = explorer 8787, launcher, panen Arkham (Brave+CDP), DB lokal,
+> dataset. Contoh benar: "[VPS] analyze beku", "[PC] panen Arkham 545/611".
+> Jangan pernah sebut "pipeline beku"/"data stale" tanpa tag — user bingung.
+>
 > ### EXPLORER LOKAL: Desktop "TopWallet Launcher" shortcut → Mulai Server →
 > 127.0.0.1:8787 (dataset dibangun fresh dari DB S-39 saat start pertama).
 > Stop di tombol yang sama (bisa paksa proses eksternal). Kalau Defender
