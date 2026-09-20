@@ -1117,3 +1117,21 @@ bug yang ditemukan, baru update dokumen. Jangan minta input kecil-kecil.
 3. Goal #1: Trace Address funder cluster (f70d/be41) via arkham → re-verify.
 4. Goal #3: DIAMOND hunt (Grok/X). 5. Goal #4: app paste-CA.
 6. Pantau price_points VPS (analyze) — masih 0 s.d. malam ini.
+
+
+## ADDENDUM S-41 — MALAM 2026-09-21 (update S-40)
+- Arkham: TUNTAS 614/611 dicek, **79 wallet berlabel, 81 entity registry**,
+  dataset explorer di-rebuild (nama tampil di visualizer). 2captcha
+  TERBUKTI jalan (sitekey dari _cf_chl_opt.cCKey + inject + submit; user
+  lihat tombol human muter sendiri). Orkestrator self-healing backoff.
+- [VPS] ROOT-CAUSE wallet_scores=0 FINAL: py-spy dump — autoflush
+  SQLAlchemy di SETIAP query analyze (sesi berisi jutaan PricePoint dari
+  stage prices) → unitofwork raksasa → beku 7 jam. FIX 09b7c10:
+  session.autoflush=False selama analyze_wallets (restore di return).
+  Cycle baru jalan dgn fix; wallet_scores dinanti → EKSTRAKSI BESOK.
+- [VPS] fix is_degraded (fa13afa) + pipeline_busy /proc-scan (66dc995).
+- Roadmap BARU: Goal #5 — re-verify cluster via bubblemaps.io (usulan
+  user; raw Etherscan ber-noise, bubblemaps diyakini lebih akurat; jalankan
+  setelah goal #1).
+- User: sisa goal besok; malam ini [VPS] jalan sendiri (sweep/reverify/
+  cycle), [PC] aman di-dokumentasi di sini.

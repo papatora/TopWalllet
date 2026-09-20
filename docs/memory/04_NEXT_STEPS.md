@@ -8,15 +8,25 @@
 - ✅ Arkham: Brave+CDP login OK; harvester title-based + error-state aware;
   399/611 dicek, 20 labeled terverifikasi → known_entities.json
 
-## LANJUTAN ARKHAM (tinggal dijalankan)
-1. `python scripts/arkham_open.py brave` → pastikan sesi login hidup
-   (profile data/arkham-profile-brave persist; login sekali cukup).
-2. Jalankan orchestrator (bg): `python scripts/arkham_orchestrator.py`
-   → recheck 379 unlabeled + sisa queue sampai 611 tuntas.
-3. Klik CF checkbox di Brave kalau muncul (solver 2captcha belum berfungsi —
-   sitekey ada di dalam iframe challenges.cloudflare.com; fix: ekstrak dari
-   page.frames lalu order TurnstileTaskProxyless pertama).
-4. Selesai → merge otomatis → POST /api/rebuild → nama entity tampil.
+## ✅ ARKHAM TUNTAS (S-41, 2026-09-21 dini hari)
+- 614/611 address dicek · **79 wallet BERLABEL · 81 entity di registry**
+- Dataset explorer sudah di-rebuild → nama entity TAMPIL di visualizer +
+  address page (Uniswap, SnuggleVaultAdminSatellite, Proxy, dll).
+- **2captcha TERBUKTI jalan** (observasi user: tombol human muter sendiri
+  & lolos; 1,5 jam tanpa klik manual vs dulu tiap 15-20 menit). Solver live:
+  sitekey dari window._cf_chl_opt (cCKey) + inject + submit form.
+- Orkestrator self-healing (backoff 5-30 menit, exit hanya setelah 5x
+  hard-block tanpa progress) + cf_watch notifier.
+
+## ❗ YANG HARUS DILAKUKAN [PC] BESOK PAGI (urut)
+1. Cek [VPS]: `wallet_scores > 0`? (fix autoflush 09b7c10 baru dideploy
+   dini hari — cycle analyze restart dgn kode baru; watcher lapor).
+   Kalau > 0 → lanjut langkah 2. Kalau masih 0 → py-spy dump lagi.
+2. **EKSTRAKSI BESAR [VPS]→[PC]**: dump_snapshot.py (SEKARANG termasuk
+   4,4jt price_points — dump besar ~100MB+) → split → download MD5 →
+   rebuild_local_db.py → start launcher → dataset fresh dgn price asli.
+3. Audit A-J lokal (subagent adversarial) atas dataset baru (price asli!).
+4. Lanjut goal #1/#5/#3/#4 (lihat bawah).
 
 ## PRIORITAS SETELAH ARKHAM TUNTAS
 1. Goal #1 — re-verify cluster: Trace Address funder f70d/be41 di arkm.com
