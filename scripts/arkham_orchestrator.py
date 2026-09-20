@@ -41,6 +41,8 @@ def write_status(phase: str, extra: dict | None = None) -> None:
 def main() -> int:
     write_status("running", {"batch": 0})
     batch = 0
+    cf_block_streak = 0
+    cf_block_streak_last_done = -1
     while True:
         batch += 1
         try:
@@ -67,12 +69,34 @@ def main() -> int:
         m = subprocess.run([PY, str(REPO / "scripts" / "arkham_merge.py")],
                            cwd=str(REPO), capture_output=True, text=True)
         print("  merge:", (m.stdout or "").strip(), flush=True)
-        write_status("merged", {"batch": batch, "todo": todo, "hard_cf": hard_cf})
 
         if hard_cf:
-            write_status("cf-blocked", {"batch": batch})
-            print("CF hard-block — butuh klik manusia di window Brave")
-            return 1
+            # SELF-HEALING: jangan mati — backoff & coba lagi. Flag CF biasa
+            # meluruh sendiri, dan solver 2captcha menangani challenge di
+            # dalam batch. Baru menyerah (exit 1 → notifikasi) kalau 5 kali
+            # hard-block BERUNTUN tanpa progress apa pun.
+            try:
+                done_now = len(json.loads(ENT.read_text(encoding="utf-8")))
+            except (OSError, ValueError):
+                done_now = 0
+            if done_now > cf_block_streak_last_done:
+                cf_block_streak = 0
+            cf_block_streak_last_done = done_now
+            cf_block_streak += 1
+            if cf_block_streak >= 5:
+                write_status("cf-blocked", {"batch": batch})
+                print("CF hard-block 5x tanpa progress — butuh klik manusia "
+                      "di window Brave")
+                return 1
+            wait_s = min(30 * 60, 300 * cf_block_streak)
+            write_status("cf-backoff", {"batch": batch, "attempt": cf_block_streak,
+                                        "wait_s": wait_s})
+            print(f"CF hard-block #{cf_block_streak} — backoff {wait_s}s lalu "
+                  f"coba lagi", flush=True)
+            time.sleep(wait_s)
+            continue
+
+        write_status("merged", {"batch": batch, "todo": todo})
         time.sleep(20)  # jeda antar-batch, kasih CF ruang
 
 
