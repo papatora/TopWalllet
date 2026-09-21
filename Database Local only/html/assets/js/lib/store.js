@@ -17,17 +17,18 @@ export function walletName(i) {
   return t === 'GENERALIST' ? '' : t.startsWith('CLUSTER_MEMBER:') ? 'Cluster ' + t.split('_').pop() : t.replace(/_/g, ' ');
 }
 
-/** Per-wallet trading stats over [from, to). USD values < 0 are unpriced and skipped in sums. */
+/** Per-wallet trading stats over [from, to). USD values < 0 are unpriced and skipped in sums.
+ *  snap = priced swaps valued at the token's last snapshot price (no price series covered them). */
 export function stats(ai, from = 0, to = Infinity, onlyTok = null) {
   const per = new Map();
-  let nb = 0, ns = 0, bu = 0, so = 0, unp = 0, first = 0, last = 0;
-  for (const [k, t, sd, u] of S.swaps[ai] || []) {
+  let nb = 0, ns = 0, bu = 0, so = 0, unp = 0, snap = 0, first = 0, last = 0;
+  for (const [k, t, sd, u, , sn] of S.swaps[ai] || []) {
     if (t < from || t >= to || (onlyTok != null && k !== onlyTok)) continue;
     let p = per.get(k);
-    if (!p) { p = { n: 0, nb: 0, ns: 0, bu: 0, so: 0, fb: null, ls: null }; per.set(k, p); }
+    if (!p) { p = { n: 0, nb: 0, ns: 0, bu: 0, so: 0, fb: null, ls: null, snap: 0 }; per.set(k, p); }
     p.n++; first = first || t; last = t;
-    if (sd) { ns++; p.ns++; p.ls = t; if (u >= 0) { so += u; p.so += u; } else unp++; }
-    else { nb++; p.nb++; if (p.fb == null) p.fb = t; if (u >= 0) { bu += u; p.bu += u; } else unp++; }
+    if (sd) { ns++; p.ns++; p.ls = t; if (u >= 0) { so += u; p.so += u; if (sn) { snap++; p.snap++; } } else unp++; }
+    else { nb++; p.nb++; if (p.fb == null) p.fb = t; if (u >= 0) { bu += u; p.bu += u; if (sn) { snap++; p.snap++; } } else unp++; }
   }
   let w = 0, l = 0; const holds = [];
   for (const p of per.values()) {
@@ -38,7 +39,7 @@ export function stats(ai, from = 0, to = Infinity, onlyTok = null) {
   holds.sort((a, b) => a - b);
   const toks = [...per.entries()].sort((a, b) => (b[1].bu + b[1].so) - (a[1].bu + a[1].so));
   return {
-    nb, ns, bu, so, net: so - bu, vol: bu + so, swaps: nb + ns, w, l, unp, first, last,
+    nb, ns, bu, so, net: so - bu, vol: bu + so, swaps: nb + ns, w, l, unp, snap, first, last,
     hold: holds.length ? holds[Math.floor(holds.length / 2)] : null,
     toks: toks.map(e => e[0]), per,
   };
@@ -54,9 +55,9 @@ function init(d) {
   S.statsAll = new Map(S.active.map(ai => [ai, stats(ai)]));
   S.labelIndex = Object.fromEntries(d.labels.map((l, i) => [l, i]));
 
-  // flat, time-sorted swap list: [walletIdx, tokenIdx, ts, side, usd, tx]
+  // flat, time-sorted swap list: [walletIdx, tokenIdx, ts, side, usd, tx, snap]
   S.all = [];
-  for (const ai of S.active) for (const s of d.swaps[ai]) S.all.push([ai, s[0], s[1], s[2], s[3], s[4]]);
+  for (const ai of S.active) for (const s of d.swaps[ai]) S.all.push([ai, s[0], s[1], s[2], s[3], s[4], s[5] || 0]);
   S.all.sort((a, b) => a[2] - b[2]);
 
   // per-token trade aggregates

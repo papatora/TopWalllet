@@ -74,6 +74,7 @@ export function render() {
       ${row('on-chain PROVEN', 'Diverifikasi langsung ke transaksi (receipt/log) — tertinggi')}
       ${row('verifier R1-R3', 'PnL lolos oracle + re-derivasi + cek posisi basi')}
       ${row('est. / preliminary', 'Estimasi dari price point pool — atau dari harga snapshot terakhir token kalau DB lokal belum punya price_points; angka bisa bergeser setelah analyze penuh')}
+      ${row('~ di angka USD', 'Swap itu dihargai dengan harga snapshot statis (DB lokal tidak punya price_points untuk token itu) — angka kasar, jangan dibaca sebagai PnL')}
       ${row('attribusi', 'Dari sumber eksternal (GMGN/CT) — selalu cek ulang')}`)}
   </div>`;
 }

@@ -28,6 +28,13 @@ trading profit. meta carries the mode so the UI can say so:
                or "none"             nothing could be priced
 meta.priced_series / meta.priced_fallback count each swap's source;
 meta.price_points is the raw row count in the local DB.
+
+Each swap row carries its own provenance flag (6th element, audit-B):
+[tk, ts, side, usd, tx, snap] with snap=1 when usd came from the snapshot
+fallback and 0 when it came from a price series. The UI marks such USD with
+"~". Derived USD-threshold labels (WHALE / WHALE_SUS at net >= $100K) are
+NOT derived for wallets whose every priced leg is snapshot-valued: a single
+static price times token amount is not a measurable PnL.
 """
 from __future__ import annotations
 
@@ -148,7 +155,8 @@ def build() -> dict:
         t = _epoch(ts)
         ts_min = t if ts_min is None else min(ts_min, t)
         ts_max = t if ts_max is None else max(ts_max, t)
-        swaps_by_w[widx[wa]].append([tk(ta), t, 1 if side.upper() == "SELL" else 0, usd, tx])
+        swaps_by_w[widx[wa]].append(
+            [tk(ta), t, 1 if side.upper() == "SELL" else 0, usd, tx, 1 if (usd >= 0 and from_fallback) else 0])
 
     # ---- scores / verification ---------------------------------------------
     scores: dict[str, dict] = {}
@@ -214,7 +222,11 @@ def build() -> dict:
         addr = order[wi]
         wlabs = set(W[addr]["labels"]) if addr in W else set()
         linked = bool(wlabs & LINKAGE) or any(l.startswith("CLUSTER_MEMBER") for l in wlabs)
-        if net >= 100_000 and len(wl) >= 20:
+        # audit-B: ambang $100K hanya berarti kalau minimal satu leg berharga
+        # dihargai dari price series — net yang SELURUHNYA harga snapshot statis
+        # (jumlah token x satu harga) bukan PnL yang terukur.
+        has_series_leg = any(e[3] >= 0 and not e[5] for e in wl)
+        if has_series_leg and net >= 100_000 and len(wl) >= 20:
             labs.append("WHALE_SUS" if linked else "WHALE")
         if labs:
             derived[wi] = labs

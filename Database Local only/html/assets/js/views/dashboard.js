@@ -1,6 +1,6 @@
 import { S, tokName } from '../lib/store.js';
 import { esc, nf, usd, date, pct, price, short } from '../lib/fmt.js';
-import { icon, chip, labelMeta, pretty, tokAv, rank, whoCell, walletHref, tokenHref, txHref, emptyRow } from '../lib/ui.js';
+import { icon, chip, labelMeta, pretty, tokAv, rank, whoCell, walletHref, tokenHref, txHref, emptyRow, snapMark } from '../lib/ui.js';
 import { flowChart, bucketDays, sparkline } from '../lib/charts.js';
 
 const st = { mode: 'usd' };
@@ -59,7 +59,7 @@ export function render(root) {
       <section class="panel">
         <div class="panel-h"><span class="panel-title">Largest swaps</span><span class="t3 mono" style="font-size:11px">est.</span></div>
         <div class="table-wrap"><table class="table is-compact" style="--min:560px"><thead><tr><th>Time (UTC)</th><th>Wallet</th><th>Side</th><th>Token</th><th class="rt">USD</th><th>Tx</th></tr></thead><tbody>
-          ${biggest.length ? biggest.map(([ai, k, t, sd, u, tx]) => `<tr class="is-link" data-href="${walletHref(ai)}"><td class="t2">${date(t, true)}</td><td><span class="addr" style="font-size:12.5px">${short(S.wallets[ai][0])}</span></td><td><span class="side ${sd ? 'is-sell' : 'is-buy'}">${sd ? 'SELL' : 'BUY'}</span></td><td><a class="who" href="${tokenHref(k)}">${tokAv(k, 'is-md')}${esc(tokName(k))}</a></td><td class="rt">${usd(u)}</td><td><a class="link" href="${txHref(tx)}" target="_blank" rel="noopener">${tx.slice(0, 8)}…</a></td></tr>`).join('') : emptyRow(6, 'No priced swaps yet.')}
+          ${biggest.length ? biggest.map(([ai, k, t, sd, u, tx, sn]) => `<tr class="is-link" data-href="${walletHref(ai)}"><td class="t2">${date(t, true)}</td><td><span class="addr" style="font-size:12.5px">${short(S.wallets[ai][0])}</span></td><td><span class="side ${sd ? 'is-sell' : 'is-buy'}">${sd ? 'SELL' : 'BUY'}</span></td><td><a class="who" href="${tokenHref(k)}">${tokAv(k, 'is-md')}${esc(tokName(k))}</a></td><td class="rt">${snapMark(sn)}${usd(u)}</td><td><a class="link" href="${txHref(tx)}" target="_blank" rel="noopener">${tx.slice(0, 8)}…</a></td></tr>`).join('') : emptyRow(6, 'No priced swaps yet.')}
         </tbody></table></div>
       </section>
     </div>

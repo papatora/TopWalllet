@@ -1,6 +1,6 @@
 import { S, tokName, walletName } from '../lib/store.js';
 import { esc, nf, usd, date, short, dur } from '../lib/fmt.js';
-import { icon, chip, labelMeta, pretty, tokAv, dropdown, emptyRow, walletHref, tokenHref, txHref, addrExt, copy } from '../lib/ui.js';
+import { icon, chip, labelMeta, pretty, tokAv, dropdown, emptyRow, walletHref, tokenHref, txHref, addrExt, copy, snapMark } from '../lib/ui.js';
 import { areaChart, flowChart, bucketDays } from '../lib/charts.js';
 import { evidenceBlocks } from '../lib/evidence.js';
 
@@ -58,6 +58,7 @@ export function render(root, [addr]) {
               <div class="kv-row"><span>Labels</span><span>${w[2].length}</span></div>
               <div class="kv-row"><span>Swaps</span><span>${nf(sw.length)}</span></div>
               ${s?.unp ? `<div class="kv-row"><span>Unpriced swaps</span><span class="t2">${s.unp}</span></div>` : ''}
+              ${s?.snap ? `<div class="kv-row"><span title="Priced at the token’s last snapshot price — no price series in the local DB">Snapshot-priced swaps ~</span><span class="t2">${s.snap}</span></div>` : ''}
               <div class="kv-row"><span>Entities</span><span>${ents.length ? ents.map(([e, ei]) => `<a class="link" href="#/visualizer?entity=${ei}">${esc(e.title)}</a>`).join(', ') : '—'}</span></div>
               ${S.ev[i]?._score?.realized != null ? `<div class="kv-row"><span>Realized PnL · verified</span><span class="${S.ev[i]._score.realized >= 0 ? 'pos' : 'neg'}">${usd(S.ev[i]._score.realized, true)}</span></div>` : ''}
             </div></div>
@@ -92,7 +93,7 @@ export function render(root, [addr]) {
                 <button class="fchip ${st.minUsd ? '' : 'is-off'}" data-minusd style="--c:${st.minUsd ? 'var(--blue-hi)' : 'var(--text-3)'}">${st.minUsd ? icon('x') : ''}USD ≥ $1</button>
                 <span class="t3 mono" style="font-size:11px;margin-left:auto">${nf(rows.length)} rows</span></div>
               <div class="table-wrap" style="max-height:520px;overflow-y:auto"><table class="table is-compact" style="--min:520px"><thead><tr><th>Time (UTC)</th><th>Side</th><th>Token</th><th class="rt">USD</th><th>Tx</th></tr></thead><tbody>
-                ${rows.slice(0, 300).map(([k, t, sd, u, tx]) => `<tr><td class="t2">${date(t, true)}</td><td><span class="side ${sd ? 'is-sell' : 'is-buy'}">${sd ? 'SELL' : 'BUY'}</span></td><td><a class="who" href="${tokenHref(k)}">${tokAv(k, 'is-md')}${esc(tokName(k))}</a></td><td class="rt">${u >= 0 ? usd(u) : '<span class="t3">unpriced</span>'}</td><td><a class="link" href="${txHref(tx)}" target="_blank" rel="noopener">${tx.slice(0, 10)}…</a></td></tr>`).join('') || emptyRow(5, sw.length ? 'No swaps match. Remove the USD filter or pick another token.' : 'No swaps in the local snapshot.')}
+                ${rows.slice(0, 300).map(([k, t, sd, u, tx, sn]) => `<tr><td class="t2">${date(t, true)}</td><td><span class="side ${sd ? 'is-sell' : 'is-buy'}">${sd ? 'SELL' : 'BUY'}</span></td><td><a class="who" href="${tokenHref(k)}">${tokAv(k, 'is-md')}${esc(tokName(k))}</a></td><td class="rt">${u >= 0 ? snapMark(sn) + usd(u) : '<span class="t3">unpriced</span>'}</td><td><a class="link" href="${txHref(tx)}" target="_blank" rel="noopener">${tx.slice(0, 10)}…</a></td></tr>`).join('') || emptyRow(5, sw.length ? 'No swaps match. Remove the USD filter or pick another token.' : 'No swaps in the local snapshot.')}
               </tbody></table></div>
             </section>
           </div>

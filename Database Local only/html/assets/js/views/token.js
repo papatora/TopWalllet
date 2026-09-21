@@ -1,6 +1,6 @@
 import { S, stats, tokName, walletName } from '../lib/store.js';
 import { esc, nf, usd, price, date, short, dur } from '../lib/fmt.js';
-import { icon, chip, labelMeta, pretty, tokAv, rank, thead, pager, emptyRow, walletHref, whoCell, txHref, copy } from '../lib/ui.js';
+import { icon, chip, labelMeta, pretty, tokAv, rank, thead, pager, emptyRow, walletHref, whoCell, txHref, copy, snapMark } from '../lib/ui.js';
 import { areaChart, flowChart, bucketDays } from '../lib/charts.js';
 
 const st = { tab: 'traders', sort: 'net', dir: -1, page: 0, per: 25, chart: 'price' };
@@ -28,8 +28,8 @@ export function render(root, [addr]) {
         `<tr class="is-link" data-href="${walletHref(i)}"><td>${rank(start + j + 1)}</td><td>${whoCell(i)}</td><td class="rt ${s.net >= 0 ? 'pos' : 'neg'}">${usd(s.net, true)}</td><td class="rt pos">${usd(s.bu)}</td><td class="rt neg">${usd(s.so)}</td><td class="rt">${s.nb} / ${s.ns}</td><td class="rt">${dur(s.hold)}</td><td>${chip(S.types[S.wallets[i][1]])}</td></tr>`).join('') || emptyRow(8, 'No local swaps for this token.')}</tbody></table>`;
       foot = pager(rows.length, st);
     } else if (st.tab === 'swaps') {
-      body = `<table class="table is-compact" style="--min:760px"><thead><tr><th>Time (UTC)</th><th>Side</th><th>Wallet</th><th class="rt">USD est.</th><th>Tx</th></tr></thead><tbody>${[...swaps].reverse().slice(0, 200).map(([ai, , ts, sd, u, tx]) =>
-        `<tr class="is-link" data-href="${walletHref(ai)}"><td class="t2">${date(ts, true)}</td><td><span class="side ${sd ? 'is-sell' : 'is-buy'}">${sd ? 'SELL' : 'BUY'}</span></td><td>${whoCell(ai, { full: false })}</td><td class="rt">${u >= 0 ? usd(u) : '<span class="t3">unpriced</span>'}</td><td><a class="link" href="${txHref(tx)}" target="_blank" rel="noopener">${tx.slice(0, 10)}…</a></td></tr>`).join('') || emptyRow(5, 'No local swaps for this token.')}</tbody></table>`;
+      body = `<table class="table is-compact" style="--min:760px"><thead><tr><th>Time (UTC)</th><th>Side</th><th>Wallet</th><th class="rt">USD est.</th><th>Tx</th></tr></thead><tbody>${[...swaps].reverse().slice(0, 200).map(([ai, , ts, sd, u, tx, sn]) =>
+        `<tr class="is-link" data-href="${walletHref(ai)}"><td class="t2">${date(ts, true)}</td><td><span class="side ${sd ? 'is-sell' : 'is-buy'}">${sd ? 'SELL' : 'BUY'}</span></td><td>${whoCell(ai, { full: false })}</td><td class="rt">${u >= 0 ? snapMark(sn) + usd(u) : '<span class="t3">unpriced</span>'}</td><td><a class="link" href="${txHref(tx)}" target="_blank" rel="noopener">${tx.slice(0, 10)}…</a></td></tr>`).join('') || emptyRow(5, 'No local swaps for this token.')}</tbody></table>`;
       if (swaps.length > 200) foot = `<div class="panel-note">Showing the latest 200 of ${nf(swaps.length)} swaps.</div>`;
     } else {
       body = `<table class="table is-compact" style="--min:760px"><thead><tr><th>Label</th><th>Wallet</th><th>Evidence</th><th class="rt">Net flow est.</th></tr></thead><tbody>${flagged.map(([lab, i]) => {

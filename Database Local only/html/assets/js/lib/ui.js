@@ -74,6 +74,9 @@ export function dropdown(id, ico, options, value) {
     <div class="pop" hidden role="listbox">${options.map(o => `<button class="pop-item ${o.v === value ? 'is-active' : ''}" data-dd-value="${esc(o.v)}">${esc(o.l)}</button>`).join('')}</div></div>`;
 }
 export const emptyRow = (cols, msg) => `<tr class="empty"><td colspan="${cols}">${esc(msg)}</td></tr>`;
+// audit-B: marker for USD valued at the token's last snapshot price (no price
+// series covered the swap) — hover explains; guide lists it under "est.".
+export const snapMark = sn => sn ? `<span class="t3" style="cursor:help" title="Priced at the token’s last snapshot price — the local DB has no price points covering this swap">~</span>` : '';
 
 let toastTimer;
 export function toast(msg) {
