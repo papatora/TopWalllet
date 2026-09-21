@@ -76,6 +76,13 @@ def dir_mtime(p: Path) -> float:
         return 0.0
 
 
+def db_mtime() -> float:
+    try:
+        return DB.stat().st_mtime
+    except OSError:
+        return 0.0
+
+
 def explorer_up() -> bool:
     try:
         with urllib.request.urlopen("http://127.0.0.1:8787/", timeout=5) as r:
