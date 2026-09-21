@@ -72,7 +72,7 @@ export function render(root, [addr]) {
 
         <div class="profile-main">
           <section class="panel">
-            <div class="panel-h"><span class="panel-title">${st.chart === 'cum' ? 'Cumulative net flow' : 'Daily swap flow'}</span><span class="t3 mono" style="font-size:11px">USD est.</span>
+            <div class="panel-h"><span class="panel-title">${st.chart === 'cum' ? 'Cumulative net flow' : 'Daily swap flow'}</span><span class="t3 mono" style="font-size:11px" title="${S.meta.pricing_mode && S.meta.pricing_mode !== 'historical' ? 'Local DB has no price points — USD valued at the token’s last snapshot price' : 'USD valued at the nearest pool price point'}">USD est.${S.meta.pricing_mode && S.meta.pricing_mode !== 'historical' ? ' · snapshot px' : ''}</span>
               <div class="end"><div class="seg is-sm"><button class="seg-btn ${st.chart === 'cum' ? 'is-active' : ''}" data-chart="cum">Cumulative</button><button class="seg-btn ${st.chart === 'daily' ? 'is-active' : ''}" data-chart="daily">Daily</button></div></div></div>
             <div class="panel-b"><div id="achart"></div></div>
           </section>

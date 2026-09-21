@@ -66,6 +66,7 @@ export function render(root, [addr]) {
           ${bundles.length ? bundles.map(([e, i]) => `<a class="fchip" style="--c:var(--c-bundler)" href="#/visualizer?entity=${i}">${icon('bundle')}${esc(e.title)}</a>`).join('') : ''}
           <div class="end"><div class="seg is-sm"><button class="seg-btn ${st.chart === 'price' ? 'is-active' : ''}" data-chart="price" ${spark.length ? '' : 'disabled'}>Price</button><button class="seg-btn ${st.chart === 'flow' ? 'is-active' : ''}" data-chart="flow">Flow</button></div></div></div>
         <div class="panel-b"><div id="tchart"></div></div>
+        ${!spark.length ? `<div class="panel-note">No price points for this token in the local DB — the price chart stays unavailable until the VPS→PC extraction lands. The flow chart above uses snapshot-priced USD est.</div>` : ''}
         ${S.meta.calibrated.some(c => c[0] === k) ? `<div class="panel-note">${icon('info', 'i-sm').replace('class="i', 'style="display:inline;vertical-align:-2px;margin-right:6px;color:var(--amber)" class="i')}This pool’s stored price points were on the wrong scale, so the series is rescaled onto the snapshot price. Shape is reliable; absolute USD is approximate.</div>` : ''}
       </section>
 

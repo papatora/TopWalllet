@@ -167,6 +167,14 @@ button.fchip:hover{background:color-mix(in srgb,var(--c,var(--blue-hi)) 12%,tran
 @keyframes skel{to{background-position:-200% 0}}
 .toast{position:fixed;left:50%;bottom:24px;z-index:90;transform:translateX(-50%);padding:10px 14px;background:var(--panel-2);border:1px solid var(--line-strong);border-radius:var(--r-md);box-shadow:var(--float-shadow);font:400 12px/1 var(--mono);animation:pop .14s var(--ease)}
 
+/* ---------- pricing provenance banner ---------- */
+.warnbar{max-width:1560px;margin:14px auto 0;padding:11px 28px;display:flex;gap:10px;align-items:flex-start;background:var(--panel-2);border:1px solid var(--line-strong);border-left:3px solid var(--amber);border-radius:var(--r-md)}
+.warnbar .warnbar-ico{color:var(--amber);flex:none;display:flex}
+.warnbar .warnbar-ico .i{width:15px;height:15px}
+.warnbar p{margin:0;font:400 12px/1.55 var(--sans);color:var(--text-2)}
+.warnbar b{color:var(--text);font-weight:600}
+.warnbar .mono{font-family:var(--mono);font-size:11.5px}
+
 /* ---------- chart ---------- */
 .chart{position:relative;width:100%}
 .chart svg{width:100%;height:100%;overflow:visible}

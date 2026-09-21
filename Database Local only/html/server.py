@@ -36,6 +36,11 @@ def rebuild() -> dict:
     m = data["meta"]
     print(f"[dataset] {len(data['wallets'])} wallets · {m['swaps_total']} swaps · "
           f"{len(raw)/1e6:.1f} MB json ({len(_cache['gz'])/1e6:.2f} MB gz) · {time.time()-t0:.1f}s")
+    if m.get("pricing_mode") in ("snapshot_fallback", "none"):
+        print(f"[dataset] PERINGATAN pricing_mode={m['pricing_mode']} "
+              f"(price_points={m.get('price_points')}): semua USD est. = harga snapshot "
+              f"statis; sparkline/Price chart/kalibrasi nonaktif. "
+              f"Fix: scripts/fetch_dump.py → scripts/rebuild_local_db.py")
     return m
 
 

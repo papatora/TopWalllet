@@ -16,6 +16,18 @@ first point after). Pools whose price_points sit >30x away from the token's
 snapshot price (a scale bug seen on USDG-quoted pools) are rescaled onto the
 snapshot price. A swap valued above the token's pool liquidity is treated as a
 bad price point and left unpriced. The UI labels these figures "est.".
+
+PRICING PROVENANCE (audit-A P1): when the local DB has NO price_points
+(e.g. the VPS→PC extraction hasn't run), every priced swap falls back to the
+token's LAST SNAPSHOT price — one static number per token, so multi-sell PnL
+figures are essentially amount x today's-price and must not be read as
+trading profit. meta carries the mode so the UI can say so:
+  pricing_mode = "historical"        all priced swaps used a price series
+               or "mixed"            series + snapshot fallback
+               or "snapshot_fallback" NO series at all (price_points empty)
+               or "none"             nothing could be priced
+meta.priced_series / meta.priced_fallback count each swap's source;
+meta.price_points is the raw row count in the local DB.
 """
 from __future__ import annotations
 
@@ -43,6 +55,7 @@ def build() -> dict:
     labels_doc = _load("results/wallet_labels.json")
     W = {a.lower(): v for a, v in labels_doc["wallets"].items()}
     con = sqlite3.connect(REPO / "data" / "topwallet.db")
+    n_price_points = con.execute("select count(*) from price_points").fetchone()[0]
 
     # ---- tokens -----------------------------------------------------------
     tok_idx: dict[str, int] = {}
@@ -109,6 +122,7 @@ def build() -> dict:
     widx = {a: i for i, a in enumerate(order)}
     swaps_by_w: dict[int, list] = defaultdict(list)
     priced = unpriced = outliers = 0
+    priced_series = priced_fallback = 0
     ts_min = ts_max = None
     for wa, ta, ts, block, side, amt, tx in con.execute(
         "select lower(wallet_address), lower(token_address), ts, block_num, side, token_amount, tx_hash "
@@ -117,15 +131,20 @@ def build() -> dict:
         if wa not in widx:
             continue
         p = price_at(ta, block)
-        if p is None:
-            sp = snap.get(ta)
-            p = sp  # fallback: harga snapshot terakhir token (kasar, tetap "est.")
+        from_fallback = p is None
+        if from_fallback:
+            p = snap.get(ta)  # fallback: harga snapshot terakhir token (kasar, tetap "est.")
         usd = round(amt * p, 2) if p is not None else -1
         if usd > (liquidity.get(ta) or 1_000_000):  # bigger than the whole pool = bad price point
             usd = -1
             outliers += 1
         priced += usd >= 0
         unpriced += usd < 0
+        if usd >= 0:  # provenance dihitung dari hasil akhir: outlier tetap tak berharga
+            if from_fallback:
+                priced_fallback += 1
+            else:
+                priced_series += 1
         t = _epoch(ts)
         ts_min = t if ts_min is None else min(ts_min, t)
         ts_max = t if ts_max is None else max(ts_max, t)
@@ -308,6 +327,11 @@ def build() -> dict:
             "built": datetime.now(timezone.utc).isoformat(timespec="seconds"),
             "swap_from": ts_min, "swap_to": ts_max,
             "swaps_total": priced + unpriced, "priced": priced, "unpriced": unpriced, "outliers": outliers,
+            "price_points": n_price_points,
+            "priced_series": priced_series, "priced_fallback": priced_fallback,
+            "pricing_mode": ("historical" if priced_fallback == 0 and priced_series > 0
+                             else "mixed" if priced_series > 0
+                             else "snapshot_fallback" if priced_fallback > 0 else "none"),
             "type_counts": Counter(v["primary_type"] for v in W.values()),
             "label_counts": Counter(l for v in W.values() for l in v["labels"]) + Counter(l for ls in derived.values() for l in ls),
             "checkpoints": checkpoints, "calibrated": calibrated,
@@ -327,3 +351,10 @@ if __name__ == "__main__":
     print(f"wallets={len(d['wallets'])} active={len(d['swaps'])} tokens={len(d['tokens'])} "
           f"swaps={m['swaps_total']} priced={m['priced']} outliers={m['outliers']} "
           f"bundles={len(d['bundles'])} clusters={len(d['clusters'])}")
+    print(f"pricing_mode={m['pricing_mode']} price_points={m['price_points']} "
+          f"priced_series={m['priced_series']} priced_fallback={m['priced_fallback']} "
+          f"spark={len(d['spark'])}")
+    if m["pricing_mode"] in ("snapshot_fallback", "none"):
+        print("PERINGATAN: DB lokal TANPA price_points — semua USD est. = harga snapshot "
+              "statis (bukan price historis). Jalankan ekstraksi VPS→PC: "
+              "scripts/fetch_dump.py lalu scripts/rebuild_local_db.py.")

@@ -138,6 +138,24 @@ function footer() {
   ].map(s => `<span>${s}</span>`).join('');
 }
 
+// Pricing provenance banner (audit-A P1): say honestly when USD "est." comes
+// from static snapshot prices because the local DB has no price_points.
+function pricingBanner() {
+  const mode = S.meta?.pricing_mode;
+  if (!mode || mode === 'historical') return;
+  const msgs = {
+    snapshot_fallback: `Local DB has <b>${nf(S.meta.price_points || 0)} price points</b> — every USD “est.” is priced at the token’s last snapshot price, not per-swap history. Sparklines, price charts and USDG calibration are off. Fix: run <span class="mono">scripts/fetch_dump.py</span> → <span class="mono">scripts/rebuild_local_db.py</span>, then Rebuild.`,
+    none: `No swap in this dataset could be priced (no price points, no snapshot price). USD columns are empty by design.`,
+    mixed: `Some swaps are priced from the token’s last snapshot price (no price series covered them) — treat those USD figures as rough.`,
+  };
+  document.querySelector('.warnbar')?.remove();
+  const bar = document.createElement('div');
+  bar.className = 'warnbar';
+  bar.setAttribute('role', 'note');
+  bar.innerHTML = `<span class="warnbar-ico">${icon('info')}</span><p>${msgs[mode] || msgs.mixed}</p>`;
+  document.querySelector('nav.nav').after(bar);
+}
+
 // theme cycler: dark -> white -> space (persist di localStorage)
 const THEMES = ['dark', 'white', 'space'];
 function applyTheme(t) {
@@ -151,7 +169,7 @@ document.getElementById('themeBtn')?.addEventListener('click', () => {
 });
 
 window.addEventListener('hashchange', route);
-load().then(() => { footer(); route(); }).catch(err => {
+load().then(() => { pricingBanner(); footer(); route(); }).catch(err => {
   $('#app').innerHTML = `<div class="page"><h1 class="page-title">Dataset unavailable</h1><p class="t2" style="margin-top:10px;max-width:64ch">${esc(err.message)} Start it with <span class="mono">python server.py</span> inside <span class="mono">Database Local only/html</span>, then reload.</p></div>`;
 });
 

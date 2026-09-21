@@ -71,6 +71,16 @@ for t in ("tokens", "pools", "wallets", "wallet_labels", "swap_events"):
     if t in MIN_ROWS and n < MIN_ROWS[t]:
         print(f"!! {t}={n} di bawah minimum {MIN_ROWS[t]}")
         ok = False
+# premis explorer (bukan syarat gagal, tapi WAJIB dilaporkan): price_points=0
+# berarti sparkline, Price chart & kalibrasi USDG tetap nonaktif dan SEMUA
+# USD est. di explorer dihitung dari harga snapshot statis (audit-A P1).
+for t in ("price_points", "wallet_scores"):
+    n = con.execute(f"select count(*) from {t}").fetchone()[0]
+    print(t, n)
+    if n == 0:
+        print(f"!! PERINGATAN: {t}=0 di dump — cek [VPS] dulu: "
+              "python scripts/vps_query.py counts (stage prices/analyze mungkin "
+              "belum selesai; rebuild ini TIDAK mengaktifkan fitur tsb)")
 con.close()
 
 if not ok:

@@ -38,7 +38,7 @@ export function render(root) {
           <span class="flow-badge"><i></i>INDEXED ${date(m.swap_from)} → ${date(m.swap_to)}</span>
           <div class="end"><div class="seg is-sm" data-mode><button class="seg-btn ${st.mode === 'usd' ? 'is-active' : ''}" data-v="usd">USD est.</button><button class="seg-btn ${st.mode === 'count' ? 'is-active' : ''}" data-v="count">Count</button></div></div></div>
         <div class="panel-b"><div id="flow"></div></div>
-        <div class="panel-note">Daily buys above the line, sells below. USD is estimated from the nearest pool price point; ${nf(m.unpriced)} swaps without a usable price are counted but not valued.</div>
+        <div class="panel-note">Daily buys above the line, sells below. ${m.pricing_mode === 'mixed' ? 'USD is estimated from pool price points where a series exists, else the token’s last snapshot price' : m.pricing_mode && m.pricing_mode !== 'historical' ? 'USD is estimated from each token’s last snapshot price — the local DB has no price points, so treat totals as rough' : 'USD is estimated from the nearest pool price point'}; ${nf(m.unpriced)} swaps without a usable price are counted but not valued.</div>
       </section>
       <section class="panel">
         <div class="panel-h"><span class="panel-title">Classification mix</span><span class="end t3 mono" style="font-size:11px">primary type</span></div>
@@ -78,6 +78,8 @@ export function render(root) {
           ${Object.entries(m.checkpoints).map(([k, v]) => `<div class="kv-row"><span style="text-transform:capitalize">${esc(k)}</span><span>${esc(v.slice(0, 16))} UTC</span></div>`).join('')}
           <div class="kv-row"><span>Labels generated</span><span>${esc(m.labels_generated.slice(0, 16).replace('T', ' '))} UTC</span></div>
           <div class="kv-row"><span>Dataset built</span><span>${esc(m.built.slice(0, 16).replace('T', ' '))} UTC</span></div>
+          <div class="kv-row"><span>Price points (local DB)</span><span>${nf(m.price_points || 0)}</span></div>
+          <div class="kv-row"><span>Priced from series / snapshot</span><span>${nf(m.priced_series || 0)} / ${nf(m.priced_fallback || 0)}</span></div>
           <div class="kv-row"><span>Price outliers dropped</span><span>${nf(m.outliers)}</span></div>
         </div></div>
       </section>

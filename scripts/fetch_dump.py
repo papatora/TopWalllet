@@ -32,6 +32,20 @@ def main() -> int:
         _, out, err = ssh.exec_command(cmd, timeout=t)
         return (out.read().decode() + err.read().decode()).strip()
 
+    # preflight: dump hanya berguna utk premis price asli kalau VPS punya points
+    _, out, _ = ssh.exec_command(
+        "cd /opt/topwallet && .venv/bin/python -c \"import sqlite3; "
+        "c=sqlite3.connect('file:data/topwallet.db?mode=ro',uri=True); "
+        "print(c.execute('select count(*) from price_points').fetchone()[0], "
+        "c.execute('select count(*) from wallet_scores').fetchone()[0])\"", timeout=60)
+    pp, ws = (out.read().decode().split() + ["0", "0"])[:2]
+    print(f"[0/4] VPS price_points={pp} wallet_scores={ws}", flush=True)
+    if pp == "0":
+        print("PERINGATAN: price_points di VPS masih 0 — dump ini TIDAK akan "
+              "mengaktifkan sparkline/Price chart/kalibrasi (semua USD est. tetap "
+              "dari harga snapshot). Tunggu stage prices selesai atau jalankan "
+              "scripts/vps_wait_scores.py dulu.", flush=True)
+
     print("[1/4] extract_wallets (fresh labels)...", flush=True)
     print(run("cd /opt/topwallet && TOPWALLET_RUN_ENV=vps "
               ".venv/bin/python scripts/extract_wallets.py 2>&1 | tail -1", 600))

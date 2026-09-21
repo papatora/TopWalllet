@@ -40,7 +40,7 @@ export function render() {
 
   $('#app').innerHTML = `<div class="page">
     <h1 class="page-title">Guide — cara baca data</h1>
-    <p class="t2" style="margin-bottom:18px">Semua angka USD di explorer ini adalah <b>estimasi</b> dari harga pool saat swap (ditandai "est."). Bukan PnL terverifikasi — PnL terverifikasi hanya muncul setelah tahap analyze berjalan penuh (chips "verifier").</p>
+    <p class="t2" style="margin-bottom:18px">Semua angka USD di explorer ini adalah <b>estimasi</b> (ditandai "est."): dari price point pool pada blok swap kalau DB lokal punya price_points — kalau DB lokal <b>tanpa price_points</b> (banner kuning di atas), dari harga snapshot terakhir token, sehingga total jual-beli bisa meleset jauh dari realita. Bukan PnL terverifikasi — PnL terverifikasi hanya muncul setelah tahap analyze berjalan penuh (chips "verifier").</p>
 
     ${sec('Cara baca Visualizer', `
       <b>Ukuran bubble</b> = volume est. yang lewat di wallet/token itu dalam scope aktif.
@@ -73,7 +73,7 @@ export function render() {
     ${sec('Skala keyakinan', `
       ${row('on-chain PROVEN', 'Diverifikasi langsung ke transaksi (receipt/log) — tertinggi')}
       ${row('verifier R1-R3', 'PnL lolos oracle + re-derivasi + cek posisi basi')}
-      ${row('est. / preliminary', 'Estimasi dari harga pool — angka bisa bergeser setelah analyze penuh')}
+      ${row('est. / preliminary', 'Estimasi dari price point pool — atau dari harga snapshot terakhir token kalau DB lokal belum punya price_points; angka bisa bergeser setelah analyze penuh')}
       ${row('attribusi', 'Dari sumber eksternal (GMGN/CT) — selalu cek ulang')}`)}
   </div>`;
 }

@@ -1,5 +1,6 @@
 """Start the local explorer (8787) detached if not running, rebuild dataset,
 print a one-line summary. Used by the dynamic workflow via world.run."""
+import gzip
 import json
 import subprocess
 import sys
@@ -13,7 +14,10 @@ HTML = REPO / "Database Local only" / "html"
 
 def get(url: str, timeout: int = 10):
     with urllib.request.urlopen(url, timeout=timeout) as r:
-        return r.status, r.read()
+        body = r.read()
+        if r.headers.get("Content-Encoding") == "gzip":  # /api/dataset dikirim gzip
+            body = gzip.decompress(body)
+        return r.status, body
 
 
 def post(url: str, timeout: int = 300):

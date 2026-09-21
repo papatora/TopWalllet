@@ -18,6 +18,13 @@ const SNIPER_COLS = [
   { k: 'fastest', label: 'Fastest', rt: 1, sort: 1 }, { k: 't', label: 'Tokens sniped', rt: 1 },
   { k: 'labels', label: 'Labels' }, { k: 'net', label: 'Net flow est.', rt: 1, sort: 1 },
 ];
+// honest provenance note (audit-A P1): say where the USD actually comes from
+const priceNote = () => {
+  const mode = S.meta?.pricing_mode;
+  if (mode === 'mixed') return 'USD from pool price points, else the token’s last snapshot price · not verified PnL';
+  if (mode && mode !== 'historical') return 'USD estimated from each token’s last snapshot price — DB has no price points · not verified PnL';
+  return 'USD estimated from pool price points · not verified PnL';
+};
 
 function traderRows() {
   const from = +st.win ? S.meta.swap_to - +st.win * 86400 : 0;
@@ -67,7 +74,7 @@ export function render(root) {
         <div class="seg" data-tabs><button class="seg-btn ${traders ? 'is-active' : ''}" data-tab="traders">Top traders</button><button class="seg-btn ${!traders ? 'is-active' : ''}" data-tab="snipers">Snipers</button></div>
         <div class="end">${traders ? dropdown('metric', 'trophy', METRICS, st.metric) + dropdown('win', 'clock', WINDOWS, st.win) + dropdown('tag', 'filter', TAG_OPTIONS(), st.tag) : ''}</div>
       </div>
-      <div class="page-sub"><span>${icon('wallet')}${nf(rows.length)} ${traders ? 'active wallets' : 'sniper wallets'}</span>${traders ? `<span>${icon('clock')}${winTxt}</span><span>${icon('info')}USD estimated from pool price points · not verified PnL</span>` : `<span>${icon('bolt')}First buy within 10 blocks of a pool’s first swap</span>`}</div>
+      <div class="page-sub"><span>${icon('wallet')}${nf(rows.length)} ${traders ? 'active wallets' : 'sniper wallets'}</span>${traders ? `<span>${icon('clock')}${winTxt}</span><span>${icon('info')}${priceNote()}</span>` : `<span>${icon('bolt')}First buy within 10 blocks of a pool’s first swap</span>`}</div>
 
       ${pod.length ? `<div class="podium">${order.map(j => { const [ai, s] = pod[j], nm = walletName(ai);
         return `<a class="pod ${cls[j]}" href="${walletHref(ai)}">
