@@ -89,6 +89,12 @@ class Pipeline:
         started = datetime.now(timezone.utc)
         counts: dict = {}
         async with self.session_factory() as session:
+            # S-42: AsyncSession TIDAK meneruskan assignment .autoflush ke
+            # sync session di bawahnya — fix S-41 (session.autoflush=False)
+            # cuma membuat atribut bayangan, autoflush tetap jalan → crash.
+            # Yang benar: sync_session.autoflush, dan di level run() supaya
+            # semua stage (discover/analyze) bebas autoflush-bomb.
+            session.sync_session.autoflush = False
             for stage in stages:
                 jlog(log, logging.INFO, f"=== stage: {stage} ===")
                 # S-41: writer lain (sweep track-ca, reverify) kadang megang
@@ -575,7 +581,7 @@ class Pipeline:
         # unitofwork raksasa berulang → beku 7 jam @40% CPU (py-spy:
         # unitofwork.__init__ via Query-invoked autoflush). Matikan
         # autoflush utk fase berat ini; commit eksplisit di bawah yang flush.
-        session.autoflush = False
+        session.sync_session.autoflush = False
         service = PriceService(self.rpc, session)
         await service.load_pools()
         self._verify_service = service  # used by the hard PnL verifier
@@ -779,7 +785,7 @@ class Pipeline:
                 from src.utils.github_pusher import push_results
 
                 push_results()
-        session.autoflush = True
+        session.sync_session.autoflush = True
         return ranked
 
     async def _rederive_trade(self, wallet: str, pos) -> float | None:
