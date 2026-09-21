@@ -40,6 +40,7 @@ export function stats(ai, from = 0, to = Infinity, onlyTok = null) {
   const toks = [...per.entries()].sort((a, b) => (b[1].bu + b[1].so) - (a[1].bu + a[1].so));
   return {
     nb, ns, bu, so, net: so - bu, vol: bu + so, swaps: nb + ns, w, l, unp, snap, first, last,
+    allSnap: snap > 0 && snap === nb + ns - unp,  // semua leg berharga = harga snapshot
     hold: holds.length ? holds[Math.floor(holds.length / 2)] : null,
     toks: toks.map(e => e[0]), per,
   };

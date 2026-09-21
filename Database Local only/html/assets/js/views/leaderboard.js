@@ -1,6 +1,6 @@
 import { S, stats, walletName, tokName } from '../lib/store.js';
 import { esc, nf, usd, dur, date } from '../lib/fmt.js';
-import { icon, chip, tokStack, rank, hexBadge, thead, pager, dropdown, emptyRow, walletHref, whoCell } from '../lib/ui.js';
+import { icon, chip, tokStack, rank, hexBadge, thead, pager, dropdown, emptyRow, walletHref, whoCell, snapMark } from '../lib/ui.js';
 
 const st = { tab: 'traders', metric: 'net', win: '0', sort: 'net', dir: -1, page: 0, per: 50, tag: '' };
 const TAG_OPTIONS = () => [{ v: '', l: 'All tags' }].concat(S.labels.filter(l => !l.startsWith('CLUSTER_MEMBER')).map(l => ({ v: l, l })));
@@ -66,7 +66,7 @@ export function render(root) {
     const pod = traders ? rows.slice(0, 3) : [];
     const cls = ['is-1', 'is-2', 'is-3'], col = ['#F2C94C', '#B8C1D1', '#D38B4F'];
     const order = pod.length === 3 ? [1, 0, 2] : pod.map((_, i) => i);
-    const bigOf = s => st.metric === 'swaps' ? `<span class="pod-big">${nf(s.swaps)}</span>` : `<span class="pod-big ${st.metric === 'net' ? (s.net >= 0 ? 'pos' : 'neg') : ''}">${usd(s[st.metric], st.metric === 'net')}</span>`;
+    const bigOf = s => st.metric === 'swaps' ? `<span class="pod-big">${nf(s.swaps)}</span>` : `<span class="pod-big ${st.metric === 'net' ? (s.net >= 0 ? 'pos' : 'neg') : ''}">${st.metric === 'net' && s.allSnap ? snapMark(1) : ''}${usd(s[st.metric], st.metric === 'net')}</span>`;
 
     root.innerHTML = `<div class="page">
       <div class="page-head">
@@ -94,7 +94,7 @@ export function render(root) {
           <tbody>${page.length ? page.map(([ai, s], j) => { const r = start + j + 1, w = S.wallets[ai];
             return traders
               ? `<tr class="is-link" data-href="${walletHref(ai)}"><td>${rank(r)}</td><td>${whoCell(ai)}</td>
-                  <td class="rt ${s.net >= 0 ? 'pos' : 'neg'}">${usd(s.net, true)}</td><td class="rt pos">${usd(s.bu)}</td><td class="rt neg">${usd(s.so)}</td>
+                  <td class="rt ${s.net >= 0 ? 'pos' : 'neg'}">${s.allSnap ? snapMark(1) : ''}${usd(s.net, true)}</td><td class="rt pos">${usd(s.bu)}</td><td class="rt neg">${usd(s.so)}</td>
                   <td class="rt">${nf(s.nb)}</td><td class="rt">${nf(s.ns)}</td><td class="rt"><span class="pos">${s.w}</span> / <span class="neg">${s.l}</span></td>
                   <td class="rt">${dur(s.hold)}</td><td class="rt">${tokStack(s.toks)}</td></tr>`
               : `<tr class="is-link" data-href="${walletHref(ai)}"><td>${rank(r)}</td><td>${whoCell(ai)}</td>

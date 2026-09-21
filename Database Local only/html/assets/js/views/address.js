@@ -39,7 +39,7 @@ export function render(root, [addr]) {
       </div>
 
       <div class="stats" style="--n:6">
-        <div class="stat"><div class="eyebrow">Net flow est.</div><div class="stat-v ${s ? (s.net >= 0 ? 'pos' : 'neg') : 't3'}">${s ? usd(s.net, true) : '—'}</div><div class="stat-c">sold minus bought</div></div>
+        <div class="stat"><div class="eyebrow">Net flow est.</div><div class="stat-v ${s ? (s.net >= 0 ? 'pos' : 'neg') : 't3'}">${s ? (s.allSnap ? snapMark(1) : '') + usd(s.net, true) : '—'}</div><div class="stat-c">sold minus bought</div></div>
         <div class="stat"><div class="eyebrow">Bought</div><div class="stat-v">${s ? usd(s.bu) : '—'}</div><div class="stat-c">${s ? `${nf(s.nb)} buys` : 'no swaps'}</div></div>
         <div class="stat"><div class="eyebrow">Sold</div><div class="stat-v">${s ? usd(s.so) : '—'}</div><div class="stat-c">${s ? `${nf(s.ns)} sells` : 'no swaps'}</div></div>
         <div class="stat"><div class="eyebrow">W / L tokens</div><div class="stat-v">${s ? `<span class="pos">${s.w}</span><span class="t3"> / </span><span class="neg">${s.l}</span>` : '—'}</div><div class="stat-c">${s ? `${s.toks.length} tokens traded` : '—'}</div></div>

@@ -53,7 +53,7 @@ export function render(root) {
       <section class="panel">
         <div class="panel-h"><span class="panel-title">Top net flow</span><span class="t3 mono" style="font-size:11px">est.</span><a class="end link mono" style="font-size:12px" href="#/leaderboard">View leaderboard ${icon('chevron-right', 'i-sm')}</a></div>
         <div class="table-wrap"><table class="table is-compact" style="--min:560px"><thead><tr><th>#</th><th>Wallet</th><th class="rt">Net flow</th><th class="rt">Swaps</th><th class="rt">Tokens</th></tr></thead><tbody>
-          ${topNet.map(([i, s], j) => `<tr class="is-link" data-href="${walletHref(i)}"><td>${rank(j + 1)}</td><td>${whoCell(i, { full: false })}</td><td class="rt ${s.net >= 0 ? 'pos' : 'neg'}">${usd(s.net, true)}</td><td class="rt">${nf(s.swaps)}</td><td class="rt">${s.toks.length}</td></tr>`).join('')}
+          ${topNet.map(([i, s], j) => `<tr class="is-link" data-href="${walletHref(i)}"><td>${rank(j + 1)}</td><td>${whoCell(i, { full: false })}</td><td class="rt ${s.net >= 0 ? 'pos' : 'neg'}">${s.allSnap ? snapMark(1) : ''}${usd(s.net, true)}</td><td class="rt">${nf(s.swaps)}</td><td class="rt">${s.toks.length}</td></tr>`).join('')}
         </tbody></table></div>
       </section>
       <section class="panel">
