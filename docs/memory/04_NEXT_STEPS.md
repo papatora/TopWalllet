@@ -18,12 +18,13 @@
 - Orkestrator self-healing (backoff 5-30 menit, exit hanya setelah 5x
   hard-block tanpa progress) + cf_watch notifier.
 
-## KONTEKS: PC user DI-SHUTDOWN malam ini (2026-09-21)
-- Explorer 8787 mati bersama PC (normal — start via launcher besok).
-- Brave Arkham: profile data/arkham-profile-brave PERSIST di disk —
-  besok `python scripts/arkham_open.py brave` → session masih login.
-- [VPS] TIDAK terpengaruh: cycle/analyz/sweep/reverify jalan sendiri.
-- User mau recall: arkham (done) + goal #5 bubblemaps + rescoring [VPS].
+## KONTEKS: PC user DIBIARKAN NYALA malam ini (koreksi 2026-09-21)
+- **Workflow A-J jalan di PC LOKAL** — shutdown/sleep = workflow hangus.
+  WAJIB: matikan sleep (Settings → Power → Never saat plugged in).
+- Explorer 8787 jalan; Brave Arkham/Bubblemaps boleh di-close (session
+  persist di data/arkham-profile-brave — buka lg dgn arkham_open.py).
+- [VPS] jalan sendiri seperti biasa.
+- User mau recall besok: arkham (done) + goal #5 bubblemaps + rescoring.
 
 ## ❗ YANG HARUS DILAKUKAN [PC] BESOK PAGI (urut)
 1. Cek [VPS]: `wallet_scores > 0`? (fix autoflush 09b7c10 baru dideploy
