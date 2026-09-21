@@ -64,12 +64,13 @@ function init(d) {
 
   // per-token trade aggregates
   S.tokAgg = new Map();
-  for (const [ai, k, t, sd, u] of S.all) {
+  for (const [ai, k, t, sd, u, , sn] of S.all) {
     let a = S.tokAgg.get(k);
-    if (!a) { a = { wallets: new Set(), nb: 0, ns: 0, bu: 0, so: 0, first: t, last: t }; S.tokAgg.set(k, a); }
+    if (!a) { a = { wallets: new Set(), nb: 0, ns: 0, bu: 0, so: 0, first: t, last: t, snap: 0, valued: 0 }; S.tokAgg.set(k, a); }
     a.wallets.add(ai); a.last = t;
-    if (sd) { a.ns++; if (u >= 0) a.so += u; } else { a.nb++; if (u >= 0) a.bu += u; }
+    if (sd) { a.ns++; if (u >= 0) { a.so += u; a.valued++; if (sn) a.snap++; } } else { a.nb++; if (u >= 0) { a.bu += u; a.valued++; if (sn) a.snap++; } }
   }
+  for (const a of S.tokAgg.values()) a.allSnap = a.snap > 0 && a.snap === a.valued;
 
   // classification evidence per token
   S.tokFlags = new Map();

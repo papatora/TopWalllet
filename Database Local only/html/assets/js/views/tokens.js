@@ -1,6 +1,6 @@
 import { S, tokName } from '../lib/store.js';
 import { esc, nf, usd, price, date, short } from '../lib/fmt.js';
-import { icon, tokAv, thead, pager, emptyRow, tokenHref } from '../lib/ui.js';
+import { icon, tokAv, thead, pager, emptyRow, tokenHref, snapMark } from '../lib/ui.js';
 import { sparkline } from '../lib/charts.js';
 
 const st = { scope: 'traded', q: '', sort: 'traders', dir: -1, page: 0, per: 50 };
@@ -49,7 +49,7 @@ export function render(root) {
             <td class="rt">${price(r.t[3])}</td><td class="rt">${usd(r.t[4])}</td><td class="rt">${usd(r.t[5])}</td>
             <td class="rt">${nf(r.traders)}</td>
             <td class="rt">${r.a ? `<span class="pos">${nf(r.a.nb)}</span> / <span class="neg">${nf(r.a.ns)}</span>` : '<span class="t3">—</span>'}</td>
-            <td class="rt ${r.a ? (r.flow >= 0 ? 'pos' : 'neg') : 't3'}">${r.a ? usd(r.flow, true) : '—'}</td>
+            <td class="rt ${r.a ? (r.flow >= 0 ? 'pos' : 'neg') : 't3'}">${r.a ? (r.a.allSnap ? snapMark(1) : '') + usd(r.flow, true) : '—'}</td>
             <td class="rt ${r.snipers ? '' : 't3'}" style="${r.snipers ? 'color:var(--c-sniper)' : ''}">${r.snipers || '—'}</td>
             <td class="rt ${r.bundlers ? '' : 't3'}" style="${r.bundlers ? 'color:var(--c-bundler)' : ''}">${r.bundlers || '—'}</td>
             <td class="rt">${sparkline(sp?.map(p => p[1]), { w: 104, h: 28 })}</td>
