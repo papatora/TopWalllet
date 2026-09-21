@@ -55,6 +55,10 @@ def main() -> int:
     m = d["meta"]
     print(f"wallets={len(d['wallets'])} tokens={len(d['tokens'])} "
           f"swaps={m['swaps_total']} priced={m.get('priced')} built={m['built'][:16]}")
+    mode = m.get("pricing_mode")
+    print(f"premis: pricing_mode={mode} price_points={m.get('price_points')} "
+          f"spark={len(d.get('spark', {}))} calibrated={len(m.get('calibrated', []))} -> "
+          f"{'OK' if mode == 'historical' else 'BELUM TERPENUHI (python scripts/check_premise.py)'}")
     return 0
 
 
