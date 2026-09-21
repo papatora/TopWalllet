@@ -32,7 +32,7 @@ REPO = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO / "scripts"))
 load_dotenv(REPO / ".env")
 
-from cf_solver import INJECT_JS, solve_turnstile  # noqa: E402
+from cf_solver import INJECT_JS, solve_turnstile_live  # noqa: E402
 
 from playwright.sync_api import sync_playwright  # noqa: E402
 OUT = REPO / "results" / "arkham_entities.json"
@@ -138,8 +138,9 @@ def main() -> int:
                     page.wait_for_timeout(4000)
                     rec = parse_title(page.title(), addr)
                 if rec.get("cf"):
-                    # masih CF → 2captcha Turnstile solve + inject
-                    token = solve_turnstile(page.url, page.content())
+                    # masih CF → 2captcha Turnstile solve (param dari halaman
+                    # hidup: _cf_chl_opt / iframe) + inject
+                    token = solve_turnstile_live(page)
                     if token:
                         try:
                             act = page.evaluate(INJECT_JS, token)

@@ -39,6 +39,24 @@
 1. Goal #1 — re-verify cluster: Trace Address funder f70d/be41 di arkm.com
    + cross-check label entity → koreksi confidence cluster kita.
 2. **Goal #5 (usulan user 2026-09-20) — RE-VERIFY CLUSTER VIA BUBBLEMAPS**:
+   HASIL REKON 2026-09-21 dini hari (jangan diulang dari nol):
+   - API mereka = `POST api.bubblemaps.io/relationships/subgraph?whitelist_
+     token_address=<CA>&whitelist_token_chain=<slug>` → RESPONSE = JSON
+     cluster utuh (nodes=holders, links) — tangkap via response listener
+     Playwright saat map render di browser. TERTANGKAP sudah contohnya
+     (featured solana) di results/bm_capture.json.
+   - Auth = header `x-validation` (JWT HS256 yg menandatangani path+query,
+     di-mint frontend) + `x-session-id` + `x-iframe-partner`. JANGAN coba
+     forge token — gunakan UI/iframe mereka sbg interface (iframe src =
+     `iframe.bubblemaps.io/map/<internalId>?partnerId=demo`, internalId
+     BUKAN CA mentah — dapat dari queue/flow situs).
+   - Homepage bubblemaps.io TIDAK punya input search visible — app UI ada
+     di route lain. NEXT: screenshot homepage → temukan entry point search
+     (atau klik trending lalu ganti chain/CA via UI) → capture response
+     subgraph utk token RH chain → PERTANYAAN KUNCI: apakah bubblemaps
+     meng-index robinhood chain sama sekali (kalau tidak, goal ini shift
+     ke chain lain / nanti).
+   - Etherscan label ronde-1 (614 addr, 79 named) tetap valid regardless.
    setelah labeling by Robinscan/Etherscan, cross-validate deteksi cluster
    pakai bubblemaps.io (pendekatan berbeda; Etherscan = RAW + NOISE — tx
    count & kompresi timestamp bisa bikin salah label). Bubblemaps diyakini

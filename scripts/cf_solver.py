@@ -101,18 +101,112 @@ def solve_turnstile(website_url: str, html: str, api_key: str | None = None,
     return None
 
 
+# --- ekstraksi param via Playwright (halaman HIDUP, bukan cuma HTML mentah) ---
+
+EXTRACT_OPT_JS = """
+() => {
+  const o = window._cf_chl_opt;
+  if (!o) return null;
+  return {
+    sitekey: o.cCKey || null,
+    cData: o.cData || null,
+    chlPageData: o.chlPageData ? JSON.stringify(o.chlPageData) : null,
+    cType: o.cType || null,
+  };
+}
+"""
+
+FRAME_SITEKEY_JS = """
+() => {
+  const el = document.querySelector('[data-sitekey]');
+  if (el) return el.getAttribute('data-sitekey');
+  const inp = document.querySelector('[name="cf-turnstile-response"]');
+  if (inp && inp.dataset && inp.dataset.sitekey) return inp.dataset.sitekey;
+  return null;
+}
+"""
+
+
+def extract_params_live(page) -> dict:
+    """Sitekey managed-challenge ada di window._cf_chl_opt (cCKey) halaman
+    luar, ATAU di dalam iframe challenges.cloudflare.com — bukan di HTML
+    statis (pesan lama 'sitekey tidak ketemu' = cuma baca HTML)."""
+    try:
+        opt = page.evaluate(EXTRACT_OPT_JS)
+        if opt and opt.get("sitekey"):
+            return opt
+    except Exception:
+        pass
+    for fr in getattr(page, "frames", []) or []:
+        if "challenges.cloudflare.com" not in (fr.url or ""):
+            continue
+        try:
+            sk = fr.evaluate(FRAME_SITEKEY_JS)
+            if sk:
+                return {"sitekey": sk, "cData": None, "chlPageData": None}
+        except Exception:
+            continue
+    return {}
+
+
+def solve_turnstile_live(page, api_key: str | None = None,
+                         timeout_s: int = 180) -> str | None:
+    """Full flow di halaman hidup: param → order → token (atau None)."""
+    params = extract_params_live(page)
+    if not params.get("sitekey"):
+        print("[2captcha] sitekey tetap tak ketemu (opt + frames)")
+        return None
+    print(f"[2captcha] sitekey={params['sitekey'][:10]}… cData={'ya' if params.get('cData') else '-'} "
+          f"cType={params.get('cType') or '-'}")
+    return solve_params(website_url=page.url, params=params,
+                        api_key=api_key, timeout_s=timeout_s)
+
+
+def solve_params(website_url: str, params: dict, api_key: str | None = None,
+                 timeout_s: int = 180) -> str | None:
+    key = api_key or os.getenv("TWOCAPTCHA_KEY")
+    if not key:
+        print("[2captcha] TWOCAPTCHA_KEY kosong")
+        return None
+    task = {
+        "type": "TurnstileTaskProxyless",
+        "websiteURL": website_url,
+        "websiteKey": params["sitekey"],
+    }
+    if params.get("cData"):
+        task["cData"] = params["cData"]
+    if params.get("chlPageData"):
+        task["chlPageData"] = params["chlPageData"]
+    order = _post("/createTask", {"clientKey": key, "task": task})
+    if order.get("errorId"):
+        print("[2captcha] createTask error:", order.get("errorDescription"))
+        return None
+    task_id = order.get("taskId")
+    print(f"[2captcha] task {task_id} dibuat")
+    t0 = time.time()
+    while time.time() - t0 < timeout_s:
+        time.sleep(5)
+        res = _post("/getTaskResult", {"clientKey": key, "taskId": task_id})
+        if res.get("errorId"):
+            print("[2captcha] result error:", res.get("errorDescription"))
+            return None
+        if res.get("status") == "ready":
+            token = res["solution"].get("token")
+            print(f"[2captcha] solved dalam {time.time()-t0:.0f}s")
+            return token
+    print("[2captcha] timeout")
+    return None
+
+
 INJECT_JS = """
 (token) => {
   const inp = document.querySelector('[name="cf-turnstile-response"]')
            || document.querySelector('input[name="cf-turnstile-response"]');
   if (inp) inp.value = token;
+  if (window.tsCallback) { try { window.tsCallback(token); } catch (e) {} }
   const f = document.querySelector('form#challenge-form')
          || document.querySelector('form');
   if (f) { f.submit(); return 'submitted'; }
-  if (inp && window.turnstile) {
-    try { window.turnstile.getResponse(); } catch (e) {}
-    return 'filled-noform';
-  }
-  return 'no-inject-point';
+  return inp ? 'filled-noform' : 'no-inject-point';
 }
 """

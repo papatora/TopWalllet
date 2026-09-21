@@ -1,0 +1,16 @@
+{
+ "url": "https://api.bubblemaps.io/relationships/subgraph?whitelist_token_address=HAWKThXRcNL9ZGZKqgUXLm4W8tnRZ7U6MVdEepSutj34&whitelist_token_chain=solana&queue_whitelisted_token_map=false",
+ "headers": {
+  "sec-ch-ua-platform": "\"Windows\"",
+  "referer": "https://iframe.bubblemaps.io/",
+  "sec-ch-ua": "\"Brave\";v=\"153\", \"Not_A Brand\";v=\"8\", \"Chromium\";v=\"153\"",
+  "sec-ch-ua-mobile": "?0",
+  "x-validation": "eyJhbGciOiJIUzI1NiJ9.eyJkYXRhIjoiL3JlbGF0aW9uc2hpcHMvc3ViZ3JhcGg_d2hpdGVsaXN0X3Rva2VuX2FkZHJlc3M9SEFXS1RoWFJjTkw5WkdaS3FnVVhMbTRXOHRuUlo3VTZNVmRFZXBTdXRqMzQmd2hpdGVsaXN0X3Rva2VuX2NoYWluPXNvbGFuYSZxdWV1ZV93aGl0ZWxpc3RlZF90b2tlbl9tYXA9ZmFsc2UiLCJleHAiOjE3OTAwMTU1MzN9.mNNH1ouNmwV48oBL1EoIsJz287ijVE8oLPUnxyERopM",
+  "x-iframe-partner": "demo",
+  "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36",
+  "accept": "application/json",
+  "content-type": "application/json",
+  "x-session-id": "38d618f4-8978-4244-b5a9-9d2c6a093af9"
+ },
+ "body": ""
+}
