@@ -7,8 +7,9 @@ each audit round re-derived by hand: DB mtime/size/counts, pipeline
 checkpoints, verified-PnL coverage, live /api/dataset meta, VPS reachability.
 
 Usage:
-  python scripts/check_premise.py          # local + live API
-  python scripts/check_premise.py --vps    # + probe the VPS (SSH paramiko)
+  python scripts/check_premise.py                # local + live API on :8787
+  python scripts/check_premise.py --port 8798    # probe a server on another port
+  python scripts/check_premise.py --vps          # + probe the VPS (SSH paramiko)
 
 Exit 0 = premise met (price_points > 0 AND wallet_scores > 0 locally),
 exit 1 = premise NOT met (sparkline / Price chart / USDG calibration are dead
@@ -16,6 +17,7 @@ paths; every USD "est." is snapshot-valued). Runbook when exit 1:
   python scripts/fetch_dump.py        # dump + split + MD5-verified download
   python scripts/rebuild_local_db.py  # validated rebuild (warns if points=0)
 """
+import argparse
 import gzip
 import json
 import os
@@ -32,6 +34,11 @@ TW = REPO / "results" / "top_wallets_latest.json"
 
 
 def main() -> int:
+    ap = argparse.ArgumentParser(description=__doc__.splitlines()[1])
+    ap.add_argument("--port", type=int, default=8787,
+                    help="port of the local explorer API (default 8787)")
+    ap.add_argument("--vps", action="store_true", help="also probe the VPS")
+    args = ap.parse_args()
     ok = True
     st = DB.stat()
     print(f"[local] {DB.name}: mtime {datetime.fromtimestamp(st.st_mtime)} | "
@@ -56,7 +63,7 @@ def main() -> int:
               f"total_ranked {tw.get('total_ranked')}")
 
     try:
-        req = urllib.request.urlopen("http://127.0.0.1:8787/api/dataset", timeout=120)
+        req = urllib.request.urlopen(f"http://127.0.0.1:{args.port}/api/dataset", timeout=120)
         body = req.read()
         if req.headers.get("Content-Encoding") == "gzip":
             body = gzip.decompress(body)
@@ -71,9 +78,9 @@ def main() -> int:
         if m.get("pricing_mode") in ("snapshot_fallback", "none"):
             ok = False
     except OSError as e:
-        print(f"[api] explorer 8787 tidak jalan ({e}) - meta live tidak dicek")
+        print(f"[api] explorer di port {args.port} tidak jalan ({e}) - meta live tidak dicek")
 
-    if "--vps" in sys.argv:
+    if args.vps:
         try:
             s = socket.create_connection((os.getenv("VPS_HOST"),
                                           int(os.getenv("VPS_PORT", "22"))), timeout=10)
