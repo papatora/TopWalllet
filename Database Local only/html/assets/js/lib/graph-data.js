@@ -20,7 +20,7 @@ export function buildScope({ mode, ref, limit = 250, from = 0, to = Infinity }) 
       nodes.set(id, {
         id, kind: reg ? 'entity' : 'wallet', ref: i, addr: w[0],
         label: reg?.name || walletName(i) || short(w[0]), short: short(w[0]),
-        etype: reg?.type || null, type: S.types[w[1]], ct: !!w[4], hasSwaps: S.activeSet.has(i), vol: 0, net: 0, swaps: 0,
+        etype: reg?.type || null, type: S.types[w[1]], ct: !!w[4], hasSwaps: S.activeSet.has(i), vol: 0, net: 0, swaps: 0, snap: 0, valued: 0,
       });
     }
     return nodes.get(id);
@@ -42,7 +42,7 @@ export function buildScope({ mode, ref, limit = 250, from = 0, to = Infinity }) 
     const s = stats(i, from, to, k);
     if (!s.swaps) return null;
     const w = wallet(i), t = token(k);
-    w.vol += s.vol; w.net += s.net; w.swaps += s.swaps;
+    w.vol += s.vol; w.net += s.net; w.swaps += s.swaps; w.snap += s.snap; w.valued += s.swaps - s.unp;
     t.traders++; t.vol += s.vol;
     links.push({ s: w, t, kind: 'trade', vol: s.vol, net: s.net, buys: s.nb, sells: s.ns });
     return s;

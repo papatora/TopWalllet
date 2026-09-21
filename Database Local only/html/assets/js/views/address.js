@@ -66,7 +66,7 @@ export function render(root, [addr]) {
           <section class="panel">
             <div class="panel-h"><span class="panel-title">Related wallets</span><span class="end micro">${mates.length}</span></div>
             ${mates.length ? `<div style="max-height:360px;overflow-y:auto">${mates.slice(0, 60).map(j => { const ms = S.statsAll.get(j);
-              return `<a class="ent-item" href="${walletHref(j)}"><span class="avatar" style="width:26px;height:26px;color:${labelMeta(S.types[S.wallets[j][1]]).c}">${icon(labelMeta(S.types[S.wallets[j][1]]).icon, 'i-sm')}</span><span style="min-width:0;flex:1"><div class="t">${short(S.wallets[j][0], 8, 6)}</div><div class="d">${esc(pretty(S.types[S.wallets[j][1]]))}</div></span><span class="mono ${ms ? (ms.net >= 0 ? 'pos' : 'neg') : 't3'}" style="font-size:11.5px">${ms ? usd(ms.net, true) : '—'}</span></a>`; }).join('')}</div>`
+              return `<a class="ent-item" href="${walletHref(j)}"><span class="avatar" style="width:26px;height:26px;color:${labelMeta(S.types[S.wallets[j][1]]).c}">${icon(labelMeta(S.types[S.wallets[j][1]]).icon, 'i-sm')}</span><span style="min-width:0;flex:1"><div class="t">${short(S.wallets[j][0], 8, 6)}</div><div class="d">${esc(pretty(S.types[S.wallets[j][1]]))}</div></span><span class="mono ${ms ? (ms.net >= 0 ? 'pos' : 'neg') : 't3'}" style="font-size:11.5px">${ms ? (ms.allSnap ? snapMark(1) : '') + usd(ms.net, true) : '—'}</span></a>`; }).join('')}</div>`
               : `<p class="panel-note" style="border:0">Not part of a funding cluster or same-tx bundle.</p>`}
           </section>
         </div>
@@ -83,7 +83,7 @@ export function render(root, [addr]) {
               <div class="tabs"><span class="tab is-active">Tokens</span>
                 <div class="tabs-end"><div class="seg is-sm">${[['vol', 'Volume'], ['net', 'Net'], ['n', 'Tx']].map(([k, l]) => `<button class="seg-btn ${st.tokSort === k ? 'is-active' : ''}" data-toksort="${k}">${l}</button>`).join('')}</div></div></div>
               <div class="table-wrap"><table class="table is-compact" style="--min:480px"><thead><tr><th>Token</th><th class="rt">Tx</th><th class="rt">Bought</th><th class="rt">Sold</th><th class="rt">Net</th></tr></thead><tbody>
-                ${tokRows.map(p => `<tr class="is-link" data-href="${tokenHref(p.k)}"><td><div class="who">${tokAv(p.k, 'is-md')}<span style="color:var(--text)">${esc(tokName(p.k))}</span></div></td><td class="rt">${p.n}</td><td class="rt pos">${usd(p.bu)}</td><td class="rt neg">${usd(p.so)}</td><td class="rt ${p.net >= 0 ? 'pos' : 'neg'}">${usd(p.net, true)}</td></tr>`).join('') || emptyRow(5, 'No swaps in the local snapshot.')}
+                ${tokRows.map(p => `<tr class="is-link" data-href="${tokenHref(p.k)}"><td><div class="who">${tokAv(p.k, 'is-md')}<span style="color:var(--text)">${esc(tokName(p.k))}</span></div></td><td class="rt">${p.n}</td><td class="rt pos">${usd(p.bu)}</td><td class="rt neg">${usd(p.so)}</td><td class="rt ${p.net >= 0 ? 'pos' : 'neg'}">${p.allSnap ? snapMark(1) : ''}${usd(p.net, true)}</td></tr>`).join('') || emptyRow(5, 'No swaps in the local snapshot.')}
               </tbody></table></div>
             </section>
             <section class="panel">

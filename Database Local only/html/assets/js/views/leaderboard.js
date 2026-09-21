@@ -47,7 +47,8 @@ function sniperRows() {
     const i = +key;
     if (!matchTag(i)) continue;
     const deltas = sn.snipes.map(s => s.delta_blocks);
-    rows.push([i, { snipes: sn.snipe_count, fastest: Math.min(...deltas), toks: [...new Set(sn.snipes.map(s => s.token))], net: S.statsAll.get(i)?.net ?? null }]);
+    const sa = S.statsAll.get(i);
+    rows.push([i, { snipes: sn.snipe_count, fastest: Math.min(...deltas), toks: [...new Set(sn.snipes.map(s => s.token))], net: sa?.net ?? null, allSnap: !!sa?.allSnap }]);
   }
   const key = st.sort;
   const val = r => key === 'fastest' ? -r[1].fastest : (r[1][key] ?? -1e18);
@@ -74,7 +75,7 @@ export function render(root) {
         <div class="seg" data-tabs><button class="seg-btn ${traders ? 'is-active' : ''}" data-tab="traders">Top traders</button><button class="seg-btn ${!traders ? 'is-active' : ''}" data-tab="snipers">Snipers</button></div>
         <div class="end">${traders ? dropdown('metric', 'trophy', METRICS, st.metric) + dropdown('win', 'clock', WINDOWS, st.win) + dropdown('tag', 'filter', TAG_OPTIONS(), st.tag) : ''}</div>
       </div>
-      <div class="page-sub"><span>${icon('wallet')}${nf(rows.length)} ${traders ? 'active wallets' : 'sniper wallets'}</span>${traders ? `<span>${icon('clock')}${winTxt}</span><span>${icon('info')}${priceNote()}</span>` : `<span>${icon('bolt')}First buy within 10 blocks of a pool’s first swap</span>`}</div>
+      <div class="page-sub"><span>${icon('wallet')}${nf(rows.length)} ${traders ? 'active wallets' : 'sniper wallets'}</span>${traders ? `<span>${icon('clock')}${winTxt}</span><span>${icon('info')}${priceNote()}</span>` : `<span>${icon('bolt')}First buy within 10 blocks of a pool’s first swap</span><span>${icon('info')}${priceNote()}</span>`}</div>
 
       ${pod.length ? `<div class="podium">${order.map(j => { const [ai, s] = pod[j], nm = walletName(ai);
         return `<a class="pod ${cls[j]}" href="${walletHref(ai)}">
@@ -100,7 +101,7 @@ export function render(root) {
               : `<tr class="is-link" data-href="${walletHref(ai)}"><td>${rank(r)}</td><td>${whoCell(ai)}</td>
                   <td class="rt">${nf(s.snipes)}</td><td class="rt">+${s.fastest} block${s.fastest === 1 ? '' : 's'}</td><td class="rt">${tokStack(s.toks, 4)}</td>
                   <td><div class="chips">${w[2].map(l => chip(S.labels[l])).join('')}</div></td>
-                  <td class="rt ${s.net == null ? 't3' : s.net >= 0 ? 'pos' : 'neg'}">${s.net == null ? '—' : usd(s.net, true)}</td></tr>`;
+                  <td class="rt ${s.net == null ? 't3' : s.net >= 0 ? 'pos' : 'neg'}">${s.net == null ? '—' : (s.allSnap ? snapMark(1) : '') + usd(s.net, true)}</td></tr>`;
           }).join('') : emptyRow(10, 'No swaps in this window. Try 30D or All.')}</tbody>
         </table></div>
         ${pager(rows.length, st)}

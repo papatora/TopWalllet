@@ -25,11 +25,12 @@ export function stats(ai, from = 0, to = Infinity, onlyTok = null) {
   for (const [k, t, sd, u, , sn] of S.swaps[ai] || []) {
     if (t < from || t >= to || (onlyTok != null && k !== onlyTok)) continue;
     let p = per.get(k);
-    if (!p) { p = { n: 0, nb: 0, ns: 0, bu: 0, so: 0, fb: null, ls: null, snap: 0 }; per.set(k, p); }
+    if (!p) { p = { n: 0, nb: 0, ns: 0, bu: 0, so: 0, fb: null, ls: null, snap: 0, valued: 0 }; per.set(k, p); }
     p.n++; first = first || t; last = t;
-    if (sd) { ns++; p.ns++; p.ls = t; if (u >= 0) { so += u; p.so += u; if (sn) { snap++; p.snap++; } } else unp++; }
-    else { nb++; p.nb++; if (p.fb == null) p.fb = t; if (u >= 0) { bu += u; p.bu += u; if (sn) { snap++; p.snap++; } } else unp++; }
+    if (sd) { ns++; p.ns++; p.ls = t; if (u >= 0) { so += u; p.so += u; p.valued++; if (sn) { snap++; p.snap++; } } else unp++; }
+    else { nb++; p.nb++; if (p.fb == null) p.fb = t; if (u >= 0) { bu += u; p.bu += u; p.valued++; if (sn) { snap++; p.snap++; } } else unp++; }
   }
+  for (const p of per.values()) p.allSnap = p.snap > 0 && p.snap === p.valued;
   let w = 0, l = 0; const holds = [];
   for (const p of per.values()) {
     if (p.ls == null) continue;

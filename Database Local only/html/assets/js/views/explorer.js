@@ -1,6 +1,6 @@
 import { S, tokName } from '../lib/store.js';
 import { esc, nf, usd, date, short } from '../lib/fmt.js';
-import { icon, chip, labelMeta, pretty, thead, pager, emptyRow, walletHref, whoCell } from '../lib/ui.js';
+import { icon, chip, labelMeta, pretty, thead, pager, emptyRow, walletHref, whoCell, snapMark } from '../lib/ui.js';
 
 const st = { tab: 'wallets', q: '', type: null, label: null, act: 'all', token: null, sort: 'signal', dir: -1, page: 0, per: 50 };
 const COLS = [
@@ -89,7 +89,7 @@ export function render(root, _params, query) {
               <td><div class="chips">${w[2].map(l => chip(S.labels[l])).join('')}</div></td>
               <td><span class="conf"><span class="bar"><b style="width:${mc * 100}%"></b></span><span class="t2">${mc.toFixed(2)}</span></span></td>
               <td class="rt">${s ? nf(s.swaps) : '<span class="t3">—</span>'}</td>
-              <td class="rt ${s ? (s.net >= 0 ? 'pos' : 'neg') : 't3'}">${s ? usd(s.net, true) : '—'}</td>
+              <td class="rt ${s ? (s.net >= 0 ? 'pos' : 'neg') : 't3'}">${s ? (s.allSnap ? snapMark(1) : '') + usd(s.net, true) : '—'}</td>
               <td class="rt t2">${s ? date(s.last, true) : '<span class="t3">—</span>'}</td></tr>`; }).join('') || emptyRow(8, 'No wallets match these filters. Clear a filter to widen the search.')}
           </tbody></table></div>
           ${pager(list.length, st)}

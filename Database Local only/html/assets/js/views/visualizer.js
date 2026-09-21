@@ -1,7 +1,7 @@
 // Visualizer — force-directed bubble map (Bubblemaps) with entity icons & flows (Arkham).
 import { S, tokName, walletName } from '../lib/store.js';
 import { esc, nf, usd, date, short, pct } from '../lib/fmt.js';
-import { icon, chip, tokAv, walletHref, tokenHref, addrExt, txHref, copy, toast } from '../lib/ui.js';
+import { icon, chip, tokAv, walletHref, tokenHref, addrExt, txHref, copy, toast, snapMark } from '../lib/ui.js';
 import { buildScope, visibleGraph, ENTITY_TYPES } from '../lib/graph-data.js';
 import { GraphCanvas } from '../lib/graph.js';
 import { bucketDays } from '../lib/charts.js';
@@ -284,7 +284,7 @@ export function render(root, _params, query) {
       const nm = walletName(n.ref);
       lines.push(`<div class="addr" style="font-size:12px">${short(n.addr, 8, 6)}</div>`);
       if (nm) lines.push(`<div class="t2">${esc(nm)}</div>`);
-      lines.push(`<div>Volume est. <b>${usd(n.vol)}</b></div>`, `<div>Net <span class="${n.net >= 0 ? 'pos' : 'neg'}">${usd(n.net, true)}</span> · ${n.swaps} swaps</div>`);
+      lines.push(`<div>Volume est. <b>${usd(n.vol)}</b></div>`, `<div>Net <span class="${n.net >= 0 ? 'pos' : 'neg'}">${n.snap > 0 && n.snap === n.valued ? snapMark(1) : ''}${usd(n.net, true)}</span> · ${n.swaps} swaps</div>`);
       if (n.cluster != null) lines.push(`<div style="color:${n.clusterColor}">Cluster ${n.cluster + 1}</div>`);
     } else if (n.kind === 'token') lines.push(`<div><b>${esc(n.label)}</b> <span class="t3">Uniswap pool</span></div>`, `<div>${n.traders} traders · ${usd(n.vol)} est.</div>`);
     else if (n.kind === 'group') {

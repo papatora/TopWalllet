@@ -25,7 +25,7 @@ export function render(root, [addr]) {
       const rows = [...traders].sort((x, y) => ((y[1][st.sort] ?? -1e18) - (x[1][st.sort] ?? -1e18)) * -st.dir);
       const start = st.page * st.per;
       body = `<table class="table" style="--min:900px"><thead>${thead(TR_COLS, st)}</thead><tbody>${rows.slice(start, start + st.per).map(([i, s], j) =>
-        `<tr class="is-link" data-href="${walletHref(i)}"><td>${rank(start + j + 1)}</td><td>${whoCell(i)}</td><td class="rt ${s.net >= 0 ? 'pos' : 'neg'}">${usd(s.net, true)}</td><td class="rt pos">${usd(s.bu)}</td><td class="rt neg">${usd(s.so)}</td><td class="rt">${s.nb} / ${s.ns}</td><td class="rt">${dur(s.hold)}</td><td>${chip(S.types[S.wallets[i][1]])}</td></tr>`).join('') || emptyRow(8, 'No local swaps for this token.')}</tbody></table>`;
+        `<tr class="is-link" data-href="${walletHref(i)}"><td>${rank(start + j + 1)}</td><td>${whoCell(i)}</td><td class="rt ${s.net >= 0 ? 'pos' : 'neg'}">${s.allSnap ? snapMark(1) : ''}${usd(s.net, true)}</td><td class="rt pos">${usd(s.bu)}</td><td class="rt neg">${usd(s.so)}</td><td class="rt">${s.nb} / ${s.ns}</td><td class="rt">${dur(s.hold)}</td><td>${chip(S.types[S.wallets[i][1]])}</td></tr>`).join('') || emptyRow(8, 'No local swaps for this token.')}</tbody></table>`;
       foot = pager(rows.length, st);
     } else if (st.tab === 'swaps') {
       body = `<table class="table is-compact" style="--min:760px"><thead><tr><th>Time (UTC)</th><th>Side</th><th>Wallet</th><th class="rt">USD est.</th><th>Tx</th></tr></thead><tbody>${[...swaps].reverse().slice(0, 200).map(([ai, , ts, sd, u, tx, sn]) =>
@@ -38,7 +38,7 @@ export function render(root, [addr]) {
                                     : e.kind === 'CONFIRMED_INSIDER' ? `transfer murni dari ${Object.keys(e.senders || {}).length} pengirim`
                                     : `${e.sell_count ?? ''} sells without a buy`.trim())
                                     : 'incoming only';
-        return `<tr class="is-link" data-href="${walletHref(i)}"><td>${chip(lab)}</td><td>${whoCell(i, { full: false })}</td><td class="t2" style="font-family:var(--sans)">${esc(ev)}</td><td class="rt ${s.swaps ? (s.net >= 0 ? 'pos' : 'neg') : 't3'}">${s.swaps ? usd(s.net, true) : '—'}</td></tr>`; }).join('') || emptyRow(4, 'No wallet on this token carries a sniper, bundler, dev or insider label.')}</tbody></table>`;
+        return `<tr class="is-link" data-href="${walletHref(i)}"><td>${chip(lab)}</td><td>${whoCell(i, { full: false })}</td><td class="t2" style="font-family:var(--sans)">${esc(ev)}</td><td class="rt ${s.swaps ? (s.net >= 0 ? 'pos' : 'neg') : 't3'}">${s.swaps ? (s.allSnap ? snapMark(1) : '') + usd(s.net, true) : '—'}</td></tr>`; }).join('') || emptyRow(4, 'No wallet on this token carries a sniper, bundler, dev or insider label.')}</tbody></table>`;
     }
 
     root.innerHTML = `<div class="page">
