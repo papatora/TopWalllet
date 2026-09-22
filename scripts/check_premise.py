@@ -45,7 +45,7 @@ def main() -> int:
           f"size {st.st_size:,} byte")
 
     con = sqlite3.connect(f"file:{DB}?mode=ro", uri=True)
-    tables = ("price_points", "wallet_scores", "swap_events", "wallets", "tokens", "pools")
+    tables = ("price_points", "wallet_scores", "positions", "swap_events", "wallets", "tokens", "pools")
     counts = {t: con.execute(f"select count(*) from {t}").fetchone()[0] for t in tables}
     cps = {k: str(v)[:19] for k, v in con.execute("select stage,cursor from pipeline_checkpoints")}
     integrity = con.execute("pragma quick_check").fetchone()[0]
