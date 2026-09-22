@@ -35,6 +35,11 @@ fallback and 0 when it came from a price series. The UI marks such USD with
 "~". Derived USD-threshold labels (WHALE / WHALE_SUS at net >= $100K) are
 NOT derived for wallets whose every priced leg is snapshot-valued: a single
 static price times token amount is not a measurable PnL.
+
+DIRTY-DATA TOLERANCE (audit-J): price points with 0/None price are dropped
+(one trailing 0.0 must not erase a pool's whole history), and rows with an
+unparseable ts are skipped and counted in meta.swaps_bad_ts instead of
+crashing build() — one bad row among millions must not 500 /api/rebuild.
 """
 from __future__ import annotations
 
@@ -56,6 +61,15 @@ def _load(rel: str):
 
 def _epoch(ts: str) -> int:
     return int(datetime.fromisoformat(ts.replace("Z", "+00:00")).replace(tzinfo=timezone.utc).timestamp())
+
+
+def _epoch_ok(ts):
+    """ISO ts -> epoch, atau None kalau malformed. Satu row kotor di antara
+    jutaan tidak boleh mematikan build()/POST /api/rebuild (audit-J P1)."""
+    try:
+        return _epoch(ts)
+    except (ValueError, TypeError):
+        return None
 
 
 def build() -> dict:
@@ -80,7 +94,7 @@ def build() -> dict:
     for addr, sym, name, price, liq, vol, first in con.execute(
         "select address,symbol,name,price_usd,liquidity_usd,volume_24h_usd,first_seen from tokens"
     ):
-        tokens[tk(addr)][1:7] = [sym, name, price, liq, vol, _epoch(first)]
+        tokens[tk(addr)][1:7] = [sym, name, price, liq, vol, _epoch_ok(first) or 0]
         liquidity[addr.lower()] = liq
         if price:
             snap[addr.lower()] = price
@@ -98,24 +112,25 @@ def build() -> dict:
     for tok, (pool, dex, quote) in pool_for.items():
         i = tk(tok)
         tokens[i][7:9] = [dex, quote]
-        rows = con.execute(
+        rows = [r for r in con.execute(
             "select block_num, price_usd, ts from price_points where pool_address=? order by block_num", (pool,)
-        ).fetchall()
+        ).fetchall() if r[1]]  # titik 0/None = data kotor, bukan harga legit (audit-J):
+        # tanpa filter ini SATU titik akhir 0.0 menghapus seluruh series+spark pool
         if not rows:
             continue
         # Some pools (notably USDG-quoted) store price_points on the wrong scale (~1e-12x).
         # When the latest point is >30x away from the token's snapshot price, rescale the
         # whole series onto the snapshot price and record it as calibrated.
         scale, snap_px, last = 1.0, tokens[i][3], rows[-1][1]
-        if snap_px and last and not (1 / 30 <= last / snap_px <= 30):
+        if snap_px and not (1 / 30 <= last / snap_px <= 30):
             scale = snap_px / last
             calibrated.append([i, round(scale, 6) if scale >= 1e-6 else scale])
-        elif not last:
-            continue
         series[tok] = ([r[0] for r in rows], [r[1] * scale for r in rows])
         step = max(1, len(rows) // SPARK_POINTS)
         pick = rows[::step] + ([rows[-1]] if (len(rows) - 1) % step else [])
-        spark[i] = [[_epoch(r[2]), r[1] * scale] for r in pick]
+        pts = [[te, r[1] * scale] for r in pick if (te := _epoch_ok(r[2])) is not None]
+        if pts:
+            spark[i] = pts
 
     def price_at(tok: str, block: int):
         s = series.get(tok)
@@ -130,12 +145,17 @@ def build() -> dict:
     swaps_by_w: dict[int, list] = defaultdict(list)
     priced = unpriced = outliers = 0
     priced_series = priced_fallback = 0
+    bad_ts = 0
     ts_min = ts_max = None
     for wa, ta, ts, block, side, amt, tx in con.execute(
         "select lower(wallet_address), lower(token_address), ts, block_num, side, token_amount, tx_hash "
         "from swap_events order by ts"
     ):
         if wa not in widx:
+            continue
+        t = _epoch_ok(ts)
+        if t is None:  # row kotor: tak bisa diletakkan di timeline -> skip, jangan crash
+            bad_ts += 1
             continue
         p = price_at(ta, block)
         from_fallback = p is None
@@ -152,7 +172,6 @@ def build() -> dict:
                 priced_fallback += 1
             else:
                 priced_series += 1
-        t = _epoch(ts)
         ts_min = t if ts_min is None else min(ts_min, t)
         ts_max = t if ts_max is None else max(ts_max, t)
         swaps_by_w[widx[wa]].append(
@@ -339,6 +358,7 @@ def build() -> dict:
             "built": datetime.now(timezone.utc).isoformat(timespec="seconds"),
             "swap_from": ts_min, "swap_to": ts_max,
             "swaps_total": priced + unpriced, "priced": priced, "unpriced": unpriced, "outliers": outliers,
+            "swaps_bad_ts": bad_ts,
             "price_points": n_price_points,
             "priced_series": priced_series, "priced_fallback": priced_fallback,
             "pricing_mode": ("historical" if priced_fallback == 0 and priced_series > 0
