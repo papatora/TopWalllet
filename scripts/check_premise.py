@@ -45,12 +45,13 @@ def main() -> int:
           f"size {st.st_size:,} byte")
 
     con = sqlite3.connect(f"file:{DB}?mode=ro", uri=True)
-    tables = ("price_points", "wallet_scores", "swap_events", "wallets", "tokens")
+    tables = ("price_points", "wallet_scores", "swap_events", "wallets", "tokens", "pools")
     counts = {t: con.execute(f"select count(*) from {t}").fetchone()[0] for t in tables}
     cps = {k: str(v)[:19] for k, v in con.execute("select stage,cursor from pipeline_checkpoints")}
+    integrity = con.execute("pragma quick_check").fetchone()[0]
     con.close()
     print(f"[local] counts: {counts}")
-    print(f"[local] checkpoints: {cps}")
+    print(f"[local] quick_check: {integrity} | checkpoints: {cps}")
     if counts["price_points"] == 0 or counts["wallet_scores"] == 0:
         ok = False
         print("[local] PREMIS TIDAK TERPENUHI: sparkline / Price trend / Price chart /")
@@ -59,8 +60,13 @@ def main() -> int:
 
     if TW.exists():
         tw = json.loads(TW.read_text(encoding="utf-8"))
+        twmt = datetime.fromtimestamp(TW.stat().st_mtime)
         print(f"[local] top_wallets_latest.json: generated {str(tw.get('generated_at', '?'))[:10]} | "
-              f"total_ranked {tw.get('total_ranked')}")
+              f"total_ranked {tw.get('total_ranked')} | mtime {twmt}")
+
+    arts = sorted(set(str(p) for pat in ("data/topwallet.new.db*", "data/local_snapshot*",
+                                         "**/*.sql.part*") for p in REPO.glob(pat)))
+    print(f"[local] artefak ekstraksi (new.db/dump/part): {arts if arts else 'TIDAK ADA'}")
 
     try:
         req = urllib.request.urlopen(f"http://127.0.0.1:{args.port}/api/dataset", timeout=120)
@@ -69,12 +75,13 @@ def main() -> int:
             body = gzip.decompress(body)
         d = json.loads(body)
         m = d["meta"]
-        realized = sum(1 for e in d.get("ev", {}).values()
-                       if (e.get("_score") or {}).get("realized") is not None)
+        realized = [(int(k), v["_score"]["realized"]) for k, v in d.get("ev", {}).items()
+                    if (v.get("_score") or {}).get("realized") is not None]
+        sample = "; ".join(f"idx {i} {d['wallets'][i][0]} realized ${r}" for i, r in realized[:3])
         print(f"[api] pricing_mode={m.get('pricing_mode')} | price_points={m.get('price_points')} | "
               f"priced series/fallback={m.get('priced_series')}/{m.get('priced_fallback')} | "
               f"spark={len(d.get('spark', {}))} token | calibrated={len(m.get('calibrated', []))} | "
-              f"ev.realized!=null={realized} wallet")
+              f"ev.realized!=null={len(realized)} wallet {('| ' + sample) if sample else ''}")
         if m.get("pricing_mode") in ("snapshot_fallback", "none"):
             ok = False
     except OSError as e:
