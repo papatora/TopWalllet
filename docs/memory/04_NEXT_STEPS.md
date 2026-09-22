@@ -26,6 +26,19 @@
 - [VPS] jalan sendiri seperti biasa.
 - User mau recall besok: arkham (done) + goal #5 bubblemaps + rescoring.
 
+## 🚨 [VPS] DOWN (2026-09-21 pagi — user perlu cek console provider)
+- SSH 78.31.250.202:22 TIMEOUT total sejak pagi (host tak merespons —
+  kemungkinan hang, reboot, atau IP di-null-route provider).
+- WORKFLOW A-J SUDAH JALAN 10 RONDE PENUH (A-J): 0 P0, kode explorer sehat
+  (10 commit fix polish: ce0f00d..a18691d), skor tertahan 6.55 HANYA karena
+  DB lokal belum punya price_points/wallet_scores (butuh ekstraksi [VPS]).
+- **PUSH FALLBACK KETEMU**: lokal push via URL eksplisit
+  `git push https://x-access-token:$GITHUB_TOKEN@github.com/...` TIDAK hang
+  (yang hang itu credential-manager). Pakai ini selama [VPS] down.
+- Saat [VPS] hidup lagi (urut): (1) cek supervisor + wallet_scores;
+  (2) `git pull` di VPS (VPS ketinggalan: a18691d); (3) baru ekstraksi
+  besar → rebuild → ronde audit final → konvergen.
+
 ## ❗ YANG HARUS DILAKUKAN [PC] BESOK PAGI (urut)
 1. Cek [VPS]: `wallet_scores > 0`? (fix autoflush 09b7c10 baru dideploy
    dini hari — cycle analyze restart dgn kode baru; watcher lapor).
