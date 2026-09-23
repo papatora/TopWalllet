@@ -1,0 +1,6593 @@
+{
+ "groups": {
+  "AIRDROP_FARMER": {
+   "count": 3389,
+   "bad_labels_inside": 3389,
+   "balanced_traders": 17,
+   "sample": [
+    {
+     "addr": "0xb6fa4b1b14859d7d1c6cd2e2be026c5b9b5074d6",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 544,
+     "buys": 0,
+     "sells": 544,
+     "toks": 15,
+     "net_usd": 0,
+     "span_days": 106.2
+    },
+    {
+     "addr": "0xeae69296cfc8d3ea63220c879d1099104dc7f35b",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 543,
+     "buys": 0,
+     "sells": 543,
+     "toks": 18,
+     "net_usd": 0,
+     "span_days": 69.9
+    },
+    {
+     "addr": "0xf5c4f3dc02c3fb9279495a8fef7b0741da956157",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 514,
+     "buys": 0,
+     "sells": 514,
+     "toks": 325,
+     "net_usd": 0,
+     "span_days": 1163.1
+    },
+    {
+     "addr": "0xca5b3bbb368db39d223a9fa57a577f9a98a03638",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 369,
+     "buys": 0,
+     "sells": 369,
+     "toks": 162,
+     "net_usd": 0,
+     "span_days": 571.8
+    },
+    {
+     "addr": "0xad01c20d5886137e056775af56915de824c8fce5",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 321,
+     "buys": 0,
+     "sells": 321,
+     "toks": 181,
+     "net_usd": 0,
+     "span_days": 1264.1
+    },
+    {
+     "addr": "0x7a0c9dc647996309bd090e391d8f77f66b2e6154",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 152,
+     "buys": 8,
+     "sells": 144,
+     "toks": 20,
+     "net_usd": 0,
+     "span_days": 311.6
+    },
+    {
+     "addr": "0x18a1d777fe55d089b7fb94743006ad07d0f068da",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 140,
+     "buys": 41,
+     "sells": 99,
+     "toks": 3,
+     "net_usd": 0,
+     "span_days": 22.0
+    },
+    {
+     "addr": "0x034f053cc1773bbab3c388396f057820928d4fb9",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 138,
+     "buys": 0,
+     "sells": 138,
+     "toks": 3,
+     "net_usd": 0,
+     "span_days": 16.9
+    },
+    {
+     "addr": "0xb666fd9b55572a3cf6d42b16fb550787670a000f",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 127,
+     "buys": 0,
+     "sells": 127,
+     "toks": 33,
+     "net_usd": 0,
+     "span_days": 1115.0
+    },
+    {
+     "addr": "0x7da72b7d3174285f5daa14e86d232d330c6febe8",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 125,
+     "buys": 67,
+     "sells": 58,
+     "toks": 4,
+     "net_usd": 0,
+     "span_days": 123.4
+    },
+    {
+     "addr": "0x4bba0b7cab9f247b566e46545cf5e87496b81a6a",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 118,
+     "buys": 52,
+     "sells": 66,
+     "toks": 3,
+     "net_usd": 0,
+     "span_days": 236.8
+    },
+    {
+     "addr": "0x8ac3fce9c093af3ae5cd632b7c4f9ddb47c8b06d",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 117,
+     "buys": 51,
+     "sells": 66,
+     "toks": 3,
+     "net_usd": 0,
+     "span_days": 236.8
+    },
+    {
+     "addr": "0x682cf68fc214d99b0cbb2438d44bcd921f763b4f",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 108,
+     "buys": 0,
+     "sells": 108,
+     "toks": 46,
+     "net_usd": 0,
+     "span_days": 164.8
+    },
+    {
+     "addr": "0x4f79dd35aa49a87e55b7af3ed0bb9d3c09e0febc",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 106,
+     "buys": 42,
+     "sells": 64,
+     "toks": 39,
+     "net_usd": 0,
+     "span_days": 226.3
+    },
+    {
+     "addr": "0xfeaddad1bcce20fca3aa81e943fd499efaba8aac",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 106,
+     "buys": 39,
+     "sells": 67,
+     "toks": 5,
+     "net_usd": 0,
+     "span_days": 63.8
+    },
+    {
+     "addr": "0x9c9c9df99b3b0308d13951614220c0c921082c24",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 93,
+     "buys": 58,
+     "sells": 35,
+     "toks": 5,
+     "net_usd": 0,
+     "span_days": 110.0
+    },
+    {
+     "addr": "0xe056aa367dda34c0e3c4c2cb2760f5695be90526",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 91,
+     "buys": 19,
+     "sells": 72,
+     "toks": 6,
+     "net_usd": 0,
+     "span_days": 553.2
+    },
+    {
+     "addr": "0x0b5748af9a52e09cd7bb2d66b2318b3b22c21295",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 82,
+     "buys": 2,
+     "sells": 80,
+     "toks": 2,
+     "net_usd": 0,
+     "span_days": 16.8
+    },
+    {
+     "addr": "0x25aa5598a14c2ace4406309365601ca9bca1fe51",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 80,
+     "buys": 53,
+     "sells": 27,
+     "toks": 7,
+     "net_usd": 0,
+     "span_days": 117.9
+    },
+    {
+     "addr": "0x04efcbf9ae54f572d3c4644d92f2914dc97e1788",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 78,
+     "buys": 9,
+     "sells": 69,
+     "toks": 4,
+     "net_usd": 0,
+     "span_days": 146.4
+    },
+    {
+     "addr": "0x776b1e178bd80fea40999bf4291e30af1a56ec10",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 75,
+     "buys": 9,
+     "sells": 66,
+     "toks": 14,
+     "net_usd": 0,
+     "span_days": 168.7
+    },
+    {
+     "addr": "0x8b46f19b7b673b83912f8f4d790619ad367fa1d2",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 75,
+     "buys": 0,
+     "sells": 75,
+     "toks": 12,
+     "net_usd": 0,
+     "span_days": 116.8
+    },
+    {
+     "addr": "0xe3be78afb32bc4fcfeb35108f546ec7b955860c1",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 73,
+     "buys": 31,
+     "sells": 42,
+     "toks": 5,
+     "net_usd": 0,
+     "span_days": 40.4
+    },
+    {
+     "addr": "0xa987cd6c1f6ef6665c88e05340fba5852315a390",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 69,
+     "buys": 0,
+     "sells": 69,
+     "toks": 5,
+     "net_usd": 0,
+     "span_days": 176.7
+    },
+    {
+     "addr": "0x355d67577386ab1255ab99e191e032215eea286c",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 68,
+     "buys": 0,
+     "sells": 68,
+     "toks": 5,
+     "net_usd": 0,
+     "span_days": 177.2
+    },
+    {
+     "addr": "0x2d3104452dc3aa4d5adff9add23edf8751601412",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 66,
+     "buys": 46,
+     "sells": 20,
+     "toks": 3,
+     "net_usd": 0,
+     "span_days": 93.6
+    },
+    {
+     "addr": "0x4399ed18d93613eff47045673390125e6bdd8a92",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 66,
+     "buys": 0,
+     "sells": 66,
+     "toks": 5,
+     "net_usd": 0,
+     "span_days": 176.7
+    },
+    {
+     "addr": "0xafbee34ca32f7b28d6d422cf44af950dce144d12",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 66,
+     "buys": 0,
+     "sells": 66,
+     "toks": 5,
+     "net_usd": 0,
+     "span_days": 176.7
+    },
+    {
+     "addr": "0x3875cf68c36c223bbe9046eb60dd97376d90d498",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 57,
+     "buys": 51,
+     "sells": 6,
+     "toks": 4,
+     "net_usd": 0,
+     "span_days": 107.6
+    },
+    {
+     "addr": "0x07856de09e8c0c2427e16b9372ebf4d80257a5cd",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 55,
+     "buys": 0,
+     "sells": 55,
+     "toks": 8,
+     "net_usd": 0,
+     "span_days": 155.2
+    },
+    {
+     "addr": "0x3a3c6bb8f5c91207b849835be0877ac0c7bdc034",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 55,
+     "buys": 1,
+     "sells": 54,
+     "toks": 2,
+     "net_usd": 0,
+     "span_days": 40.0
+    },
+    {
+     "addr": "0x36329585a84d9f35d899dac2c9bab949e803f511",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 54,
+     "buys": 0,
+     "sells": 54,
+     "toks": 7,
+     "net_usd": 0,
+     "span_days": 184.0
+    },
+    {
+     "addr": "0x511a69dab088f1885260882e12b0354fed3fac0c",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 54,
+     "buys": 18,
+     "sells": 36,
+     "toks": 15,
+     "net_usd": 0,
+     "span_days": 129.8
+    },
+    {
+     "addr": "0xbf35eb6f9a8c9de3ea3f4f5b9e7353337a2d7e21",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 54,
+     "buys": 0,
+     "sells": 54,
+     "toks": 2,
+     "net_usd": 0,
+     "span_days": 23.9
+    },
+    {
+     "addr": "0xc2797dde240f28fc662ffa32f48d0981c1c70bca",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 54,
+     "buys": 26,
+     "sells": 28,
+     "toks": 4,
+     "net_usd": 0,
+     "span_days": 110.9
+    },
+    {
+     "addr": "0x0b33f914a20e831181c3d2b56b24b015d6a9f1bc",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 52,
+     "buys": 1,
+     "sells": 51,
+     "toks": 2,
+     "net_usd": 0,
+     "span_days": 71.1
+    },
+    {
+     "addr": "0x2fd1887e5d99014cb0b8884f06560ed20d65003d",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 52,
+     "buys": 25,
+     "sells": 27,
+     "toks": 19,
+     "net_usd": 0,
+     "span_days": 162.8
+    },
+    {
+     "addr": "0x97cd0ddf2437db90f8c2423a7bdfa30b1ba6d7fc",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 52,
+     "buys": 1,
+     "sells": 51,
+     "toks": 2,
+     "net_usd": 0,
+     "span_days": 71.4
+    },
+    {
+     "addr": "0xcd6b980029e6e6e0733ac8ec3e02be9410d09799",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 52,
+     "buys": 0,
+     "sells": 52,
+     "toks": 37,
+     "net_usd": 0,
+     "span_days": 392.5
+    },
+    {
+     "addr": "0xed21c758567477ced782525a419e294daf0bbf6f",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 52,
+     "buys": 1,
+     "sells": 51,
+     "toks": 2,
+     "net_usd": 0,
+     "span_days": 33.7
+    },
+    {
+     "addr": "0x70efa177916b0d98612d1c8eaa0b9ba962e7a19f",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 51,
+     "buys": 1,
+     "sells": 50,
+     "toks": 2,
+     "net_usd": 0,
+     "span_days": 38.0
+    },
+    {
+     "addr": "0xbe0ca442d6b7d81e0faa7dbfd09331019f893f89",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 51,
+     "buys": 30,
+     "sells": 21,
+     "toks": 7,
+     "net_usd": 0,
+     "span_days": 156.3
+    },
+    {
+     "addr": "0x022296c70f3697c38eb287316282f8e00cc88d47",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 50,
+     "buys": 0,
+     "sells": 50,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.7
+    },
+    {
+     "addr": "0x16e44f2a0b86a62a11eb88da6f3f9e6ac0beccb3",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 50,
+     "buys": 0,
+     "sells": 50,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.0
+    },
+    {
+     "addr": "0x1ee8979055e976ff8f3f2465e41bc2376c58a974",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 50,
+     "buys": 0,
+     "sells": 50,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.3
+    },
+    {
+     "addr": "0x248a276b1eba20fcbfdbffa4b52ef126dbbb2b7e",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 50,
+     "buys": 0,
+     "sells": 50,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 1.2
+    },
+    {
+     "addr": "0x29d6e715a39bf821ac80796229fed38d0a9aaf3d",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 50,
+     "buys": 0,
+     "sells": 50,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.0
+    },
+    {
+     "addr": "0x31c0e8e06890b7469b4c2fc3cc84cfe5816e337a",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 50,
+     "buys": 0,
+     "sells": 50,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.3
+    },
+    {
+     "addr": "0x371c091c53ad96f4de3069af5c317d00320fb86a",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 50,
+     "buys": 0,
+     "sells": 50,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.0
+    },
+    {
+     "addr": "0x3efeaf9feeae3eeb086f4d600f64e2f41e6fdd68",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 50,
+     "buys": 0,
+     "sells": 50,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.2
+    },
+    {
+     "addr": "0x420d6e73f8eb175ce0608673368b746f632cd9c3",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 50,
+     "buys": 0,
+     "sells": 50,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 18.8
+    },
+    {
+     "addr": "0x457bbc4ce196300e7ed4c3fa8d90d62df2a67129",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 50,
+     "buys": 0,
+     "sells": 50,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 19.5
+    },
+    {
+     "addr": "0x46663785e553a0d96d24fdb17c41bbfe2bc05375",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 50,
+     "buys": 0,
+     "sells": 50,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.4
+    },
+    {
+     "addr": "0x4cca780f82917bb49821319f8b5efd269596214f",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 50,
+     "buys": 0,
+     "sells": 50,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.1
+    },
+    {
+     "addr": "0x553625f6a5628f5ff62441389310172d3fa65c57",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 50,
+     "buys": 0,
+     "sells": 50,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.0
+    },
+    {
+     "addr": "0x5caecc7a940d9e9f7efc06d00515a70b696236b0",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 50,
+     "buys": 0,
+     "sells": 50,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 29.5
+    },
+    {
+     "addr": "0x5e8f5865dd386a9f0bd78b47248280102466ee8b",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 50,
+     "buys": 0,
+     "sells": 50,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.1
+    },
+    {
+     "addr": "0x623265cb986174e0c90d54c0b93153651bf9c466",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 50,
+     "buys": 21,
+     "sells": 29,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.4
+    },
+    {
+     "addr": "0x657cb46ba91b215eb4b4453405808f3b20f5a77a",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 50,
+     "buys": 0,
+     "sells": 50,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 2.8
+    },
+    {
+     "addr": "0x6d9e0a2b3d7b6c5633e7b8776fe56be1870adcf9",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 50,
+     "buys": 36,
+     "sells": 14,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 3.2
+    }
+   ]
+  },
+  "BUNDLER_SUSPECT": {
+   "count": 447,
+   "bad_labels_inside": 447,
+   "balanced_traders": 0,
+   "sample": [
+    {
+     "addr": "0x94b8a33b725aca24ce6e6bcb709c8bbc6d0020c8",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 50,
+     "buys": 32,
+     "sells": 18,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 1.0
+    },
+    {
+     "addr": "0xf6697747958f511c85310c4a05a592a5d1ecbb32",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 35,
+     "buys": 27,
+     "sells": 8,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 1.6
+    },
+    {
+     "addr": "0x8778bc4ba1e921269871ea5a04b93549ddaee9aa",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 33,
+     "buys": 20,
+     "sells": 13,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.6
+    },
+    {
+     "addr": "0x9691f2a4b894de209c0dccd7c96436d693d37eaa",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 32,
+     "buys": 22,
+     "sells": 10,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 1.0
+    },
+    {
+     "addr": "0x2f012c3ad7284e941733bb4ff2e83b4a16222d79",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 31,
+     "buys": 23,
+     "sells": 8,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.6
+    },
+    {
+     "addr": "0x8c1351f623c2fbc7891c0ac8bcd1608220b067c0",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 30,
+     "buys": 18,
+     "sells": 12,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.9
+    },
+    {
+     "addr": "0x1773e71a48406ce87540a1f1b3a56c08ca840e7a",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 28,
+     "buys": 17,
+     "sells": 11,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.5
+    },
+    {
+     "addr": "0x548646d957c590d7981aa707e1a9f40ca07f106e",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 28,
+     "buys": 18,
+     "sells": 10,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.9
+    },
+    {
+     "addr": "0xb94c9056bfbd713bcd2bfad1cfa08c6625ce4e7b",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 28,
+     "buys": 22,
+     "sells": 6,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 1.6
+    },
+    {
+     "addr": "0xec69e6a14dd113428e986a6ac516fe098620acf8",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 28,
+     "buys": 19,
+     "sells": 9,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 1.0
+    },
+    {
+     "addr": "0x234dbe0037cde2d044486893ae56280a3a0b43ed",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 26,
+     "buys": 20,
+     "sells": 6,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.4
+    },
+    {
+     "addr": "0x622a8038b028ca4920ba11bd01a609f872a656b9",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 23,
+     "buys": 17,
+     "sells": 6,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.9
+    },
+    {
+     "addr": "0x87f96e267766b44646bd2c4052924cd882351ad6",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 23,
+     "buys": 17,
+     "sells": 6,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 1.0
+    },
+    {
+     "addr": "0x630384019298dbf40065252248c795b28b77d669",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 21,
+     "buys": 13,
+     "sells": 8,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.9
+    },
+    {
+     "addr": "0xb5778317f1cb46f9cc34a7ba36f416c40daf0697",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 21,
+     "buys": 19,
+     "sells": 2,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.7
+    },
+    {
+     "addr": "0x2ca11919fb18e5caf6b437260bb3587bcb6e8f15",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 20,
+     "buys": 14,
+     "sells": 6,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.9
+    },
+    {
+     "addr": "0x833aa7dfd7a41e058a18ab8c68e7c388ad93f7bd",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 20,
+     "buys": 13,
+     "sells": 7,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.3
+    },
+    {
+     "addr": "0x6feb4f5159ea5405054249caa1f164807f4b156a",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 19,
+     "buys": 13,
+     "sells": 6,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 1.7
+    },
+    {
+     "addr": "0xbdd575abc4d2faca613cf44d028ec9dbdb92ac98",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 19,
+     "buys": 13,
+     "sells": 6,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.9
+    },
+    {
+     "addr": "0x475281320992a553301567579adeba31f77816b3",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 18,
+     "buys": 12,
+     "sells": 6,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.7
+    },
+    {
+     "addr": "0xc283d8bcf072f1cf88d161921d67c2700ad34c26",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 18,
+     "buys": 13,
+     "sells": 5,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 1.0
+    },
+    {
+     "addr": "0xf5584763cb66a194d0300094046d924a3300392d",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 18,
+     "buys": 13,
+     "sells": 5,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.9
+    },
+    {
+     "addr": "0xc1b1c7939732435007182b21aca69178b1741d7f",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 17,
+     "buys": 14,
+     "sells": 3,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.9
+    },
+    {
+     "addr": "0xec52be99037d3d574d25791df38690d59d6db32a",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 17,
+     "buys": 13,
+     "sells": 4,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.9
+    },
+    {
+     "addr": "0x12769a8dd4596fe062e9a9642818bd1e082a11c0",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 16,
+     "buys": 10,
+     "sells": 6,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.6
+    },
+    {
+     "addr": "0xd09e4607f80b6ba8a82ca2ae6c0d84451b8bc43e",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 16,
+     "buys": 9,
+     "sells": 7,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 1.2
+    },
+    {
+     "addr": "0xf628bf3d475d9ae547f39f20ca2b648acb909e6b",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 16,
+     "buys": 11,
+     "sells": 5,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.9
+    },
+    {
+     "addr": "0x036786ca4525fd719fcfa4ab6186bcb8aa2bff06",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 15,
+     "buys": 12,
+     "sells": 3,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.5
+    },
+    {
+     "addr": "0x5a287509a48564a8590c758685611895fb0536e5",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 15,
+     "buys": 11,
+     "sells": 4,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.9
+    },
+    {
+     "addr": "0x7de480e9871431bf0460816bd117bfbb010ea1d7",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 15,
+     "buys": 8,
+     "sells": 7,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.8
+    },
+    {
+     "addr": "0xd83118d8bb643239242562fc9ff84ea2049e596b",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 15,
+     "buys": 11,
+     "sells": 4,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 1.0
+    },
+    {
+     "addr": "0xd6fc420e457c3848d720a7d043268a6a8928b4ca",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 14,
+     "buys": 9,
+     "sells": 5,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.4
+    },
+    {
+     "addr": "0x4df38a6767dee2572773f7e06b79aa8bad976699",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 12,
+     "buys": 9,
+     "sells": 3,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.8
+    },
+    {
+     "addr": "0x7d64f107b39d0d45f67492ca2b6229b815c35a07",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 12,
+     "buys": 10,
+     "sells": 2,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.4
+    },
+    {
+     "addr": "0xa80b82a23decf4b262a821b8115db02619544ced",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 12,
+     "buys": 8,
+     "sells": 4,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.7
+    },
+    {
+     "addr": "0x074c4a80abb3eba8a48e3f53b0b1ad97c93e2d0d",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 11,
+     "buys": 10,
+     "sells": 1,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.5
+    },
+    {
+     "addr": "0x7f69074bbf22488479254651966b44212c66b85a",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 11,
+     "buys": 9,
+     "sells": 2,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.6
+    },
+    {
+     "addr": "0x8ee87a3bdceec8dfedb768402ecface940af8312",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 11,
+     "buys": 9,
+     "sells": 2,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.9
+    },
+    {
+     "addr": "0x9b57c68ea1aea0268270d9615dddd79751a00e8b",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 11,
+     "buys": 6,
+     "sells": 5,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.8
+    },
+    {
+     "addr": "0xc2a8e151ed7765ec51ccbbea10383ff8b3590099",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 11,
+     "buys": 7,
+     "sells": 4,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.4
+    },
+    {
+     "addr": "0x2ed5d42efe0f486e2dda1e0569575d276ef2be3e",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 10,
+     "buys": 9,
+     "sells": 1,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.8
+    },
+    {
+     "addr": "0x311b14f48f2d4e0a4ae4ae2b489ce946ac55348e",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 10,
+     "buys": 7,
+     "sells": 3,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.4
+    },
+    {
+     "addr": "0x73bc52c3cb57871eaa0cb7a4539529838f9ff380",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 10,
+     "buys": 6,
+     "sells": 4,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.8
+    },
+    {
+     "addr": "0x7ad3e0d85c58911da1fe06eca7d49b22b4a45e75",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 10,
+     "buys": 6,
+     "sells": 4,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 1.0
+    },
+    {
+     "addr": "0x9da2ea11c1d49fd3e3ac9c3cb5036eaf70e23e96",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 10,
+     "buys": 8,
+     "sells": 2,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.6
+    },
+    {
+     "addr": "0x9ff6ca9cf6963cfd0a9726acb8a84143f8c178f5",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 10,
+     "buys": 7,
+     "sells": 3,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.9
+    },
+    {
+     "addr": "0xb54a2449bba4d58ed2bcf80ddfbef903f85cba99",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 10,
+     "buys": 9,
+     "sells": 1,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.5
+    },
+    {
+     "addr": "0xbde1991d7a60ca204e5183c3baad377aa8ae6736",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 10,
+     "buys": 9,
+     "sells": 1,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.7
+    },
+    {
+     "addr": "0x4e1aea2f1a871eea291eb61d929847f554a2206d",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 9,
+     "buys": 6,
+     "sells": 3,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.6
+    },
+    {
+     "addr": "0xf9e4317f315608979907b83c514fc50f0eaab067",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 9,
+     "buys": 6,
+     "sells": 3,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.5
+    },
+    {
+     "addr": "0x47bbf70a93a0febbf48242627b09b846164bc9e5",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 8,
+     "buys": 6,
+     "sells": 2,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.4
+    },
+    {
+     "addr": "0x765a9c8f50475e95588288cbc887cc1118e4d0f4",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 8,
+     "buys": 5,
+     "sells": 3,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.6
+    },
+    {
+     "addr": "0xfbee7f92ac65666a9d7dbeb214b0681e3cccfb32",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 7,
+     "buys": 6,
+     "sells": 1,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.5
+    },
+    {
+     "addr": "0x19c830dbb89e3825f7d52c6e2d61004f8237919b",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 6,
+     "buys": 4,
+     "sells": 2,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.9
+    },
+    {
+     "addr": "0x1eab9b78c758fee033531a98f0506e52e15af1fe",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 6,
+     "buys": 4,
+     "sells": 2,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.6
+    },
+    {
+     "addr": "0x364a7f613f8556b1c73de4d4cf24bca0ecf7b717",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 6,
+     "buys": 3,
+     "sells": 3,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.2
+    },
+    {
+     "addr": "0x12aef2c4c9b44355e3cae6aea4eda0539abfef3f",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 5,
+     "buys": 5,
+     "sells": 0,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.6
+    },
+    {
+     "addr": "0x32eed725bde2759e5fcf1ab761eb82ba4926a0bc",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 5,
+     "buys": 4,
+     "sells": 1,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 3.9
+    },
+    {
+     "addr": "0x8d68a0a80ac48a8dfaa712276a515ef0f4d18b5d",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 5,
+     "buys": 5,
+     "sells": 0,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.1
+    },
+    {
+     "addr": "0xda154299021edd69118b275abbdeb00459805a02",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 5,
+     "buys": 4,
+     "sells": 1,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 3.9
+    }
+   ]
+  },
+  "CLUSTER_MEMBER": {
+   "count": 16,
+   "bad_labels_inside": 14,
+   "balanced_traders": 15,
+   "sample": [
+    {
+     "addr": "0xb1dc1e88579b075dc209ef2ec1224bf8130201d5",
+     "labels": [
+      "CLUSTER_MEMBER:cluster_be41",
+      "MEV_BOT"
+     ],
+     "conf": {
+      "CLUSTER_MEMBER:cluster_be41": 0.75,
+      "MEV_BOT": 0.85
+     },
+     "swaps": 100,
+     "buys": 50,
+     "sells": 50,
+     "toks": 2,
+     "net_usd": 0,
+     "span_days": 392.0
+    },
+    {
+     "addr": "0xb9358d13906da9f0b30fc322508b03d055e1abd9",
+     "labels": [
+      "CLUSTER_MEMBER:cluster_be41",
+      "MEV_BOT"
+     ],
+     "conf": {
+      "CLUSTER_MEMBER:cluster_be41": 0.75,
+      "MEV_BOT": 0.85
+     },
+     "swaps": 100,
+     "buys": 50,
+     "sells": 50,
+     "toks": 2,
+     "net_usd": 0,
+     "span_days": 435.1
+    },
+    {
+     "addr": "0x7676a8a3df4b74d391bf519029e7c7768ca2a282",
+     "labels": [
+      "CLUSTER_MEMBER:cluster_be41",
+      "MEV_BOT"
+     ],
+     "conf": {
+      "CLUSTER_MEMBER:cluster_be41": 0.75,
+      "MEV_BOT": 0.85
+     },
+     "swaps": 96,
+     "buys": 48,
+     "sells": 48,
+     "toks": 2,
+     "net_usd": 0,
+     "span_days": 381.6
+    },
+    {
+     "addr": "0x470e6be8b2e62f9e5f697ee854faf15036db588e",
+     "labels": [
+      "CLUSTER_MEMBER:cluster_be41",
+      "MEV_BOT"
+     ],
+     "conf": {
+      "CLUSTER_MEMBER:cluster_be41": 0.75,
+      "MEV_BOT": 0.85
+     },
+     "swaps": 94,
+     "buys": 47,
+     "sells": 47,
+     "toks": 2,
+     "net_usd": 0,
+     "span_days": 389.8
+    },
+    {
+     "addr": "0x14fe9a5c647fc916fe04fbd2822646d82afa38d0",
+     "labels": [
+      "CLUSTER_MEMBER:cluster_be41",
+      "MEV_BOT"
+     ],
+     "conf": {
+      "CLUSTER_MEMBER:cluster_be41": 0.75,
+      "MEV_BOT": 0.85
+     },
+     "swaps": 88,
+     "buys": 44,
+     "sells": 44,
+     "toks": 2,
+     "net_usd": 0,
+     "span_days": 340.3
+    },
+    {
+     "addr": "0x0630606d4abaddd08be21506bc4585e57cf9ff98",
+     "labels": [
+      "CLUSTER_MEMBER:cluster_be41",
+      "MEV_BOT"
+     ],
+     "conf": {
+      "CLUSTER_MEMBER:cluster_be41": 0.75,
+      "MEV_BOT": 0.85
+     },
+     "swaps": 86,
+     "buys": 43,
+     "sells": 43,
+     "toks": 2,
+     "net_usd": 0,
+     "span_days": 338.8
+    },
+    {
+     "addr": "0x977ae053e3a6909ba2bcfb1e316b6ff58606ea56",
+     "labels": [
+      "CLUSTER_MEMBER:cluster_be41",
+      "MEV_BOT"
+     ],
+     "conf": {
+      "CLUSTER_MEMBER:cluster_be41": 0.75,
+      "MEV_BOT": 0.85
+     },
+     "swaps": 78,
+     "buys": 39,
+     "sells": 39,
+     "toks": 2,
+     "net_usd": 0,
+     "span_days": 326.7
+    },
+    {
+     "addr": "0x70cf1b6e80aae62fe8e793eac31870b9ecf2d31a",
+     "labels": [
+      "CLUSTER_MEMBER:cluster_be41",
+      "MEV_BOT"
+     ],
+     "conf": {
+      "CLUSTER_MEMBER:cluster_be41": 0.75,
+      "MEV_BOT": 0.85
+     },
+     "swaps": 74,
+     "buys": 37,
+     "sells": 37,
+     "toks": 2,
+     "net_usd": 0,
+     "span_days": 274.8
+    },
+    {
+     "addr": "0x5740db16b0a5f853a18cb467f1f1cdaa07125da1",
+     "labels": [
+      "CLUSTER_MEMBER:cluster_be41",
+      "MEV_BOT"
+     ],
+     "conf": {
+      "CLUSTER_MEMBER:cluster_be41": 0.75,
+      "MEV_BOT": 0.85
+     },
+     "swaps": 68,
+     "buys": 34,
+     "sells": 34,
+     "toks": 2,
+     "net_usd": 0,
+     "span_days": 334.7
+    },
+    {
+     "addr": "0x505d2e7a715c9af1d690204f43d75eaea4efaf10",
+     "labels": [
+      "CLUSTER_MEMBER:cluster_be41",
+      "MEV_BOT"
+     ],
+     "conf": {
+      "CLUSTER_MEMBER:cluster_be41": 0.75,
+      "MEV_BOT": 0.85
+     },
+     "swaps": 58,
+     "buys": 29,
+     "sells": 29,
+     "toks": 2,
+     "net_usd": 0,
+     "span_days": 245.1
+    },
+    {
+     "addr": "0x1cc65d09d81e4656e72444217e201064226d2c3c",
+     "labels": [
+      "CLUSTER_MEMBER:cluster_be41",
+      "MEV_BOT"
+     ],
+     "conf": {
+      "CLUSTER_MEMBER:cluster_be41": 0.75,
+      "MEV_BOT": 0.85
+     },
+     "swaps": 50,
+     "buys": 25,
+     "sells": 25,
+     "toks": 2,
+     "net_usd": 0,
+     "span_days": 196.2
+    },
+    {
+     "addr": "0x3a8982399f7a72f0b57f0833b87549bc37c1b523",
+     "labels": [
+      "CLUSTER_MEMBER:cluster_be41",
+      "MEV_BOT"
+     ],
+     "conf": {
+      "CLUSTER_MEMBER:cluster_be41": 0.75,
+      "MEV_BOT": 0.85
+     },
+     "swaps": 50,
+     "buys": 25,
+     "sells": 25,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 331.1
+    },
+    {
+     "addr": "0xbed4721cac12305731ffe086a2df96fee8f5ef69",
+     "labels": [
+      "CLUSTER_MEMBER:cluster_f70d"
+     ],
+     "conf": {
+      "CLUSTER_MEMBER:cluster_f70d": 0.75
+     },
+     "swaps": 46,
+     "buys": 23,
+     "sells": 23,
+     "toks": 2,
+     "net_usd": 0,
+     "span_days": 1000.0
+    },
+    {
+     "addr": "0xf15168b7adc036ce63ea44bba723408d30dc4b4c",
+     "labels": [
+      "CLUSTER_MEMBER:cluster_be41",
+      "MEV_BOT"
+     ],
+     "conf": {
+      "CLUSTER_MEMBER:cluster_be41": 0.75,
+      "MEV_BOT": 0.85
+     },
+     "swaps": 46,
+     "buys": 23,
+     "sells": 23,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 446.7
+    },
+    {
+     "addr": "0xf38013d1caaa68251cd5fc0e0d18f3c97824374d",
+     "labels": [
+      "CLUSTER_MEMBER:cluster_be41",
+      "MEV_BOT"
+     ],
+     "conf": {
+      "CLUSTER_MEMBER:cluster_be41": 0.75,
+      "MEV_BOT": 0.85
+     },
+     "swaps": 46,
+     "buys": 23,
+     "sells": 23,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 327.3
+    },
+    {
+     "addr": "0xb1bc77cc39e059bdb4eea82bf8ea71d5ae6c876f",
+     "labels": [
+      "CLUSTER_MEMBER:cluster_f70d"
+     ],
+     "conf": {
+      "CLUSTER_MEMBER:cluster_f70d": 0.75
+     },
+     "swaps": 7,
+     "buys": 4,
+     "sells": 3,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 1.5
+    }
+   ]
+  },
+  "CT_ATTRIBUTED": {
+   "count": 21,
+   "bad_labels_inside": 6,
+   "balanced_traders": 1,
+   "sample": [
+    {
+     "addr": "0x6078ee8a93697c6d67863fcbff77141d9ab358b2",
+     "labels": [
+      "CT_ATTRIBUTED"
+     ],
+     "conf": {
+      "CT_ATTRIBUTED": 0.6
+     },
+     "swaps": 148,
+     "buys": 108,
+     "sells": 40,
+     "toks": 17,
+     "net_usd": 0,
+     "span_days": 160.5
+    },
+    {
+     "addr": "0x3475831749ea6c9992e638d01427453b9cc83a12",
+     "labels": [
+      "CT_ATTRIBUTED"
+     ],
+     "conf": {
+      "CT_ATTRIBUTED": 0.6
+     },
+     "swaps": 97,
+     "buys": 87,
+     "sells": 10,
+     "toks": 10,
+     "net_usd": 0,
+     "span_days": 125.3
+    },
+    {
+     "addr": "0x9631335762e3603d2a7507d84838aa3236d52745",
+     "labels": [
+      "CT_ATTRIBUTED"
+     ],
+     "conf": {
+      "CT_ATTRIBUTED": 0.6
+     },
+     "swaps": 63,
+     "buys": 25,
+     "sells": 38,
+     "toks": 5,
+     "net_usd": 0,
+     "span_days": 117.8
+    },
+    {
+     "addr": "0x62e5332dcb286f1753d245707c91a38821bb5645",
+     "labels": [
+      "CT_ATTRIBUTED"
+     ],
+     "conf": {
+      "CT_ATTRIBUTED": 0.6
+     },
+     "swaps": 51,
+     "buys": 8,
+     "sells": 43,
+     "toks": 4,
+     "net_usd": 0,
+     "span_days": 103.0
+    },
+    {
+     "addr": "0x1b30f0a3e7fb54211ab31741a2dc58725157b039",
+     "labels": [
+      "AIRDROP_FARMER",
+      "CT_ATTRIBUTED",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "CT_ATTRIBUTED": 0.6,
+      "INSIDER": 0.6
+     },
+     "swaps": 47,
+     "buys": 25,
+     "sells": 22,
+     "toks": 8,
+     "net_usd": 0,
+     "span_days": 1154.0
+    },
+    {
+     "addr": "0xbf004bff64725914ee36d03b87d6965b0ced4903",
+     "labels": [
+      "CT_ATTRIBUTED"
+     ],
+     "conf": {
+      "CT_ATTRIBUTED": 0.6
+     },
+     "swaps": 37,
+     "buys": 32,
+     "sells": 5,
+     "toks": 5,
+     "net_usd": 0,
+     "span_days": 169.5
+    },
+    {
+     "addr": "0x4d9644d05fe2123b4eafa8d7fd31b0ea430726f3",
+     "labels": [
+      "CT_ATTRIBUTED"
+     ],
+     "conf": {
+      "CT_ATTRIBUTED": 0.6
+     },
+     "swaps": 34,
+     "buys": 11,
+     "sells": 23,
+     "toks": 8,
+     "net_usd": 0,
+     "span_days": 165.4
+    },
+    {
+     "addr": "0xd4229d8166dbaa45689589d59fa968abc840b20f",
+     "labels": [
+      "AIRDROP_FARMER",
+      "CT_ATTRIBUTED",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "CT_ATTRIBUTED": 0.6,
+      "INSIDER": 0.6
+     },
+     "swaps": 31,
+     "buys": 26,
+     "sells": 5,
+     "toks": 4,
+     "net_usd": 0,
+     "span_days": 103.3
+    },
+    {
+     "addr": "0xf11c526605668d67e1cff264c30605eb2579babf",
+     "labels": [
+      "CT_ATTRIBUTED"
+     ],
+     "conf": {
+      "CT_ATTRIBUTED": 0.6
+     },
+     "swaps": 24,
+     "buys": 11,
+     "sells": 13,
+     "toks": 4,
+     "net_usd": 0,
+     "span_days": 98.3
+    },
+    {
+     "addr": "0x41ccc209d3ba4e81ef0c1fcb6d191127fb5b42f5",
+     "labels": [
+      "CT_ATTRIBUTED"
+     ],
+     "conf": {
+      "CT_ATTRIBUTED": 0.6
+     },
+     "swaps": 23,
+     "buys": 20,
+     "sells": 3,
+     "toks": 2,
+     "net_usd": 0,
+     "span_days": 27.7
+    },
+    {
+     "addr": "0xc2c6acd377458010713e733e1b21dd6f670d091c",
+     "labels": [
+      "CT_ATTRIBUTED"
+     ],
+     "conf": {
+      "CT_ATTRIBUTED": 0.6
+     },
+     "swaps": 21,
+     "buys": 9,
+     "sells": 12,
+     "toks": 10,
+     "net_usd": 0,
+     "span_days": 133.9
+    },
+    {
+     "addr": "0xca1a2fb7f3179d887504966b25d1606978adcd42",
+     "labels": [
+      "CT_ATTRIBUTED"
+     ],
+     "conf": {
+      "CT_ATTRIBUTED": 0.6
+     },
+     "swaps": 20,
+     "buys": 5,
+     "sells": 15,
+     "toks": 5,
+     "net_usd": 0,
+     "span_days": 262.4
+    },
+    {
+     "addr": "0x9dbfded199ee3a6b291c223e65f97d387156aada",
+     "labels": [
+      "CT_ATTRIBUTED"
+     ],
+     "conf": {
+      "CT_ATTRIBUTED": 0.6
+     },
+     "swaps": 18,
+     "buys": 10,
+     "sells": 8,
+     "toks": 2,
+     "net_usd": 0,
+     "span_days": 1281.8
+    },
+    {
+     "addr": "0x6a79ad5b3568e15eb2b04375577aa6b303f34e59",
+     "labels": [
+      "CT_ATTRIBUTED"
+     ],
+     "conf": {
+      "CT_ATTRIBUTED": 0.6
+     },
+     "swaps": 14,
+     "buys": 13,
+     "sells": 1,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.7
+    },
+    {
+     "addr": "0x904a5d05d72a0575c6a60f7de7566abc2ac331e2",
+     "labels": [
+      "CT_ATTRIBUTED"
+     ],
+     "conf": {
+      "CT_ATTRIBUTED": 0.6
+     },
+     "swaps": 13,
+     "buys": 9,
+     "sells": 4,
+     "toks": 3,
+     "net_usd": 0,
+     "span_days": 65.7
+    },
+    {
+     "addr": "0xe28601398a5448d1147e6e8b0e0c6d686f0d216d",
+     "labels": [
+      "AIRDROP_FARMER",
+      "CT_ATTRIBUTED",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "CT_ATTRIBUTED": 0.6,
+      "INSIDER": 0.6
+     },
+     "swaps": 10,
+     "buys": 4,
+     "sells": 6,
+     "toks": 3,
+     "net_usd": 0,
+     "span_days": 86.7
+    },
+    {
+     "addr": "0x7a2363a401b2340c7941dd2eeff0196a5078d2e6",
+     "labels": [
+      "AIRDROP_FARMER",
+      "CT_ATTRIBUTED",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "CT_ATTRIBUTED": 0.6,
+      "INSIDER": 0.6
+     },
+     "swaps": 9,
+     "buys": 0,
+     "sells": 9,
+     "toks": 2,
+     "net_usd": 0,
+     "span_days": 8.0
+    },
+    {
+     "addr": "0x38e4203f12b1e74d87deb0083d3c8b51ad9a104e",
+     "labels": [
+      "CT_ATTRIBUTED"
+     ],
+     "conf": {
+      "CT_ATTRIBUTED": 0.6
+     },
+     "swaps": 8,
+     "buys": 6,
+     "sells": 2,
+     "toks": 2,
+     "net_usd": 0,
+     "span_days": 26.8
+    },
+    {
+     "addr": "0xb226f97bc5b01978848dc440b40c70faea7c006e",
+     "labels": [
+      "CT_ATTRIBUTED"
+     ],
+     "conf": {
+      "CT_ATTRIBUTED": 0.6
+     },
+     "swaps": 2,
+     "buys": 1,
+     "sells": 1,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.3
+    },
+    {
+     "addr": "0xf591db9dccd5d3aaf8508da2cffedd5ef5bb920f",
+     "labels": [
+      "AIRDROP_FARMER",
+      "CT_ATTRIBUTED",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "CT_ATTRIBUTED": 0.6,
+      "INSIDER": 0.6
+     },
+     "swaps": 2,
+     "buys": 0,
+     "sells": 2,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 4.2
+    },
+    {
+     "addr": "0xe5e9ffe707ee071998340972af6fb178f5c64ba6",
+     "labels": [
+      "AIRDROP_FARMER",
+      "CT_ATTRIBUTED",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "CT_ATTRIBUTED": 0.6,
+      "INSIDER": 0.6
+     },
+     "swaps": 1,
+     "buys": 0,
+     "sells": 1,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.0
+    }
+   ]
+  },
+  "DEV": {
+   "count": 32,
+   "bad_labels_inside": 32,
+   "balanced_traders": 3,
+   "sample": [
+    {
+     "addr": "0xbfd0cec1d90aee7c10b923419fb9b043845eaecd",
+     "labels": [
+      "DEV"
+     ],
+     "conf": {
+      "DEV": 0.7
+     },
+     "swaps": 659,
+     "buys": 331,
+     "sells": 328,
+     "toks": 17,
+     "net_usd": 0,
+     "span_days": 141.2
+    },
+    {
+     "addr": "0xf93bbef77ef6bc366b9084f0fb500332d92c0681",
+     "labels": [
+      "DEV"
+     ],
+     "conf": {
+      "DEV": 0.7
+     },
+     "swaps": 70,
+     "buys": 33,
+     "sells": 37,
+     "toks": 13,
+     "net_usd": 0,
+     "span_days": 169.5
+    },
+    {
+     "addr": "0x8401abf78b098c0742da87ab258d8055fee73806",
+     "labels": [
+      "DEV"
+     ],
+     "conf": {
+      "DEV": 0.7
+     },
+     "swaps": 63,
+     "buys": 32,
+     "sells": 31,
+     "toks": 10,
+     "net_usd": 0,
+     "span_days": 622.5
+    },
+    {
+     "addr": "0x9915a5427500ed2ed5dd8b7c20ff26dfc3c36446",
+     "labels": [
+      "DEV"
+     ],
+     "conf": {
+      "DEV": 0.7
+     },
+     "swaps": 55,
+     "buys": 28,
+     "sells": 27,
+     "toks": 2,
+     "net_usd": 0,
+     "span_days": 126.8
+    },
+    {
+     "addr": "0x35b01f4d927bf314bfca1489d96f7c5a33902d6f",
+     "labels": [
+      "DEV"
+     ],
+     "conf": {
+      "DEV": 0.7
+     },
+     "swaps": 46,
+     "buys": 35,
+     "sells": 11,
+     "toks": 4,
+     "net_usd": 0,
+     "span_days": 120.2
+    },
+    {
+     "addr": "0x378b32e7d01d59fa231a97ea9ebbdaa89f2b66bb",
+     "labels": [
+      "DEV"
+     ],
+     "conf": {
+      "DEV": 0.7
+     },
+     "swaps": 31,
+     "buys": 23,
+     "sells": 8,
+     "toks": 5,
+     "net_usd": 0,
+     "span_days": 83.5
+    },
+    {
+     "addr": "0x2b73c5d32482988b92d9bf2bdda2f077af8848b5",
+     "labels": [
+      "DEV"
+     ],
+     "conf": {
+      "DEV": 0.7
+     },
+     "swaps": 20,
+     "buys": 12,
+     "sells": 8,
+     "toks": 4,
+     "net_usd": 0,
+     "span_days": 129.8
+    },
+    {
+     "addr": "0x2e5453a5f77a80fe7bfd09d98fd53d2cf2f46bbc",
+     "labels": [
+      "DEV"
+     ],
+     "conf": {
+      "DEV": 0.7
+     },
+     "swaps": 19,
+     "buys": 8,
+     "sells": 11,
+     "toks": 3,
+     "net_usd": 0,
+     "span_days": 197.4
+    },
+    {
+     "addr": "0x5ddbdaf5710b97e7c1ec84923a313e6de784cd90",
+     "labels": [
+      "DEV"
+     ],
+     "conf": {
+      "DEV": 0.7
+     },
+     "swaps": 17,
+     "buys": 6,
+     "sells": 11,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 1.4
+    },
+    {
+     "addr": "0x093107f73c68b80b8bcc5dad10eeaafb4f858100",
+     "labels": [
+      "DEV"
+     ],
+     "conf": {
+      "DEV": 0.7
+     },
+     "swaps": 14,
+     "buys": 7,
+     "sells": 7,
+     "toks": 7,
+     "net_usd": 0,
+     "span_days": 111.8
+    },
+    {
+     "addr": "0xec5eb7af9700c45b2d56cc723eaa81e979f6675e",
+     "labels": [
+      "DEV"
+     ],
+     "conf": {
+      "DEV": 0.7
+     },
+     "swaps": 14,
+     "buys": 9,
+     "sells": 5,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 2.2
+    },
+    {
+     "addr": "0xfb83123d9def096667be4e65f7ad9ef0f9e18b46",
+     "labels": [
+      "DEV"
+     ],
+     "conf": {
+      "DEV": 0.7
+     },
+     "swaps": 14,
+     "buys": 7,
+     "sells": 7,
+     "toks": 2,
+     "net_usd": 0,
+     "span_days": 71.5
+    },
+    {
+     "addr": "0xf8ba7799f6abca92c6078fd184490f59fd802836",
+     "labels": [
+      "DEV"
+     ],
+     "conf": {
+      "DEV": 0.7
+     },
+     "swaps": 13,
+     "buys": 9,
+     "sells": 4,
+     "toks": 2,
+     "net_usd": 0,
+     "span_days": 22.1
+    },
+    {
+     "addr": "0x6699054b98ff417ead78ee4bec9b36fcb07be6b8",
+     "labels": [
+      "DEV"
+     ],
+     "conf": {
+      "DEV": 0.7
+     },
+     "swaps": 12,
+     "buys": 6,
+     "sells": 6,
+     "toks": 5,
+     "net_usd": 0,
+     "span_days": 53.7
+    },
+    {
+     "addr": "0xa4a7957ff3fb353d2876bdac9336e0282a8add5c",
+     "labels": [
+      "DEV"
+     ],
+     "conf": {
+      "DEV": 0.7
+     },
+     "swaps": 12,
+     "buys": 2,
+     "sells": 10,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.4
+    },
+    {
+     "addr": "0xe73f32ca30be98d40251c15bd8f7f0dd0135a5ba",
+     "labels": [
+      "DEV"
+     ],
+     "conf": {
+      "DEV": 0.7
+     },
+     "swaps": 10,
+     "buys": 6,
+     "sells": 4,
+     "toks": 2,
+     "net_usd": 0,
+     "span_days": 8.8
+    },
+    {
+     "addr": "0x2adf961b40951736bcff3b36b7fb1cd5775475ba",
+     "labels": [
+      "DEV"
+     ],
+     "conf": {
+      "DEV": 0.7
+     },
+     "swaps": 9,
+     "buys": 2,
+     "sells": 7,
+     "toks": 2,
+     "net_usd": 0,
+     "span_days": 94.7
+    },
+    {
+     "addr": "0x4a07407b4447930da8b9461d9324b48c05933868",
+     "labels": [
+      "DEV"
+     ],
+     "conf": {
+      "DEV": 0.7
+     },
+     "swaps": 9,
+     "buys": 8,
+     "sells": 1,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.7
+    },
+    {
+     "addr": "0x9e6996c4fb6b257522f3bf21cc5a006d1daffcd0",
+     "labels": [
+      "DEV"
+     ],
+     "conf": {
+      "DEV": 0.7
+     },
+     "swaps": 9,
+     "buys": 6,
+     "sells": 3,
+     "toks": 3,
+     "net_usd": 0,
+     "span_days": 83.1
+    },
+    {
+     "addr": "0xa1d84c9f815fdf97ba330393533a5a6ef6e5efc5",
+     "labels": [
+      "DEV"
+     ],
+     "conf": {
+      "DEV": 0.7
+     },
+     "swaps": 9,
+     "buys": 5,
+     "sells": 4,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.1
+    },
+    {
+     "addr": "0xf73c08b7e46341261480beb338e7aa9c4e569031",
+     "labels": [
+      "DEV"
+     ],
+     "conf": {
+      "DEV": 0.7
+     },
+     "swaps": 9,
+     "buys": 3,
+     "sells": 6,
+     "toks": 3,
+     "net_usd": 0,
+     "span_days": 5.5
+    },
+    {
+     "addr": "0x5d0f4589fb954ee375f00c9a7d05dae950c0a266",
+     "labels": [
+      "DEV"
+     ],
+     "conf": {
+      "DEV": 0.7
+     },
+     "swaps": 7,
+     "buys": 4,
+     "sells": 3,
+     "toks": 2,
+     "net_usd": 0,
+     "span_days": 57.3
+    },
+    {
+     "addr": "0x2d783a0bc52ba5027106d044edb5a1bd12795336",
+     "labels": [
+      "DEV"
+     ],
+     "conf": {
+      "DEV": 0.7
+     },
+     "swaps": 6,
+     "buys": 3,
+     "sells": 3,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 1.3
+    },
+    {
+     "addr": "0xfb43a6f3565d00d8507032e6461899a1765a66e4",
+     "labels": [
+      "DEV"
+     ],
+     "conf": {
+      "DEV": 0.7
+     },
+     "swaps": 6,
+     "buys": 3,
+     "sells": 3,
+     "toks": 3,
+     "net_usd": 0,
+     "span_days": 2.6
+    },
+    {
+     "addr": "0x449efa6809b73e0d81224b2e786721f468b63a57",
+     "labels": [
+      "DEV"
+     ],
+     "conf": {
+      "DEV": 0.7
+     },
+     "swaps": 5,
+     "buys": 1,
+     "sells": 4,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.2
+    },
+    {
+     "addr": "0xad892b562acf5616e1d3dd41f169845abf3c9bcd",
+     "labels": [
+      "DEV"
+     ],
+     "conf": {
+      "DEV": 0.7
+     },
+     "swaps": 5,
+     "buys": 3,
+     "sells": 2,
+     "toks": 2,
+     "net_usd": 0,
+     "span_days": 41.5
+    },
+    {
+     "addr": "0xd0175d37875ecbbb2cdf18e420059de98cf97ec8",
+     "labels": [
+      "DEV"
+     ],
+     "conf": {
+      "DEV": 0.7
+     },
+     "swaps": 5,
+     "buys": 1,
+     "sells": 4,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 1.0
+    },
+    {
+     "addr": "0xf5f4cd314e9cdb8b45ec01fac8795d5346d63f53",
+     "labels": [
+      "DEV"
+     ],
+     "conf": {
+      "DEV": 0.7
+     },
+     "swaps": 5,
+     "buys": 3,
+     "sells": 2,
+     "toks": 2,
+     "net_usd": 0,
+     "span_days": 74.4
+    },
+    {
+     "addr": "0x9df5ad8d13e69f857b85fc15197fd4df0546b0c3",
+     "labels": [
+      "DEV"
+     ],
+     "conf": {
+      "DEV": 0.7
+     },
+     "swaps": 4,
+     "buys": 1,
+     "sells": 3,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.6
+    },
+    {
+     "addr": "0xd540fb9f9cf5d375411a92b03e2cf5618729fe68",
+     "labels": [
+      "DEV"
+     ],
+     "conf": {
+      "DEV": 0.7
+     },
+     "swaps": 4,
+     "buys": 2,
+     "sells": 2,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.1
+    },
+    {
+     "addr": "0x4884bc691e225ee8adf73b2bc93cb20a45e61704",
+     "labels": [
+      "DEV"
+     ],
+     "conf": {
+      "DEV": 0.7
+     },
+     "swaps": 2,
+     "buys": 1,
+     "sells": 1,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.7
+    },
+    {
+     "addr": "0xf565bee3b18f8a0cf253a7f872fe1e0e5dfc471d",
+     "labels": [
+      "DEV"
+     ],
+     "conf": {
+      "DEV": 0.7
+     },
+     "swaps": 2,
+     "buys": 1,
+     "sells": 1,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.3
+    }
+   ]
+  },
+  "GENERALIST": {
+   "count": 28340,
+   "bad_labels_inside": 0,
+   "balanced_traders": 685,
+   "sample": [
+    {
+     "addr": "0xc87b51c71707cfdd08cd374a596a6946cb1d6a66",
+     "labels": [
+      "GENERALIST"
+     ],
+     "conf": {
+      "GENERALIST": 0.5
+     },
+     "swaps": 4132,
+     "buys": 1252,
+     "sells": 2880,
+     "toks": 130,
+     "net_usd": 0,
+     "span_days": 221.8
+    },
+    {
+     "addr": "0x2a4d34cd09a36f59ae3bedc0880cd5da929321d7",
+     "labels": [
+      "GENERALIST"
+     ],
+     "conf": {
+      "GENERALIST": 0.5
+     },
+     "swaps": 2397,
+     "buys": 1192,
+     "sells": 1205,
+     "toks": 68,
+     "net_usd": 0,
+     "span_days": 180.7
+    },
+    {
+     "addr": "0x53e68553ca08f512423628d64c01b0a14dfcda99",
+     "labels": [
+      "GENERALIST"
+     ],
+     "conf": {
+      "GENERALIST": 0.5
+     },
+     "swaps": 1586,
+     "buys": 791,
+     "sells": 795,
+     "toks": 43,
+     "net_usd": 0,
+     "span_days": 127.3
+    },
+    {
+     "addr": "0xc207df8dc9ee5113c6374c70c2a29bb87e94cfdf",
+     "labels": [
+      "GENERALIST"
+     ],
+     "conf": {
+      "GENERALIST": 0.5
+     },
+     "swaps": 1203,
+     "buys": 622,
+     "sells": 581,
+     "toks": 28,
+     "net_usd": 0,
+     "span_days": 183.8
+    },
+    {
+     "addr": "0xd01d7d0f1d7db0aa59fd346762aa4a9c10da2257",
+     "labels": [
+      "GENERALIST"
+     ],
+     "conf": {
+      "GENERALIST": 0.5
+     },
+     "swaps": 1170,
+     "buys": 586,
+     "sells": 584,
+     "toks": 69,
+     "net_usd": 0,
+     "span_days": 93.0
+    },
+    {
+     "addr": "0x05607d87494c3f9d6e43be2c2e5ed23a95574548",
+     "labels": [
+      "GENERALIST"
+     ],
+     "conf": {
+      "GENERALIST": 0.5
+     },
+     "swaps": 1071,
+     "buys": 910,
+     "sells": 161,
+     "toks": 43,
+     "net_usd": 0,
+     "span_days": 205.1
+    },
+    {
+     "addr": "0x1c66ae54d5e4ee86980c90edbc55ddb29161b4ea",
+     "labels": [
+      "GENERALIST"
+     ],
+     "conf": {
+      "GENERALIST": 0.5
+     },
+     "swaps": 726,
+     "buys": 312,
+     "sells": 414,
+     "toks": 38,
+     "net_usd": 0,
+     "span_days": 134.0
+    },
+    {
+     "addr": "0x5c87ecc36bb97380469be09ef95dc4daf50165ec",
+     "labels": [
+      "GENERALIST"
+     ],
+     "conf": {
+      "GENERALIST": 0.5
+     },
+     "swaps": 663,
+     "buys": 330,
+     "sells": 333,
+     "toks": 17,
+     "net_usd": 0,
+     "span_days": 149.4
+    },
+    {
+     "addr": "0x1c35438a169cc8480e955e0d24ad6964280b8cf2",
+     "labels": [
+      "GENERALIST"
+     ],
+     "conf": {
+      "GENERALIST": 0.5
+     },
+     "swaps": 399,
+     "buys": 187,
+     "sells": 212,
+     "toks": 11,
+     "net_usd": 0,
+     "span_days": 242.4
+    },
+    {
+     "addr": "0xac032e1a03b4b5f32cc10de7addfcd0cf1342440",
+     "labels": [
+      "GENERALIST"
+     ],
+     "conf": {
+      "GENERALIST": 0.5
+     },
+     "swaps": 398,
+     "buys": 241,
+     "sells": 157,
+     "toks": 11,
+     "net_usd": 0,
+     "span_days": 95.9
+    },
+    {
+     "addr": "0x1f801796e001b0766c198e7e018922f05e331ebd",
+     "labels": [
+      "GENERALIST"
+     ],
+     "conf": {
+      "GENERALIST": 0.5
+     },
+     "swaps": 378,
+     "buys": 328,
+     "sells": 50,
+     "toks": 11,
+     "net_usd": 0,
+     "span_days": 72.3
+    },
+    {
+     "addr": "0x5f1c5951c5b1cc112ba9e89b9467edca33063453",
+     "labels": [
+      "GENERALIST"
+     ],
+     "conf": {
+      "GENERALIST": 0.5
+     },
+     "swaps": 369,
+     "buys": 369,
+     "sells": 0,
+     "toks": 17,
+     "net_usd": 0,
+     "span_days": 367.8
+    },
+    {
+     "addr": "0xc0b3535e207830706656016b62806d8fe9e6ae6e",
+     "labels": [
+      "GENERALIST"
+     ],
+     "conf": {
+      "GENERALIST": 0.5
+     },
+     "swaps": 354,
+     "buys": 47,
+     "sells": 307,
+     "toks": 62,
+     "net_usd": 0,
+     "span_days": 173.4
+    },
+    {
+     "addr": "0x6d1bcb7072582ddba60450f9cc94e1eb1315a68b",
+     "labels": [
+      "GENERALIST"
+     ],
+     "conf": {
+      "GENERALIST": 0.5
+     },
+     "swaps": 345,
+     "buys": 219,
+     "sells": 126,
+     "toks": 11,
+     "net_usd": 0,
+     "span_days": 191.4
+    },
+    {
+     "addr": "0x64ac9cf2244b6b9f2305915d2170fe98c1e1b920",
+     "labels": [
+      "GENERALIST"
+     ],
+     "conf": {
+      "GENERALIST": 0.5
+     },
+     "swaps": 343,
+     "buys": 237,
+     "sells": 106,
+     "toks": 11,
+     "net_usd": 0,
+     "span_days": 297.2
+    },
+    {
+     "addr": "0xb2fce99e88f9c2a5a9c522d0bb1acf1cddf7e1b9",
+     "labels": [
+      "GENERALIST"
+     ],
+     "conf": {
+      "GENERALIST": 0.5
+     },
+     "swaps": 335,
+     "buys": 335,
+     "sells": 0,
+     "toks": 19,
+     "net_usd": 0,
+     "span_days": 186.6
+    },
+    {
+     "addr": "0xb5de07c35473758a1055ead6e3fd77ee1289ca4e",
+     "labels": [
+      "GENERALIST"
+     ],
+     "conf": {
+      "GENERALIST": 0.5
+     },
+     "swaps": 321,
+     "buys": 202,
+     "sells": 119,
+     "toks": 15,
+     "net_usd": 0,
+     "span_days": 133.5
+    },
+    {
+     "addr": "0xa134edac7f692bb80eb493d613e8d0cc94d71ab2",
+     "labels": [
+      "GENERALIST"
+     ],
+     "conf": {
+      "GENERALIST": 0.5
+     },
+     "swaps": 313,
+     "buys": 286,
+     "sells": 27,
+     "toks": 9,
+     "net_usd": 0,
+     "span_days": 32.9
+    },
+    {
+     "addr": "0xf4bbb2b6cc81a3a7339cdbfa085aa59d65525b00",
+     "labels": [
+      "GENERALIST"
+     ],
+     "conf": {
+      "GENERALIST": 0.5
+     },
+     "swaps": 301,
+     "buys": 166,
+     "sells": 135,
+     "toks": 9,
+     "net_usd": 0,
+     "span_days": 180.6
+    },
+    {
+     "addr": "0xc5606cde16fb8c39cc68d1d97700883ae951ff56",
+     "labels": [
+      "GENERALIST"
+     ],
+     "conf": {
+      "GENERALIST": 0.5
+     },
+     "swaps": 299,
+     "buys": 234,
+     "sells": 65,
+     "toks": 12,
+     "net_usd": 0,
+     "span_days": 69.9
+    },
+    {
+     "addr": "0xb5b93f7647118dbc8ba73f8b67e1ed6e6acad4be",
+     "labels": [
+      "GENERALIST"
+     ],
+     "conf": {
+      "GENERALIST": 0.5
+     },
+     "swaps": 294,
+     "buys": 158,
+     "sells": 136,
+     "toks": 9,
+     "net_usd": 0,
+     "span_days": 315.3
+    },
+    {
+     "addr": "0x000000000000000000000000000000000000dead",
+     "labels": [
+      "GENERALIST"
+     ],
+     "conf": {
+      "GENERALIST": 0.5
+     },
+     "swaps": 293,
+     "buys": 293,
+     "sells": 0,
+     "toks": 12,
+     "net_usd": 0,
+     "span_days": 634.5
+    },
+    {
+     "addr": "0x547dd6e4b0296446837d15776e1d9318ba20824f",
+     "labels": [
+      "GENERALIST"
+     ],
+     "conf": {
+      "GENERALIST": 0.5
+     },
+     "swaps": 286,
+     "buys": 144,
+     "sells": 142,
+     "toks": 7,
+     "net_usd": 0,
+     "span_days": 688.4
+    },
+    {
+     "addr": "0xcf392f62151fe078a5c26c6fd7e6bc5f15d9735a",
+     "labels": [
+      "GENERALIST"
+     ],
+     "conf": {
+      "GENERALIST": 0.5
+     },
+     "swaps": 285,
+     "buys": 152,
+     "sells": 133,
+     "toks": 11,
+     "net_usd": 0,
+     "span_days": 787.0
+    },
+    {
+     "addr": "0x549c902c63787a66424f8422e8968481694892f3",
+     "labels": [
+      "GENERALIST"
+     ],
+     "conf": {
+      "GENERALIST": 0.5
+     },
+     "swaps": 272,
+     "buys": 136,
+     "sells": 136,
+     "toks": 6,
+     "net_usd": 0,
+     "span_days": 643.0
+    },
+    {
+     "addr": "0x25ccf46fcd73f758d9f457c52cec091a691ec327",
+     "labels": [
+      "GENERALIST"
+     ],
+     "conf": {
+      "GENERALIST": 0.5
+     },
+     "swaps": 255,
+     "buys": 132,
+     "sells": 123,
+     "toks": 6,
+     "net_usd": 0,
+     "span_days": 269.0
+    },
+    {
+     "addr": "0x321a8237e01737e1f9fed1fe0bd29930498e8d73",
+     "labels": [
+      "GENERALIST"
+     ],
+     "conf": {
+      "GENERALIST": 0.5
+     },
+     "swaps": 252,
+     "buys": 126,
+     "sells": 126,
+     "toks": 7,
+     "net_usd": 0,
+     "span_days": 62.4
+    },
+    {
+     "addr": "0x18ea5238af7db263383c1076d3652b77e22c0347",
+     "labels": [
+      "GENERALIST"
+     ],
+     "conf": {
+      "GENERALIST": 0.5
+     },
+     "swaps": 249,
+     "buys": 203,
+     "sells": 46,
+     "toks": 12,
+     "net_usd": 0,
+     "span_days": 583.8
+    },
+    {
+     "addr": "0xbf530f1bfb23bf332d1f1e41be026a5895fcced4",
+     "labels": [
+      "GENERALIST"
+     ],
+     "conf": {
+      "GENERALIST": 0.5
+     },
+     "swaps": 249,
+     "buys": 174,
+     "sells": 75,
+     "toks": 16,
+     "net_usd": 0,
+     "span_days": 126.7
+    },
+    {
+     "addr": "0xc6757edfb71417360e04a0f9a0dbc4ad82ba0ae2",
+     "labels": [
+      "GENERALIST"
+     ],
+     "conf": {
+      "GENERALIST": 0.5
+     },
+     "swaps": 240,
+     "buys": 120,
+     "sells": 120,
+     "toks": 6,
+     "net_usd": 0,
+     "span_days": 127.1
+    },
+    {
+     "addr": "0xfcce7b17307085c8edffcefdcff5de5f1f4875aa",
+     "labels": [
+      "GENERALIST"
+     ],
+     "conf": {
+      "GENERALIST": 0.5
+     },
+     "swaps": 238,
+     "buys": 238,
+     "sells": 0,
+     "toks": 14,
+     "net_usd": 0,
+     "span_days": 121.5
+    },
+    {
+     "addr": "0x2b71d95cad309f5b92694b6ee0999115a89a1a19",
+     "labels": [
+      "GENERALIST"
+     ],
+     "conf": {
+      "GENERALIST": 0.5
+     },
+     "swaps": 231,
+     "buys": 192,
+     "sells": 39,
+     "toks": 13,
+     "net_usd": 0,
+     "span_days": 589.4
+    },
+    {
+     "addr": "0xb754e001604508f841d768e64d38b7c98c859c05",
+     "labels": [
+      "GENERALIST"
+     ],
+     "conf": {
+      "GENERALIST": 0.5
+     },
+     "swaps": 231,
+     "buys": 194,
+     "sells": 37,
+     "toks": 14,
+     "net_usd": 0,
+     "span_days": 580.1
+    },
+    {
+     "addr": "0x696a76f1012c1fa5fd2b7064947f1de4bebd451c",
+     "labels": [
+      "GENERALIST"
+     ],
+     "conf": {
+      "GENERALIST": 0.5
+     },
+     "swaps": 230,
+     "buys": 155,
+     "sells": 75,
+     "toks": 8,
+     "net_usd": 0,
+     "span_days": 165.9
+    },
+    {
+     "addr": "0xdfbbd4d45c1cac8e437d74dcbb71545839c83951",
+     "labels": [
+      "GENERALIST"
+     ],
+     "conf": {
+      "GENERALIST": 0.5
+     },
+     "swaps": 228,
+     "buys": 125,
+     "sells": 103,
+     "toks": 31,
+     "net_usd": 0,
+     "span_days": 173.8
+    },
+    {
+     "addr": "0xe09b3cccfabf44960e806fc5dd7c48a9214da02b",
+     "labels": [
+      "GENERALIST"
+     ],
+     "conf": {
+      "GENERALIST": 0.5
+     },
+     "swaps": 227,
+     "buys": 91,
+     "sells": 136,
+     "toks": 6,
+     "net_usd": 0,
+     "span_days": 546.9
+    },
+    {
+     "addr": "0x500485ee637d5b4f39539a4e0e071e72fd314d87",
+     "labels": [
+      "GENERALIST"
+     ],
+     "conf": {
+      "GENERALIST": 0.5
+     },
+     "swaps": 225,
+     "buys": 211,
+     "sells": 14,
+     "toks": 11,
+     "net_usd": 0,
+     "span_days": 1250.9
+    },
+    {
+     "addr": "0x3ae42e04c0affd1394c6a6025451c903e9a65d9b",
+     "labels": [
+      "GENERALIST"
+     ],
+     "conf": {
+      "GENERALIST": 0.5
+     },
+     "swaps": 221,
+     "buys": 123,
+     "sells": 98,
+     "toks": 9,
+     "net_usd": 0,
+     "span_days": 761.2
+    },
+    {
+     "addr": "0x24e7a8963c07dc0ad58098172ab2b9826bc90fb2",
+     "labels": [
+      "GENERALIST"
+     ],
+     "conf": {
+      "GENERALIST": 0.5
+     },
+     "swaps": 218,
+     "buys": 132,
+     "sells": 86,
+     "toks": 6,
+     "net_usd": 0,
+     "span_days": 135.4
+    },
+    {
+     "addr": "0x86fed60ec4f9e2fcfd5bad0a4c76e0bc7a7de379",
+     "labels": [
+      "GENERALIST"
+     ],
+     "conf": {
+      "GENERALIST": 0.5
+     },
+     "swaps": 218,
+     "buys": 176,
+     "sells": 42,
+     "toks": 8,
+     "net_usd": 0,
+     "span_days": 46.8
+    },
+    {
+     "addr": "0x464fc339add314932920d3e060745bd7ea3e92ad",
+     "labels": [
+      "GENERALIST"
+     ],
+     "conf": {
+      "GENERALIST": 0.5
+     },
+     "swaps": 217,
+     "buys": 177,
+     "sells": 40,
+     "toks": 12,
+     "net_usd": 0,
+     "span_days": 293.4
+    },
+    {
+     "addr": "0x88cf4a2a954a21736ad1bb007c67066d6a5e98cb",
+     "labels": [
+      "GENERALIST"
+     ],
+     "conf": {
+      "GENERALIST": 0.5
+     },
+     "swaps": 217,
+     "buys": 217,
+     "sells": 0,
+     "toks": 9,
+     "net_usd": 0,
+     "span_days": 487.2
+    },
+    {
+     "addr": "0xf145f6f5ac4fbfa726be34425ebdceb61c0607e5",
+     "labels": [
+      "GENERALIST"
+     ],
+     "conf": {
+      "GENERALIST": 0.5
+     },
+     "swaps": 215,
+     "buys": 107,
+     "sells": 108,
+     "toks": 8,
+     "net_usd": 0,
+     "span_days": 125.0
+    },
+    {
+     "addr": "0x91dc0fbd6d30783abea7291b512bfe59d2294a3c",
+     "labels": [
+      "GENERALIST"
+     ],
+     "conf": {
+      "GENERALIST": 0.5
+     },
+     "swaps": 210,
+     "buys": 109,
+     "sells": 101,
+     "toks": 5,
+     "net_usd": 0,
+     "span_days": 1086.6
+    },
+    {
+     "addr": "0x70da00d844a1372d81ccb537804b3c8e43a3f57c",
+     "labels": [
+      "GENERALIST"
+     ],
+     "conf": {
+      "GENERALIST": 0.5
+     },
+     "swaps": 208,
+     "buys": 103,
+     "sells": 105,
+     "toks": 5,
+     "net_usd": 0,
+     "span_days": 199.6
+    },
+    {
+     "addr": "0x3abe4181be859bc1d5c7542e6f94c58f861b0f0c",
+     "labels": [
+      "GENERALIST"
+     ],
+     "conf": {
+      "GENERALIST": 0.5
+     },
+     "swaps": 206,
+     "buys": 111,
+     "sells": 95,
+     "toks": 14,
+     "net_usd": 0,
+     "span_days": 166.2
+    },
+    {
+     "addr": "0xb0bdb450ebdf39e5957527e4637257b4f131f7c2",
+     "labels": [
+      "GENERALIST"
+     ],
+     "conf": {
+      "GENERALIST": 0.5
+     },
+     "swaps": 205,
+     "buys": 148,
+     "sells": 57,
+     "toks": 17,
+     "net_usd": 0,
+     "span_days": 168.9
+    },
+    {
+     "addr": "0x11bc74e240c13f7067529b21dfb9933ff7fcb136",
+     "labels": [
+      "GENERALIST"
+     ],
+     "conf": {
+      "GENERALIST": 0.5
+     },
+     "swaps": 204,
+     "buys": 102,
+     "sells": 102,
+     "toks": 14,
+     "net_usd": 0,
+     "span_days": 228.4
+    },
+    {
+     "addr": "0x393c83bad4f674f9e44f86f83ba30f904314c194",
+     "labels": [
+      "GENERALIST"
+     ],
+     "conf": {
+      "GENERALIST": 0.5
+     },
+     "swaps": 202,
+     "buys": 122,
+     "sells": 80,
+     "toks": 7,
+     "net_usd": 0,
+     "span_days": 233.1
+    },
+    {
+     "addr": "0xb94cb7cc4422da144dfeea9635a363a3fd6dd21c",
+     "labels": [
+      "GENERALIST"
+     ],
+     "conf": {
+      "GENERALIST": 0.5
+     },
+     "swaps": 202,
+     "buys": 130,
+     "sells": 72,
+     "toks": 7,
+     "net_usd": 0,
+     "span_days": 286.0
+    },
+    {
+     "addr": "0xce6a59b4786ca5ae0419a03aec5fad3324d11ea6",
+     "labels": [
+      "GENERALIST"
+     ],
+     "conf": {
+      "GENERALIST": 0.5
+     },
+     "swaps": 200,
+     "buys": 129,
+     "sells": 71,
+     "toks": 10,
+     "net_usd": 0,
+     "span_days": 156.5
+    },
+    {
+     "addr": "0x553c90c06352ded20bab8a17c1abe6e7e4b8b217",
+     "labels": [
+      "GENERALIST"
+     ],
+     "conf": {
+      "GENERALIST": 0.5
+     },
+     "swaps": 199,
+     "buys": 120,
+     "sells": 79,
+     "toks": 7,
+     "net_usd": 0,
+     "span_days": 101.2
+    },
+    {
+     "addr": "0xcb73869fcf5c6583b98d90419628e31e3ad6b511",
+     "labels": [
+      "GENERALIST"
+     ],
+     "conf": {
+      "GENERALIST": 0.5
+     },
+     "swaps": 193,
+     "buys": 99,
+     "sells": 94,
+     "toks": 9,
+     "net_usd": 0,
+     "span_days": 251.8
+    },
+    {
+     "addr": "0x5cb26af82647bbc00a82826f83c822040433dfa1",
+     "labels": [
+      "GENERALIST"
+     ],
+     "conf": {
+      "GENERALIST": 0.5
+     },
+     "swaps": 192,
+     "buys": 140,
+     "sells": 52,
+     "toks": 8,
+     "net_usd": 0,
+     "span_days": 754.1
+    },
+    {
+     "addr": "0xbcc93304113f56eb30a783f6b77f1e66324d654e",
+     "labels": [
+      "GENERALIST"
+     ],
+     "conf": {
+      "GENERALIST": 0.5
+     },
+     "swaps": 190,
+     "buys": 138,
+     "sells": 52,
+     "toks": 5,
+     "net_usd": 0,
+     "span_days": 40.8
+    },
+    {
+     "addr": "0xd84be45d81750b178d98fb1e3fbacc43c002d202",
+     "labels": [
+      "GENERALIST"
+     ],
+     "conf": {
+      "GENERALIST": 0.5
+     },
+     "swaps": 190,
+     "buys": 90,
+     "sells": 100,
+     "toks": 10,
+     "net_usd": 0,
+     "span_days": 166.8
+    },
+    {
+     "addr": "0x328e4f301ed0c09b5e81cdcb5816175a4a5ab361",
+     "labels": [
+      "GENERALIST"
+     ],
+     "conf": {
+      "GENERALIST": 0.5
+     },
+     "swaps": 188,
+     "buys": 119,
+     "sells": 69,
+     "toks": 18,
+     "net_usd": 0,
+     "span_days": 115.0
+    },
+    {
+     "addr": "0xbd8db7c5b345b2263cf42c24551a8300fc96feff",
+     "labels": [
+      "GENERALIST"
+     ],
+     "conf": {
+      "GENERALIST": 0.5
+     },
+     "swaps": 187,
+     "buys": 107,
+     "sells": 80,
+     "toks": 5,
+     "net_usd": 0,
+     "span_days": 202.0
+    },
+    {
+     "addr": "0x8ee23e38b72b1ef723e9dd9dc2316091d8f7575c",
+     "labels": [
+      "GENERALIST"
+     ],
+     "conf": {
+      "GENERALIST": 0.5
+     },
+     "swaps": 186,
+     "buys": 124,
+     "sells": 62,
+     "toks": 7,
+     "net_usd": 0,
+     "span_days": 1083.2
+    },
+    {
+     "addr": "0x396bade845dc6418848bb3f0a0b960ad8771f603",
+     "labels": [
+      "GENERALIST"
+     ],
+     "conf": {
+      "GENERALIST": 0.5
+     },
+     "swaps": 183,
+     "buys": 114,
+     "sells": 69,
+     "toks": 14,
+     "net_usd": 0,
+     "span_days": 121.8
+    }
+   ]
+  },
+  "INSIDER": {
+   "count": 3470,
+   "bad_labels_inside": 3470,
+   "balanced_traders": 23,
+   "sample": [
+    {
+     "addr": "0xb6fa4b1b14859d7d1c6cd2e2be026c5b9b5074d6",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 544,
+     "buys": 0,
+     "sells": 544,
+     "toks": 15,
+     "net_usd": 0,
+     "span_days": 106.2
+    },
+    {
+     "addr": "0xeae69296cfc8d3ea63220c879d1099104dc7f35b",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 543,
+     "buys": 0,
+     "sells": 543,
+     "toks": 18,
+     "net_usd": 0,
+     "span_days": 69.9
+    },
+    {
+     "addr": "0xf5c4f3dc02c3fb9279495a8fef7b0741da956157",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 514,
+     "buys": 0,
+     "sells": 514,
+     "toks": 325,
+     "net_usd": 0,
+     "span_days": 1163.1
+    },
+    {
+     "addr": "0xca5b3bbb368db39d223a9fa57a577f9a98a03638",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 369,
+     "buys": 0,
+     "sells": 369,
+     "toks": 162,
+     "net_usd": 0,
+     "span_days": 571.8
+    },
+    {
+     "addr": "0xad01c20d5886137e056775af56915de824c8fce5",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 321,
+     "buys": 0,
+     "sells": 321,
+     "toks": 181,
+     "net_usd": 0,
+     "span_days": 1264.1
+    },
+    {
+     "addr": "0x7a0c9dc647996309bd090e391d8f77f66b2e6154",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 152,
+     "buys": 8,
+     "sells": 144,
+     "toks": 20,
+     "net_usd": 0,
+     "span_days": 311.6
+    },
+    {
+     "addr": "0x1b9f325fe645eb94679d928655245f9c1d6fe262",
+     "labels": [
+      "INSIDER"
+     ],
+     "conf": {
+      "INSIDER": 0.6
+     },
+     "swaps": 151,
+     "buys": 98,
+     "sells": 53,
+     "toks": 8,
+     "net_usd": 0,
+     "span_days": 42.2
+    },
+    {
+     "addr": "0x18a1d777fe55d089b7fb94743006ad07d0f068da",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 140,
+     "buys": 41,
+     "sells": 99,
+     "toks": 3,
+     "net_usd": 0,
+     "span_days": 22.0
+    },
+    {
+     "addr": "0x034f053cc1773bbab3c388396f057820928d4fb9",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 138,
+     "buys": 0,
+     "sells": 138,
+     "toks": 3,
+     "net_usd": 0,
+     "span_days": 16.9
+    },
+    {
+     "addr": "0xb666fd9b55572a3cf6d42b16fb550787670a000f",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 127,
+     "buys": 0,
+     "sells": 127,
+     "toks": 33,
+     "net_usd": 0,
+     "span_days": 1115.0
+    },
+    {
+     "addr": "0x7da72b7d3174285f5daa14e86d232d330c6febe8",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 125,
+     "buys": 67,
+     "sells": 58,
+     "toks": 4,
+     "net_usd": 0,
+     "span_days": 123.4
+    },
+    {
+     "addr": "0x68866e27c63462ad1cca4b494ba7af40b7963ac7",
+     "labels": [
+      "INSIDER"
+     ],
+     "conf": {
+      "INSIDER": 0.6
+     },
+     "swaps": 123,
+     "buys": 63,
+     "sells": 60,
+     "toks": 11,
+     "net_usd": 0,
+     "span_days": 53.8
+    },
+    {
+     "addr": "0x4bba0b7cab9f247b566e46545cf5e87496b81a6a",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 118,
+     "buys": 52,
+     "sells": 66,
+     "toks": 3,
+     "net_usd": 0,
+     "span_days": 236.8
+    },
+    {
+     "addr": "0x8ac3fce9c093af3ae5cd632b7c4f9ddb47c8b06d",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 117,
+     "buys": 51,
+     "sells": 66,
+     "toks": 3,
+     "net_usd": 0,
+     "span_days": 236.8
+    },
+    {
+     "addr": "0xf5db7732f14b2c1c2525f47ec8284cab51c24fbc",
+     "labels": [
+      "INSIDER"
+     ],
+     "conf": {
+      "INSIDER": 0.6
+     },
+     "swaps": 109,
+     "buys": 63,
+     "sells": 46,
+     "toks": 8,
+     "net_usd": 0,
+     "span_days": 755.0
+    },
+    {
+     "addr": "0x682cf68fc214d99b0cbb2438d44bcd921f763b4f",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 108,
+     "buys": 0,
+     "sells": 108,
+     "toks": 46,
+     "net_usd": 0,
+     "span_days": 164.8
+    },
+    {
+     "addr": "0x358caabfa2c1a2c7e5087c655448d4f750aafdca",
+     "labels": [
+      "INSIDER"
+     ],
+     "conf": {
+      "INSIDER": 0.6
+     },
+     "swaps": 106,
+     "buys": 78,
+     "sells": 28,
+     "toks": 4,
+     "net_usd": 0,
+     "span_days": 235.8
+    },
+    {
+     "addr": "0x4f79dd35aa49a87e55b7af3ed0bb9d3c09e0febc",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 106,
+     "buys": 42,
+     "sells": 64,
+     "toks": 39,
+     "net_usd": 0,
+     "span_days": 226.3
+    },
+    {
+     "addr": "0xfeaddad1bcce20fca3aa81e943fd499efaba8aac",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 106,
+     "buys": 39,
+     "sells": 67,
+     "toks": 5,
+     "net_usd": 0,
+     "span_days": 63.8
+    },
+    {
+     "addr": "0x9c9c9df99b3b0308d13951614220c0c921082c24",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 93,
+     "buys": 58,
+     "sells": 35,
+     "toks": 5,
+     "net_usd": 0,
+     "span_days": 110.0
+    },
+    {
+     "addr": "0x908fd947485fa2501273c81cb4b639ee17045468",
+     "labels": [
+      "INSIDER"
+     ],
+     "conf": {
+      "INSIDER": 0.6
+     },
+     "swaps": 91,
+     "buys": 59,
+     "sells": 32,
+     "toks": 4,
+     "net_usd": 0,
+     "span_days": 209.9
+    },
+    {
+     "addr": "0xe056aa367dda34c0e3c4c2cb2760f5695be90526",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 91,
+     "buys": 19,
+     "sells": 72,
+     "toks": 6,
+     "net_usd": 0,
+     "span_days": 553.2
+    },
+    {
+     "addr": "0x00d78daf782921b27a6b407d34f19842c10a4a6b",
+     "labels": [
+      "INSIDER"
+     ],
+     "conf": {
+      "INSIDER": 0.6
+     },
+     "swaps": 86,
+     "buys": 40,
+     "sells": 46,
+     "toks": 18,
+     "net_usd": 0,
+     "span_days": 164.0
+    },
+    {
+     "addr": "0x0b5748af9a52e09cd7bb2d66b2318b3b22c21295",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 82,
+     "buys": 2,
+     "sells": 80,
+     "toks": 2,
+     "net_usd": 0,
+     "span_days": 16.8
+    },
+    {
+     "addr": "0x25aa5598a14c2ace4406309365601ca9bca1fe51",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 80,
+     "buys": 53,
+     "sells": 27,
+     "toks": 7,
+     "net_usd": 0,
+     "span_days": 117.9
+    },
+    {
+     "addr": "0x04efcbf9ae54f572d3c4644d92f2914dc97e1788",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 78,
+     "buys": 9,
+     "sells": 69,
+     "toks": 4,
+     "net_usd": 0,
+     "span_days": 146.4
+    },
+    {
+     "addr": "0xe46b84bb49d68d81cae59a8b026d5c6c53b5a8a4",
+     "labels": [
+      "INSIDER"
+     ],
+     "conf": {
+      "INSIDER": 0.6
+     },
+     "swaps": 77,
+     "buys": 21,
+     "sells": 56,
+     "toks": 4,
+     "net_usd": 0,
+     "span_days": 1102.4
+    },
+    {
+     "addr": "0xa995ce21f88a1011daf09b50cd807fea3088d102",
+     "labels": [
+      "INSIDER"
+     ],
+     "conf": {
+      "INSIDER": 0.6
+     },
+     "swaps": 76,
+     "buys": 34,
+     "sells": 42,
+     "toks": 15,
+     "net_usd": 0,
+     "span_days": 164.0
+    },
+    {
+     "addr": "0x776b1e178bd80fea40999bf4291e30af1a56ec10",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 75,
+     "buys": 9,
+     "sells": 66,
+     "toks": 14,
+     "net_usd": 0,
+     "span_days": 168.7
+    },
+    {
+     "addr": "0x8b46f19b7b673b83912f8f4d790619ad367fa1d2",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 75,
+     "buys": 0,
+     "sells": 75,
+     "toks": 12,
+     "net_usd": 0,
+     "span_days": 116.8
+    },
+    {
+     "addr": "0xe3be78afb32bc4fcfeb35108f546ec7b955860c1",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 73,
+     "buys": 31,
+     "sells": 42,
+     "toks": 5,
+     "net_usd": 0,
+     "span_days": 40.4
+    },
+    {
+     "addr": "0xa987cd6c1f6ef6665c88e05340fba5852315a390",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 69,
+     "buys": 0,
+     "sells": 69,
+     "toks": 5,
+     "net_usd": 0,
+     "span_days": 176.7
+    },
+    {
+     "addr": "0x355d67577386ab1255ab99e191e032215eea286c",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 68,
+     "buys": 0,
+     "sells": 68,
+     "toks": 5,
+     "net_usd": 0,
+     "span_days": 177.2
+    },
+    {
+     "addr": "0x2d3104452dc3aa4d5adff9add23edf8751601412",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 66,
+     "buys": 46,
+     "sells": 20,
+     "toks": 3,
+     "net_usd": 0,
+     "span_days": 93.6
+    },
+    {
+     "addr": "0x4399ed18d93613eff47045673390125e6bdd8a92",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 66,
+     "buys": 0,
+     "sells": 66,
+     "toks": 5,
+     "net_usd": 0,
+     "span_days": 176.7
+    },
+    {
+     "addr": "0xafbee34ca32f7b28d6d422cf44af950dce144d12",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 66,
+     "buys": 0,
+     "sells": 66,
+     "toks": 5,
+     "net_usd": 0,
+     "span_days": 176.7
+    },
+    {
+     "addr": "0x1d54412420fa06885ec6f2e3c3456e6de095d3b7",
+     "labels": [
+      "INSIDER"
+     ],
+     "conf": {
+      "INSIDER": 0.6
+     },
+     "swaps": 62,
+     "buys": 30,
+     "sells": 32,
+     "toks": 3,
+     "net_usd": 0,
+     "span_days": 426.8
+    },
+    {
+     "addr": "0x84e75c23e1b6c7afeb50c9c40d85ca8beb6a6442",
+     "labels": [
+      "INSIDER"
+     ],
+     "conf": {
+      "INSIDER": 0.6
+     },
+     "swaps": 59,
+     "buys": 37,
+     "sells": 22,
+     "toks": 4,
+     "net_usd": 0,
+     "span_days": 107.2
+    },
+    {
+     "addr": "0x3875cf68c36c223bbe9046eb60dd97376d90d498",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 57,
+     "buys": 51,
+     "sells": 6,
+     "toks": 4,
+     "net_usd": 0,
+     "span_days": 107.6
+    },
+    {
+     "addr": "0x07856de09e8c0c2427e16b9372ebf4d80257a5cd",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 55,
+     "buys": 0,
+     "sells": 55,
+     "toks": 8,
+     "net_usd": 0,
+     "span_days": 155.2
+    },
+    {
+     "addr": "0x3a3c6bb8f5c91207b849835be0877ac0c7bdc034",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 55,
+     "buys": 1,
+     "sells": 54,
+     "toks": 2,
+     "net_usd": 0,
+     "span_days": 40.0
+    },
+    {
+     "addr": "0x36329585a84d9f35d899dac2c9bab949e803f511",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 54,
+     "buys": 0,
+     "sells": 54,
+     "toks": 7,
+     "net_usd": 0,
+     "span_days": 184.0
+    },
+    {
+     "addr": "0x511a69dab088f1885260882e12b0354fed3fac0c",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 54,
+     "buys": 18,
+     "sells": 36,
+     "toks": 15,
+     "net_usd": 0,
+     "span_days": 129.8
+    },
+    {
+     "addr": "0xbf35eb6f9a8c9de3ea3f4f5b9e7353337a2d7e21",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 54,
+     "buys": 0,
+     "sells": 54,
+     "toks": 2,
+     "net_usd": 0,
+     "span_days": 23.9
+    },
+    {
+     "addr": "0xc2797dde240f28fc662ffa32f48d0981c1c70bca",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 54,
+     "buys": 26,
+     "sells": 28,
+     "toks": 4,
+     "net_usd": 0,
+     "span_days": 110.9
+    },
+    {
+     "addr": "0xcbcfb5360f1bf7d55d9e529e298ecd439fd353fc",
+     "labels": [
+      "INSIDER"
+     ],
+     "conf": {
+      "INSIDER": 0.6
+     },
+     "swaps": 54,
+     "buys": 16,
+     "sells": 38,
+     "toks": 4,
+     "net_usd": 0,
+     "span_days": 158.2
+    },
+    {
+     "addr": "0x0b33f914a20e831181c3d2b56b24b015d6a9f1bc",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 52,
+     "buys": 1,
+     "sells": 51,
+     "toks": 2,
+     "net_usd": 0,
+     "span_days": 71.1
+    },
+    {
+     "addr": "0x2fd1887e5d99014cb0b8884f06560ed20d65003d",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 52,
+     "buys": 25,
+     "sells": 27,
+     "toks": 19,
+     "net_usd": 0,
+     "span_days": 162.8
+    },
+    {
+     "addr": "0x97cd0ddf2437db90f8c2423a7bdfa30b1ba6d7fc",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 52,
+     "buys": 1,
+     "sells": 51,
+     "toks": 2,
+     "net_usd": 0,
+     "span_days": 71.4
+    },
+    {
+     "addr": "0xcd6b980029e6e6e0733ac8ec3e02be9410d09799",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 52,
+     "buys": 0,
+     "sells": 52,
+     "toks": 37,
+     "net_usd": 0,
+     "span_days": 392.5
+    },
+    {
+     "addr": "0xed21c758567477ced782525a419e294daf0bbf6f",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 52,
+     "buys": 1,
+     "sells": 51,
+     "toks": 2,
+     "net_usd": 0,
+     "span_days": 33.7
+    },
+    {
+     "addr": "0x70efa177916b0d98612d1c8eaa0b9ba962e7a19f",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 51,
+     "buys": 1,
+     "sells": 50,
+     "toks": 2,
+     "net_usd": 0,
+     "span_days": 38.0
+    },
+    {
+     "addr": "0xbe0ca442d6b7d81e0faa7dbfd09331019f893f89",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 51,
+     "buys": 30,
+     "sells": 21,
+     "toks": 7,
+     "net_usd": 0,
+     "span_days": 156.3
+    },
+    {
+     "addr": "0x022296c70f3697c38eb287316282f8e00cc88d47",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 50,
+     "buys": 0,
+     "sells": 50,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.7
+    },
+    {
+     "addr": "0x16e44f2a0b86a62a11eb88da6f3f9e6ac0beccb3",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 50,
+     "buys": 0,
+     "sells": 50,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.0
+    },
+    {
+     "addr": "0x1ee8979055e976ff8f3f2465e41bc2376c58a974",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 50,
+     "buys": 0,
+     "sells": 50,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.3
+    },
+    {
+     "addr": "0x248a276b1eba20fcbfdbffa4b52ef126dbbb2b7e",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 50,
+     "buys": 0,
+     "sells": 50,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 1.2
+    },
+    {
+     "addr": "0x29d6e715a39bf821ac80796229fed38d0a9aaf3d",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 50,
+     "buys": 0,
+     "sells": 50,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.0
+    },
+    {
+     "addr": "0x31c0e8e06890b7469b4c2fc3cc84cfe5816e337a",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 50,
+     "buys": 0,
+     "sells": 50,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.3
+    },
+    {
+     "addr": "0x371c091c53ad96f4de3069af5c317d00320fb86a",
+     "labels": [
+      "AIRDROP_FARMER",
+      "INSIDER"
+     ],
+     "conf": {
+      "AIRDROP_FARMER": 0.95,
+      "INSIDER": 0.6
+     },
+     "swaps": 50,
+     "buys": 0,
+     "sells": 50,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.0
+    }
+   ]
+  },
+  "MEV_BOT": {
+   "count": 23,
+   "bad_labels_inside": 23,
+   "balanced_traders": 21,
+   "sample": [
+    {
+     "addr": "0x47bf6b73b6c560c4140f9b893419b4a8ed5543f5",
+     "labels": [
+      "MEV_BOT"
+     ],
+     "conf": {
+      "MEV_BOT": 0.85
+     },
+     "swaps": 751,
+     "buys": 351,
+     "sells": 400,
+     "toks": 18,
+     "net_usd": 0,
+     "span_days": 351.6
+    },
+    {
+     "addr": "0x51ffe129b0c5699829aa99b892f21658527f5edb",
+     "labels": [
+      "MEV_BOT"
+     ],
+     "conf": {
+      "MEV_BOT": 0.85
+     },
+     "swaps": 475,
+     "buys": 231,
+     "sells": 244,
+     "toks": 11,
+     "net_usd": 0,
+     "span_days": 198.5
+    },
+    {
+     "addr": "0xebaad6991d725d090ea51c1c8466c28df7575686",
+     "labels": [
+      "MEV_BOT"
+     ],
+     "conf": {
+      "MEV_BOT": 0.85
+     },
+     "swaps": 224,
+     "buys": 112,
+     "sells": 112,
+     "toks": 7,
+     "net_usd": 0,
+     "span_days": 68.0
+    },
+    {
+     "addr": "0xe46b9e77a1a7b40fc2f972a30d09b485fe0c44f9",
+     "labels": [
+      "MEV_BOT"
+     ],
+     "conf": {
+      "MEV_BOT": 0.85
+     },
+     "swaps": 190,
+     "buys": 95,
+     "sells": 95,
+     "toks": 5,
+     "net_usd": 0,
+     "span_days": 21.1
+    },
+    {
+     "addr": "0xfd4fd5a1a4bf22e17a281ebfdeded866894747ed",
+     "labels": [
+      "MEV_BOT"
+     ],
+     "conf": {
+      "MEV_BOT": 0.85
+     },
+     "swaps": 115,
+     "buys": 58,
+     "sells": 57,
+     "toks": 5,
+     "net_usd": 0,
+     "span_days": 41.8
+    },
+    {
+     "addr": "0xb1dc1e88579b075dc209ef2ec1224bf8130201d5",
+     "labels": [
+      "CLUSTER_MEMBER:cluster_be41",
+      "MEV_BOT"
+     ],
+     "conf": {
+      "CLUSTER_MEMBER:cluster_be41": 0.75,
+      "MEV_BOT": 0.85
+     },
+     "swaps": 100,
+     "buys": 50,
+     "sells": 50,
+     "toks": 2,
+     "net_usd": 0,
+     "span_days": 392.0
+    },
+    {
+     "addr": "0xb9358d13906da9f0b30fc322508b03d055e1abd9",
+     "labels": [
+      "CLUSTER_MEMBER:cluster_be41",
+      "MEV_BOT"
+     ],
+     "conf": {
+      "CLUSTER_MEMBER:cluster_be41": 0.75,
+      "MEV_BOT": 0.85
+     },
+     "swaps": 100,
+     "buys": 50,
+     "sells": 50,
+     "toks": 2,
+     "net_usd": 0,
+     "span_days": 435.1
+    },
+    {
+     "addr": "0x7676a8a3df4b74d391bf519029e7c7768ca2a282",
+     "labels": [
+      "CLUSTER_MEMBER:cluster_be41",
+      "MEV_BOT"
+     ],
+     "conf": {
+      "CLUSTER_MEMBER:cluster_be41": 0.75,
+      "MEV_BOT": 0.85
+     },
+     "swaps": 96,
+     "buys": 48,
+     "sells": 48,
+     "toks": 2,
+     "net_usd": 0,
+     "span_days": 381.6
+    },
+    {
+     "addr": "0x470e6be8b2e62f9e5f697ee854faf15036db588e",
+     "labels": [
+      "CLUSTER_MEMBER:cluster_be41",
+      "MEV_BOT"
+     ],
+     "conf": {
+      "CLUSTER_MEMBER:cluster_be41": 0.75,
+      "MEV_BOT": 0.85
+     },
+     "swaps": 94,
+     "buys": 47,
+     "sells": 47,
+     "toks": 2,
+     "net_usd": 0,
+     "span_days": 389.8
+    },
+    {
+     "addr": "0x43f9f131a394b6669ee15ac264f43a3bc1884081",
+     "labels": [
+      "MEV_BOT"
+     ],
+     "conf": {
+      "MEV_BOT": 0.85
+     },
+     "swaps": 92,
+     "buys": 45,
+     "sells": 47,
+     "toks": 2,
+     "net_usd": 0,
+     "span_days": 143.2
+    },
+    {
+     "addr": "0x4b70a9a046b92e2c5b16b4ce0592dd4a41b2823e",
+     "labels": [
+      "MEV_BOT"
+     ],
+     "conf": {
+      "MEV_BOT": 0.85
+     },
+     "swaps": 92,
+     "buys": 46,
+     "sells": 46,
+     "toks": 2,
+     "net_usd": 0,
+     "span_days": 382.3
+    },
+    {
+     "addr": "0x14fe9a5c647fc916fe04fbd2822646d82afa38d0",
+     "labels": [
+      "CLUSTER_MEMBER:cluster_be41",
+      "MEV_BOT"
+     ],
+     "conf": {
+      "CLUSTER_MEMBER:cluster_be41": 0.75,
+      "MEV_BOT": 0.85
+     },
+     "swaps": 88,
+     "buys": 44,
+     "sells": 44,
+     "toks": 2,
+     "net_usd": 0,
+     "span_days": 340.3
+    },
+    {
+     "addr": "0x0630606d4abaddd08be21506bc4585e57cf9ff98",
+     "labels": [
+      "CLUSTER_MEMBER:cluster_be41",
+      "MEV_BOT"
+     ],
+     "conf": {
+      "CLUSTER_MEMBER:cluster_be41": 0.75,
+      "MEV_BOT": 0.85
+     },
+     "swaps": 86,
+     "buys": 43,
+     "sells": 43,
+     "toks": 2,
+     "net_usd": 0,
+     "span_days": 338.8
+    },
+    {
+     "addr": "0x1a2adc68da1c8605ac3ff6807bdb70bf7c5447c0",
+     "labels": [
+      "MEV_BOT"
+     ],
+     "conf": {
+      "MEV_BOT": 0.85
+     },
+     "swaps": 81,
+     "buys": 37,
+     "sells": 44,
+     "toks": 2,
+     "net_usd": 0,
+     "span_days": 66.7
+    },
+    {
+     "addr": "0x977ae053e3a6909ba2bcfb1e316b6ff58606ea56",
+     "labels": [
+      "CLUSTER_MEMBER:cluster_be41",
+      "MEV_BOT"
+     ],
+     "conf": {
+      "CLUSTER_MEMBER:cluster_be41": 0.75,
+      "MEV_BOT": 0.85
+     },
+     "swaps": 78,
+     "buys": 39,
+     "sells": 39,
+     "toks": 2,
+     "net_usd": 0,
+     "span_days": 326.7
+    },
+    {
+     "addr": "0x70cf1b6e80aae62fe8e793eac31870b9ecf2d31a",
+     "labels": [
+      "CLUSTER_MEMBER:cluster_be41",
+      "MEV_BOT"
+     ],
+     "conf": {
+      "CLUSTER_MEMBER:cluster_be41": 0.75,
+      "MEV_BOT": 0.85
+     },
+     "swaps": 74,
+     "buys": 37,
+     "sells": 37,
+     "toks": 2,
+     "net_usd": 0,
+     "span_days": 274.8
+    },
+    {
+     "addr": "0xd9a0219ebae4149c138389c592719888751752f6",
+     "labels": [
+      "MEV_BOT"
+     ],
+     "conf": {
+      "MEV_BOT": 0.85
+     },
+     "swaps": 70,
+     "buys": 36,
+     "sells": 34,
+     "toks": 2,
+     "net_usd": 0,
+     "span_days": 61.0
+    },
+    {
+     "addr": "0x5740db16b0a5f853a18cb467f1f1cdaa07125da1",
+     "labels": [
+      "CLUSTER_MEMBER:cluster_be41",
+      "MEV_BOT"
+     ],
+     "conf": {
+      "CLUSTER_MEMBER:cluster_be41": 0.75,
+      "MEV_BOT": 0.85
+     },
+     "swaps": 68,
+     "buys": 34,
+     "sells": 34,
+     "toks": 2,
+     "net_usd": 0,
+     "span_days": 334.7
+    },
+    {
+     "addr": "0x505d2e7a715c9af1d690204f43d75eaea4efaf10",
+     "labels": [
+      "CLUSTER_MEMBER:cluster_be41",
+      "MEV_BOT"
+     ],
+     "conf": {
+      "CLUSTER_MEMBER:cluster_be41": 0.75,
+      "MEV_BOT": 0.85
+     },
+     "swaps": 58,
+     "buys": 29,
+     "sells": 29,
+     "toks": 2,
+     "net_usd": 0,
+     "span_days": 245.1
+    },
+    {
+     "addr": "0x1cc65d09d81e4656e72444217e201064226d2c3c",
+     "labels": [
+      "CLUSTER_MEMBER:cluster_be41",
+      "MEV_BOT"
+     ],
+     "conf": {
+      "CLUSTER_MEMBER:cluster_be41": 0.75,
+      "MEV_BOT": 0.85
+     },
+     "swaps": 50,
+     "buys": 25,
+     "sells": 25,
+     "toks": 2,
+     "net_usd": 0,
+     "span_days": 196.2
+    },
+    {
+     "addr": "0x3a8982399f7a72f0b57f0833b87549bc37c1b523",
+     "labels": [
+      "CLUSTER_MEMBER:cluster_be41",
+      "MEV_BOT"
+     ],
+     "conf": {
+      "CLUSTER_MEMBER:cluster_be41": 0.75,
+      "MEV_BOT": 0.85
+     },
+     "swaps": 50,
+     "buys": 25,
+     "sells": 25,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 331.1
+    },
+    {
+     "addr": "0xf15168b7adc036ce63ea44bba723408d30dc4b4c",
+     "labels": [
+      "CLUSTER_MEMBER:cluster_be41",
+      "MEV_BOT"
+     ],
+     "conf": {
+      "CLUSTER_MEMBER:cluster_be41": 0.75,
+      "MEV_BOT": 0.85
+     },
+     "swaps": 46,
+     "buys": 23,
+     "sells": 23,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 446.7
+    },
+    {
+     "addr": "0xf38013d1caaa68251cd5fc0e0d18f3c97824374d",
+     "labels": [
+      "CLUSTER_MEMBER:cluster_be41",
+      "MEV_BOT"
+     ],
+     "conf": {
+      "CLUSTER_MEMBER:cluster_be41": 0.75,
+      "MEV_BOT": 0.85
+     },
+     "swaps": 46,
+     "buys": 23,
+     "sells": 23,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 327.3
+    }
+   ]
+  },
+  "SNIPER": {
+   "count": 574,
+   "bad_labels_inside": 447,
+   "balanced_traders": 0,
+   "sample": [
+    {
+     "addr": "0x18f8ee7f717b6acdc7506f05ff98b80fa08ce8b8",
+     "labels": [
+      "SNIPER"
+     ],
+     "conf": {
+      "SNIPER": 0.85
+     },
+     "swaps": 360,
+     "buys": 17,
+     "sells": 343,
+     "toks": 20,
+     "net_usd": 0,
+     "span_days": 88.2
+    },
+    {
+     "addr": "0xf08ad284b5f314f1db27a5c327396cf6b6f028d2",
+     "labels": [
+      "SNIPER"
+     ],
+     "conf": {
+      "SNIPER": 0.85
+     },
+     "swaps": 261,
+     "buys": 123,
+     "sells": 138,
+     "toks": 54,
+     "net_usd": 0,
+     "span_days": 128.9
+    },
+    {
+     "addr": "0xc939c68b222e19e6710cfaa004a96d52d0868c2d",
+     "labels": [
+      "SNIPER"
+     ],
+     "conf": {
+      "SNIPER": 0.85
+     },
+     "swaps": 69,
+     "buys": 14,
+     "sells": 55,
+     "toks": 15,
+     "net_usd": 0,
+     "span_days": 68.5
+    },
+    {
+     "addr": "0x3911591a1b801f0b75266bd63723a381cce43349",
+     "labels": [
+      "SNIPER"
+     ],
+     "conf": {
+      "SNIPER": 0.85
+     },
+     "swaps": 53,
+     "buys": 28,
+     "sells": 25,
+     "toks": 3,
+     "net_usd": 0,
+     "span_days": 81.8
+    },
+    {
+     "addr": "0x94b8a33b725aca24ce6e6bcb709c8bbc6d0020c8",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 50,
+     "buys": 32,
+     "sells": 18,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 1.0
+    },
+    {
+     "addr": "0xe7fcb87393fb132a00bebabfc5cbd26d036bc270",
+     "labels": [
+      "SNIPER"
+     ],
+     "conf": {
+      "SNIPER": 0.85
+     },
+     "swaps": 44,
+     "buys": 20,
+     "sells": 24,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 8.2
+    },
+    {
+     "addr": "0x0b1407647c498ea8f0a87b4ee67975cf65c1a4e1",
+     "labels": [
+      "SNIPER"
+     ],
+     "conf": {
+      "SNIPER": 0.85
+     },
+     "swaps": 36,
+     "buys": 26,
+     "sells": 10,
+     "toks": 6,
+     "net_usd": 0,
+     "span_days": 20.9
+    },
+    {
+     "addr": "0xf6697747958f511c85310c4a05a592a5d1ecbb32",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 35,
+     "buys": 27,
+     "sells": 8,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 1.6
+    },
+    {
+     "addr": "0x8778bc4ba1e921269871ea5a04b93549ddaee9aa",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 33,
+     "buys": 20,
+     "sells": 13,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.6
+    },
+    {
+     "addr": "0xc62705eef429d15896b8022b43a9b9919b348f55",
+     "labels": [
+      "SNIPER"
+     ],
+     "conf": {
+      "SNIPER": 0.85
+     },
+     "swaps": 33,
+     "buys": 33,
+     "sells": 0,
+     "toks": 6,
+     "net_usd": 0,
+     "span_days": 146.5
+    },
+    {
+     "addr": "0x9691f2a4b894de209c0dccd7c96436d693d37eaa",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 32,
+     "buys": 22,
+     "sells": 10,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 1.0
+    },
+    {
+     "addr": "0x2f012c3ad7284e941733bb4ff2e83b4a16222d79",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 31,
+     "buys": 23,
+     "sells": 8,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.6
+    },
+    {
+     "addr": "0x881a85be747a63ccb420a28b15f06b3969d6041d",
+     "labels": [
+      "SNIPER"
+     ],
+     "conf": {
+      "SNIPER": 0.85
+     },
+     "swaps": 31,
+     "buys": 19,
+     "sells": 12,
+     "toks": 3,
+     "net_usd": 0,
+     "span_days": 6.6
+    },
+    {
+     "addr": "0x8c1351f623c2fbc7891c0ac8bcd1608220b067c0",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 30,
+     "buys": 18,
+     "sells": 12,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.9
+    },
+    {
+     "addr": "0x1773e71a48406ce87540a1f1b3a56c08ca840e7a",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 28,
+     "buys": 17,
+     "sells": 11,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.5
+    },
+    {
+     "addr": "0x548646d957c590d7981aa707e1a9f40ca07f106e",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 28,
+     "buys": 18,
+     "sells": 10,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.9
+    },
+    {
+     "addr": "0xb94c9056bfbd713bcd2bfad1cfa08c6625ce4e7b",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 28,
+     "buys": 22,
+     "sells": 6,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 1.6
+    },
+    {
+     "addr": "0xec69e6a14dd113428e986a6ac516fe098620acf8",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 28,
+     "buys": 19,
+     "sells": 9,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 1.0
+    },
+    {
+     "addr": "0x234dbe0037cde2d044486893ae56280a3a0b43ed",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 26,
+     "buys": 20,
+     "sells": 6,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.4
+    },
+    {
+     "addr": "0x6304f2311f873bd6665499055216f890686554c3",
+     "labels": [
+      "SNIPER"
+     ],
+     "conf": {
+      "SNIPER": 0.85
+     },
+     "swaps": 26,
+     "buys": 26,
+     "sells": 0,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 91.1
+    },
+    {
+     "addr": "0x622a8038b028ca4920ba11bd01a609f872a656b9",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 23,
+     "buys": 17,
+     "sells": 6,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.9
+    },
+    {
+     "addr": "0x87f96e267766b44646bd2c4052924cd882351ad6",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 23,
+     "buys": 17,
+     "sells": 6,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 1.0
+    },
+    {
+     "addr": "0x630384019298dbf40065252248c795b28b77d669",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 21,
+     "buys": 13,
+     "sells": 8,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.9
+    },
+    {
+     "addr": "0xb5778317f1cb46f9cc34a7ba36f416c40daf0697",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 21,
+     "buys": 19,
+     "sells": 2,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.7
+    },
+    {
+     "addr": "0x2ca11919fb18e5caf6b437260bb3587bcb6e8f15",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 20,
+     "buys": 14,
+     "sells": 6,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.9
+    },
+    {
+     "addr": "0x833aa7dfd7a41e058a18ab8c68e7c388ad93f7bd",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 20,
+     "buys": 13,
+     "sells": 7,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.3
+    },
+    {
+     "addr": "0x297d8cc83c3c9ab93d77dd7e3ca06dd87e98ed2e",
+     "labels": [
+      "SNIPER"
+     ],
+     "conf": {
+      "SNIPER": 0.85
+     },
+     "swaps": 19,
+     "buys": 19,
+     "sells": 0,
+     "toks": 15,
+     "net_usd": 0,
+     "span_days": 157.0
+    },
+    {
+     "addr": "0x6d61aa96216b6f103b5455197e6742b0565439c6",
+     "labels": [
+      "SNIPER"
+     ],
+     "conf": {
+      "SNIPER": 0.85
+     },
+     "swaps": 19,
+     "buys": 16,
+     "sells": 3,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 968.9
+    },
+    {
+     "addr": "0x6feb4f5159ea5405054249caa1f164807f4b156a",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 19,
+     "buys": 13,
+     "sells": 6,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 1.7
+    },
+    {
+     "addr": "0xbdd575abc4d2faca613cf44d028ec9dbdb92ac98",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 19,
+     "buys": 13,
+     "sells": 6,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.9
+    },
+    {
+     "addr": "0x1313b95a640c95df60a562d22cb421c2affdb99b",
+     "labels": [
+      "SNIPER"
+     ],
+     "conf": {
+      "SNIPER": 0.85
+     },
+     "swaps": 18,
+     "buys": 9,
+     "sells": 9,
+     "toks": 8,
+     "net_usd": 0,
+     "span_days": 102.6
+    },
+    {
+     "addr": "0x475281320992a553301567579adeba31f77816b3",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 18,
+     "buys": 12,
+     "sells": 6,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.7
+    },
+    {
+     "addr": "0xc283d8bcf072f1cf88d161921d67c2700ad34c26",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 18,
+     "buys": 13,
+     "sells": 5,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 1.0
+    },
+    {
+     "addr": "0xf5584763cb66a194d0300094046d924a3300392d",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 18,
+     "buys": 13,
+     "sells": 5,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.9
+    },
+    {
+     "addr": "0x6a7d6d3c29f49993d45f55743b96936dfbe9e118",
+     "labels": [
+      "SNIPER"
+     ],
+     "conf": {
+      "SNIPER": 0.85
+     },
+     "swaps": 17,
+     "buys": 10,
+     "sells": 7,
+     "toks": 3,
+     "net_usd": 0,
+     "span_days": 64.6
+    },
+    {
+     "addr": "0xc1b1c7939732435007182b21aca69178b1741d7f",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 17,
+     "buys": 14,
+     "sells": 3,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.9
+    },
+    {
+     "addr": "0xec52be99037d3d574d25791df38690d59d6db32a",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 17,
+     "buys": 13,
+     "sells": 4,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.9
+    },
+    {
+     "addr": "0x011b7d626a4cbef2cc9fbeafb5f56cfae97071d4",
+     "labels": [
+      "SNIPER"
+     ],
+     "conf": {
+      "SNIPER": 0.85
+     },
+     "swaps": 16,
+     "buys": 8,
+     "sells": 8,
+     "toks": 8,
+     "net_usd": 0,
+     "span_days": 100.5
+    },
+    {
+     "addr": "0x12769a8dd4596fe062e9a9642818bd1e082a11c0",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 16,
+     "buys": 10,
+     "sells": 6,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.6
+    },
+    {
+     "addr": "0xd09e4607f80b6ba8a82ca2ae6c0d84451b8bc43e",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 16,
+     "buys": 9,
+     "sells": 7,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 1.2
+    },
+    {
+     "addr": "0xf628bf3d475d9ae547f39f20ca2b648acb909e6b",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 16,
+     "buys": 11,
+     "sells": 5,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.9
+    },
+    {
+     "addr": "0x036786ca4525fd719fcfa4ab6186bcb8aa2bff06",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 15,
+     "buys": 12,
+     "sells": 3,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.5
+    },
+    {
+     "addr": "0x5a287509a48564a8590c758685611895fb0536e5",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 15,
+     "buys": 11,
+     "sells": 4,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.9
+    },
+    {
+     "addr": "0x69063e1dc388b00dd3578c01679f712f1881931c",
+     "labels": [
+      "SNIPER"
+     ],
+     "conf": {
+      "SNIPER": 0.85
+     },
+     "swaps": 15,
+     "buys": 15,
+     "sells": 0,
+     "toks": 2,
+     "net_usd": 0,
+     "span_days": 59.4
+    },
+    {
+     "addr": "0x7de480e9871431bf0460816bd117bfbb010ea1d7",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 15,
+     "buys": 8,
+     "sells": 7,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.8
+    },
+    {
+     "addr": "0xd83118d8bb643239242562fc9ff84ea2049e596b",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 15,
+     "buys": 11,
+     "sells": 4,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 1.0
+    },
+    {
+     "addr": "0x229601912419be27f21646009af7adb94f887032",
+     "labels": [
+      "SNIPER"
+     ],
+     "conf": {
+      "SNIPER": 0.85
+     },
+     "swaps": 14,
+     "buys": 1,
+     "sells": 13,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 21.1
+    },
+    {
+     "addr": "0xd6fc420e457c3848d720a7d043268a6a8928b4ca",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 14,
+     "buys": 9,
+     "sells": 5,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.4
+    },
+    {
+     "addr": "0x0516377fef5f0b20eb1eec3962b65cc3ead0def2",
+     "labels": [
+      "SNIPER"
+     ],
+     "conf": {
+      "SNIPER": 0.85
+     },
+     "swaps": 13,
+     "buys": 13,
+     "sells": 0,
+     "toks": 2,
+     "net_usd": 0,
+     "span_days": 4.7
+    },
+    {
+     "addr": "0x4df38a6767dee2572773f7e06b79aa8bad976699",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 12,
+     "buys": 9,
+     "sells": 3,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.8
+    },
+    {
+     "addr": "0x7d64f107b39d0d45f67492ca2b6229b815c35a07",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 12,
+     "buys": 10,
+     "sells": 2,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.4
+    },
+    {
+     "addr": "0x9ce47763bb1861f509b1c4891c82267258c4cb8e",
+     "labels": [
+      "SNIPER"
+     ],
+     "conf": {
+      "SNIPER": 0.85
+     },
+     "swaps": 12,
+     "buys": 6,
+     "sells": 6,
+     "toks": 2,
+     "net_usd": 0,
+     "span_days": 64.6
+    },
+    {
+     "addr": "0xa80b82a23decf4b262a821b8115db02619544ced",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 12,
+     "buys": 8,
+     "sells": 4,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.7
+    },
+    {
+     "addr": "0xc60ca817d96d01f9053cbe817c8e9a13c7eecafc",
+     "labels": [
+      "SNIPER"
+     ],
+     "conf": {
+      "SNIPER": 0.85
+     },
+     "swaps": 12,
+     "buys": 12,
+     "sells": 0,
+     "toks": 9,
+     "net_usd": 0,
+     "span_days": 64.0
+    },
+    {
+     "addr": "0x074c4a80abb3eba8a48e3f53b0b1ad97c93e2d0d",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 11,
+     "buys": 10,
+     "sells": 1,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.5
+    },
+    {
+     "addr": "0x7f69074bbf22488479254651966b44212c66b85a",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 11,
+     "buys": 9,
+     "sells": 2,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.6
+    },
+    {
+     "addr": "0x8ee87a3bdceec8dfedb768402ecface940af8312",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 11,
+     "buys": 9,
+     "sells": 2,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.9
+    },
+    {
+     "addr": "0x9b57c68ea1aea0268270d9615dddd79751a00e8b",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 11,
+     "buys": 6,
+     "sells": 5,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.8
+    },
+    {
+     "addr": "0xb93bdc011d346f1975e60f13f8780eb4c348c63d",
+     "labels": [
+      "SNIPER"
+     ],
+     "conf": {
+      "SNIPER": 0.85
+     },
+     "swaps": 11,
+     "buys": 10,
+     "sells": 1,
+     "toks": 2,
+     "net_usd": 0,
+     "span_days": 99.5
+    },
+    {
+     "addr": "0xc2a8e151ed7765ec51ccbbea10383ff8b3590099",
+     "labels": [
+      "BUNDLER_SUSPECT",
+      "SNIPER"
+     ],
+     "conf": {
+      "BUNDLER_SUSPECT": 0.9,
+      "SNIPER": 0.85
+     },
+     "swaps": 11,
+     "buys": 7,
+     "sells": 4,
+     "toks": 1,
+     "net_usd": 0,
+     "span_days": 0.4
+    }
+   ]
+  }
+ },
+ "golden": [],
+ "noise_count": 50406,
+ "noise_sample": [
+  "0x0000000000000000000000000000000000000000",
+  "0x0000000000000000000000000000000000000001",
+  "0x00000000000014aa86c5d3c41765bb24e11bd701",
+  "0x0000000000483326682634675c919731e910d296",
+  "0x000000000bab266ad31aa016875ff5e268724cd2",
+  "0x0000000048aa82278d69965481955b3e344a78a7",
+  "0x00000083377224012dc18bdfc4be2007fd81a274",
+  "0x000005145a65b999ce8f83d885151834b7ed2c6c",
+  "0x00000b7a7a859f1b7ab55579fd4e7b0b22064f3d",
+  "0x00001d300ddec34f9e6953be3a251dc49112c57d",
+  "0x0000a26b00c1f0df003000390027140000faa719",
+  "0x0000d31513c2a5fe5198f98fc84598bf901a068e",
+  "0x0000dacbf814b33b2d6432ab8e1557f56fc40000",
+  "0x0000f19b0bf75fc367a2bf318876d2d87d78dead",
+  "0x0001de82c696b6b18f0a401de0463ebb3c631111",
+  "0x00032a00b55ee381fe8a7836cee7a75a7d2e7f66",
+  "0x00034187c8d0d887821587573586f75624c5e111",
+  "0x0004c8bd98bce0c0465c6a58283fbaa6e8f0c21e",
+  "0x00058c5151b462eb26663dd1da40d7c89efeb463",
+  "0x0006388dcad9f3b6fc1064c3dd38ae379c10aee1",
+  "0x0006776a8b00db9ac842b3f926513cf49473e000",
+  "0x0006d09df7b0e8dce98463b95439475fcec29111",
+  "0x00077705952c90b728c6d7dc450beb4429331111",
+  "0x0007efde70438f546ce5d354fecdf5ad0db7dfea",
+  "0x000870233d0bef35d89e0efb47559a4a485133e8"
+ ],
+ "clusters": {
+  "cluster_be41": [
+   {
+    "addr": "0x0630606d4abaddd08be21506bc4585e57cf9ff98",
+    "swaps": 86,
+    "buys": 43,
+    "sells": 43,
+    "toks": 2
+   },
+   {
+    "addr": "0x14fe9a5c647fc916fe04fbd2822646d82afa38d0",
+    "swaps": 88,
+    "buys": 44,
+    "sells": 44,
+    "toks": 2
+   },
+   {
+    "addr": "0x1cc65d09d81e4656e72444217e201064226d2c3c",
+    "swaps": 50,
+    "buys": 25,
+    "sells": 25,
+    "toks": 2
+   },
+   {
+    "addr": "0x3a8982399f7a72f0b57f0833b87549bc37c1b523",
+    "swaps": 50,
+    "buys": 25,
+    "sells": 25,
+    "toks": 1
+   },
+   {
+    "addr": "0x470e6be8b2e62f9e5f697ee854faf15036db588e",
+    "swaps": 94,
+    "buys": 47,
+    "sells": 47,
+    "toks": 2
+   },
+   {
+    "addr": "0x505d2e7a715c9af1d690204f43d75eaea4efaf10",
+    "swaps": 58,
+    "buys": 29,
+    "sells": 29,
+    "toks": 2
+   },
+   {
+    "addr": "0x5740db16b0a5f853a18cb467f1f1cdaa07125da1",
+    "swaps": 68,
+    "buys": 34,
+    "sells": 34,
+    "toks": 2
+   },
+   {
+    "addr": "0x70cf1b6e80aae62fe8e793eac31870b9ecf2d31a",
+    "swaps": 74,
+    "buys": 37,
+    "sells": 37,
+    "toks": 2
+   },
+   {
+    "addr": "0x7676a8a3df4b74d391bf519029e7c7768ca2a282",
+    "swaps": 96,
+    "buys": 48,
+    "sells": 48,
+    "toks": 2
+   },
+   {
+    "addr": "0x977ae053e3a6909ba2bcfb1e316b6ff58606ea56",
+    "swaps": 78,
+    "buys": 39,
+    "sells": 39,
+    "toks": 2
+   },
+   {
+    "addr": "0xb1dc1e88579b075dc209ef2ec1224bf8130201d5",
+    "swaps": 100,
+    "buys": 50,
+    "sells": 50,
+    "toks": 2
+   },
+   {
+    "addr": "0xb9358d13906da9f0b30fc322508b03d055e1abd9",
+    "swaps": 100,
+    "buys": 50,
+    "sells": 50,
+    "toks": 2
+   },
+   {
+    "addr": "0xf15168b7adc036ce63ea44bba723408d30dc4b4c",
+    "swaps": 46,
+    "buys": 23,
+    "sells": 23,
+    "toks": 1
+   },
+   {
+    "addr": "0xf38013d1caaa68251cd5fc0e0d18f3c97824374d",
+    "swaps": 46,
+    "buys": 23,
+    "sells": 23,
+    "toks": 1
+   }
+  ],
+  "cluster_f70d": [
+   {
+    "addr": "0xb1bc77cc39e059bdb4eea82bf8ea71d5ae6c876f",
+    "swaps": 7,
+    "buys": 4,
+    "sells": 3,
+    "toks": 1
+   },
+   {
+    "addr": "0xbed4721cac12305731ffe086a2df96fee8f5ef69",
+    "swaps": 46,
+    "buys": 23,
+    "sells": 23,
+    "toks": 2
+   }
+  ]
+ },
+ "total_wallets": 94961
+}
