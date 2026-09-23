@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-15T15:45:17.825112+00:00",
+ "generated_at": "2026-09-23T15:21:35.559656+00:00",
  "taxonomy": "docs/WALLET_TAXONOMY.md (14 types; primary = priority 1\u219214)",
  "source": "regenerated from wallet_labels table by scripts/extract_wallets.py",
  "summary": {
@@ -14708,7 +14708,8 @@
   "0x0630606d4abaddd08be21506bc4585e57cf9ff98": {
    "primary_type": "CLUSTER_MEMBER:cluster_be41",
    "labels": [
-    "CLUSTER_MEMBER:cluster_be41"
+    "CLUSTER_MEMBER:cluster_be41",
+    "MEV_BOT"
    ],
    "evidence": {
     "CLUSTER_MEMBER:cluster_be41": {
@@ -14732,10 +14733,16 @@
       "0xf38013d1caaa68251cd5fc0e0d18f3c97824374d"
      ],
      "source": "results/funding_forensics.json"
+    },
+    "MEV_BOT": {
+     "reason": "ARB_BOT_FLEET: 14 wallet satu funder (0xbe410ab5) hanya trading ROBINHOOD token dgn BUY/SELL sempurna seimbang (517/517 total fleet) = bot arbitrase otomatis. 2 member sudah MEV_BOT by classifier. Bukti: swap_events lokal + audit manual 2026-09-21.",
+     "cluster": "cluster_be41",
+     "token": "ROBINHOOD (native)"
     }
    },
    "confidence": {
-    "CLUSTER_MEMBER:cluster_be41": 0.75
+    "CLUSTER_MEMBER:cluster_be41": 0.75,
+    "MEV_BOT": 0.85
    }
   },
   "0x06356431862a4c19d58dcfac283c6c3004a4d344": {
@@ -49100,7 +49107,8 @@
   "0x14fe9a5c647fc916fe04fbd2822646d82afa38d0": {
    "primary_type": "CLUSTER_MEMBER:cluster_be41",
    "labels": [
-    "CLUSTER_MEMBER:cluster_be41"
+    "CLUSTER_MEMBER:cluster_be41",
+    "MEV_BOT"
    ],
    "evidence": {
     "CLUSTER_MEMBER:cluster_be41": {
@@ -49124,10 +49132,16 @@
       "0xf38013d1caaa68251cd5fc0e0d18f3c97824374d"
      ],
      "source": "results/funding_forensics.json"
+    },
+    "MEV_BOT": {
+     "reason": "ARB_BOT_FLEET: 14 wallet satu funder (0xbe410ab5) hanya trading ROBINHOOD token dgn BUY/SELL sempurna seimbang (517/517 total fleet) = bot arbitrase otomatis. 2 member sudah MEV_BOT by classifier. Bukti: swap_events lokal + audit manual 2026-09-21.",
+     "cluster": "cluster_be41",
+     "token": "ROBINHOOD (native)"
     }
    },
    "confidence": {
-    "CLUSTER_MEMBER:cluster_be41": 0.75
+    "CLUSTER_MEMBER:cluster_be41": 0.75,
+    "MEV_BOT": 0.85
    }
   },
   "0x14ffd0ec6bec32134057502b8b22c4b121544bc9": {
@@ -67346,7 +67360,8 @@
   "0x1cc65d09d81e4656e72444217e201064226d2c3c": {
    "primary_type": "CLUSTER_MEMBER:cluster_be41",
    "labels": [
-    "CLUSTER_MEMBER:cluster_be41"
+    "CLUSTER_MEMBER:cluster_be41",
+    "MEV_BOT"
    ],
    "evidence": {
     "CLUSTER_MEMBER:cluster_be41": {
@@ -67370,10 +67385,16 @@
       "0xf38013d1caaa68251cd5fc0e0d18f3c97824374d"
      ],
      "source": "results/funding_forensics.json"
+    },
+    "MEV_BOT": {
+     "reason": "ARB_BOT_FLEET: 14 wallet satu funder (0xbe410ab5) hanya trading ROBINHOOD token dgn BUY/SELL sempurna seimbang (517/517 total fleet) = bot arbitrase otomatis. 2 member sudah MEV_BOT by classifier. Bukti: swap_events lokal + audit manual 2026-09-21.",
+     "cluster": "cluster_be41",
+     "token": "ROBINHOOD (native)"
     }
    },
    "confidence": {
-    "CLUSTER_MEMBER:cluster_be41": 0.75
+    "CLUSTER_MEMBER:cluster_be41": 0.75,
+    "MEV_BOT": 0.85
    }
   },
   "0x1cc7badf7627a2dd4eee364177d789480b0f1f39": {
@@ -133102,7 +133123,8 @@
   "0x3a8982399f7a72f0b57f0833b87549bc37c1b523": {
    "primary_type": "CLUSTER_MEMBER:cluster_be41",
    "labels": [
-    "CLUSTER_MEMBER:cluster_be41"
+    "CLUSTER_MEMBER:cluster_be41",
+    "MEV_BOT"
    ],
    "evidence": {
     "CLUSTER_MEMBER:cluster_be41": {
@@ -133126,10 +133148,16 @@
       "0xf38013d1caaa68251cd5fc0e0d18f3c97824374d"
      ],
      "source": "results/funding_forensics.json"
+    },
+    "MEV_BOT": {
+     "reason": "ARB_BOT_FLEET: 14 wallet satu funder (0xbe410ab5) hanya trading ROBINHOOD token dgn BUY/SELL sempurna seimbang (517/517 total fleet) = bot arbitrase otomatis. 2 member sudah MEV_BOT by classifier. Bukti: swap_events lokal + audit manual 2026-09-21.",
+     "cluster": "cluster_be41",
+     "token": "ROBINHOOD (native)"
     }
    },
    "confidence": {
-    "CLUSTER_MEMBER:cluster_be41": 0.75
+    "CLUSTER_MEMBER:cluster_be41": 0.75,
+    "MEV_BOT": 0.85
    }
   },
   "0x3a8999ef0b417788194158172050f98e4606392a": {
@@ -159479,7 +159507,8 @@
   "0x470e6be8b2e62f9e5f697ee854faf15036db588e": {
    "primary_type": "CLUSTER_MEMBER:cluster_be41",
    "labels": [
-    "CLUSTER_MEMBER:cluster_be41"
+    "CLUSTER_MEMBER:cluster_be41",
+    "MEV_BOT"
    ],
    "evidence": {
     "CLUSTER_MEMBER:cluster_be41": {
@@ -159503,10 +159532,16 @@
       "0xf38013d1caaa68251cd5fc0e0d18f3c97824374d"
      ],
      "source": "results/funding_forensics.json"
+    },
+    "MEV_BOT": {
+     "reason": "ARB_BOT_FLEET: 14 wallet satu funder (0xbe410ab5) hanya trading ROBINHOOD token dgn BUY/SELL sempurna seimbang (517/517 total fleet) = bot arbitrase otomatis. 2 member sudah MEV_BOT by classifier. Bukti: swap_events lokal + audit manual 2026-09-21.",
+     "cluster": "cluster_be41",
+     "token": "ROBINHOOD (native)"
     }
    },
    "confidence": {
-    "CLUSTER_MEMBER:cluster_be41": 0.75
+    "CLUSTER_MEMBER:cluster_be41": 0.75,
+    "MEV_BOT": 0.85
    }
   },
   "0x470f76a77bbbc54aa8267177f13aa2a3b52ac598": {
@@ -178723,7 +178758,8 @@
   "0x505d2e7a715c9af1d690204f43d75eaea4efaf10": {
    "primary_type": "CLUSTER_MEMBER:cluster_be41",
    "labels": [
-    "CLUSTER_MEMBER:cluster_be41"
+    "CLUSTER_MEMBER:cluster_be41",
+    "MEV_BOT"
    ],
    "evidence": {
     "CLUSTER_MEMBER:cluster_be41": {
@@ -178747,10 +178783,16 @@
       "0xf38013d1caaa68251cd5fc0e0d18f3c97824374d"
      ],
      "source": "results/funding_forensics.json"
+    },
+    "MEV_BOT": {
+     "reason": "ARB_BOT_FLEET: 14 wallet satu funder (0xbe410ab5) hanya trading ROBINHOOD token dgn BUY/SELL sempurna seimbang (517/517 total fleet) = bot arbitrase otomatis. 2 member sudah MEV_BOT by classifier. Bukti: swap_events lokal + audit manual 2026-09-21.",
+     "cluster": "cluster_be41",
+     "token": "ROBINHOOD (native)"
     }
    },
    "confidence": {
-    "CLUSTER_MEMBER:cluster_be41": 0.75
+    "CLUSTER_MEMBER:cluster_be41": 0.75,
+    "MEV_BOT": 0.85
    }
   },
   "0x505deeac3ecba734e62ab0c2ba4433d360c48d3b": {
@@ -193333,7 +193375,8 @@
   "0x5740db16b0a5f853a18cb467f1f1cdaa07125da1": {
    "primary_type": "CLUSTER_MEMBER:cluster_be41",
    "labels": [
-    "CLUSTER_MEMBER:cluster_be41"
+    "CLUSTER_MEMBER:cluster_be41",
+    "MEV_BOT"
    ],
    "evidence": {
     "CLUSTER_MEMBER:cluster_be41": {
@@ -193357,10 +193400,16 @@
       "0xf38013d1caaa68251cd5fc0e0d18f3c97824374d"
      ],
      "source": "results/funding_forensics.json"
+    },
+    "MEV_BOT": {
+     "reason": "ARB_BOT_FLEET: 14 wallet satu funder (0xbe410ab5) hanya trading ROBINHOOD token dgn BUY/SELL sempurna seimbang (517/517 total fleet) = bot arbitrase otomatis. 2 member sudah MEV_BOT by classifier. Bukti: swap_events lokal + audit manual 2026-09-21.",
+     "cluster": "cluster_be41",
+     "token": "ROBINHOOD (native)"
     }
    },
    "confidence": {
-    "CLUSTER_MEMBER:cluster_be41": 0.75
+    "CLUSTER_MEMBER:cluster_be41": 0.75,
+    "MEV_BOT": 0.85
    }
   },
   "0x57428f69a7e93aca0ef711e538e03758c8af3f66": {
@@ -247216,7 +247265,8 @@
   "0x70cf1b6e80aae62fe8e793eac31870b9ecf2d31a": {
    "primary_type": "CLUSTER_MEMBER:cluster_be41",
    "labels": [
-    "CLUSTER_MEMBER:cluster_be41"
+    "CLUSTER_MEMBER:cluster_be41",
+    "MEV_BOT"
    ],
    "evidence": {
     "CLUSTER_MEMBER:cluster_be41": {
@@ -247240,10 +247290,16 @@
       "0xf38013d1caaa68251cd5fc0e0d18f3c97824374d"
      ],
      "source": "results/funding_forensics.json"
+    },
+    "MEV_BOT": {
+     "reason": "ARB_BOT_FLEET: 14 wallet satu funder (0xbe410ab5) hanya trading ROBINHOOD token dgn BUY/SELL sempurna seimbang (517/517 total fleet) = bot arbitrase otomatis. 2 member sudah MEV_BOT by classifier. Bukti: swap_events lokal + audit manual 2026-09-21.",
+     "cluster": "cluster_be41",
+     "token": "ROBINHOOD (native)"
     }
    },
    "confidence": {
-    "CLUSTER_MEMBER:cluster_be41": 0.75
+    "CLUSTER_MEMBER:cluster_be41": 0.75,
+    "MEV_BOT": 0.85
    }
   },
   "0x70cfcb22efafcad3ad274260877bae282fc922bd": {
@@ -259972,7 +260028,8 @@
   "0x7676a8a3df4b74d391bf519029e7c7768ca2a282": {
    "primary_type": "CLUSTER_MEMBER:cluster_be41",
    "labels": [
-    "CLUSTER_MEMBER:cluster_be41"
+    "CLUSTER_MEMBER:cluster_be41",
+    "MEV_BOT"
    ],
    "evidence": {
     "CLUSTER_MEMBER:cluster_be41": {
@@ -259996,10 +260053,16 @@
       "0xf38013d1caaa68251cd5fc0e0d18f3c97824374d"
      ],
      "source": "results/funding_forensics.json"
+    },
+    "MEV_BOT": {
+     "reason": "ARB_BOT_FLEET: 14 wallet satu funder (0xbe410ab5) hanya trading ROBINHOOD token dgn BUY/SELL sempurna seimbang (517/517 total fleet) = bot arbitrase otomatis. 2 member sudah MEV_BOT by classifier. Bukti: swap_events lokal + audit manual 2026-09-21.",
+     "cluster": "cluster_be41",
+     "token": "ROBINHOOD (native)"
     }
    },
    "confidence": {
-    "CLUSTER_MEMBER:cluster_be41": 0.75
+    "CLUSTER_MEMBER:cluster_be41": 0.75,
+    "MEV_BOT": 0.85
    }
   },
   "0x767f8341968785621b2535c9af47875296f363ad": {
@@ -330634,7 +330697,8 @@
   "0x977ae053e3a6909ba2bcfb1e316b6ff58606ea56": {
    "primary_type": "CLUSTER_MEMBER:cluster_be41",
    "labels": [
-    "CLUSTER_MEMBER:cluster_be41"
+    "CLUSTER_MEMBER:cluster_be41",
+    "MEV_BOT"
    ],
    "evidence": {
     "CLUSTER_MEMBER:cluster_be41": {
@@ -330658,10 +330722,16 @@
       "0xf38013d1caaa68251cd5fc0e0d18f3c97824374d"
      ],
      "source": "results/funding_forensics.json"
+    },
+    "MEV_BOT": {
+     "reason": "ARB_BOT_FLEET: 14 wallet satu funder (0xbe410ab5) hanya trading ROBINHOOD token dgn BUY/SELL sempurna seimbang (517/517 total fleet) = bot arbitrase otomatis. 2 member sudah MEV_BOT by classifier. Bukti: swap_events lokal + audit manual 2026-09-21.",
+     "cluster": "cluster_be41",
+     "token": "ROBINHOOD (native)"
     }
    },
    "confidence": {
-    "CLUSTER_MEMBER:cluster_be41": 0.75
+    "CLUSTER_MEMBER:cluster_be41": 0.75,
+    "MEV_BOT": 0.85
    }
   },
   "0x97871efb03f204b4cc49a520a449a03dfbe415fb": {
@@ -522905,7 +522975,8 @@
   "0xf15168b7adc036ce63ea44bba723408d30dc4b4c": {
    "primary_type": "CLUSTER_MEMBER:cluster_be41",
    "labels": [
-    "CLUSTER_MEMBER:cluster_be41"
+    "CLUSTER_MEMBER:cluster_be41",
+    "MEV_BOT"
    ],
    "evidence": {
     "CLUSTER_MEMBER:cluster_be41": {
@@ -522929,10 +523000,16 @@
       "0xf38013d1caaa68251cd5fc0e0d18f3c97824374d"
      ],
      "source": "results/funding_forensics.json"
+    },
+    "MEV_BOT": {
+     "reason": "ARB_BOT_FLEET: 14 wallet satu funder (0xbe410ab5) hanya trading ROBINHOOD token dgn BUY/SELL sempurna seimbang (517/517 total fleet) = bot arbitrase otomatis. 2 member sudah MEV_BOT by classifier. Bukti: swap_events lokal + audit manual 2026-09-21.",
+     "cluster": "cluster_be41",
+     "token": "ROBINHOOD (native)"
     }
    },
    "confidence": {
-    "CLUSTER_MEMBER:cluster_be41": 0.75
+    "CLUSTER_MEMBER:cluster_be41": 0.75,
+    "MEV_BOT": 0.85
    }
   },
   "0xf15175c6464b71fd7836912b52be6eb912595f9f": {
@@ -527505,7 +527582,8 @@
   "0xf38013d1caaa68251cd5fc0e0d18f3c97824374d": {
    "primary_type": "CLUSTER_MEMBER:cluster_be41",
    "labels": [
-    "CLUSTER_MEMBER:cluster_be41"
+    "CLUSTER_MEMBER:cluster_be41",
+    "MEV_BOT"
    ],
    "evidence": {
     "CLUSTER_MEMBER:cluster_be41": {
@@ -527529,10 +527607,16 @@
       "0xf38013d1caaa68251cd5fc0e0d18f3c97824374d"
      ],
      "source": "results/funding_forensics.json"
+    },
+    "MEV_BOT": {
+     "reason": "ARB_BOT_FLEET: 14 wallet satu funder (0xbe410ab5) hanya trading ROBINHOOD token dgn BUY/SELL sempurna seimbang (517/517 total fleet) = bot arbitrase otomatis. 2 member sudah MEV_BOT by classifier. Bukti: swap_events lokal + audit manual 2026-09-21.",
+     "cluster": "cluster_be41",
+     "token": "ROBINHOOD (native)"
     }
    },
    "confidence": {
-    "CLUSTER_MEMBER:cluster_be41": 0.75
+    "CLUSTER_MEMBER:cluster_be41": 0.75,
+    "MEV_BOT": 0.85
    }
   },
   "0xf38073e23ffd2de8dd62996890ab107138b1d337": {

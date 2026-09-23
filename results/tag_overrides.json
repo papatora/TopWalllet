@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-15T15:30:13.697285+00:00",
+ "generated_at": "2026-09-23T15:37:11.879302+00:00",
  "source": "scripts/reverify_tags.py",
  "wallets": {
   "0x00081217544197617dbee64f38cac8de1bd91a23": {
@@ -46575,6 +46575,258 @@
     }
    },
    "note": "INSIDER dibatalkan: bukti on-chain menunjukkan tx beli (Swap log) yang tak tertangkap scan; antre re-enrich"
+  },
+  "0x0630606d4abaddd08be21506bc4585e57cf9ff98": {
+   "set_primary": "MEV_BOT",
+   "remove_labels": [],
+   "add_labels": [
+    "MEV_BOT"
+   ],
+   "confidence": {
+    "MEV_BOT": 0.85
+   },
+   "evidence": {
+    "MEV_BOT": {
+     "reason": "ARB_BOT_FLEET cluster_be41: 14 wallet satu funder 0xbe410ab5, hanya trading ROBINHOOD, BUY/SELL seimbang sempurna (517/517 fleet) = bot arbitrase; 2 member sudah MEV_BOT by classifier",
+     "verified": "audit lokal 2026-09-21"
+    }
+   },
+   "note": "cluster_be41 = armada arb bot, bukan insider",
+   "verified_at": "2026-09-23T15:37:11.879302+00:00"
+  },
+  "0x14fe9a5c647fc916fe04fbd2822646d82afa38d0": {
+   "set_primary": "MEV_BOT",
+   "remove_labels": [],
+   "add_labels": [
+    "MEV_BOT"
+   ],
+   "confidence": {
+    "MEV_BOT": 0.85
+   },
+   "evidence": {
+    "MEV_BOT": {
+     "reason": "ARB_BOT_FLEET cluster_be41: 14 wallet satu funder 0xbe410ab5, hanya trading ROBINHOOD, BUY/SELL seimbang sempurna (517/517 fleet) = bot arbitrase; 2 member sudah MEV_BOT by classifier",
+     "verified": "audit lokal 2026-09-21"
+    }
+   },
+   "note": "cluster_be41 = armada arb bot, bukan insider",
+   "verified_at": "2026-09-23T15:37:11.879302+00:00"
+  },
+  "0x1cc65d09d81e4656e72444217e201064226d2c3c": {
+   "set_primary": "MEV_BOT",
+   "remove_labels": [],
+   "add_labels": [
+    "MEV_BOT"
+   ],
+   "confidence": {
+    "MEV_BOT": 0.85
+   },
+   "evidence": {
+    "MEV_BOT": {
+     "reason": "ARB_BOT_FLEET cluster_be41: 14 wallet satu funder 0xbe410ab5, hanya trading ROBINHOOD, BUY/SELL seimbang sempurna (517/517 fleet) = bot arbitrase; 2 member sudah MEV_BOT by classifier",
+     "verified": "audit lokal 2026-09-21"
+    }
+   },
+   "note": "cluster_be41 = armada arb bot, bukan insider",
+   "verified_at": "2026-09-23T15:37:11.879302+00:00"
+  },
+  "0x3a8982399f7a72f0b57f0833b87549bc37c1b523": {
+   "set_primary": "MEV_BOT",
+   "remove_labels": [],
+   "add_labels": [
+    "MEV_BOT"
+   ],
+   "confidence": {
+    "MEV_BOT": 0.85
+   },
+   "evidence": {
+    "MEV_BOT": {
+     "reason": "ARB_BOT_FLEET cluster_be41: 14 wallet satu funder 0xbe410ab5, hanya trading ROBINHOOD, BUY/SELL seimbang sempurna (517/517 fleet) = bot arbitrase; 2 member sudah MEV_BOT by classifier",
+     "verified": "audit lokal 2026-09-21"
+    }
+   },
+   "note": "cluster_be41 = armada arb bot, bukan insider",
+   "verified_at": "2026-09-23T15:37:11.879302+00:00"
+  },
+  "0x470e6be8b2e62f9e5f697ee854faf15036db588e": {
+   "set_primary": "MEV_BOT",
+   "remove_labels": [],
+   "add_labels": [
+    "MEV_BOT"
+   ],
+   "confidence": {
+    "MEV_BOT": 0.85
+   },
+   "evidence": {
+    "MEV_BOT": {
+     "reason": "ARB_BOT_FLEET cluster_be41: 14 wallet satu funder 0xbe410ab5, hanya trading ROBINHOOD, BUY/SELL seimbang sempurna (517/517 fleet) = bot arbitrase; 2 member sudah MEV_BOT by classifier",
+     "verified": "audit lokal 2026-09-21"
+    }
+   },
+   "note": "cluster_be41 = armada arb bot, bukan insider",
+   "verified_at": "2026-09-23T15:37:11.879302+00:00"
+  },
+  "0x505d2e7a715c9af1d690204f43d75eaea4efaf10": {
+   "set_primary": "MEV_BOT",
+   "remove_labels": [],
+   "add_labels": [
+    "MEV_BOT"
+   ],
+   "confidence": {
+    "MEV_BOT": 0.85
+   },
+   "evidence": {
+    "MEV_BOT": {
+     "reason": "ARB_BOT_FLEET cluster_be41: 14 wallet satu funder 0xbe410ab5, hanya trading ROBINHOOD, BUY/SELL seimbang sempurna (517/517 fleet) = bot arbitrase; 2 member sudah MEV_BOT by classifier",
+     "verified": "audit lokal 2026-09-21"
+    }
+   },
+   "note": "cluster_be41 = armada arb bot, bukan insider",
+   "verified_at": "2026-09-23T15:37:11.879302+00:00"
+  },
+  "0x5740db16b0a5f853a18cb467f1f1cdaa07125da1": {
+   "set_primary": "MEV_BOT",
+   "remove_labels": [],
+   "add_labels": [
+    "MEV_BOT"
+   ],
+   "confidence": {
+    "MEV_BOT": 0.85
+   },
+   "evidence": {
+    "MEV_BOT": {
+     "reason": "ARB_BOT_FLEET cluster_be41: 14 wallet satu funder 0xbe410ab5, hanya trading ROBINHOOD, BUY/SELL seimbang sempurna (517/517 fleet) = bot arbitrase; 2 member sudah MEV_BOT by classifier",
+     "verified": "audit lokal 2026-09-21"
+    }
+   },
+   "note": "cluster_be41 = armada arb bot, bukan insider",
+   "verified_at": "2026-09-23T15:37:11.879302+00:00"
+  },
+  "0x70cf1b6e80aae62fe8e793eac31870b9ecf2d31a": {
+   "set_primary": "MEV_BOT",
+   "remove_labels": [],
+   "add_labels": [
+    "MEV_BOT"
+   ],
+   "confidence": {
+    "MEV_BOT": 0.85
+   },
+   "evidence": {
+    "MEV_BOT": {
+     "reason": "ARB_BOT_FLEET cluster_be41: 14 wallet satu funder 0xbe410ab5, hanya trading ROBINHOOD, BUY/SELL seimbang sempurna (517/517 fleet) = bot arbitrase; 2 member sudah MEV_BOT by classifier",
+     "verified": "audit lokal 2026-09-21"
+    }
+   },
+   "note": "cluster_be41 = armada arb bot, bukan insider",
+   "verified_at": "2026-09-23T15:37:11.879302+00:00"
+  },
+  "0x7676a8a3df4b74d391bf519029e7c7768ca2a282": {
+   "set_primary": "MEV_BOT",
+   "remove_labels": [],
+   "add_labels": [
+    "MEV_BOT"
+   ],
+   "confidence": {
+    "MEV_BOT": 0.85
+   },
+   "evidence": {
+    "MEV_BOT": {
+     "reason": "ARB_BOT_FLEET cluster_be41: 14 wallet satu funder 0xbe410ab5, hanya trading ROBINHOOD, BUY/SELL seimbang sempurna (517/517 fleet) = bot arbitrase; 2 member sudah MEV_BOT by classifier",
+     "verified": "audit lokal 2026-09-21"
+    }
+   },
+   "note": "cluster_be41 = armada arb bot, bukan insider",
+   "verified_at": "2026-09-23T15:37:11.879302+00:00"
+  },
+  "0x977ae053e3a6909ba2bcfb1e316b6ff58606ea56": {
+   "set_primary": "MEV_BOT",
+   "remove_labels": [],
+   "add_labels": [
+    "MEV_BOT"
+   ],
+   "confidence": {
+    "MEV_BOT": 0.85
+   },
+   "evidence": {
+    "MEV_BOT": {
+     "reason": "ARB_BOT_FLEET cluster_be41: 14 wallet satu funder 0xbe410ab5, hanya trading ROBINHOOD, BUY/SELL seimbang sempurna (517/517 fleet) = bot arbitrase; 2 member sudah MEV_BOT by classifier",
+     "verified": "audit lokal 2026-09-21"
+    }
+   },
+   "note": "cluster_be41 = armada arb bot, bukan insider",
+   "verified_at": "2026-09-23T15:37:11.879302+00:00"
+  },
+  "0xb1dc1e88579b075dc209ef2ec1224bf8130201d5": {
+   "set_primary": "MEV_BOT",
+   "remove_labels": [],
+   "add_labels": [
+    "MEV_BOT"
+   ],
+   "confidence": {
+    "MEV_BOT": 0.85
+   },
+   "evidence": {
+    "MEV_BOT": {
+     "reason": "ARB_BOT_FLEET cluster_be41: 14 wallet satu funder 0xbe410ab5, hanya trading ROBINHOOD, BUY/SELL seimbang sempurna (517/517 fleet) = bot arbitrase; 2 member sudah MEV_BOT by classifier",
+     "verified": "audit lokal 2026-09-21"
+    }
+   },
+   "note": "cluster_be41 = armada arb bot, bukan insider",
+   "verified_at": "2026-09-23T15:37:11.879302+00:00"
+  },
+  "0xb9358d13906da9f0b30fc322508b03d055e1abd9": {
+   "set_primary": "MEV_BOT",
+   "remove_labels": [],
+   "add_labels": [
+    "MEV_BOT"
+   ],
+   "confidence": {
+    "MEV_BOT": 0.85
+   },
+   "evidence": {
+    "MEV_BOT": {
+     "reason": "ARB_BOT_FLEET cluster_be41: 14 wallet satu funder 0xbe410ab5, hanya trading ROBINHOOD, BUY/SELL seimbang sempurna (517/517 fleet) = bot arbitrase; 2 member sudah MEV_BOT by classifier",
+     "verified": "audit lokal 2026-09-21"
+    }
+   },
+   "note": "cluster_be41 = armada arb bot, bukan insider",
+   "verified_at": "2026-09-23T15:37:11.879302+00:00"
+  },
+  "0xf15168b7adc036ce63ea44bba723408d30dc4b4c": {
+   "set_primary": "MEV_BOT",
+   "remove_labels": [],
+   "add_labels": [
+    "MEV_BOT"
+   ],
+   "confidence": {
+    "MEV_BOT": 0.85
+   },
+   "evidence": {
+    "MEV_BOT": {
+     "reason": "ARB_BOT_FLEET cluster_be41: 14 wallet satu funder 0xbe410ab5, hanya trading ROBINHOOD, BUY/SELL seimbang sempurna (517/517 fleet) = bot arbitrase; 2 member sudah MEV_BOT by classifier",
+     "verified": "audit lokal 2026-09-21"
+    }
+   },
+   "note": "cluster_be41 = armada arb bot, bukan insider",
+   "verified_at": "2026-09-23T15:37:11.879302+00:00"
+  },
+  "0xf38013d1caaa68251cd5fc0e0d18f3c97824374d": {
+   "set_primary": "MEV_BOT",
+   "remove_labels": [],
+   "add_labels": [
+    "MEV_BOT"
+   ],
+   "confidence": {
+    "MEV_BOT": 0.85
+   },
+   "evidence": {
+    "MEV_BOT": {
+     "reason": "ARB_BOT_FLEET cluster_be41: 14 wallet satu funder 0xbe410ab5, hanya trading ROBINHOOD, BUY/SELL seimbang sempurna (517/517 fleet) = bot arbitrase; 2 member sudah MEV_BOT by classifier",
+     "verified": "audit lokal 2026-09-21"
+    }
+   },
+   "note": "cluster_be41 = armada arb bot, bukan insider",
+   "verified_at": "2026-09-23T15:37:11.879302+00:00"
   }
  }
 }
