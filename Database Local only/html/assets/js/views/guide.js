@@ -32,7 +32,9 @@ export function render() {
   ];
   const chips = S.labels.map(l => {
     const meta = labelMeta(l) || {};
-    const d = allLabels.find(x => x[0] === l || l.startsWith(x[0].split(':')[0]));
+    const d = allLabels.find(x => x[0] === l)
+             || allLabels.find(x => x[0] === l.split(':')[0])
+             || allLabels.find(x => l.startsWith(x[0].split(':')[0]));
     return `<div class="panel" style="padding:12px 14px;margin-bottom:10px">
       <div style="margin-bottom:6px">${chip(l)}</div>
       <div class="t2" style="font-size:12.5px;line-height:1.6">${esc(d ? d[1] : meta.desc || '')}</div></div>`;
@@ -40,7 +42,7 @@ export function render() {
 
   $('#app').innerHTML = `<div class="page">
     <h1 class="page-title">Guide — cara baca data</h1>
-    <p class="t2" style="margin-bottom:18px">Semua angka USD di explorer ini adalah <b>estimasi</b> (ditandai "est."): dari price point pool pada blok swap kalau DB lokal punya price_points — kalau DB lokal <b>tanpa price_points</b> (banner kuning di atas), dari harga snapshot terakhir token, sehingga total jual-beli bisa meleset jauh dari realita. Bukan PnL terverifikasi — PnL terverifikasi hanya muncul setelah tahap analyze berjalan penuh (chips "verifier").</p>
+    <p class="t2" style="margin-bottom:18px">Semua angka USD di explorer ini adalah <b>estimasi</b> (ditandai "est."): dari price point pool pada blok swap kalau seri harga token ada (DB lokal kini memuat 4,7 jt price point — sebagian besar token tercakup), sisanya dari harga snapshot terakhir token, sehingga total jual-beli bisa meleset dari realita. Bukan PnL terverifikasi — PnL terverifikasi hanya muncul setelah tahap analyze berjalan penuh (chips "verifier").</p>
 
     ${sec('Cara baca Visualizer', `
       <b>Ukuran bubble</b> = volume est. yang lewat di wallet/token itu dalam scope aktif.

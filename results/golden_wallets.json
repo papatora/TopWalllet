@@ -1,0 +1,342 @@
+{
+ "generated_at": "2026-09-23T17:38:56.921815+00:00",
+ "criteria": "GOLDEN_RULE_V2 (menggantikan V1 yang pasti=0 karena usd_value/price_usd NULL 100%): base >=20 swap & >=3 token & span>=14 hari (332 dari 44.555 wallet berswap) -> exclude {AIRDROP_FARMER, BUNDLER_SUSPECT, MEV_BOT, DEV, PHISHING_TARGET, CLUSTER_MEMBER, INSIDER terverifikasi on-chain (721 di tag_overrides.json)} = 308 -> gate |net-flow| x price_now > $1000 = 191 kandidat (142 akumulasi, 49 distribusi) -> FINAL net>$1000 dihitung pipeline dari realized PnL (positions.pnl_usd) SETELAH backfill price_points dari VPS. TRADER_COVERAGE_GAP/SNIPER/CT_ATTRIBUTED tidak lagi mendiskualifikasi (SNIPER via gate win-rate fee-aware >=0.5 @1.02x + net>0; CLUSTER_MEMBER tetap exclude sampai goal#1 arkm + goal#5 bubblemaps). Golden eksplisit hasil ask ini: 84 wallet AIRDROP_SPAM terverifikasi on-chain (filter:af_verified_spam_84, grup AIRDROP_FARMER). Sumber: results/verification_verdicts.json.",
+ "wallets": [
+  {
+   "addr": "0x000b52b4edce45077359802bad12d9d697dde304",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0x005bf2a6293bbbcd102b3bd661f33523408cd601",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0x02491b2fcc7733841a5b64fc04a48b58ec134cb2",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0x027a230c0803b5af4657f892b91cd0f88b72c75a",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0x0360d3b502470afe027f43736c437bc659198c02",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0x042c9fdfae19d059db87ea465e8db558e66ac560",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0x046324bdcb099dd8fdbe8183763b0f884ba585d3",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0x0618dd61f8f0b2457876053c900191b7c4bf1485",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0x077c431c4ce4f7b1894ace7adc324dff61aefa82",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0x07d7522f431b9d8ff76e5ffcee27918d6015f36b",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0x0bc4e10585441c75dad111b163372b07d65ed550",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0x0c404a103afb562a610168b56d5a88d763cea39c",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0x12ad61ecd99d854063efcc39f2285d4b7ddca799",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0x135a150e1482e1741b2f418e638b9d3ff2480f79",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0x13a04f6ed576cc43c950fe566dae0f73a40a2240",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0x158acabc9ebbc8ed261d6dcecb410445ea9fe79a",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0x18668a620f4938188f6484fd8b8532365ed6341c",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0x19bb046042fb6ce7597a6260537e9f24a3fabf46",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0x1bac91974d473493f7bedf3fec09c73e3ceff7b3",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0x1ec2b4b9169514855c540de97e528ebb623f0e28",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0x338e510da3f3f865268da3fd53fdeb87c54c1035",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0x35dabbf0190cb68dee6d58b7ebfd28dd34959879",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0x371356eb5b6a24fad0006ca8275b6a0927147c0e",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0x3dddfd826712a6e6d245a8d5a9fadb345760650e",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0x4485608fb79b67422cb8a69b75ee9760d1c04e3e",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0x45c69bfc61dbd531942f8808f60fd7f27a655abd",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0x4a198a328e80beae1ddaf5104e12ed7f41741e03",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0x52611965ac2870e37c884b64493e4eb8d57c4faf",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0x5dc7dd6c7f82d46118a9db45c60d6516de5069b9",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0x60d284cb6dd3cc9c880d4a4ea7e9b0781470c5a6",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0x618de692363b578091ea53a8fcae92d909eed0e1",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0x62c3e44a0b713ff16a90c78378f71e4dfd2c1c05",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0x64d93cb46c9582bd078689f2d41137d1d2d034d1",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0x6583616ededae69931e0c53281cf868f6bed2900",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0x6615a4262007b3c2cb688cb07ef3f5bd559bcc6c",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0x6617930979a4f42a72403f083da6f886901fb090",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0x67308cad74750e6e9f76cbf6b6519414cdde5309",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0x6ab14644ede1a6fb74f28bca4a3006ad41af00fa",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0x6d7ede42115dbb126f24527f7ccf6121f1f6d816",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0x7164fe6df1cd44a75bc9bcd73fbcad4172cb77a0",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0x7c4481ee9265e18d3a8555cca007f28e669880bd",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0x7dfc2e0e75b2ab922e119e5daffb596d787eaa8d",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0x7fc092fa12d3ae1b7729ad79cb309ac98fd06146",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0x808fa5170d0843913f2265dd1b789c26b1370f33",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0x831408cf5e52791c27ffe073220a61c83c41db80",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0x83521fb809581371bbac1c8fb6add3cfd523f1da",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0x896b4c20c5f92e999857a7a2823a8d2c1ceafb1f",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0x92ee9d878fea5e7bf9a3581069c582970d5b6a98",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0x9320649bd68c04b0b8ac4668bcc74f74cfbb79bf",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0x97ca1120a6d79df70922f926049aa648935e40d1",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0x98609f1af44a943037bc3c3cd80bc3d51c2f6f3d",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0x989a491607d7eb35cc88fd966a9503ab64ab397f",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0xa38ced0779c32df55b3623762c72318428455f28",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0xa88ba135efc7d0441bd57f4cc78e10273c0e61cb",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0xacfa41f4129cab25efe52fc1715738b71202656f",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0xad3cac3b94e44d563db043842f4c5f0d38ca6f53",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0xafd27e1170d407ac25578967937e0da232c64d51",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0xaffbb561f7dd5fbab306cf781667fc84b08e2438",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0xbf8c8cc734d92c76e791fa9a0616480ae26368f2",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0xcd211569a108fdac74d729ba7358a743a3c2e08d",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0xd03da4452bf9478c67a54c56d46678d55a8d9483",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0xd0e546a7c96c3bc88ff54a35a5cf5122cb34be6b",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0xd2e4a2a882f7129cff401e5c175850e2ef72c3b5",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0xd3c6074b0285c16943fc73e658639f3ae3ebbdc2",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0xd3e7bcc538d58b1b94fe522d07524fef3cbedaf3",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0xd51c9499095e36f6e6086a1ae9aa201b12a0a99a",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0xd6e13787f20a6252e330a9ea9c0c3c7e4d61e27c",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0xd8a2cc4ee652625b02b8c2385705527458bdd9f8",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0xd91237e7144d3e3a491a3812f2f05a0e785b373a",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0xd9e430b59f07c6e02994b248922eb879921c0fab",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0xdd2af4d372751c7fd3d759b33973ee76ba2b314b",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0xdf9061257b25b9484d778b8ac86b80cca521fae2",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0xdfbaf86dc730d4b4d19a3542f7a5942c0727893f",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0xe16ad86b738ff87f14ef42039351f1a5f6d11475",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0xe198809effeed4486f5ebb6ab31ad13cbdab4aa7",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0xe5e9ffe707ee071998340972af6fb178f5c64ba6",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0xe789d90b3e5ddbea1c812a2e09be907db327fc6e",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0xee5ece8cd338127cb1aa9c9bf30491edb5e416ed",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0xf59fac008e1365160bd2cc2a23c01ac3872ecb8a",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0xfad5dc416800e0244eb7806e2d6390bedcfa7f67",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0xfae2738074857626bbce260ab0a126cc0c58f622",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0xfd7cd65b0f4b2370f5623e47baefcbedfb11574e",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0xfedcefba31254a572b8e5a2bf97dd0b3bacd819a",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  },
+  {
+   "addr": "0xffe2f929f24075362fac888b12ecb1c1ee4522d1",
+   "reason": "84 wallet di results/tag_overrides.json (set_primary=AIRDROP_FARMER, generated 2026-09-23) ∩ grup DB: terverifikasi on-chain AIRDROP_SPAM — token diterima dari pengirim yang sebar ke >=20 wallet dalam <=100 blok (contoh 0x000b52b4…: sender 0xdff7c89b… max_recipients=50 di blok 52403074, conf 0.9 + PHISHING_TARGET 0.8). Satu-satunya sub-set yang benar-benar AIRDROP_FARMER."
+  }
+ ]
+}

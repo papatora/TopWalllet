@@ -45,7 +45,9 @@ export function evidenceBlocks(i) {
     }
     else if (L === 'CT_ATTRIBUTED') body = row('Name', esc(d.name || '—')) + row('X account', d.twitter_username ? `<a class="link" href="https://x.com/${encodeURIComponent(d.twitter_username)}" target="_blank" rel="noopener">@${esc(d.twitter_username)}</a>` : '—') + row('Source', esc(d.source || ''));
     else if (L.startsWith('CLUSTER_MEMBER')) body = row('Funder', `<a class="link" href="${addrExt(d.funder)}" target="_blank" rel="noopener">${d.funder.slice(0, 10)}…</a>`) + row('Members', d.member_count ?? d.funded_wallets ?? '—') + entLink(d.cluster_id);
-    else if (L === 'MEV_BOT') body = row('Round trips', d.round_trips) + row('Median hold', d.median_hold_minutes + ' min');
+    else if (L === 'MEV_BOT') body = (d.round_trips != null ? row('Round trips', d.round_trips) : '')
+        + (d.median_hold_minutes != null ? row('Median hold', d.median_hold_minutes + ' min') : '')
+        + (d.reason ? row('Catatan', esc(d.reason)) : '');
     else if (L === 'SMART_TRACKER') body = row('Composite score', d.composite_score) + row('Rank', '#' + d.rank) + row('Verdict', esc(d.verdict));
     else body = Object.entries(d).map(([k, v]) => row(esc(k), esc(typeof v === 'object' ? JSON.stringify(v) : v))).join('');
     return `<div class="evi"><div class="evi-h">${chip(L)}<span class="end">confidence ${w[3][j].toFixed(2)}</span></div><div class="evi-d">${esc(lm.desc)}</div>${body ? `<div class="evi-b kv">${body}</div>` : ''}</div>`;
