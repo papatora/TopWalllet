@@ -187,3 +187,23 @@ Legenda: ✅ FIXED+VERIFIED · ⚠️ LIMITASI DIKETAHUI (bukan bug, jangan "dip
   Python sistem expired → `_get` fallback certifi→default→unverified (endpoint
   publik baca-saja). Key Etherscan kedua (JMTC…) INVALID — hanya key pertama
   yang dipakai rotasi.
+
+## S-44 (2026-09-25) — akar LB/dashboard statis: enrich one-shot
+- **GEJALA**: LB & dashboard explorer tidak bergerak. BUKAN karena noise
+  filter — **[VPS] berhenti mengindeks swap sejak 2026-09-16**
+  (swap_max_ts mentok, wallets_last24h=0, wallets mentok 94.961).
+- **AKAR**: universe trader RH chain terbatas (~95k alamat); enrich
+  one-shot (hanya pilih pending/in_progress); setelah backlog habis,
+  swap TIDAK pernah di-scan ulang walau discover menemukan token baru
+  (trader-nya semua wallet lama). analyze checkpoint mentok 11 Sep.
+- **FIX (c5794c4)**: stage_enrich menambah kohor refresh — wallet
+  'enriched' dengan enriched_at kadaluarsa (>ENRICH_REFRESH_HOURS=24),
+  urut last_active terbaru, limit ENRICH_REFRESH_LIMIT=400/cycle;
+  re-scan idempoten (delete+reinsert per wallet, kolom enriched_at sudah
+  ada sejak lama).
+- **Goal #3 X**: Xlogin (zip user) → /opt/xlogin VPS (luar repo);
+  10 akun "extra" (ada auth_token, cross-valid dgn cookies b64) →
+  **10/10 LOGIN SUCCESS** (Chromium render home timeline). Sesi utama
+  (LevonneBickel) → X_USERNAME/X_AUTH_TOKEN/X_CT0 di [VPS] .env.
+  Akun file TIDAK pernah masuk git. verify_credentials v1.1 = retired
+  (404) — liveness dibuktikan lewat render browser.
