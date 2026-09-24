@@ -69,6 +69,9 @@ TRACK_BUDGET = int(os.getenv("VOLUME_SWEEP_TRACK_BUDGET", "1"))
 CHAIN = os.getenv("VOLUME_SWEEP_CHAIN", "robinhood")
 QUEUE_MAX = 100
 QUEUE_DROP_TRIES = 3
+# S-44b: jeda antar entry track-ca (detik) — beri jendela waiter flock
+# (pipeline) merebut kunci; flock tidak FIFO.
+ENTRY_YIELD_S = 15
 
 STATE_FILE = Path(REPO_ROOT) / "data" / "volume_sweep_state.json"
 POOL_FILE = Path(settings.results_dir) / "wallet_pool.json"
@@ -272,7 +275,12 @@ async def process_queue(queue: list[dict], budget: int) -> list[dict]:
     budget (token error jangan membuka pintu ke entry berikutnya di cycle
     yang sama — outage DexScreener 100 entry = 100 pipeline berat). Success
     pops; None (resolver yakin token mati) drop di QUEUE_DROP_TRIES;
-    exception (transien: network, lock) drop di 2x itu."""
+    exception (transien: network, lock) drop di 2x itu.
+
+    S-44b: jeda ENTRY_YIELD_S antar entry — flock tidak FIFO, tanpa jeda
+    entry berikutnya langsung merebut kunci lagi dan pipeline yang menunggu
+    kelaparan (insiden 2026-09-24 17:40: pipeline tidur di ep_poll selagi
+    sweep monopoli kunci berjam-jam)."""
     done: list[dict] = []
     if budget <= 0 or not queue:
         return done
@@ -284,6 +292,8 @@ async def process_queue(queue: list[dict], budget: int) -> list[dict]:
             break
         ca = entry["ca"]
         attempts += 1
+        if attempts > 1:
+            await asyncio.sleep(ENTRY_YIELD_S)
         try:
             payload = await run_track_by_ca(ca, top_n=50)
         except Exception as e:  # lock contention, network, apapun — retry
