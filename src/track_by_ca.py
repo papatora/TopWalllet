@@ -26,6 +26,7 @@ from src.db.database import get_session_factory, init_db
 from src.db.models import Pool, Token, Wallet
 from src.discover.dex_scraper import DexScreenerClient, TokenData, _pool_from_pair, _to_float
 from src.enrich.price_fetcher import PriceService
+from src.utils.db_write_lock import db_write_lock
 from src.utils.logger import jlog, setup_logging
 from src.utils.rpc_client import EvmRpcClient
 
@@ -53,6 +54,15 @@ async def _resolve_token(client: DexScreenerClient, ca: str) -> TokenData | None
 
 
 async def run_track_by_ca(ca: str, top_n: int = 50) -> dict | None:
+    """S-43: seluruh pemanggilan dikunci db_write_lock — track-ca menulis
+    token/pool/wallet/price/scores ke SQLite yang sama dengan pipeline;
+    tanpa kunci, stage pipeline menabrak commit di sini → 'database is
+    locked' (crash-loop 2026-09-24). Satu entry = satu giliran tulis."""
+    async with db_write_lock():
+        return await _run_track_by_ca(ca, top_n=top_n)
+
+
+async def _run_track_by_ca(ca: str, top_n: int = 50) -> dict | None:
     setup_logging()
     await init_db()
     ca = ca.lower()

@@ -77,8 +77,10 @@ def main():
                     entry["chains"].add(chain)
                     if ca not in entry["tokens"]:
                         entry["tokens"].append(ca)
-                    for tag in (tr.get("tags") or []):
-                        entry["tags"].add(tag)
+                    if isinstance(entry["tags"], list):
+                        # entry lama dari JSON kembali sebagai list
+                        entry["tags"] = set(entry["tags"])
+                    entry["tags"].add(tag)
                     # promote top movers' stats within budget
                     if stats_used < STATS_BUDGET and entry.get("pnl_30d") is None:
                         try:

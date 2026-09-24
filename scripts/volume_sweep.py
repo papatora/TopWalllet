@@ -439,12 +439,13 @@ async def run_cycle() -> dict:
     # finally, jadi crash di tengah track-ca tidak menduplikasi kerja berat
     done: list[dict] = []
     try:
-        if pipeline_busy():
-            append_log({"ts": datetime.now(timezone.utc).isoformat(),
-                        "event": "queue_deferred",
-                        "reason": "supervisor pipeline sedang jalan"})
-        else:
-            done = await process_queue(queue, TRACK_BUDGET)
+        # S-43: gate pipeline_busy() DIHAPUS — dicek sekali per batch tidak
+        # berguna (pipeline supervisor jalan back-to-back sehingga sweep
+        # bisa kelaparan; mulai di tengah batch → tabrakan tulis tetap
+        # terjadi, crash-loop 2026-09-24). Seri sekarang: run_track_by_ca
+        # mengunci db_write_lock per entry, pipeline mengunci per stage —
+        # bergantian deterministik tanpa dieksekusi /proc.
+        done = await process_queue(queue, TRACK_BUDGET)
     finally:
         save_state(st)
 

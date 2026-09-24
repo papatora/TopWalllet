@@ -20,8 +20,11 @@ def get_engine():
             # ensure the sqlite file's directory exists
             db_path = url.split("///")[-1]
             Path(db_path).parent.mkdir(parents=True, exist_ok=True)
+        # timeout 120: busy_timeout SQLite — bridge contention singkat;
+        # writer berat diserialisasi db_write_lock (S-43), ini pengaman
+        # untuk writer kecil yang tidak memakai kunci (reverify dll).
         _engine = create_async_engine(url, echo=False, pool_pre_ping=True,
-                                     connect_args={"timeout": 30} if url.startswith("sqlite") else {})
+                                     connect_args={"timeout": 120} if url.startswith("sqlite") else {})
     return _engine
 
 

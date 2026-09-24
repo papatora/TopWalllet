@@ -51,12 +51,15 @@ from src.enrich.price_fetcher import PriceService
 from src.enrich.tx_fetcher import TxFetcher, TradeEvent
 from src.rank.export import export_results, eip55
 from src.rank.ranker import rank_wallets
+from src.utils.db_write_lock import db_write_lock
 from src.utils.logger import jlog, setup_logging
 from src.utils.rpc_client import EvmRpcClient
 
 log = logging.getLogger(__name__)
 
 ALL_STAGES = ["discover", "enrich", "prices", "analyze"]
+# S-43: jeda tanpa kunci tulis antar stage (detik) — giliran writer latar.
+STAGE_YIELD_S = 90
 
 
 class Pipeline:
@@ -95,31 +98,40 @@ class Pipeline:
             # Yang benar: sync_session.autoflush, dan di level run() supaya
             # semua stage (discover/analyze) bebas autoflush-bomb.
             session.sync_session.autoflush = False
-            for stage in stages:
+            for idx, stage in enumerate(stages):
                 jlog(log, logging.INFO, f"=== stage: {stage} ===")
-                # S-41: writer lain (sweep track-ca, reverify) kadang megang
-                # write lock >30s → 'database is locked' mematikan cycle.
-                # Semua stage idempoten/resume-safe → retry dengan backoff.
-                for attempt in range(3):
+                # S-43: jeda tanpa kunci antar stage — writer latar (sweep
+                # track-ca) menunggu di flock yang sama; tanpa jeda ini
+                # pipeline merebut kembali kuncinya seketika dan sweep
+                # kelaparan (cycle back-to-back).
+                if idx:
+                    await asyncio.sleep(STAGE_YIELD_S)
+                # S-41/S-43: writer lain (sweep track-ca, reverify) memegang
+                # write lock lewat db_write_lock — stage menunggu giliran
+                # di flock yang sama, lalu retry OperationalError tetap
+                # dipasang sebagai pengaman untuk writer yang tidak pakai
+                # kunci (reverify). Semua stage idempoten/resume-safe.
+                for attempt in range(5):
                     try:
-                        if stage == "discover":
-                            counts.update(await self.stage_discover(session))
-                        elif stage == "enrich":
-                            counts.update(await self.stage_enrich(session))
-                        elif stage == "prices":
-                            counts.update(await self.stage_prices(session))
-                        elif stage == "analyze":
-                            counts.update(await self.stage_analyze(session, started))
+                        async with db_write_lock():
+                            if stage == "discover":
+                                counts.update(await self.stage_discover(session))
+                            elif stage == "enrich":
+                                counts.update(await self.stage_enrich(session))
+                            elif stage == "prices":
+                                counts.update(await self.stage_prices(session))
+                            elif stage == "analyze":
+                                counts.update(await self.stage_analyze(session, started))
+                            await self._checkpoint(session, stage)
                         break
                     except OperationalError as e:
-                        if "database is locked" not in str(e).lower() or attempt == 2:
+                        if "database is locked" not in str(e).lower() or attempt == 4:
                             raise
                         jlog(log, logging.WARNING, "stage kena db lock — retry",
                              stage=stage, attempt=attempt + 1,
                              err=str(e)[:120])
                         await session.rollback()
                         await asyncio.sleep(60 * (attempt + 1))
-                await self._checkpoint(session, stage)
         await self.blockscout.close()
         await self.rpc.close()
         return counts
