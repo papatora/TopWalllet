@@ -1,0 +1,32 @@
+{
+ "generated_at": "2026-09-24T20:25:42.538039+00:00",
+ "run_id": "dwfrun-6e9f5114-27f4-40ea-acb8-1885e06fc6a8",
+ "hasil": "TIDAK ADA YANG DIAPPLY — ketiga proposal tidak konvergen >=8 dalam 2 ronde, sengaja ditunda untuk audit manusia",
+ "putusan": [
+  {
+   "proposal": "P1 promosi facet->primary",
+   "keputusan": "REJECT",
+   "skor": 2,
+   "inti": "Tujuan gagal: GENERALIST 88,15%->87,89% saja; mekanisme tak koheren (headline SNIPER 573 tidak dideliveri varian aman yang direkomendasikan); tidak ada baseline presisi atas 3.039 facet AIRDROP; ~50% perubahan membalik vonis on-chain repo sendiri (688 TCG = INSIDER dibatalkan karena terbukti BELI)."
+  },
+  {
+   "proposal": "P2 bucket DUST",
+   "keputusan": "REJECT (MODIFY draf r2, skor 6)",
+   "skor": 6,
+   "inti": "Substansi konvergen (dust = noise massal: median $175,70, span 0,0001 hari, fingerprint bot PIPEDOG SELL $31,93M) TAPI guard USD vakum (usd_value NULL 442.345/442.345 baris) dan 625 wallet dust memegang >$10k = $60,75M (90,7% notional dust). Wajib gate union dataset.py >$10k (cap 1.039, MAX MOVE 8.317), policy 2.043 unpriced, 3 berkas + guard masuk change-set, syarat re-run nightly.",
+   "modifikasi_hakim": "union gate >$10k via dataset.py engine; tulis policy unpriced; jangan andalkan kolom usd_value; re-run classifier full-refresh akan menghapus label tanpa slot — harus masuk change-set"
+  },
+  {
+   "proposal": "P3 relabel platform-funded",
+   "keputusan": "REJECT (MODIFY draf r2, skor 7)",
+   "skor": 7,
+   "inti": "Advocate 9/10 skeptic 7,5/10. Versi aman: TEPAT 133 wallet (GMGN 129 + PonsV2BondingCurve 4) INSIDER->GENERALIST, exclude 6 multi-entity + 38 AIRDROP_FARMER + proxy-family + MINT_ALLOCATION 0,95; gate on-chain sender sebelum batch. Temuan nyata: ekstraksi last-sender-wins (6/294 wallet punya >=2 entitas), 50 sender utk 110 proxy wallet.",
+   "modifikasi_hakim": "crosstab ulang sendiri; exclude list wajib; assertion angka pasca-apply; tanpa hapus evidence"
+  }
+ ],
+ "pelajaran_audit": [
+  "audit_queries.py guard 'dust_tapi_usd_diatas_10k' VAKUM: usd_value NULL di SEMUA 442.345 baris swap — USD dihitung layer dataset.py (rescale 30x + snapshot fallback), bukan kolom DB.",
+  "audit_queries.py p3 pakai last-sender-wins: 6/294 wallet punya >=2 entitas sender; 0xdb5af497... MINT_ALLOCATION 0.95 salah dikategorikan.",
+  "561 vs 1.038 wallet >$10k = perbedaan metodologi (pp-only vs engine dataset.py) — 92,9% notional di 561 wallet itu (advocate) tapi engine menemukan 1.038."
+ ]
+}

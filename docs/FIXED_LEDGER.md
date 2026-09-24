@@ -207,3 +207,19 @@ Legenda: ✅ FIXED+VERIFIED · ⚠️ LIMITASI DIKETAHUI (bukan bug, jangan "dip
   (LevonneBickel) → X_USERNAME/X_AUTH_TOKEN/X_CT0 di [VPS] .env.
   Akun file TIDAK pernah masuk git. verify_credentials v1.1 = retired
   (404) — liveness dibuktikan lewat render browser.
+
+## Debat Audit P1-P3 (malam 2026-09-25, run dwfrun-6e9f5114)
+- Hasil: TIDAK ADA YANG DIAPPLY (P1 skor 2, P2 skor 6, P3 skor 7 — semua
+  <8). Detail lengkap: results/audit_p123_verdicts.json + artifact
+  "laporan-audit-malam". Ditunda untuk audit manusia — sesuai desain.
+- PELAJARAN (ditemukan hakim via pengukuran mandiri):
+  1. usd_value NULL di SEMUA 442.345 baris swap → guard USD apa pun yang
+     baca kolom itu VAKUM; USD nyata hanya dari engine dataset.py
+     (rescale 30x + snapshot fallback + filter outlier).
+  2. audit_queries p3 last-sender-wins → 6/294 salah kategori
+     (multi-entity sender); 0xdb5af497… MINT_ALLOCATION 0,95.
+  3. 561 (pp-only) vs 1.038 (engine) wallet >$10k = perbedaan metodologi,
+     bukan fabrikasi; 92,9% notional dust ada di 625 wallet >$10k.
+  4. Preseden penting (P1): 688 TCG-primary = INSIDER yang DIBATALKAN
+     karena terbukti benar membeli (Swap log) — promosi facet buta bisa
+     membalik vonis on-chain.
