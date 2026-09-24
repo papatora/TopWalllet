@@ -67,6 +67,22 @@ class Handler(SimpleHTTPRequestHandler):
             self.end_headers()
             self.wfile.write(body)
             return
+        if self.path.split("?")[0] == "/api/lookup":
+            import lookup_api
+            from urllib.parse import urlparse, parse_qs, unquote
+            q = parse_qs(urlparse(self.path).query)
+            raw = unquote(q.get("input", [""])[0])
+            try:
+                payload, code = lookup_api.lookup(raw), 200
+            except Exception as exc:
+                payload, code = {"ok": False, "error": str(exc)}, 500
+            body = json.dumps(payload).encode()
+            self.send_response(code)
+            self.send_header("Content-Type", "application/json")
+            self.send_header("Content-Length", str(len(body)))
+            self.end_headers()
+            self.wfile.write(body)
+            return
         super().do_GET()
 
     def do_POST(self):

@@ -10,6 +10,7 @@ import * as tokens from './views/tokens.js';
 import * as token from './views/token.js';
 import * as guide from './views/guide.js';
 import * as address from './views/address.js';
+import * as lookup from './views/lookup.js';
 
 const $ = s => document.querySelector(s);
 const ROUTES = [
@@ -19,6 +20,7 @@ const ROUTES = [
   [/^\/visualizer$/, visualizer, 'visualizer'],
   [/^\/tokens$/, tokens, 'tokens'],
   [/^\/guide$/, guide, 'guide'],
+  [/^\/lookup$/, lookup, 'lookup'],
   [/^\/token\/(0x[0-9a-f]+)$/i, token, 'tokens'],
   [/^\/address\/(0x[0-9a-f]+)$/i, address, ''],
 ];
