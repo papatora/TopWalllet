@@ -1,0 +1,17 @@
+[
+ {
+  "url": "https://api.bubblemaps.io/tokens/search?query=0xdaa8f3f54c66e9be2c44c1b6b566cbd07229ced3",
+  "status": 200,
+  "body": "[{\"token_ref\":{\"chain\":\"robinhood\",\"address\":\"0xdaa8f3f54c66e9be2c44c1b6b566cbd07229ced3\"},\"metadata\":{\"name\":\"GreenHood\",\"symbol\":\"HOOD\",\"is_indexed\":true,\"img_url\":\"https://coin-images.coingecko.com/coins/images/102176621/large/logo-hood.png?1788349308\"}}]"
+ },
+ {
+  "url": "https://api.bubblemaps.io/screener/tokens",
+  "status": 200,
+  "body": "{\"items\":[{\"token_ref\":{\"chain\":\"solana\",\"address\":\"dxqSq2hQipTN249zjv78zujvaeEgYyHyYq88pNXpump\"},\"metadata\":{\"name\":\"Onboard\",\"symbol\":\"ONBOARD\",\"is_indexed\":false,\"img_url\":\"https://ipfs.io/ipfs/bafybeie2vlugfepfncpbvxeu35fdx3ha2jnwkrhslfmmx4rjitychpxhta\"},\"created_block_timestamp\":\"2026-09-24T13:36:31Z\",\"launchpad\":\"pumpfun\",\"market\":{\"price\":0.00001273550543367167,\"market_cap\":12470.0,\"liquidity\":5923.02970003514,\"volume\":2997766.0,\"volume_5m\":493.0,\"volume_1h\":140014.0,\"volume_6h\":2997766.0,\"price_change_5m\":6.623533189601309,\"price_change_1h\":-91.16913005401683,\"price_change_6h\":284.7885"
+ },
+ {
+  "url": "https://api.bubblemaps.io/tokens/market/live",
+  "status": 200,
+  "body": "[{\"token_ref\":{\"chain\":\"base\",\"address\":\"0x1685981068dc0ec45ee1d5a28ef051059e42a0f3\"},\"market\":{\"price\":0.00020619253816737672,\"market_cap\":206192.5381673767,\"fdv\":206192.5381673767,\"volume\":1988685.3689881237,\"volume_5m\":6295.20392414492,\"volume_1h\":13012.175041071576,\"volume_6h\":139538.1757371281,\"volume_7d\":null,\"liquidity\":29923.047724109103,\"price_change_5m\":-6.553470747432272,\"price_change_1h\":-24.85241050829959,\"price_change_6h\":-13.47276856441514,\"price_change_24h\":-65.17980865485293,\"price_change_7d\":null,\"volume_change_24h\":null},\"cached_until\":\"2026-09-24T16:20:51.903875Z\"},{\"token_"
+ }
+]
