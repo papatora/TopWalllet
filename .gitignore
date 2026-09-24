@@ -34,3 +34,6 @@ desktop/src-tauri/target/
 desktop/src-tauri/gen/
 node_modules/
 desktop/*.exe
+
+logs_server_*.log
+nul
