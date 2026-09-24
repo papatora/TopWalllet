@@ -13,10 +13,10 @@ import asyncio
 import bisect
 import logging
 from collections import defaultdict
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from statistics import median
 
-from sqlalchemy import delete, func, select
+from sqlalchemy import delete, func, or_, select
 from sqlalchemy.exc import OperationalError
 from sqlalchemy.ext.asyncio import AsyncSession
 
@@ -403,8 +403,36 @@ class Pipeline:
             .order_by(Wallet.first_seen.asc())
         )
         wallets = (await session.execute(query)).scalars().all()
-        if settings.enrich_limit_per_run > 0:
-            wallets = wallets[: settings.enrich_limit_per_run]
+        # S-44: kohor refresh — wallet 'enriched' dulu one-shot sehingga
+        # swap terbekukan di tanggal enrich terakhir (LB/dashboard statis,
+        # swap_max_ts mentok 16 Sep 2026). Ambil ulang wallet aktif yang
+        # datanya kadaluarsa: prioritas last_active terbaru (paling mungkin
+        # punya trade baru), lalu enriched_at paling tua. NULL = belum
+        # pernah di-refresh sejak kolom ada → paling diutamakan.
+        cutoff = datetime.now(timezone.utc) - timedelta(
+            hours=settings.enrich_refresh_hours)
+        budget_left = (
+            settings.enrich_limit_per_run - len(wallets)
+            if settings.enrich_limit_per_run > 0 else settings.enrich_refresh_limit
+        )
+        if budget_left > 0:
+            refresh = (await session.execute(
+                select(Wallet)
+                .where(
+                    Wallet.status == "enriched",
+                    or_(Wallet.enriched_at.is_(None), Wallet.enriched_at < cutoff),
+                )
+                .order_by(
+                    Wallet.last_active.desc().nullslast(),
+                    Wallet.enriched_at.asc().nullsfirst(),
+                )
+                .limit(budget_left)
+            )).scalars().all()
+            wallets = list(wallets) + list(refresh)
+            if refresh:
+                jlog(log, logging.INFO, "enrich refresh cohort",
+                     refreshed=len(refresh),
+                     pending=len(wallets) - len(refresh))
         return await self.enrich_wallets(session, wallets)
 
     async def enrich_wallets(self, session: AsyncSession, wallets: list[Wallet]) -> dict:

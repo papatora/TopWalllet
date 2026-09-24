@@ -83,6 +83,11 @@ class Settings:
     enrich_concurrency: int = _env_int("ENRICH_CONCURRENCY", 3)
     enrich_max_pages_per_wallet: int = _env_int("ENRICH_MAX_PAGES_PER_WALLET", 6)
     enrich_limit_per_run: int = _env_int("ENRICH_LIMIT_PER_RUN", 0)
+    # S-44: refresh — wallet 'enriched' dulu one-shot, swap terbekukan di
+    # tanggal enrich terakhir (insiden 2026-09-25: max_ts mentok 16 Sep,
+    # LB statis). Kohor refresh mengambil ulang wallet aktif yang basi.
+    enrich_refresh_hours: int = _env_int("ENRICH_REFRESH_HOURS", 24)
+    enrich_refresh_limit: int = _env_int("ENRICH_REFRESH_LIMIT", 400)
     lookback_days: int = _env_int("LOOKBACK_DAYS", 70)
     price_lookback_days: int = _env_int("PRICE_LOOKBACK_DAYS", 45)
     price_max_calls_per_pool: int = _env_int("PRICE_MAX_CALLS_PER_POOL", 120)
