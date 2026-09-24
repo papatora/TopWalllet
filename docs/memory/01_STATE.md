@@ -36,3 +36,9 @@
 - Push: [VPS] hidup = via VPS (bundle). [VPS] down = direct push
   `git push https://x-access-token:$GITHUB_TOKEN@github.com/...` (TIDAK
   hang — yang hang credential-manager). Terbukti S-42.
+
+
+## Update 2026-09-24 16:39 UTC (S-43)
+- [VPS] fix crash-loop db-locked (flock), cycle hijau; wallet_scores menunggu analyze.
+- [PC] Brave CDP 9222 + sesi Arkham & Bubblemaps hidup; arkham_entities 652;
+  known_entities 108; bubblemaps 12 token ter-capture (REPORT.md).

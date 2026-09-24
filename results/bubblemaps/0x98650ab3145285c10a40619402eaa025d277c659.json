@@ -1,0 +1,5718 @@
+{
+ "token": "0x98650ab3145285c10a40619402eaa025d277c659",
+ "chain": "robinhood",
+ "url": "https://v2.bubblemaps.io/map?address=0x98650ab3145285c10a40619402eaa025d277c659&chain=robinhood",
+ "captured_at": "2026-09-24T16:36:18.078629+00:00",
+ "subgraph_len": 119799,
+ "subgraph": [
+  {
+   "from_address": "0x27486fdf520b6c513e2ed2f2aab400897ec9a95e",
+   "to_address": "0xb300000b72deaeb607a12d5f54773d1c19c7028d",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 5.032614858211146,
+    "total_transfers": 74,
+    "first_date": 1785492006000,
+    "last_date": 1790180542000,
+    "token_ref": {
+     "id": "BNB"
+    }
+   }
+  },
+  {
+   "from_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "to_address": "0x27486fdf520b6c513e2ed2f2aab400897ec9a95e",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 1.192588,
+    "total_transfers": 1,
+    "first_date": 1790142316000,
+    "last_date": 1790142316000,
+    "token_ref": {
+     "chain": "arc",
+     "address": "0x3600000000000000000000000000000000000000"
+    }
+   }
+  },
+  {
+   "from_address": "0x27486fdf520b6c513e2ed2f2aab400897ec9a95e",
+   "to_address": "0xb300000b72deaeb607a12d5f54773d1c19c7028d",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 0.16359223607964632,
+    "total_transfers": 65,
+    "first_date": 1787664925000,
+    "last_date": 1789931295000,
+    "token_ref": {
+     "id": "ETH_ROBINHOOD"
+    }
+   }
+  },
+  {
+   "from_address": "0xb300000b72deaeb607a12d5f54773d1c19c7028d",
+   "to_address": "0x27486fdf520b6c513e2ed2f2aab400897ec9a95e",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 7428.455247112158,
+    "total_transfers": 1,
+    "first_date": 1788189410000,
+    "last_date": 1788189410000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xf0dbd85e85bd6704b00eedb7c2590559ca12b871"
+    }
+   }
+  },
+  {
+   "from_address": "0xb300000b72deaeb607a12d5f54773d1c19c7028d",
+   "to_address": "0x27486fdf520b6c513e2ed2f2aab400897ec9a95e",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 0.023755470740636005,
+    "total_transfers": 5,
+    "first_date": 1787750005000,
+    "last_date": 1788504024000,
+    "token_ref": {
+     "id": "ETH_ROBINHOOD"
+    }
+   }
+  },
+  {
+   "from_address": "0xb300000b72deaeb607a12d5f54773d1c19c7028d",
+   "to_address": "0x27486fdf520b6c513e2ed2f2aab400897ec9a95e",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 3238.3707218417644,
+    "total_transfers": 1,
+    "first_date": 1788235873000,
+    "last_date": 1788235873000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xded852de9fe9ba9b6f27f39e8e81cf851a5c79cc"
+    }
+   }
+  },
+  {
+   "from_address": "0xb300000b72deaeb607a12d5f54773d1c19c7028d",
+   "to_address": "0x27486fdf520b6c513e2ed2f2aab400897ec9a95e",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 29597.382371863507,
+    "total_transfers": 1,
+    "first_date": 1788379423000,
+    "last_date": 1788379423000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x27495511b8a2e163efc75d788706a40dd100bc27"
+    }
+   }
+  },
+  {
+   "from_address": "0xa67d7eb4dc68fa6ce8e34ef8cadaf075b9893fbb",
+   "to_address": "0x27486fdf520b6c513e2ed2f2aab400897ec9a95e",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 0.0016712149053235482,
+    "total_transfers": 1,
+    "first_date": 1788416402000,
+    "last_date": 1788416402000,
+    "token_ref": {
+     "id": "BNB"
+    }
+   }
+  },
+  {
+   "from_address": "0xa67d7eb4dc68fa6ce8e34ef8cadaf075b9893fbb",
+   "to_address": "0x27486fdf520b6c513e2ed2f2aab400897ec9a95e",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 0.000426692651894682,
+    "total_transfers": 1,
+    "first_date": 1788418655000,
+    "last_date": 1788418655000,
+    "token_ref": {
+     "id": "ETH_ROBINHOOD"
+    }
+   }
+  },
+  {
+   "from_address": "0xb300000b72deaeb607a12d5f54773d1c19c7028d",
+   "to_address": "0x27486fdf520b6c513e2ed2f2aab400897ec9a95e",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 48857.16578413861,
+    "total_transfers": 3,
+    "first_date": 1788510052000,
+    "last_date": 1788701106000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xef67e3064bef1a27e81925ec7132f23e533bd5f6"
+    }
+   }
+  },
+  {
+   "from_address": "0xb300000b72deaeb607a12d5f54773d1c19c7028d",
+   "to_address": "0x27486fdf520b6c513e2ed2f2aab400897ec9a95e",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 3.1990120794522285,
+    "total_transfers": 15,
+    "first_date": 1785681541000,
+    "last_date": 1788627930000,
+    "token_ref": {
+     "id": "BNB"
+    }
+   }
+  },
+  {
+   "from_address": "0xb300000b72deaeb607a12d5f54773d1c19c7028d",
+   "to_address": "0x27486fdf520b6c513e2ed2f2aab400897ec9a95e",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 170966.33198364452,
+    "total_transfers": 2,
+    "first_date": 1788534034000,
+    "last_date": 1789434036000,
+    "token_ref": {
+     "chain": "bsc",
+     "address": "0xc9d825e83aada475bd4d38c8ca984ed746277777"
+    }
+   }
+  },
+  {
+   "from_address": "0xf70da97812cb96acdf810712aa562db8dfa3dbef",
+   "to_address": "0x27486fdf520b6c513e2ed2f2aab400897ec9a95e",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 0.008439406427474216,
+    "total_transfers": 1,
+    "first_date": 1788600169000,
+    "last_date": 1788600169000,
+    "token_ref": {
+     "id": "ETH_ROBINHOOD"
+    }
+   }
+  },
+  {
+   "from_address": "0xb300000b72deaeb607a12d5f54773d1c19c7028d",
+   "to_address": "0x27486fdf520b6c513e2ed2f2aab400897ec9a95e",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 34812.06483307631,
+    "total_transfers": 1,
+    "first_date": 1788613280000,
+    "last_date": 1788613280000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x7ad7b2256ffcf7c6f7c7d95cf238d2ecc2c485e0"
+    }
+   }
+  },
+  {
+   "from_address": "0xb300000b72deaeb607a12d5f54773d1c19c7028d",
+   "to_address": "0x27486fdf520b6c513e2ed2f2aab400897ec9a95e",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 306880.0657417115,
+    "total_transfers": 1,
+    "first_date": 1788893218000,
+    "last_date": 1788893218000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x98650ab3145285c10a40619402eaa025d277c659"
+    }
+   }
+  },
+  {
+   "from_address": "0xb300000b72deaeb607a12d5f54773d1c19c7028d",
+   "to_address": "0x27486fdf520b6c513e2ed2f2aab400897ec9a95e",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 7701.6041012802325,
+    "total_transfers": 2,
+    "first_date": 1786114590000,
+    "last_date": 1789019022000,
+    "token_ref": {
+     "chain": "bsc",
+     "address": "0x5460b5e88799d27bbdf8a210926c17dec18d7777"
+    }
+   }
+  },
+  {
+   "from_address": "0xb300000b72deaeb607a12d5f54773d1c19c7028d",
+   "to_address": "0x27486fdf520b6c513e2ed2f2aab400897ec9a95e",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 33512.11543492744,
+    "total_transfers": 1,
+    "first_date": 1789233644000,
+    "last_date": 1789233644000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x462dff4be800c77a61e69dc2ea6010e4237f674d"
+    }
+   }
+  },
+  {
+   "from_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "to_address": "0x27486fdf520b6c513e2ed2f2aab400897ec9a95e",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 50828.11630403564,
+    "total_transfers": 2,
+    "first_date": 1789412650000,
+    "last_date": 1789412707000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xef67e3064bef1a27e81925ec7132f23e533bd5f6"
+    }
+   }
+  },
+  {
+   "from_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "to_address": "0x27486fdf520b6c513e2ed2f2aab400897ec9a95e",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 1.804031,
+    "total_transfers": 1,
+    "first_date": 1789412650000,
+    "last_date": 1789412650000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    }
+   }
+  },
+  {
+   "from_address": "0xb300000b72deaeb607a12d5f54773d1c19c7028d",
+   "to_address": "0x27486fdf520b6c513e2ed2f2aab400897ec9a95e",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 14994.812379059207,
+    "total_transfers": 2,
+    "first_date": 1787949929000,
+    "last_date": 1789449982000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xcebc0cfbc5dd0893a9e3b9d0f75b211ddf5934a0"
+    }
+   }
+  },
+  {
+   "from_address": "0xf70da97812cb96acdf810712aa562db8dfa3dbef",
+   "to_address": "0x27486fdf520b6c513e2ed2f2aab400897ec9a95e",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 16.331435,
+    "total_transfers": 1,
+    "first_date": 1789552977000,
+    "last_date": 1789552977000,
+    "token_ref": {
+     "chain": "arc",
+     "address": "0x3600000000000000000000000000000000000000"
+    }
+   }
+  },
+  {
+   "from_address": "0xd29c85f15df544ba632c9e25829fd29d767d7978",
+   "to_address": "0x27486fdf520b6c513e2ed2f2aab400897ec9a95e",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 0.03123701506648722,
+    "total_transfers": 3,
+    "first_date": 1787664325000,
+    "last_date": 1789875316000,
+    "token_ref": {
+     "id": "ETH_ROBINHOOD"
+    }
+   }
+  },
+  {
+   "from_address": "0x27486fdf520b6c513e2ed2f2aab400897ec9a95e",
+   "to_address": "0xb300000b72deaeb607a12d5f54773d1c19c7028d",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 2500.0,
+    "total_transfers": 1,
+    "first_date": 1788223556000,
+    "last_date": 1788223556000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xd4aae326ddd1a2537a92c00e6576e4605e5d1e18"
+    }
+   }
+  },
+  {
+   "from_address": "0x27486fdf520b6c513e2ed2f2aab400897ec9a95e",
+   "to_address": "0xb300000b72deaeb607a12d5f54773d1c19c7028d",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 0.07695034240105017,
+    "total_transfers": 14,
+    "first_date": 1788355847000,
+    "last_date": 1789419083000,
+    "token_ref": {
+     "id": "ETH"
+    }
+   }
+  },
+  {
+   "from_address": "0x27486fdf520b6c513e2ed2f2aab400897ec9a95e",
+   "to_address": "0xb300000b72deaeb607a12d5f54773d1c19c7028d",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 1600.0,
+    "total_transfers": 1,
+    "first_date": 1788504024000,
+    "last_date": 1788504024000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xded852de9fe9ba9b6f27f39e8e81cf851a5c79cc"
+    }
+   }
+  },
+  {
+   "from_address": "0x27486fdf520b6c513e2ed2f2aab400897ec9a95e",
+   "to_address": "0xb300000b72deaeb607a12d5f54773d1c19c7028d",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 64000.0,
+    "total_transfers": 1,
+    "first_date": 1788540954000,
+    "last_date": 1788540954000,
+    "token_ref": {
+     "chain": "bsc",
+     "address": "0xc9d825e83aada475bd4d38c8ca984ed746277777"
+    }
+   }
+  },
+  {
+   "from_address": "0x27486fdf520b6c513e2ed2f2aab400897ec9a95e",
+   "to_address": "0xb300000b72deaeb607a12d5f54773d1c19c7028d",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 0.222649460026447,
+    "total_transfers": 14,
+    "first_date": 1787477235000,
+    "last_date": 1789396697000,
+    "token_ref": {
+     "chain": "bsc",
+     "address": "0x205812cdbed920aff76c6580abd681a46d11efc7"
+    }
+   }
+  },
+  {
+   "from_address": "0x27486fdf520b6c513e2ed2f2aab400897ec9a95e",
+   "to_address": "0xb300000b72deaeb607a12d5f54773d1c19c7028d",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 0.02270030228227276,
+    "total_transfers": 1,
+    "first_date": 1788806489000,
+    "last_date": 1788806489000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x894e1ec2d74ffe5aef8dc8a9e84686accb964f2a"
+    }
+   }
+  },
+  {
+   "from_address": "0x27486fdf520b6c513e2ed2f2aab400897ec9a95e",
+   "to_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 48857.165784130004,
+    "total_transfers": 1,
+    "first_date": 1789369848000,
+    "last_date": 1789369848000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xef67e3064bef1a27e81925ec7132f23e533bd5f6"
+    }
+   }
+  },
+  {
+   "from_address": "0x27486fdf520b6c513e2ed2f2aab400897ec9a95e",
+   "to_address": "0xb300000b72deaeb607a12d5f54773d1c19c7028d",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 0.001998742056536347,
+    "total_transfers": 2,
+    "first_date": 1787577950000,
+    "last_date": 1789396761000,
+    "token_ref": {
+     "chain": "bsc",
+     "address": "0x7138b48df7d98d7e3cc221bfe7192d0a178182d8"
+    }
+   }
+  },
+  {
+   "from_address": "0x27486fdf520b6c513e2ed2f2aab400897ec9a95e",
+   "to_address": "0xb300000b72deaeb607a12d5f54773d1c19c7028d",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 3.393751747980074,
+    "total_transfers": 1,
+    "first_date": 1789418967000,
+    "last_date": 1789418967000,
+    "token_ref": {
+     "chain": "bsc",
+     "address": "0x55d398326f99059ff775485246999027b3197955"
+    }
+   }
+  },
+  {
+   "from_address": "0x27486fdf520b6c513e2ed2f2aab400897ec9a95e",
+   "to_address": "0xb300000b72deaeb607a12d5f54773d1c19c7028d",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 2.326431,
+    "total_transfers": 1,
+    "first_date": 1789419134000,
+    "last_date": 1789419134000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    }
+   }
+  },
+  {
+   "from_address": "0x27486fdf520b6c513e2ed2f2aab400897ec9a95e",
+   "to_address": "0xb300000b72deaeb607a12d5f54773d1c19c7028d",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 39.416007539999995,
+    "total_transfers": 2,
+    "first_date": 1789552977000,
+    "last_date": 1789875316000,
+    "token_ref": {
+     "chain": "bsc",
+     "address": "0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d"
+    }
+   }
+  },
+  {
+   "from_address": "0x27486fdf520b6c513e2ed2f2aab400897ec9a95e",
+   "to_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 5.212798,
+    "total_transfers": 1,
+    "first_date": 1789704016000,
+    "last_date": 1789704016000,
+    "token_ref": {
+     "chain": "arc",
+     "address": "0x3600000000000000000000000000000000000000"
+    }
+   }
+  },
+  {
+   "from_address": "0xb300000b72deaeb607a12d5f54773d1c19c7028d",
+   "to_address": "0x27486fdf520b6c513e2ed2f2aab400897ec9a95e",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 0.004095992968810419,
+    "total_transfers": 2,
+    "first_date": 1785681205000,
+    "last_date": 1785681386000,
+    "token_ref": {
+     "chain": "bsc",
+     "address": "0x02fca66c1d1afb4e2a7884261eb00f63598a7436"
+    }
+   }
+  },
+  {
+   "from_address": "0xb300000b72deaeb607a12d5f54773d1c19c7028d",
+   "to_address": "0x27486fdf520b6c513e2ed2f2aab400897ec9a95e",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 5020.10148445502,
+    "total_transfers": 1,
+    "first_date": 1787699525000,
+    "last_date": 1787699525000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x2355431b83b1a8e40172d099d90243d8d666b56b"
+    }
+   }
+  },
+  {
+   "from_address": "0xb300000b72deaeb607a12d5f54773d1c19c7028d",
+   "to_address": "0x27486fdf520b6c513e2ed2f2aab400897ec9a95e",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 5975.476071324038,
+    "total_transfers": 1,
+    "first_date": 1787957852000,
+    "last_date": 1787957852000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xd4aae326ddd1a2537a92c00e6576e4605e5d1e18"
+    }
+   }
+  },
+  {
+   "from_address": "0x27486fdf520b6c513e2ed2f2aab400897ec9a95e",
+   "to_address": "0xb300000b72deaeb607a12d5f54773d1c19c7028d",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 0.004095992968810419,
+    "total_transfers": 2,
+    "first_date": 1785681245000,
+    "last_date": 1785681541000,
+    "token_ref": {
+     "chain": "bsc",
+     "address": "0x02fca66c1d1afb4e2a7884261eb00f63598a7436"
+    }
+   }
+  },
+  {
+   "from_address": "0x27486fdf520b6c513e2ed2f2aab400897ec9a95e",
+   "to_address": "0xb300000b72deaeb607a12d5f54773d1c19c7028d",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 0.006753050861134478,
+    "total_transfers": 3,
+    "first_date": 1787232932000,
+    "last_date": 1787909481000,
+    "token_ref": {
+     "chain": "bsc",
+     "address": "0xbe9d156892e55e7154bcd3cb0fea677f9d3103e1"
+    }
+   }
+  },
+  {
+   "from_address": "0x27486fdf520b6c513e2ed2f2aab400897ec9a95e",
+   "to_address": "0xb300000b72deaeb607a12d5f54773d1c19c7028d",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 0.02237719,
+    "total_transfers": 2,
+    "first_date": 1787664325000,
+    "last_date": 1787942415000,
+    "token_ref": {
+     "chain": "bsc",
+     "address": "0x2170ed0880ac9a755fd29b2688956bd959f933f8"
+    }
+   }
+  },
+  {
+   "from_address": "0x211e28c265380608a3b635767c01cc3f56bfcb3b",
+   "to_address": "0xde509a31cab1d0f222b0709346dcc03d9bbb9b9f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 0.02006013351670851,
+    "total_transfers": 5,
+    "first_date": 1788789625000,
+    "last_date": 1789606299000,
+    "token_ref": {
+     "id": "ETH_ROBINHOOD"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0xde509a31cab1d0f222b0709346dcc03d9bbb9b9f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 571391.0654820339,
+    "total_transfers": 4,
+    "first_date": 1788848838000,
+    "last_date": 1789110871000,
+    "token_ref": {
+     "chain": "bsc",
+     "address": "0xa5b977667117877d06e0e74bd6d85cf7e241ffff"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0xde509a31cab1d0f222b0709346dcc03d9bbb9b9f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 45518.8132582872,
+    "total_transfers": 1,
+    "first_date": 1788852782000,
+    "last_date": 1788852782000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xb51d57cbe67152fd163f59d1e0f950c6b647fb07"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0xde509a31cab1d0f222b0709346dcc03d9bbb9b9f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 286447.0946791367,
+    "total_transfers": 1,
+    "first_date": 1788893311000,
+    "last_date": 1788893311000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x98650ab3145285c10a40619402eaa025d277c659"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0xde509a31cab1d0f222b0709346dcc03d9bbb9b9f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 572443.806208871,
+    "total_transfers": 1,
+    "first_date": 1788898068000,
+    "last_date": 1788898068000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xebb4c5b97e4117e30ec82ce025e6f21dded05436"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0xde509a31cab1d0f222b0709346dcc03d9bbb9b9f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 102475.22812880247,
+    "total_transfers": 1,
+    "first_date": 1789283369000,
+    "last_date": 1789283369000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xfad40755de679b262337f8d964d75cac51f8c643"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0xde509a31cab1d0f222b0709346dcc03d9bbb9b9f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 508603.9178319643,
+    "total_transfers": 1,
+    "first_date": 1789542561000,
+    "last_date": 1789542561000,
+    "token_ref": {
+     "chain": "arc",
+     "address": "0x8e98a62a995a50eca9979bfa016f91bf36a8f9d9"
+    }
+   }
+  },
+  {
+   "from_address": "0xf70da97812cb96acdf810712aa562db8dfa3dbef",
+   "to_address": "0xde509a31cab1d0f222b0709346dcc03d9bbb9b9f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 5.22882,
+    "total_transfers": 1,
+    "first_date": 1789595323000,
+    "last_date": 1789595323000,
+    "token_ref": {
+     "chain": "base",
+     "address": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"
+    }
+   }
+  },
+  {
+   "from_address": "0xde509a31cab1d0f222b0709346dcc03d9bbb9b9f",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 0.02410596614888944,
+    "total_transfers": 7,
+    "first_date": 1788789910000,
+    "last_date": 1789606336000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x0bd7d308f8e1639fab988df18a8011f41eacad73"
+    }
+   }
+  },
+  {
+   "from_address": "0xde509a31cab1d0f222b0709346dcc03d9bbb9b9f",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 571391.0654820339,
+    "total_transfers": 4,
+    "first_date": 1788853568000,
+    "last_date": 1789207369000,
+    "token_ref": {
+     "chain": "bsc",
+     "address": "0xa5b977667117877d06e0e74bd6d85cf7e241ffff"
+    }
+   }
+  },
+  {
+   "from_address": "0xde509a31cab1d0f222b0709346dcc03d9bbb9b9f",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 45518.8132582872,
+    "total_transfers": 1,
+    "first_date": 1788856135000,
+    "last_date": 1788856135000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xb51d57cbe67152fd163f59d1e0f950c6b647fb07"
+    }
+   }
+  },
+  {
+   "from_address": "0xde509a31cab1d0f222b0709346dcc03d9bbb9b9f",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 572443.806208871,
+    "total_transfers": 1,
+    "first_date": 1788956557000,
+    "last_date": 1788956557000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xebb4c5b97e4117e30ec82ce025e6f21dded05436"
+    }
+   }
+  },
+  {
+   "from_address": "0xde509a31cab1d0f222b0709346dcc03d9bbb9b9f",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 0.011631540053984719,
+    "total_transfers": 1,
+    "first_date": 1789229820000,
+    "last_date": 1789229820000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xd0601ce157db5bdc3162bbac2a2c8af5320d9eec"
+    }
+   }
+  },
+  {
+   "from_address": "0xde509a31cab1d0f222b0709346dcc03d9bbb9b9f",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 102475.22812880247,
+    "total_transfers": 1,
+    "first_date": 1789283702000,
+    "last_date": 1789283702000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xfad40755de679b262337f8d964d75cac51f8c643"
+    }
+   }
+  },
+  {
+   "from_address": "0xde509a31cab1d0f222b0709346dcc03d9bbb9b9f",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 0.00451940677741266,
+    "total_transfers": 1,
+    "first_date": 1789368151000,
+    "last_date": 1789368151000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xc0d6457c16cc70d6790dd43521c899c87ce02f35"
+    }
+   }
+  },
+  {
+   "from_address": "0xde509a31cab1d0f222b0709346dcc03d9bbb9b9f",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 508603.9178319643,
+    "total_transfers": 1,
+    "first_date": 1789543153000,
+    "last_date": 1789543153000,
+    "token_ref": {
+     "chain": "arc",
+     "address": "0x8e98a62a995a50eca9979bfa016f91bf36a8f9d9"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7e338383f37442d945b9fd784620f88d95646522",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 3280.622625319839,
+    "total_transfers": 8,
+    "first_date": 1789209613000,
+    "last_date": 1790121890000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x15d36b6a28d8327abc7afabf0f106ae2c9af5c4d"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7e338383f37442d945b9fd784620f88d95646522",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 376.8064312831818,
+    "total_transfers": 3,
+    "first_date": 1789308320000,
+    "last_date": 1789994063000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x812486eaea648819853f8e372dc9f1516c7868bd"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7e338383f37442d945b9fd784620f88d95646522",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 536.5744721270661,
+    "total_transfers": 5,
+    "first_date": 1789299711000,
+    "last_date": 1790023558000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x385f4f8ae47651ce5f58f5265395a669f8281e18"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7e338383f37442d945b9fd784620f88d95646522",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 4969.846577534511,
+    "total_transfers": 4,
+    "first_date": 1789209535000,
+    "last_date": 1790023844000,
+    "token_ref": {
+     "chain": "bsc",
+     "address": "0x6ff45323817d1d53bbb8a8dfba9245ae74057777"
+    }
+   }
+  },
+  {
+   "from_address": "0x7e338383f37442d945b9fd784620f88d95646522",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 782.7302466385343,
+    "total_transfers": 2,
+    "first_date": 1789044140000,
+    "last_date": 1790017487000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xe8ffd7e24187f72afb08d75b1bb13088a989a791"
+    }
+   }
+  },
+  {
+   "from_address": "0x7e338383f37442d945b9fd784620f88d95646522",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 13026.908800961566,
+    "total_transfers": 2,
+    "first_date": 1789753136000,
+    "last_date": 1790121847000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xa934ba4f59070149d37a93f8a002af79bae35563"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7e338383f37442d945b9fd784620f88d95646522",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 20596.02279581065,
+    "total_transfers": 1,
+    "first_date": 1788615577000,
+    "last_date": 1788615577000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xe6c6a33935919dc46278121c0596e828691f8d6c"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7e338383f37442d945b9fd784620f88d95646522",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 26184.769670884816,
+    "total_transfers": 1,
+    "first_date": 1788617194000,
+    "last_date": 1788617194000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x3e2cf3aec80adcffcae3436938934be970894066"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7e338383f37442d945b9fd784620f88d95646522",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 16167.396217932783,
+    "total_transfers": 1,
+    "first_date": 1788617622000,
+    "last_date": 1788617622000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x2f219c706e052dc25372a0c59dcc2afe0cab12f3"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7e338383f37442d945b9fd784620f88d95646522",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 18529.751602313427,
+    "total_transfers": 1,
+    "first_date": 1788618647000,
+    "last_date": 1788618647000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xa737df5de18e3aa6b0bf8c2e9846ed699f6f2aeb"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7e338383f37442d945b9fd784620f88d95646522",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 12967.236656671656,
+    "total_transfers": 2,
+    "first_date": 1788621111000,
+    "last_date": 1788621730000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xb06b1e58f5ba2a3df1ab74c01cb2a44c5395b3be"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7e338383f37442d945b9fd784620f88d95646522",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 3911.9290578243995,
+    "total_transfers": 2,
+    "first_date": 1788640305000,
+    "last_date": 1788691645000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x77061b45c5e4d440bd681b5f72bd0f4231a6fc04"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7e338383f37442d945b9fd784620f88d95646522",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 1522.2979592564582,
+    "total_transfers": 1,
+    "first_date": 1788693377000,
+    "last_date": 1788693377000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xcacb0e9caccee63ec4d82952e561a291c68bcb68"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7e338383f37442d945b9fd784620f88d95646522",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 245.26923581253413,
+    "total_transfers": 1,
+    "first_date": 1788788173000,
+    "last_date": 1788788173000,
+    "token_ref": {
+     "chain": "bsc",
+     "address": "0xb3a1e1f7ae6c90c707ec3c75e99c359482fea5b9"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7e338383f37442d945b9fd784620f88d95646522",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 13132.926328100102,
+    "total_transfers": 1,
+    "first_date": 1788814359000,
+    "last_date": 1788814359000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x319c5b3f8e46b70cb00769bc8020b4c08ddbc182"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7e338383f37442d945b9fd784620f88d95646522",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 215185.63946448988,
+    "total_transfers": 1,
+    "first_date": 1788894126000,
+    "last_date": 1788894126000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x98650ab3145285c10a40619402eaa025d277c659"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7e338383f37442d945b9fd784620f88d95646522",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 6958.410050322044,
+    "total_transfers": 1,
+    "first_date": 1788896731000,
+    "last_date": 1788896731000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xb22a893a4afdce12871e61229130490f9422b5b6"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7e338383f37442d945b9fd784620f88d95646522",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 1548.9974279507073,
+    "total_transfers": 4,
+    "first_date": 1788907969000,
+    "last_date": 1789472051000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xe8ffd7e24187f72afb08d75b1bb13088a989a791"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7e338383f37442d945b9fd784620f88d95646522",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 6006.0284986911065,
+    "total_transfers": 5,
+    "first_date": 1788910993000,
+    "last_date": 1789484053000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xfe7e19cbce2f896c6c528bc355baf5a768291e18"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7e338383f37442d945b9fd784620f88d95646522",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 62.27300953182943,
+    "total_transfers": 1,
+    "first_date": 1788957861000,
+    "last_date": 1788957861000,
+    "token_ref": {
+     "chain": "bsc",
+     "address": "0xfe189e97832da1573e4e4ff034f4ffc3a15c7777"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7e338383f37442d945b9fd784620f88d95646522",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 1419.2533143043872,
+    "total_transfers": 4,
+    "first_date": 1789044291000,
+    "last_date": 1789686544000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xd7321801caae694090694ff55a9323139f043b88"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7e338383f37442d945b9fd784620f88d95646522",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 1612.5141869866613,
+    "total_transfers": 3,
+    "first_date": 1789209577000,
+    "last_date": 1789472091000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x6b1d42927b1a84ec28fa88d4fc6fa7af404966be"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7e338383f37442d945b9fd784620f88d95646522",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 670.53784077299,
+    "total_transfers": 1,
+    "first_date": 1789306877000,
+    "last_date": 1789306877000,
+    "token_ref": {
+     "chain": "bsc",
+     "address": "0xb0c2ab5af4028461ace3f6e1c33a4ee1404e7777"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7e338383f37442d945b9fd784620f88d95646522",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 768.1096578019364,
+    "total_transfers": 2,
+    "first_date": 1789307238000,
+    "last_date": 1789420010000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xab093def657f15df31b33922a95e047add645b29"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7e338383f37442d945b9fd784620f88d95646522",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 70.07515250392957,
+    "total_transfers": 2,
+    "first_date": 1789472184000,
+    "last_date": 1789909603000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x2e8c31162b855a2ffa90f6f8634643ad6f111e18"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7e338383f37442d945b9fd784620f88d95646522",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 1933.3774183122227,
+    "total_transfers": 2,
+    "first_date": 1789686258000,
+    "last_date": 1789749810000,
+    "token_ref": {
+     "chain": "arc",
+     "address": "0xbc43ce8dec648ea298c4275559b81d6261c90b67"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7e338383f37442d945b9fd784620f88d95646522",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 64646.70234329864,
+    "total_transfers": 3,
+    "first_date": 1789686397000,
+    "last_date": 1789858720000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xa01bc586cd5f4f253bfab4e44400c52dbc18bc50"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7e338383f37442d945b9fd784620f88d95646522",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 13026.908800961566,
+    "total_transfers": 1,
+    "first_date": 1789720308000,
+    "last_date": 1789720308000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xa934ba4f59070149d37a93f8a002af79bae35563"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7e338383f37442d945b9fd784620f88d95646522",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 30425.232836243675,
+    "total_transfers": 1,
+    "first_date": 1789750023000,
+    "last_date": 1789750023000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xa15cd06dd305269a0f48bebeb30aa3588fba7b32"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7e338383f37442d945b9fd784620f88d95646522",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 619.9958346663979,
+    "total_transfers": 1,
+    "first_date": 1789765955000,
+    "last_date": 1789765955000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x63ee32ac3077d1fbd8a77ebba2a6ed4b8e9c1e18"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7e338383f37442d945b9fd784620f88d95646522",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 72.15419952323215,
+    "total_transfers": 1,
+    "first_date": 1789817781000,
+    "last_date": 1789817781000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xc4f730335fb9e439ca5552f7b52b8e638c4245b0"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7e338383f37442d945b9fd784620f88d95646522",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 221743.99409314632,
+    "total_transfers": 1,
+    "first_date": 1789817834000,
+    "last_date": 1789817834000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xa3b6aee90017b72c0812dc1e013de70eb2917ba3"
+    }
+   }
+  },
+  {
+   "from_address": "0x7e338383f37442d945b9fd784620f88d95646522",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 10298.011397905326,
+    "total_transfers": 1,
+    "first_date": 1788617773000,
+    "last_date": 1788617773000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xe6c6a33935919dc46278121c0596e828691f8d6c"
+    }
+   }
+  },
+  {
+   "from_address": "0x7e338383f37442d945b9fd784620f88d95646522",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 12967.236656671656,
+    "total_transfers": 3,
+    "first_date": 1788621437000,
+    "last_date": 1788625025000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xb06b1e58f5ba2a3df1ab74c01cb2a44c5395b3be"
+    }
+   }
+  },
+  {
+   "from_address": "0x7e338383f37442d945b9fd784620f88d95646522",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 16167.396217932783,
+    "total_transfers": 1,
+    "first_date": 1788631756000,
+    "last_date": 1788631756000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x2f219c706e052dc25372a0c59dcc2afe0cab12f3"
+    }
+   }
+  },
+  {
+   "from_address": "0x7e338383f37442d945b9fd784620f88d95646522",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 18529.751602313427,
+    "total_transfers": 1,
+    "first_date": 1788632440000,
+    "last_date": 1788632440000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xa737df5de18e3aa6b0bf8c2e9846ed699f6f2aeb"
+    }
+   }
+  },
+  {
+   "from_address": "0x7e338383f37442d945b9fd784620f88d95646522",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 245.26923581253413,
+    "total_transfers": 1,
+    "first_date": 1788791725000,
+    "last_date": 1788791725000,
+    "token_ref": {
+     "chain": "bsc",
+     "address": "0xb3a1e1f7ae6c90c707ec3c75e99c359482fea5b9"
+    }
+   }
+  },
+  {
+   "from_address": "0x7e338383f37442d945b9fd784620f88d95646522",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 3911.9290578243995,
+    "total_transfers": 1,
+    "first_date": 1788793897000,
+    "last_date": 1788793897000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x77061b45c5e4d440bd681b5f72bd0f4231a6fc04"
+    }
+   }
+  },
+  {
+   "from_address": "0x7e338383f37442d945b9fd784620f88d95646522",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 26184.769670884816,
+    "total_transfers": 1,
+    "first_date": 1788795354000,
+    "last_date": 1788795354000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x3e2cf3aec80adcffcae3436938934be970894066"
+    }
+   }
+  },
+  {
+   "from_address": "0x7e338383f37442d945b9fd784620f88d95646522",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 13132.926328100102,
+    "total_transfers": 1,
+    "first_date": 1788820866000,
+    "last_date": 1788820866000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x319c5b3f8e46b70cb00769bc8020b4c08ddbc182"
+    }
+   }
+  },
+  {
+   "from_address": "0x7e338383f37442d945b9fd784620f88d95646522",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 6958.410050322044,
+    "total_transfers": 1,
+    "first_date": 1788905555000,
+    "last_date": 1788905555000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xb22a893a4afdce12871e61229130490f9422b5b6"
+    }
+   }
+  },
+  {
+   "from_address": "0x7e338383f37442d945b9fd784620f88d95646522",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 1522.2979592564582,
+    "total_transfers": 1,
+    "first_date": 1788910485000,
+    "last_date": 1788910485000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xcacb0e9caccee63ec4d82952e561a291c68bcb68"
+    }
+   }
+  },
+  {
+   "from_address": "0x7e338383f37442d945b9fd784620f88d95646522",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 62.27300953182943,
+    "total_transfers": 1,
+    "first_date": 1789044390000,
+    "last_date": 1789044390000,
+    "token_ref": {
+     "chain": "bsc",
+     "address": "0xfe189e97832da1573e4e4ff034f4ffc3a15c7777"
+    }
+   }
+  },
+  {
+   "from_address": "0x7e338383f37442d945b9fd784620f88d95646522",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 421.6006682257351,
+    "total_transfers": 2,
+    "first_date": 1789361985000,
+    "last_date": 1789416593000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x15d36b6a28d8327abc7afabf0f106ae2c9af5c4d"
+    }
+   }
+  },
+  {
+   "from_address": "0x7e338383f37442d945b9fd784620f88d95646522",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 7.752087220738075,
+    "total_transfers": 1,
+    "first_date": 1789502721000,
+    "last_date": 1789502721000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x2e8c31162b855a2ffa90f6f8634643ad6f111e18"
+    }
+   }
+  },
+  {
+   "from_address": "0x7e338383f37442d945b9fd784620f88d95646522",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 406.481628475784,
+    "total_transfers": 2,
+    "first_date": 1789661741000,
+    "last_date": 1789725408000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xab093def657f15df31b33922a95e047add645b29"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7a4da9167fa4d1dbc09e8606f05476e1773a1b7b",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 2361.1631919616857,
+    "total_transfers": 5,
+    "first_date": 1785460148000,
+    "last_date": 1785521978000,
+    "token_ref": {
+     "chain": "bsc",
+     "address": "0xfe189e97832da1573e4e4ff034f4ffc3a15c7777"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7a4da9167fa4d1dbc09e8606f05476e1773a1b7b",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 8418.709428588774,
+    "total_transfers": 3,
+    "first_date": 1785186719000,
+    "last_date": 1788028152000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x2e8c31162b855a2ffa90f6f8634643ad6f111e18"
+    }
+   }
+  },
+  {
+   "from_address": "0x7a4da9167fa4d1dbc09e8606f05476e1773a1b7b",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 723.6806865152607,
+    "total_transfers": 1,
+    "first_date": 1786586659000,
+    "last_date": 1786586659000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x39dbed3a2bd333467115de45665cc57f813c4571"
+    }
+   }
+  },
+  {
+   "from_address": "0x7a4da9167fa4d1dbc09e8606f05476e1773a1b7b",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 2361.1631919616857,
+    "total_transfers": 3,
+    "first_date": 1785461715000,
+    "last_date": 1787031483000,
+    "token_ref": {
+     "chain": "bsc",
+     "address": "0xfe189e97832da1573e4e4ff034f4ffc3a15c7777"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7a4da9167fa4d1dbc09e8606f05476e1773a1b7b",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 4713.557206318784,
+    "total_transfers": 5,
+    "first_date": 1788314049000,
+    "last_date": 1788733496000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xd5f1afea47b1a9eab414d2ee740cf1d6d039e725"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7a4da9167fa4d1dbc09e8606f05476e1773a1b7b",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 32311.72861535086,
+    "total_transfers": 1,
+    "first_date": 1788555614000,
+    "last_date": 1788555614000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x507b6f349a80114097a67b8b4677367acc15b220"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7a4da9167fa4d1dbc09e8606f05476e1773a1b7b",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 20326.32053875373,
+    "total_transfers": 1,
+    "first_date": 1788555755000,
+    "last_date": 1788555755000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xca3ce24fb1a6e7db0003f9c785405a851e3f1e18"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7a4da9167fa4d1dbc09e8606f05476e1773a1b7b",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 435.08916552163186,
+    "total_transfers": 1,
+    "first_date": 1788556539000,
+    "last_date": 1788556539000,
+    "token_ref": {
+     "chain": "base",
+     "address": "0xb2000000000000000000004c27f6523082f41d01"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7a4da9167fa4d1dbc09e8606f05476e1773a1b7b",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 881.0937637022604,
+    "total_transfers": 1,
+    "first_date": 1788557023000,
+    "last_date": 1788557023000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xded852de9fe9ba9b6f27f39e8e81cf851a5c79cc"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7a4da9167fa4d1dbc09e8606f05476e1773a1b7b",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 75126.45260453438,
+    "total_transfers": 3,
+    "first_date": 1788648771000,
+    "last_date": 1788905519000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x7df5daaf80e65dfcc7a1435d9b52bcf2b5753fbe"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7a4da9167fa4d1dbc09e8606f05476e1773a1b7b",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 982.2836009811266,
+    "total_transfers": 2,
+    "first_date": 1788727645000,
+    "last_date": 1788728004000,
+    "token_ref": {
+     "chain": "bsc",
+     "address": "0x7bc70ae0f2a67d2fdc0180a697a611f21c857777"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7a4da9167fa4d1dbc09e8606f05476e1773a1b7b",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 6947.765938119685,
+    "total_transfers": 1,
+    "first_date": 1788825060000,
+    "last_date": 1788825060000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x384c3f978950a98523529a205163bf63a69e8dd5"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7a4da9167fa4d1dbc09e8606f05476e1773a1b7b",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 75676.87599771628,
+    "total_transfers": 5,
+    "first_date": 1788882997000,
+    "last_date": 1789254311000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xb97d9e5ad6244d27588fe0a624a8c78e512934ee"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7a4da9167fa4d1dbc09e8606f05476e1773a1b7b",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 24710.621241046963,
+    "total_transfers": 1,
+    "first_date": 1788886854000,
+    "last_date": 1788886854000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xbee455b5cd3a84b03871c779b018e7959be15bab"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7a4da9167fa4d1dbc09e8606f05476e1773a1b7b",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 197311.9289318836,
+    "total_transfers": 1,
+    "first_date": 1788894112000,
+    "last_date": 1788894112000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x98650ab3145285c10a40619402eaa025d277c659"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7a4da9167fa4d1dbc09e8606f05476e1773a1b7b",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 14816.180777574544,
+    "total_transfers": 1,
+    "first_date": 1788894371000,
+    "last_date": 1788894371000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xb22a893a4afdce12871e61229130490f9422b5b6"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7a4da9167fa4d1dbc09e8606f05476e1773a1b7b",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 11628.869960319027,
+    "total_transfers": 1,
+    "first_date": 1788894407000,
+    "last_date": 1788894407000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x71b672323fe2c01f9807af59a788001e5b9aa5ed"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7a4da9167fa4d1dbc09e8606f05476e1773a1b7b",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 1044.091137405709,
+    "total_transfers": 1,
+    "first_date": 1788914643000,
+    "last_date": 1788914643000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x80baa4b3bfac6f4978700df824b1b3d98e889136"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7a4da9167fa4d1dbc09e8606f05476e1773a1b7b",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 1283.70913699064,
+    "total_transfers": 2,
+    "first_date": 1789061146000,
+    "last_date": 1789082525000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xfd82d8db539b6ace0d50815845133767e24f1e18"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7a4da9167fa4d1dbc09e8606f05476e1773a1b7b",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 105.40265250056831,
+    "total_transfers": 1,
+    "first_date": 1789093951000,
+    "last_date": 1789093951000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x4eb990547bce4a982432ca88cf5fae7eed1a2d35"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7a4da9167fa4d1dbc09e8606f05476e1773a1b7b",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 207.4561538390263,
+    "total_transfers": 1,
+    "first_date": 1789099055000,
+    "last_date": 1789099055000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x385f4f8ae47651ce5f58f5265395a669f8281e18"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7a4da9167fa4d1dbc09e8606f05476e1773a1b7b",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 12933.126196857515,
+    "total_transfers": 2,
+    "first_date": 1789156756000,
+    "last_date": 1789157129000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xba527c23903eff094a987197ccd643f2da76e4ff"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7a4da9167fa4d1dbc09e8606f05476e1773a1b7b",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 4137.344727668664,
+    "total_transfers": 1,
+    "first_date": 1789410781000,
+    "last_date": 1789410781000,
+    "token_ref": {
+     "chain": "base",
+     "address": "0x5ab000ff9b9ffe0349ce5ffa5fd86f217c3680f5"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7a4da9167fa4d1dbc09e8606f05476e1773a1b7b",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 74916.77671927461,
+    "total_transfers": 1,
+    "first_date": 1789427644000,
+    "last_date": 1789427644000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x828c38b9ac8e0933ead14a6c0318d4494e127777"
+    }
+   }
+  },
+  {
+   "from_address": "0x7a4da9167fa4d1dbc09e8606f05476e1773a1b7b",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 8418.709428588774,
+    "total_transfers": 3,
+    "first_date": 1785397737000,
+    "last_date": 1788547103000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x2e8c31162b855a2ffa90f6f8634643ad6f111e18"
+    }
+   }
+  },
+  {
+   "from_address": "0x7a4da9167fa4d1dbc09e8606f05476e1773a1b7b",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 4239.0536165571,
+    "total_transfers": 4,
+    "first_date": 1788500934000,
+    "last_date": 1789706976000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xd5f1afea47b1a9eab414d2ee740cf1d6d039e725"
+    }
+   }
+  },
+  {
+   "from_address": "0x7a4da9167fa4d1dbc09e8606f05476e1773a1b7b",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 32311.72861535086,
+    "total_transfers": 1,
+    "first_date": 1788555856000,
+    "last_date": 1788555856000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x507b6f349a80114097a67b8b4677367acc15b220"
+    }
+   }
+  },
+  {
+   "from_address": "0x7a4da9167fa4d1dbc09e8606f05476e1773a1b7b",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 20326.32053875373,
+    "total_transfers": 1,
+    "first_date": 1788556109000,
+    "last_date": 1788556109000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xca3ce24fb1a6e7db0003f9c785405a851e3f1e18"
+    }
+   }
+  },
+  {
+   "from_address": "0x7a4da9167fa4d1dbc09e8606f05476e1773a1b7b",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 881.0937637022604,
+    "total_transfers": 1,
+    "first_date": 1788727409000,
+    "last_date": 1788727409000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xded852de9fe9ba9b6f27f39e8e81cf851a5c79cc"
+    }
+   }
+  },
+  {
+   "from_address": "0x7a4da9167fa4d1dbc09e8606f05476e1773a1b7b",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 982.2836009811266,
+    "total_transfers": 2,
+    "first_date": 1788727989000,
+    "last_date": 1788733454000,
+    "token_ref": {
+     "chain": "bsc",
+     "address": "0x7bc70ae0f2a67d2fdc0180a697a611f21c857777"
+    }
+   }
+  },
+  {
+   "from_address": "0x7a4da9167fa4d1dbc09e8606f05476e1773a1b7b",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 75126.45260453438,
+    "total_transfers": 4,
+    "first_date": 1788805995000,
+    "last_date": 1789272391000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x7df5daaf80e65dfcc7a1435d9b52bcf2b5753fbe"
+    }
+   }
+  },
+  {
+   "from_address": "0x7a4da9167fa4d1dbc09e8606f05476e1773a1b7b",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 435.08916552163186,
+    "total_transfers": 1,
+    "first_date": 1788808967000,
+    "last_date": 1788808967000,
+    "token_ref": {
+     "chain": "base",
+     "address": "0xb2000000000000000000004c27f6523082f41d01"
+    }
+   }
+  },
+  {
+   "from_address": "0x7a4da9167fa4d1dbc09e8606f05476e1773a1b7b",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 6947.765938119685,
+    "total_transfers": 1,
+    "first_date": 1788838328000,
+    "last_date": 1788838328000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x384c3f978950a98523529a205163bf63a69e8dd5"
+    }
+   }
+  },
+  {
+   "from_address": "0x7a4da9167fa4d1dbc09e8606f05476e1773a1b7b",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 75676.87599771627,
+    "total_transfers": 7,
+    "first_date": 1788884762000,
+    "last_date": 1789511660000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xb97d9e5ad6244d27588fe0a624a8c78e512934ee"
+    }
+   }
+  },
+  {
+   "from_address": "0x7a4da9167fa4d1dbc09e8606f05476e1773a1b7b",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 10437.164613248999,
+    "total_transfers": 2,
+    "first_date": 1788895598000,
+    "last_date": 1788902937000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xb22a893a4afdce12871e61229130490f9422b5b6"
+    }
+   }
+  },
+  {
+   "from_address": "0x7a4da9167fa4d1dbc09e8606f05476e1773a1b7b",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 12933.126196857515,
+    "total_transfers": 1,
+    "first_date": 1789157339000,
+    "last_date": 1789157339000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xba527c23903eff094a987197ccd643f2da76e4ff"
+    }
+   }
+  },
+  {
+   "from_address": "0x7a4da9167fa4d1dbc09e8606f05476e1773a1b7b",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 207.4561538390263,
+    "total_transfers": 1,
+    "first_date": 1789272376000,
+    "last_date": 1789272376000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x385f4f8ae47651ce5f58f5265395a669f8281e18"
+    }
+   }
+  },
+  {
+   "from_address": "0x7a4da9167fa4d1dbc09e8606f05476e1773a1b7b",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 4137.344727668664,
+    "total_transfers": 1,
+    "first_date": 1789415733000,
+    "last_date": 1789415733000,
+    "token_ref": {
+     "chain": "base",
+     "address": "0x5ab000ff9b9ffe0349ce5ffa5fd86f217c3680f5"
+    }
+   }
+  },
+  {
+   "from_address": "0x7a4da9167fa4d1dbc09e8606f05476e1773a1b7b",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 56784.281136230005,
+    "total_transfers": 2,
+    "first_date": 1789427922000,
+    "last_date": 1789429143000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x828c38b9ac8e0933ead14a6c0318d4494e127777"
+    }
+   }
+  },
+  {
+   "from_address": "0x7a4da9167fa4d1dbc09e8606f05476e1773a1b7b",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 1283.70913699064,
+    "total_transfers": 1,
+    "first_date": 1789507389000,
+    "last_date": 1789507389000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xfd82d8db539b6ace0d50815845133767e24f1e18"
+    }
+   }
+  },
+  {
+   "from_address": "0xf70da97812cb96acdf810712aa562db8dfa3dbef",
+   "to_address": "0x7a4da9167fa4d1dbc09e8606f05476e1773a1b7b",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 0.01806236210208648,
+    "total_transfers": 1,
+    "first_date": 1785187137000,
+    "last_date": 1785187137000,
+    "token_ref": {
+     "chain": "base",
+     "address": "0x4200000000000000000000000000000000000006"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7a4da9167fa4d1dbc09e8606f05476e1773a1b7b",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 723.6806865152607,
+    "total_transfers": 1,
+    "first_date": 1785264225000,
+    "last_date": 1785264225000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x39dbed3a2bd333467115de45665cc57f813c4571"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7a4da9167fa4d1dbc09e8606f05476e1773a1b7b",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 14237.51761701489,
+    "total_transfers": 1,
+    "first_date": 1785391388000,
+    "last_date": 1785391388000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xf0568863195770965a6d8abb0aa87f4314b80320"
+    }
+   }
+  },
+  {
+   "from_address": "0x7a4da9167fa4d1dbc09e8606f05476e1773a1b7b",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 14237.51761701489,
+    "total_transfers": 1,
+    "first_date": 1785437045000,
+    "last_date": 1785437045000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xf0568863195770965a6d8abb0aa87f4314b80320"
+    }
+   }
+  },
+  {
+   "from_address": "0x0e9e39190df7a2d38872736910cddfa519e419ca",
+   "to_address": "0x9bd2820b6c966fb13dc105436354b862a6fcdc26",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 0.050064786,
+    "total_transfers": 2,
+    "first_date": 1788584891000,
+    "last_date": 1788587389000,
+    "token_ref": {
+     "id": "ETH_ROBINHOOD"
+    }
+   }
+  },
+  {
+   "from_address": "0x65050a9b7e5075a2ba5ced7b1b64ee66262c40dc",
+   "to_address": "0x9bd2820b6c966fb13dc105436354b862a6fcdc26",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 1.073698599475936,
+    "total_transfers": 38,
+    "first_date": 1788586488000,
+    "last_date": 1788893066000,
+    "token_ref": {
+     "id": "ETH_ROBINHOOD"
+    }
+   }
+  },
+  {
+   "from_address": "0x65050a9b7e5075a2ba5ced7b1b64ee66262c40dc",
+   "to_address": "0x9bd2820b6c966fb13dc105436354b862a6fcdc26",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 2697767.3729571505,
+    "total_transfers": 1,
+    "first_date": 1788637221000,
+    "last_date": 1788637221000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x275bd09e2dd9ea3da99e9160277d8691e33f47fa"
+    }
+   }
+  },
+  {
+   "from_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "to_address": "0x9bd2820b6c966fb13dc105436354b862a6fcdc26",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 527622.3921607737,
+    "total_transfers": 2,
+    "first_date": 1788637717000,
+    "last_date": 1788637814000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x275bd09e2dd9ea3da99e9160277d8691e33f47fa"
+    }
+   }
+  },
+  {
+   "from_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "to_address": "0x9bd2820b6c966fb13dc105436354b862a6fcdc26",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 195444.56425167987,
+    "total_transfers": 1,
+    "first_date": 1788893154000,
+    "last_date": 1788893154000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x98650ab3145285c10a40619402eaa025d277c659"
+    }
+   }
+  },
+  {
+   "from_address": "0x9bd2820b6c966fb13dc105436354b862a6fcdc26",
+   "to_address": "0x65050a9b7e5075a2ba5ced7b1b64ee66262c40dc",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 1.123,
+    "total_transfers": 38,
+    "first_date": 1788586481000,
+    "last_date": 1788893154000,
+    "token_ref": {
+     "id": "ETH_ROBINHOOD"
+    }
+   }
+  },
+  {
+   "from_address": "0x9bd2820b6c966fb13dc105436354b862a6fcdc26",
+   "to_address": "0x65050a9b7e5075a2ba5ced7b1b64ee66262c40dc",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 2697767.3729571505,
+    "total_transfers": 1,
+    "first_date": 1788637279000,
+    "last_date": 1788637279000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x275bd09e2dd9ea3da99e9160277d8691e33f47fa"
+    }
+   }
+  },
+  {
+   "from_address": "0x9bd2820b6c966fb13dc105436354b862a6fcdc26",
+   "to_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 527622.3921607737,
+    "total_transfers": 2,
+    "first_date": 1788637750000,
+    "last_date": 1788637851000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x275bd09e2dd9ea3da99e9160277d8691e33f47fa"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x1c4a9ac77463756f75eae37d1e4367aac30dcd5e",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 48.72753654303479,
+    "total_transfers": 1,
+    "first_date": 1788281761000,
+    "last_date": 1788281761000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x5173d45a1191ee33cbb7d8c7e65f21b04ed54802"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x1c4a9ac77463756f75eae37d1e4367aac30dcd5e",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 246.8341679174417,
+    "total_transfers": 3,
+    "first_date": 1787887181000,
+    "last_date": 1788983738000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x020bfc650a365f8bb26819deaabf3e21291018b4"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x1c4a9ac77463756f75eae37d1e4367aac30dcd5e",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 702.7607392380469,
+    "total_transfers": 3,
+    "first_date": 1788570388000,
+    "last_date": 1788763519000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x98096d17e191b3da1d5f99a6d7b3584351b11e18"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x1c4a9ac77463756f75eae37d1e4367aac30dcd5e",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 6801.06890614207,
+    "total_transfers": 1,
+    "first_date": 1788824481000,
+    "last_date": 1788824481000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x384c3f978950a98523529a205163bf63a69e8dd5"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x1c4a9ac77463756f75eae37d1e4367aac30dcd5e",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 179942.04692422558,
+    "total_transfers": 1,
+    "first_date": 1788894179000,
+    "last_date": 1788894179000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x98650ab3145285c10a40619402eaa025d277c659"
+    }
+   }
+  },
+  {
+   "from_address": "0x1c4a9ac77463756f75eae37d1e4367aac30dcd5e",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 48.7224864506,
+    "total_transfers": 1,
+    "first_date": 1788286856000,
+    "last_date": 1788286856000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x5173d45a1191ee33cbb7d8c7e65f21b04ed54802"
+    }
+   }
+  },
+  {
+   "from_address": "0x1c4a9ac77463756f75eae37d1e4367aac30dcd5e",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 246.8341679174417,
+    "total_transfers": 3,
+    "first_date": 1787929733000,
+    "last_date": 1789011609000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x020bfc650a365f8bb26819deaabf3e21291018b4"
+    }
+   }
+  },
+  {
+   "from_address": "0x1c4a9ac77463756f75eae37d1e4367aac30dcd5e",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 702.7607392380469,
+    "total_transfers": 3,
+    "first_date": 1788589072000,
+    "last_date": 1788771980000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x98096d17e191b3da1d5f99a6d7b3584351b11e18"
+    }
+   }
+  },
+  {
+   "from_address": "0x1c4a9ac77463756f75eae37d1e4367aac30dcd5e",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 6801.06890614207,
+    "total_transfers": 1,
+    "first_date": 1788829715000,
+    "last_date": 1788829715000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x384c3f978950a98523529a205163bf63a69e8dd5"
+    }
+   }
+  },
+  {
+   "from_address": "0x2221ccd226712a1968a65918524a48b4c02fc275",
+   "to_address": "0xac814f82975de7768ba4ba6e8a8c8c45cac40eb0",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 0.29826739847064876,
+    "total_transfers": 4,
+    "first_date": 1783960460000,
+    "last_date": 1788108365000,
+    "token_ref": {
+     "id": "ETH_ROBINHOOD"
+    }
+   }
+  },
+  {
+   "from_address": "0x65050a9b7e5075a2ba5ced7b1b64ee66262c40dc",
+   "to_address": "0xac814f82975de7768ba4ba6e8a8c8c45cac40eb0",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 0.9279445565251093,
+    "total_transfers": 79,
+    "first_date": 1783979424000,
+    "last_date": 1789160951000,
+    "token_ref": {
+     "id": "ETH_ROBINHOOD"
+    }
+   }
+  },
+  {
+   "from_address": "0x2221ccd226712a1968a65918524a48b4c02fc275",
+   "to_address": "0xac814f82975de7768ba4ba6e8a8c8c45cac40eb0",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 149.63339545624132,
+    "total_transfers": 1,
+    "first_date": 1785171559000,
+    "last_date": 1785171559000,
+    "token_ref": {
+     "chain": "bsc",
+     "address": "0x55d398326f99059ff775485246999027b3197955"
+    }
+   }
+  },
+  {
+   "from_address": "0xf70da97812cb96acdf810712aa562db8dfa3dbef",
+   "to_address": "0xac814f82975de7768ba4ba6e8a8c8c45cac40eb0",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 92.909998,
+    "total_transfers": 1,
+    "first_date": 1785319882000,
+    "last_date": 1785319882000,
+    "token_ref": {
+     "chain": "bsc",
+     "address": "0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d"
+    }
+   }
+  },
+  {
+   "from_address": "0xac814f82975de7768ba4ba6e8a8c8c45cac40eb0",
+   "to_address": "0x65050a9b7e5075a2ba5ced7b1b64ee66262c40dc",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 1.1061000000000005,
+    "total_transfers": 104,
+    "first_date": 1783960471000,
+    "last_date": 1789157866000,
+    "token_ref": {
+     "id": "ETH_ROBINHOOD"
+    }
+   }
+  },
+  {
+   "from_address": "0xac814f82975de7768ba4ba6e8a8c8c45cac40eb0",
+   "to_address": "0x2221ccd226712a1968a65918524a48b4c02fc275",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 92.909998,
+    "total_transfers": 1,
+    "first_date": 1785344632000,
+    "last_date": 1785344632000,
+    "token_ref": {
+     "chain": "bsc",
+     "address": "0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d"
+    }
+   }
+  },
+  {
+   "from_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "to_address": "0xac814f82975de7768ba4ba6e8a8c8c45cac40eb0",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 254154.16423410238,
+    "total_transfers": 1,
+    "first_date": 1788262852000,
+    "last_date": 1788262852000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xa26992c4268a8a78a4d872fe4bdad2ed03ac287d"
+    }
+   }
+  },
+  {
+   "from_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "to_address": "0xac814f82975de7768ba4ba6e8a8c8c45cac40eb0",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 65320.48243416966,
+    "total_transfers": 1,
+    "first_date": 1788808321000,
+    "last_date": 1788808321000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x384c3f978950a98523529a205163bf63a69e8dd5"
+    }
+   }
+  },
+  {
+   "from_address": "0x65050a9b7e5075a2ba5ced7b1b64ee66262c40dc",
+   "to_address": "0xac814f82975de7768ba4ba6e8a8c8c45cac40eb0",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 105422.68609158203,
+    "total_transfers": 1,
+    "first_date": 1788893123000,
+    "last_date": 1788893123000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x98650ab3145285c10a40619402eaa025d277c659"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0xac814f82975de7768ba4ba6e8a8c8c45cac40eb0",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 0.02795402071103737,
+    "total_transfers": 1,
+    "first_date": 1788945665000,
+    "last_date": 1788945665000,
+    "token_ref": {
+     "id": "ETH_BASE"
+    }
+   }
+  },
+  {
+   "from_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "to_address": "0xac814f82975de7768ba4ba6e8a8c8c45cac40eb0",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 64523.69091834166,
+    "total_transfers": 1,
+    "first_date": 1788964069000,
+    "last_date": 1788964069000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x80baa4b3bfac6f4978700df824b1b3d98e889136"
+    }
+   }
+  },
+  {
+   "from_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "to_address": "0xac814f82975de7768ba4ba6e8a8c8c45cac40eb0",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 1527.3729345216661,
+    "total_transfers": 1,
+    "first_date": 1789044467000,
+    "last_date": 1789044467000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x6245e67affa44a23077f0ea7f981a8dc743a0c47"
+    }
+   }
+  },
+  {
+   "from_address": "0xac814f82975de7768ba4ba6e8a8c8c45cac40eb0",
+   "to_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 254154.16423410238,
+    "total_transfers": 1,
+    "first_date": 1788263013000,
+    "last_date": 1788263013000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xa26992c4268a8a78a4d872fe4bdad2ed03ac287d"
+    }
+   }
+  },
+  {
+   "from_address": "0xac814f82975de7768ba4ba6e8a8c8c45cac40eb0",
+   "to_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 65320.48243416966,
+    "total_transfers": 1,
+    "first_date": 1788812701000,
+    "last_date": 1788812701000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x384c3f978950a98523529a205163bf63a69e8dd5"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7b80281a6c39b6baac854b62a38547191531d260",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 4416.674477700686,
+    "total_transfers": 1,
+    "first_date": 1785764188000,
+    "last_date": 1785764188000,
+    "token_ref": {
+     "chain": "bsc",
+     "address": "0xe9337dde3dd9e97f1f45a56412767ce5098e7777"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7b80281a6c39b6baac854b62a38547191531d260",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 90.75238544450899,
+    "total_transfers": 1,
+    "first_date": 1785781607000,
+    "last_date": 1785781607000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x020bfc650a365f8bb26819deaabf3e21291018b4"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7b80281a6c39b6baac854b62a38547191531d260",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 1567.3141519092503,
+    "total_transfers": 1,
+    "first_date": 1785931802000,
+    "last_date": 1785931802000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x385b36ff682ab4c76e7c37a66b96aabc466471d5"
+    }
+   }
+  },
+  {
+   "from_address": "0x7b80281a6c39b6baac854b62a38547191531d260",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 4416.674477700686,
+    "total_transfers": 1,
+    "first_date": 1785764721000,
+    "last_date": 1785764721000,
+    "token_ref": {
+     "chain": "bsc",
+     "address": "0xe9337dde3dd9e97f1f45a56412767ce5098e7777"
+    }
+   }
+  },
+  {
+   "from_address": "0x7b80281a6c39b6baac854b62a38547191531d260",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 90.75238544450899,
+    "total_transfers": 1,
+    "first_date": 1785842731000,
+    "last_date": 1785842731000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x020bfc650a365f8bb26819deaabf3e21291018b4"
+    }
+   }
+  },
+  {
+   "from_address": "0x7b80281a6c39b6baac854b62a38547191531d260",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 1567.3141519092503,
+    "total_transfers": 1,
+    "first_date": 1786053573000,
+    "last_date": 1786053573000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x385b36ff682ab4c76e7c37a66b96aabc466471d5"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7b80281a6c39b6baac854b62a38547191531d260",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 6367068.486028436,
+    "total_transfers": 1,
+    "first_date": 1782135697000,
+    "last_date": 1782135697000,
+    "token_ref": {
+     "chain": "base",
+     "address": "0x799c28bac95b3e0b26534d1e9a586511895ecba3"
+    }
+   }
+  },
+  {
+   "from_address": "0x7b80281a6c39b6baac854b62a38547191531d260",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 6367068.486028436,
+    "total_transfers": 1,
+    "first_date": 1782201943000,
+    "last_date": 1782201943000,
+    "token_ref": {
+     "chain": "base",
+     "address": "0x799c28bac95b3e0b26534d1e9a586511895ecba3"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7b80281a6c39b6baac854b62a38547191531d260",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 291.3889347992105,
+    "total_transfers": 1,
+    "first_date": 1788198353000,
+    "last_date": 1788198353000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x2e8c31162b855a2ffa90f6f8634643ad6f111e18"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7b80281a6c39b6baac854b62a38547191531d260",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 88.58737678434998,
+    "total_transfers": 1,
+    "first_date": 1788199448000,
+    "last_date": 1788199448000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x39dbed3a2bd333467115de45665cc57f813c4571"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7b80281a6c39b6baac854b62a38547191531d260",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 2017.0578952965047,
+    "total_transfers": 2,
+    "first_date": 1788876614000,
+    "last_date": 1789219167000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x385f4f8ae47651ce5f58f5265395a669f8281e18"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7b80281a6c39b6baac854b62a38547191531d260",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 4117.58172883073,
+    "total_transfers": 1,
+    "first_date": 1788879424000,
+    "last_date": 1788879424000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x45242320dbb855eea8fd36804c6487e10e97fcf9"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7b80281a6c39b6baac854b62a38547191531d260",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 98860.84412571054,
+    "total_transfers": 2,
+    "first_date": 1788879580000,
+    "last_date": 1788882491000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xd79eb5d4edf7bd843eef5109f1a1ff5c96b17948"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7b80281a6c39b6baac854b62a38547191531d260",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 1227.40833053843,
+    "total_transfers": 1,
+    "first_date": 1788883268000,
+    "last_date": 1788883268000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x812486eaea648819853f8e372dc9f1516c7868bd"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7b80281a6c39b6baac854b62a38547191531d260",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 4.8255446825499835,
+    "total_transfers": 1,
+    "first_date": 1788883653000,
+    "last_date": 1788883653000,
+    "token_ref": {
+     "chain": "bsc",
+     "address": "0x7c8d5502b544ddaf8852fc46d1174e34876d545c"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7b80281a6c39b6baac854b62a38547191531d260",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 105387.19767022331,
+    "total_transfers": 1,
+    "first_date": 1788894309000,
+    "last_date": 1788894309000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x98650ab3145285c10a40619402eaa025d277c659"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7b80281a6c39b6baac854b62a38547191531d260",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 20229.17330573397,
+    "total_transfers": 2,
+    "first_date": 1789219357000,
+    "last_date": 1789220262000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x1537fee0675e85a9b3f01938a56c9e6ed6941e18"
+    }
+   }
+  },
+  {
+   "from_address": "0x7b80281a6c39b6baac854b62a38547191531d260",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 291.3889347992105,
+    "total_transfers": 1,
+    "first_date": 1788199437000,
+    "last_date": 1788199437000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x2e8c31162b855a2ffa90f6f8634643ad6f111e18"
+    }
+   }
+  },
+  {
+   "from_address": "0x7b80281a6c39b6baac854b62a38547191531d260",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 88.58737678434998,
+    "total_transfers": 1,
+    "first_date": 1788199561000,
+    "last_date": 1788199561000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x39dbed3a2bd333467115de45665cc57f813c4571"
+    }
+   }
+  },
+  {
+   "from_address": "0x7b80281a6c39b6baac854b62a38547191531d260",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 2017.0578952965047,
+    "total_transfers": 2,
+    "first_date": 1788879048000,
+    "last_date": 1789219208000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x385f4f8ae47651ce5f58f5265395a669f8281e18"
+    }
+   }
+  },
+  {
+   "from_address": "0x7b80281a6c39b6baac854b62a38547191531d260",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 4117.58172883073,
+    "total_transfers": 1,
+    "first_date": 1788879524000,
+    "last_date": 1788879524000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x45242320dbb855eea8fd36804c6487e10e97fcf9"
+    }
+   }
+  },
+  {
+   "from_address": "0x7b80281a6c39b6baac854b62a38547191531d260",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 98860.84412571054,
+    "total_transfers": 2,
+    "first_date": 1788882457000,
+    "last_date": 1788882829000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xd79eb5d4edf7bd843eef5109f1a1ff5c96b17948"
+    }
+   }
+  },
+  {
+   "from_address": "0x7b80281a6c39b6baac854b62a38547191531d260",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 1227.40833053843,
+    "total_transfers": 1,
+    "first_date": 1788883389000,
+    "last_date": 1788883389000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x812486eaea648819853f8e372dc9f1516c7868bd"
+    }
+   }
+  },
+  {
+   "from_address": "0x7b80281a6c39b6baac854b62a38547191531d260",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 4.842013056428427,
+    "total_transfers": 1,
+    "first_date": 1788883716000,
+    "last_date": 1788883716000,
+    "token_ref": {
+     "chain": "bsc",
+     "address": "0x7c8d5502b544ddaf8852fc46d1174e34876d545c"
+    }
+   }
+  },
+  {
+   "from_address": "0x7b80281a6c39b6baac854b62a38547191531d260",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 20229.17330573397,
+    "total_transfers": 1,
+    "first_date": 1789224036000,
+    "last_date": 1789224036000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x1537fee0675e85a9b3f01938a56c9e6ed6941e18"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7b80281a6c39b6baac854b62a38547191531d260",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 4489879.010021674,
+    "total_transfers": 1,
+    "first_date": 1779791275000,
+    "last_date": 1779791275000,
+    "token_ref": {
+     "chain": "base",
+     "address": "0x71b73e5de850e8d4dc3d0604c641d23d94f79b07"
+    }
+   }
+  },
+  {
+   "from_address": "0x7b80281a6c39b6baac854b62a38547191531d260",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 4489879.010021674,
+    "total_transfers": 1,
+    "first_date": 1779793045000,
+    "last_date": 1779793045000,
+    "token_ref": {
+     "chain": "base",
+     "address": "0x71b73e5de850e8d4dc3d0604c641d23d94f79b07"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7b80281a6c39b6baac854b62a38547191531d260",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 1177.8464089109011,
+    "total_transfers": 1,
+    "first_date": 1780925183000,
+    "last_date": 1780925183000,
+    "token_ref": {
+     "chain": "eth",
+     "address": "0xcb1592591996765ec0efc1f92599a19767ee5ffa"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x7b80281a6c39b6baac854b62a38547191531d260",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 58422185.78914824,
+    "total_transfers": 1,
+    "first_date": 1780933819000,
+    "last_date": 1780933819000,
+    "token_ref": {
+     "chain": "base",
+     "address": "0x84048da9ff8366efb2111a8013c4de8216ab8b07"
+    }
+   }
+  },
+  {
+   "from_address": "0x7b80281a6c39b6baac854b62a38547191531d260",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 1177.8464089109011,
+    "total_transfers": 1,
+    "first_date": 1780925219000,
+    "last_date": 1780925219000,
+    "token_ref": {
+     "chain": "eth",
+     "address": "0xcb1592591996765ec0efc1f92599a19767ee5ffa"
+    }
+   }
+  },
+  {
+   "from_address": "0x7b80281a6c39b6baac854b62a38547191531d260",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 58422185.78914824,
+    "total_transfers": 1,
+    "first_date": 1780934125000,
+    "last_date": 1780934125000,
+    "token_ref": {
+     "chain": "base",
+     "address": "0x84048da9ff8366efb2111a8013c4de8216ab8b07"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x6f46b69bc560f51134814f41c3d3a06291e0332d",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 717.2552956434654,
+    "total_transfers": 1,
+    "first_date": 1786992731000,
+    "last_date": 1786992731000,
+    "token_ref": {
+     "chain": "base",
+     "address": "0xb2000000000000000000004c27f6523082f41d01"
+    }
+   }
+  },
+  {
+   "from_address": "0x6f46b69bc560f51134814f41c3d3a06291e0332d",
+   "to_address": "0x6f46b69bc560f51134814f41c3d3a06291e0332d",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 0.01742831,
+    "total_transfers": 1,
+    "first_date": 1787260253000,
+    "last_date": 1787260253000,
+    "token_ref": {
+     "chain": "bsc",
+     "address": "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x6f46b69bc560f51134814f41c3d3a06291e0332d",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 1516.867739709923,
+    "total_transfers": 2,
+    "first_date": 1788091608000,
+    "last_date": 1788954259000,
+    "token_ref": {
+     "chain": "bsc",
+     "address": "0xe9bc5c6a86caa44fd7b469bf3cc7c563e4f77777"
+    }
+   }
+  },
+  {
+   "from_address": "0x6f46b69bc560f51134814f41c3d3a06291e0332d",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 717.2552956434654,
+    "total_transfers": 1,
+    "first_date": 1787053877000,
+    "last_date": 1787053877000,
+    "token_ref": {
+     "chain": "base",
+     "address": "0xb2000000000000000000004c27f6523082f41d01"
+    }
+   }
+  },
+  {
+   "from_address": "0x6f46b69bc560f51134814f41c3d3a06291e0332d",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 0.01742831,
+    "total_transfers": 1,
+    "first_date": 1787260359000,
+    "last_date": 1787260359000,
+    "token_ref": {
+     "chain": "bsc",
+     "address": "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x6f46b69bc560f51134814f41c3d3a06291e0332d",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 132.83480165374158,
+    "total_transfers": 1,
+    "first_date": 1788789427000,
+    "last_date": 1788789427000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xd5f1afea47b1a9eab414d2ee740cf1d6d039e725"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x6f46b69bc560f51134814f41c3d3a06291e0332d",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 357.0458485569234,
+    "total_transfers": 3,
+    "first_date": 1788864237000,
+    "last_date": 1788995270000,
+    "token_ref": {
+     "chain": "bsc",
+     "address": "0xd270d4e1ec6e6e0d28c0ecb8be966ec75997ffff"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x6f46b69bc560f51134814f41c3d3a06291e0332d",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 19.364754289430003,
+    "total_transfers": 1,
+    "first_date": 1788864740000,
+    "last_date": 1788864740000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x385f4f8ae47651ce5f58f5265395a669f8281e18"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x6f46b69bc560f51134814f41c3d3a06291e0332d",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 7588.706648644424,
+    "total_transfers": 1,
+    "first_date": 1788877700000,
+    "last_date": 1788877700000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xe76a12bcd2f0e6d3db9f9012321642198e6cbd1b"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x6f46b69bc560f51134814f41c3d3a06291e0332d",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 10162.194985184116,
+    "total_transfers": 1,
+    "first_date": 1788877714000,
+    "last_date": 1788877714000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xc6e8c393d46b685c2fb2177f759f2b16eb7a7d54"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x6f46b69bc560f51134814f41c3d3a06291e0332d",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 92189.2633289142,
+    "total_transfers": 1,
+    "first_date": 1788894104000,
+    "last_date": 1788894104000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x98650ab3145285c10a40619402eaa025d277c659"
+    }
+   }
+  },
+  {
+   "from_address": "0x6f46b69bc560f51134814f41c3d3a06291e0332d",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 1516.867739709923,
+    "total_transfers": 2,
+    "first_date": 1788254324000,
+    "last_date": 1788990324000,
+    "token_ref": {
+     "chain": "bsc",
+     "address": "0xe9bc5c6a86caa44fd7b469bf3cc7c563e4f77777"
+    }
+   }
+  },
+  {
+   "from_address": "0x6f46b69bc560f51134814f41c3d3a06291e0332d",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 132.83480165374158,
+    "total_transfers": 1,
+    "first_date": 1788798093000,
+    "last_date": 1788798093000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xd5f1afea47b1a9eab414d2ee740cf1d6d039e725"
+    }
+   }
+  },
+  {
+   "from_address": "0x6f46b69bc560f51134814f41c3d3a06291e0332d",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 357.0458485569234,
+    "total_transfers": 3,
+    "first_date": 1788864273000,
+    "last_date": 1789062780000,
+    "token_ref": {
+     "chain": "bsc",
+     "address": "0xd270d4e1ec6e6e0d28c0ecb8be966ec75997ffff"
+    }
+   }
+  },
+  {
+   "from_address": "0x6f46b69bc560f51134814f41c3d3a06291e0332d",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 10162.194985184116,
+    "total_transfers": 1,
+    "first_date": 1788878325000,
+    "last_date": 1788878325000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xc6e8c393d46b685c2fb2177f759f2b16eb7a7d54"
+    }
+   }
+  },
+  {
+   "from_address": "0x6f46b69bc560f51134814f41c3d3a06291e0332d",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 7588.706648644424,
+    "total_transfers": 1,
+    "first_date": 1788878431000,
+    "last_date": 1788878431000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xe76a12bcd2f0e6d3db9f9012321642198e6cbd1b"
+    }
+   }
+  },
+  {
+   "from_address": "0x6f46b69bc560f51134814f41c3d3a06291e0332d",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 19.364754289430003,
+    "total_transfers": 1,
+    "first_date": 1788883684000,
+    "last_date": 1788883684000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x385f4f8ae47651ce5f58f5265395a669f8281e18"
+    }
+   }
+  },
+  {
+   "from_address": "0xbdbae060cbab0e9cfe802a7513dd5ecb36cda6c3",
+   "to_address": "0x02e8502b3ef8e1b415d565562753061aca02a4f9",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 0.005067347990787391,
+    "total_transfers": 2,
+    "first_date": 1788191206000,
+    "last_date": 1788277687000,
+    "token_ref": {
+     "id": "ETH_ROBINHOOD"
+    }
+   }
+  },
+  {
+   "from_address": "0xbdbae060cbab0e9cfe802a7513dd5ecb36cda6c3",
+   "to_address": "0x02e8502b3ef8e1b415d565562753061aca02a4f9",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 93652.34636079067,
+    "total_transfers": 1,
+    "first_date": 1788893565000,
+    "last_date": 1788893565000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x98650ab3145285c10a40619402eaa025d277c659"
+    }
+   }
+  },
+  {
+   "from_address": "0x02e8502b3ef8e1b415d565562753061aca02a4f9",
+   "to_address": "0xbdbae060cbab0e9cfe802a7513dd5ecb36cda6c3",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 10.388133,
+    "total_transfers": 1,
+    "first_date": 1788191206000,
+    "last_date": 1788191206000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    }
+   }
+  },
+  {
+   "from_address": "0x02e8502b3ef8e1b415d565562753061aca02a4f9",
+   "to_address": "0xbdbae060cbab0e9cfe802a7513dd5ecb36cda6c3",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 0.006303528064652781,
+    "total_transfers": 1,
+    "first_date": 1788277687000,
+    "last_date": 1788277687000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x322f0929c4625ed5bad873c95208d54e1c003b2d"
+    }
+   }
+  },
+  {
+   "from_address": "0x02e8502b3ef8e1b415d565562753061aca02a4f9",
+   "to_address": "0x000000000000000000000000000000000000dead",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 30000.0,
+    "total_transfers": 2,
+    "first_date": 1788893582000,
+    "last_date": 1788894212000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x98650ab3145285c10a40619402eaa025d277c659"
+    }
+   }
+  },
+  {
+   "from_address": "0xa67d7eb4dc68fa6ce8e34ef8cadaf075b9893fbb",
+   "to_address": "0x02e8502b3ef8e1b415d565562753061aca02a4f9",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 0.009451595947415568,
+    "total_transfers": 1,
+    "first_date": 1785154465000,
+    "last_date": 1785154465000,
+    "token_ref": {
+     "id": "ETH_ROBINHOOD"
+    }
+   }
+  },
+  {
+   "from_address": "0xf70da97812cb96acdf810712aa562db8dfa3dbef",
+   "to_address": "0x02e8502b3ef8e1b415d565562753061aca02a4f9",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 2.939222,
+    "total_transfers": 1,
+    "first_date": 1776036215000,
+    "last_date": 1776036215000,
+    "token_ref": {
+     "chain": "eth",
+     "address": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+    }
+   }
+  },
+  {
+   "from_address": "0xa67d7eb4dc68fa6ce8e34ef8cadaf075b9893fbb",
+   "to_address": "0x02e8502b3ef8e1b415d565562753061aca02a4f9",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 10.394226,
+    "total_transfers": 1,
+    "first_date": 1767384731000,
+    "last_date": 1767384731000,
+    "token_ref": {
+     "chain": "polygon",
+     "address": "0x2791bca1f2de4661ed88a30c99a7a9449aa84174"
+    }
+   }
+  },
+  {
+   "from_address": "0xf70da97812cb96acdf810712aa562db8dfa3dbef",
+   "to_address": "0x02e8502b3ef8e1b415d565562753061aca02a4f9",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 38.00461561668682,
+    "total_transfers": 1,
+    "first_date": 1763993060000,
+    "last_date": 1763993060000,
+    "token_ref": {
+     "chain": "bsc",
+     "address": "0x55d398326f99059ff775485246999027b3197955"
+    }
+   }
+  },
+  {
+   "from_address": "0x02e8502b3ef8e1b415d565562753061aca02a4f9",
+   "to_address": "0xf70da97812cb96acdf810712aa562db8dfa3dbef",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 74.62208193859499,
+    "total_transfers": 2,
+    "first_date": 1763993053000,
+    "last_date": 1763993147000,
+    "token_ref": {
+     "chain": "bsc",
+     "address": "0x55d398326f99059ff775485246999027b3197955"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x9b52386b1f6b9d66df76f6aa3ddfe29fadda5a02",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 843.5814524155562,
+    "total_transfers": 1,
+    "first_date": 1788843067000,
+    "last_date": 1788843067000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x2f36ba966bf29f702bb290245406a5b0e3e1a66e"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x9b52386b1f6b9d66df76f6aa3ddfe29fadda5a02",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 14376.197578805739,
+    "total_transfers": 1,
+    "first_date": 1788864401000,
+    "last_date": 1788864401000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xbee455b5cd3a84b03871c779b018e7959be15bab"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x9b52386b1f6b9d66df76f6aa3ddfe29fadda5a02",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 6367.442633409966,
+    "total_transfers": 2,
+    "first_date": 1788876422000,
+    "last_date": 1788876567000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xd79eb5d4edf7bd843eef5109f1a1ff5c96b17948"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x9b52386b1f6b9d66df76f6aa3ddfe29fadda5a02",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 50313.64137177716,
+    "total_transfers": 1,
+    "first_date": 1788894156000,
+    "last_date": 1788894156000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x98650ab3145285c10a40619402eaa025d277c659"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x9b52386b1f6b9d66df76f6aa3ddfe29fadda5a02",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 2371.347437979592,
+    "total_transfers": 1,
+    "first_date": 1789129523000,
+    "last_date": 1789129523000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x63ee32ac3077d1fbd8a77ebba2a6ed4b8e9c1e18"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x9b52386b1f6b9d66df76f6aa3ddfe29fadda5a02",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 6283.148196266893,
+    "total_transfers": 1,
+    "first_date": 1789245849000,
+    "last_date": 1789245849000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x462dff4be800c77a61e69dc2ea6010e4237f674d"
+    }
+   }
+  },
+  {
+   "from_address": "0x9b52386b1f6b9d66df76f6aa3ddfe29fadda5a02",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 843.5814524155562,
+    "total_transfers": 1,
+    "first_date": 1788843477000,
+    "last_date": 1788843477000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x2f36ba966bf29f702bb290245406a5b0e3e1a66e"
+    }
+   }
+  },
+  {
+   "from_address": "0x9b52386b1f6b9d66df76f6aa3ddfe29fadda5a02",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 14376.197578805739,
+    "total_transfers": 4,
+    "first_date": 1788865493000,
+    "last_date": 1788870172000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xbee455b5cd3a84b03871c779b018e7959be15bab"
+    }
+   }
+  },
+  {
+   "from_address": "0x9b52386b1f6b9d66df76f6aa3ddfe29fadda5a02",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 6367.442633409966,
+    "total_transfers": 1,
+    "first_date": 1788878381000,
+    "last_date": 1788878381000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xd79eb5d4edf7bd843eef5109f1a1ff5c96b17948"
+    }
+   }
+  },
+  {
+   "from_address": "0x9b52386b1f6b9d66df76f6aa3ddfe29fadda5a02",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 2371.347437979592,
+    "total_transfers": 1,
+    "first_date": 1789138730000,
+    "last_date": 1789138730000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x63ee32ac3077d1fbd8a77ebba2a6ed4b8e9c1e18"
+    }
+   }
+  },
+  {
+   "from_address": "0x9b52386b1f6b9d66df76f6aa3ddfe29fadda5a02",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 6283.148196266893,
+    "total_transfers": 1,
+    "first_date": 1789273902000,
+    "last_date": 1789273902000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x462dff4be800c77a61e69dc2ea6010e4237f674d"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0xf08ad284b5f314f1db27a5c327396cf6b6f028d2",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 0.014744353829385817,
+    "total_transfers": 3,
+    "first_date": 1784642688000,
+    "last_date": 1784643665000,
+    "token_ref": {
+     "id": "ETH_ROBINHOOD"
+    }
+   }
+  },
+  {
+   "from_address": "0xf70da97812cb96acdf810712aa562db8dfa3dbef",
+   "to_address": "0x19ef3292daa447655fc0bfd78059ea9bc5f58804",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 9.751253,
+    "total_transfers": 1,
+    "first_date": 1784042567000,
+    "last_date": 1784042567000,
+    "token_ref": {
+     "chain": "eth",
+     "address": "0xe343167631d89b6ffc58b88d6b7fb0228795491d"
+    }
+   }
+  },
+  {
+   "from_address": "0xf70da97812cb96acdf810712aa562db8dfa3dbef",
+   "to_address": "0x19ef3292daa447655fc0bfd78059ea9bc5f58804",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 0.01024105062774294,
+    "total_transfers": 1,
+    "first_date": 1784216882000,
+    "last_date": 1784216882000,
+    "token_ref": {
+     "id": "ETH_ROBINHOOD"
+    }
+   }
+  },
+  {
+   "from_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "to_address": "0x19ef3292daa447655fc0bfd78059ea9bc5f58804",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 6698885.014079501,
+    "total_transfers": 1,
+    "first_date": 1784561335000,
+    "last_date": 1784561335000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x970078468807853bc316432e745165eb34398ba3"
+    }
+   }
+  },
+  {
+   "from_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "to_address": "0x19ef3292daa447655fc0bfd78059ea9bc5f58804",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 21401.702056930848,
+    "total_transfers": 1,
+    "first_date": 1784650640000,
+    "last_date": 1784650640000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x5f18b02b8320ef1c5b7d7a5a8bad482a767f4716"
+    }
+   }
+  },
+  {
+   "from_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "to_address": "0x19ef3292daa447655fc0bfd78059ea9bc5f58804",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 25409.601823056706,
+    "total_transfers": 2,
+    "first_date": 1784743177000,
+    "last_date": 1784831845000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x58d0d7fdb00855dfffb387481b115baf6ba28127"
+    }
+   }
+  },
+  {
+   "from_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "to_address": "0x19ef3292daa447655fc0bfd78059ea9bc5f58804",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 1249.767531749529,
+    "total_transfers": 1,
+    "first_date": 1784829582000,
+    "last_date": 1784829582000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x92d176ccbeeffecd8089e841d09ea17b6c22d969"
+    }
+   }
+  },
+  {
+   "from_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "to_address": "0x19ef3292daa447655fc0bfd78059ea9bc5f58804",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 426.3636842610036,
+    "total_transfers": 1,
+    "first_date": 1784832118000,
+    "last_date": 1784832118000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x8ff92566f2e81bdd68edfaa8cde73942a723796b"
+    }
+   }
+  },
+  {
+   "from_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "to_address": "0x19ef3292daa447655fc0bfd78059ea9bc5f58804",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 8345.572883915858,
+    "total_transfers": 2,
+    "first_date": 1784936920000,
+    "last_date": 1784937667000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x50832d74a7160e2f7d361f5e678e107d228b9aa6"
+    }
+   }
+  },
+  {
+   "from_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "to_address": "0x19ef3292daa447655fc0bfd78059ea9bc5f58804",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 1408.875862003816,
+    "total_transfers": 1,
+    "first_date": 1784942050000,
+    "last_date": 1784942050000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x56910d4409f3a0c78c64dd8d0545ff0705389870"
+    }
+   }
+  },
+  {
+   "from_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "to_address": "0x19ef3292daa447655fc0bfd78059ea9bc5f58804",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 7873233.231692079,
+    "total_transfers": 1,
+    "first_date": 1785515291000,
+    "last_date": 1785515291000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xa3b6aee90017b72c0812dc1e013de70eb2917ba3"
+    }
+   }
+  },
+  {
+   "from_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "to_address": "0x19ef3292daa447655fc0bfd78059ea9bc5f58804",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 225.73661751923115,
+    "total_transfers": 1,
+    "first_date": 1785611509000,
+    "last_date": 1785611509000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x020bfc650a365f8bb26819deaabf3e21291018b4"
+    }
+   }
+  },
+  {
+   "from_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "to_address": "0x19ef3292daa447655fc0bfd78059ea9bc5f58804",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 1159.8211364308304,
+    "total_transfers": 1,
+    "first_date": 1785980554000,
+    "last_date": 1785980554000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x385b36ff682ab4c76e7c37a66b96aabc466471d5"
+    }
+   }
+  },
+  {
+   "from_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "to_address": "0x19ef3292daa447655fc0bfd78059ea9bc5f58804",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 2638.3057570992337,
+    "total_transfers": 1,
+    "first_date": 1787326881000,
+    "last_date": 1787326881000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xd928a068d2b90798373a470c9d9ba562322acdef"
+    }
+   }
+  },
+  {
+   "from_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "to_address": "0x19ef3292daa447655fc0bfd78059ea9bc5f58804",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 22788.3211856901,
+    "total_transfers": 1,
+    "first_date": 1787335239000,
+    "last_date": 1787335239000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x08a5d78a4bc7754e8aff87b4509e007baeb685f3"
+    }
+   }
+  },
+  {
+   "from_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "to_address": "0x19ef3292daa447655fc0bfd78059ea9bc5f58804",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 291.89899884603216,
+    "total_transfers": 1,
+    "first_date": 1787410291000,
+    "last_date": 1787410291000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x5f038759f6de38fd3a85c0440daff1240238bac8"
+    }
+   }
+  },
+  {
+   "from_address": "0x6e2a35a7ad683cf634d91492d73bb7ff774c6919",
+   "to_address": "0x19ef3292daa447655fc0bfd78059ea9bc5f58804",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 372.374136,
+    "total_transfers": 38,
+    "first_date": 1787580284000,
+    "last_date": 1788965492000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    }
+   }
+  },
+  {
+   "from_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "to_address": "0x19ef3292daa447655fc0bfd78059ea9bc5f58804",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 3880.925330948803,
+    "total_transfers": 1,
+    "first_date": 1787675109000,
+    "last_date": 1787675109000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x43eea882b845a8493152ebc55cf30ae9281b02d5"
+    }
+   }
+  },
+  {
+   "from_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "to_address": "0x19ef3292daa447655fc0bfd78059ea9bc5f58804",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 4149.339901734541,
+    "total_transfers": 1,
+    "first_date": 1787682024000,
+    "last_date": 1787682024000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xfe7e19cbce2f896c6c528bc355baf5a768291e18"
+    }
+   }
+  },
+  {
+   "from_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "to_address": "0x19ef3292daa447655fc0bfd78059ea9bc5f58804",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 4790.169173535899,
+    "total_transfers": 1,
+    "first_date": 1787682067000,
+    "last_date": 1787682067000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x7168563b0e70124f0c7c0cf2f13a8d1861baf4a5"
+    }
+   }
+  },
+  {
+   "from_address": "0x6e2a35a7ad683cf634d91492d73bb7ff774c6919",
+   "to_address": "0x19ef3292daa447655fc0bfd78059ea9bc5f58804",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 0.45696103813718314,
+    "total_transfers": 228,
+    "first_date": 1787721064000,
+    "last_date": 1790194112000,
+    "token_ref": {
+     "id": "ETH_ROBINHOOD"
+    }
+   }
+  },
+  {
+   "from_address": "0x19ef3292daa447655fc0bfd78059ea9bc5f58804",
+   "to_address": "0x6e2a35a7ad683cf634d91492d73bb7ff774c6919",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 0.4235000000000003,
+    "total_transfers": 268,
+    "first_date": 1787673857000,
+    "last_date": 1790193977000,
+    "token_ref": {
+     "id": "ETH_ROBINHOOD"
+    }
+   }
+  },
+  {
+   "from_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "to_address": "0x19ef3292daa447655fc0bfd78059ea9bc5f58804",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 3625.7835475555617,
+    "total_transfers": 1,
+    "first_date": 1788136550000,
+    "last_date": 1788136550000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x9936403a9cc72cf306063e3496ea387428a3aecd"
+    }
+   }
+  },
+  {
+   "from_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "to_address": "0x19ef3292daa447655fc0bfd78059ea9bc5f58804",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 746.3955175561116,
+    "total_transfers": 1,
+    "first_date": 1788191147000,
+    "last_date": 1788191147000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x6b1d42927b1a84ec28fa88d4fc6fa7af404966be"
+    }
+   }
+  },
+  {
+   "from_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "to_address": "0x19ef3292daa447655fc0bfd78059ea9bc5f58804",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 44986.112086426816,
+    "total_transfers": 2,
+    "first_date": 1788273820000,
+    "last_date": 1788274611000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x12d5ee7917ca430073c3a638ee1e6f0648a98a01"
+    }
+   }
+  },
+  {
+   "from_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "to_address": "0x19ef3292daa447655fc0bfd78059ea9bc5f58804",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 1267852.3977412372,
+    "total_transfers": 14,
+    "first_date": 1788809320000,
+    "last_date": 1789002175000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x7163ae1b5aea2f09ebc609c52b4dcac0a7a4bc2d"
+    }
+   }
+  },
+  {
+   "from_address": "0x96f80ab98d16887bf375e19202b3e1f3598cecb1",
+   "to_address": "0x19ef3292daa447655fc0bfd78059ea9bc5f58804",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 211103.9843826915,
+    "total_transfers": 2,
+    "first_date": 1788893064000,
+    "last_date": 1788893065000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x98650ab3145285c10a40619402eaa025d277c659"
+    }
+   }
+  },
+  {
+   "from_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "to_address": "0x19ef3292daa447655fc0bfd78059ea9bc5f58804",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 62203.36895211459,
+    "total_transfers": 3,
+    "first_date": 1788895787000,
+    "last_date": 1789044255000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xb22a893a4afdce12871e61229130490f9422b5b6"
+    }
+   }
+  },
+  {
+   "from_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "to_address": "0x19ef3292daa447655fc0bfd78059ea9bc5f58804",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 3215.804653648837,
+    "total_transfers": 1,
+    "first_date": 1788913717000,
+    "last_date": 1788913717000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x80baa4b3bfac6f4978700df824b1b3d98e889136"
+    }
+   }
+  },
+  {
+   "from_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "to_address": "0xe5e702641ea86f4ae6cc3cdaed2b886f976be044",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 0.5202070028187298,
+    "total_transfers": 56,
+    "first_date": 1785866942000,
+    "last_date": 1785866956000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xd0601ce157db5bdc3162bbac2a2c8af5320d9eec"
+    }
+   }
+  },
+  {
+   "from_address": "0xf70da97812cb96acdf810712aa562db8dfa3dbef",
+   "to_address": "0x889bc36ebce89d1e1312291174783e29f6b47055",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 2.949930822097116,
+    "total_transfers": 8,
+    "first_date": 1761912029000,
+    "last_date": 1788360757000,
+    "token_ref": {
+     "id": "ETH_BASE"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x889bc36ebce89d1e1312291174783e29f6b47055",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 2.930174703187575,
+    "total_transfers": 1,
+    "first_date": 1788360808000,
+    "last_date": 1788360808000,
+    "token_ref": {
+     "id": "ETH_ROBINHOOD"
+    }
+   }
+  },
+  {
+   "from_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "to_address": "0x889bc36ebce89d1e1312291174783e29f6b47055",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 0.008550682649705786,
+    "total_transfers": 1,
+    "first_date": 1788362850000,
+    "last_date": 1788362850000,
+    "token_ref": {
+     "id": "ETH_ROBINHOOD"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x8193a4fc28cdb7aa4bb0c02f48eccf98a7e495c0",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 26257.55418529478,
+    "total_transfers": 1,
+    "first_date": 1787336037000,
+    "last_date": 1787336037000,
+    "token_ref": {
+     "chain": "base",
+     "address": "0xb3b32f9f8827d4634fe7d973fa1034ec9fddb3b3"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x8193a4fc28cdb7aa4bb0c02f48eccf98a7e495c0",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 178756.36057976048,
+    "total_transfers": 4,
+    "first_date": 1787336380000,
+    "last_date": 1787808686000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x315a404872ae8d4fad6939461a4ab0b691817777"
+    }
+   }
+  },
+  {
+   "from_address": "0xf70da97812cb96acdf810712aa562db8dfa3dbef",
+   "to_address": "0x8193a4fc28cdb7aa4bb0c02f48eccf98a7e495c0",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 0.00020305,
+    "total_transfers": 1,
+    "first_date": 1787337895000,
+    "last_date": 1787337895000,
+    "token_ref": {
+     "chain": "base",
+     "address": "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x8193a4fc28cdb7aa4bb0c02f48eccf98a7e495c0",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 88.13595009974432,
+    "total_transfers": 1,
+    "first_date": 1787338841000,
+    "last_date": 1787338841000,
+    "token_ref": {
+     "chain": "base",
+     "address": "0xb2000000000000000000004c27f6523082f41d01"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x8193a4fc28cdb7aa4bb0c02f48eccf98a7e495c0",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 17622.17365224585,
+    "total_transfers": 1,
+    "first_date": 1787649081000,
+    "last_date": 1787649081000,
+    "token_ref": {
+     "chain": "bsc",
+     "address": "0x2ab8a4dd2191989ac2898006df350b236d2b7777"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x8193a4fc28cdb7aa4bb0c02f48eccf98a7e495c0",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 93.4359850050646,
+    "total_transfers": 1,
+    "first_date": 1787774917000,
+    "last_date": 1787774917000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x39dbed3a2bd333467115de45665cc57f813c4571"
+    }
+   }
+  },
+  {
+   "from_address": "0x8193a4fc28cdb7aa4bb0c02f48eccf98a7e495c0",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 26136.8653421633,
+    "total_transfers": 1,
+    "first_date": 1787337853000,
+    "last_date": 1787337853000,
+    "token_ref": {
+     "chain": "base",
+     "address": "0xb3b32f9f8827d4634fe7d973fa1034ec9fddb3b3"
+    }
+   }
+  },
+  {
+   "from_address": "0x8193a4fc28cdb7aa4bb0c02f48eccf98a7e495c0",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 178754.7522851178,
+    "total_transfers": 4,
+    "first_date": 1787338647000,
+    "last_date": 1787935911000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x315a404872ae8d4fad6939461a4ab0b691817777"
+    }
+   }
+  },
+  {
+   "from_address": "0x8193a4fc28cdb7aa4bb0c02f48eccf98a7e495c0",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 88.0392403471,
+    "total_transfers": 1,
+    "first_date": 1787339117000,
+    "last_date": 1787339117000,
+    "token_ref": {
+     "chain": "base",
+     "address": "0xb2000000000000000000004c27f6523082f41d01"
+    }
+   }
+  },
+  {
+   "from_address": "0x8193a4fc28cdb7aa4bb0c02f48eccf98a7e495c0",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 93.36899237,
+    "total_transfers": 1,
+    "first_date": 1787934819000,
+    "last_date": 1787934819000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x39dbed3a2bd333467115de45665cc57f813c4571"
+    }
+   }
+  },
+  {
+   "from_address": "0x8193a4fc28cdb7aa4bb0c02f48eccf98a7e495c0",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 17598.0692851934,
+    "total_transfers": 1,
+    "first_date": 1787935892000,
+    "last_date": 1787935892000,
+    "token_ref": {
+     "chain": "bsc",
+     "address": "0x2ab8a4dd2191989ac2898006df350b236d2b7777"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x8193a4fc28cdb7aa4bb0c02f48eccf98a7e495c0",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 1097353.2540495172,
+    "total_transfers": 1,
+    "first_date": 1788894184000,
+    "last_date": 1788894184000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x98650ab3145285c10a40619402eaa025d277c659"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x8193a4fc28cdb7aa4bb0c02f48eccf98a7e495c0",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 38145.523592812664,
+    "total_transfers": 1,
+    "first_date": 1788894259000,
+    "last_date": 1788894259000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xe2324ff2a59f8ecba8c321c6466e59121c00e795"
+    }
+   }
+  },
+  {
+   "from_address": "0x8193a4fc28cdb7aa4bb0c02f48eccf98a7e495c0",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 1097141.8813635295,
+    "total_transfers": 1,
+    "first_date": 1788894208000,
+    "last_date": 1788894208000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x98650ab3145285c10a40619402eaa025d277c659"
+    }
+   }
+  },
+  {
+   "from_address": "0x8193a4fc28cdb7aa4bb0c02f48eccf98a7e495c0",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 38054.968287526404,
+    "total_transfers": 1,
+    "first_date": 1788894843000,
+    "last_date": 1788894843000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xe2324ff2a59f8ecba8c321c6466e59121c00e795"
+    }
+   }
+  },
+  {
+   "from_address": "0x3c1f0eb730933d9009fe3e068ac860c5cc3f4d40",
+   "to_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 43890.926388,
+    "total_transfers": 1,
+    "first_date": 1790238958000,
+    "last_date": 1790238958000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xe44951407d2ed8e73dce4b7002908732bc0d0bc3"
+    }
+   }
+  },
+  {
+   "from_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "to_address": "0x3c1f0eb730933d9009fe3e068ac860c5cc3f4d40",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 77280.3463545678,
+    "total_transfers": 2,
+    "first_date": 1789925427000,
+    "last_date": 1789925513000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x95b551c94a2457b597e4838457effb4731880411"
+    }
+   }
+  },
+  {
+   "from_address": "0x6e2a35a7ad683cf634d91492d73bb7ff774c6919",
+   "to_address": "0x3c1f0eb730933d9009fe3e068ac860c5cc3f4d40",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 0.566506051770854,
+    "total_transfers": 68,
+    "first_date": 1788397059000,
+    "last_date": 1789658550000,
+    "token_ref": {
+     "id": "ETH_ROBINHOOD"
+    }
+   }
+  },
+  {
+   "from_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "to_address": "0x3c1f0eb730933d9009fe3e068ac860c5cc3f4d40",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 16150.538972397726,
+    "total_transfers": 1,
+    "first_date": 1788595850000,
+    "last_date": 1788595850000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x7ad7b2256ffcf7c6f7c7d95cf238d2ecc2c485e0"
+    }
+   }
+  },
+  {
+   "from_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "to_address": "0x3c1f0eb730933d9009fe3e068ac860c5cc3f4d40",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 22834.519571961835,
+    "total_transfers": 1,
+    "first_date": 1788651904000,
+    "last_date": 1788651904000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xe2dae1c072b9f66bed999873b94798b2152af7e1"
+    }
+   }
+  },
+  {
+   "from_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "to_address": "0x3c1f0eb730933d9009fe3e068ac860c5cc3f4d40",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 49074.126295215414,
+    "total_transfers": 1,
+    "first_date": 1788813125000,
+    "last_date": 1788813125000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x319c5b3f8e46b70cb00769bc8020b4c08ddbc182"
+    }
+   }
+  },
+  {
+   "from_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "to_address": "0x3c1f0eb730933d9009fe3e068ac860c5cc3f4d40",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 36993.37184648099,
+    "total_transfers": 3,
+    "first_date": 1788866590000,
+    "last_date": 1788869360000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xbee455b5cd3a84b03871c779b018e7959be15bab"
+    }
+   }
+  },
+  {
+   "from_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "to_address": "0x3c1f0eb730933d9009fe3e068ac860c5cc3f4d40",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 609745.0194219145,
+    "total_transfers": 1,
+    "first_date": 1788893221000,
+    "last_date": 1788893221000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x98650ab3145285c10a40619402eaa025d277c659"
+    }
+   }
+  },
+  {
+   "from_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "to_address": "0x3c1f0eb730933d9009fe3e068ac860c5cc3f4d40",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 113626.87441361892,
+    "total_transfers": 2,
+    "first_date": 1788893860000,
+    "last_date": 1788893971000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x3ba500f1ababbcf0f0247d06d1c56fd7e6c4c09d"
+    }
+   }
+  },
+  {
+   "from_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "to_address": "0x3c1f0eb730933d9009fe3e068ac860c5cc3f4d40",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 157061.67068262762,
+    "total_transfers": 1,
+    "first_date": 1788901874000,
+    "last_date": 1788901874000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xef1c38c830cdb23e5783e574f28e5633c9711f8e"
+    }
+   }
+  },
+  {
+   "from_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "to_address": "0x3c1f0eb730933d9009fe3e068ac860c5cc3f4d40",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 13156.307416941523,
+    "total_transfers": 1,
+    "first_date": 1789157343000,
+    "last_date": 1789157343000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xba527c23903eff094a987197ccd643f2da76e4ff"
+    }
+   }
+  },
+  {
+   "from_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "to_address": "0x3c1f0eb730933d9009fe3e068ac860c5cc3f4d40",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 6282.893423341949,
+    "total_transfers": 1,
+    "first_date": 1789177427000,
+    "last_date": 1789177427000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xe2324ff2a59f8ecba8c321c6466e59121c00e795"
+    }
+   }
+  },
+  {
+   "from_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "to_address": "0x3c1f0eb730933d9009fe3e068ac860c5cc3f4d40",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 64960.15208612507,
+    "total_transfers": 1,
+    "first_date": 1789337427000,
+    "last_date": 1789337427000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x46d7b18f7c0a946298ce7ae400df5384bf5addef"
+    }
+   }
+  },
+  {
+   "from_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "to_address": "0x3c1f0eb730933d9009fe3e068ac860c5cc3f4d40",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 1143812.9761978,
+    "total_transfers": 5,
+    "first_date": 1789406927000,
+    "last_date": 1789408521000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x39dc5d59771bd73f9e3658b0da27578ece2b783a"
+    }
+   }
+  },
+  {
+   "from_address": "0x3c1f0eb730933d9009fe3e068ac860c5cc3f4d40",
+   "to_address": "0x6e2a35a7ad683cf634d91492d73bb7ff774c6919",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 0.009986418470879605,
+    "total_transfers": 1,
+    "first_date": 1788892051000,
+    "last_date": 1788892051000,
+    "token_ref": {
+     "id": "ETH_ROBINHOOD"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0xadfde71729b41911d665d69cbee8ea2f9a71a27c",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 54.659178452576406,
+    "total_transfers": 1,
+    "first_date": 1783592616000,
+    "last_date": 1783592616000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x020bfc650a365f8bb26819deaabf3e21291018b4"
+    }
+   }
+  },
+  {
+   "from_address": "0xf70da97812cb96acdf810712aa562db8dfa3dbef",
+   "to_address": "0xadfde71729b41911d665d69cbee8ea2f9a71a27c",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 0.0038058957238724005,
+    "total_transfers": 2,
+    "first_date": 1783602031000,
+    "last_date": 1783916022000,
+    "token_ref": {
+     "id": "ETH_ROBINHOOD"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0xadfde71729b41911d665d69cbee8ea2f9a71a27c",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 14557.514015090239,
+    "total_transfers": 1,
+    "first_date": 1783717345000,
+    "last_date": 1783717345000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xc0b57404486bae3decd0f47c49406214a303dac8"
+    }
+   }
+  },
+  {
+   "from_address": "0xf70da97812cb96acdf810712aa562db8dfa3dbef",
+   "to_address": "0xadfde71729b41911d665d69cbee8ea2f9a71a27c",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 149.99589071662575,
+    "total_transfers": 3,
+    "first_date": 1783781674000,
+    "last_date": 1783781744000,
+    "token_ref": {
+     "chain": "bsc",
+     "address": "0x55d398326f99059ff775485246999027b3197955"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0xadfde71729b41911d665d69cbee8ea2f9a71a27c",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 100263.43921050342,
+    "total_transfers": 1,
+    "first_date": 1783781780000,
+    "last_date": 1783781780000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x75c8258eaa6d0f94b82951194191ca3efb0bcbe2"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0xadfde71729b41911d665d69cbee8ea2f9a71a27c",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 18.36517914248051,
+    "total_transfers": 1,
+    "first_date": 1783792118000,
+    "last_date": 1783792118000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xc6911796042b15d7fa4f6cde69e245ddcd3d9c31"
+    }
+   }
+  },
+  {
+   "from_address": "0xa67d7eb4dc68fa6ce8e34ef8cadaf075b9893fbb",
+   "to_address": "0xadfde71729b41911d665d69cbee8ea2f9a71a27c",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 0.015258362425412397,
+    "total_transfers": 4,
+    "first_date": 1783909423000,
+    "last_date": 1783912991000,
+    "token_ref": {
+     "id": "ETH_ROBINHOOD"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0xadfde71729b41911d665d69cbee8ea2f9a71a27c",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 512.9155801865894,
+    "total_transfers": 1,
+    "first_date": 1783911333000,
+    "last_date": 1783911333000,
+    "token_ref": {
+     "chain": "bsc",
+     "address": "0x7a848a5a8169aa6a2f603d056a749f924f504444"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0xadfde71729b41911d665d69cbee8ea2f9a71a27c",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 3451.6753504815197,
+    "total_transfers": 1,
+    "first_date": 1783920623000,
+    "last_date": 1783920623000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x2103faa9d1762e27a716c61718b3acf3ec1f9bf1"
+    }
+   }
+  },
+  {
+   "from_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "to_address": "0x00000000cf1cd5867be5d90b99a6ebd683bc031c",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 28211.77113259583,
+    "total_transfers": 26,
+    "first_date": 1784113114000,
+    "last_date": 1784213788000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x020bfc650a365f8bb26819deaabf3e21291018b4"
+    }
+   }
+  },
+  {
+   "from_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "to_address": "0x00000000cf1cd5867be5d90b99a6ebd683bc031c",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 561.6806731215498,
+    "total_transfers": 1,
+    "first_date": 1784196199000,
+    "last_date": 1784196199000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x45242320dbb855eea8fd36804c6487e10e97fcf9"
+    }
+   }
+  },
+  {
+   "from_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "to_address": "0x00000000cf1cd5867be5d90b99a6ebd683bc031c",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 8214.177659192681,
+    "total_transfers": 1,
+    "first_date": 1784197187000,
+    "last_date": 1784197187000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xf444f3c77c77a33f7c8d8fcab8a1e88afb843da5"
+    }
+   }
+  },
+  {
+   "from_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "to_address": "0x00000000cf1cd5867be5d90b99a6ebd683bc031c",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 37235.153284997556,
+    "total_transfers": 1,
+    "first_date": 1784210732000,
+    "last_date": 1784210732000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x8ff92566f2e81bdd68edfaa8cde73942a723796b"
+    }
+   }
+  },
+  {
+   "from_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "to_address": "0x00000000cf1cd5867be5d90b99a6ebd683bc031c",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 4427.497695382853,
+    "total_transfers": 1,
+    "first_date": 1784215333000,
+    "last_date": 1784215333000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x2103faa9d1762e27a716c61718b3acf3ec1f9bf1"
+    }
+   }
+  },
+  {
+   "from_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "to_address": "0x65050a9b7e5075a2ba5ced7b1b64ee66262c40dc",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 0.040732,
+    "total_transfers": 6,
+    "first_date": 1783049462000,
+    "last_date": 1783062161000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    }
+   }
+  },
+  {
+   "from_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "to_address": "0x65050a9b7e5075a2ba5ced7b1b64ee66262c40dc",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 0.001201775874303297,
+    "total_transfers": 1,
+    "first_date": 1783063150000,
+    "last_date": 1783063150000,
+    "token_ref": {
+     "id": "ETH_ROBINHOOD"
+    }
+   }
+  },
+  {
+   "from_address": "0x65050a9b7e5075a2ba5ced7b1b64ee66262c40dc",
+   "to_address": "0x96f80ab98d16887bf375e19202b3e1f3598cecb1",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 3.973046478034722,
+    "total_transfers": 94,
+    "first_date": 1788893049000,
+    "last_date": 1788893153000,
+    "token_ref": {
+     "id": "ETH_ROBINHOOD"
+    }
+   }
+  },
+  {
+   "from_address": "0x65050a9b7e5075a2ba5ced7b1b64ee66262c40dc",
+   "to_address": "0x96f80ab98d16887bf375e19202b3e1f3598cecb1",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 99404840.42941448,
+    "total_transfers": 38,
+    "first_date": 1788893062000,
+    "last_date": 1788893151000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x98650ab3145285c10a40619402eaa025d277c659"
+    }
+   }
+  },
+  {
+   "from_address": "0x96f80ab98d16887bf375e19202b3e1f3598cecb1",
+   "to_address": "0x65050a9b7e5075a2ba5ced7b1b64ee66262c40dc",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 297390425.8460017,
+    "total_transfers": 93,
+    "first_date": 1788893049000,
+    "last_date": 1788893153000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x98650ab3145285c10a40619402eaa025d277c659"
+    }
+   }
+  },
+  {
+   "from_address": "0x96f80ab98d16887bf375e19202b3e1f3598cecb1",
+   "to_address": "0x65050a9b7e5075a2ba5ced7b1b64ee66262c40dc",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 1.366266302252753,
+    "total_transfers": 40,
+    "first_date": 1788893062000,
+    "last_date": 1788893153000,
+    "token_ref": {
+     "id": "ETH_ROBINHOOD"
+    }
+   }
+  },
+  {
+   "from_address": "0xf70da97812cb96acdf810712aa562db8dfa3dbef",
+   "to_address": "0xa67d7eb4dc68fa6ce8e34ef8cadaf075b9893fbb",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 50000.0,
+    "total_transfers": 1,
+    "first_date": 1765887243000,
+    "last_date": 1765887243000,
+    "token_ref": {
+     "chain": "base",
+     "address": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913"
+    }
+   }
+  },
+  {
+   "from_address": "0xf70da97812cb96acdf810712aa562db8dfa3dbef",
+   "to_address": "0xa67d7eb4dc68fa6ce8e34ef8cadaf075b9893fbb",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 15.000000000000002,
+    "total_transfers": 1,
+    "first_date": 1765887243000,
+    "last_date": 1765887243000,
+    "token_ref": {
+     "id": "ETH_BASE"
+    }
+   }
+  },
+  {
+   "from_address": "0xf70da97812cb96acdf810712aa562db8dfa3dbef",
+   "to_address": "0xa67d7eb4dc68fa6ce8e34ef8cadaf075b9893fbb",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 2.0,
+    "total_transfers": 1,
+    "first_date": 1765887671000,
+    "last_date": 1765887671000,
+    "token_ref": {
+     "id": "ETH"
+    }
+   }
+  },
+  {
+   "from_address": "0xf70da97812cb96acdf810712aa562db8dfa3dbef",
+   "to_address": "0xa67d7eb4dc68fa6ce8e34ef8cadaf075b9893fbb",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 5000.0,
+    "total_transfers": 1,
+    "first_date": 1765887671000,
+    "last_date": 1765887671000,
+    "token_ref": {
+     "chain": "eth",
+     "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+    }
+   }
+  },
+  {
+   "from_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "to_address": "0xbdbae060cbab0e9cfe802a7513dd5ecb36cda6c3",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 0.06160548992174728,
+    "total_transfers": 1,
+    "first_date": 1783685307000,
+    "last_date": 1783685307000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xd0601ce157db5bdc3162bbac2a2c8af5320d9eec"
+    }
+   }
+  },
+  {
+   "from_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "to_address": "0xbdbae060cbab0e9cfe802a7513dd5ecb36cda6c3",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 1.783590026308395,
+    "total_transfers": 1,
+    "first_date": 1783690741000,
+    "last_date": 1783690741000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x5d3a1ff2b6bab83b63cd9ad0787074081a52ef34"
+    }
+   }
+  },
+  {
+   "from_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "to_address": "0xbdbae060cbab0e9cfe802a7513dd5ecb36cda6c3",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 3.56405,
+    "total_transfers": 1,
+    "first_date": 1783742708000,
+    "last_date": 1783742708000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    }
+   }
+  },
+  {
+   "from_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "to_address": "0xbdbae060cbab0e9cfe802a7513dd5ecb36cda6c3",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 0.000554760829553902,
+    "total_transfers": 1,
+    "first_date": 1783752010000,
+    "last_date": 1783752010000,
+    "token_ref": {
+     "id": "ETH_ROBINHOOD"
+    }
+   }
+  },
+  {
+   "from_address": "0x2221ccd226712a1968a65918524a48b4c02fc275",
+   "to_address": "0xf70da97812cb96acdf810712aa562db8dfa3dbef",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 11120.838267,
+    "total_transfers": 3,
+    "first_date": 1763547467000,
+    "last_date": 1763563829000,
+    "token_ref": {
+     "chain": "arbitrum",
+     "address": "0xaf88d065e77c8cc2239327c5edb3a432268e5831"
+    }
+   }
+  },
+  {
+   "from_address": "0xd29c85f15df544ba632c9e25829fd29d767d7978",
+   "to_address": "0x2221ccd226712a1968a65918524a48b4c02fc275",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 0.3857276332690109,
+    "total_transfers": 4,
+    "first_date": 1783935154000,
+    "last_date": 1788108319000,
+    "token_ref": {
+     "id": "ETH_ROBINHOOD"
+    }
+   }
+  },
+  {
+   "from_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "to_address": "0x2221ccd226712a1968a65918524a48b4c02fc275",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 8.749669930248805,
+    "total_transfers": 1,
+    "first_date": 1784801721000,
+    "last_date": 1784801721000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xc6911796042b15d7fa4f6cde69e245ddcd3d9c31"
+    }
+   }
+  },
+  {
+   "from_address": "0x2221ccd226712a1968a65918524a48b4c02fc275",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 154.72545488732788,
+    "total_transfers": 2,
+    "first_date": 1784211266000,
+    "last_date": 1784806139000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xc6911796042b15d7fa4f6cde69e245ddcd3d9c31"
+    }
+   }
+  },
+  {
+   "from_address": "0xf70da97812cb96acdf810712aa562db8dfa3dbef",
+   "to_address": "0x211e28c265380608a3b635767c01cc3f56bfcb3b",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 130.477468,
+    "total_transfers": 5,
+    "first_date": 1789063717000,
+    "last_date": 1789580659000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x5fc5360d0400a0fd4f2af552add042d716f1d168"
+    }
+   }
+  },
+  {
+   "from_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "to_address": "0x211e28c265380608a3b635767c01cc3f56bfcb3b",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 126007.69719889823,
+    "total_transfers": 1,
+    "first_date": 1789377831000,
+    "last_date": 1789377831000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0x99b1887e985a985ecb23ac248421eac96cb92492"
+    }
+   }
+  },
+  {
+   "from_address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "to_address": "0x211e28c265380608a3b635767c01cc3f56bfcb3b",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 167242.15731880267,
+    "total_transfers": 1,
+    "first_date": 1789582753000,
+    "last_date": 1789582753000,
+    "token_ref": {
+     "chain": "robinhood",
+     "address": "0xd9510867d59b84ff815d349759a64236f996ff4b"
+    }
+   }
+  },
+  {
+   "from_address": "0x211e28c265380608a3b635767c01cc3f56bfcb3b",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 0.012661518945159999,
+    "total_transfers": 2,
+    "first_date": 1789397486000,
+    "last_date": 1789399904000,
+    "token_ref": {
+     "id": "ETH_ROBINHOOD"
+    }
+   }
+  },
+  {
+   "from_address": "0x211e28c265380608a3b635767c01cc3f56bfcb3b",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 12.439174015134032,
+    "total_transfers": 1,
+    "first_date": 1789582587000,
+    "last_date": 1789582587000,
+    "token_ref": {
+     "id": "USDC_ARC"
+    }
+   }
+  },
+  {
+   "from_address": "0xf70da97812cb96acdf810712aa562db8dfa3dbef",
+   "to_address": "0xb92fe925dc43a0ecde6c8b1a2709c170ec4fff4f",
+   "rel_type": "GROUPED_TRANSFER",
+   "data": {
+    "total_value": 20.199058,
+    "total_transfers": 13,
+    "first_date": 1762510157000,
+    "last_date": 1762513808000,
+    "token_ref": {
+     "chain": "avalanche",
+     "address": "0xb97ef9ef8734c71904d8002f8b6bc66dd9c48a6e"
+    }
+   }
+  }
+ ],
+ "top_holders": [
+  {
+   "address": "0x8366a39cc670b4001a1121b8f6a443a643e40951",
+   "address_details": {
+    "label": "Uniswap: PoolManager",
+    "degree": 425947809,
+    "is_supernode": true,
+    "is_contract": true,
+    "is_cex": false,
+    "is_dex": true,
+    "is_paid_label": false,
+    "entity_id": "uniswap",
+    "inward_relations": 188230055,
+    "outward_relations": 237717754,
+    "first_activity_date": "2026-05-22T21:15:34"
+   },
+   "holder_data": {
+    "amount": 901582760.0831094,
+    "rank": 1,
+    "share": 0.9015827600831092
+   }
+  },
+  {
+   "address": "0x267444d099b10fb5ed7c3cc7b7c767adca574952",
+   "address_details": {
+    "label": null,
+    "degree": 32340,
+    "is_supernode": true,
+    "is_contract": true,
+    "is_cex": false,
+    "is_dex": false,
+    "is_paid_label": false,
+    "entity_id": null,
+    "inward_relations": 32340,
+    "outward_relations": 0,
+    "first_activity_date": "2026-08-04T18:09:02"
+   },
+   "holder_data": {
+    "amount": 81632653.06122449,
+    "rank": 2,
+    "share": 0.08163265306122446
+   }
+  },
+  {
+   "address": "0x5aa0a7269036926dafdb02d8ecb03b51c0d9fbe5",
+   "address_details": {
+    "label": null,
+    "degree": 753,
+    "is_supernode": false,
+    "is_contract": true,
+    "is_cex": false,
+    "is_dex": false,
+    "is_paid_label": false,
+    "entity_id": null,
+    "inward_relations": 651,
+    "outward_relations": 102,
+    "first_activity_date": "2026-07-21T14:23:59"
+   },
+   "holder_data": {
+    "amount": 14279742.128539681,
+    "rank": 3,
+    "share": 0.014279742128539679
+   }
+  },
+  {
+   "address": "0x1111110f0f73c0b2ef09ec012eae758b3e03a902",
+   "address_details": {
+    "label": null,
+    "degree": 751278,
+    "is_supernode": true,
+    "is_contract": false,
+    "is_cex": false,
+    "is_dex": false,
+    "is_paid_label": false,
+    "entity_id": null,
+    "inward_relations": 749373,
+    "outward_relations": 1905,
+    "first_activity_date": "2026-08-28T10:30:39"
+   },
+   "holder_data": {
+    "amount": 585753.4183639128,
+    "rank": 4,
+    "share": 0.0005857534183639127
+   }
+  },
+  {
+   "address": "0x27486fdf520b6c513e2ed2f2aab400897ec9a95e",
+   "address_details": {
+    "label": null,
+    "degree": 894,
+    "is_supernode": false,
+    "is_contract": false,
+    "is_cex": false,
+    "is_dex": false,
+    "is_paid_label": false,
+    "entity_id": null,
+    "inward_relations": 657,
+    "outward_relations": 237,
+    "first_activity_date": "2026-07-12T16:31:42"
+   },
+   "holder_data": {
+    "amount": 306880.0657417115,
+    "rank": 5,
+    "share": 0.00030688006574171143
+   }
+  },
+  {
+   "address": "0xde509a31cab1d0f222b0709346dcc03d9bbb9b9f",
+   "address_details": {
+    "label": null,
+    "degree": 554,
+    "is_supernode": false,
+    "is_contract": false,
+    "is_cex": false,
+    "is_dex": false,
+    "is_paid_label": false,
+    "entity_id": null,
+    "inward_relations": 326,
+    "outward_relations": 228,
+    "first_activity_date": "2026-09-07T10:11:24"
+   },
+   "holder_data": {
+    "amount": 286447.0946791367,
+    "rank": 6,
+    "share": 0.00028644709467913666
+   }
+  },
+  {
+   "address": "0x7e338383f37442d945b9fd784620f88d95646522",
+   "address_details": {
+    "label": null,
+    "degree": 241,
+    "is_supernode": false,
+    "is_contract": false,
+    "is_cex": false,
+    "is_dex": false,
+    "is_paid_label": false,
+    "entity_id": null,
+    "inward_relations": 171,
+    "outward_relations": 70,
+    "first_activity_date": "2026-09-05T13:39:37"
+   },
+   "holder_data": {
+    "amount": 215185.63946448988,
+    "rank": 7,
+    "share": 0.00021518563946448983
+   }
+  },
+  {
+   "address": "0x7a4da9167fa4d1dbc09e8606f05476e1773a1b7b",
+   "address_details": {
+    "label": null,
+    "degree": 296,
+    "is_supernode": false,
+    "is_contract": false,
+    "is_cex": false,
+    "is_dex": false,
+    "is_paid_label": false,
+    "entity_id": null,
+    "inward_relations": 191,
+    "outward_relations": 105,
+    "first_activity_date": "2026-07-27T21:11:59"
+   },
+   "holder_data": {
+    "amount": 197311.9289318836,
+    "rank": 8,
+    "share": 0.00019731192893188354
+   }
+  },
+  {
+   "address": "0x9bd2820b6c966fb13dc105436354b862a6fcdc26",
+   "address_details": {
+    "label": null,
+    "degree": 167,
+    "is_supernode": false,
+    "is_contract": false,
+    "is_cex": false,
+    "is_dex": false,
+    "is_paid_label": false,
+    "entity_id": null,
+    "inward_relations": 86,
+    "outward_relations": 81,
+    "first_activity_date": "2026-09-05T05:08:11"
+   },
+   "holder_data": {
+    "amount": 195444.56425167987,
+    "rank": 9,
+    "share": 0.00019544456425167983
+   }
+  },
+  {
+   "address": "0x1c4a9ac77463756f75eae37d1e4367aac30dcd5e",
+   "address_details": {
+    "label": null,
+    "degree": 143,
+    "is_supernode": false,
+    "is_contract": false,
+    "is_cex": false,
+    "is_dex": false,
+    "is_paid_label": false,
+    "entity_id": null,
+    "inward_relations": 88,
+    "outward_relations": 55,
+    "first_activity_date": "2026-08-26T16:49:18"
+   },
+   "holder_data": {
+    "amount": 179942.04692422558,
+    "rank": 10,
+    "share": 0.0001799420469242255
+   }
+  },
+  {
+   "address": "0xac814f82975de7768ba4ba6e8a8c8c45cac40eb0",
+   "address_details": {
+    "label": null,
+    "degree": 445,
+    "is_supernode": false,
+    "is_contract": false,
+    "is_cex": false,
+    "is_dex": false,
+    "is_paid_label": false,
+    "entity_id": null,
+    "inward_relations": 243,
+    "outward_relations": 202,
+    "first_activity_date": "2026-07-13T16:34:20"
+   },
+   "holder_data": {
+    "amount": 105422.68609158203,
+    "rank": 11,
+    "share": 0.000105422686091582
+   }
+  },
+  {
+   "address": "0x7b80281a6c39b6baac854b62a38547191531d260",
+   "address_details": {
+    "label": null,
+    "degree": 197,
+    "is_supernode": false,
+    "is_contract": false,
+    "is_cex": false,
+    "is_dex": false,
+    "is_paid_label": false,
+    "entity_id": null,
+    "inward_relations": 124,
+    "outward_relations": 73,
+    "first_activity_date": "2026-05-07T19:46:20"
+   },
+   "holder_data": {
+    "amount": 105387.19767022331,
+    "rank": 12,
+    "share": 0.00010538719767022329
+   }
+  },
+  {
+   "address": "0x6f46b69bc560f51134814f41c3d3a06291e0332d",
+   "address_details": {
+    "label": null,
+    "degree": 78,
+    "is_supernode": false,
+    "is_contract": false,
+    "is_cex": false,
+    "is_dex": false,
+    "is_paid_label": false,
+    "entity_id": null,
+    "inward_relations": 54,
+    "outward_relations": 24,
+    "first_activity_date": "2026-08-17T18:52:11"
+   },
+   "holder_data": {
+    "amount": 92189.2633289142,
+    "rank": 13,
+    "share": 9.218926332891417e-05
+   }
+  },
+  {
+   "address": "0x02e8502b3ef8e1b415d565562753061aca02a4f9",
+   "address_details": {
+    "label": null,
+    "degree": 639,
+    "is_supernode": false,
+    "is_contract": false,
+    "is_cex": false,
+    "is_dex": false,
+    "is_paid_label": false,
+    "entity_id": null,
+    "inward_relations": 276,
+    "outward_relations": 363,
+    "first_activity_date": "2025-10-23T14:04:27"
+   },
+   "holder_data": {
+    "amount": 63652.346360790674,
+    "rank": 14,
+    "share": 6.365234636079065e-05
+   }
+  },
+  {
+   "address": "0x9b52386b1f6b9d66df76f6aa3ddfe29fadda5a02",
+   "address_details": {
+    "label": null,
+    "degree": 71,
+    "is_supernode": false,
+    "is_contract": false,
+    "is_cex": false,
+    "is_dex": false,
+    "is_paid_label": false,
+    "entity_id": null,
+    "inward_relations": 42,
+    "outward_relations": 29,
+    "first_activity_date": "2026-09-06T18:13:40"
+   },
+   "holder_data": {
+    "amount": 50313.64137177716,
+    "rank": 15,
+    "share": 5.0313641371777144e-05
+   }
+  },
+  {
+   "address": "0xf08ad284b5f314f1db27a5c327396cf6b6f028d2",
+   "address_details": {
+    "label": null,
+    "degree": 34838,
+    "is_supernode": true,
+    "is_contract": false,
+    "is_cex": false,
+    "is_dex": false,
+    "is_paid_label": false,
+    "entity_id": null,
+    "inward_relations": 17587,
+    "outward_relations": 17251,
+    "first_activity_date": "2026-07-21T14:04:48"
+   },
+   "holder_data": {
+    "amount": 37298.808219207815,
+    "rank": 16,
+    "share": 3.72988082192078e-05
+   }
+  },
+  {
+   "address": "0x000000000000000000000000000000000000dead",
+   "address_details": {
+    "label": "Dead Address",
+    "degree": 402085951,
+    "is_supernode": true,
+    "is_contract": true,
+    "is_cex": false,
+    "is_dex": false,
+    "is_paid_label": false,
+    "entity_id": "burn_address",
+    "inward_relations": 373140001,
+    "outward_relations": 28945950,
+    "first_activity_date": "2016-09-15T11:11:32"
+   },
+   "holder_data": {
+    "amount": 30000.0,
+    "rank": 17,
+    "share": 2.999999999999999e-05
+   }
+  },
+  {
+   "address": "0x19ef3292daa447655fc0bfd78059ea9bc5f58804",
+   "address_details": {
+    "label": null,
+    "degree": 1766,
+    "is_supernode": false,
+    "is_contract": false,
+    "is_cex": false,
+    "is_dex": false,
+    "is_paid_label": false,
+    "entity_id": null,
+    "inward_relations": 997,
+    "outward_relations": 769,
+    "first_activity_date": "2026-07-14T15:22:47"
+   },
+   "holder_data": {
+    "amount": 26891.140015234334,
+    "rank": 18,
+    "share": 2.6891140015234328e-05
+   }
+  },
+  {
+   "address": "0xe5e702641ea86f4ae6cc3cdaed2b886f976be044",
+   "address_details": {
+    "label": null,
+    "degree": 46539811,
+    "is_supernode": true,
+    "is_contract": true,
+    "is_cex": false,
+    "is_dex": false,
+    "is_paid_label": false,
+    "entity_id": null,
+    "inward_relations": 41692384,
+    "outward_relations": 4847427,
+    "first_activity_date": "2026-08-04T18:09:02"
+   },
+   "holder_data": {
+    "amount": 26125.623016685488,
+    "rank": 19,
+    "share": 2.612562301668548e-05
+   }
+  },
+  {
+   "address": "0x889bc36ebce89d1e1312291174783e29f6b47055",
+   "address_details": {
+    "label": null,
+    "degree": 79289,
+    "is_supernode": true,
+    "is_contract": false,
+    "is_cex": false,
+    "is_dex": false,
+    "is_paid_label": false,
+    "entity_id": null,
+    "inward_relations": 46798,
+    "outward_relations": 32491,
+    "first_activity_date": "2025-01-14T20:19:28"
+   },
+   "holder_data": {
+    "amount": 387.89000827545794,
+    "rank": 20,
+    "share": 3.878900082754578e-07
+   }
+  },
+  {
+   "address": "0x8193a4fc28cdb7aa4bb0c02f48eccf98a7e495c0",
+   "address_details": {
+    "label": null,
+    "degree": 57,
+    "is_supernode": false,
+    "is_contract": false,
+    "is_cex": false,
+    "is_dex": false,
+    "is_paid_label": false,
+    "entity_id": null,
+    "inward_relations": 43,
+    "outward_relations": 14,
+    "first_activity_date": "2026-08-21T18:13:57"
+   },
+   "holder_data": {
+    "amount": 211.37268598774955,
+    "rank": 21,
+    "share": 2.113726859877495e-07
+   }
+  },
+  {
+   "address": "0x3c1f0eb730933d9009fe3e068ac860c5cc3f4d40",
+   "address_details": {
+    "label": null,
+    "degree": 3626,
+    "is_supernode": false,
+    "is_contract": false,
+    "is_cex": false,
+    "is_dex": false,
+    "is_paid_label": false,
+    "entity_id": null,
+    "inward_relations": 897,
+    "outward_relations": 2729,
+    "first_activity_date": "2026-09-03T00:56:41"
+   },
+   "holder_data": {
+    "amount": 9.14425380864e-07,
+    "rank": 22,
+    "share": 9.144253808639997e-16
+   }
+  },
+  {
+   "address": "0xadfde71729b41911d665d69cbee8ea2f9a71a27c",
+   "address_details": {
+    "label": null,
+    "degree": 11643,
+    "is_supernode": true,
+    "is_contract": false,
+    "is_cex": false,
+    "is_dex": false,
+    "is_paid_label": false,
+    "entity_id": null,
+    "inward_relations": 6229,
+    "outward_relations": 5414,
+    "first_activity_date": "2026-07-09T10:06:44"
+   },
+   "holder_data": {
+    "amount": 5.502926848e-09,
+    "rank": 23,
+    "share": 5.502926847999998e-18
+   }
+  },
+  {
+   "address": "0x00000000cf1cd5867be5d90b99a6ebd683bc031c",
+   "address_details": {
+    "label": null,
+    "degree": 247810,
+    "is_supernode": true,
+    "is_contract": true,
+    "is_cex": false,
+    "is_dex": false,
+    "is_paid_label": false,
+    "entity_id": null,
+    "inward_relations": 174168,
+    "outward_relations": 73642,
+    "first_activity_date": "2026-07-15T09:47:37"
+   },
+   "holder_data": {
+    "amount": 3.841982464e-09,
+    "rank": 24,
+    "share": 3.841982463999999e-18
+   }
+  }
+ ],
+ "api_calls": {
+  "https://api.bubblemaps.io/tokens/hot?chain=aptos&chain=arbitrum&chain=arc&chain=avalanche&chain=base&chain=bsc&chain=eth&chain=hyperevm&chain=monad&chain=polygon&chain=robinhood&chain=solana&chain=sonic&chain=ton&chain=tron": 7184,
+  "https://api.bubblemaps.io/tokens/details": 694,
+  "https://api.bubblemaps.io/tokens/market/prices": 25820,
+  "https://api.bubblemaps.io/session/credentials": 509,
+  "https://api.bubblemaps.io/tokens/market/details/robinhood/0x98650ab3145285c10a40619402eaa025d277c659": 549,
+  "https://api.bubblemaps.io/tokens/from-list": 12429,
+  "https://api.bubblemaps.io/addresses/token-top-holders?count=250&nocache=false": 9376,
+  "https://api.bubblemaps.io/addresses/expand/magic": 3983,
+  "https://api.bubblemaps.io/relationships/subgraph?whitelist_token_address=0x98650ab3145285c10a40619402eaa025d277c659&whitelist_token_chain=robinhood&queue_whitelisted_token_map=false": 119799,
+  "https://api.bubblemaps.io/tokens/market/candle-chart?time_range=15m&from=1789997833000&to=1790267773413": 2869
+ },
+ "panel_clusters": [],
+ "panel_holders": [
+  "#2 |  | 0x2674...4952 |  | 8.16%",
+  "#3 |  | 0x5aa0...fbe5 |  | 1.43%",
+  "#4 |  | 0x1111...a902 |  | 0.06%",
+  "#5 |  | 0x2748...a95e |  | 0.03%",
+  "#6 |  | 0xde50...9b9f |  | 0.03%",
+  "#7 |  | 0x7e33...6522 |  | 0.02%",
+  "#8 |  | 0x7a4d...1b7b |  | 0.02%",
+  "#9 |  | 0x9bd2...dc26 |  | 0.02%",
+  "#10 |  | 0x1c4a...cd5e |  | 0.02%",
+  "#11 |  | 0xac81...0eb0 |  | 0.01%",
+  "#12 |  | 0x7b80...d260 |  | 0.01%",
+  "#13 |  | 0x6f46...332d |  | < 0.01%",
+  "#14 |  | 0x02e8...a4f9 |  | < 0.01%",
+  "#15 |  | 0x9b52...5a02 |  | < 0.01%",
+  "#16 |  | 0xf08a...28d2 |  | < 0.01%",
+  "#18 |  | 0x19ef...8804 |  | < 0.01%",
+  "#19 |  | 0xe5e7...e044 |  | < 0.01%",
+  "#20 |  | 0x889b...7055 |  | < 0.01%",
+  "#21 |  | 0x8193...95c0 |  | < 0.01%",
+  "#22 |  | 0x3c1f...4d40 |  | < 0.01%",
+  "#23 |  | 0xadfd...a27c |  | < 0.01%",
+  "#24 |  | 0x0000...031c |  | < 0.01%"
+ ]
+}

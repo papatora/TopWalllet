@@ -8,7 +8,13 @@
 - Fix: autoflush sync_session, is_degraded, lock-retry, /proc-scan,
   dump resumable, direct-push fallback
 
-## URUTAN HARI INI
+## SISA HARI INI (update S-43)
+1. [VPS] wallet_scores terisi setelah analyze → ekstraksi delta (fetch_dump→rebuild→explorer).
+2. Ronde audit: 294 wallet platform-funded (GMGN/proxy) — putuskan relabel;
+   kandidat label token GHOST_SUPPLY utk 5 token.
+3. Goal #3 DIAMOND (akun X di [VPS] .env, JANGAN masuk git) + Goal #4 paste-CA.
+
+## URUTAN HARI INI (asli)
 1. **[VPS]** `python scripts/vps_query.py scores` — kalau >0: ekstraksi
    delta (fetch_dump.py → rebuild → explorer). Kalau masih 0 berhari-hari:
    py-spy dump + grep Traceback (semua fix sudah ter-deploy fc39078).

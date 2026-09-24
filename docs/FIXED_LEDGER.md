@@ -164,3 +164,19 @@ Legenda: ✅ FIXED+VERIFIED · ⚠️ LIMITASI DIKETAHUI (bukan bug, jangan "dip
 - Sub-layer entity-mode vol range-aware (minor).
 - Pump-scan kalau dipakai lagi: _retry sudah benar; honeypot "silent clean"
   saat GMGN error sudah terselesaikan lewat _http_error handling.
+
+## S-43 (2026-09-24) — crash-loop database-locked + panen Arkham/Bubblemaps
+- **ROOT CAUSE crash-loop cycle 152-166**: volume_sweep gate `/proc`
+  dicek sekali per batch → sweep menulis berjam-jam bareng cycle → SQLite
+  single-writer jebol. Fix: `src/utils/db_write_lock.py` (flock; pipeline
+  per-stage + yield 90s, track-ca per entry), busy_timeout 30→120,
+  retry 3→5x. Deploy 6e7816a; tes 21 lulus; cycle hijau.
+- **trending_scanner**: tags list→set (crash 30 menitan).
+- **Arkham 38 funder**: 652 entitas total (known_entities 108). Funder
+  besar: 0x6505=**GMGN** (134 wallet), proxy-fleet 119, PonsV2BondingCurve
+  13 → 294 wallet terbukti platform-funded; bukti aditif di tag_overrides
+  (`arkham_entity`), label menunggu ronde audit.
+- **Bubblemaps (Goal #5)**: rute resmi `v2.bubblemaps.io/map?address=<ca>&chain=robinhood`;
+  capture `relationships/subgraph` + `token-top-holders` via sesi UI.
+  12 token: 5 = GHOST_SUPPLY ~90% satu kantong; wallet INSIDER = distributor
+  historis (hampir nol masih hold). `results/bubblemaps/REPORT.md`.

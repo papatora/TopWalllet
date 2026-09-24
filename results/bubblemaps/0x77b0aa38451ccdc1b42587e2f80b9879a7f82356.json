@@ -1,0 +1,19 @@
+{
+ "token": "0x77b0aa38451ccdc1b42587e2f80b9879a7f82356",
+ "chain": "robinhood",
+ "url": "https://v2.bubblemaps.io/map?address=0x77b0aa38451ccdc1b42587e2f80b9879a7f82356&chain=robinhood",
+ "captured_at": "2026-09-24T16:34:23.988653+00:00",
+ "subgraph_len": 0,
+ "subgraph": null,
+ "top_holders": null,
+ "api_calls": {
+  "https://api.bubblemaps.io/tokens/hot?chain=aptos&chain=arbitrum&chain=arc&chain=avalanche&chain=base&chain=bsc&chain=eth&chain=hyperevm&chain=monad&chain=polygon&chain=robinhood&chain=solana&chain=sonic&chain=ton&chain=tron": 7184,
+  "https://api.bubblemaps.io/tokens/details": 602,
+  "https://api.bubblemaps.io/tokens/market/prices": 179,
+  "https://api.bubblemaps.io/session/credentials": 509,
+  "https://api.bubblemaps.io/tokens/market/details/robinhood/0x77b0aa38451ccdc1b42587e2f80b9879a7f82356": 535,
+  "https://api.bubblemaps.io/tokens/from-list": 1374
+ },
+ "panel_clusters": [],
+ "panel_holders": []
+}

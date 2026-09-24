@@ -1,0 +1,279 @@
+[
+ {
+  "token": "0x12d5ee79",
+  "label_kita": "-",
+  "wallet_insider_kita": 0,
+  "relasi": 7040,
+  "addr_unik": 327,
+  "top10_share%": 27.9,
+  "top1%": 7.7,
+  "kontrak_dlm_top250": 7,
+  "panel_cluster": [
+   [
+    1,
+    15,
+    "2.72"
+   ],
+   [
+    2,
+    2,
+    "2.51"
+   ],
+   [
+    3,
+    3,
+    "1.32"
+   ],
+   [
+    4,
+    2,
+    "1.22"
+   ],
+   [
+    5,
+    2,
+    "0.67"
+   ]
+  ],
+  "insider_kita_msh_hold": 0,
+  "overlap_label_kita": 3
+ },
+ {
+  "token": "0x18e67423",
+  "label_kita": "INSIDER",
+  "wallet_insider_kita": 3,
+  "relasi": 8720,
+  "addr_unik": 328,
+  "top10_share%": 17.8,
+  "top1%": 4.4,
+  "kontrak_dlm_top250": 9,
+  "panel_cluster": [
+   [
+    1,
+    2,
+    "2.51"
+   ],
+   [
+    2,
+    13,
+    "2.33"
+   ],
+   [
+    3,
+    2,
+    "0.71"
+   ]
+  ],
+  "insider_kita_msh_hold": 0,
+  "overlap_label_kita": 8
+ },
+ {
+  "token": "0x39dbed3a",
+  "label_kita": "INSIDER",
+  "wallet_insider_kita": 2,
+  "relasi": 6850,
+  "addr_unik": 370,
+  "top10_share%": 48.1,
+  "top1%": 31.6,
+  "kontrak_dlm_top250": 27,
+  "panel_cluster": [
+   [
+    1,
+    23,
+    "5.42"
+   ],
+   [
+    2,
+    6,
+    "1.45"
+   ],
+   [
+    3,
+    3,
+    "0.83"
+   ],
+   [
+    4,
+    5,
+    "0.47"
+   ]
+  ],
+  "insider_kita_msh_hold": 0,
+  "overlap_label_kita": 5
+ },
+ {
+  "token": "0x56910d44",
+  "label_kita": "INSIDER",
+  "wallet_insider_kita": 4,
+  "relasi": 5008,
+  "addr_unik": 343,
+  "top10_share%": 15.4,
+  "top1%": 2.6,
+  "kontrak_dlm_top250": 10,
+  "panel_cluster": [
+   [
+    1,
+    3,
+    "2.03"
+   ],
+   [
+    2,
+    4,
+    "1.10"
+   ],
+   [
+    3,
+    2,
+    "0.81"
+   ],
+   [
+    4,
+    3,
+    "0.80"
+   ],
+   [
+    5,
+    3,
+    "0.72"
+   ],
+   [
+    6,
+    8,
+    "0.72"
+   ],
+   [
+    7,
+    5,
+    "0.69"
+   ]
+  ],
+  "insider_kita_msh_hold": 0,
+  "overlap_label_kita": 2
+ },
+ {
+  "token": "0x77b0aa38",
+  "label_kita": "INSIDER",
+  "wallet_insider_kita": 66,
+  "relasi": 0,
+  "addr_unik": 0,
+  "top10_share%": 0,
+  "top1%": 0,
+  "kontrak_dlm_top250": 0,
+  "panel_cluster": [],
+  "insider_kita_msh_hold": 0,
+  "overlap_label_kita": 0
+ },
+ {
+  "token": "0x98650ab3",
+  "label_kita": "INSIDER",
+  "wallet_insider_kita": 15,
+  "relasi": 347,
+  "addr_unik": 33,
+  "top10_share%": 99.9,
+  "top1%": 90.2,
+  "kontrak_dlm_top250": 6,
+  "panel_cluster": [],
+  "insider_kita_msh_hold": 0,
+  "overlap_label_kita": 1
+ },
+ {
+  "token": "0x9eb5d70f",
+  "label_kita": "INSIDER",
+  "wallet_insider_kita": 38,
+  "relasi": 420,
+  "addr_unik": 29,
+  "top10_share%": 100.0,
+  "top1%": 91.5,
+  "kontrak_dlm_top250": 5,
+  "panel_cluster": [],
+  "insider_kita_msh_hold": 0,
+  "overlap_label_kita": 0
+ },
+ {
+  "token": "0xdaa8f3f5",
+  "label_kita": "INSIDER",
+  "wallet_insider_kita": 158,
+  "relasi": 273,
+  "addr_unik": 255,
+  "top10_share%": 24.0,
+  "top1%": 14.9,
+  "kontrak_dlm_top250": 1,
+  "panel_cluster": [
+   [
+    1,
+    6,
+    "8.67"
+   ]
+  ],
+  "insider_kita_msh_hold": 0,
+  "overlap_label_kita": 1
+ },
+ {
+  "token": "0xe660cda9",
+  "label_kita": "INSIDER",
+  "wallet_insider_kita": 17,
+  "relasi": 255,
+  "addr_unik": 11,
+  "top10_share%": 100.0,
+  "top1%": 91.8,
+  "kontrak_dlm_top250": 2,
+  "panel_cluster": [],
+  "insider_kita_msh_hold": 0,
+  "overlap_label_kita": 1
+ },
+ {
+  "token": "0xe8ffd7e2",
+  "label_kita": "INSIDER",
+  "wallet_insider_kita": 5,
+  "relasi": 7381,
+  "addr_unik": 368,
+  "top10_share%": 27.2,
+  "top1%": 10.0,
+  "kontrak_dlm_top250": 15,
+  "panel_cluster": [
+   [
+    1,
+    12,
+    "4.34"
+   ],
+   [
+    2,
+    14,
+    "2.27"
+   ],
+   [
+    3,
+    8,
+    "0.51"
+   ]
+  ],
+  "insider_kita_msh_hold": 1,
+  "overlap_label_kita": 3
+ },
+ {
+  "token": "0xeba7bf6c",
+  "label_kita": "INSIDER",
+  "wallet_insider_kita": 20,
+  "relasi": 2851,
+  "addr_unik": 106,
+  "top10_share%": 99.0,
+  "top1%": 87.0,
+  "kontrak_dlm_top250": 6,
+  "panel_cluster": [],
+  "insider_kita_msh_hold": 0,
+  "overlap_label_kita": 3
+ },
+ {
+  "token": "0xec625498",
+  "label_kita": "-",
+  "wallet_insider_kita": 0,
+  "relasi": 287,
+  "addr_unik": 18,
+  "top10_share%": 100.0,
+  "top1%": 91.7,
+  "kontrak_dlm_top250": 2,
+  "panel_cluster": [],
+  "insider_kita_msh_hold": 0,
+  "overlap_label_kita": 2
+ }
+]
