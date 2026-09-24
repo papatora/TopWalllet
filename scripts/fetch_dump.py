@@ -108,13 +108,21 @@ def main() -> int:
                 "split -b 6m local_snapshot.sql.gz local_snapshot.sql.part && "
                 "ls local_snapshot.sql.part* | wc -l", 120)
     print("  parts:", nparts, flush=True)
+    # S-45: fingerprint dump — manifest lama milik dump beda TIDAK BOLEH
+    # dipakai (insiden 2026-09-25: part lama 'verified' tercampur dump baru
+    # -> gzip rusak). Nama part selalu sama, isi berubah tiap dump.
+    fp = sh("stat -c '%s %Y' /opt/topwallet/data/local_snapshot.sql.gz", 60)
+    if manifest.get("fp") != fp:
+        print(f"  dump baru (fp={fp[:40]}) — manifest part di-reset", flush=True)
+        manifest = {"fp": fp, "parts": {}}
+    parts_map: dict = manifest.setdefault("parts", {})
 
     print("[4/4] download + MD5 (koneksi fresh per part)...", flush=True)
     parts = sorted(n for n in
                    sh("ls /opt/topwallet/data | grep -a 'local_snapshot.sql.part'",
                       60).splitlines() if n.strip())
     for f in parts:
-        if manifest.get(f) == "verified":
+        if parts_map.get(f) == "verified":
             print(" ", f, "skip (sudah verified)")
             continue
         dst = LOCAL / f
@@ -131,7 +139,7 @@ def main() -> int:
                 ssh.close()
                 if md5_local(dst) == remote:
                     print(" ", f, "OK", flush=True)
-                    manifest[f] = "verified"
+                    parts_map[f] = "verified"
                     save_manifest(manifest)
                     ok = True
                     break
