@@ -1135,3 +1135,79 @@ bug yang ditemukan, baru update dokumen. Jangan minta input kecil-kecil.
   setelah goal #1).
 - User: sisa goal besok; malam ini [VPS] jalan sendiri (sweep/reverify/
   cycle), [PC] aman di-dokumentasi di sini.
+
+## SNAPSHOT S-42 — EKSTRAKSI BESAR TUNTAS + LABEL DIPRECISIKAN (2026-09-23/24)
+
+### A. [VPS] BALIK + TIGA FIX ANALYZE
+- [VPS] down pagi (SSH timeout total) → user CS provider → balik siang.
+- [VPS] analyze BEKU 7 jam akar-akarnya KETEMU via py-spy: autoflush
+  SQLAlchemy di-set di AsyncSession TIDAK propagate — harus
+  `session.sync_session.autoflush = False` (fc39078). Deploy → cycle jalan.
+- [VPS] fix lain: is_degraded (fa13afa, track-ca mati 4 hari), pipeline
+  lock-retry per stage (e5ad5d9), pipeline_busy /proc-scan (66dc995).
+- wallet_scores MASIH 0 (analyze 3-6 jam/cycle, belum tuntas s.d. S-42) —
+  cek pertama sesi berikut: `python scripts/vps_query.py scores`.
+- price_points [VPS]: 4.7 jt (stage prices TUNTAS).
+
+### B. [PC] EKSTRAKSI BESAR TUNTAS — HARGA ASLI LIVE
+- dump 152MB (4,7 jt price_points) → split ~25 part → download MD5 per
+  part (fetch_dump.py v2 resilient: koneksi fresh per langkah, resumable
+  manifest) → rebuild_local_db → start_explorer.
+- DB lokal: 94.961 wallet · 1.694 token · 442K swap · **4.707.511
+  price_points** · wallet_scores 0 (nanti delta).
+- Explorer LIVE dgn harga ASLI: spark 915 pool, Price trend terisi,
+  kalibrasi 46 pool, pricing_mode=mixed.
+
+### C. [PC] AUDIT A-J + K (dynamic workflow dwfrun-f477cbc0, 6j26m)
+- 10 ronde auditor adversarial (masing-masing 3,5-5,3 jt token) + fixer
+  10 commit fix(audit-A..J): provenance "~" semua tampilan,
+  check_premise.py, start_explorer premise-line, dataset.py tolerance,
+  W/L semantics, glosarium, dll. Ronde K (setelah data masuk): **9.55 —
+  0 P0/P1**, 3 P2 kosmetik difix. Semua pushed.
+- Bug laten ketemu Ronde J + sudah difix: dataset.py titik harga akhir
+  0.0 = seri dibuang; 1 row ts malformed menggagalkan rebuild.
+
+### D. [PC] WF-1 VERIFIKASI LABEL — 4.096 WALLET RELABELED
+- 11 kelompok diverifikasi subagent paralel + checker independen.
+- INSIDER presisi: 2.416 primary (2.964 core sell-only tetap; 169 stale
+  dibebaskan; 506 with-buy downgrade conf 0.5).
+- SNIPER dipecah: 12 repeat-multi-token (conf 0.9) · 123 single-snipe
+  (0.5) · 447 same-tx bundler (0.5).
+- MEV_BOT 48: cluster_be41 = ARB fleet ROBINHOOD (517 BUY/517 SELL
+  sempurna, satu funder 0xbe410ab5 = operator) — 12 wallet relabeled +
+  13 hidden bot di GENERALIST + 2 downgrade RT<30.
+- cluster_f70d DIBONGKAR: funder = Relay.link Bridge Solver (Arkham
+  BRIDGE) — bukan operator insider. Member diberi BRIDGE_FUNDED conf 0.4.
+- AIRDROP_FARMER: 87 verified spam tetap; sisanya downgrade/relabel via
+  reverify verdict yang sudah ada.
+- SEMUA via tag_overrides.json (survives rebuild) + wallet_labels.json.
+
+### E. PELAJARAN S-42 (jangan ulangi)
+1. **AsyncSession.autoflush = False itu SHADOW ATTR** — harus
+   `sync_session.autoflush`. Gejala: fix "sudah dipasang" tapi gejala
+   sama persis.
+2. **Rule "BUY/SELL seimbang = bot" SALAH utk farmer** — farmer beli
+   kecil utk kualifikasi lalu jual; count memang seimbang. Sempat salah
+   tangkap 2.268 wallet → revert. Bukti bot = pola token + RT + hold.
+3. **fetch_dump v2**: koneksi SSH fresh per langkah + resumable manifest
+   (data/fetch_manifest.json) — satu koneksi dipegang lama = 10054 mati
+   di tengah.
+4. **Explorer server mati saat DB replace** — kill server.py dulu
+  (server memegang file), baru replace, lalu start_explorer.py.
+5. **Push fallback [VPS] down**: `git push
+   https://x-access-token:$GITHUB_TOKEN@github.com/...` TIDAK hang
+   (yang hang credential-manager). Sudah dipakai, berhasil.
+6. **[VPS] DOWN cek console provider** (tadi CS komplain → balik).
+   SSH timeout total = host mati/null-route, bukan kode.
+
+### F. STATUS & BESOK
+- [VPS] cycle jalan dgn semua fix — wallet_scores dinanti (cek
+  vps_query.py scores; kalau stuck lagi py-spy dump).
+- [PC] explorer 8787 LIVE dgn dataset 4,7 jt price_points + label
+  presisi (MEV_BOT 48, INSIDER 2.416 presisi, f70d bridge-funded).
+- Brave: Arkham + Bubblemaps LOGIN MASIH HIDUP (profile persist).
+- Besok: (1) cek wallet_scores → delta ekstraksi kecil; (2) Goal #5
+  Bubblemaps capture (sesi login); (3) Goal #1 cross-check final;
+  (4) Goal #3 DIAMOND via Grok/X (akun X di Downloads — JANGAN masuk
+  git); (5) Goal #4 app paste-CA.
+- Konvensi [VPS]/[PC] wajib di setiap laporan (playbook atas).

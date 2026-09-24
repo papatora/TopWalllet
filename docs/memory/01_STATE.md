@@ -1,44 +1,38 @@
-# 01 — CURRENT STATE (VPS + Pipeline) — update S-40 (2026-09-18)
+# 01 — CURRENT STATE (VPS + Pipeline) — update S-42 (2026-09-24 dini hari)
 
-> Baca ini dulu. Setelah itu: HANDOFF_MASTER (playbook top) + FIXED_LEDGER.md
-> + docs/DIRECTIVE_VOLUME_SWEEP.md. Data verified: 2026-09-16 ~18:00 UTC.
+> Baca ini dulu. Setelah itu: PRE_COMPACT S-42 (paling baru) + FIXED_LEDGER +
+> 04_NEXT_STEPS + playbook HANDOFF_MASTER (konvensi [VPS]/[PC] wajib).
 
-## VPS
-- Supervisor AKTIF. Enrich 94.786 wallet **100% selesai**. prices stage
-  grinding (direct RPC sejak S-40; 403 di-cool+rotate, TIDAK crash lagi) —
-  price_points/wallet_scores masih 0 s.d. S-40; pantau count harian.
-- Jaringan: proxy Webshare DIBLOK CF — dexscreener+rpc wajib direct
-  (default sejak 07da67e).
-- Verifier on-chain: cron 30 menit (2.511 INSIDER proven; TRADER_COVERAGE_GAP
-  868; AIRDROP_FARMER 91 per extract 2026-09-16). Defer-safe, flock.
-- **VOLUME SWEEP LIVE**: cron */5, scripts/volume_sweep.py. Tag gate port
-  bot.js (FIRST/DOUBLE/TROUGH/SUSTAIN, floor $100K 5m) → antrean CA →
-  run_track_by_ca (resolve pool → upsert Token+Pool → discover semua wallet
-  on-chain → prices → enrich → analyze → results/by_ca/<ca>.json).
-  Debat A/B/C: semua P0/P1 tuntas, skor akhir 8/10 SHIP.
-- GitHub push dari VPS (branch master:main). Lokal push suka hang.
+## [VPS]
+- Supervisor AKTIF dgn SEMUA fix: autoflush sync_session (fc39078),
+  is_degraded (fa13afa), lock-retry per stage (e5ad5d9), /proc-scan
+  (66dc995), orphan-killer. Cycle jalan — **wallet_scores masih 0**
+  (analyze 3-6 jam/cycle belum tuntas; cek pertama tiap sesi:
+  `python scripts/vps_query.py scores`).
+- price_points [VPS]: 4,7 jt (stage prices TUNTAS).
+- Dexscreener + RPC = DIRECT (proxy Webshare diblok CF permanen).
+- Sweep live + stock filter (config/sweep_skip_tokens.json).
+- Verifier on-chain cron 30 menit jalan.
 
-## DATABASE LOKAL (snapshot S-39, MD5-verified dump)
-- 94.961 wallets · 442K swaps · 1.442 tokens · 1.454 pools · 32.456 classified
-- Labels: INSIDER 2.511 (proven) · TRADER_COVERAGE_GAP 868 · AIRDROP_FARMER 91
-  · BUNDLER_SUSPECT 447 · SNIPER 127 · DEV 32 · dst.
-- ⚠️ Explorer dataset perlu start ulang server (launcher) untuk membangun
-  dataset dari DB baru — server sedang mati saat sync ini.
-- Sync path baru: scripts/dump_snapshot.py (atomic, data-only) → split 6MB →
-  SFTP → rebuild_local_db.py (build ke topwallet.new.db → validasi MIN_ROWS →
-  baru replace; backup rolling topwallet.prev.db). Verifikasi part = MD5,
-  BUKAN ukuran (part 6MB fixed-size dari dump beda bisa sama ukuran —
-  pernah campur dua dump = stream korup).
+## [PC] DATABASE LOKAL (S-42, MD5-verified)
+- 94.961 wallet · 1.694 token · 442K swap · **4.707.511 price_points ASLI**
+- Label presisi pasca-WF-1 (4.096 wallet relabeled): INSIDER 2.416
+  (core sell-only terverifikasi), MEV_BOT 48 (be41 = ARB fleet 517/517 +
+  hidden bots), f70d = BRIDGE-funded (bukan insider), SNIPER dipecah 3
+  tingkat confidence, AIRDROP_FARMER 86 verified-spam.
+- Explorer 8787: jalan, dataset built dgn 915 spark pool + 46 calibrated.
 
-## EXPLORER LOKAL
-- Launcher: Desktop "TopWallet Launcher" shortcut → target\release exe
-  (folder ASR-excluded). Mulai/Stop/Stop-paksa/Buka Website/Fullscreen.
-- 3 tema, Guide tab, leaderboard filter tag, INDUKAN lineage, sub-layer
-  per-item hide, freeze/reset, fold-to-group. Debat Round A-G 9/10.
+## [PC] ARKHAM + BUBBLEMAPS SESSION
+- Brave (profile data/arkham-profile-brave): Arkham + Bubblemaps LOGIN
+  HIDUP (user login 2026-09-21 malam; persist lintas shutdown).
+- Buka: `python scripts/arkham_open.py brave` → 2 tab siap.
+- Bubblemaps API ter-recon: POST api.bubblemaps.io/relationships/subgraph
+  (response = cluster JSON utuh) — auth x-validation JWT dari frontend,
+  JANGAN diforge; pakai UI/iframe sbg interface (detail 04_NEXT_STEPS).
 
-## ATURAN CEPAT
-- Push git SELALU dari VPS; lokal→VPS = bundle (lihat 09_VPS_OPS).
-- Setelah ubah dataset.py → POST /api/rebuild (server cache stale trap).
-- Blockscout fallback saja; Etherscan primer. SCRAPING = VPS only.
-- DexScreener dari VPS kadang 403/429 intermittently (CF) — token_pairs
-  strict=True melempar exception agar sweep membedakan outage vs token mati.
+## KONVENSI
+- [VPS] = pipeline/scraping/server · [PC] = explorer/launcher/panen
+  Arkham/DB lokal. WAJIB tag lokasi di tiap laporan (playbook atas).
+- Push: [VPS] hidup = via VPS (bundle). [VPS] down = direct push
+  `git push https://x-access-token:$GITHUB_TOKEN@github.com/...` (TIDAK
+  hang — yang hang credential-manager). Terbukti S-42.

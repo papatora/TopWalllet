@@ -99,6 +99,19 @@ Legenda: ✅ FIXED+VERIFIED · ⚠️ LIMITASI DIKETAHUI (bukan bug, jangan "dip
 - ✅ S-40: explorer server mati saat user tes Stop-paksa = FITUR bekerja,
   bukan bug. Restart cukup dari launcher (Mulai) atau hidden-start.
 
+- ✅ S-42: **AsyncSession.autoflush assignment itu SHADOW ATTR** — fix S-41
+  pertama tidak pernah aktif. Yang benar `session.sync_session.autoflush =
+  False` (fc39078). Pasang di run() level (semua stage) + analyze_wallets.
+- ✅ S-42: is_degraded property di EtherscanV2Client (pnl_verifier
+  AttributeError mematikan track-ca 4 hari — fa13afa).
+- ✅ S-42: pipeline lock-retry per stage (e5ad5d9) + pipeline_busy via
+  /proc scan (bukan file status yang stale).
+- ✅ S-42: fetch_dump v2 resilient (koneksi fresh per langkah, resumable
+  manifest data/fetch_manifest.json, MD5 per part).
+- ✅ S-42: label presisi pasca-verifikasi — 4.096 wallet relabeled via
+  tag_overrides (INSIDER core 2.416 presisi, SNIPER 3-tingkat, MEV_BOT 48,
+  f70d = bridge-funded).
+
 ## ⚠️ LIMITASI DIKETAHUI (bukan bug — JANGAN "diperbaiki")
 - Wallet cap 600: churn reheat ±7 detik (sim O(n²)) — pakai FREEZE; decay
   sudah 0.035 (2× lebih cepat dari semula).
@@ -130,7 +143,9 @@ Legenda: ✅ FIXED+VERIFIED · ⚠️ LIMITASI DIKETAHUI (bukan bug, jangan "dip
   infrastruktur proxy, bukan kode. Queue sweep me-retry (6x/30 menit) dan
   token re-fire via sustain/double — biarkan; kalau mau tuntas: perbarui
   daftar proxy Webshare atau tambah proxy kedua di PROXY_URLS_FILE.
-- S-40: **cf_solver BELUM berfungsi** — selalu gagal "sitekey tidak
+- S-42: wallet_scores [VPS] masih 0 — analyze durasi panjang, BUKAN bug
+  (semua fix sudah ter-deploy). Cek harian; kalau stuck → py-spy dump.
+- S-42: **cf_solver BELUM berfungsi** — selalu gagal "sitekey tidak
   ketemu": sitekey Turnstile ada DI DALAM iframe challenges.cloudflare.com,
   ekstraksi harus dari page.frames (besok). Klik manual CF sesekali masih
   diperlukan sampai fix.
