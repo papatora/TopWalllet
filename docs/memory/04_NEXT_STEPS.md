@@ -8,6 +8,21 @@
 - Fix: autoflush sync_session, is_degraded, lock-retry, /proc-scan,
   dump resumable, direct-push fallback
 
+## STATUS (2026-09-24 malam, S-43)
+- ✅ crash-loop db-locked FIXED + deployed (6e7816a) — flock per-stage/per-entry,
+  cycle hijau; prices stage panjang tapi sehat, analyze menyusul → wallet_scores.
+- ✅ Goal #1: Arkham 38 funder → 652 entitas / known_entities 108; 294 wallet
+  terbukti platform-funded (GMGN 134) — bukti aditif di tag_overrides; RELABEL
+  MENUNGGU RONDE AUDIT (jangan auto).
+- ✅ Goal #5: bubblemaps 12 token — 5 GHOST_SUPPLY ~90%, insider = distributor
+  historis (bukan holder kini). results/bubblemaps/REPORT.md. Alat reusable:
+  scripts/bubblemaps_capture.py.
+- ✅ Goal #4: halaman "Cek Token" (#/lookup) LIVE di explorer :8787 — rating
+  0-10 rincian, cluster, deployer/funder, sosial, ghost-check. (c4bfaf8)
+- ⬜ Goal #3 DIAMOND: butuh akun X di [VPS] .env (file Downloads, JANGAN git).
+- ⬜ wallet_scores terisi → ekstraksi delta → ronde audit (294 platform-funded
+  + kandidat label token GHOST_SUPPLY).
+
 ## SISA HARI INI (update S-43)
 1. [VPS] wallet_scores terisi setelah analyze → ekstraksi delta (fetch_dump→rebuild→explorer).
 2. Ronde audit: 294 wallet platform-funded (GMGN/proxy) — putuskan relabel;

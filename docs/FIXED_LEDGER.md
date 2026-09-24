@@ -180,3 +180,10 @@ Legenda: ✅ FIXED+VERIFIED · ⚠️ LIMITASI DIKETAHUI (bukan bug, jangan "dip
   capture `relationships/subgraph` + `token-top-holders` via sesi UI.
   12 token: 5 = GHOST_SUPPLY ~90% satu kantong; wallet INSIDER = distributor
   historis (hampir nol masih hold). `results/bubblemaps/REPORT.md`.
+
+- **Goal #4 paste-CA**: halaman `#/lookup` explorer (c4bfaf8). Rating 0-10
+  dengan rincian komponen terlihat; deployer via Etherscan V2 (getcontractcreation),
+  sosial via DexScreener, ghost-supply dari capture Goal #5. Catatan: SSL
+  Python sistem expired → `_get` fallback certifi→default→unverified (endpoint
+  publik baca-saja). Key Etherscan kedua (JMTC…) INVALID — hanya key pertama
+  yang dipakai rotasi.
