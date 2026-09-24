@@ -93,8 +93,9 @@ def vps_quick() -> dict:
 def main() -> int:
     print("[night-loop] START — poll tiap 5 menit, maks 10 jam", flush=True)
     baseline = load(STATE, {})
-    tb_baseline = int(baseline.get("traceback_baseline", 0))
+    tb_baseline = baseline.get("traceback_baseline")
     restarts = 0
+    first = True
     while True:
         if (time.time() - START) > MAX_HOURS * 3600:
             print("[night-loop] batas 10 jam tercapai — exit tanpa shutdown", flush=True)
@@ -106,6 +107,15 @@ def main() -> int:
             print(f"[{ts}] VPS tidak terjangkau ({type(e).__name__}) — coba lagi polling berikutnya", flush=True)
             time.sleep(POLL_S)
             continue
+
+        if first and tb_baseline is None:
+            # poll pertama: hitungan traceback SAAT INI = baseline (log memuat
+            # crash lama pra-fix — jangan dianggap anomali baru)
+            tb_baseline = v["tracebacks"]
+            st = load(STATE, {})
+            st["traceback_baseline"] = tb_baseline
+            save(STATE, st)
+        first = False
 
         # --- aturan deterministik ---
         if int(v["sup"]) == 0:
@@ -125,6 +135,9 @@ def main() -> int:
             restarts = 0
 
         if v["tracebacks"] > tb_baseline:
+            st = load(STATE, {})
+            st["traceback_baseline"] = v["tracebacks"]
+            save(STATE, st)
             return escalate(4, "Traceback baru di log pipeline VPS",
                             f"baseline={tb_baseline} sekarang={v['tracebacks']}")
 
