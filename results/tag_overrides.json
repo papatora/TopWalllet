@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-23T19:25:14.488578+00:00",
+ "generated_at": "2026-09-24T16:24:10.982523+00:00",
  "source": "scripts/reverify_tags.py",
  "wallets": {
   "0x00081217544197617dbee64f38cac8de1bd91a23": {
@@ -27,7 +27,9 @@
         "max_recipients": 5,
         "window_block": 57041111,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -181,7 +183,9 @@
         "max_recipients": 9,
         "window_block": 58651602,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -262,7 +266,9 @@
       "0xe9630a13f2d986f750e8d71919a70b35f88a6d55": {
        "max_recipients": 21,
        "window_block": 62483558,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "Proxy (EIP-1967 Beacon)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      }
     }
@@ -502,7 +508,9 @@
         "max_recipients": 11,
         "window_block": 55054800,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -601,7 +609,9 @@
         "max_recipients": 4,
         "window_block": 57267762,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -686,7 +696,9 @@
         "max_recipients": 5,
         "window_block": 57357575,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -889,7 +901,9 @@
         "max_recipients": 9,
         "window_block": 57207228,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -1110,7 +1124,9 @@
         "max_recipients": 4,
         "window_block": 60296732,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -1141,7 +1157,9 @@
       "0xdea4c3aacc4aea718de30c8da840f874193c9803": {
        "max_recipients": 24,
        "window_block": 60274518,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "PonsV2BondingCurve",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      }
     }
@@ -1197,7 +1215,9 @@
       "0xdea4c3aacc4aea718de30c8da840f874193c9803": {
        "max_recipients": 24,
        "window_block": 60274518,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "PonsV2BondingCurve",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      }
     }
@@ -1532,7 +1552,9 @@
       "0xdea4c3aacc4aea718de30c8da840f874193c9803": {
        "max_recipients": 24,
        "window_block": 60274518,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "PonsV2BondingCurve",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      }
     }
@@ -1773,7 +1795,9 @@
       "0xdea4c3aacc4aea718de30c8da840f874193c9803": {
        "max_recipients": 24,
        "window_block": 60274518,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "PonsV2BondingCurve",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      }
     }
@@ -1917,7 +1941,9 @@
         "max_recipients": 7,
         "window_block": 58313580,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -2223,7 +2249,9 @@
         "max_recipients": 9,
         "window_block": 57669534,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -2465,7 +2493,9 @@
       "0xdea4c3aacc4aea718de30c8da840f874193c9803": {
        "max_recipients": 24,
        "window_block": 60274518,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "PonsV2BondingCurve",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      }
     }
@@ -2530,7 +2560,9 @@
         "max_recipients": 9,
         "window_block": 58651602,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -2824,7 +2856,9 @@
       "0x9183d41097b912827f17939b0bc7c54b520d8f17": {
        "max_recipients": 50,
        "window_block": 62539166,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "BeaconProxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      }
     }
@@ -2882,7 +2916,9 @@
         "max_recipients": 4,
         "window_block": 57932885,
         "out_total": 11
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Beacon)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -2971,7 +3007,9 @@
       "0xc45794465a9007256ab1be2bffd85ba1d4f82342": {
        "max_recipients": 25,
        "window_block": 59341248,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "PonsV2BondingCurve",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      }
     }
@@ -3003,7 +3041,9 @@
         "max_recipients": 12,
         "window_block": 59405247,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -3061,7 +3101,9 @@
         "max_recipients": 7,
         "window_block": 59302473,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -3369,7 +3411,9 @@
         "max_recipients": 3,
         "window_block": 58729765,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -3523,7 +3567,9 @@
         "max_recipients": 6,
         "window_block": 58395558,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -3928,7 +3974,9 @@
         "max_recipients": 9,
         "window_block": 59408939,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Transparent)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -4229,7 +4277,9 @@
         "max_recipients": 9,
         "window_block": 57100222,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -4262,7 +4312,9 @@
         "max_recipients": 4,
         "window_block": 63069104,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "SnuggleVaultAdminSatellite",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0xc4a21f9d6485fc5893dd4a491b320a83daf4da1d": {
        "kind": "PERSONAL",
@@ -4270,7 +4322,9 @@
         "max_recipients": 3,
         "window_block": 63074451,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Uniswap",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -4326,7 +4380,9 @@
       "0xfa7e0816d8fde14fa6e70cebd167e106512c4747": {
        "max_recipients": 33,
        "window_block": 58769580,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "Proxy (EIP-1967 Beacon)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      }
     }
@@ -4446,7 +4502,9 @@
         "max_recipients": 4,
         "window_block": 63069104,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "SnuggleVaultAdminSatellite",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -4504,7 +4562,9 @@
         "max_recipients": 7,
         "window_block": 55058215,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Transparent)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -4677,7 +4737,9 @@
       "0x09ca2bb0d22342ebd95ac8d74459eccafbef05ac": {
        "max_recipients": 29,
        "window_block": 60248893,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "PonsV2BondingCurve",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      }
     }
@@ -4826,7 +4888,9 @@
         "max_recipients": 4,
         "window_block": 54950871,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Index Basket MEMESTOCK (IB-MEMESTOCK)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -5146,7 +5210,9 @@
         "max_recipients": 16,
         "window_block": 58335616,
         "out_total": 20
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Beacon)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -5569,7 +5635,9 @@
         "max_recipients": 9,
         "window_block": 57530047,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -5866,7 +5934,9 @@
         "max_recipients": 2,
         "window_block": 55143572,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -6341,7 +6411,9 @@
         "max_recipients": 4,
         "window_block": 57987647,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -6668,7 +6740,9 @@
         "max_recipients": 9,
         "window_block": 57207228,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -6994,7 +7068,9 @@
         "max_recipients": 1,
         "window_block": 56290671,
         "out_total": 27
-       }
+       },
+       "arkham_entity": "PrivateVault (Proxy)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -7219,7 +7295,9 @@
         "max_recipients": 11,
         "window_block": 60206989,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -7272,7 +7350,9 @@
         "max_recipients": 1,
         "window_block": 55198069,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1167 Minimal)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -7338,7 +7418,9 @@
         "max_recipients": 2,
         "window_block": 57333881,
         "out_total": 4
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Beacon)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0x9362adfa40631bafcf939892279980f83ed7fbfb": {
        "kind": "PERSONAL",
@@ -7346,7 +7428,9 @@
         "max_recipients": 1,
         "window_block": 56024361,
         "out_total": 3
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Beacon)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -7535,7 +7619,9 @@
         "max_recipients": 18,
         "window_block": 56970381,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -8092,7 +8178,9 @@
         "max_recipients": 7,
         "window_block": 5361006,
         "out_total": 26
-       }
+       },
+       "arkham_entity": "Index Basket cashdog (IB-CASHDOG)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -9015,7 +9103,9 @@
         "max_recipients": 5,
         "window_block": 57016157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -9165,7 +9255,9 @@
       "0xd782783fa928150950bbe070fa4c18c85b9427e2": {
        "max_recipients": 24,
        "window_block": 63018522,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "BeaconProxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      }
     }
@@ -9597,12 +9689,16 @@
       "0xe9630a13f2d986f750e8d71919a70b35f88a6d55": {
        "max_recipients": 21,
        "window_block": 62483558,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "Proxy (EIP-1967 Beacon)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0x778e344d7e92caec1e51e7db4d4c11cfadc1008a": {
        "max_recipients": 37,
        "window_block": 63154684,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "BeaconProxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      }
     }
@@ -9634,7 +9730,9 @@
         "max_recipients": 4,
         "window_block": 57267762,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -9667,7 +9765,9 @@
         "max_recipients": 9,
         "window_block": 57100222,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -9698,7 +9798,9 @@
       "0x83914a5d866881e1588d614b03239f48eb596f17": {
        "max_recipients": 33,
        "window_block": 58334763,
-       "out_total": 45
+       "out_total": 45,
+       "arkham_entity": "Proxy (EIP-1967 Beacon)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      }
     }
@@ -9813,7 +9915,9 @@
         "max_recipients": 12,
         "window_block": 59476094,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -9930,7 +10034,9 @@
         "max_recipients": 3,
         "window_block": 57912810,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -10211,7 +10317,9 @@
         "max_recipients": 6,
         "window_block": 60126306,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -10432,7 +10540,9 @@
       "0xc60357914817c8f53d33e45c528ccfc66fe80b1d": {
        "max_recipients": 27,
        "window_block": 63129271,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "BeaconProxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      }
     }
@@ -11131,7 +11241,9 @@
         "max_recipients": 4,
         "window_block": 60296732,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -11190,7 +11302,9 @@
         "max_recipients": 4,
         "window_block": 56412096,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Index Basket MOMMY (IB-MOMMY)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -11412,7 +11526,9 @@
         "max_recipients": 8,
         "window_block": 56942746,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -11968,7 +12084,9 @@
         "max_recipients": 3,
         "window_block": 55087764,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Transparent)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -12203,7 +12321,9 @@
         "max_recipients": 5,
         "window_block": 57041111,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -12294,7 +12414,9 @@
         "max_recipients": 11,
         "window_block": 57095393,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -12495,7 +12617,9 @@
         "max_recipients": 1,
         "window_block": 54986167,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "up",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0x9eead18cf127923f87d1caea33f28ea0469f48cf": {
        "kind": "PERSONAL",
@@ -12503,7 +12627,9 @@
         "max_recipients": 2,
         "window_block": 63177289,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "up",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0x534577f108201cdd0f121ed5f7ff97b8994bbd07": {
        "kind": "PERSONAL",
@@ -12511,7 +12637,9 @@
         "max_recipients": 2,
         "window_block": 63036866,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "up",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0x8abf9bcd988d45d620ffc271088d88cf528388c6": {
        "kind": "PERSONAL",
@@ -12519,7 +12647,9 @@
         "max_recipients": 1,
         "window_block": 51996024,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "up",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0x89593d890abcb7170c71a9b468792adf72437bc8": {
        "kind": "PERSONAL",
@@ -12527,7 +12657,9 @@
         "max_recipients": 1,
         "window_block": 53059892,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "up",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -12560,7 +12692,9 @@
         "max_recipients": 6,
         "window_block": 58432572,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -12647,7 +12781,9 @@
         "max_recipients": 5,
         "window_block": 57016157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -13088,7 +13224,9 @@
         "max_recipients": 5,
         "window_block": 57055124,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -13260,7 +13398,9 @@
         "max_recipients": 16,
         "window_block": 56930838,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Beacon)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0x895282c7187b6cfb3f450d8a86c3355434dbbfd4": {
        "kind": "MASS_SPREAD",
@@ -13268,7 +13408,9 @@
         "max_recipients": 39,
         "window_block": 63072055,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "BeaconProxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -13301,7 +13443,9 @@
         "max_recipients": 5,
         "window_block": 57016157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -13334,7 +13478,9 @@
         "max_recipients": 1,
         "window_block": 55879465,
         "out_total": 6
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1167 Minimal)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0xa163b2891fce06434fee3815b37c804eaa7e3159": {
        "kind": "PERSONAL",
@@ -13342,7 +13488,9 @@
         "max_recipients": 1,
         "window_block": 55879465,
         "out_total": 6
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1167 Minimal)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0xbe9ac977eda1addcd96a9af4cfe2bbdababeba74": {
        "kind": "PERSONAL",
@@ -13350,7 +13498,9 @@
         "max_recipients": 1,
         "window_block": 55838049,
         "out_total": 8
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1167 Minimal)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0xb55586f824a02b7c58c8586dbb2b157f46904172": {
        "kind": "PERSONAL",
@@ -13358,7 +13508,9 @@
         "max_recipients": 1,
         "window_block": 55838049,
         "out_total": 8
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1167 Minimal)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -13590,7 +13742,9 @@
         "max_recipients": 5,
         "window_block": 57016157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -13623,7 +13777,9 @@
         "max_recipients": 16,
         "window_block": 57042329,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -13682,7 +13838,9 @@
         "max_recipients": 5,
         "window_block": 57016157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -13967,7 +14125,9 @@
         "max_recipients": 8,
         "window_block": 51062127,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -14248,7 +14408,9 @@
         "max_recipients": 6,
         "window_block": 58432572,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -14339,7 +14501,9 @@
         "max_recipients": 5,
         "window_block": 58139157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Transparent)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -14395,7 +14559,9 @@
       "0x65050a9b7e5075a2ba5ced7b1b64ee66262c40dc": {
        "max_recipients": 20,
        "window_block": 57973130,
-       "out_total": 44
+       "out_total": 44,
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      }
     }
@@ -14644,7 +14810,9 @@
         "max_recipients": 10,
         "window_block": 57081728,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -14743,7 +14911,9 @@
         "max_recipients": 3,
         "window_block": 54781115,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "0x",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -14877,7 +15047,9 @@
         "max_recipients": 19,
         "window_block": 57063385,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -15103,7 +15275,9 @@
         "max_recipients": 9,
         "window_block": 57207228,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -15304,7 +15478,9 @@
         "max_recipients": 4,
         "window_block": 58395277,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -15399,7 +15575,9 @@
         "max_recipients": 6,
         "window_block": 56989888,
         "out_total": 30
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Transparent)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -15720,7 +15898,9 @@
         "max_recipients": 3,
         "window_block": 63190267,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "SnuggleVaultAdminSatellite",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -15778,7 +15958,9 @@
         "max_recipients": 4,
         "window_block": 57842158,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -15809,7 +15991,9 @@
       "0xbc0fffc8dccd9ec19f8ed68ad5345524224419cf": {
        "max_recipients": 36,
        "window_block": 58432602,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "PonsV2BondingCurve",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      }
     }
@@ -15926,7 +16110,9 @@
         "max_recipients": 6,
         "window_block": 58432572,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -16069,7 +16255,9 @@
         "max_recipients": 14,
         "window_block": 57185644,
         "out_total": 36
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -16102,7 +16290,9 @@
         "max_recipients": 1,
         "window_block": 61411150,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Relay.link",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -16135,7 +16325,9 @@
         "max_recipients": 5,
         "window_block": 57190299,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -16264,7 +16456,9 @@
         "max_recipients": 4,
         "window_block": 57267762,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -16768,7 +16962,9 @@
         "max_recipients": 8,
         "window_block": 56942746,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -16888,7 +17084,9 @@
       "0xcaf84b91502f94c500cdb59d020dc490ea8882ef": {
        "max_recipients": 41,
        "window_block": 63156242,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "BeaconProxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      }
     }
@@ -17086,7 +17284,9 @@
         "max_recipients": 2,
         "window_block": 57268071,
         "out_total": 36
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -17218,7 +17418,9 @@
         "max_recipients": 1,
         "window_block": 32938454,
         "out_total": 15
-       }
+       },
+       "arkham_entity": "\"WazzupCrypto\" on OpenSea",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -17364,7 +17566,9 @@
         "max_recipients": 2,
         "window_block": 57807159,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -17486,7 +17690,9 @@
       "0xd15fe25ed0dba12fe05e7029c88b10c25e8880e3": {
        "max_recipients": 50,
        "window_block": 14122210,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "Disperse.app",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      }
     }
@@ -17569,7 +17775,9 @@
         "max_recipients": 4,
         "window_block": 57701880,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -17690,7 +17898,9 @@
         "max_recipients": 2,
         "window_block": 59542277,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "LiquidMesh",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -17723,7 +17933,9 @@
         "max_recipients": 1,
         "window_block": 63116826,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Uniswap",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -17822,7 +18034,9 @@
         "max_recipients": 4,
         "window_block": 57267762,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -18047,7 +18261,9 @@
         "max_recipients": 5,
         "window_block": 57016157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -18080,7 +18296,9 @@
         "max_recipients": 18,
         "window_block": 56970381,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -18173,7 +18391,9 @@
         "max_recipients": 9,
         "window_block": 57100222,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -18239,7 +18459,9 @@
         "max_recipients": 5,
         "window_block": 56776851,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -18305,7 +18527,9 @@
         "max_recipients": 5,
         "window_block": 57016157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -18445,7 +18669,9 @@
         "max_recipients": 5,
         "window_block": 57016157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -18759,7 +18985,9 @@
       "0xc407311565432da013664af2041fe4ab4d026922": {
        "max_recipients": 32,
        "window_block": 62483467,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "Proxy (EIP-1967 Beacon)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      }
     }
@@ -18927,7 +19155,9 @@
         "max_recipients": 11,
         "window_block": 57095393,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -18960,7 +19190,9 @@
         "max_recipients": 6,
         "window_block": 54968227,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -19356,7 +19588,9 @@
         "max_recipients": 1,
         "window_block": 61280588,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "up",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0x9e0fb6dfb40bb8a8f7495e2f16c40373e2c90eae": {
        "kind": "PERSONAL",
@@ -19364,7 +19598,9 @@
         "max_recipients": 1,
         "window_block": 62683536,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "up",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0xcee5d9356415a28407f723b1f5837f79de7d67ec": {
        "kind": "PERSONAL",
@@ -19372,7 +19608,9 @@
         "max_recipients": 1,
         "window_block": 60132647,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "up",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0xff0fb4b6af08c4b33855f24b6ae0ecc262d61ba0": {
        "kind": "PERSONAL",
@@ -19380,7 +19618,9 @@
         "max_recipients": 1,
         "window_block": 61706135,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "up",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -19413,7 +19653,9 @@
         "max_recipients": 5,
         "window_block": 57016157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -19446,7 +19688,9 @@
         "max_recipients": 3,
         "window_block": 63243806,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "SnuggleVaultAdminSatellite",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0xb477751b76cf82d00a686a1232f5fcd772414af3": {
        "kind": "PERSONAL",
@@ -19454,7 +19698,9 @@
         "max_recipients": 3,
         "window_block": 63194964,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "LiFi",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -19755,7 +20001,9 @@
         "max_recipients": 12,
         "window_block": 57087641,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -19834,7 +20082,9 @@
         "max_recipients": 5,
         "window_block": 57016157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -19918,7 +20168,9 @@
         "max_recipients": 9,
         "window_block": 57207228,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -19976,7 +20228,9 @@
         "max_recipients": 5,
         "window_block": 57016157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -20337,7 +20591,9 @@
         "max_recipients": 5,
         "window_block": 57016157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -20560,7 +20816,9 @@
         "max_recipients": 4,
         "window_block": 57191398,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -21031,7 +21289,9 @@
         "max_recipients": 19,
         "window_block": 57351953,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -21176,7 +21436,9 @@
         "max_recipients": 6,
         "window_block": 58857268,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "0x",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -21406,7 +21668,9 @@
         "max_recipients": 9,
         "window_block": 58600687,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -21467,7 +21731,9 @@
       "0x65050a9b7e5075a2ba5ced7b1b64ee66262c40dc": {
        "max_recipients": 20,
        "window_block": 57973130,
-       "out_total": 44
+       "out_total": 44,
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      }
     }
@@ -21499,7 +21765,9 @@
         "max_recipients": 5,
         "window_block": 57016157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -21740,7 +22008,9 @@
         "max_recipients": 7,
         "window_block": 57609725,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Transparent)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -21964,7 +22234,9 @@
         "max_recipients": 9,
         "window_block": 56730506,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -21997,7 +22269,9 @@
         "max_recipients": 6,
         "window_block": 56989888,
         "out_total": 30
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Transparent)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -22092,7 +22366,9 @@
         "max_recipients": 3,
         "window_block": 63134674,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "SnuggleVaultAdminSatellite",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -22125,7 +22401,9 @@
         "max_recipients": 9,
         "window_block": 57100222,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -22183,7 +22461,9 @@
       "0xd15fe25ed0dba12fe05e7029c88b10c25e8880e3": {
        "max_recipients": 50,
        "window_block": 14122210,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "Disperse.app",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      }
     }
@@ -22273,7 +22553,9 @@
         "max_recipients": 8,
         "window_block": 56942746,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -22339,7 +22621,9 @@
         "max_recipients": 7,
         "window_block": 55163734,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "PonsV2BondingCurve",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -22461,7 +22745,9 @@
         "max_recipients": 9,
         "window_block": 57100222,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -22494,7 +22780,9 @@
         "max_recipients": 9,
         "window_block": 57100222,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -22527,7 +22815,9 @@
         "max_recipients": 5,
         "window_block": 57016157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -22614,7 +22904,9 @@
         "max_recipients": 5,
         "window_block": 57016157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -23328,7 +23620,9 @@
         "max_recipients": 2,
         "window_block": 55143572,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -23392,7 +23686,9 @@
       "0xe25e9bc31d24bb652fb6e2e466d7c9c89701173e": {
        "max_recipients": 50,
        "window_block": 63323806,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "BeaconProxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0x53197cbac1bd95a2aec1a6a7cd1e69a23bc3ffb8": {
        "max_recipients": 50,
@@ -23608,7 +23904,9 @@
         "max_recipients": 6,
         "window_block": 57691382,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -23699,7 +23997,9 @@
         "max_recipients": 3,
         "window_block": 63229968,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "up",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -23856,7 +24156,9 @@
         "max_recipients": 6,
         "window_block": 56743864,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -24017,7 +24319,9 @@
         "max_recipients": 5,
         "window_block": 63286844,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Bucket",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -24347,7 +24651,9 @@
         "max_recipients": 19,
         "window_block": 57063385,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -24575,7 +24881,9 @@
         "max_recipients": 2,
         "window_block": 55143572,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -24608,7 +24916,9 @@
         "max_recipients": 14,
         "window_block": 55184363,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -24809,7 +25119,9 @@
         "max_recipients": 1,
         "window_block": 60334071,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "up",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -24842,7 +25154,9 @@
         "max_recipients": 14,
         "window_block": 56954735,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -25021,7 +25335,9 @@
         "max_recipients": 11,
         "window_block": 57095393,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -25187,7 +25503,9 @@
         "max_recipients": 8,
         "window_block": 56934945,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Transparent)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -25220,7 +25538,9 @@
         "max_recipients": 2,
         "window_block": 55143572,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -25296,7 +25616,9 @@
         "max_recipients": 5,
         "window_block": 57016157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -25568,7 +25890,9 @@
       "0x65050a9b7e5075a2ba5ced7b1b64ee66262c40dc": {
        "max_recipients": 20,
        "window_block": 57973130,
-       "out_total": 44
+       "out_total": 44,
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      }
     }
@@ -25651,7 +25975,9 @@
         "max_recipients": 9,
         "window_block": 57100222,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -25797,7 +26123,9 @@
         "max_recipients": 6,
         "window_block": 58432572,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -26037,7 +26365,9 @@
         "max_recipients": 1,
         "window_block": 6411314,
         "out_total": 26
-       }
+       },
+       "arkham_entity": "1inch",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -26121,7 +26451,9 @@
         "max_recipients": 5,
         "window_block": 57016157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -26210,7 +26542,9 @@
         "max_recipients": 2,
         "window_block": 56763074,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0x1319402928807ca1188014bd55f43c63eb794f2d": {
        "kind": "PERSONAL",
@@ -26218,7 +26552,9 @@
         "max_recipients": 2,
         "window_block": 55046456,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0xdf040d9df9fd77cd3318f54a8cdc44112a354c30": {
        "kind": "PERSONAL",
@@ -26226,7 +26562,9 @@
         "max_recipients": 3,
         "window_block": 53707486,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -26257,7 +26595,9 @@
       "0x816744b7304020399e594f056e1c4b36973c57b4": {
        "max_recipients": 20,
        "window_block": 62486297,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "BeaconProxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      }
     }
@@ -26375,7 +26715,9 @@
         "max_recipients": 4,
         "window_block": 63021769,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "MEXC",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -26441,7 +26783,9 @@
         "max_recipients": 5,
         "window_block": 57016157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -26895,7 +27239,9 @@
         "max_recipients": 9,
         "window_block": 57100222,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -26953,7 +27299,9 @@
         "max_recipients": 6,
         "window_block": 58121561,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Transparent)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -26986,7 +27334,9 @@
         "max_recipients": 14,
         "window_block": 56954735,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -27541,7 +27891,9 @@
         "max_recipients": 5,
         "window_block": 57016157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -27575,7 +27927,9 @@
         "max_recipients": 6,
         "window_block": 58587080,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -27752,7 +28106,9 @@
         "max_recipients": 5,
         "window_block": 57016157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -27785,7 +28141,9 @@
         "max_recipients": 1,
         "window_block": 63145672,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Kyber Network",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -27975,7 +28333,9 @@
         "max_recipients": 1,
         "window_block": 63151167,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Uniswap",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -28008,7 +28368,9 @@
         "max_recipients": 3,
         "window_block": 63291642,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "up",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -28118,7 +28480,9 @@
         "max_recipients": 4,
         "window_block": 57267762,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -28151,7 +28515,9 @@
         "max_recipients": 14,
         "window_block": 57185644,
         "out_total": 36
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -28383,7 +28749,9 @@
         "max_recipients": 2,
         "window_block": 57917693,
         "out_total": 16
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Transparent)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -28737,7 +29105,9 @@
         "max_recipients": 6,
         "window_block": 58056054,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -28811,7 +29181,9 @@
         "max_recipients": 8,
         "window_block": 58133676,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -28990,7 +29362,9 @@
         "max_recipients": 5,
         "window_block": 57823121,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -29143,7 +29517,9 @@
         "max_recipients": 18,
         "window_block": 63019226,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Beacon)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -29349,7 +29725,9 @@
         "max_recipients": 6,
         "window_block": 57060321,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -29482,7 +29860,9 @@
         "max_recipients": 2,
         "window_block": 58516040,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -29513,7 +29893,9 @@
       "0xbc35d0491131a735a33bc9b42f0e3ab550d71407": {
        "max_recipients": 28,
        "window_block": 62771680,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "Proxy (EIP-1967 Beacon)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      }
     }
@@ -29611,7 +29993,9 @@
         "max_recipients": 4,
         "window_block": 57191398,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -29730,7 +30114,9 @@
       "0xbc0fffc8dccd9ec19f8ed68ad5345524224419cf": {
        "max_recipients": 36,
        "window_block": 58432602,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "PonsV2BondingCurve",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      }
     }
@@ -29787,7 +30173,9 @@
         "max_recipients": 1,
         "window_block": 62826455,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Uniswap",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -29973,7 +30361,9 @@
         "max_recipients": 8,
         "window_block": 57900890,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -30298,7 +30688,9 @@
         "max_recipients": 3,
         "window_block": 56879215,
         "out_total": 6
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Beacon)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0x68699b1ca916ff6c9aa28c81bd94f3e49474ac52": {
        "kind": "PERSONAL",
@@ -30306,7 +30698,9 @@
         "max_recipients": 6,
         "window_block": 56289563,
         "out_total": 12
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Beacon)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0x5dd66518b00707f03466100cfef9eb827a9adf43": {
        "kind": "PERSONAL",
@@ -30314,7 +30708,9 @@
         "max_recipients": 2,
         "window_block": 56049113,
         "out_total": 8
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Beacon)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -30944,7 +31340,9 @@
         "max_recipients": 19,
         "window_block": 57063385,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -31085,7 +31483,9 @@
         "max_recipients": 4,
         "window_block": 57267762,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -31347,7 +31747,9 @@
         "max_recipients": 6,
         "window_block": 58395558,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -31423,7 +31825,9 @@
         "max_recipients": 5,
         "window_block": 57016157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -31649,7 +32053,9 @@
         "max_recipients": 4,
         "window_block": 56789488,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -31711,7 +32117,9 @@
         "max_recipients": 2,
         "window_block": 58027005,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "0x",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -31777,7 +32185,9 @@
         "max_recipients": 5,
         "window_block": 56729398,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Transparent)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -31973,7 +32383,9 @@
       "0xbc35d0491131a735a33bc9b42f0e3ab550d71407": {
        "max_recipients": 28,
        "window_block": 62771680,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "Proxy (EIP-1967 Beacon)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      }
     }
@@ -32071,7 +32483,9 @@
         "max_recipients": 2,
         "window_block": 55143572,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -32129,7 +32543,9 @@
         "max_recipients": 5,
         "window_block": 57016157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -32195,7 +32611,9 @@
         "max_recipients": 11,
         "window_block": 55054800,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -32359,7 +32777,9 @@
         "max_recipients": 5,
         "window_block": 57357575,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -32437,7 +32857,9 @@
         "max_recipients": 4,
         "window_block": 57267762,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -32520,7 +32942,9 @@
         "max_recipients": 6,
         "window_block": 57060321,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -32553,7 +32977,9 @@
         "max_recipients": 2,
         "window_block": 57268071,
         "out_total": 36
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -32679,7 +33105,9 @@
         "max_recipients": 3,
         "window_block": 58210707,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -32737,7 +33165,9 @@
         "max_recipients": 5,
         "window_block": 57016157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -32998,7 +33428,9 @@
         "max_recipients": 5,
         "window_block": 57016157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -33123,7 +33555,9 @@
         "max_recipients": 4,
         "window_block": 57267762,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -33156,7 +33590,9 @@
         "max_recipients": 18,
         "window_block": 56970381,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -33189,7 +33625,9 @@
         "max_recipients": 4,
         "window_block": 57267762,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -33247,12 +33685,16 @@
       "0xe98d7235666559d1a9a1b6c0e2976b6ff05ca3c9": {
        "max_recipients": 29,
        "window_block": 62458480,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "BeaconProxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0x1aaae8f679118af8f41cad43fc6049417c982edb": {
        "max_recipients": 35,
        "window_block": 62916644,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "BeaconProxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      }
     }
@@ -33547,7 +33989,9 @@
         "max_recipients": 4,
         "window_block": 57267762,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -33770,7 +34214,9 @@
         "max_recipients": 8,
         "window_block": 56934945,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Transparent)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0xa48185b82a02ab2ea4a5aa9ab915b6c03ce2704c": {
        "kind": "PERSONAL",
@@ -34031,7 +34477,9 @@
         "max_recipients": 19,
         "window_block": 57063385,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -34064,7 +34512,9 @@
         "max_recipients": 4,
         "window_block": 58373942,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -34180,7 +34630,9 @@
         "max_recipients": 5,
         "window_block": 57016157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -34462,7 +34914,9 @@
         "max_recipients": 2,
         "window_block": 58516040,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -34647,7 +35101,9 @@
         "max_recipients": 19,
         "window_block": 57063385,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -34800,7 +35256,9 @@
         "max_recipients": 3,
         "window_block": 58210707,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -35243,7 +35701,9 @@
         "max_recipients": 11,
         "window_block": 57848659,
         "out_total": 46
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Transparent)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -35276,7 +35736,9 @@
         "max_recipients": 2,
         "window_block": 57999607,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -35370,7 +35832,9 @@
         "max_recipients": 2,
         "window_block": 63410376,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Uniswap",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0x1195c074f898b7644ba732407619c9804dfe6dce": {
        "kind": "PERSONAL",
@@ -35378,7 +35842,9 @@
         "max_recipients": 6,
         "window_block": 63351616,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "SnuggleVaultAdminSatellite",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -35411,7 +35877,9 @@
         "max_recipients": 6,
         "window_block": 56989888,
         "out_total": 30
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Transparent)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -35444,7 +35912,9 @@
         "max_recipients": 18,
         "window_block": 63383704,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "BeaconProxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -35477,7 +35947,9 @@
         "max_recipients": 2,
         "window_block": 58027308,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Relay.link",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -35568,7 +36040,9 @@
         "max_recipients": 4,
         "window_block": 57267762,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -35601,7 +36075,9 @@
         "max_recipients": 9,
         "window_block": 57100222,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -35716,7 +36192,9 @@
         "max_recipients": 5,
         "window_block": 58387602,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -35874,7 +36352,9 @@
         "max_recipients": 2,
         "window_block": 62401116,
         "out_total": 6
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Beacon)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -35990,7 +36470,9 @@
       "0xc407311565432da013664af2041fe4ab4d026922": {
        "max_recipients": 32,
        "window_block": 62483467,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "Proxy (EIP-1967 Beacon)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      }
     }
@@ -36051,7 +36533,9 @@
         "max_recipients": 19,
         "window_block": 57063385,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -36337,7 +36821,9 @@
         "max_recipients": 2,
         "window_block": 63421334,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "up",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -36601,7 +37087,9 @@
         "max_recipients": 6,
         "window_block": 58093570,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -36743,7 +37231,9 @@
         "max_recipients": 19,
         "window_block": 57063385,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -36776,7 +37266,9 @@
         "max_recipients": 2,
         "window_block": 58516040,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -36829,7 +37321,9 @@
         "max_recipients": 5,
         "window_block": 57041111,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -36895,7 +37389,9 @@
         "max_recipients": 4,
         "window_block": 57876007,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -36978,7 +37474,9 @@
         "max_recipients": 18,
         "window_block": 56970381,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -37011,7 +37509,9 @@
         "max_recipients": 2,
         "window_block": 53967917,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "PonsV2BondingCurve",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -37198,7 +37698,9 @@
         "max_recipients": 8,
         "window_block": 57089901,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -37231,7 +37733,9 @@
         "max_recipients": 2,
         "window_block": 63403769,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Pons",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -37264,7 +37768,9 @@
         "max_recipients": 2,
         "window_block": 63397496,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "MEXC",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -37322,7 +37828,9 @@
         "max_recipients": 3,
         "window_block": 58210707,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -37355,7 +37863,9 @@
         "max_recipients": 2,
         "window_block": 55143572,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -37502,7 +38012,9 @@
         "max_recipients": 4,
         "window_block": 57267762,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -37846,7 +38358,9 @@
         "max_recipients": 5,
         "window_block": 57357575,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -38059,7 +38573,9 @@
         "max_recipients": 5,
         "window_block": 57016157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -38205,7 +38721,9 @@
         "max_recipients": 9,
         "window_block": 57207228,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -38413,7 +38931,9 @@
       "0xc407311565432da013664af2041fe4ab4d026922": {
        "max_recipients": 32,
        "window_block": 62483467,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "Proxy (EIP-1967 Beacon)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      }
     }
@@ -38445,7 +38965,9 @@
         "max_recipients": 8,
         "window_block": 56942746,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -38558,7 +39080,9 @@
       "0x65050a9b7e5075a2ba5ced7b1b64ee66262c40dc": {
        "max_recipients": 21,
        "window_block": 57081754,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      }
     }
@@ -38772,7 +39296,9 @@
         "max_recipients": 5,
         "window_block": 57055124,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -38828,7 +39354,9 @@
       "0xe0ab8dcc4342ca2d016b147f12146c8290b198b3": {
        "max_recipients": 50,
        "window_block": 62916399,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "Proxy (EIP-1967 Beacon)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      }
     }
@@ -38860,7 +39388,9 @@
         "max_recipients": 9,
         "window_block": 57100222,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -38983,7 +39513,9 @@
         "max_recipients": 9,
         "window_block": 57207228,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -39109,7 +39641,9 @@
         "max_recipients": 11,
         "window_block": 57095393,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -39200,7 +39734,9 @@
         "max_recipients": 4,
         "window_block": 58395277,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -39418,7 +39954,9 @@
         "max_recipients": 4,
         "window_block": 57360445,
         "out_total": 6
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Beacon)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0x5aa6f2d13b04eeef150dc029ab1e7567d31eb47f": {
        "kind": "PERSONAL",
@@ -39426,7 +39964,9 @@
         "max_recipients": 5,
         "window_block": 57175688,
         "out_total": 7
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Beacon)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0xf7fc95b08510ccd175f8efae86455a0c80770946": {
        "kind": "PERSONAL",
@@ -39434,7 +39974,9 @@
         "max_recipients": 12,
         "window_block": 57173099,
         "out_total": 16
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Beacon)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -39571,7 +40113,9 @@
         "max_recipients": 2,
         "window_block": 63465298,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "up",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0x99f9e0735307ad10ca01a3532f1726590ba51b31": {
        "kind": "PERSONAL",
@@ -39579,7 +40123,9 @@
         "max_recipients": 1,
         "window_block": 62836273,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "up",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0x5bed8fde4b9a605b2b7f7027c6d8b0f08c911165": {
        "kind": "PERSONAL",
@@ -39587,7 +40133,9 @@
         "max_recipients": 2,
         "window_block": 58496202,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "up",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -39620,7 +40168,9 @@
         "max_recipients": 8,
         "window_block": 58133676,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -40258,7 +40808,9 @@
         "max_recipients": 3,
         "window_block": 57199737,
         "out_total": 14
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Transparent)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -40311,7 +40863,9 @@
         "max_recipients": 1,
         "window_block": 777352,
         "out_total": 4
-       }
+       },
+       "arkham_entity": "Kernel",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0xdd9b39ffedf8602ff86c3621f30bbc598a2df223": {
        "kind": "PERSONAL",
@@ -40319,7 +40873,9 @@
         "max_recipients": 1,
         "window_block": 62296440,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Meridian Robinhood Single-Leg Vault (SRHV1)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0x79cb914f3f336426e89fab55a9488ab25770552d": {
        "kind": "PERSONAL",
@@ -40327,7 +40883,9 @@
         "max_recipients": 1,
         "window_block": 62703732,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ConditionalTokensReader",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": {
@@ -40420,7 +40978,9 @@
         "max_recipients": 5,
         "window_block": 57041111,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -40743,7 +41303,9 @@
         "max_recipients": 2,
         "window_block": 55143572,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -40898,7 +41460,9 @@
       "0xa95ac2dc572d43c507695bf459f90cc4b91a7d68": {
        "max_recipients": 32,
        "window_block": 63156071,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "BeaconProxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      }
     }
@@ -40980,7 +41544,9 @@
         "max_recipients": 8,
         "window_block": 56942746,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -41214,7 +41780,9 @@
         "max_recipients": 12,
         "window_block": 57087641,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -41424,12 +41992,16 @@
       "0x4ec64a0569ead00bfba75b557cf2a865152849ab": {
        "max_recipients": 50,
        "window_block": 62882393,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "BeaconProxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0x778e344d7e92caec1e51e7db4d4c11cfadc1008a": {
        "max_recipients": 43,
        "window_block": 63440556,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "BeaconProxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      }
     }
@@ -41486,7 +42058,9 @@
         "max_recipients": 3,
         "window_block": 55011723,
         "out_total": 7
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Beacon)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0x59c47bc5542d32b318d546f3fd45323df2aea52e": {
        "kind": "PERSONAL",
@@ -41494,7 +42068,9 @@
         "max_recipients": 3,
         "window_block": 54965113,
         "out_total": 7
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Beacon)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -41579,7 +42155,9 @@
         "max_recipients": 13,
         "window_block": 57837912,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -41745,7 +42323,9 @@
         "max_recipients": 5,
         "window_block": 57016157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -42025,7 +42605,9 @@
         "max_recipients": 5,
         "window_block": 57016157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -42058,7 +42640,9 @@
         "max_recipients": 4,
         "window_block": 57267762,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -42205,7 +42789,9 @@
         "max_recipients": 4,
         "window_block": 57267762,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -42296,12 +42882,16 @@
       "0xe9fcfaef3d5b9fbd6193cc60f738fed2a3ad2398": {
        "max_recipients": 33,
        "window_block": 63209484,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "Proxy (EIP-1167 Minimal)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0x6131c05d5a6b484069114968af2529a78cb8eb84": {
        "max_recipients": 49,
        "window_block": 49924515,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "Proxy (EIP-1167 Minimal)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      }
     }
@@ -42333,7 +42923,9 @@
         "max_recipients": 5,
         "window_block": 57660924,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -42374,7 +42966,9 @@
         "max_recipients": 4,
         "window_block": 56594049,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "PonsV2BondingCurve",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -42432,7 +43026,9 @@
         "max_recipients": 8,
         "window_block": 58133676,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -42498,7 +43094,9 @@
         "max_recipients": 9,
         "window_block": 57100222,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -42723,7 +43321,9 @@
         "max_recipients": 6,
         "window_block": 58395558,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -42868,7 +43468,9 @@
         "max_recipients": 3,
         "window_block": 58210707,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -43034,7 +43636,9 @@
         "max_recipients": 6,
         "window_block": 57060321,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -43295,7 +43899,9 @@
         "max_recipients": 13,
         "window_block": 55035442,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "PonsV2BondingCurve",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -43326,7 +43932,9 @@
       "0xc407311565432da013664af2041fe4ab4d026922": {
        "max_recipients": 32,
        "window_block": 62483467,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "Proxy (EIP-1967 Beacon)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      }
     }
@@ -43926,7 +44534,9 @@
         "max_recipients": 7,
         "window_block": 54370947,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Transparent)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -43959,7 +44569,9 @@
         "max_recipients": 19,
         "window_block": 57063385,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -44042,7 +44654,9 @@
         "max_recipients": 5,
         "window_block": 57016157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -44171,7 +44785,9 @@
         "max_recipients": 3,
         "window_block": 56734935,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Transparent)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -44270,7 +44886,9 @@
         "max_recipients": 14,
         "window_block": 57185688,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -44438,7 +45056,9 @@
         "max_recipients": 6,
         "window_block": 57087542,
         "out_total": 32
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -44504,7 +45124,9 @@
         "max_recipients": 2,
         "window_block": 60015336,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "LiquidMesh",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -44671,7 +45293,9 @@
         "max_recipients": 3,
         "window_block": 58210831,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -44737,7 +45361,9 @@
         "max_recipients": 1,
         "window_block": 57263441,
         "out_total": 10
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Transparent)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -44770,7 +45396,9 @@
         "max_recipients": 6,
         "window_block": 57060321,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -44861,7 +45489,9 @@
         "max_recipients": 5,
         "window_block": 57660924,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -44927,7 +45557,9 @@
         "max_recipients": 5,
         "window_block": 58139157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Transparent)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -44985,7 +45617,9 @@
         "max_recipients": 19,
         "window_block": 57063385,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -45269,7 +45903,9 @@
         "max_recipients": 5,
         "window_block": 57016157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -45300,7 +45936,9 @@
       "0xc407311565432da013664af2041fe4ab4d026922": {
        "max_recipients": 32,
        "window_block": 62483467,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "Proxy (EIP-1967 Beacon)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      }
     }
@@ -45584,7 +46222,9 @@
         "max_recipients": 9,
         "window_block": 57207228,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -45617,7 +46257,9 @@
         "max_recipients": 1,
         "window_block": 57427785,
         "out_total": 2
-       }
+       },
+       "arkham_entity": "Kernel (Proxy)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -45725,7 +46367,9 @@
         "max_recipients": 1,
         "window_block": 62930416,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Uniswap",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -45887,7 +46531,9 @@
         "max_recipients": 6,
         "window_block": 56743864,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null
@@ -46048,7 +46694,9 @@
       "0x65050a9b7e5075a2ba5ced7b1b64ee66262c40dc": {
        "max_recipients": 20,
        "window_block": 57973130,
-       "out_total": 44
+       "out_total": 44,
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      }
     }

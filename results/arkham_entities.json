@@ -1160,6 +1160,13 @@
   "label": "",
   "raw_title": "0x097644D44a00b80319A25b8F60c8070a89a7B1Ad | Arkham"
  },
+ "0x09ca2bb0d22342ebd95ac8d74459eccafbef05ac": {
+  "category": "",
+  "checked_at": "2026-09-24T16:19:09.934002+00:00",
+  "entity": "PonsV2BondingCurve",
+  "label": "",
+  "raw_title": "PonsV2BondingCurve (0x09C) | Arkham"
+ },
  "0x09dca88f38a2cf41c9ecdce330874f39891dde28": {
   "checked_at": "2026-09-17T19:30:27.937835+00:00",
   "entity": "",
@@ -1208,6 +1215,12 @@
   "label": "",
   "raw_title": "0x0E568432Dc45A5f236aB691cc5AA76d082D52572 | Arkham"
  },
+ "0x0e57ef4cb77362b3d69eb348735b38534104d237": {
+  "checked_at": "2026-09-24T16:18:20.369225+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x0E57Ef4Cb77362b3d69EB348735b38534104d237 | Arkham"
+ },
  "0x0efc029803411f663eccf3c23dba646ef6016502": {
   "checked_at": "2026-09-17T19:31:52.501657+00:00",
   "entity": "",
@@ -1219,6 +1232,12 @@
   "entity": "",
   "label": "",
   "raw_title": "0x0F328AD312021d973a30F8DB34FB4DDD42563a58 | Arkham"
+ },
+ "0x0fbb3292c7ce4ca8448e740d533935b1fa34be53": {
+  "checked_at": "2026-09-24T16:17:16.993052+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x0FBb3292c7cE4cA8448e740D533935b1Fa34BE53 | Arkham"
  },
  "0x113280f1a9fc551214c146cca6369dc9784ae2ed": {
   "checked_at": "2026-09-17T19:32:11.774234+00:00",
@@ -1263,6 +1282,12 @@
   "entity": "Proxy",
   "label": "",
   "raw_title": "Proxy (0x131) | Arkham"
+ },
+ "0x1366ff0e05c34cfe3c26cdba5192c07c36e3b5d3": {
+  "checked_at": "2026-09-24T16:20:04.083798+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x1366ff0E05C34Cfe3C26cdBA5192c07C36e3b5D3 | Arkham"
  },
  "0x14e1f3c9cc91c53cb698690a632b51763fb080f9": {
   "category": "",
@@ -1314,6 +1339,13 @@
   "label": "",
   "raw_title": "0x189daa24E0F0e61864Cd099b8dC16225c4E5877b | Arkham"
  },
+ "0x1aaae8f679118af8f41cad43fc6049417c982edb": {
+  "category": "",
+  "checked_at": "2026-09-24T16:20:19.866592+00:00",
+  "entity": "BeaconProxy",
+  "label": "",
+  "raw_title": "BeaconProxy (0x1Aa) | Arkham"
+ },
  "0x1b04374dd2fe22072c24b7aa97b14ff1737b25bd": {
   "checked_at": "2026-09-17T19:34:09.766536+00:00",
   "entity": "",
@@ -1325,6 +1357,12 @@
   "entity": "",
   "label": "",
   "raw_title": "0x1C7CB0f4f5959284C10d50334BfD718CC08B30d8 | Arkham"
+ },
+ "0x1cbaf24d53fe930fce8eff149fa797d2611da149": {
+  "checked_at": "2026-09-24T16:21:01.579338+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x1cbaF24D53fe930fCe8EFF149fA797D2611Da149 | Arkham"
  },
  "0x1d0c7a2a9e55ff80df4de8a3aee8f35863a37f73": {
   "checked_at": "2026-09-17T19:34:31.455323+00:00",
@@ -1541,6 +1579,13 @@
   "label": "",
   "raw_title": "0x35EE18c4f89491abAc6C7a8ee6ebD0F0a4431762 | Arkham"
  },
+ "0x365ec3909f4bcd276a157f5e82f6da64968e3ebb": {
+  "category": "",
+  "checked_at": "2026-09-24T16:20:33.391865+00:00",
+  "entity": "Kernel",
+  "label": "",
+  "raw_title": "Kernel (0x365) | Arkham"
+ },
  "0x36ffaf904ec05b01978caafec6c057d5779afb03": {
   "checked_at": "2026-09-20T17:58:27.289816+00:00",
   "entity": "",
@@ -1558,6 +1603,12 @@
   "entity": "",
   "label": "",
   "raw_title": "0x396cD1e673a164033516C96b143D70B428D75951 | Arkham"
+ },
+ "0x39adb8acd07427d338b5f1afab436a04abfdb7c4": {
+  "checked_at": "2026-09-24T16:18:41.392687+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x39ADB8acD07427D338b5f1AfAb436A04AbFdB7c4 | Arkham"
  },
  "0x39b38686a19836ac10162c490e4558e120cbbe5f": {
   "category": "Decentralized Exchange",
@@ -1792,6 +1843,13 @@
   "label": "",
   "raw_title": "0x4E30777faC45486003fd1B28f316059BAE9922a2 | Arkham"
  },
+ "0x4ec64a0569ead00bfba75b557cf2a865152849ab": {
+  "category": "",
+  "checked_at": "2026-09-24T16:21:09.339451+00:00",
+  "entity": "BeaconProxy",
+  "label": "",
+  "raw_title": "BeaconProxy (0x4EC) | Arkham"
+ },
  "0x4ef94cd1ab45ebbb50f9e73cd6e45c5027caa3f7": {
   "category": "Decentralized Exchange",
   "checked_at": "2026-09-17T18:53:57.232328+00:00",
@@ -1859,6 +1917,12 @@
   "entity": "",
   "label": "",
   "raw_title": "0x525C35DDC044C3E90d826F6AC93764A69581B643 | Arkham"
+ },
+ "0x53197cbac1bd95a2aec1a6a7cd1e69a23bc3ffb8": {
+  "checked_at": "2026-09-24T16:19:50.946139+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x53197CBAC1bD95A2Aec1A6A7cd1E69a23BC3FfB8 | Arkham"
  },
  "0x534577f108201cdd0f121ed5f7ff97b8994bbd07": {
   "category": "Decentralized Exchange",
@@ -2035,6 +2099,13 @@
   "label": "",
   "raw_title": "0x60e66A1d50D2e44F36d0bB7F4c42F5aF261b3638 | Arkham"
  },
+ "0x6131c05d5a6b484069114968af2529a78cb8eb84": {
+  "category": "",
+  "checked_at": "2026-09-24T16:21:23.027474+00:00",
+  "entity": "Proxy (EIP-1167 Minimal)",
+  "label": "",
+  "raw_title": "Proxy (EIP-1167 Minimal) (0x613) | Arkham"
+ },
  "0x631d19076f4ac429bbeeefd9cd9bb743ba8246ce": {
   "checked_at": "2026-09-20T18:16:06.129870+00:00",
   "entity": "",
@@ -2128,6 +2199,12 @@
   "label": "",
   "raw_title": "0x69B94c069A42A413b3DB6d6783B140f8AB35F946 | Arkham"
  },
+ "0x6a02e2f7067894d07e323d2d41b7999c84cdf6b2": {
+  "checked_at": "2026-09-24T16:17:47.943560+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x6a02E2f7067894d07e323d2D41b7999c84cDF6b2 | Arkham"
+ },
  "0x6bed4038a8081deaaf1a8a56ba5d19bca776aab3": {
   "checked_at": "2026-09-20T18:18:39.505097+00:00",
   "entity": "",
@@ -2170,6 +2247,12 @@
   "label": "",
   "raw_title": "0x6D42fdb9D3Ca7A243896cDDC3bC4Acae3a824428 | Arkham"
  },
+ "0x6e2a900c02291096efbc9b9e5986e96cb1ed49e3": {
+  "checked_at": "2026-09-24T16:17:23.670304+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x6e2a900c02291096EFbc9b9e5986e96cb1Ed49e3 | Arkham"
+ },
  "0x6e4d8093e169865d60c707d00f050b0fa70bbe96": {
   "category": "Decentralized Exchange",
   "checked_at": "2026-09-20T18:19:55.761549+00:00",
@@ -2182,6 +2265,12 @@
   "entity": "",
   "label": "",
   "raw_title": "0x6F885E8cd5a461C8CDCB1F1B18fd4532566382df | Arkham"
+ },
+ "0x6fdbdb6ecc0d0eb472aa1ede6aec127455b4d251": {
+  "checked_at": "2026-09-24T16:17:10.923040+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x6fDbDB6ECc0D0eB472AA1Ede6aec127455B4d251 | Arkham"
  },
  "0x6ffebc05c03548c34b30688f19d472eb4f56aab4": {
   "checked_at": "2026-09-20T18:20:15.633048+00:00",
@@ -2246,6 +2335,13 @@
   "label": "",
   "raw_title": "Proxy (EIP-1167 Minimal) (0x76D) | Arkham"
  },
+ "0x778e344d7e92caec1e51e7db4d4c11cfadc1008a": {
+  "category": "",
+  "checked_at": "2026-09-24T16:18:00.274963+00:00",
+  "entity": "BeaconProxy",
+  "label": "",
+  "raw_title": "BeaconProxy (0x778) | Arkham"
+ },
  "0x784dc2e597b29523be99dd79394d9c6514ca6e8c": {
   "checked_at": "2026-09-20T18:22:57.088215+00:00",
   "entity": "",
@@ -2263,6 +2359,13 @@
   "entity": "",
   "label": "",
   "raw_title": "0x78886C8248dE7C269352e24a025b6C3085D25891 | Arkham"
+ },
+ "0x79cb914f3f336426e89fab55a9488ab25770552d": {
+  "category": "",
+  "checked_at": "2026-09-24T16:20:48.260206+00:00",
+  "entity": "ConditionalTokensReader",
+  "label": "",
+  "raw_title": "ConditionalTokensReader (0x79c) | Arkham"
  },
  "0x7a59133cd7578812878a6286ad2a71d654449e2d": {
   "checked_at": "2026-09-20T18:24:15.728751+00:00",
@@ -2361,11 +2464,25 @@
   "label": "",
   "raw_title": "0x814B25a8669b238721b0E6C2B5c5aE66509B4699 | Arkham"
  },
+ "0x816744b7304020399e594f056e1c4b36973c57b4": {
+  "category": "",
+  "checked_at": "2026-09-24T16:19:57.784764+00:00",
+  "entity": "BeaconProxy",
+  "label": "",
+  "raw_title": "BeaconProxy (0x816) | Arkham"
+ },
  "0x837ac54f8b411baadbf610c43ee477b0c559dff8": {
   "checked_at": "2026-09-20T18:28:58.577824+00:00",
   "entity": "",
   "label": "",
   "raw_title": "0x837AC54F8b411baADBF610C43ee477b0c559DFF8 | Arkham"
+ },
+ "0x83914a5d866881e1588d614b03239f48eb596f17": {
+  "category": "",
+  "checked_at": "2026-09-24T16:19:22.801000+00:00",
+  "entity": "Proxy (EIP-1967 Beacon)",
+  "label": "",
+  "raw_title": "Proxy (EIP-1967 Beacon) (0x839) | Arkham"
  },
  "0x85a1cbbe2933f15f2599b9e0e03e6f89655fa4c1": {
   "checked_at": "2026-09-20T18:29:19.662613+00:00",
@@ -2528,6 +2645,13 @@
   "label": "",
   "raw_title": "0x91208A602B275f01C9425990Ec4E8bD83e598f4e | Arkham"
  },
+ "0x9183d41097b912827f17939b0bc7c54b520d8f17": {
+  "category": "",
+  "checked_at": "2026-09-24T16:18:47.998584+00:00",
+  "entity": "BeaconProxy",
+  "label": "",
+  "raw_title": "BeaconProxy (0x918) | Arkham"
+ },
  "0x91b192836073610774c964d56accacc0ceb7ac00": {
   "category": "",
   "checked_at": "2026-09-20T18:36:58.820293+00:00",
@@ -2663,6 +2787,12 @@
   "label": "",
   "raw_title": "up (0x9EE) | Arkham"
  },
+ "0x9f3edbfae8014d55e328b6dd966c6c95e75f6210": {
+  "checked_at": "2026-09-24T16:17:34.804330+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x9f3edbfAE8014d55E328b6Dd966C6C95E75f6210 | Arkham"
+ },
  "0x9f9f65de3c613d285848d7d74ceb26ade8aa17b8": {
   "checked_at": "2026-09-20T18:42:45.632531+00:00",
   "entity": "",
@@ -2731,6 +2861,13 @@
   "entity": "up",
   "label": "",
   "raw_title": "up (0xa63) | Arkham"
+ },
+ "0xa95ac2dc572d43c507695bf459f90cc4b91a7d68": {
+  "category": "",
+  "checked_at": "2026-09-24T16:20:54.793009+00:00",
+  "entity": "BeaconProxy",
+  "label": "",
+  "raw_title": "BeaconProxy (0xa95) | Arkham"
  },
  "0xa972a1c2b0481cccd420e90c94f012444cb4d5d0": {
   "checked_at": "2026-09-20T18:46:06.793347+00:00",
@@ -2884,11 +3021,25 @@
   "label": "",
   "raw_title": "0xbbf9f1B3d47c4ae69681B220779BA97875bc8A87 | Arkham"
  },
+ "0xbc0fffc8dccd9ec19f8ed68ad5345524224419cf": {
+  "category": "",
+  "checked_at": "2026-09-24T16:18:06.742267+00:00",
+  "entity": "PonsV2BondingCurve",
+  "label": "",
+  "raw_title": "PonsV2BondingCurve (0xbC0) | Arkham"
+ },
  "0xbc143bd5b049fed0fbc174d0dce1cf68c06662b5": {
   "checked_at": "2026-09-20T18:52:06.644122+00:00",
   "entity": "",
   "label": "",
   "raw_title": "0xbc143bd5b049feD0FbC174d0DCe1cF68C06662b5 | Arkham"
+ },
+ "0xbc35d0491131a735a33bc9b42f0e3ab550d71407": {
+  "category": "",
+  "checked_at": "2026-09-24T16:18:26.737483+00:00",
+  "entity": "Proxy (EIP-1967 Beacon)",
+  "label": "",
+  "raw_title": "Proxy (EIP-1967 Beacon) (0xBc3) | Arkham"
  },
  "0xbcc2fbea479a6a498fe02cae9a5a76a0ab0d960e": {
   "checked_at": "2026-09-20T18:52:17.547425+00:00",
@@ -3060,6 +3211,20 @@
   "label": "",
   "raw_title": "0xc3D23b8759a896e8C53BEb8B0184FEd2A0064BE1 | Arkham"
  },
+ "0xc407311565432da013664af2041fe4ab4d026922": {
+  "category": "",
+  "checked_at": "2026-09-24T16:17:41.316537+00:00",
+  "entity": "Proxy (EIP-1967 Beacon)",
+  "label": "",
+  "raw_title": "Proxy (EIP-1967 Beacon) (0xC40) | Arkham"
+ },
+ "0xc45794465a9007256ab1be2bffd85ba1d4f82342": {
+  "category": "",
+  "checked_at": "2026-09-24T16:18:53.934612+00:00",
+  "entity": "PonsV2BondingCurve",
+  "label": "",
+  "raw_title": "PonsV2BondingCurve (0xC45) | Arkham"
+ },
  "0xc4a21f9d6485fc5893dd4a491b320a83daf4da1d": {
   "category": "Decentralized Exchange",
   "checked_at": "2026-09-20T19:00:40.042931+00:00",
@@ -3078,6 +3243,13 @@
   "entity": "",
   "label": "",
   "raw_title": "0xC5C7A28eC81CA81AE162bAdC09677e9E93C2eca8 | Arkham"
+ },
+ "0xc60357914817c8f53d33e45c528ccfc66fe80b1d": {
+  "category": "",
+  "checked_at": "2026-09-24T16:19:28.507670+00:00",
+  "entity": "BeaconProxy",
+  "label": "",
+  "raw_title": "BeaconProxy (0xC60) | Arkham"
  },
  "0xc644d3f68be1079effc86e9f354cd9554b582db7": {
   "checked_at": "2026-09-20T19:01:24.730308+00:00",
@@ -3121,6 +3293,13 @@
   "entity": "PrivateVault (Proxy)",
   "label": "",
   "raw_title": "PrivateVault (Proxy) (0xCAA) | Arkham"
+ },
+ "0xcaf84b91502f94c500cdb59d020dc490ea8882ef": {
+  "category": "",
+  "checked_at": "2026-09-24T16:19:36.908106+00:00",
+  "entity": "BeaconProxy",
+  "label": "",
+  "raw_title": "BeaconProxy (0xCaF) | Arkham"
  },
  "0xcb6e046a3a71583678a5ac5442481389b45f5e1e": {
   "category": "",
@@ -3196,6 +3375,13 @@
   "label": "",
   "raw_title": "0xd11186E4E6Bdb05e408BB306F389cd62390B52c8 | Arkham"
  },
+ "0xd15fe25ed0dba12fe05e7029c88b10c25e8880e3": {
+  "category": "",
+  "checked_at": "2026-09-24T16:18:13.997550+00:00",
+  "entity": "Disperse.app",
+  "label": "Disperse",
+  "raw_title": "Disperse.app: Disperse (0xd15) | Arkham"
+ },
  "0xd1e65160c0c5745da95bf3ac899fccf666ccda64": {
   "category": "",
   "checked_at": "2026-09-20T19:07:48.608051+00:00",
@@ -3239,6 +3425,13 @@
   "entity": "",
   "label": "",
   "raw_title": "0xd765e135a5c99adf842CbD3F005D759221127eD3 | Arkham"
+ },
+ "0xd782783fa928150950bbe070fa4c18c85b9427e2": {
+  "category": "",
+  "checked_at": "2026-09-24T16:19:17.113227+00:00",
+  "entity": "BeaconProxy",
+  "label": "",
+  "raw_title": "BeaconProxy (0xD78) | Arkham"
  },
  "0xd8c0581aa1ed5777a18c02a25e3175a5a52a7db2": {
   "checked_at": "2026-09-20T19:10:08.145205+00:00",
@@ -3337,6 +3530,13 @@
   "label": "",
   "raw_title": "0xdd982Df4c2326E40fe21ae9B0Bbe50225BBE6a3B | Arkham"
  },
+ "0xdd9b39ffedf8602ff86c3621f30bbc598a2df223": {
+  "category": "",
+  "checked_at": "2026-09-24T16:20:40.660596+00:00",
+  "entity": "Meridian Robinhood Single-Leg Vault (SRHV1)",
+  "label": "",
+  "raw_title": "Meridian Robinhood Single-Leg Vault (SRHV1) (0xdD9) | Arkham"
+ },
  "0xddabc5fc33f359d0c52d783d2091a101ca79e05f": {
   "category": "Decentralized Exchange",
   "checked_at": "2026-09-20T19:15:02.265679+00:00",
@@ -3356,6 +3556,13 @@
   "label": "",
   "raw_title": "0xDE13B74761273693dcb65dD44FB5f861bEc39Ca2 | Arkham"
  },
+ "0xdea4c3aacc4aea718de30c8da840f874193c9803": {
+  "category": "",
+  "checked_at": "2026-09-24T16:17:28.966153+00:00",
+  "entity": "PonsV2BondingCurve",
+  "label": "",
+  "raw_title": "PonsV2BondingCurve (0xdEa) | Arkham"
+ },
  "0xdf040d9df9fd77cd3318f54a8cdc44112a354c30": {
   "category": "",
   "checked_at": "2026-09-20T19:16:04.833331+00:00",
@@ -3368,6 +3575,12 @@
   "entity": "",
   "label": "",
   "raw_title": "0xDF2619a865E5033c66b07264F4f54288941d2984 | Arkham"
+ },
+ "0xdff7c89bb3019eb383d201422039cc107791921d": {
+  "checked_at": "2026-09-24T16:18:33.796069+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0xdFf7c89BB3019eb383D201422039cc107791921d | Arkham"
  },
  "0xe02aeb7af30d4b033e73a731cdccd9f7a1d58f8d": {
   "checked_at": "2026-09-20T19:16:37.607231+00:00",
@@ -3386,6 +3599,20 @@
   "entity": "",
   "label": "",
   "raw_title": "0xe0809D34BfD417F6F9afE18f7549Ab6398F27402 | Arkham"
+ },
+ "0xe0ab8dcc4342ca2d016b147f12146c8290b198b3": {
+  "category": "",
+  "checked_at": "2026-09-24T16:20:26.249254+00:00",
+  "entity": "Proxy (EIP-1967 Beacon)",
+  "label": "",
+  "raw_title": "Proxy (EIP-1967 Beacon) (0xE0A) | Arkham"
+ },
+ "0xe25e9bc31d24bb652fb6e2e466d7c9c89701173e": {
+  "category": "",
+  "checked_at": "2026-09-24T16:19:42.926042+00:00",
+  "entity": "BeaconProxy",
+  "label": "",
+  "raw_title": "BeaconProxy (0xe25) | Arkham"
  },
  "0xe27df22f121f566fe3bea33065267156995d9965": {
   "checked_at": "2026-09-20T19:17:21.300180+00:00",
@@ -3484,11 +3711,32 @@
   "label": "",
   "raw_title": "0xE844CB4604C78aF6BDA229734600A06eef82eF72 | Arkham"
  },
+ "0xe9630a13f2d986f750e8d71919a70b35f88a6d55": {
+  "category": "",
+  "checked_at": "2026-09-24T16:17:54.036261+00:00",
+  "entity": "Proxy (EIP-1967 Beacon)",
+  "label": "",
+  "raw_title": "Proxy (EIP-1967 Beacon) (0xE96) | Arkham"
+ },
+ "0xe98d7235666559d1a9a1b6c0e2976b6ff05ca3c9": {
+  "category": "",
+  "checked_at": "2026-09-24T16:20:12.399652+00:00",
+  "entity": "BeaconProxy",
+  "label": "",
+  "raw_title": "BeaconProxy (0xe98) | Arkham"
+ },
  "0xe9a1746626fc03ee72d5a81c71a0b1b4d195d094": {
   "checked_at": "2026-09-20T19:21:59.563761+00:00",
   "entity": "",
   "label": "",
   "raw_title": "0xE9a1746626FC03Ee72d5a81c71a0B1B4d195d094 | Arkham"
+ },
+ "0xe9fcfaef3d5b9fbd6193cc60f738fed2a3ad2398": {
+  "category": "",
+  "checked_at": "2026-09-24T16:21:15.994166+00:00",
+  "entity": "Proxy (EIP-1167 Minimal)",
+  "label": "",
+  "raw_title": "Proxy (EIP-1167 Minimal) (0xe9F) | Arkham"
  },
  "0xea07f4270a378025427d131acf0db9503284cd78": {
   "checked_at": "2026-09-20T19:22:43.237976+00:00",
@@ -3667,6 +3915,13 @@
   "entity": "",
   "label": "",
   "raw_title": "0xfA56cBf4E4C494F613Dc647AD14618d210238720 | Arkham"
+ },
+ "0xfa7e0816d8fde14fa6e70cebd167e106512c4747": {
+  "category": "",
+  "checked_at": "2026-09-24T16:19:02.294823+00:00",
+  "entity": "Proxy (EIP-1967 Beacon)",
+  "label": "",
+  "raw_title": "Proxy (EIP-1967 Beacon) (0xfA7) | Arkham"
  },
  "0xfb4b45dc07a4dac8dd872f86a72885e33b53b48e": {
   "checked_at": "2026-09-20T19:30:18.905768+00:00",
