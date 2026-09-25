@@ -135,11 +135,33 @@ def main() -> int:
             restarts = 0
 
         if v["tracebacks"] > tb_baseline:
+            # klasifikasi: hanya pola error BARU (signature beda) yang
+            # membangunkan sesi — 429/kill noise yang sudah dikenal tidak.
+            sig = ""
+            try:
+                sys.path.insert(0, str(REPO / "scripts"))
+                import _vps as _v
+                s2 = _v.connect()
+                _, o2, _ = s2.exec_command(
+                    "L=$(grep -an 'Traceback' /opt/topwallet/logs/"
+                    "supervisor_pipeline.log | tail -1 | cut -d: -f1); "
+                    "sed -n \"${L},$((L+40))p\" /opt/topwallet/logs/"
+                    "supervisor_pipeline.log | grep -aE 'Error|error' | tail -1",
+                    timeout=45)
+                sig = o2.read().decode(errors="replace").strip()[:120]
+                s2.close()
+            except Exception:
+                pass
             st = load(STATE, {})
+            known = st.get("traceback_signature") or ""
             st["traceback_baseline"] = v["tracebacks"]
             save(STATE, st)
-            return escalate(4, "Traceback baru di log pipeline VPS",
-                            f"baseline={tb_baseline} sekarang={v['tracebacks']}")
+            if sig and known and sig.split(":")[0] not in known:
+                return escalate(4, f"Traceback pola BARU: {sig}",
+                                f"baseline={tb_baseline} sekarang={v['tracebacks']}")
+            print(f"[{ts}] {v['tracebacks'] - tb_baseline} traceback baru "
+                  f"(pola dikenal: {sig[:60]}) — tidak eskalasi", flush=True)
+            tb_baseline = v["tracebacks"]
 
         if not v["swap_max_ts"] or str(v["swap_max_ts"]) <= FRESH_AFTER:
             elapsed_h = (time.time() - START) / 3600

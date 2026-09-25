@@ -1,0 +1,6 @@
+{
+ "traceback_baseline": 3884,
+ "delta_started_at": "2026-09-24T20:38:07.922515+00:00",
+ "delta_status": "running",
+ "traceback_signature": "AllEndpointsDown: 429 from endpoint"
+}
