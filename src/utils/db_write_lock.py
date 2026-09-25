@@ -36,11 +36,24 @@ async def db_write_lock():
     fh = open(LOCK_PATH, "w")
 
     def _acquire() -> None:
-        # blocking: menunggu giliran tanpa poll; kernel melepas lock
-        # otomatis bila pemegangnya mati.
-        fcntl.flock(fh, fcntl.LOCK_EX)
+        # S-45f: polling LOCK_NB + jitter — blocking flock TIDAK FIFO:
+        # pemenang commit terus-menerus (sweep) bisa mem-menangkan balapan
+        # selamanya melawan waiter blocking (pipeline/track-ca kelaparan,
+        # py-spy 2026-09-25 16:47). Polling membuat semua pelaku setara;
+        # waiter menang dalam hitungan detik karena lock dipegang hitungan
+        # milidetik per commit.
+        import os
+        import time
+        jitter = 0.15 + (os.getpid() % 11) * 0.03
+        while True:
+            try:
+                fcntl.flock(fh, fcntl.LOCK_EX | fcntl.LOCK_NB)
+                return
+            except BlockingIOError:
+                time.sleep(jitter)
 
-    await asyncio.get_running_loop().run_in_executor(None, _acquire)
+    loop = asyncio.get_running_loop()
+    await loop.run_in_executor(None, _acquire)
     try:
         yield
     finally:
