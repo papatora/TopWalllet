@@ -488,17 +488,11 @@ class Pipeline:
             batch = wallets[i:i + settings.enrich_concurrency]
             results = await asyncio.gather(
                 *[self._fetch_one(w.address, interest_map.get(w.address, []),
-                                  counterparties, decimals) for w in batch],
+                                  counterparties, decimals,
+                                  sort="desc" if w.status == "enriched" else "asc")
+                  for w in batch],
                 return_exceptions=True,
             )
-            # S-45g: tulis batch (delete + update + insert) dijalankan di
-            # dalam SATU segmen terkunci singkat. Dulu delete di
-            # _persist_events membuka transaksi tulis sejak awal batch dan
-            # transaksi itu terbuka melintasi fetch jaringan batch
-            # BERIKUTNYA (menit-menit dgn backoff 429) → write-lock SQLite
-            # terpegang menit-menit → semua writer lain 'database is
-            # locked'. Itu penyakit asal crash-loop 16 Sep 2026.
-            purge: list[str] = []
             for wallet, result in zip(batch, results):
                 if isinstance(result, Exception):
                     wallet.status = "failed"
@@ -507,12 +501,12 @@ class Pipeline:
                     jlog(log, logging.WARNING, "wallet enrich failed",
                          wallet=wallet.address, error=str(result)[:160])
                     continue
-                await self._persist_events(session, wallet, result, purge)
+                await self._persist_events(session, wallet, result)
                 enriched += 1
+            # S-45g/S-45i: penulisan batch di segmen terkunci singkat —
+            # append-only (tanpa delete), transaksi tidak pernah terbuka
+            # melintasi fetch jaringan.
             async with db_write_lock():
-                for addr in purge:
-                    await session.execute(
-                        delete(SwapEvent).where(SwapEvent.wallet_address == addr))
                 await session.commit()
             jlog(log, logging.INFO, "enrich progress", done=min(i + len(batch), len(wallets)),
                  total=len(wallets), enriched=enriched, failed=failed)
@@ -520,7 +514,7 @@ class Pipeline:
 
     async def _fetch_one(self, address: str, interest_tokens: list[str],
                          counterparties: dict[str, set[str]],
-                         decimals: dict[str, int]) -> list[TradeEvent]:
+                         decimals: dict[str, int], sort: str = "asc") -> list[TradeEvent]:
         """Network-only part (safe to run concurrently): per interested token,
         pull the wallet's full transfer history for that token and classify
         swaps by NET flow per transaction.
@@ -529,6 +523,11 @@ class Pipeline:
         classification fails; instead we group a tx's legs and use
         (received − sent) as the wallet's net trade, requiring only that the
         tx touched the token's pool or the v4 PoolManager singleton.
+
+        S-45i: sort="desc" (TERBARU dulu) untuk wallet refresh — trade baru
+        ada di UJUNG histori; sort=asc + cap halaman menjemput histori tua
+        dan melewatkan trade baru (kohor refresh 1.200 wallet = nol swap
+        baru, 2026-09-25).
         """
         address = address.lower()
         events: list[TradeEvent] = []
@@ -540,6 +539,7 @@ class Pipeline:
                 continue
             items = await self.blockscout.address_token_transfers(
                 address, settings.enrich_max_pages_per_wallet, token_filter=token,
+                sort=sort,
             )
             by_tx: dict[str, list[dict]] = {}
             for it in items:
@@ -589,27 +589,22 @@ class Pipeline:
         return events
 
     async def _persist_events(self, session: AsyncSession, wallet: Wallet,
-                              events: list[TradeEvent], purge: list[str]) -> None:
+                              events: list[TradeEvent]) -> None:
         """Main-loop part: fill missing timestamps and persist unpriced swaps
         (prices are attached by the targeted prices stage + analyze lookup).
 
-        S-45g: DELETE swap lama TIDAK dijalankan di sini — delete adalah
-        statement tulis yang membuka transaksi seketika; bila dijalankan
-        di titik ini, transaksi tulis terbuka melintasi fetch jaringan
-        batch berikutnya (menit-menit) dan membuat writer lain 'database
-        is locked'. Pemanggil mengumpulkan address di `purge` lalu
-        mengeksekusi delete + commit bersama di dalam segmen terkunci."""
-        if not events:
-            wallet.status = "enriched"
-            wallet.enriched_at = datetime.now(timezone.utc)
-            purge.append(wallet.address)  # tetap bersihkan swap lama (kosong = tidak ada)
-            return
+        S-45i: APPEND-ONLY dengan dedupe (wallet, token, side, tx_hash) —
+        dulu delete-all + reinsert membuat refresh menjatuhkan histori lama
+        yang berada di luar jendela fetch (swap 442.345→441.127 saat ronde
+        pertama, 2026-09-25)."""
+        existing: set[tuple] = set()
+        rows = await session.execute(
+            select(SwapEvent.token_address, SwapEvent.side, SwapEvent.tx_hash)
+            .where(SwapEvent.wallet_address == wallet.address))
+        for tok, side, tx in rows:
+            existing.add((tok, side, (tx or "").lower()))
         missing_ts_blocks = [e.block_num for e in events if e.ts is None]
         ts_map = await self.rpc.block_timestamps(missing_ts_blocks) if missing_ts_blocks else {}
-
-        # full refresh per wallet keeps re-runs idempotent — delete DIEKSEKUSI
-        # pemanggil di segmen terkunci (lihat docstring)
-        purge.append(wallet.address)
         seen: set[tuple] = set()
         kept = 0
         for ev in events:
@@ -617,6 +612,11 @@ class Pipeline:
             if key in seen:
                 continue
             seen.add(key)
+            # S-45i: append-only — lewati yang sudah ada (kunci unik DB:
+            # wallet+tx+token+side); tanpa delete-all
+            dup = (ev.token, ev.side, (ev.tx_hash or "").lower())
+            if dup in existing:
+                continue
             ts = ev.ts or (
                 datetime.fromtimestamp(ts_map[ev.block_num], tz=timezone.utc)
                 if ev.block_num in ts_map else None
