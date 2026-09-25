@@ -67,7 +67,13 @@ def write_status(update: dict) -> None:
     status.update(update)
     status["updated_at"] = now_iso()
     STATUS_FILE.parent.mkdir(parents=True, exist_ok=True)
-    STATUS_FILE.write_text(json.dumps(status, indent=2))
+    # S-45h: tulis ATOMIK (tmp + replace) — tulis langsung pernah membuat
+    # main() membaca file setengah-tulis -> JSONDecodeError -> supervisor
+    # mati-sendiri -> systemd restart -> cycle tidak pernah spawn
+    # (log '[supervisor] starting' berulang tanpa 'cycle N').
+    tmp = STATUS_FILE.with_suffix(".json.tmp")
+    tmp.write_text(json.dumps(status, indent=2))
+    os.replace(tmp, STATUS_FILE)
 
 
 def tail(path: Path, n: int = 3) -> str:
@@ -146,8 +152,10 @@ def kill_orphan_pipelines() -> int:
         except OSError:
             continue
         is_pipeline = "src.cli" in cmd and "pipeline" in cmd
-        is_supervisor = "supervisor.py" in cmd
-        if is_pipeline or is_supervisor:
+        # S-45h: supervisor LAIN tidak dibunuh — siklus hidup-mati supervisor
+        # (systemd vs watchdog vs cron) adalah perang kill-spawn; masing-
+        # masing pengelolanya (systemd/watchdog) yang berhak.
+        if is_pipeline:
             try:
                 os.kill(int(pid_dir.name), signal.SIGKILL)
                 killed += 1
@@ -216,7 +224,16 @@ def main() -> int:
             write_status({"phase": "error", "error": str(e)[:300]})
             print(f"[supervisor] cycle {cycle} error: {e}", flush=True)
 
-        status = json.loads(STATUS_FILE.read_text())
+        # S-45h: baca status tahan-banting — file bisa sedang ditulis proses
+        # pemantauan; JSONDecodeError tidak boleh membunuh supervisor.
+        try:
+            status = json.loads(STATUS_FILE.read_text())
+        except (json.JSONDecodeError, OSError):
+            time.sleep(2)
+            try:
+                status = json.loads(STATUS_FILE.read_text())
+            except Exception:
+                status = {"phase": "unknown", "last_exit": None}
         if time.time() - last_check >= CHECK_INTERVAL:
             verdict = zai_watchdog(status)
             last_check = time.time()
