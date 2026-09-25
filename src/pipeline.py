@@ -16,7 +16,7 @@ from collections import defaultdict
 from datetime import datetime, timedelta, timezone
 from statistics import median
 
-from sqlalchemy import delete, func, or_, select
+from sqlalchemy import delete, func, or_, select, text
 from sqlalchemy.exc import OperationalError
 from sqlalchemy.ext.asyncio import AsyncSession
 
@@ -403,12 +403,14 @@ class Pipeline:
             .order_by(Wallet.first_seen.asc())
         )
         wallets = (await session.execute(query)).scalars().all()
-        # S-44: kohor refresh — wallet 'enriched' dulu one-shot sehingga
-        # swap terbekukan di tanggal enrich terakhir (LB/dashboard statis,
-        # swap_max_ts mentok 16 Sep 2026). Ambil ulang wallet aktif yang
-        # datanya kadaluarsa: prioritas last_active terbaru (paling mungkin
-        # punya trade baru), lalu enriched_at paling tua. NULL = belum
-        # pernah di-refresh sejak kolom ada → paling diutamakan.
+        # S-44/S-45b: kohor refresh — wallet 'enriched' dulu one-shot
+        # (LB/dashboard statis, swap_max_ts mentok 16 Sep 2026). URUTAN:
+        # trader token TERBARU dulu (max first_seen dari interest-nya) —
+        # last_active tidak bisa melihat aktivitas pasca-beku karena baru
+        # berubah saat swap ter-persist, sedangkan aktivitas kini ada di
+        # token yang baru ditemukan (800 refresh pertama by last_active
+        # menghasilkan NOL swap baru — bukti 2026-09-25). Tie-break:
+        # enriched_at paling tua dulu; NULL = belum pernah di-refresh.
         cutoff = datetime.now(timezone.utc) - timedelta(
             hours=settings.enrich_refresh_hours)
         budget_left = (
@@ -416,18 +418,28 @@ class Pipeline:
             if settings.enrich_limit_per_run > 0 else settings.enrich_refresh_limit
         )
         if budget_left > 0:
-            refresh = (await session.execute(
-                select(Wallet)
-                .where(
-                    Wallet.status == "enriched",
-                    or_(Wallet.enriched_at.is_(None), Wallet.enriched_at < cutoff),
-                )
-                .order_by(
-                    Wallet.last_active.desc().nullslast(),
-                    Wallet.enriched_at.asc().nullsfirst(),
-                )
-                .limit(budget_left)
-            )).scalars().all()
+            rows = (await session.execute(text(
+                "select w.address from wallets w "
+                "join wallet_token_interest i on i.wallet_address = w.address "
+                "join tokens t on t.address = i.token_address "
+                "where w.status = 'enriched' "
+                "and (w.enriched_at is null or w.enriched_at < :cutoff) "
+                "group by w.address "
+                "order by max(t.first_seen) desc, w.enriched_at asc "
+                "limit :lim"),
+                {"cutoff": cutoff, "lim": budget_left})).all()
+            addrs = [r[0] for r in rows]
+            refresh: list[Wallet] = []
+            seen: set[str] = set()
+            for i in range(0, len(addrs), 500):
+                chunk = addrs[i:i + 500]
+                got = (await session.execute(
+                    select(Wallet).where(Wallet.address.in_(chunk))
+                )).scalars().all()
+                refresh.extend(got)
+                seen.update(chunk)
+            order = {a: k for k, a in enumerate(addrs)}
+            refresh.sort(key=lambda w: order.get(w.address, 1 << 30))
             wallets = list(wallets) + list(refresh)
             if refresh:
                 jlog(log, logging.INFO, "enrich refresh cohort",
