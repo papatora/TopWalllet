@@ -162,6 +162,10 @@ def main() -> int:
         # --- selesai semua? ---
         done, why = all_done()
         if done:
+            if (REPO / "results" / "no_shutdown.flag").exists():
+                print("[night-loop] SEMUA TUNTAS — no_shutdown.flag ada: "
+                      "PC TIDAK dimatikan (user bangun). Loop berhenti.", flush=True)
+                return 0
             print("[night-loop] SEMUA TUNTAS — shutdown dalam 10 menit "
                   "(batalkan: shutdown /a)", flush=True)
             subprocess.run(["shutdown", "/s", "/t", "600"], cwd=str(REPO))
