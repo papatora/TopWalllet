@@ -44,7 +44,7 @@ import json
 import os
 import sys
 import time
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 try:  # POSIX only; Windows (unit-test env) runs the no-lock path
@@ -68,6 +68,11 @@ TOP_TRADERS = int(os.getenv("VOLUME_SWEEP_TOP_TRADERS", "50"))
 TRACK_BUDGET = int(os.getenv("VOLUME_SWEEP_TRACK_BUDGET", "1"))
 CHAIN = os.getenv("VOLUME_SWEEP_CHAIN", "robinhood")
 QUEUE_MAX = 100
+# S-45d: entri queue lebih tua dari ini dibuang saat cycle mulai — token
+# tren mati dalam jam; queue 100 yang tersangkut mayat pralambek (dgn
+# budget 1/5 mnt + drop lambat) menimbun token SEGAR di belakangnya
+# (tidak ada track_ca_done produksi 16-25 Sep 2026 karena ini).
+QUEUE_MAX_AGE_H = float(os.getenv("VOLUME_SWEEP_QUEUE_MAX_AGE_H", "48"))
 QUEUE_DROP_TRIES = 3
 # S-44b: jeda antar entry track-ca (detik) — beri jendela waiter flock
 # (pipeline) merebut kunci; flock tidak FIFO.
@@ -354,12 +359,20 @@ def pipeline_busy() -> bool:
 async def run_cycle() -> dict:
     st = load_state()
     st["runs"] = int(st.get("runs") or 0) + 1
+    now_iso = datetime.now(timezone.utc).isoformat()
     tags = TagState(st["tags"], st["tagTrough"], st["tagHotSince"])
     queue: list[dict] = st["caQueue"]
+    # S-45d: buang entri kadaluarsa sebelum diproses
+    age_cutoff = (datetime.now(timezone.utc) -
+                  timedelta(hours=QUEUE_MAX_AGE_H)).isoformat()
+    before = len(queue)
+    queue[:] = [e for e in queue if str(e.get("ts") or "") >= age_cutoff]
+    if len(queue) != before:
+        append_log({"ts": now_iso, "event": "queue_purged",
+                    "dropped": before - len(queue), "kept": len(queue)})
     skip_addrs, skip_syms = load_skip()
     g = GmgnClient(rps=1.5)
     now_ms = time.time() * 1000
-    now_iso = datetime.now(timezone.utc).isoformat()
     fired: list[dict] = []
     pool_entries: dict[str, dict] = {}
     items: list = []
