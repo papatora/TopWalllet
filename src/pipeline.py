@@ -491,6 +491,14 @@ class Pipeline:
                                   counterparties, decimals) for w in batch],
                 return_exceptions=True,
             )
+            # S-45g: tulis batch (delete + update + insert) dijalankan di
+            # dalam SATU segmen terkunci singkat. Dulu delete di
+            # _persist_events membuka transaksi tulis sejak awal batch dan
+            # transaksi itu terbuka melintasi fetch jaringan batch
+            # BERIKUTNYA (menit-menit dgn backoff 429) → write-lock SQLite
+            # terpegang menit-menit → semua writer lain 'database is
+            # locked'. Itu penyakit asal crash-loop 16 Sep 2026.
+            purge: list[str] = []
             for wallet, result in zip(batch, results):
                 if isinstance(result, Exception):
                     wallet.status = "failed"
@@ -499,9 +507,13 @@ class Pipeline:
                     jlog(log, logging.WARNING, "wallet enrich failed",
                          wallet=wallet.address, error=str(result)[:160])
                     continue
-                await self._persist_events(session, wallet, result)
+                await self._persist_events(session, wallet, result, purge)
                 enriched += 1
-            await _commit_locked(session)
+            async with db_write_lock():
+                for addr in purge:
+                    await session.execute(
+                        delete(SwapEvent).where(SwapEvent.wallet_address == addr))
+                await session.commit()
             jlog(log, logging.INFO, "enrich progress", done=min(i + len(batch), len(wallets)),
                  total=len(wallets), enriched=enriched, failed=failed)
         return {"wallets_enriched": enriched, "wallets_failed": failed}
@@ -577,18 +589,27 @@ class Pipeline:
         return events
 
     async def _persist_events(self, session: AsyncSession, wallet: Wallet,
-                              events: list[TradeEvent]) -> None:
+                              events: list[TradeEvent], purge: list[str]) -> None:
         """Main-loop part: fill missing timestamps and persist unpriced swaps
-        (prices are attached by the targeted prices stage + analyze lookup)."""
+        (prices are attached by the targeted prices stage + analyze lookup).
+
+        S-45g: DELETE swap lama TIDAK dijalankan di sini — delete adalah
+        statement tulis yang membuka transaksi seketika; bila dijalankan
+        di titik ini, transaksi tulis terbuka melintasi fetch jaringan
+        batch berikutnya (menit-menit) dan membuat writer lain 'database
+        is locked'. Pemanggil mengumpulkan address di `purge` lalu
+        mengeksekusi delete + commit bersama di dalam segmen terkunci."""
         if not events:
             wallet.status = "enriched"
             wallet.enriched_at = datetime.now(timezone.utc)
+            purge.append(wallet.address)  # tetap bersihkan swap lama (kosong = tidak ada)
             return
         missing_ts_blocks = [e.block_num for e in events if e.ts is None]
         ts_map = await self.rpc.block_timestamps(missing_ts_blocks) if missing_ts_blocks else {}
 
-        # full refresh per wallet keeps re-runs idempotent
-        await session.execute(delete(SwapEvent).where(SwapEvent.wallet_address == wallet.address))
+        # full refresh per wallet keeps re-runs idempotent — delete DIEKSEKUSI
+        # pemanggil di segmen terkunci (lihat docstring)
+        purge.append(wallet.address)
         seen: set[tuple] = set()
         kept = 0
         for ev in events:
