@@ -223,3 +223,35 @@ Legenda: ✅ FIXED+VERIFIED · ⚠️ LIMITASI DIKETAHUI (bukan bug, jangan "dip
   4. Preseden penting (P1): 688 TCG-primary = INSIDER yang DIBATALKAN
      karena terbukti benar membeli (Swap log) — promosi facet buta bisa
      membalik vonis on-chain.
+
+## S-45 (2026-09-25 siang-malam) — perjalanan mengungka akar "swap beku 16 Sep"
+Rantai diagnosis (semua berbasis bukti, py-spy + /proc/locks + probe API):
+1. **S-45b (acab078)**: urutan refresh by kebaruan token interest — 800
+   refresh by last_active menghasilkan 0 swap (last_active tak melihat
+   aktivitas pasca-beku).
+2. **S-45c (610d230)**: kunci track-ca per-commit (autoflush off) — bukan
+   seluruh badan fungsi; fetch jaringan 20-30 mnt berhenti memegang flock.
+3. **S-45d (724e422)**: purge queue 48 jam — 81 mayat dibuang 14:45Z;
+   tidak ada track_ca_done produksi sejak 16 Sep karena antrian tersangkut.
+4. **S-45e (23d85b18)**: hapus kunci per-STAGE pipeline — py-spy menunjukkan
+   track-ca tidur di _acquire flock selagi pipeline memegang kunci
+   sepanjang stage prices (30-60 mnt). Semua commit pipeline lewat
+   _commit_locked.
+5. **S-45f (b7130de)**: flock polling LOCK_NB+jitter — blocking flock tidak
+   FIFO; pemenang commit kontinu bisa mengalahkan waiter selamanya.
+6. **S-45g (35d2c55)**: AKAR SEJATI 'database is locked' — delete swap di
+   _persist_events membuka transaksi tulis SEJAK AWAL BATCH dan transaksi
+   itu terbuka melintasi fetch jaringan batch berikutnya (menit-menit,
+   diperparah backoff 429 Alchemy) → write-lock SQLite terpegang menit-
+   menit → semua writer lain gagal setelah busy_timeout. Delete kini
+   dieksekusi pemanggil di dalam segmen terkunci bersama commit.
+7. **fetch_dump manifest fingerprint** — part 'verified' milik dump lama
+   tercampur dump baru (gzip rusak saat rebuild 25 Sep pagi).
+LAIN: WAL mentok 1000 halaman, wal_checkpoint(TRUNCATE) gagal BUSY 60 dtk
+(ada transaksi lama) — wal_autocheckpoint diset 800; pemegang transaksi
+lama menyusut setelah fix S-45g.
+PELAJARAN: (a) delete/statement tulis eksplisit membuka transaksi SEKETIKA
+— jangan pernah dijalankan sebelum segmen jaringan panjang; (b) autoflush
+off hanya menahan ORM add, bukan session.execute(delete/insert);
+(c) blocking flock tidak FIFO — pakai polling NB + jitter; (d) kunci
+per-stage/per-entry = kelaparan; kunci hanya di commit.
