@@ -54,12 +54,21 @@ async def _resolve_token(client: DexScreenerClient, ca: str) -> TokenData | None
 
 
 async def run_track_by_ca(ca: str, top_n: int = 50) -> dict | None:
-    """S-43: seluruh pemanggilan dikunci db_write_lock — track-ca menulis
-    token/pool/wallet/price/scores ke SQLite yang sama dengan pipeline;
-    tanpa kunci, stage pipeline menabrak commit di sini → 'database is
-    locked' (crash-loop 2026-09-24). Satu entry = satu giliran tulis."""
+    """S-45c: kunci tulis HANYA di sekitar commit — bukan seluruh badan.
+
+    Dulu seluruh badan dikunci: fase fetch jaringan (20-30 menit dgn retry
+    429) ikut memegang flock sehingga stage pipeline kelaparan (insiden
+    2026-09-25 13:39: anak pipeline tidur di ep_poll, CPU 0:01). Sekarang
+    session autoflush OFF → tulisan DB hanya terjadi saat commit(), dan
+    tiap commit dibungkus kunci (detik-an). Fase fetch jalan bebas tanpa
+    kunci; 'database is locked' tetap mustahil karena commit selalu
+    eksklusif."""
+    return await _run_track_by_ca(ca, top_n=top_n)
+
+
+async def _commit_locked(session) -> None:
     async with db_write_lock():
-        return await _run_track_by_ca(ca, top_n=top_n)
+        await session.commit()
 
 
 async def _run_track_by_ca(ca: str, top_n: int = 50) -> dict | None:
@@ -75,6 +84,7 @@ async def _run_track_by_ca(ca: str, top_n: int = 50) -> dict | None:
     started = datetime.now(timezone.utc)
 
     async with session_factory() as session:
+        session.sync_session.autoflush = False  # tulis hanya saat commit
         token_row = await session.get(Token, ca)
         pool_rows = (await session.execute(select(Pool).where(Pool.token_address == ca))).scalars().all()
 
@@ -92,7 +102,7 @@ async def _run_track_by_ca(ca: str, top_n: int = 50) -> dict | None:
         if token_data is not None:
             await helper._upsert_token(session, token_data, await helper._token_decimals(ca))
             await helper._upsert_pool(session, token_data)
-            await session.commit()
+            await _commit_locked(session)
             token_row = await session.get(Token, ca)
             pool_rows = (await session.execute(select(Pool).where(Pool.token_address == ca))).scalars().all()
 
@@ -108,7 +118,7 @@ async def _run_track_by_ca(ca: str, top_n: int = 50) -> dict | None:
         helper = _P()
         for hit in hits:
             await helper._upsert_wallet_interest(session, hit)
-        await session.commit()
+        await _commit_locked(session)
         jlog(log, logging.INFO, "track-ca wallets discovered", ca=ca, wallets=len(hits))
 
         # targeted price series (covers the CA pool + every other token the
@@ -121,7 +131,7 @@ async def _run_track_by_ca(ca: str, top_n: int = 50) -> dict | None:
             head - settings.safe_log_lag_blocks,
         )
         await helper.stage_prices(session)
-        await session.commit()
+        await _commit_locked(session)
 
         # enrich all candidate wallets (pending ones only — resume-safe)
         addresses = {h.address for h in hits}
@@ -129,7 +139,7 @@ async def _run_track_by_ca(ca: str, top_n: int = 50) -> dict | None:
             select(Wallet).where(Wallet.address.in_(addresses), Wallet.status.in_(["pending", "in_progress"]))
         )).scalars().all()
         await helper.enrich_wallets(session, wallets)
-        await session.commit()
+        await _commit_locked(session)
 
         # analyze restricted to this wallet set. do_export/do_push False:
         # hasil SATU token tidak boleh menimpa export global (dulu analyze
