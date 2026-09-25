@@ -62,6 +62,15 @@ ALL_STAGES = ["discover", "enrich", "prices", "analyze"]
 STAGE_YIELD_S = 90
 
 
+async def _commit_locked(session: AsyncSession) -> None:
+    """S-45e: satu-satunya pintu tulis DB untuk pipeline. Dengan autoflush
+    off, seluruh tulisan melewati commit() — dan commit dibungkus flock
+    yang dipegang hanya detik-an (dulu kunci per-STAGE membuat track-ca
+    menunggu 30-60 menit di sela tahap fetch panjang, py-spy 2026-09-25)."""
+    async with db_write_lock():
+        await session.commit()
+
+
 class Pipeline:
     def __init__(self, overrides: dict | None = None):
         self.overrides = overrides or {}
@@ -100,29 +109,27 @@ class Pipeline:
             session.sync_session.autoflush = False
             for idx, stage in enumerate(stages):
                 jlog(log, logging.INFO, f"=== stage: {stage} ===")
-                # S-43: jeda tanpa kunci antar stage — writer latar (sweep
-                # track-ca) menunggu di flock yang sama; tanpa jeda ini
-                # pipeline merebut kembali kuncinya seketika dan sweep
-                # kelaparan (cycle back-to-back).
+                # S-43: jeda antar stage — beri jendela writer latar (sweep).
                 if idx:
                     await asyncio.sleep(STAGE_YIELD_S)
-                # S-41/S-43: writer lain (sweep track-ca, reverify) memegang
-                # write lock lewat db_write_lock — stage menunggu giliran
-                # di flock yang sama, lalu retry OperationalError tetap
-                # dipasang sebagai pengaman untuk writer yang tidak pakai
-                # kunci (reverify). Semua stage idempoten/resume-safe.
+                # S-45e: TANPA kunci per-stage — kunci level stage membuat
+                # track-ca menunggu 30-60 menit di sela tahap fetch panjang
+                # (py-spy 2026-09-25: track-ca tidur di _acquire flock selagi
+                # pipeline memegang kunci sepanjang prices). Dengan autoflush
+                # off, seluruh tulisan DB lewat _commit_locked (kunci hanya
+                # selama commit, detik-an) — 'database is locked' tetap
+                # mustahil tanpa saling kelaparan. Retry tetap dipasang.
                 for attempt in range(5):
                     try:
-                        async with db_write_lock():
-                            if stage == "discover":
-                                counts.update(await self.stage_discover(session))
-                            elif stage == "enrich":
-                                counts.update(await self.stage_enrich(session))
-                            elif stage == "prices":
-                                counts.update(await self.stage_prices(session))
-                            elif stage == "analyze":
-                                counts.update(await self.stage_analyze(session, started))
-                            await self._checkpoint(session, stage)
+                        if stage == "discover":
+                            counts.update(await self.stage_discover(session))
+                        elif stage == "enrich":
+                            counts.update(await self.stage_enrich(session))
+                        elif stage == "prices":
+                            counts.update(await self.stage_prices(session))
+                        elif stage == "analyze":
+                            counts.update(await self.stage_analyze(session, started))
+                        await self._checkpoint(session, stage)
                         break
                     except OperationalError as e:
                         if "database is locked" not in str(e).lower() or attempt == 4:
@@ -142,7 +149,7 @@ class Pipeline:
             row = PipelineCheckpoint(stage=stage)
             session.add(row)
         row.cursor = datetime.now(timezone.utc).isoformat()
-        await session.commit()
+        await _commit_locked(session)
 
     # ---------------- Stage 1: DISCOVER ----------------
 
@@ -157,7 +164,7 @@ class Pipeline:
             if t.pool:
                 await self._upsert_pool(session, t)
             symbols[t.address] = t.symbol
-        await session.commit()
+        await _commit_locked(session)
 
         # wallet discovery per token (holders + recent traders); zero-address
         # mints/burns must never become "wallets"
@@ -200,7 +207,7 @@ class Pipeline:
                 )
                 wallets_seen = keep
 
-        await session.commit()
+        await _commit_locked(session)
         counts = {
             "tokens": len(tokens),
             "wallet_candidates": len(wallets_seen),
@@ -377,7 +384,7 @@ class Pipeline:
                          pool=pool.address, error=str(e)[:160])
                     break
 
-        await session.commit()
+        await _commit_locked(session)
         jlog(log, logging.INFO, "targeted price series built", points=built_points, pools=len(priced_pools))
         return {"price_points": built_points, "pools_priced": len(priced_pools)}
 
@@ -494,7 +501,7 @@ class Pipeline:
                     continue
                 await self._persist_events(session, wallet, result)
                 enriched += 1
-            await session.commit()
+            await _commit_locked(session)
             jlog(log, logging.INFO, "enrich progress", done=min(i + len(batch), len(wallets)),
                  total=len(wallets), enriched=enriched, failed=failed)
         return {"wallets_enriched": enriched, "wallets_failed": failed}
@@ -800,7 +807,7 @@ class Pipeline:
                  before=before, shipped=len(ranked))
 
         await self._persist_scores(session, ranked, replace=persist_replace)
-        await session.commit()
+        await _commit_locked(session)
 
         if do_export:
             # --- wallet classification (docs/WALLET_TAXONOMY.md): assign
