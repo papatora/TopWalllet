@@ -1211,3 +1211,48 @@ bug yang ditemukan, baru update dokumen. Jangan minta input kecil-kecil.
   (4) Goal #3 DIAMOND via Grok/X (akun X di Downloads — JANGAN masuk
   git); (5) Goal #4 app paste-CA.
 - Konvensi [VPS]/[PC] wajib di setiap laporan (playbook atas).
+
+
+## SNAPSHOT S-45 (2026-09-25 malam) — akar "swap beku 16 Sep" ditemukan bertingkat
+GEJALA: LB/dashboard statis; swap_max_ts mentok 2026-09-16 15:45:59; wallets
+94.961; scores 0. BUKAN noise filter — keran data mati.
+
+RANTAI AKAR (semua berbasis bukti):
+1. Enrich one-shot: wallet 'enriched' tak pernah dipindai ulang; universe
+   trader RH chain terbatas (~95rb) → setelah backlog habis 16 Sep, nol swap
+   baru. FIX S-44: kohor refresh (c5794c4).
+2. Urutan refresh salah: last_active tak melihat aktivitas pasca-beku.
+   FIX S-45b: urut by max(first_seen) token interest (acab078).
+3. flock blocking tidak FIFO: sweep commit kontinu mengalahkan waiter
+   blocking (pipeline tidur di ep_poll). FIX S-45f: polling LOCK_NB+jitter
+   (b7130de).
+4. Kunci per-STAGE pipeline (S-43) membuat track-ca kelaparan 30-60 mnt di
+   sela tahap. FIX S-45e: semua commit pipeline lewat _commit_locked
+   (23d85b18); track-ca juga per-commit (S-45c 610d230).
+5. AKAR SEJATI 'database is locked': DELETE swap di _persist_events membuka
+   transaksi tulis SEJAK AWAL BATCH, terbuka melintasi fetch jaringan
+   berikutnya (menit-menit, backoff 429 Alchemy) → semua writer lain gagal.
+   FIX S-45g (35d2c55): delete dieksekusi di segmen terkunci bersama commit.
+6. Supervisor mati-sendiri: baca status file setengah-tulis →
+   JSONDecodeError di main loop → systemd restart berulang tanpa spawn.
+   FIX S-45h (a4f36488): write_status atomik (tmp+replace) + baca
+   tahan-banting + tidak membunuh supervisor lain.
+7. refresh sort=asc + delete-all: menjemput histori TUA, melewatkan trade
+   BARU, dan menjatuhkan data (442.345→440.298 saat ronde pertama).
+   FIX S-45i (ccec46f): refresh = sort desc + append-only dedupe
+   (wallet,token,side,tx_hash).
+8. ETHERSCAN rate limit antar proses: sweep+pipeline masing-masing limiter
+   9 rps pada 2 kunci sama = 18 rps > 5 rps/kunci → token_transfers balik
+   kosong → 0 wallet di token baru. FIX: ETHERSCAN_RPS=2.0 di .env VPS.
+9. trending_scanner tags list→set (crash 30 mnt-an) + queue purge 48 jam
+   (724e422) + fetch_dump manifest fingerprint.
+
+KONDISI 25 Sep ~21:00 UTC: semua fix terdeploy (ccec46f). Cycle berjalan
+lambat-lambat (2 rps Etherscan disengaja). swap_max_ts BELUM bergerak saat
+snapshot ini — kohor desc+append-only pertama sedang berjalan. TES BERIKUT:
+swap_max_ts > 2026-09-17 → delta (night_delta.py, manifest sudah fingerprint).
+Audit P1-P3: 3/3 REJECT (2/6/7) — hasil jujur debat adversarial; versi
+MODIFY hakim menunggu keputusan user (results/audit_p123_verdicts.json).
+X Goal #3: 10/10 akun hidup (xlogin VPS /opt/xlogin), sesi utama di .env.
+PC explorer 8787: MATI sengaja (permintaan user). SSH VPS rate-limited —
+jeda beberapa menit antar percobaan.

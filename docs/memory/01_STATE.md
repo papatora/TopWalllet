@@ -42,3 +42,13 @@
 - [VPS] fix crash-loop db-locked (flock), cycle hijau; wallet_scores menunggu analyze.
 - [PC] Brave CDP 9222 + sesi Arkham & Bubblemaps hidup; arkham_entities 652;
   known_entities 108; bubblemaps 12 token ter-capture (REPORT.md).
+
+
+## S-45 (2026-09-25 malam)
+- [VPS] fix berlapis S-44..S-45i terdeploy (ccec46f) — semua akar "LB beku"
+  (enrich one-shot, flock non-FIFO, kunci per-stage, delete-transaksi,
+  supervisor bunuh-diri, rps antar-proses, queue mayat). Cycle berjalan;
+  pantau swap_max_ts > 2026-09-17 → jalankan night_delta.py.
+- [PC] explorer mati (sengaja). Workflow "Ronde Verifikasi Swap" tersedia
+  (draft .zcode/workflow-drafts/Ronde-Verifikasi-Swap.dwf.ts) — peluncur
+  berulang utk pantau per ronde, auto-delta saat eligible.
