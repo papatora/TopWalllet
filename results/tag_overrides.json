@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-24T16:24:10.982523+00:00",
+ "generated_at": "2026-09-26T17:16:22.767914+00:00",
  "source": "scripts/reverify_tags.py",
  "wallets": {
   "0x00081217544197617dbee64f38cac8de1bd91a23": {
@@ -163,12 +163,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -191,7 +191,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x00463275b8ef2a6fe4c1da53b63a80c44b2d84b4": {
    "verified_at": "2026-09-14T23:15:13.816060+00:00",
@@ -488,12 +488,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -516,7 +516,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x00d8c2467e8ea29372db9669dcc84c43088c64ca": {
    "verified_at": "2026-09-14T23:15:13.816378+00:00",
@@ -676,12 +676,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -704,7 +704,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x01037c4de276961c0749f50e6463f2f7a2a48762": {
    "verified_at": "2026-09-14T23:15:13.816496+00:00",
@@ -881,12 +881,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -909,7 +909,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x01ede788057900c0d1cf065b5217263a3f0f27b6": {
    "verified_at": "2026-09-14T23:15:13.816655+00:00",
@@ -1104,12 +1104,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -1132,7 +1132,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x02491b2fcc7733841a5b64fc04a48b58ec134cb2": {
    "verified_at": "2026-09-14T23:15:13.816854+00:00",
@@ -2229,12 +2229,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -2257,7 +2257,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x0557bd51a03d2832874e1728d3c92a6e95b985e5": {
    "verified_at": "2026-09-14T23:15:13.817661+00:00",
@@ -2540,12 +2540,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -2568,7 +2568,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x06706e4a42f12c9c4651b89c25e199515b1ff576": {
    "verified_at": "2026-09-14T23:15:13.817899+00:00",
@@ -3021,12 +3021,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -3049,7 +3049,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x082c879ef34b7250af72d0af313a3fd1229efaac": {
    "verified_at": "2026-09-14T23:15:13.818205+00:00",
@@ -3081,12 +3081,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -3109,7 +3109,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x0845754a1baff5731c181dc8505450564ab10b53": {
    "verified_at": "2026-09-14T23:15:13.818251+00:00",
@@ -3547,12 +3547,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -3575,7 +3575,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x099b55f329e66e19bd14d02e0cff4e28dd830c99": {
    "verified_at": "2026-09-14T23:15:13.818592+00:00",
@@ -4257,12 +4257,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -4285,7 +4285,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x0b9400847229e8a844041ddfce6f9b295d9dea6b": {
    "verified_at": "2026-09-14T23:15:13.819076+00:00",
@@ -5615,12 +5615,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -5643,7 +5643,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x0edeeb1c022614696b1e558872d2edd8b7f12414": {
    "verified_at": "2026-09-14T23:15:13.819977+00:00",
@@ -5914,12 +5914,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -5942,7 +5942,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x0fc519c39663ede58432dda09fa9c30c6e15cbff": {
    "verified_at": "2026-09-14T23:15:13.820150+00:00",
@@ -6391,12 +6391,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -6419,7 +6419,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x11fc0f229ffd8b7440786cc4f6ba770533efd252": {
    "verified_at": "2026-09-14T23:15:13.820515+00:00",
@@ -6720,12 +6720,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -6748,7 +6748,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x12c7ea4913b99161224eaf0a72c608bffb3abcfa": {
    "verified_at": "2026-09-14T23:15:13.820768+00:00",
@@ -7599,12 +7599,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -7627,7 +7627,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x148dd5c7802c3d81bb6f86d91f4dd71ff51135da": {
    "verified_at": "2026-09-14T23:15:13.821348+00:00",
@@ -9083,12 +9083,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -9111,7 +9111,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x181061f8d548977ebb8cb2940e7c2864a15fb5e1": {
    "verified_at": "2026-09-14T23:15:13.822397+00:00",
@@ -9745,12 +9745,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -9773,7 +9773,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x19bb046042fb6ce7597a6260537e9f24a3fabf46": {
    "verified_at": "2026-09-14T23:15:13.822897+00:00",
@@ -10297,12 +10297,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -10325,7 +10325,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x1b30f0a3e7fb54211ab31741a2dc58725157b039": {
    "verified_at": "2026-09-23T17:38:56.921815+00:00",
@@ -11221,12 +11221,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -11249,7 +11249,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x1d5efe06f2d9c5c8405e18b05178bfb78b23e0a3": {
    "verified_at": "2026-09-14T23:15:13.823981+00:00",
@@ -11506,12 +11506,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -11534,7 +11534,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x1e467dfde1d23b54d74333fbade18b1902f07412": {
    "verified_at": "2026-09-14T23:35:39.648653+00:00",
@@ -12394,12 +12394,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -12422,7 +12422,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x248ed010a6273d869414d2b5a68010151493a1f2": {
    "verified_at": "2026-09-15T01:50:38.276077+00:00",
@@ -12672,12 +12672,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -12700,7 +12700,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x26c2448c0038874f68cc0d388d96f8d218af3bdf": {
    "verified_at": "2026-09-15T01:50:38.276399+00:00",
@@ -12761,12 +12761,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -12789,7 +12789,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x27a5dd7a3020452b3d95a2d7d46417ddba47a377": {
    "verified_at": "2026-09-15T01:50:38.276481+00:00",
@@ -13204,12 +13204,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -13232,7 +13232,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x2a838c18e5aee08ead0f11b129a0f99ba30a9ee2": {
    "verified_at": "2026-09-15T01:50:38.276891+00:00",
@@ -13423,12 +13423,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -13451,7 +13451,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x2c04fd50754687b22a873dfc15221cd49cf12abd": {
    "verified_at": "2026-09-15T01:50:38.277084+00:00",
@@ -13722,12 +13722,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -13750,19 +13750,19 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x2f0a06b4b8cd8009c6f3e6af4e04b19fb0e78f64": {
    "verified_at": "2026-09-15T01:50:38.277468+00:00",
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -13785,7 +13785,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x2f1c110870bf88809ac82c6cc3a93f3b31831532": {
    "verified_at": "2026-09-15T01:50:38.277511+00:00",
@@ -13818,12 +13818,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -13846,7 +13846,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x2f916ede3ab2c134d13c56419511315e6761963b": {
    "verified_at": "2026-09-15T01:50:38.277591+00:00",
@@ -14105,12 +14105,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -14133,7 +14133,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x3045d7de8290305ea50e3169736159529458753c": {
    "verified_at": "2026-09-15T01:50:38.277911+00:00",
@@ -14388,12 +14388,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -14416,7 +14416,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x32c7af5f1232fa19daf9afff4c527271cebb7cc3": {
    "verified_at": "2026-09-15T01:50:38.278142+00:00",
@@ -15255,12 +15255,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -15283,7 +15283,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x3843a8b71cacb65d11fbfef86c7863337ecf5894": {
    "verified_at": "2026-09-15T01:50:38.278800+00:00",
@@ -15938,12 +15938,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -15966,7 +15966,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x3dddfd826712a6e6d245a8d5a9fadb345760650e": {
    "verified_at": "2026-09-15T01:50:38.279249+00:00",
@@ -16090,12 +16090,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -16118,7 +16118,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x3e93c7bbac9cb8a0dfadbbe76b092a456652af6a": {
    "verified_at": "2026-09-15T01:50:38.279366+00:00",
@@ -16942,12 +16942,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -16970,7 +16970,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x44f84b3a9471ee6e43cba6e1627c072111e9a0e9": {
    "verified_at": "2026-09-15T01:50:38.280076+00:00",
@@ -17546,12 +17546,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -17574,7 +17574,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x495a4341b3b58a99ce055c429f89145f35cab2c1": {
    "verified_at": "2026-09-15T01:50:38.280480+00:00",
@@ -17755,12 +17755,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -17783,7 +17783,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x4ac9a97b3edb3f11b5ca91d8de9468cf4882a7af": {
    "verified_at": "2026-09-15T01:50:38.280622+00:00",
@@ -18241,12 +18241,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -18269,19 +18269,19 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x4ee0aad7d57ec7095bf3eff40010516bd4282ca6": {
    "verified_at": "2026-09-15T01:50:38.280913+00:00",
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -18304,7 +18304,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x4ef3e14cc0ef70a1e9a236f94ae7bfc90c9a6a7b": {
    "verified_at": "2026-09-15T01:50:38.280927+00:00",
@@ -18371,12 +18371,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -18399,7 +18399,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x4f4df2286efa576311c689ee2e1101b7dd352375": {
    "verified_at": "2026-09-15T04:05:49.852633+00:00",
@@ -18439,12 +18439,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -18467,7 +18467,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x4fd69bd94ede0bf3b98741a38af2fce2de2d9010": {
    "verified_at": "2026-09-15T04:05:49.852663+00:00",
@@ -18507,12 +18507,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -18535,7 +18535,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x502f807a9298459e2e570b8313bcb013378da059": {
    "verified_at": "2026-09-15T04:05:49.852698+00:00",
@@ -18649,12 +18649,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -18677,7 +18677,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x5160d7bcd02b82dda064073def42135a83bfb9bf": {
    "verified_at": "2026-09-15T04:05:49.852782+00:00",
@@ -19135,12 +19135,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -19163,19 +19163,19 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x53d5479bf3943c6f9f8360f1a45016c639095b57": {
    "verified_at": "2026-09-15T04:05:49.853096+00:00",
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -19198,7 +19198,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x54385b0828b2124f493b42a9a86289df8d879cf6": {
    "verified_at": "2026-09-15T04:05:49.853110+00:00",
@@ -19633,12 +19633,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -19661,7 +19661,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x56fecd3294e493e776f948a006a9eea0b094f630": {
    "verified_at": "2026-09-15T04:05:49.853382+00:00",
@@ -19981,12 +19981,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -20009,7 +20009,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x595bb5e00da21866945faae44a6496f0428580a1": {
    "verified_at": "2026-09-15T04:05:49.853608+00:00",
@@ -20062,12 +20062,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -20090,7 +20090,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x5a6751623861a8b6dbbbcc445638caba55add302": {
    "verified_at": "2026-09-15T04:05:49.853654+00:00",
@@ -20148,12 +20148,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -20176,7 +20176,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x5b25b162757f38db49af32a99a1aa9c7b527034c": {
    "verified_at": "2026-09-15T04:05:49.853701+00:00",
@@ -20208,12 +20208,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -20236,7 +20236,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x5b7881de070f65dc7bdd974519f249c2ee81e79f": {
    "verified_at": "2026-09-15T04:05:49.853734+00:00",
@@ -20571,12 +20571,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -20599,7 +20599,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x5e7d08820853c4c69c0b9cf65ae3b59a6d7504f7": {
    "verified_at": "2026-09-23T17:38:56.921815+00:00",
@@ -21269,12 +21269,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -21297,7 +21297,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x63d063312be459f8264e90fafa978590833da778": {
    "verified_at": "2026-09-15T04:05:49.854306+00:00",
@@ -21648,12 +21648,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -21676,7 +21676,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x6615a4262007b3c2cb688cb07ef3f5bd559bcc6c": {
    "verified_at": "2026-09-15T04:05:49.854558+00:00",
@@ -21745,12 +21745,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -21773,7 +21773,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x67308cad74750e6e9f76cbf6b6519414cdde5309": {
    "verified_at": "2026-09-15T04:05:49.854603+00:00",
@@ -22214,12 +22214,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -22242,7 +22242,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x69b94c069a42a413b3db6d6783b140f8ab35f946": {
    "verified_at": "2026-09-15T04:05:49.854864+00:00",
@@ -22381,12 +22381,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -22409,7 +22409,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x6aad8a980f5aed71773627a2444653e1a42b04ad": {
    "verified_at": "2026-09-15T04:05:49.854939+00:00",
@@ -22533,12 +22533,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -22561,7 +22561,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x6b422465b5124344608c9d33b27bfb88bce09558": {
    "verified_at": "2026-09-15T04:05:49.855027+00:00",
@@ -22601,12 +22601,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -22629,7 +22629,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['PonsV2BondingCurve']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x6bae89567fd290594cc02794b087fdcca8d2759c": {
    "verified_at": "2026-09-15T04:05:49.855053+00:00",
@@ -22725,12 +22725,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -22753,19 +22753,19 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x6c119befbdb3997ebb34cdfb9068f3e45c48ddbd": {
    "verified_at": "2026-09-15T04:05:49.855111+00:00",
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -22788,19 +22788,19 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x6c629002b2e67c1315532fabbb110dc685a3061a": {
    "verified_at": "2026-09-15T04:05:49.855125+00:00",
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -22823,7 +22823,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x6c79e9a8fc433ea843bf4b76ffd6be61a60b01f3": {
    "verified_at": "2026-09-15T04:05:49.855139+00:00",
@@ -22884,12 +22884,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -22912,7 +22912,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x6cb77f162f4921018638da6c73ba0a9def539521": {
    "verified_at": "2026-09-23T17:38:56.921815+00:00",
@@ -23600,12 +23600,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -23628,7 +23628,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x715f7404843549c41adb7b6b5ae3d0677d552387": {
    "verified_at": "2026-09-15T04:05:49.855635+00:00",
@@ -24136,12 +24136,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -24164,7 +24164,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x7450e6a2f754c1072f0bc34626d8bd3a4cf5ad59": {
    "verified_at": "2026-09-23T17:38:56.921815+00:00",
@@ -24861,12 +24861,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -24889,19 +24889,19 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x792ad4c149889f6d23ceb99011ab0a6c608c6438": {
    "verified_at": "2026-09-15T04:05:49.856367+00:00",
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -24924,7 +24924,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x79b7d0b8cbcd9f594ea96e0c01b7510c02b4236e": {
    "verified_at": "2026-09-23T17:38:56.921815+00:00",
@@ -25134,12 +25134,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -25162,7 +25162,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x7a89c0c08d44fc8412bbb040fe2985f401631348": {
    "verified_at": "2026-09-15T04:05:49.856541+00:00",
@@ -25315,12 +25315,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -25343,7 +25343,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x7caa943617f711081c2dd814e6c080614f672a15": {
    "verified_at": "2026-09-15T04:05:49.856630+00:00",
@@ -25518,12 +25518,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -25546,7 +25546,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x7d8c6375ab0ae8a7d9fd53d1dd2669cf7bd6a9e2": {
    "verified_at": "2026-09-23T17:38:56.921815+00:00",
@@ -25596,12 +25596,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -25624,7 +25624,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x7dfc2e0e75b2ab922e119e5daffb596d787eaa8d": {
    "verified_at": "2026-09-15T04:05:49.856778+00:00",
@@ -25955,12 +25955,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -25983,7 +25983,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x8057136e41a1fcb0a82b4fd50ab9cf2d6cb7dbf1": {
    "verified_at": "2026-09-15T04:05:49.856970+00:00",
@@ -26103,12 +26103,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -26131,7 +26131,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x80e5450310db478d0f1e624e444662957e504473": {
    "verified_at": "2026-09-15T04:05:49.857055+00:00",
@@ -26431,12 +26431,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -26459,7 +26459,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x82896bd9e9b36da1f9b448f932be9db756e3a422": {
    "verified_at": "2026-09-15T07:30:54.956077+00:00",
@@ -26763,12 +26763,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -26791,7 +26791,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x84121815f7fa93f92c817c54715674dd36ea8183": {
    "verified_at": "2026-09-15T07:30:54.956662+00:00",
@@ -27219,12 +27219,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -27247,7 +27247,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x87feabbfb487c4cd61df8eaea2981100cc682ddd": {
    "verified_at": "2026-09-15T07:30:54.957588+00:00",
@@ -27314,12 +27314,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -27342,7 +27342,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x88416342543cfafca3cd148d2803bc24a75b0a80": {
    "verified_at": "2026-09-15T07:30:54.957749+00:00",
@@ -27871,12 +27871,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -27899,19 +27899,19 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x8bb20791d7e481211b68a36f3652db3132da5597": {
    "verified_at": "2026-09-15T07:30:54.958449+00:00",
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -27935,7 +27935,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x8bd84ef2023b8077dbd30088413244d6e3d56797": {
    "verified_at": "2026-09-15T07:30:54.958481+00:00",
@@ -28086,12 +28086,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -28114,7 +28114,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x8d0e932a1fb0c5637759701d50130f8e1dbaedea": {
    "verified_at": "2026-09-15T07:30:54.958630+00:00",
@@ -29085,12 +29085,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -29113,7 +29113,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x9350eccc88782295a4a8d912c85a0deb70b3099b": {
    "verified_at": "2026-09-15T07:30:54.959555+00:00",
@@ -29153,12 +29153,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -29189,7 +29189,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x93604cedd6797d75a8e954fa4c97220dd7fcf209": {
    "verified_at": "2026-09-15T07:30:54.959594+00:00",
@@ -29342,12 +29342,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -29370,7 +29370,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x9461558f7ed3ae136bafd29ba09f5163b73ff157": {
    "verified_at": "2026-09-15T07:30:54.959738+00:00",
@@ -29840,12 +29840,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -29868,7 +29868,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x97ca1120a6d79df70922f926049aa648935e40d1": {
    "verified_at": "2026-09-15T07:30:54.960124+00:00",
@@ -31727,12 +31727,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -31755,7 +31755,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xa2c1caacd62a6db539d3bfff6ed28a5c3e82e4e4": {
    "verified_at": "2026-09-23T17:38:56.921815+00:00",
@@ -31805,12 +31805,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -31833,7 +31833,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xa38ced0779c32df55b3623762c72318428455f28": {
    "verified_at": "2026-09-15T07:30:54.961559+00:00",
@@ -32033,12 +32033,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -32061,7 +32061,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xa50d7e9a461d8108cde395913e7b86d8ec1cd8da": {
    "verified_at": "2026-09-15T07:30:54.961727+00:00",
@@ -32463,12 +32463,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -32491,7 +32491,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xa974455b49b7e640db9f7ca354c3979ce49b6666": {
    "verified_at": "2026-09-15T07:30:54.962031+00:00",
@@ -32523,12 +32523,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -32551,7 +32551,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xa983ddd41b0f3bfbe95103a9e750d404c59e6f5c": {
    "verified_at": "2026-09-15T07:30:54.962075+00:00",
@@ -32591,12 +32591,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -32619,7 +32619,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xa9ccd5bce309623447a929487f96453374b498c6": {
    "verified_at": "2026-09-23T17:38:56.921815+00:00",
@@ -32757,12 +32757,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -32785,7 +32785,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xaadafcf0dbb4ae5c630ca7663a854348c2615507": {
    "verified_at": "2026-09-15T07:30:54.962241+00:00",
@@ -33085,12 +33085,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -33113,7 +33113,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xac44ccffb9ecf2031e1d224adaf0c4c895b634c9": {
    "verified_at": "2026-09-15T07:30:54.962491+00:00",
@@ -33145,12 +33145,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -33173,7 +33173,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xac94b1870433936490381ea4300b90e489ec2840": {
    "verified_at": "2026-09-15T07:30:54.962528+00:00",
@@ -33408,12 +33408,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -33436,7 +33436,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xaea8c6444a5e4efd738a6ec51f3d0ed0928c110b": {
    "verified_at": "2026-09-15T07:30:54.962712+00:00",
@@ -33570,12 +33570,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -33598,7 +33598,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xaf8563492bbce598834ebd2169405aab75efaa66": {
    "verified_at": "2026-09-15T07:30:54.962805+00:00",
@@ -34492,12 +34492,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -34520,7 +34520,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xb55206dc5ee8190c3af084379848ba2b8a6fccd7": {
    "verified_at": "2026-09-15T07:30:54.963446+00:00",
@@ -34610,12 +34610,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -34638,7 +34638,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xb6157c670c6340f16cb7e8acc044bf751de31bd1": {
    "verified_at": "2026-09-15T07:30:54.963487+00:00",
@@ -34894,12 +34894,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -34922,7 +34922,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xb6fa4b1b14859d7d1c6cd2e2be026c5b9b5074d6": {
    "verified_at": "2026-09-15T07:30:54.963611+00:00",
@@ -35236,12 +35236,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -35264,7 +35264,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xb93c3d0d07dd5e56da2a90b8ebcff63ec629d183": {
    "verified_at": "2026-09-15T07:30:54.963745+00:00",
@@ -36055,12 +36055,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -36083,7 +36083,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xbe0ca442d6b7d81e0faa7dbfd09331019f893f89": {
    "verified_at": "2026-09-15T07:30:54.964076+00:00",
@@ -36172,12 +36172,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -36200,7 +36200,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xbe4604612f2484005380cfbdbe83d210b9765ee7": {
    "verified_at": "2026-09-15T07:30:54.964158+00:00",
@@ -37246,12 +37246,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -37274,7 +37274,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xc550b64dcbe32605398de4bc5af425204ad27c36": {
    "verified_at": "2026-09-23T17:38:56.921815+00:00",
@@ -37369,12 +37369,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -37397,7 +37397,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xc65588c3c99d823c5d1486e24778ef002b3cb363": {
    "verified_at": "2026-09-15T07:30:54.965224+00:00",
@@ -37454,12 +37454,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -37482,19 +37482,19 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xc72a37e15e81367ffc86d86a1c4d47058969962b": {
    "verified_at": "2026-09-15T07:30:54.965283+00:00",
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -37517,7 +37517,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['PonsV2BondingCurve']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xc7457ef8031c651a665be654f67d5ab520a65720": {
    "verified_at": "2026-09-15T07:30:54.965300+00:00",
@@ -37678,12 +37678,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -37706,7 +37706,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xc8407215ef40213f2cc4f0b24cea96b150e6abc2": {
    "verified_at": "2026-09-15T07:30:54.965473+00:00",
@@ -37808,12 +37808,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -37836,19 +37836,19 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xc8aae2291d551337ea05830a80e507c7393072b9": {
    "verified_at": "2026-09-15T07:30:54.965576+00:00",
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -37871,7 +37871,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xc942263e9e39997894ac2d537970578673c66f6f": {
    "verified_at": "2026-09-15T07:30:54.965592+00:00",
@@ -38338,12 +38338,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -38366,7 +38366,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xcc708a199b8565c09ba2c0bd5fefa53aaf2036dc": {
    "verified_at": "2026-09-23T17:38:56.921815+00:00",
@@ -38553,12 +38553,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -38581,7 +38581,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xcd6b980029e6e6e0733ac8ec3e02be9410d09799": {
    "verified_at": "2026-09-15T09:31:26.440348+00:00",
@@ -38701,12 +38701,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -38729,7 +38729,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xced90ef25016913191f83042582145a553bb3b52": {
    "verified_at": "2026-09-15T09:31:26.440573+00:00",
@@ -38945,12 +38945,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -38973,7 +38973,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xd05b19e74930f94d48c0641ba56060b8d487a390": {
    "verified_at": "2026-09-15T09:31:26.440858+00:00",
@@ -39276,12 +39276,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -39304,7 +39304,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xd28be54f1617addfb5af76c2d59217e67833f631": {
    "verified_at": "2026-09-15T09:31:26.441269+00:00",
@@ -39368,12 +39368,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -39396,7 +39396,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xd339036d24f90b04172f5393d4382bb774bb7d47": {
    "verified_at": "2026-09-15T09:31:26.441386+00:00",
@@ -39493,12 +39493,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -39521,7 +39521,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xd3c6074b0285c16943fc73e658639f3ae3ebbdc2": {
    "verified_at": "2026-09-15T09:31:26.441502+00:00",
@@ -39621,12 +39621,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -39649,7 +39649,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xd456d8ad4d8933869ac63058d6651b500583475d": {
    "verified_at": "2026-09-15T09:31:26.441591+00:00",
@@ -40148,12 +40148,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -40176,7 +40176,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xd7a8793ebca8517bf1fc1251ef1e2f6440764397": {
    "verified_at": "2026-09-15T09:31:26.442077+00:00",
@@ -41283,12 +41283,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -41311,7 +41311,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xdf215ae7a8cfd37aae5a1764491c8b7ac098e789": {
    "verified_at": "2026-09-15T09:31:26.443054+00:00",
@@ -41524,12 +41524,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -41552,7 +41552,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xdff09a788ebdcdeacee89c2154e310014d0b0934": {
    "verified_at": "2026-09-15T09:31:26.443260+00:00",
@@ -41760,12 +41760,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -41788,7 +41788,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xe12643eb3ecf017fa6ea22eb90aeace8bba93bda": {
    "verified_at": "2026-09-15T09:31:26.443522+00:00",
@@ -42135,12 +42135,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -42163,7 +42163,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xe2ed1740ad2f10030276f62bafb3ea349a0a56ea": {
    "verified_at": "2026-09-15T09:31:26.443821+00:00",
@@ -42303,12 +42303,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -42331,7 +42331,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xe36b1a9d671da4ee14a42991b0f010a81466d05a": {
    "verified_at": "2026-09-15T09:31:26.443992+00:00",
@@ -42585,12 +42585,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -42613,7 +42613,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xe5e944aeca5133a77f4d5d36d144f142e5c2b655": {
    "verified_at": "2026-09-15T09:31:26.444309+00:00",
@@ -42938,12 +42938,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -42974,7 +42974,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['PonsV2BondingCurve']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xe83cf9a3d7377871d0a2d09b1a52deeaf987ff7c": {
    "verified_at": "2026-09-15T09:31:26.444564+00:00",
@@ -43006,12 +43006,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -43034,7 +43034,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xe85547989a4225d937cd8f6e78ba29e44e1c78a8": {
    "verified_at": "2026-09-15T09:31:26.444602+00:00",
@@ -43074,12 +43074,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -43102,7 +43102,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xe883ac619fa382d1b28afa8e069daff80cad2a99": {
    "verified_at": "2026-09-15T09:31:26.444633+00:00",
@@ -43301,12 +43301,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -43329,7 +43329,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xeaa49d2af9974f4d39587ecc161f59a81f193cc6": {
    "verified_at": "2026-09-15T09:31:26.444895+00:00",
@@ -43448,12 +43448,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -43476,7 +43476,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xeb606356c767e9079db404c3776b34d1ed1e4f4e": {
    "verified_at": "2026-09-15T09:31:26.445009+00:00",
@@ -43879,12 +43879,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -43907,7 +43907,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['PonsV2BondingCurve']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xee5ece8cd338127cb1aa9c9bf30491edb5e416ed": {
    "verified_at": "2026-09-15T10:50:42.902352+00:00",
@@ -44634,12 +44634,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -44662,7 +44662,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xf41a65b8ad63ed1e40e354ba57d77ef15978382a": {
    "verified_at": "2026-09-15T10:50:42.903183+00:00",
@@ -44866,12 +44866,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -44894,7 +44894,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xf591db9dccd5d3aaf8508da2cffedd5ef5bb920f": {
    "verified_at": "2026-09-15T10:50:42.903442+00:00",
@@ -45883,12 +45883,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -45911,7 +45911,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xfad5dc416800e0244eb7806e2d6390bedcfa7f67": {
    "verified_at": "2026-09-15T10:50:42.904307+00:00",
@@ -46202,12 +46202,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -46230,7 +46230,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xfc227f6f10dfb7e0636c430576596d8abf7bb2d5": {
    "verified_at": "2026-09-15T10:50:42.904608+00:00",
@@ -46511,12 +46511,12 @@
    "remove_labels": [
     "INSIDER"
    ],
-   "set_primary": "INSIDER",
+   "set_primary": "GENERALIST",
    "add_labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "confidence": {
-    "INSIDER": 0.85
+    "GENERALIST": 0.4
    },
    "evidence": {
     "INSIDER": {
@@ -46539,7 +46539,7 @@
      "mint": null
     }
    },
-   "note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xfedcefba31254a572b8e5a2bf97dd0b3bacd819a": {
    "verified_at": "2026-09-15T10:50:42.904850+00:00",

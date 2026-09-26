@@ -117,7 +117,9 @@
         "max_recipients": 5,
         "window_block": 57041111,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -505,10 +507,10 @@
    }
   },
   "0x002b024cd347823e10e98ed99185e0e24acb850a": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -530,7 +532,9 @@
         "max_recipients": 9,
         "window_block": 58651602,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -540,9 +544,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x0031806477ef02c0d9d4a94801683319b83e3a37": {
    "primary_type": "GENERALIST",
@@ -878,7 +883,9 @@
       "0xe9630a13f2d986f750e8d71919a70b35f88a6d55": {
        "max_recipients": 21,
        "window_block": 62483558,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "Proxy (EIP-1967 Beacon)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "onchain_verified": true,
@@ -2105,9 +2112,9 @@
    }
   },
   "0x00d78daf782921b27a6b407d34f19842c10a4a6b": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "INSIDER": {
@@ -2122,7 +2129,9 @@
         "max_recipients": 11,
         "window_block": 55054800,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -2131,9 +2140,10 @@
     }
    },
    "confidence": {
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x00d8c2467e8ea29372db9669dcc84c43088c64ca": {
    "primary_type": "INSIDER",
@@ -2325,7 +2335,9 @@
         "max_recipients": 4,
         "window_block": 57267762,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -2618,10 +2630,10 @@
    }
   },
   "0x00f96352aab474640bee74eb74965e625c5063de": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -2643,7 +2655,9 @@
         "max_recipients": 5,
         "window_block": 57357575,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -2653,9 +2667,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x00f995ddfcd60d6f27763f56ac5d577c8f4354f3": {
    "primary_type": "GENERALIST",
@@ -4680,10 +4695,10 @@
    "override_note": "INSIDER dibatalkan: bukti on-chain menunjukkan tx beli (Swap log) yang tak tertangkap scan; antre re-enrich"
   },
   "0x01dbceee969356623d9db888a4c01394f1d80d54": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -4705,7 +4720,9 @@
         "max_recipients": 9,
         "window_block": 57207228,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -4715,9 +4732,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x01df057bf9a6d9c1cfe81317a53e07a58ad4b396": {
    "primary_type": "GENERALIST",
@@ -5645,10 +5663,10 @@
    }
   },
   "0x023dacc47e24a4b5c0fa4b40e3dc2d5cec06c0ca": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -5670,7 +5688,9 @@
         "max_recipients": 4,
         "window_block": 60296732,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -5680,9 +5700,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x023ddf7b198a6de35e4d2e04959695bd27e62011": {
    "primary_type": "GENERALIST",
@@ -5820,7 +5841,9 @@
       "0xdea4c3aacc4aea718de30c8da840f874193c9803": {
        "max_recipients": 24,
        "window_block": 60274518,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "PonsV2BondingCurve",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "onchain_verified": true,
@@ -6264,7 +6287,9 @@
       "0xdea4c3aacc4aea718de30c8da840f874193c9803": {
        "max_recipients": 24,
        "window_block": 60274518,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "PonsV2BondingCurve",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "onchain_verified": true,
@@ -8428,7 +8453,9 @@
       "0xdea4c3aacc4aea718de30c8da840f874193c9803": {
        "max_recipients": 24,
        "window_block": 60274518,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "PonsV2BondingCurve",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "onchain_verified": true,
@@ -10297,7 +10324,9 @@
       "0xdea4c3aacc4aea718de30c8da840f874193c9803": {
        "max_recipients": 24,
        "window_block": 60274518,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "PonsV2BondingCurve",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "onchain_verified": true,
@@ -11358,7 +11387,9 @@
         "max_recipients": 7,
         "window_block": 58313580,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -12624,10 +12655,10 @@
    }
   },
   "0x05448d41a3a0de7228149e951e106156237198a2": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -12649,7 +12680,9 @@
         "max_recipients": 9,
         "window_block": 57669534,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -12659,9 +12692,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x054507c41c263a576fe8b0b77fcafe73e06ab6fd": {
    "primary_type": "GENERALIST",
@@ -14546,7 +14580,9 @@
       "0xdea4c3aacc4aea718de30c8da840f874193c9803": {
        "max_recipients": 24,
        "window_block": 60274518,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "PonsV2BondingCurve",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "onchain_verified": true,
@@ -15023,10 +15059,10 @@
    }
   },
   "0x065aee423f579af88a2f92602f59fd5d62470188": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -15048,7 +15084,9 @@
         "max_recipients": 9,
         "window_block": 58651602,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -15058,9 +15096,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x065bb60364e984067d57b3c2c928a7ba28bf1677": {
    "primary_type": "GENERALIST",
@@ -17806,7 +17845,9 @@
       "0x9183d41097b912827f17939b0bc7c54b520d8f17": {
        "max_recipients": 50,
        "window_block": 62539166,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "BeaconProxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "onchain_verified": true,
@@ -18328,7 +18369,9 @@
         "max_recipients": 4,
         "window_block": 57932885,
         "out_total": 11
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Beacon)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -18763,7 +18806,9 @@
       "0xc45794465a9007256ab1be2bffd85ba1d4f82342": {
        "max_recipients": 25,
        "window_block": 59341248,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "PonsV2BondingCurve",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "onchain_verified": true,
@@ -19368,10 +19413,10 @@
    }
   },
   "0x0821af6d1d2dfccfbdcc13d4ac56d204f60fa8e3": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -19393,7 +19438,9 @@
         "max_recipients": 12,
         "window_block": 59405247,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -19403,9 +19450,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x082255e8f0aff0e9853e3e04bd7fee5acb2498ec": {
    "primary_type": "GENERALIST",
@@ -19705,10 +19753,10 @@
    }
   },
   "0x083b52e2a78ef8ca34d3387812c3ae29e0a3bde4": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -19730,7 +19778,9 @@
         "max_recipients": 7,
         "window_block": 59302473,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -19740,9 +19790,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x083d72e1a66f366e69a9d81881a0dbdccf8e039d": {
    "primary_type": "GENERALIST",
@@ -21798,7 +21849,9 @@
         "max_recipients": 3,
         "window_block": 58729765,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -23012,10 +23065,10 @@
    }
   },
   "0x098fdbbda02597fede14cc481b428c30320931b8": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -23037,7 +23090,9 @@
         "max_recipients": 6,
         "window_block": 58395558,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -23047,9 +23102,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x099091895246c66c5b3a77448264932d93566937": {
    "primary_type": "GENERALIST",
@@ -25573,7 +25629,9 @@
         "max_recipients": 9,
         "window_block": 59408939,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Transparent)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -27559,10 +27617,10 @@
    }
   },
   "0x0b924756c9092e77b4016a6226058c3499886e3d": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -27584,7 +27642,9 @@
         "max_recipients": 9,
         "window_block": 57100222,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -27594,9 +27654,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x0b92fcba7fab54f2d448584fcb5a2f841b43cfc7": {
    "primary_type": "GENERALIST",
@@ -27630,7 +27691,9 @@
         "max_recipients": 4,
         "window_block": 63069104,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "SnuggleVaultAdminSatellite",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0xc4a21f9d6485fc5893dd4a491b320a83daf4da1d": {
        "kind": "PERSONAL",
@@ -27638,7 +27701,9 @@
         "max_recipients": 3,
         "window_block": 63074451,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Uniswap",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -28277,7 +28342,9 @@
       "0xfa7e0816d8fde14fa6e70cebd167e106512c4747": {
        "max_recipients": 33,
        "window_block": 58769580,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "Proxy (EIP-1967 Beacon)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "onchain_verified": true,
@@ -28624,7 +28691,9 @@
         "max_recipients": 4,
         "window_block": 63069104,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "SnuggleVaultAdminSatellite",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -28807,7 +28876,9 @@
         "max_recipients": 7,
         "window_block": 55058215,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Transparent)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -29628,7 +29699,9 @@
       "0x09ca2bb0d22342ebd95ac8d74459eccafbef05ac": {
        "max_recipients": 29,
        "window_block": 60248893,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "PonsV2BondingCurve",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "onchain_verified": true,
@@ -30213,7 +30286,9 @@
         "max_recipients": 4,
         "window_block": 54950871,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Index Basket MEMESTOCK (IB-MEMESTOCK)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -32473,7 +32548,9 @@
         "max_recipients": 16,
         "window_block": 58335616,
         "out_total": 20
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Beacon)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -35478,10 +35555,10 @@
    }
   },
   "0x0ead9488903f910f6149b08c8b3112191b4a8b24": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -35503,7 +35580,9 @@
         "max_recipients": 9,
         "window_block": 57530047,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -35513,9 +35592,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x0eaf847873d0962c23d0f1aba6c46b2a1a58e1bf": {
    "primary_type": "GENERALIST",
@@ -37744,10 +37824,10 @@
    }
   },
   "0x0fbc532ad3efb1e8e7476d40bb5868c9a3bbe726": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -37769,7 +37849,9 @@
         "max_recipients": 2,
         "window_block": 55143572,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -37779,9 +37861,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x0fc237651f70976223836d20bda72d79b28606b6": {
    "primary_type": "GENERALIST",
@@ -42012,10 +42095,10 @@
    }
   },
   "0x11f028cd332af03abf16341c3b14d78870dacd33": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -42037,7 +42120,9 @@
         "max_recipients": 4,
         "window_block": 57987647,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -42047,9 +42132,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x11f1571684ae5313b6d438704e225c361fa335c1": {
    "primary_type": "GENERALIST",
@@ -43880,10 +43966,10 @@
    "override_note": "DOWNGRADE: SNIPER+BUNDLER same-tx \u2014 snipe sekalian bundling, bukan spesialis"
   },
   "0x12af1f0a58a433cc626fe1cbcc8b339a9b4515ab": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -43905,7 +43991,9 @@
         "max_recipients": 9,
         "window_block": 57207228,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -43915,9 +44003,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x12afa44fe607d16b56ee55759bdfd673ebfcea76": {
    "primary_type": "GENERALIST",
@@ -45346,7 +45435,9 @@
         "max_recipients": 1,
         "window_block": 56290671,
         "out_total": 27
-       }
+       },
+       "arkham_entity": "PrivateVault (Proxy)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -46530,7 +46621,9 @@
         "max_recipients": 11,
         "window_block": 60206989,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -46699,7 +46792,9 @@
         "max_recipients": 1,
         "window_block": 55198069,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1167 Minimal)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -46963,7 +47058,9 @@
         "max_recipients": 2,
         "window_block": 57333881,
         "out_total": 4
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Beacon)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0x9362adfa40631bafcf939892279980f83ed7fbfb": {
        "kind": "PERSONAL",
@@ -46971,7 +47068,9 @@
         "max_recipients": 1,
         "window_block": 56024361,
         "out_total": 3
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Beacon)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -47848,10 +47947,10 @@
    }
   },
   "0x14890149213d742c6dbfca5b6de3261982c8d900": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -47873,7 +47972,9 @@
         "max_recipients": 18,
         "window_block": 56970381,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -47883,9 +47984,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x148b5deab1d45a0b3a17e9f36d1529ac6e7675ed": {
    "primary_type": "GENERALIST",
@@ -50759,7 +50861,9 @@
         "max_recipients": 7,
         "window_block": 5361006,
         "out_total": 26
-       }
+       },
+       "arkham_entity": "Index Basket cashdog (IB-CASHDOG)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -56478,10 +56582,10 @@
    }
   },
   "0x1807ff3f8dd72691efa3fa34c8cdb5d8b5392419": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -56503,7 +56607,9 @@
         "max_recipients": 5,
         "window_block": 57016157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -56513,9 +56619,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x180803fe315ec724ddc17d30fbedc33e000bc95c": {
    "primary_type": "GENERALIST",
@@ -57274,7 +57381,9 @@
       "0xd782783fa928150950bbe070fa4c18c85b9427e2": {
        "max_recipients": 24,
        "window_block": 63018522,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "BeaconProxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "onchain_verified": true,
@@ -59984,12 +60093,16 @@
       "0xe9630a13f2d986f750e8d71919a70b35f88a6d55": {
        "max_recipients": 21,
        "window_block": 62483558,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "Proxy (EIP-1967 Beacon)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0x778e344d7e92caec1e51e7db4d4c11cfadc1008a": {
        "max_recipients": 37,
        "window_block": 63154684,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "BeaconProxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "onchain_verified": true,
@@ -60029,7 +60142,9 @@
         "max_recipients": 4,
         "window_block": 57267762,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -60058,10 +60173,10 @@
    }
   },
   "0x19aa0056c226f2df3c5b7a5dc509dfb55d8dcb06": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -60083,7 +60198,9 @@
         "max_recipients": 9,
         "window_block": 57100222,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -60093,9 +60210,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x19ab01005209da7d6f578d0d7a7ddaad8fc1faaf": {
    "primary_type": "GENERALIST",
@@ -60201,7 +60319,9 @@
       "0x83914a5d866881e1588d614b03239f48eb596f17": {
        "max_recipients": 33,
        "window_block": 58334763,
-       "out_total": 45
+       "out_total": 45,
+       "arkham_entity": "Proxy (EIP-1967 Beacon)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "onchain_verified": true,
@@ -61021,7 +61141,9 @@
         "max_recipients": 12,
         "window_block": 59476094,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -61953,7 +62075,9 @@
         "max_recipients": 3,
         "window_block": 57912810,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -63208,10 +63332,10 @@
    }
   },
   "0x1b00f00281f89f446f13d4a1833e30adf6490738": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -63233,7 +63357,9 @@
         "max_recipients": 6,
         "window_block": 60126306,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -63243,9 +63369,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x1b012aaa453f4f8b5cde3e334af1cc5d5c1fcaee": {
    "primary_type": "GENERALIST",
@@ -64809,7 +64936,9 @@
       "0xc60357914817c8f53d33e45c528ccfc66fe80b1d": {
        "max_recipients": 27,
        "window_block": 63129271,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "BeaconProxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "onchain_verified": true,
@@ -68733,10 +68862,10 @@
    "override_note": "INSIDER dibatalkan: bukti on-chain menunjukkan tx beli (Swap log) yang tak tertangkap scan; antre re-enrich"
   },
   "0x1d55f3c76a12e168a20df01324ca43a2494b0971": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -68758,7 +68887,9 @@
         "max_recipients": 4,
         "window_block": 60296732,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -68768,9 +68899,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x1d5694fba6a1f5c38d245df9d7e3d3fa2d0ca284": {
    "primary_type": "GENERALIST",
@@ -69030,7 +69162,9 @@
         "max_recipients": 4,
         "window_block": 56412096,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Index Basket MOMMY (IB-MOMMY)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -70304,10 +70438,10 @@
    }
   },
   "0x1e172c2043a06e77a847b2a1c4a8756285fe5877": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -70329,7 +70463,9 @@
         "max_recipients": 8,
         "window_block": 56942746,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -70339,9 +70475,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x1e1aa7d1c817de0befe603d36b365fd937ed29b7": {
    "primary_type": "GENERALIST",
@@ -80736,7 +80873,9 @@
         "max_recipients": 3,
         "window_block": 55087764,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Transparent)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -83530,7 +83669,9 @@
         "max_recipients": 5,
         "window_block": 57041111,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -84781,10 +84922,10 @@
    }
   },
   "0x2464200fd5418b5b6707e5a2d8f4c05c2da72fa6": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -84806,7 +84947,9 @@
         "max_recipients": 11,
         "window_block": 57095393,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -84816,9 +84959,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x2466ac80678ee37fd4b03fd6c9379d6524d05e2c": {
    "primary_type": "GENERALIST",
@@ -88696,7 +88840,9 @@
         "max_recipients": 1,
         "window_block": 54986167,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "up",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0x9eead18cf127923f87d1caea33f28ea0469f48cf": {
        "kind": "PERSONAL",
@@ -88704,7 +88850,9 @@
         "max_recipients": 2,
         "window_block": 63177289,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "up",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0x534577f108201cdd0f121ed5f7ff97b8994bbd07": {
        "kind": "PERSONAL",
@@ -88712,7 +88860,9 @@
         "max_recipients": 2,
         "window_block": 63036866,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "up",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0x8abf9bcd988d45d620ffc271088d88cf528388c6": {
        "kind": "PERSONAL",
@@ -88720,7 +88870,9 @@
         "max_recipients": 1,
         "window_block": 51996024,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "up",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0x89593d890abcb7170c71a9b468792adf72437bc8": {
        "kind": "PERSONAL",
@@ -88728,7 +88880,9 @@
         "max_recipients": 1,
         "window_block": 53059892,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "up",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -89018,10 +89172,10 @@
    }
   },
   "0x26984d248b72f2e0eb09388f5979a89282fc0c64": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -89043,7 +89197,9 @@
         "max_recipients": 6,
         "window_block": 58432572,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -89053,9 +89209,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x26991c5c19c6f7a13af8676452f535fc26b58e47": {
    "primary_type": "GENERALIST",
@@ -90907,10 +91064,10 @@
    }
   },
   "0x2791b0dd6f2147640a1a8eae83d15cd03faa8663": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -90932,7 +91089,9 @@
         "max_recipients": 5,
         "window_block": 57016157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -90942,9 +91101,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x279333c8ebdbea4b866fc3b9f4df59cef64b37ad": {
    "primary_type": "GENERALIST",
@@ -96668,10 +96828,10 @@
    }
   },
   "0x2a363fb68e8b833621a1e56212b20ab1475b151a": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -96693,7 +96853,9 @@
         "max_recipients": 5,
         "window_block": 57055124,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -96703,9 +96865,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x2a3f44a95e5f3f1b0d696a98ca6b8fc6a2431b4d": {
    "primary_type": "GENERALIST",
@@ -100850,7 +101013,9 @@
         "max_recipients": 16,
         "window_block": 56930838,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Beacon)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0x895282c7187b6cfb3f450d8a86c3355434dbbfd4": {
        "kind": "MASS_SPREAD",
@@ -100858,7 +101023,9 @@
         "max_recipients": 39,
         "window_block": 63072055,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "BeaconProxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -101176,10 +101343,10 @@
    }
   },
   "0x2bfbc68fe643545c81c64c1a1cbcd6b5b7996c1e": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -101201,7 +101368,9 @@
         "max_recipients": 5,
         "window_block": 57016157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -101211,9 +101380,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x2bfc3b280bdac0e3df49183d7318905a2f426540": {
    "primary_type": "GENERALIST",
@@ -101339,7 +101509,9 @@
         "max_recipients": 1,
         "window_block": 55879465,
         "out_total": 6
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1167 Minimal)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0xa163b2891fce06434fee3815b37c804eaa7e3159": {
        "kind": "PERSONAL",
@@ -101347,7 +101519,9 @@
         "max_recipients": 1,
         "window_block": 55879465,
         "out_total": 6
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1167 Minimal)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0xbe9ac977eda1addcd96a9af4cfe2bbdababeba74": {
        "kind": "PERSONAL",
@@ -101355,7 +101529,9 @@
         "max_recipients": 1,
         "window_block": 55838049,
         "out_total": 8
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1167 Minimal)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0xb55586f824a02b7c58c8586dbb2b157f46904172": {
        "kind": "PERSONAL",
@@ -101363,7 +101539,9 @@
         "max_recipients": 1,
         "window_block": 55838049,
         "out_total": 8
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1167 Minimal)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -107258,10 +107436,10 @@
    "override_note": "DOWNGRADE: SNIPER+BUNDLER same-tx \u2014 snipe sekalian bundling, bukan spesialis"
   },
   "0x2eda480d8370c00453a834c001f70877b2e1f38c": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -107283,7 +107461,9 @@
         "max_recipients": 5,
         "window_block": 57016157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -107293,9 +107473,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x2edab875048fe0f0abfd63793a5d1c54d333bd22": {
    "primary_type": "GENERALIST",
@@ -107678,10 +107859,10 @@
    }
   },
   "0x2f0a06b4b8cd8009c6f3e6af4e04b19fb0e78f64": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -107703,7 +107884,9 @@
         "max_recipients": 16,
         "window_block": 57042329,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -107713,9 +107896,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x2f0af54d0bf4a36402999f63966a3a6eb2e8e4a2": {
    "primary_type": "GENERALIST",
@@ -108298,10 +108482,10 @@
    }
   },
   "0x2f45cb9cbebfc29ca54ee053255d5617b1011ff4": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -108323,7 +108507,9 @@
         "max_recipients": 5,
         "window_block": 57016157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -108333,9 +108519,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x2f4690a3b57ea13d4a7cfe52babed84197f2a22c": {
    "primary_type": "GENERALIST",
@@ -110642,10 +110829,10 @@
    }
   },
   "0x30383931df912159d94694e010c8611ce6c6d95a": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -110667,7 +110854,9 @@
         "max_recipients": 8,
         "window_block": 51062127,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -110677,9 +110866,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x30383ed28bd129cefa14db99ef07615b6bba697b": {
    "primary_type": "GENERALIST",
@@ -116224,10 +116414,10 @@
    }
   },
   "0x32bb76f1eff66a1f87b43e5011b3468e23b675fa": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -116249,7 +116439,9 @@
         "max_recipients": 6,
         "window_block": 58432572,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -116259,9 +116451,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x32bbe64cca3259bd1568b54e8e325a7cf61bae7a": {
    "primary_type": "GENERALIST",
@@ -117307,7 +117500,9 @@
         "max_recipients": 5,
         "window_block": 58139157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Transparent)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -117943,7 +118138,9 @@
       "0x65050a9b7e5075a2ba5ced7b1b64ee66262c40dc": {
        "max_recipients": 20,
        "window_block": 57973130,
-       "out_total": 44
+       "out_total": 44,
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "onchain_verified": true,
@@ -120485,7 +120682,9 @@
         "max_recipients": 10,
         "window_block": 57081728,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -121486,7 +121685,9 @@
         "max_recipients": 3,
         "window_block": 54781115,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "0x",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -123027,7 +123228,9 @@
         "max_recipients": 19,
         "window_block": 57063385,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -127410,10 +127613,10 @@
    }
   },
   "0x37c2684ee9a581e3106a98c65bbb680242310c01": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -127435,7 +127638,9 @@
         "max_recipients": 9,
         "window_block": 57207228,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -127445,9 +127650,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x37c41e1da593aa51b423a2f4af64a4532fbfb64b": {
    "primary_type": "GENERALIST",
@@ -130194,7 +130400,9 @@
         "max_recipients": 4,
         "window_block": 58395277,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -131320,7 +131528,9 @@
         "max_recipients": 6,
         "window_block": 56989888,
         "out_total": 30
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Transparent)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -140052,7 +140262,9 @@
         "max_recipients": 3,
         "window_block": 63190267,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "SnuggleVaultAdminSatellite",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -140347,10 +140559,10 @@
    }
   },
   "0x3da5aec2a14bb1c60b66081b9bd9a5bd47d10589": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -140372,7 +140584,9 @@
         "max_recipients": 4,
         "window_block": 57842158,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -140382,9 +140596,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x3da7494db08540b25a44237793097e3400ea4265": {
    "primary_type": "GENERALIST",
@@ -140739,7 +140954,9 @@
       "0xbc0fffc8dccd9ec19f8ed68ad5345524224419cf": {
        "max_recipients": 36,
        "window_block": 58432602,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "PonsV2BondingCurve",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "onchain_verified": true,
@@ -141794,10 +142011,10 @@
    }
   },
   "0x3e5c444685718665c6377ee561891130a3e15a1d": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -141819,7 +142036,9 @@
         "max_recipients": 6,
         "window_block": 58432572,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -141829,9 +142048,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x3e5da3e1f890c94312bc21a443f06eeccbcca9f1": {
    "primary_type": "INSIDER",
@@ -145516,7 +145736,9 @@
         "max_recipients": 14,
         "window_block": 57185644,
         "out_total": 36
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -145827,7 +146049,9 @@
         "max_recipients": 1,
         "window_block": 61411150,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Relay.link",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -146315,7 +146539,9 @@
         "max_recipients": 5,
         "window_block": 57190299,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -148997,7 +149223,9 @@
         "max_recipients": 4,
         "window_block": 57267762,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -155660,10 +155888,10 @@
    }
   },
   "0x44dc0ae8e198177d3d06788520eac665649a1104": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -155685,7 +155913,9 @@
         "max_recipients": 8,
         "window_block": 56942746,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -155695,9 +155925,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x44de748c6ac4f259b71380bd9ad65d7bfc404baa": {
    "primary_type": "GENERALIST",
@@ -157677,7 +157908,9 @@
       "0xcaf84b91502f94c500cdb59d020dc490ea8882ef": {
        "max_recipients": 41,
        "window_block": 63156242,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "BeaconProxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "onchain_verified": true,
@@ -158766,7 +158999,9 @@
         "max_recipients": 2,
         "window_block": 57268071,
         "out_total": 36
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -160498,7 +160733,9 @@
         "max_recipients": 1,
         "window_block": 32938454,
         "out_total": 15
-       }
+       },
+       "arkham_entity": "\"WazzupCrypto\" on OpenSea",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -163958,10 +164195,10 @@
    }
   },
   "0x48887f93a5fd5730261a0c67395f196ed8808c89": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -163983,7 +164220,9 @@
         "max_recipients": 2,
         "window_block": 57807159,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -163993,9 +164232,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x488887b79038abeaf0fa3d20e627a784d43a4dc0": {
    "primary_type": "GENERALIST",
@@ -166958,7 +167198,9 @@
       "0xd15fe25ed0dba12fe05e7029c88b10c25e8880e3": {
        "max_recipients": 50,
        "window_block": 14122210,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "Disperse.app",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "onchain_verified": true,
@@ -167968,10 +168210,10 @@
    }
   },
   "0x4a97401e9d3b23f8cceb21dc2cc4b2c997b3f4a1": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -167993,7 +168235,9 @@
         "max_recipients": 4,
         "window_block": 57701880,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -168003,9 +168247,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x4a978d6c5de8e40f2a5bb446c35299b4ee53730c": {
    "primary_type": "GENERALIST",
@@ -169452,7 +169697,9 @@
         "max_recipients": 2,
         "window_block": 59542277,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "LiquidMesh",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -169506,7 +169753,9 @@
         "max_recipients": 1,
         "window_block": 63116826,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Uniswap",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -170882,7 +171131,9 @@
         "max_recipients": 4,
         "window_block": 57267762,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -176446,10 +176697,10 @@
    }
   },
   "0x4ed9dbfde057954b85ad61833b6ab6e26ed53567": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -176471,7 +176722,9 @@
         "max_recipients": 5,
         "window_block": 57016157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -176481,9 +176734,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x4ede7b8dcc2b65592641c87485bc862f15776d0a": {
    "primary_type": "GENERALIST",
@@ -176533,10 +176787,10 @@
    "override_note": "unverified zero-buy: conf diturunkan 0.5 sampai re-verify"
   },
   "0x4ee0aad7d57ec7095bf3eff40010516bd4282ca6": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -176558,7 +176812,9 @@
         "max_recipients": 18,
         "window_block": 56970381,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -176568,9 +176824,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x4ee27212bf6ade14f47eb10da43f434e529200ef": {
    "primary_type": "GENERALIST",
@@ -177225,10 +177482,10 @@
    }
   },
   "0x4f3a2a0ca7bf2cd97bb56a0fbf365b9851cd01d1": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -177250,7 +177507,9 @@
         "max_recipients": 9,
         "window_block": 57100222,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -177260,9 +177519,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x4f3af2945ea6f017e3c06f609982de477537468b": {
    "primary_type": "GENERALIST",
@@ -177835,10 +178095,10 @@
    }
   },
   "0x4f79dd35aa49a87e55b7af3ed0bb9d3c09e0febc": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -177860,7 +178120,9 @@
         "max_recipients": 5,
         "window_block": 56776851,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -177870,9 +178132,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x4f7aa9ce46d8398d61927c7f61f558059e72c1eb": {
    "primary_type": "GENERALIST",
@@ -178774,10 +179037,10 @@
    }
   },
   "0x4ff250367857f40727c4df2adb0908443176786e": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -178799,7 +179062,9 @@
         "max_recipients": 5,
         "window_block": 57016157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -178809,9 +179074,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x4ff3f6490eacabc6f08f555d04c896576d180065": {
    "primary_type": "GENERALIST",
@@ -181519,10 +181785,10 @@
    }
   },
   "0x511b030b1b0fdd519ed630039db63c9e55670077": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -181544,7 +181810,9 @@
         "max_recipients": 5,
         "window_block": 57016157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -181554,9 +181822,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x511b369331b99101e84c5cce7911af9a381e7ffd": {
    "primary_type": "GENERALIST",
@@ -184186,7 +184455,9 @@
       "0xc407311565432da013664af2041fe4ab4d026922": {
        "max_recipients": 32,
        "window_block": 62483467,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "Proxy (EIP-1967 Beacon)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "onchain_verified": true,
@@ -185559,10 +185830,10 @@
    }
   },
   "0x531045474f5beb3776b1820be99780183c8a415d": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -185584,7 +185855,9 @@
         "max_recipients": 11,
         "window_block": 57095393,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -185594,9 +185867,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x53139af3e07742ebb31a4259011e4ebe6bc27503": {
    "primary_type": "GENERALIST",
@@ -186938,10 +187212,10 @@
    }
   },
   "0x53d5479bf3943c6f9f8360f1a45016c639095b57": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -186963,7 +187237,9 @@
         "max_recipients": 6,
         "window_block": 54968227,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -186973,9 +187249,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x53d8326f02a34dc35e3188b1e807dd5ddfced750": {
    "primary_type": "GENERALIST",
@@ -193612,7 +193889,9 @@
         "max_recipients": 1,
         "window_block": 61280588,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "up",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0x9e0fb6dfb40bb8a8f7495e2f16c40373e2c90eae": {
        "kind": "PERSONAL",
@@ -193620,7 +193899,9 @@
         "max_recipients": 1,
         "window_block": 62683536,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "up",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0xcee5d9356415a28407f723b1f5837f79de7d67ec": {
        "kind": "PERSONAL",
@@ -193628,7 +193909,9 @@
         "max_recipients": 1,
         "window_block": 60132647,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "up",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0xff0fb4b6af08c4b33855f24b6ae0ecc262d61ba0": {
        "kind": "PERSONAL",
@@ -193636,7 +193919,9 @@
         "max_recipients": 1,
         "window_block": 61706135,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "up",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -193693,10 +193978,10 @@
    }
   },
   "0x56d789b4c472b9a689f5e44076bdff87cf962ce6": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -193718,7 +194003,9 @@
         "max_recipients": 5,
         "window_block": 57016157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -193728,9 +194015,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x56daf69e067eb3bf476685fab006ca9204bb09c1": {
    "primary_type": "GENERALIST",
@@ -193982,7 +194270,9 @@
         "max_recipients": 3,
         "window_block": 63243806,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "SnuggleVaultAdminSatellite",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0xb477751b76cf82d00a686a1232f5fcd772414af3": {
        "kind": "PERSONAL",
@@ -193990,7 +194280,9 @@
         "max_recipients": 3,
         "window_block": 63194964,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "LiFi",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -198829,10 +199121,10 @@
    }
   },
   "0x592a2910bc5f45df1537cdb99a3d9c298a880a5e": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -198854,7 +199146,9 @@
         "max_recipients": 12,
         "window_block": 57087641,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -198864,9 +199158,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x592b931ef5e1e5e487a43635d235697c83ba4224": {
    "primary_type": "GENERALIST",
@@ -201181,10 +201476,10 @@
    }
   },
   "0x5a652f2aefb5e6fdb7807490db44de8341d823d8": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -201206,7 +201501,9 @@
         "max_recipients": 5,
         "window_block": 57016157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -201216,9 +201513,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x5a6560a5bc8696c3d6c2768a906ca2d050481036": {
    "primary_type": "GENERALIST",
@@ -202382,10 +202680,10 @@
    }
   },
   "0x5afd60188e48997b0ff8a80f73cc54ce4964c20c": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -202407,7 +202705,9 @@
         "max_recipients": 9,
         "window_block": 57207228,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -202417,9 +202717,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x5afd914e91734a2c3573a32180936d7f35908f7d": {
    "primary_type": "GENERALIST",
@@ -203178,10 +203479,10 @@
    }
   },
   "0x5b5261adb3a685b68b02585a78a8dcb1f15570aa": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -203203,7 +203504,9 @@
         "max_recipients": 5,
         "window_block": 57016157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -203213,9 +203516,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x5b5274914969e4a24ca99e7a04fe0db769075869": {
    "primary_type": "GENERALIST",
@@ -208979,10 +209283,10 @@
    }
   },
   "0x5e6d01d63611ebd53911b330c66fffad5bd3bb25": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -209004,7 +209308,9 @@
         "max_recipients": 5,
         "window_block": 57016157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -209014,9 +209320,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x5e6e44c176739cfbc10373a2060d59faf0ecd521": {
    "primary_type": "GENERALIST",
@@ -211329,7 +211636,9 @@
         "max_recipients": 4,
         "window_block": 57191398,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -220111,10 +220420,10 @@
    }
   },
   "0x63c54a66c5aca140a8956252ea5cf173d7229359": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -220136,7 +220445,9 @@
         "max_recipients": 19,
         "window_block": 57351953,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -220146,9 +220457,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x63c88e1ee32b99e897b9a6474042c2da53328584": {
    "primary_type": "GENERALIST",
@@ -221010,7 +221322,9 @@
         "max_recipients": 6,
         "window_block": 58857268,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "0x",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -225234,10 +225548,10 @@
    }
   },
   "0x65dd40949e469e663cf8b78c847f2eb245065a30": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -225259,7 +225573,9 @@
         "max_recipients": 9,
         "window_block": 58600687,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -225269,9 +225585,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x65dd75187c3517036b76a6f942953681b268c5ce": {
    "primary_type": "INSIDER",
@@ -225690,7 +226007,9 @@
       "0x65050a9b7e5075a2ba5ced7b1b64ee66262c40dc": {
        "max_recipients": 20,
        "window_block": 57973130,
-       "out_total": 44
+       "out_total": 44,
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "onchain_verified": true,
@@ -227821,10 +228140,10 @@
    }
   },
   "0x6726452e9f8b389e95fa8d9cf6edb319921af477": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -227846,7 +228165,9 @@
         "max_recipients": 5,
         "window_block": 57016157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -227856,9 +228177,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x6726d0fa02731f98aa314c1020b86a58d3c2d56b": {
    "primary_type": "GENERALIST",
@@ -230351,7 +230673,9 @@
         "max_recipients": 7,
         "window_block": 57609725,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Transparent)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -233320,10 +233644,10 @@
    }
   },
   "0x69a3f27ff930b32be5fbe5f824283df142a46cb9": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -233345,7 +233669,9 @@
         "max_recipients": 9,
         "window_block": 56730506,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -233355,9 +233681,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x69a47ca9b99414c602dd1ffb2fdb6d6305301676": {
    "primary_type": "GENERALIST",
@@ -233637,7 +233964,9 @@
         "max_recipients": 6,
         "window_block": 56989888,
         "out_total": 30
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Transparent)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -234331,7 +234660,9 @@
         "max_recipients": 3,
         "window_block": 63134674,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "SnuggleVaultAdminSatellite",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -234605,10 +234936,10 @@
    "override_note": "DOWNGRADE: SNIPER+BUNDLER same-tx \u2014 snipe sekalian bundling, bukan spesialis"
   },
   "0x6a181232f550132cfe851136f6a2a026d3b5bdbe": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -234630,7 +234961,9 @@
         "max_recipients": 9,
         "window_block": 57100222,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -234640,9 +234973,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x6a1a543bb16dadc80026aef3dd43f863c67e319b": {
    "primary_type": "GENERALIST",
@@ -235532,7 +235866,9 @@
       "0xd15fe25ed0dba12fe05e7029c88b10c25e8880e3": {
        "max_recipients": 50,
        "window_block": 14122210,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "Disperse.app",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "onchain_verified": true,
@@ -236676,10 +237012,10 @@
    }
   },
   "0x6b37dd5c4d17fbf14fbc4456def4457af78b4fba": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -236701,7 +237037,9 @@
         "max_recipients": 8,
         "window_block": 56942746,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -236711,9 +237049,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x6b3bb24085505758159a747d6f19ca6a88ec46f2": {
    "primary_type": "GENERALIST",
@@ -236910,10 +237249,10 @@
    }
   },
   "0x6b5a487b66b91045b9465f19b4077359d3d02652": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -236935,7 +237274,9 @@
         "max_recipients": 7,
         "window_block": 55163734,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "PonsV2BondingCurve",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -236945,9 +237286,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['PonsV2BondingCurve']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x6b658a751ec3692c0eef9966aeae752397f4f7ab": {
    "primary_type": "GENERALIST",
@@ -238002,10 +238344,10 @@
    }
   },
   "0x6bf3e77a294288e671dc20519dccf00714faafde": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -238027,7 +238369,9 @@
         "max_recipients": 9,
         "window_block": 57100222,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -238037,9 +238381,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x6bf8609baf738a272c33391b275594589e689677": {
    "primary_type": "GENERALIST",
@@ -238238,10 +238583,10 @@
    }
   },
   "0x6c119befbdb3997ebb34cdfb9068f3e45c48ddbd": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -238263,7 +238608,9 @@
         "max_recipients": 9,
         "window_block": 57100222,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -238273,9 +238620,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x6c11a2abbf4861c51b7df3a6e8d5ed3bd3d83bc2": {
    "primary_type": "GENERALIST",
@@ -239038,10 +239386,10 @@
    }
   },
   "0x6c629002b2e67c1315532fabbb110dc685a3061a": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -239063,7 +239411,9 @@
         "max_recipients": 5,
         "window_block": 57016157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -239073,9 +239423,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x6c63a5921f563fe2eef47fb3e3985b988b433a8a": {
    "primary_type": "GENERALIST",
@@ -239657,10 +240008,10 @@
    }
   },
   "0x6c9eb5e2b5a1e08fff201485574d2a61c9c46b7f": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -239682,7 +240033,9 @@
         "max_recipients": 5,
         "window_block": 57016157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -239692,9 +240045,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x6ca14f7b2c996e4e66b843e42b66d16b37f5c4eb": {
    "primary_type": "GENERALIST",
@@ -248980,10 +249334,10 @@
    }
   },
   "0x70d94aa3ad899b5456e8b1199049f98e2ab36a55": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -249005,7 +249359,9 @@
         "max_recipients": 2,
         "window_block": 55143572,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -249015,9 +249371,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x70da00d844a1372d81ccb537804b3c8e43a3f57c": {
    "primary_type": "GENERALIST",
@@ -250424,7 +250781,9 @@
       "0xe25e9bc31d24bb652fb6e2e466d7c9c89701173e": {
        "max_recipients": 50,
        "window_block": 63323806,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "BeaconProxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0x53197cbac1bd95a2aec1a6a7cd1e69a23bc3ffb8": {
        "max_recipients": 50,
@@ -253316,7 +253675,9 @@
         "max_recipients": 6,
         "window_block": 57691382,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -254508,7 +254869,9 @@
         "max_recipients": 3,
         "window_block": 63229968,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "up",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -256549,10 +256912,10 @@
    }
   },
   "0x742877cb5462f2ef7ceb6d9dcbc905b3f5fdb13b": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -256574,7 +256937,9 @@
         "max_recipients": 6,
         "window_block": 56743864,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -256584,9 +256949,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x742e8bde41705820a76a91226783e97e4f5e6c79": {
    "primary_type": "GENERALIST",
@@ -258395,7 +258761,9 @@
         "max_recipients": 5,
         "window_block": 63286844,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Bucket",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -263016,7 +263384,9 @@
         "max_recipients": 19,
         "window_block": 57063385,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -266881,10 +267251,10 @@
    }
   },
   "0x78e50889fa6909d41784df790b2b8fcdbbf6cb2f": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -266906,7 +267276,9 @@
         "max_recipients": 2,
         "window_block": 55143572,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -266916,9 +267288,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x78e651960ace576650af27fd21c7f24938d1464e": {
    "primary_type": "GENERALIST",
@@ -267477,10 +267850,10 @@
    }
   },
   "0x792ad4c149889f6d23ceb99011ab0a6c608c6438": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -267502,7 +267875,9 @@
         "max_recipients": 14,
         "window_block": 55184363,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -267512,9 +267887,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x792e41dd92e9c9f93de5bfe6cb013def0f06144e": {
    "primary_type": "GENERALIST",
@@ -270406,7 +270782,9 @@
         "max_recipients": 1,
         "window_block": 60334071,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "up",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -270519,10 +270897,10 @@
    }
   },
   "0x7a6714d1526713ca84b08b5b2444fb0bbef3838b": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -270544,7 +270922,9 @@
         "max_recipients": 14,
         "window_block": 56954735,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -270554,9 +270934,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x7a68a9b0ce78712668a2ac8cd357a5531f4c8464": {
    "primary_type": "GENERALIST",
@@ -275084,10 +275465,10 @@
    }
   },
   "0x7c721b33e9a724b09e7648e650b57b1c661caaad": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -275109,7 +275490,9 @@
         "max_recipients": 11,
         "window_block": 57095393,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -275119,9 +275502,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x7c726b4389bc0f98acd1f7550a37c41323568c84": {
    "primary_type": "GENERALIST",
@@ -277536,7 +277920,9 @@
         "max_recipients": 8,
         "window_block": 56934945,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Transparent)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -277607,10 +277993,10 @@
    }
   },
   "0x7d8bca2367486034c5db60c87bf9a526992b9bd4": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -277632,7 +278018,9 @@
         "max_recipients": 2,
         "window_block": 55143572,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -277642,9 +278030,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x7d8c6375ab0ae8a7d9fd53d1dd2669cf7bd6a9e2": {
    "primary_type": "GENERALIST",
@@ -278464,10 +278853,10 @@
    }
   },
   "0x7df0699af277bdf5560888ea13414c7149166a76": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -278489,7 +278878,9 @@
         "max_recipients": 5,
         "window_block": 57016157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -278499,9 +278890,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x7df09dcaee8e98467804d1ed6b4de273124fbdc2": {
    "primary_type": "GENERALIST",
@@ -282560,7 +282952,9 @@
       "0x65050a9b7e5075a2ba5ced7b1b64ee66262c40dc": {
        "max_recipients": 20,
        "window_block": 57973130,
-       "out_total": 44
+       "out_total": 44,
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "onchain_verified": true,
@@ -283450,10 +283844,10 @@
    }
   },
   "0x8021ff95f4e9b06f6f8ceea785c7c456df60bc00": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -283475,7 +283869,9 @@
         "max_recipients": 9,
         "window_block": 57100222,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -283485,9 +283881,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x802392894107ed72404755fd4eae0cfd06a02216": {
    "primary_type": "GENERALIST",
@@ -284915,10 +285312,10 @@
    }
   },
   "0x80c7de653eaa3f128c5f1320990dac39b2f69679": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -284940,7 +285337,9 @@
         "max_recipients": 6,
         "window_block": 58432572,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -284950,9 +285349,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x80c9900a79c72109477959dd9010b6de3b1c79c3": {
    "primary_type": "GENERALIST",
@@ -287660,7 +288060,9 @@
         "max_recipients": 1,
         "window_block": 6411314,
         "out_total": 26
-       }
+       },
+       "arkham_entity": "1inch",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -288636,10 +289038,10 @@
    }
   },
   "0x8282a7126ecb2579722babcf5dd7f4a8a941c103": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -288661,7 +289063,9 @@
         "max_recipients": 5,
         "window_block": 57016157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -288671,9 +289075,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x82890b3df4596fc91564771c6bd03141125588fc": {
    "primary_type": "GENERALIST",
@@ -289154,7 +289559,9 @@
         "max_recipients": 2,
         "window_block": 56763074,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0x1319402928807ca1188014bd55f43c63eb794f2d": {
        "kind": "PERSONAL",
@@ -289162,7 +289569,9 @@
         "max_recipients": 2,
         "window_block": 55046456,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0xdf040d9df9fd77cd3318f54a8cdc44112a354c30": {
        "kind": "PERSONAL",
@@ -289170,7 +289579,9 @@
         "max_recipients": 3,
         "window_block": 53707486,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -289935,7 +290346,9 @@
       "0x816744b7304020399e594f056e1c4b36973c57b4": {
        "max_recipients": 20,
        "window_block": 62486297,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "BeaconProxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "onchain_verified": true,
@@ -290706,7 +291119,9 @@
         "max_recipients": 4,
         "window_block": 63021769,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "MEXC",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -291560,10 +291975,10 @@
    }
   },
   "0x83c80827c615aeeaaa53d47c5ae2284337cdfc7a": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -291585,7 +292000,9 @@
         "max_recipients": 5,
         "window_block": 57016157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -291595,9 +292012,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x83cb7cf57bdf7ea5375969618fe968b4f70eda48": {
    "primary_type": "GENERALIST",
@@ -299769,10 +300187,10 @@
    "override_note": "unverified zero-buy: conf diturunkan 0.5 sampai re-verify"
   },
   "0x87b2dc356091c794490cbbf661384c7e6343ea61": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -299794,7 +300212,9 @@
         "max_recipients": 9,
         "window_block": 57100222,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -299804,9 +300224,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x87b49f9c1d5f5e18cb9db829f1b2ea26b5e24f03": {
    "primary_type": "GENERALIST",
@@ -300695,7 +301116,9 @@
         "max_recipients": 6,
         "window_block": 58121561,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Transparent)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -300953,10 +301376,10 @@
    }
   },
   "0x8821e1ce80c2fa27da4b6025e759f7666dbf191a": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -300978,7 +301401,9 @@
         "max_recipients": 14,
         "window_block": 56954735,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -300988,9 +301413,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x8826fe78e33d88e08603e5eae439456f4bdf0bc1": {
    "primary_type": "GENERALIST",
@@ -307567,10 +307993,10 @@
    }
   },
   "0x8b734190d9450025d2a56788c4fa19fb5d6a1520": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -307592,7 +308018,9 @@
         "max_recipients": 5,
         "window_block": 57016157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -307602,9 +308030,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x8b73ace50cd75ea4de022349b0e972d65608ac14": {
    "primary_type": "GENERALIST",
@@ -308097,10 +308526,10 @@
    }
   },
   "0x8bb20791d7e481211b68a36f3652db3132da5597": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -308124,7 +308553,9 @@
         "max_recipients": 6,
         "window_block": 58587080,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -308134,9 +308565,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x8bb256b643631328227575f0a6c1c84221b538d9": {
    "primary_type": "GENERALIST",
@@ -309202,10 +309634,10 @@
    }
   },
   "0x8c2e05c2759d396ae7fec43ce0da4b402566e2e2": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -309227,7 +309659,9 @@
         "max_recipients": 5,
         "window_block": 57016157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -309237,9 +309671,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x8c30c4d1ac66809d4623aea5fbbea6a278cbd257": {
    "primary_type": "GENERALIST",
@@ -310887,7 +311322,9 @@
         "max_recipients": 1,
         "window_block": 63145672,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Kyber Network",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -312946,7 +313383,9 @@
         "max_recipients": 1,
         "window_block": 63151167,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Uniswap",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -313515,7 +313954,9 @@
         "max_recipients": 3,
         "window_block": 63291642,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "up",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -315520,7 +315961,9 @@
         "max_recipients": 4,
         "window_block": 57267762,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -315686,7 +316129,9 @@
         "max_recipients": 14,
         "window_block": 57185644,
         "out_total": 36
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -319885,7 +320330,9 @@
         "max_recipients": 2,
         "window_block": 57917693,
         "out_total": 16
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Transparent)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -323895,10 +324342,10 @@
    }
   },
   "0x933b8398d28993cea32b253983dd08f8530902b9": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -323920,7 +324367,9 @@
         "max_recipients": 6,
         "window_block": 58056054,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -323930,9 +324379,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x933b9ec0cd52f0277d2ca0ce3cecdbe6f1004d21": {
    "primary_type": "GENERALIST",
@@ -324073,10 +324523,10 @@
    }
   },
   "0x93585d7f5f15d8bc67f41a12d2b3e3966a1ee6a0": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -324106,7 +324556,9 @@
         "max_recipients": 8,
         "window_block": 58133676,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -324116,9 +324568,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x935cc3a04939dba916b838cdb999fca0c4c0d711": {
    "primary_type": "GENERALIST",
@@ -325556,10 +326009,10 @@
    }
   },
   "0x940b070e1ffdd9fff79c6f350132674b6c034296": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -325581,7 +326034,9 @@
         "max_recipients": 5,
         "window_block": 57823121,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -325591,9 +326046,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x940be719e9084ed0b73d20b409181a10fe960494": {
    "primary_type": "GENERALIST",
@@ -327928,7 +328384,9 @@
         "max_recipients": 18,
         "window_block": 63019226,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Beacon)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -331576,7 +332034,9 @@
         "max_recipients": 6,
         "window_block": 57060321,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -333837,10 +334297,10 @@
    }
   },
   "0x97c7d8f92ea02f4eaed8ef442f056f0d10822ec4": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -333862,7 +334322,9 @@
         "max_recipients": 2,
         "window_block": 58516040,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -333872,9 +334334,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0x97c84008e7782b9a1310245da296feddfdc1ad83": {
    "primary_type": "GENERALIST",
@@ -333924,7 +334387,9 @@
       "0xbc35d0491131a735a33bc9b42f0e3ab550d71407": {
        "max_recipients": 28,
        "window_block": 62771680,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "Proxy (EIP-1967 Beacon)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "onchain_verified": true,
@@ -334959,7 +335424,9 @@
         "max_recipients": 4,
         "window_block": 57191398,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -335878,7 +336345,9 @@
       "0xbc0fffc8dccd9ec19f8ed68ad5345524224419cf": {
        "max_recipients": 36,
        "window_block": 58432602,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "PonsV2BondingCurve",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "onchain_verified": true,
@@ -336323,7 +336792,9 @@
         "max_recipients": 1,
         "window_block": 62826455,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Uniswap",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -338297,7 +338768,9 @@
         "max_recipients": 8,
         "window_block": 57900890,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -343177,7 +343650,9 @@
         "max_recipients": 3,
         "window_block": 56879215,
         "out_total": 6
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Beacon)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0x68699b1ca916ff6c9aa28c81bd94f3e49474ac52": {
        "kind": "PERSONAL",
@@ -343185,7 +343660,9 @@
         "max_recipients": 6,
         "window_block": 56289563,
         "out_total": 12
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Beacon)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0x5dd66518b00707f03466100cfef9eb827a9adf43": {
        "kind": "PERSONAL",
@@ -343193,7 +343670,9 @@
         "max_recipients": 2,
         "window_block": 56049113,
         "out_total": 8
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Beacon)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -351750,7 +352229,9 @@
         "max_recipients": 19,
         "window_block": 57063385,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -354924,7 +355405,9 @@
         "max_recipients": 4,
         "window_block": 57267762,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -358211,10 +358694,10 @@
    }
   },
   "0xa2b7dbc101515403f654fa4ce37fa08a2005cb7b": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -358236,7 +358719,9 @@
         "max_recipients": 6,
         "window_block": 58395558,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -358246,9 +358731,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xa2b9265a55de60b2842c1e11cdc5147f7f33038a": {
    "primary_type": "GENERALIST",
@@ -359492,10 +359978,10 @@
    }
   },
   "0xa3505f5bf929be63fdd94369edc77ccc96a46942": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -359517,7 +360003,9 @@
         "max_recipients": 5,
         "window_block": 57016157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -359527,9 +360015,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xa3521d33122c319071be03932f36aafa6a76c76a": {
    "primary_type": "INSIDER",
@@ -362230,10 +362719,10 @@
    }
   },
   "0xa4a1cfe1912fad5a89cc25a3feea9729e8591e2b": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -362255,7 +362744,9 @@
         "max_recipients": 4,
         "window_block": 56789488,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -362265,9 +362756,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xa4a2073182685fc51b1b893122200ea20002914f": {
    "primary_type": "GENERALIST",
@@ -363783,7 +364275,9 @@
         "max_recipients": 2,
         "window_block": 58027005,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "0x",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -365516,7 +366010,9 @@
         "max_recipients": 5,
         "window_block": 56729398,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Transparent)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -369627,7 +370123,9 @@
       "0xbc35d0491131a735a33bc9b42f0e3ab550d71407": {
        "max_recipients": 28,
        "window_block": 62771680,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "Proxy (EIP-1967 Beacon)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "onchain_verified": true,
@@ -371255,10 +371753,10 @@
    }
   },
   "0xa95ef259c53233c7e9bd39bf7eb8a7e83e476a16": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -371280,7 +371778,9 @@
         "max_recipients": 2,
         "window_block": 55143572,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -371290,9 +371790,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xa965a2d261d97ccba5f778069a5a2bbb5831b0c6": {
    "primary_type": "GENERALIST",
@@ -371499,10 +372000,10 @@
    "override_note": "INSIDER dibatalkan: bukti on-chain menunjukkan tx beli (Swap log) yang tak tertangkap scan; antre re-enrich"
   },
   "0xa9788b84c5ffa8d4be88e05cfa54cfeda711727d": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -371524,7 +372025,9 @@
         "max_recipients": 5,
         "window_block": 57016157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -371534,9 +372037,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xa9794835f506a46ebe25a4a5f5342985a88dcbbd": {
    "primary_type": "GENERALIST",
@@ -371832,9 +372336,9 @@
    }
   },
   "0xa995ce21f88a1011daf09b50cd807fea3088d102": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "INSIDER": {
@@ -371849,7 +372353,9 @@
         "max_recipients": 11,
         "window_block": 55054800,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -371858,9 +372364,10 @@
     }
    },
    "confidence": {
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xa996d883f4bdc5cafe90d94be3da240e6339d604": {
    "primary_type": "GENERALIST",
@@ -374439,10 +374946,10 @@
    }
   },
   "0xaac589ab9c5495fb5b01e12fe2f334be0ceb69cc": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -374464,7 +374971,9 @@
         "max_recipients": 5,
         "window_block": 57357575,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -374474,9 +374983,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xaac59bdfae230023a490b28c08f8d4cbf96488e7": {
    "primary_type": "GENERALIST",
@@ -375182,7 +375692,9 @@
         "max_recipients": 4,
         "window_block": 57267762,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -376294,7 +376806,9 @@
         "max_recipients": 6,
         "window_block": 57060321,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -376404,7 +376918,9 @@
         "max_recipients": 2,
         "window_block": 57268071,
         "out_total": 36
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -377801,10 +378317,10 @@
    }
   },
   "0xac41f18cb896a6f6b1174a6b12e253624d00e423": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -377826,7 +378342,9 @@
         "max_recipients": 3,
         "window_block": 58210707,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -377836,9 +378354,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xac4355d02c661a013509f054ef2152ca8cb3bd7f": {
    "primary_type": "GENERALIST",
@@ -378269,10 +378788,10 @@
    }
   },
   "0xac7e208bf0895998c276d46482af3103122583e1": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -378294,7 +378813,9 @@
         "max_recipients": 5,
         "window_block": 57016157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -378304,9 +378825,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xac85692708a3f322686912a7fb9d024b23afc20a": {
    "primary_type": "GENERALIST",
@@ -381212,10 +381734,10 @@
    }
   },
   "0xadcdfc70ec381b1fc3bf6030a0c35af926e6ca06": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -381237,7 +381759,9 @@
         "max_recipients": 5,
         "window_block": 57016157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -381247,9 +381771,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xadd12adbbd5db87674b38af99b6dd34dd2a45e0d": {
    "primary_type": "GENERALIST",
@@ -384215,7 +384740,9 @@
         "max_recipients": 4,
         "window_block": 57267762,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -384762,10 +385289,10 @@
    }
   },
   "0xaf64fa6120680b8a3fc3cfe0bcc6ab16275f42e2": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -384787,7 +385314,9 @@
         "max_recipients": 18,
         "window_block": 56970381,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -384797,9 +385326,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xaf6835989184678c931c98f9d6f61200f76c9c9d": {
    "primary_type": "GENERALIST",
@@ -385086,7 +385616,9 @@
         "max_recipients": 4,
         "window_block": 57267762,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -385996,12 +386528,16 @@
       "0xe98d7235666559d1a9a1b6c0e2976b6ff05ca3c9": {
        "max_recipients": 29,
        "window_block": 62458480,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "BeaconProxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0x1aaae8f679118af8f41cad43fc6049417c982edb": {
        "max_recipients": 35,
        "window_block": 62916644,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "BeaconProxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "onchain_verified": true,
@@ -390054,7 +390590,9 @@
         "max_recipients": 4,
         "window_block": 57267762,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -392369,7 +392907,9 @@
         "max_recipients": 8,
         "window_block": 56934945,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Transparent)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0xa48185b82a02ab2ea4a5aa9ab915b6c03ce2704c": {
        "kind": "PERSONAL",
@@ -398171,7 +398711,9 @@
         "max_recipients": 19,
         "window_block": 57063385,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -398408,10 +398950,10 @@
    }
   },
   "0xb54ed1dba645cc9d1655e8b1d3ff44241c08d3f7": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -398433,7 +398975,9 @@
         "max_recipients": 4,
         "window_block": 58373942,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -398443,9 +398987,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xb54fc60987889645c400089cc6e156b02737c963": {
    "primary_type": "GENERALIST",
@@ -399391,10 +399936,10 @@
    }
   },
   "0xb5ce5fbf04d8876df02c040cb8f75ca45271f58d": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -399416,7 +399961,9 @@
         "max_recipients": 5,
         "window_block": 57016157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -399426,9 +399973,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xb5d134c768fc33dcd191022fcaf7adec6a119f55": {
    "primary_type": "BUNDLER_SUSPECT",
@@ -402049,10 +402597,10 @@
    "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
   },
   "0xb6d0898ac690997b7191fdfe77b3760db6622c7f": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -402074,7 +402622,9 @@
         "max_recipients": 2,
         "window_block": 58516040,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -402084,9 +402634,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xb6d911e40fa022735663b4b4f3c24a27b3fd1275": {
    "primary_type": "GENERALIST",
@@ -405022,7 +405573,9 @@
         "max_recipients": 19,
         "window_block": 57063385,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -406461,10 +407014,10 @@
    }
   },
   "0xb934eb1359ec37d15dcad18278d22b2c07d2231a": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -406486,7 +407039,9 @@
         "max_recipients": 3,
         "window_block": 58210707,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -406496,9 +407051,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xb9358d13906da9f0b30fc322508b03d055e1abd9": {
    "primary_type": "MEV_BOT",
@@ -412351,7 +412907,9 @@
         "max_recipients": 11,
         "window_block": 57848659,
         "out_total": 46
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Transparent)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -412626,7 +413184,9 @@
         "max_recipients": 2,
         "window_block": 57999607,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -415216,7 +415776,9 @@
         "max_recipients": 2,
         "window_block": 63410376,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Uniswap",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0x1195c074f898b7644ba732407619c9804dfe6dce": {
        "kind": "PERSONAL",
@@ -415224,7 +415786,9 @@
         "max_recipients": 6,
         "window_block": 63351616,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "SnuggleVaultAdminSatellite",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -415348,7 +415912,9 @@
         "max_recipients": 6,
         "window_block": 56989888,
         "out_total": 30
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Transparent)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -416475,7 +417041,9 @@
         "max_recipients": 18,
         "window_block": 63383704,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "BeaconProxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -416604,7 +417172,9 @@
         "max_recipients": 2,
         "window_block": 58027308,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Relay.link",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -417365,7 +417935,9 @@
         "max_recipients": 4,
         "window_block": 57267762,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -417466,10 +418038,10 @@
    }
   },
   "0xbe053615f67b836a4fded86076faf425b4c6a8f2": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -417491,7 +418063,9 @@
         "max_recipients": 9,
         "window_block": 57100222,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -417501,9 +418075,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xbe056b7f914d91000f102025c5644109d442883c": {
    "primary_type": "GENERALIST",
@@ -418047,10 +418622,10 @@
    }
   },
   "0xbe44b46bc317724e2b198eaa872d62fd2a3b0a54": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -418072,7 +418647,9 @@
         "max_recipients": 5,
         "window_block": 58387602,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -418082,9 +418659,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xbe45d2ad9d3b7066cf6150fb3b448fc6ea54e2b7": {
    "primary_type": "GENERALIST",
@@ -419894,7 +420472,9 @@
         "max_recipients": 2,
         "window_block": 62401116,
         "out_total": 6
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Beacon)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -420928,7 +421508,9 @@
       "0xc407311565432da013664af2041fe4ab4d026922": {
        "max_recipients": 32,
        "window_block": 62483467,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "Proxy (EIP-1967 Beacon)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "onchain_verified": true,
@@ -421889,7 +422471,9 @@
         "max_recipients": 19,
         "window_block": 57063385,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -426376,7 +426960,9 @@
         "max_recipients": 2,
         "window_block": 63421334,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "up",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -431411,7 +431997,9 @@
         "max_recipients": 6,
         "window_block": 58093570,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -432592,7 +433180,9 @@
         "max_recipients": 19,
         "window_block": 57063385,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -432738,10 +433328,10 @@
    }
   },
   "0xc540d7c333c55a794dbee49bd3ffc035794e946b": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -432763,7 +433353,9 @@
         "max_recipients": 2,
         "window_block": 58516040,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -432773,9 +433365,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xc54255fe0129d8fa5cc624482a359b0ba8861e17": {
    "primary_type": "GENERALIST",
@@ -433192,7 +433785,9 @@
         "max_recipients": 5,
         "window_block": 57041111,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -434804,10 +435399,10 @@
    }
   },
   "0xc65354826df5e164692abde035dd3769ca9e8b9f": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -434829,7 +435424,9 @@
         "max_recipients": 4,
         "window_block": 57876007,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -434839,9 +435436,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xc65588c3c99d823c5d1486e24778ef002b3cb363": {
    "primary_type": "TRADER_COVERAGE_GAP",
@@ -436047,10 +436645,10 @@
    }
   },
   "0xc6ef5002093c24d7f3e067dfe83ab6d6f07cd209": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -436072,7 +436670,9 @@
         "max_recipients": 18,
         "window_block": 56970381,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -436082,9 +436682,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xc6f455d4973e3491a4d13b592fca3eb550d62ac4": {
    "primary_type": "GENERALIST",
@@ -436423,10 +437024,10 @@
    }
   },
   "0xc72a37e15e81367ffc86d86a1c4d47058969962b": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -436448,7 +437049,9 @@
         "max_recipients": 2,
         "window_block": 53967917,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "PonsV2BondingCurve",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -436458,9 +437061,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['PonsV2BondingCurve']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xc72b76292f925a5b65289084c0c26305bd313ea8": {
    "primary_type": "GENERALIST",
@@ -438350,10 +438954,10 @@
    }
   },
   "0xc7fa77fd15dad3d6da8479c2e0bea8596cdd7344": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -438375,7 +438979,9 @@
         "max_recipients": 8,
         "window_block": 57089901,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -438385,9 +438991,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xc7fcfe3cef144c78f0612ee585e79b055bf00045": {
    "primary_type": "GENERALIST",
@@ -438999,7 +439606,9 @@
         "max_recipients": 2,
         "window_block": 63403769,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Pons",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -439109,7 +439718,9 @@
         "max_recipients": 2,
         "window_block": 63397496,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "MEXC",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -439365,10 +439976,10 @@
    }
   },
   "0xc86df41c989bc66a1aa22304483cb36b5af31fd3": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -439390,7 +440001,9 @@
         "max_recipients": 3,
         "window_block": 58210707,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -439400,9 +440013,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xc86fae1517421c9c5e4c6ceac89346f063344772": {
    "primary_type": "GENERALIST",
@@ -439931,10 +440545,10 @@
    }
   },
   "0xc8aae2291d551337ea05830a80e507c7393072b9": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -439956,7 +440570,9 @@
         "max_recipients": 2,
         "window_block": 55143572,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -439966,9 +440582,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xc8ab6eda3464bb5a9770c2cb3c26bdedb4976bed": {
    "primary_type": "INSIDER",
@@ -443053,7 +443670,9 @@
         "max_recipients": 4,
         "window_block": 57267762,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -446904,10 +447523,10 @@
    }
   },
   "0xcbf286ec80eed219f8db8d503882aa09d7b6f4be": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -446929,7 +447548,9 @@
         "max_recipients": 5,
         "window_block": 57357575,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -446939,9 +447560,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xcbfb1ae7ddb5a4e0283ba8d1628ce6a6db84d80a": {
    "primary_type": "GENERALIST",
@@ -449346,10 +449968,10 @@
    }
   },
   "0xcd44bfa49d90a1ecfc9067068c28703f79805a2b": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -449371,7 +449993,9 @@
         "max_recipients": 5,
         "window_block": 57016157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -449381,9 +450005,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xcd44e711fb5848b0472da1d4ec44f0dd88557426": {
    "primary_type": "GENERALIST",
@@ -451983,10 +452608,10 @@
    }
   },
   "0xce89f23eb0a164588723ab2dea0e7521b1c0136f": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -452008,7 +452633,9 @@
         "max_recipients": 9,
         "window_block": 57207228,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -452018,9 +452645,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xce8bcabe012d767375ff688b4a9150f8550fb196": {
    "primary_type": "GENERALIST",
@@ -455770,7 +456398,9 @@
       "0xc407311565432da013664af2041fe4ab4d026922": {
        "max_recipients": 32,
        "window_block": 62483467,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "Proxy (EIP-1967 Beacon)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "onchain_verified": true,
@@ -455926,10 +456556,10 @@
    }
   },
   "0xd04c77f215a248b3e13c1371e4355201b680e57e": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -455951,7 +456581,9 @@
         "max_recipients": 8,
         "window_block": 56942746,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -455961,9 +456593,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xd04cbf020b71dd85d487c4b79f8f3be37a2a785f": {
    "primary_type": "GENERALIST",
@@ -457164,7 +457797,9 @@
       "0x65050a9b7e5075a2ba5ced7b1b64ee66262c40dc": {
        "max_recipients": 21,
        "window_block": 57081754,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "onchain_verified": true,
@@ -460754,10 +461389,10 @@
    "override_note": "INSIDER dibatalkan: bukti on-chain menunjukkan tx beli (Swap log) yang tak tertangkap scan; antre re-enrich"
   },
   "0xd274fc6e3a7080b1904d0924407e55c06dc440fe": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -460779,7 +461414,9 @@
         "max_recipients": 5,
         "window_block": 57055124,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -460789,9 +461426,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xd27703e313c9672dc1cb25bb10225a67223fdbef": {
    "primary_type": "GENERALIST",
@@ -461578,7 +462216,9 @@
       "0xe0ab8dcc4342ca2d016b147f12146c8290b198b3": {
        "max_recipients": 50,
        "window_block": 62916399,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "Proxy (EIP-1967 Beacon)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "onchain_verified": true,
@@ -461621,10 +462261,10 @@
    }
   },
   "0xd2e8e865df7b3779116e6fa7cc5ca3850d8c6432": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -461646,7 +462286,9 @@
         "max_recipients": 9,
         "window_block": 57100222,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -461656,9 +462298,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xd2e9ec66834912a6c5156b3c2e1edb867a34a22c": {
    "primary_type": "GENERALIST",
@@ -463148,10 +463791,10 @@
    }
   },
   "0xd3b2f5bf3f31e4c4b17fd9d242deefb5300fb379": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -463173,7 +463816,9 @@
         "max_recipients": 9,
         "window_block": 57207228,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -463183,9 +463828,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xd3b32eba9e6ec22e040ce68be3e4cbb3795e2034": {
    "primary_type": "GENERALIST",
@@ -464146,11 +464792,11 @@
    }
   },
   "0xd4229d8166dbaa45689589d59fa968abc840b20f": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
     "CT_ATTRIBUTED",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -464177,7 +464823,9 @@
         "max_recipients": 11,
         "window_block": 57095393,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -464188,9 +464836,10 @@
    "confidence": {
     "AIRDROP_FARMER": 0.95,
     "CT_ATTRIBUTED": 0.6,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xd42598f1df5c83569be4327e11aa508c9036d1f4": {
    "primary_type": "GENERALIST",
@@ -465022,7 +465671,9 @@
         "max_recipients": 4,
         "window_block": 58395277,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -468010,7 +468661,9 @@
         "max_recipients": 4,
         "window_block": 57360445,
         "out_total": 6
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Beacon)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0x5aa6f2d13b04eeef150dc029ab1e7567d31eb47f": {
        "kind": "PERSONAL",
@@ -468018,7 +468671,9 @@
         "max_recipients": 5,
         "window_block": 57175688,
         "out_total": 7
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Beacon)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0xf7fc95b08510ccd175f8efae86455a0c80770946": {
        "kind": "PERSONAL",
@@ -468026,7 +468681,9 @@
         "max_recipients": 12,
         "window_block": 57173099,
         "out_total": 16
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Beacon)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -471456,7 +472113,9 @@
         "max_recipients": 2,
         "window_block": 63465298,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "up",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0x99f9e0735307ad10ca01a3532f1726590ba51b31": {
        "kind": "PERSONAL",
@@ -471464,7 +472123,9 @@
         "max_recipients": 1,
         "window_block": 62836273,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "up",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0x5bed8fde4b9a605b2b7f7027c6d8b0f08c911165": {
        "kind": "PERSONAL",
@@ -471472,7 +472133,9 @@
         "max_recipients": 2,
         "window_block": 58496202,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "up",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -471566,10 +472229,10 @@
    }
   },
   "0xd7828f0aa42c863ef2dabfe01832111ed21034c8": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -471591,7 +472254,9 @@
         "max_recipients": 8,
         "window_block": 58133676,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -471601,9 +472266,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xd783b6cc5bcc3f4cb28e841bd4d9ffc64143eaa9": {
    "primary_type": "GENERALIST",
@@ -479785,7 +480451,9 @@
         "max_recipients": 3,
         "window_block": 57199737,
         "out_total": 14
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Transparent)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -480032,7 +480700,9 @@
         "max_recipients": 1,
         "window_block": 777352,
         "out_total": 4
-       }
+       },
+       "arkham_entity": "Kernel",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0xdd9b39ffedf8602ff86c3621f30bbc598a2df223": {
        "kind": "PERSONAL",
@@ -480040,7 +480710,9 @@
         "max_recipients": 1,
         "window_block": 62296440,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Meridian Robinhood Single-Leg Vault (SRHV1)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0x79cb914f3f336426e89fab55a9488ab25770552d": {
        "kind": "PERSONAL",
@@ -480048,7 +480720,9 @@
         "max_recipients": 1,
         "window_block": 62703732,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ConditionalTokensReader",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": {
@@ -482414,7 +483088,9 @@
         "max_recipients": 5,
         "window_block": 57041111,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -488129,10 +488805,10 @@
    }
   },
   "0xdf078177782cd3241fe7cc6c1be5b7f5a26bf38e": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -488154,7 +488830,9 @@
         "max_recipients": 2,
         "window_block": 55143572,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -488164,9 +488842,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xdf0807606449596af5fd0eaf02f8a6ab1d6df29a": {
    "primary_type": "GENERALIST",
@@ -489371,7 +490050,9 @@
       "0xa95ac2dc572d43c507695bf459f90cc4b91a7d68": {
        "max_recipients": 32,
        "window_block": 63156071,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "BeaconProxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "onchain_verified": true,
@@ -489897,10 +490578,10 @@
    }
   },
   "0xdfc4fb86262dfc9ecc70f8a4b817df132173bafa": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -489922,7 +490603,9 @@
         "max_recipients": 8,
         "window_block": 56942746,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -489932,9 +490615,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xdfc5266a8436078688366bfe070dbf0050b8de1a": {
    "primary_type": "GENERALIST",
@@ -492551,10 +493235,10 @@
    }
   },
   "0xe0d80ed4e9048db8332d4941e3610ec960c2880a": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -492576,7 +493260,9 @@
         "max_recipients": 12,
         "window_block": 57087641,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -492586,9 +493272,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xe0daf643395f743e78bad434ba0f3cd7ade03338": {
    "primary_type": "GENERALIST",
@@ -494183,12 +494870,16 @@
       "0x4ec64a0569ead00bfba75b557cf2a865152849ab": {
        "max_recipients": 50,
        "window_block": 62882393,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "BeaconProxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0x778e344d7e92caec1e51e7db4d4c11cfadc1008a": {
        "max_recipients": 43,
        "window_block": 63440556,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "BeaconProxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "onchain_verified": true,
@@ -495766,7 +496457,9 @@
         "max_recipients": 3,
         "window_block": 55011723,
         "out_total": 7
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Beacon)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0x59c47bc5542d32b318d546f3fd45323df2aea52e": {
        "kind": "PERSONAL",
@@ -495774,7 +496467,9 @@
         "max_recipients": 3,
         "window_block": 54965113,
         "out_total": 7
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Beacon)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -496463,11 +497158,11 @@
    }
   },
   "0xe28601398a5448d1147e6e8b0e0c6d686f0d216d": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
     "CT_ATTRIBUTED",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -496494,7 +497189,9 @@
         "max_recipients": 13,
         "window_block": 57837912,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -496505,9 +497202,10 @@
    "confidence": {
     "AIRDROP_FARMER": 0.95,
     "CT_ATTRIBUTED": 0.6,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xe287526ee379a02a020ca894c66e4b914e4ded6a": {
    "primary_type": "GENERALIST",
@@ -498304,10 +499002,10 @@
    }
   },
   "0xe364f84cf31178375f639e94dda37e06f451513e": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -498329,7 +499027,9 @@
         "max_recipients": 5,
         "window_block": 57016157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -498339,9 +499039,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xe3666187c7fbd30ea514a00747f27bef2df27d69": {
    "primary_type": "GENERALIST",
@@ -503567,10 +504268,10 @@
    }
   },
   "0xe5cee38a62a7e2c3c4bb379209b35e1f369616ba": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -503592,7 +504293,9 @@
         "max_recipients": 5,
         "window_block": 57016157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -503602,9 +504305,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xe5d19083ca3a2dd1d4ae9381d658b2d8293d7f98": {
    "primary_type": "GENERALIST",
@@ -503688,7 +504392,9 @@
         "max_recipients": 4,
         "window_block": 57267762,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -504858,7 +505564,9 @@
         "max_recipients": 4,
         "window_block": 57267762,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -506586,12 +507294,16 @@
       "0xe9fcfaef3d5b9fbd6193cc60f738fed2a3ad2398": {
        "max_recipients": 33,
        "window_block": 63209484,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "Proxy (EIP-1167 Minimal)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       },
       "0x6131c05d5a6b484069114968af2529a78cb8eb84": {
        "max_recipients": 49,
        "window_block": 49924515,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "Proxy (EIP-1167 Minimal)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "onchain_verified": true,
@@ -507581,7 +508293,9 @@
         "max_recipients": 5,
         "window_block": 57660924,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -507610,10 +508324,10 @@
    }
   },
   "0xe81e2dc9e59628b8960900fcd8f1fa4f03922fde": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -507643,7 +508357,9 @@
         "max_recipients": 4,
         "window_block": 56594049,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "PonsV2BondingCurve",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -507653,9 +508369,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['PonsV2BondingCurve']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xe81f1861fe92fdaa62fac0911408cd6908c3d8b2": {
    "primary_type": "GENERALIST",
@@ -508060,10 +508777,10 @@
    }
   },
   "0xe84d140c77ae18feb589b78ba6b008daa4ad2fb8": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -508085,7 +508802,9 @@
         "max_recipients": 8,
         "window_block": 58133676,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -508095,9 +508814,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xe84dead13201c4be9b6e2bfcbf438afcd5b742c3": {
    "primary_type": "INSIDER",
@@ -508276,10 +508996,10 @@
    }
   },
   "0xe86c896cb987de1445246e4b195a6e5ac8ff78ca": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -508301,7 +509021,9 @@
         "max_recipients": 9,
         "window_block": 57100222,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -508311,9 +509033,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xe86d78381c4cd7b4a67278e1194ca7babc363af9": {
    "primary_type": "GENERALIST",
@@ -512683,10 +513406,10 @@
    }
   },
   "0xea79850180e025521d47b71de2d420b39e22e7b0": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -512708,7 +513431,9 @@
         "max_recipients": 6,
         "window_block": 58395558,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -512718,9 +513443,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xea7aca22fadb76c265d5e0dc7ce151538fc098b1": {
    "primary_type": "GENERALIST",
@@ -514670,10 +515396,10 @@
    }
   },
   "0xeb514018a52ceb695104804044ae3416028a6438": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -514695,7 +515421,9 @@
         "max_recipients": 3,
         "window_block": 58210707,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -514705,9 +515433,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xeb51f6a68f6a93c1931f3d80b82050e8cdc7d84b": {
    "primary_type": "GENERALIST",
@@ -516597,7 +517326,9 @@
         "max_recipients": 6,
         "window_block": 57060321,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -520223,10 +520954,10 @@
    }
   },
   "0xee26bb996576ac9f77d6b0bea42f69502cd04938": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -520248,7 +520979,9 @@
         "max_recipients": 13,
         "window_block": 55035442,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "PonsV2BondingCurve",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -520258,9 +520991,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['PonsV2BondingCurve']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xee29a57464f70278c70506f470c6e3f4495b0f39": {
    "primary_type": "GENERALIST",
@@ -520705,7 +521439,9 @@
       "0xc407311565432da013664af2041fe4ab4d026922": {
        "max_recipients": 32,
        "window_block": 62483467,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "Proxy (EIP-1967 Beacon)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "onchain_verified": true,
@@ -530565,7 +531301,9 @@
         "max_recipients": 7,
         "window_block": 54370947,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Transparent)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -531102,7 +531840,9 @@
         "max_recipients": 19,
         "window_block": 57063385,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -532716,10 +533456,10 @@
    "override_note": "unverified zero-buy: conf diturunkan 0.5 sampai re-verify"
   },
   "0xf40405350ad6fe1823cf0289e12af24f265a7bee": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -532741,7 +533481,9 @@
         "max_recipients": 5,
         "window_block": 57016157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -532751,9 +533493,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xf40675bb6e24a2dbd3acbd627919c10ed2be12bd": {
    "primary_type": "GENERALIST",
@@ -534173,7 +534916,9 @@
         "max_recipients": 3,
         "window_block": 56734935,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Transparent)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -535640,10 +536385,10 @@
    }
   },
   "0xf56bbb8d7becb03ff76aae96d8e6c41964c92d40": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -535665,7 +536410,9 @@
         "max_recipients": 14,
         "window_block": 57185688,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -535675,9 +536422,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xf56d30981bfb9a2adf975cb984ae9160a13c347f": {
    "primary_type": "GENERALIST",
@@ -537930,7 +538678,9 @@
         "max_recipients": 6,
         "window_block": 57087542,
         "out_total": 32
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -538629,7 +539379,9 @@
         "max_recipients": 2,
         "window_block": 60015336,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "LiquidMesh",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -540001,7 +540753,9 @@
         "max_recipients": 3,
         "window_block": 58210831,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -540305,7 +541059,9 @@
         "max_recipients": 1,
         "window_block": 57263441,
         "out_total": 10
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Transparent)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -540576,7 +541332,9 @@
         "max_recipients": 6,
         "window_block": 57060321,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -541391,7 +542149,9 @@
         "max_recipients": 5,
         "window_block": 57660924,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -542059,7 +542819,9 @@
         "max_recipients": 5,
         "window_block": 58139157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Proxy (EIP-1967 Transparent)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -542830,7 +543592,9 @@
         "max_recipients": 19,
         "window_block": 57063385,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "ERC1967Proxy",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -547522,10 +548286,10 @@
    "override_note": "INSIDER dibatalkan: bukti on-chain menunjukkan tx beli (Swap log) yang tak tertangkap scan; antre re-enrich"
   },
   "0xfad4551af4dfe30bb335ad0b3d803e39e4acec00": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -547547,7 +548311,9 @@
         "max_recipients": 5,
         "window_block": 57016157,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -547557,9 +548323,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xfad5dc416800e0244eb7806e2d6390bedcfa7f67": {
    "primary_type": "AIRDROP_FARMER",
@@ -547595,7 +548362,9 @@
       "0xc407311565432da013664af2041fe4ab4d026922": {
        "max_recipients": 32,
        "window_block": 62483467,
-       "out_total": 50
+       "out_total": 50,
+       "arkham_entity": "Proxy (EIP-1967 Beacon)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "onchain_verified": true,
@@ -549483,10 +550252,10 @@
    }
   },
   "0xfbcb28769e3142ef3388ae73e808fe2b8df8120b": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -549508,7 +550277,9 @@
         "max_recipients": 9,
         "window_block": 57207228,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -549518,9 +550289,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xfbcc4dc8057969008e0af5c547d7d960eac1d363": {
    "primary_type": "GENERALIST",
@@ -550191,7 +550963,9 @@
         "max_recipients": 1,
         "window_block": 57427785,
         "out_total": 2
-       }
+       },
+       "arkham_entity": "Kernel (Proxy)",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -551908,7 +552682,9 @@
         "max_recipients": 1,
         "window_block": 62930416,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "Uniswap",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -555609,10 +556385,10 @@
    }
   },
   "0xfeaddad1bcce20fca3aa81e943fd499efaba8aac": {
-   "primary_type": "INSIDER",
+   "primary_type": "GENERALIST",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "GENERALIST"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -555634,7 +556410,9 @@
         "max_recipients": 6,
         "window_block": 56743864,
         "out_total": 50
-       }
+       },
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "mint": null,
@@ -555644,9 +556422,10 @@
    },
    "confidence": {
     "AIRDROP_FARMER": 0.95,
-    "INSIDER": 0.85
+    "INSIDER": 0.85,
+    "GENERALIST": 0.4
    },
-   "override_note": "INSIDER TERBUKTI on-chain: token diterima via transfer/mint murni (tanpa Swap log di tx)"
+   "override_note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['GMGN']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
   },
   "0xfeaf409711b67157e5061ccc358d526e57e6708e": {
    "primary_type": "INSIDER",
@@ -558115,7 +558894,9 @@
       "0x65050a9b7e5075a2ba5ced7b1b64ee66262c40dc": {
        "max_recipients": 20,
        "window_block": 57973130,
-       "out_total": 44
+       "out_total": 44,
+       "arkham_entity": "GMGN",
+       "arkham_checked_at": "2026-09-24T16:24:10.982523+00:00"
       }
      },
      "onchain_verified": true,
@@ -558317,6 +559098,6 @@
  },
  "tag_overrides_applied": {
   "wallets": 4096,
-  "applied_at": "2026-09-23T19:25:16.335424+00:00"
+  "applied_at": "2026-09-26T17:16:23.553849+00:00"
  }
 }
