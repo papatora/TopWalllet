@@ -255,3 +255,19 @@ PELAJARAN: (a) delete/statement tulis eksplisit membuka transaksi SEKETIKA
 off hanya menahan ORM add, bukan session.execute(delete/insert);
 (c) blocking flock tidak FIFO — pakai polling NB + jitter; (d) kunci
 per-stage/per-entry = kelaparan; kunci hanya di commit.
+
+## S-45j/k (2026-09-26 pagi) — AKAR SEJATI + pertumbuhan pertama
+- **S-45j (6939c6b)**: `_call` EtherscanV2 mengembalikan **seluruh envelope
+  dict** saat sukses (status "1"), tapi ketiga konsumen list
+  (token_transfers, address_token_transfers, address_transactions) menunggu
+  LIST -> `isinstance(data, list)` False -> break diam -> **0 transfer utk
+  SEMUA token** sejak EtherscanV2 jadi backend utama (~16 Sep — persis
+  kapan swap beku). Fix: unwrap `data.get("result")` di 3 titik.
+  + token_holders kini bentuk Blockscout (address={"hash"}).
+  BUKTI: FOMOFIED token_transfers 0 -> **4.800**, HITS 869 wallet.
+- **S-45k (ba818d17, 547148c)**: race WAL snapshot — loop upsert 869 wallet
+  kalah balapan dgn discover proses lain (snapshot baca usang -> INSERT
+  tabrak UNIQUE). Fix: **INSERT OR IGNORE level DB** (on_conflict_do_nothing).
+- **HASIL (10:11 UTC)**: swap_max_ts **2026-09-26 10:10** (dari 16 Sep),
+  swaps 440.298 -> **457.537** (+17.239), wallets 94.961 -> 95.262,
+  pending 1.755 di-enrich, interest FOMOFIED 365. DELTA ELIGIBLE.
