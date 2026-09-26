@@ -20,6 +20,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from sqlalchemy import select
+from sqlalchemy.exc import IntegrityError
 
 from config.settings import settings
 from src.db.database import get_session_factory, init_db
@@ -116,9 +117,22 @@ async def _run_track_by_ca(ca: str, top_n: int = 50) -> dict | None:
         hits += extract_wallet_hits(ca, holder_items, [], exclude)
 
         helper = _P()
+        # S-45k: segarkan snapshot baca sebelum upsert — sesi membuka
+        # transaksi baca di query pertama; WAL membuat snapshot itu tidak
+        # melihat wallet yang di-commit proses LAIN selama fetch 20-30 menit
+        # (get() None -> INSERT -> UNIQUE violation, 2026-09-26).
+        await session.rollback()
         for hit in hits:
             await helper._upsert_wallet_interest(session, hit)
-        await _commit_locked(session)
+        try:
+            await _commit_locked(session)
+        except IntegrityError:
+            # balapan dengan writer lain: rollback, ambil snapshot baru,
+            # ulang sekali (upsert idempoten)
+            await session.rollback()
+            for hit in hits:
+                await helper._upsert_wallet_interest(session, hit)
+            await _commit_locked(session)
         jlog(log, logging.INFO, "track-ca wallets discovered", ca=ca, wallets=len(hits))
 
         # targeted price series (covers the CA pool + every other token the
