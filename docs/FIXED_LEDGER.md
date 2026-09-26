@@ -271,3 +271,12 @@ per-stage/per-entry = kelaparan; kunci hanya di commit.
 - **HASIL (10:11 UTC)**: swap_max_ts **2026-09-26 10:10** (dari 16 Sep),
   swaps 440.298 -> **457.537** (+17.239), wallets 94.961 -> 95.262,
   pending 1.755 di-enrich, interest FOMOFIED 365. DELTA ELIGIBLE.
+
+## DELTA TUNTAS (2026-09-26 11:06 UTC)
+- Rebuild lokal OK: **wallets 96.716 · swaps 457.915 · swap_max_ts
+  2026-09-26 10:10:55 · price_points 5,13 jt** — data [PC] sinkron dengan
+  [VPS] yang sudah hidup. night_state.delta_done=true.
+- Catatan: wallet_scores=0 (stage analyze VPS belum tuntas — bukan error;
+  skor akan masuk di delta berikutnya setelah analyze selesai ~jam-jaman).
+- Explorer [PC] tetap MATI (permintaan user) — start manual via start.cmd
+  atau TopWalletLauncher saat mau lihat data baru.

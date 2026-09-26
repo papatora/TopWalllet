@@ -1,6 +1,22 @@
-# 04 — NEXT STEPS (S-45, 2026-09-25 malam)
+# 04 — NEXT STEPS (update 2026-09-26 siang, pasca-PEMULIHAN)
 
-## KONDISI SAAT INI
+## STATUS: PEMULIHAN TUNTAS ✅
+- swap_max_ts **2026-09-26 10:10** (dari beku 16 Sep) — pipeline [VPS] hidup.
+- Delta ke [PC] tuntas: wallets 96.716 · swaps 457.915 · price_points 5,13 jt.
+- wallet_scores=0 (analyze [VPS] belum tuntas — cek harian; masuk di delta
+  berikutnya).
+
+## SISA PEKERJAAN
+1. [VPS] tunggu stage analyze selesai → wallet_scores terisi → delta ulang
+   → LB/dashboard penuh (skor wallet muncul).
+2. Ronde audit P2/P3 versi MODIFY hakim (menunggu keputusan user):
+   - P2: GENERALIST 1-2 swap → DUST, gate union dataset.py >$10k (cap 1.039).
+   - P3: 133 wallet GMGN+Pons INSIDER→GENERALIST (exclude list ketat).
+3. Goal #3 DIAMOND: modul atribusi X (10 akun hidup, sesi di .env [VPS];
+   GraphQL via cookies, bukan API v1.1).
+4. Goal #4: halaman Cek Token (#/lookup) sudah live — pakai data baru
+   otomatis setelah explorer dijalankan.
+
 - [VPS] semua fix S-44..S-45g terdeploy (35d2c55). Supervisor crash-retry
   loop berjalan; cycle pertama pasca-fix sedang mencoba lolos discover→
   enrich. SSH sempat kebanjiran sesi (EOFError) — cooldown dulu sebelum
