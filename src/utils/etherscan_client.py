@@ -192,6 +192,12 @@ class EtherscanV2Client:
             if token_filter:
                 params["contractaddress"] = token_filter.lower()
             data = await self._call(params)
+            if isinstance(data, dict):
+                # S-45j: _call mengembalikan SELURUH envelope saat sukses
+                # (status "1") — unwrap result. Dulu dict = bukan list →
+                # break → 0 item → seluruh ingest mati senyap sejak
+                # EtherscanV2 jadi backend utama (16 Sep 2026).
+                data = data.get("result")
             if not isinstance(data, list):
                 break
             items.extend(tx_to_blockscout_shape(x) for x in data)
@@ -210,6 +216,8 @@ class EtherscanV2Client:
                           "offset": 200, "sort": "asc",
                           "startblock": 0, "endblock": 99999999}
                 data = await self._call(params)
+                if isinstance(data, dict):
+                    data = data.get("result")  # S-45j: unwrap envelope
                 if not isinstance(data, list):
                     break
                 out.extend(tx_to_funding_shape(x, internal) for x in data)
@@ -225,6 +233,8 @@ class EtherscanV2Client:
             data = await self._call({"module": "account", "action": "tokentx",
                                      "contractaddress": ca.lower(), "page": page,
                                      "offset": 200, "sort": "desc"})
+            if isinstance(data, dict):
+                data = data.get("result")  # S-45j: unwrap envelope
             if not isinstance(data, list):
                 break
             items.extend(tx_to_blockscout_shape(x) for x in data)
