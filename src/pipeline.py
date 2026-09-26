@@ -249,24 +249,23 @@ class Pipeline:
         row.price_usd = p.price_usd
 
     async def _upsert_wallet_interest(self, session: AsyncSession, hit: WalletHit) -> None:
-        wallet = await session.get(Wallet, hit.address)
-        if wallet is None:
-            wallet = Wallet(address=hit.address)
-            session.add(wallet)
+        # S-45k: INSERT OR IGNORE level DB — ORM get()-lalu-INSERT kalah
+        # balapan dengan writer lain saat snapshot baca sudah usang (loop
+        # 869 wallet = puluhan detik; discover proses lain meng-insert
+        # wallet yang sama). ON CONFLICT DO NOTHING kebal snapshot.
+        from sqlalchemy.dialects.sqlite import insert as sqlite_insert
+
+        await session.execute(
+            sqlite_insert(Wallet)
+            .values(address=hit.address, status="pending")
+            .on_conflict_do_nothing(index_elements=[Wallet.address]))
         if hit.source:
-            exists = await session.execute(
-                select(WalletTokenInterest.id).where(
-                    WalletTokenInterest.wallet_address == hit.address,
-                    WalletTokenInterest.token_address == hit.token_address,
-                    WalletTokenInterest.source == hit.source,
-                )
-            )
-            if exists.first() is None:
-                session.add(WalletTokenInterest(
-                    wallet_address=hit.address,
-                    token_address=hit.token_address,
-                    source=hit.source,
-                ))
+            await session.execute(
+                sqlite_insert(WalletTokenInterest)
+                .values(wallet_address=hit.address,
+                        token_address=hit.token_address,
+                        source=hit.source)
+                .on_conflict_do_nothing())
 
     # ---------------- Stage 2b: PRICES (targeted) ----------------
 
