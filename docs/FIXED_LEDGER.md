@@ -280,3 +280,27 @@ per-stage/per-entry = kelaparan; kunci hanya di commit.
   skor akan masuk di delta berikutnya setelah analyze selesai ~jam-jaman).
 - Explorer [PC] tetap MATI (permintaan user) — start manual via start.cmd
   atau TopWalletLauncher saat mau lihat data baru.
+
+## S-46 (2026-09-26 siang) — ronde audit dieksekusi + Goal #3 infra
+- **S-45l (7d76256)**: commit chunked discover (40 token / 200 hits) +
+  busy_timeout 300 — commit mega-geloang melampaui busy_timeout.
+- **P3 DIEKSEKUSI (9b7a419)**: TEPAT 133 wallet (GMGN 129 + PonsV2 4)
+  INSIDER->GENERALIST; exclude: 4 multi-entity, 16 MINT, 86 AIRDROP-
+  primary, 557 entity-lain (proxy dsb); **gate on-chain 133/133 PASS**;
+  asersi 0 sisa INSIDER. scripts/apply_audit_p3.py.
+- **P2 DIEKSEKUSI (96c89c3)**: 8.363 GENERALIST 1-2 swap -> DUST;
+  terlindungi union >$10k: **1.042** (hakim: 1.039); GENERALIST tersisa
+  20.380 (target 20.293); policy unpriced eksplisit (460 pindah).
+  scripts/apply_audit_p2.py (engine dataset.build() utk USD terukur).
+  Label DUST ditambahkan di explorer ui.js.
+- **Goal #3 infra (2fd90d32, 0bb6bfb1)**: x_attribution.py — atribusi via
+  sesi X login (playwright cookies), resume-safe. MESIN TERBUKTI: whale
+  PIPEDOG -> @the_smart_ape; FOMOFIED -> 7 CT accounts. HASIL JUJUR run
+  120 top-trader: 0/123 via pencarian alamat penuh — trader pintar tak
+  menyebar alamat di X (di luar keyword yang dicari). Lanjutan (v2):
+  atribusi via ENS / pola "caller->follower" (token yang di-snip sesaat
+  setelah tweet CA).
+- Pipeline [VPS]: swaps 470.306, swap_max_ts 16:30 hari ini (terus segar),
+  wallets 97.988, pending 148. Scores=0 menunggu satu pass analyze bersih
+  (cycle masih crash-retry di discover; chunked commit baru terdeploy —
+  pantau).
