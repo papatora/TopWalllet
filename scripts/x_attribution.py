@@ -38,7 +38,9 @@ def load_env() -> dict:
 
 
 def targets(max_n: int) -> list[str]:
-    """Wallet target: terverifikasi bagus (top_wallets_latest) + skor tinggi."""
+    """Wallet target: terverifikasi bagus (top_wallets_latest) + skor tinggi
+    + top trader aktif dari DB (exclude INSIDER/MEV/DEV/DUST — hanya yang
+    rekam jejaknya layak diikuti)."""
     out: list[str] = []
     tw = REPO / "results" / "top_wallets_latest.json"
     if tw.exists():
@@ -50,19 +52,26 @@ def targets(max_n: int) -> list[str]:
                     out.append(a)
         except Exception:
             pass
-    if len(out) < max_n:
-        ws = REPO / "results" / "wallet_scores.json"
-        if ws.exists():
-            try:
-                scored = json.loads(ws.read_text(encoding="utf-8"))
-                rows = scored.get("wallets") or scored if isinstance(scored, list) else []
-                for r in rows[:200]:
-                    a = (r.get("wallet_address") or "").lower()
-                    sc = r.get("composite_score") or 0
-                    if a and sc >= 60 and a not in out:
-                        out.append(a)
-            except Exception:
-                pass
+
+    # top trader aktif dari DB — kecualikan label jelek
+    try:
+        import sqlite3
+        wl = json.loads((REPO / "results" / "wallet_labels.json")
+                        .read_text(encoding="utf-8"))["wallets"]
+        bad = {a for a, e in wl.items()
+               if e.get("primary_type") in ("INSIDER", "MEV_BOT", "DEV", "DUST",
+                                            "AIRDROP_FARMER", "PHISHING_TARGET")}
+        con = sqlite3.connect(f"file:{REPO / 'data' / 'topwallet.db'}?mode=ro", uri=True)
+        rows = con.execute(
+            "select wallet_address, count(*) n, sum(coalesce(abs(token_amount),0)) v "
+            "from swap_events group by 1 having n >= 5 order by v desc limit 400").fetchall()
+        con.close()
+        for a, _n, _v in rows:
+            a = a.lower()
+            if a not in out and a not in bad:
+                out.append(a)
+    except Exception as e:
+        print(f"  targets DB gagal: {str(e)[:80]}")
     return out[:max_n]
 
 
