@@ -158,12 +158,18 @@ class Pipeline:
         jlog(log, logging.INFO, "discovered tokens", count=len(tokens))
 
         symbols: dict[str, str] = {}
-        for t in tokens:
+        # S-45l: commit CHUNKED tiap 40 token — commit satu-geloang
+        # (ratusan UPDATE pool sekaligus) bersinggungan dgn writer lain dan
+        # melampaui busy_timeout ('database is locked' saat discover,
+        # 2026-09-26). Transaksi pendek-pendek, semua di dalam kunci.
+        for i, t in enumerate(tokens, 1):
             decimals = await self._token_decimals(t.address)
             await self._upsert_token(session, t, decimals)
             if t.pool:
                 await self._upsert_pool(session, t)
             symbols[t.address] = t.symbol
+            if i % 40 == 0:
+                await _commit_locked(session)
         await _commit_locked(session)
 
         # wallet discovery per token (holders + recent traders); zero-address
@@ -174,6 +180,7 @@ class Pipeline:
         }
         wallets_seen: set[str] = set()
         hits_total = 0
+        hits_done = 0
         for t in tokens:
             holders = await self.blockscout.token_holders(t.address, settings.holders_per_token)
             transfers = await self.blockscout.token_transfers(t.address, settings.trader_pages_per_token)
@@ -182,6 +189,9 @@ class Pipeline:
                 await self._upsert_wallet_interest(session, hit)
                 wallets_seen.add(hit.address)
                 hits_total += 1
+                hits_done += 1
+                if hits_done % 200 == 0:
+                    await _commit_locked(session)
 
         # optional leaderboard source (no-op unless enabled)
         for entry in await fetch_leaderboard_wallets():
