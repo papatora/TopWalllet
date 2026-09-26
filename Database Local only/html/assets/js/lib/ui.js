@@ -16,6 +16,7 @@ export const LABEL = {
   SMART_TRACKER:   { c: 'var(--c-smart)', icon: 'star', desc: 'Passed verifier R1–R3 and the consistency bar.' },
   CLUSTER:         { c: 'var(--c-cluster)', icon: 'cluster', desc: 'Shares a first-funding source with 3+ other wallets.' },
   GENERALIST:      { c: 'var(--c-generalist)', icon: 'wallet', desc: 'No taxonomy signal matched.' },
+  DUST:            { c: 'var(--c-generalist)', icon: 'wallet', desc: '1-2 swaps with no measurable $10k+ notional (audit P2 union gate) - one-shot noise, not a real trader.' },
   PHISHING_TARGET: { c: 'var(--c-phishing)', icon: 'gift', desc: 'Received tokens from a mass-spreader (>=20 wallets / <=100 blocks) - airdrop/scam campaign target.' },
   TRADER_COVERAGE_GAP: { c: 'var(--c-gap)', icon: 'refresh', desc: 'Former insider label overturned on-chain - the wallet really bought; awaiting re-enrichment.' },
   BOT:             { c: 'var(--c-bot)', icon: 'bot', desc: 'Machine cadence: constant multi-second swaps across many random tokens.' },
