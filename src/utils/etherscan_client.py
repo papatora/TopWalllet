@@ -252,8 +252,9 @@ class EtherscanV2Client:
             for side in ("from", "to"):
                 a = (it.get(side) or {}).get("hash") or ""
                 if a and a not in seen and a != "0x" + "0" * 40:
-                    seen[a] = {"address": a, "source": "trader",
-                               "is_contract": False}
+                    # bentuk holder Blockscout: address = {"hash": ...} —
+                    # extract_wallet_hits membaca .get("address").get("hash")
+                    seen[a] = {"address": {"hash": a}, "is_contract": False}
             if len(seen) >= max_items:
                 break
         return list(seen.values())[:max_items]
