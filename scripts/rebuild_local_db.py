@@ -51,14 +51,32 @@ eng = create_engine(f"sqlite:///{NEW}")
 Base.metadata.create_all(eng)
 eng.dispose()
 
-# 3. apply dump (cepat: journal off)
+# 3. apply dump (cepat: journal off). S-45n: STREAMING per-statement —
+#    read_text + executescript pada dump 1,1 GB melebihi batas string SQLite
+#    ('query string is too large'). Kita akumulasi baris sampai statement
+#    selesai (kutip tunggal seimbang + diakhiri ';'), lalu eksekusi.
 con = sqlite3.connect(NEW)
 con.execute("PRAGMA journal_mode=MEMORY")
 con.execute("PRAGMA synchronous=OFF")
 t0 = time.time()
-con.executescript(sql_path.read_text(encoding="utf-8"))
+
+stmt_parts: list[str] = []
+quote_open = False
+applied = 0
+with open(sql_path, encoding="utf-8", errors="replace") as f:
+    for line in f:
+        stmt_parts.append(line)
+        # hitung kutip tunggal tak-ter-escape ('' = escape, bukan penutup)
+        quote_open ^= (line.count("'") - line.count("''") * 2) % 2 == 1
+        if not quote_open and line.rstrip().endswith(";"):
+            con.execute("".join(stmt_parts))
+            applied += 1
+            stmt_parts = []
+            if applied % 200_000 == 0:
+                con.commit()
+                print(f"  {applied:,} statement ...", flush=True)
 con.commit()
-print(f"dump applied in {time.time()-t0:.0f}s")
+print(f"dump applied: {applied:,} statement in {time.time()-t0:.0f}s")
 
 # 4. validasi SEBELUM menyentuh DB lama — dump kosong/parsial tidak boleh
 #    dianggap sukses (counts minimum per 2026-09; naikkan manual bila
