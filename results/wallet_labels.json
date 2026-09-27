@@ -2621,7 +2621,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $45.72; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $45.72; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 13 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0x00f801e9f2655c133f4d57a75d68a8b63b0372d1": {
    "primary_type": "GENERALIST",
@@ -2739,7 +2739,7 @@
     "GENERALIST": 0.4,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $103.90; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $103.90; 2026-09-26T17:24:45.570110+00:00 | provenance P3: didanai platform ['GMGN'] (bukti INSIDER dipertahankan)"
   },
   "0x00f995ddfcd60d6f27763f56ac5d577c8f4354f3": {
    "primary_type": "DUST",
@@ -3684,7 +3684,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $1,346.05; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $1,346.05; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 7 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0x0160bd531f2961736b58ad9769857e0415f1987a": {
    "primary_type": "GENERALIST",
@@ -5853,7 +5853,7 @@
     "GENERALIST": 0.4,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $313.69; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $313.69; 2026-09-26T17:24:45.570110+00:00 | provenance P3: didanai platform ['GMGN'] (bukti INSIDER dipertahankan)"
   },
   "0x023ddf7b198a6de35e4d2e04959695bd27e62011": {
    "primary_type": "DUST",
@@ -10337,7 +10337,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $257.44; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $257.44; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 6 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0x041d209314f496ac789c7c596d3c4c7ebad6dfc5": {
    "primary_type": "DUST",
@@ -19650,7 +19650,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $934.75; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $934.75; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 3 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0x08027588f9fe86412b51ea57d76fbb8fc297aedb": {
    "primary_type": "GENERALIST",
@@ -21127,7 +21127,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $939.42; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $939.42; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 4 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0x087c230cd24f63438e778fa4d30a263ba571f034": {
    "primary_type": "GENERALIST",
@@ -22211,9 +22211,9 @@
    }
   },
   "0x08eafb9e87539d86a057314fe08d5832fb6fe32c": {
-   "primary_type": "DUST",
+   "primary_type": "GENERALIST",
    "labels": [
-    "DUST"
+    "GENERALIST"
    ],
    "evidence": {
     "GENERALIST": {
@@ -22224,7 +22224,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $4,446.21; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $4,446.21; 2026-09-26T17:24:45.570110+00:00 | re-gate pasca-delta 9/28: notional terukur $20,762.32 > $10k -> GENERALIST; 2026-09-27T20:03:47.295485+00:00"
   },
   "0x08ee1630f1c900ad187074bb7718caba9fdf1079": {
    "primary_type": "DUST",
@@ -23650,7 +23650,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $11.18; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $11.18; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 4 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0x098d08eed5ff70ae12984ecc87eec00fd2ec75b9": {
    "primary_type": "GENERALIST",
@@ -28386,7 +28386,7 @@
     "GENERALIST": 0.4,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $2.40; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $2.40; 2026-09-26T17:24:45.570110+00:00 | provenance P3: didanai platform ['GMGN'] (bukti INSIDER dipertahankan)"
   },
   "0x0b92fcba7fab54f2d448584fcb5a2f841b43cfc7": {
    "primary_type": "GENERALIST",
@@ -29949,7 +29949,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $1,572.00; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $1,572.00; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 3 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0x0c12e2275d7182bc2d758cf5df6feb42a839c1ee": {
    "primary_type": "GENERALIST",
@@ -38867,7 +38867,7 @@
     "GENERALIST": 0.4,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $138.05; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $138.05; 2026-09-26T17:24:45.570110+00:00 | provenance P3: didanai platform ['GMGN'] (bukti INSIDER dipertahankan)"
   },
   "0x0fc237651f70976223836d20bda72d79b28606b6": {
    "primary_type": "GENERALIST",
@@ -42771,7 +42771,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $1,431.42; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $1,431.42; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 4 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0x11afa082b0d55a3e06ab8ad6ba92d88ba1e71e9d": {
    "primary_type": "GENERALIST",
@@ -43253,7 +43253,7 @@
     "GENERALIST": 0.4,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $20.88; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $20.88; 2026-09-26T17:24:45.570110+00:00 | provenance P3: didanai platform ['GMGN'] (bukti INSIDER dipertahankan)"
   },
   "0x11f1571684ae5313b6d438704e225c361fa335c1": {
    "primary_type": "GENERALIST",
@@ -44179,7 +44179,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $269.99; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $269.99; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 3 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0x1248ed4c7b9b9ae7630932de4368527d0ebd5954": {
    "primary_type": "DUST",
@@ -51951,7 +51951,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $1,196.44; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $1,196.44; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 5 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0x1582fe9da1c3200bd352fba2f7b95a710bf0313e": {
    "primary_type": "GENERALIST",
@@ -58168,7 +58168,7 @@
     "GENERALIST": 0.4,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $12.34; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $12.34; 2026-09-26T17:24:45.570110+00:00 | provenance P3: didanai platform ['GMGN'] (bukti INSIDER dipertahankan)"
   },
   "0x180803fe315ec724ddc17d30fbedc33e000bc95c": {
    "primary_type": "GENERALIST",
@@ -58665,7 +58665,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $996.51; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $996.51; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 3 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0x1843ecdd368b84a214ca5fc0a1728c8a926ad85b": {
    "primary_type": "DUST",
@@ -65107,7 +65107,7 @@
     "GENERALIST": 0.4,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $99.47; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $99.47; 2026-09-26T17:24:45.570110+00:00 | provenance P3: didanai platform ['GMGN'] (bukti INSIDER dipertahankan)"
   },
   "0x1b012aaa453f4f8b5cde3e334af1cc5d5c1fcaee": {
    "primary_type": "DUST",
@@ -70786,7 +70786,7 @@
     "GENERALIST": 0.4,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $119.01; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $119.01; 2026-09-26T17:24:45.570110+00:00 | provenance P3: didanai platform ['GMGN'] (bukti INSIDER dipertahankan)"
   },
   "0x1d5694fba6a1f5c38d245df9d7e3d3fa2d0ca284": {
    "primary_type": "GENERALIST",
@@ -73586,7 +73586,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $752.44; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $752.44; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 4 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0x1e88b6f454ecb22fe2d5c6d65cbeee19c3512638": {
    "primary_type": "INSIDER",
@@ -78289,9 +78289,9 @@
    }
   },
   "0x208b3830447546b3766827597097cbbd5195df3e": {
-   "primary_type": "DUST",
+   "primary_type": "GENERALIST",
    "labels": [
-    "DUST"
+    "GENERALIST"
    ],
    "evidence": {
     "GENERALIST": {
@@ -78302,7 +78302,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $247.87; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $247.87; 2026-09-26T17:24:45.570110+00:00 | re-gate pasca-delta 9/28: notional terukur $13,809.56 > $10k -> GENERALIST; 2026-09-27T20:03:47.295485+00:00"
   },
   "0x208c9391b244f8db65b16c33c4ade3351c3d8df6": {
    "primary_type": "GENERALIST",
@@ -83310,7 +83310,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $437.84; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $437.84; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 7 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0x22c0f09a64ee86f954b49d204f1f85c9ec0b7138": {
    "primary_type": "GENERALIST",
@@ -87283,7 +87283,7 @@
     "GENERALIST": 0.4,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $684.95; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $684.95; 2026-09-26T17:24:45.570110+00:00 | provenance P3: didanai platform ['GMGN'] (bukti INSIDER dipertahankan)"
   },
   "0x2466ac80678ee37fd4b03fd6c9379d6524d05e2c": {
    "primary_type": "GENERALIST",
@@ -93626,7 +93626,7 @@
     "GENERALIST": 0.4,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $85.68; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $85.68; 2026-09-26T17:24:45.570110+00:00 | provenance P3: didanai platform ['GMGN'] (bukti INSIDER dipertahankan)"
   },
   "0x279333c8ebdbea4b866fc3b9f4df59cef64b37ad": {
    "primary_type": "GENERALIST",
@@ -102770,7 +102770,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $288.00; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $288.00; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 3 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0x2b5797d030e1364695d4dee934b93b43d42b5721": {
    "primary_type": "GENERALIST",
@@ -104226,7 +104226,7 @@
     "GENERALIST": 0.4,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $23.57; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $23.57; 2026-09-26T17:24:45.570110+00:00 | provenance P3: didanai platform ['GMGN'] (bukti INSIDER dipertahankan)"
   },
   "0x2bfc3b280bdac0e3df49183d7318905a2f426540": {
    "primary_type": "GENERALIST",
@@ -108654,7 +108654,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $2,141.73; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $2,141.73; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 3 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0x2de64a18c37cff5b4145c5c04ea44d8db5aa1035": {
    "primary_type": "DUST",
@@ -109418,7 +109418,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $209.15; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $209.15; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 4 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0x2e49b2912a3d1e807000c3350e74474a19a05915": {
    "primary_type": "GENERALIST",
@@ -110530,7 +110530,7 @@
     "GENERALIST": 0.4,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $142.30; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $142.30; 2026-09-26T17:24:45.570110+00:00 | provenance P3: didanai platform ['GMGN'] (bukti INSIDER dipertahankan)"
   },
   "0x2edab875048fe0f0abfd63793a5d1c54d333bd22": {
    "primary_type": "GENERALIST",
@@ -110962,7 +110962,7 @@
     "GENERALIST": 0.4,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $503.93; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $503.93; 2026-09-26T17:24:45.570110+00:00 | provenance P3: didanai platform ['GMGN'] (bukti INSIDER dipertahankan)"
   },
   "0x2f0af54d0bf4a36402999f63966a3a6eb2e8e4a2": {
    "primary_type": "DUST",
@@ -119800,7 +119800,7 @@
     "GENERALIST": 0.4,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $0.47; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $0.47; 2026-09-26T17:24:45.570110+00:00 | provenance P3: didanai platform ['GMGN'] (bukti INSIDER dipertahankan)"
   },
   "0x32bbe64cca3259bd1568b54e8e325a7cf61bae7a": {
    "primary_type": "GENERALIST",
@@ -122754,7 +122754,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $887.76; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $887.76; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 30 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0x340d83f89a5c311129991551d87b7188fd001f4e": {
    "primary_type": "GENERALIST",
@@ -124262,7 +124262,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $1,736.06; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $1,736.06; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 3 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0x34af94186f06655ac0d775be19e79617b81becf4": {
    "primary_type": "DUST",
@@ -126086,7 +126086,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $469.70; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $469.70; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 5 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0x35870a182c77e9345a605db2624ed06542fd2bd7": {
    "primary_type": "GENERALIST",
@@ -128382,7 +128382,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $200.16; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $200.16; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 4 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0x369a44e5e7c8996212d8c6d6b9d273429276bf39": {
    "primary_type": "GENERALIST",
@@ -134905,7 +134905,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $2.92; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $2.92; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 7 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0x39468666e17cba04d7bd9dce321baec348b9709f": {
    "primary_type": "DUST",
@@ -136311,7 +136311,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $1,633.60; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $1,633.60; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 3 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0x39f5f94a20781097a5a7f0071eefa7ff94816b30": {
    "primary_type": "DUST",
@@ -146199,7 +146199,7 @@
     "GENERALIST": 0.4,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $11.11; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $11.11; 2026-09-26T17:24:45.570110+00:00 | provenance P3: didanai platform ['GMGN'] (bukti INSIDER dipertahankan)"
   },
   "0x3e5da3e1f890c94312bc21a443f06eeccbcca9f1": {
    "primary_type": "INSIDER",
@@ -152893,7 +152893,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $239.13; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $239.13; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 3 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0x4160c21bca8063fdf5409e6830eb5b2f53734ad0": {
    "primary_type": "GENERALIST",
@@ -167864,7 +167864,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $2,787.19; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $2,787.19; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 5 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0x48223441cb6cc9204b0c5e4916f549e1effcbe54": {
    "primary_type": "GENERALIST",
@@ -169009,7 +169009,7 @@
     "GENERALIST": 0.4,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $14.08; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $14.08; 2026-09-26T17:24:45.570110+00:00 | provenance P3: didanai platform ['GMGN'] (bukti INSIDER dipertahankan)"
   },
   "0x488887b79038abeaf0fa3d20e627a784d43a4dc0": {
    "primary_type": "GENERALIST",
@@ -169172,7 +169172,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $46.92; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $46.92; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 4 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0x489f340ff03487f8521346e328d14888460fc40a": {
    "primary_type": "GENERALIST",
@@ -182701,7 +182701,7 @@
     "GENERALIST": 0.4,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $48.35; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $48.35; 2026-09-26T17:24:45.570110+00:00 | provenance P3: didanai platform ['GMGN'] (bukti INSIDER dipertahankan)"
   },
   "0x4f3af2945ea6f017e3c06f609982de477537468b": {
    "primary_type": "GENERALIST",
@@ -184297,7 +184297,7 @@
     "GENERALIST": 0.4,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $211.70; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $211.70; 2026-09-26T17:24:45.570110+00:00 | provenance P3: didanai platform ['GMGN'] (bukti INSIDER dipertahankan)"
   },
   "0x4ff3f6490eacabc6f08f555d04c896576d180065": {
    "primary_type": "GENERALIST",
@@ -191281,7 +191281,7 @@
     "GENERALIST": 0.4,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $671.77; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $671.77; 2026-09-26T17:24:45.570110+00:00 | provenance P3: didanai platform ['GMGN'] (bukti INSIDER dipertahankan)"
   },
   "0x53139af3e07742ebb31a4259011e4ebe6bc27503": {
    "primary_type": "GENERALIST",
@@ -199680,7 +199680,7 @@
     "GENERALIST": 0.4,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $147.47; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $147.47; 2026-09-26T17:24:45.570110+00:00 | provenance P3: didanai platform ['GMGN'] (bukti INSIDER dipertahankan)"
   },
   "0x56daf69e067eb3bf476685fab006ca9204bb09c1": {
    "primary_type": "GENERALIST",
@@ -209494,7 +209494,7 @@
     "GENERALIST": 0.4,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $26.66; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $26.66; 2026-09-26T17:24:45.570110+00:00 | provenance P3: didanai platform ['GMGN'] (bukti INSIDER dipertahankan)"
   },
   "0x5b5274914969e4a24ca99e7a04fe0db769075869": {
    "primary_type": "GENERALIST",
@@ -210255,7 +210255,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $116.89; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $116.89; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 4 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0x5bbcb5e7dbc87a9e615b9840f078d59758707e3c": {
    "primary_type": "INSIDER",
@@ -214381,7 +214381,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $16.48; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $16.48; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 4 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0x5e0c9a64632446d7f7a95382b1993cc5d302087a": {
    "primary_type": "GENERALIST",
@@ -221939,7 +221939,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $603.72; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $603.72; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 4 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0x619e8a04cc823e53ed9bf271ba7d3b48d2c4cc4a": {
    "primary_type": "GENERALIST",
@@ -222404,7 +222404,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $2,332.04; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $2,332.04; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 5 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0x61d7d3b3062fee8632c0d42acede5e7cb77a3b42": {
    "primary_type": "GENERALIST",
@@ -234171,7 +234171,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $114.33; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $114.33; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 4 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0x66cb83bc4321fcdb8fc0da5f4b36feaa3ae109b7": {
    "primary_type": "GENERALIST",
@@ -234908,7 +234908,7 @@
     "GENERALIST": 0.4,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $25.88; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $25.88; 2026-09-26T17:24:45.570110+00:00 | provenance P3: didanai platform ['GMGN'] (bukti INSIDER dipertahankan)"
   },
   "0x6726d0fa02731f98aa314c1020b86a58d3c2d56b": {
    "primary_type": "DUST",
@@ -240565,7 +240565,7 @@
     "GENERALIST": 0.4,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $23.52; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $23.52; 2026-09-26T17:24:45.570110+00:00 | provenance P3: didanai platform ['GMGN'] (bukti INSIDER dipertahankan)"
   },
   "0x69a47ca9b99414c602dd1ffb2fdb6d6305301676": {
    "primary_type": "GENERALIST",
@@ -244279,7 +244279,7 @@
     "GENERALIST": 0.4,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $3,151.21; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $3,151.21; 2026-09-26T17:24:45.570110+00:00 | provenance P3: didanai platform ['PonsV2BondingCurve'] (bukti INSIDER dipertahankan)"
   },
   "0x6b658a751ec3692c0eef9966aeae752397f4f7ab": {
    "primary_type": "GENERALIST",
@@ -247135,7 +247135,7 @@
     "GENERALIST": 0.4,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $29.99; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $29.99; 2026-09-26T17:24:45.570110+00:00 | provenance P3: didanai platform ['GMGN'] (bukti INSIDER dipertahankan)"
   },
   "0x6ca14f7b2c996e4e66b843e42b66d16b37f5c4eb": {
    "primary_type": "GENERALIST",
@@ -263108,7 +263108,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $109.26; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $109.26; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 4 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0x73ac266ea5a6f8792ce56d1facaec321b4ac8c5f": {
    "primary_type": "DUST",
@@ -266766,9 +266766,9 @@
    }
   },
   "0x751fa4222255639069ab22890bf397d8a42303ba": {
-   "primary_type": "DUST",
+   "primary_type": "GENERALIST",
    "labels": [
-    "DUST"
+    "GENERALIST"
    ],
    "evidence": {
     "GENERALIST": {
@@ -266779,7 +266779,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $1,553.69; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $1,553.69; 2026-09-26T17:24:45.570110+00:00 | re-gate pasca-delta 9/28: notional terukur $86,560.54 > $10k -> GENERALIST; 2026-09-27T20:03:47.295485+00:00"
   },
   "0x7522d3d44b7187bf5ce7af247e4712a2da585cd8": {
    "primary_type": "GENERALIST",
@@ -275088,7 +275088,7 @@
     "GENERALIST": 0.4,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $145.07; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $145.07; 2026-09-26T17:24:45.570110+00:00 | provenance P3: didanai platform ['GMGN'] (bukti INSIDER dipertahankan)"
   },
   "0x78e651960ace576650af27fd21c7f24938d1464e": {
    "primary_type": "GENERALIST",
@@ -276504,7 +276504,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $2,185.45; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $2,185.45; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 3 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0x798243d0af88e0a93f18b3485dbfe3285430624e": {
    "primary_type": "INSIDER",
@@ -283545,7 +283545,7 @@
     "GENERALIST": 0.4,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $266.75; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $266.75; 2026-09-26T17:24:45.570110+00:00 | provenance P3: didanai platform ['GMGN'] (bukti INSIDER dipertahankan)"
   },
   "0x7c726b4389bc0f98acd1f7550a37c41323568c84": {
    "primary_type": "GENERALIST",
@@ -284413,7 +284413,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $1,361.84; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $1,361.84; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 9 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0x7ccac9f2a8af1f73f6f0c465038a6f7336f1df38": {
    "primary_type": "INSIDER",
@@ -284644,7 +284644,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $89.90; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $89.90; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 3 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0x7ceca28c7065a627bf562100afb48b3f8b35349b": {
    "primary_type": "GENERALIST",
@@ -286134,7 +286134,7 @@
     "GENERALIST": 0.4,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $79.15; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $79.15; 2026-09-26T17:24:45.570110+00:00 | provenance P3: didanai platform ['GMGN'] (bukti INSIDER dipertahankan)"
   },
   "0x7d8c6375ab0ae8a7d9fd53d1dd2669cf7bd6a9e2": {
    "primary_type": "GENERALIST",
@@ -292206,7 +292206,7 @@
     "GENERALIST": 0.4,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $34.88; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $34.88; 2026-09-26T17:24:45.570110+00:00 | provenance P3: didanai platform ['GMGN'] (bukti INSIDER dipertahankan)"
   },
   "0x802392894107ed72404755fd4eae0cfd06a02216": {
    "primary_type": "GENERALIST",
@@ -294789,7 +294789,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $652.80; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $652.80; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 3 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0x812e82885144c6eab818747393bf77eb4f2e874d": {
    "primary_type": "DUST",
@@ -295437,7 +295437,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $794.33; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $794.33; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 4 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0x81866146e57162668bbdd5c0de8d575fc6071d6d": {
    "primary_type": "GENERALIST",
@@ -295833,7 +295833,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $509.35; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $509.35; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 3 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0x81b0e59248d60072be9a4f4dbc7511757b921e7e": {
    "primary_type": "GENERALIST",
@@ -297554,7 +297554,7 @@
     "GENERALIST": 0.4,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $87.56; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $87.56; 2026-09-26T17:24:45.570110+00:00 | provenance P3: didanai platform ['GMGN'] (bukti INSIDER dipertahankan)"
   },
   "0x82890b3df4596fc91564771c6bd03141125588fc": {
    "primary_type": "GENERALIST",
@@ -317045,7 +317045,7 @@
     "GENERALIST": 0.4,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $202.14; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $202.14; 2026-09-26T17:24:45.570110+00:00 | provenance P3: didanai platform ['GMGN'] (bukti INSIDER dipertahankan)"
   },
   "0x8b73ace50cd75ea4de022349b0e972d65608ac14": {
    "primary_type": "DUST",
@@ -318741,7 +318741,7 @@
     "GENERALIST": 0.4,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $228.20; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $228.20; 2026-09-26T17:24:45.570110+00:00 | provenance P3: didanai platform ['GMGN'] (bukti INSIDER dipertahankan)"
   },
   "0x8c30c4d1ac66809d4623aea5fbbea6a278cbd257": {
    "primary_type": "GENERALIST",
@@ -327382,7 +327382,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $1,447.55; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $1,447.55; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 3 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0x9065fc5462efe63a394aa13de190d39e465c8ee3": {
    "primary_type": "GENERALIST",
@@ -335575,7 +335575,7 @@
     "GENERALIST": 0.4,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $526.61; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $526.61; 2026-09-26T17:24:45.570110+00:00 | provenance P3: didanai platform ['GMGN'] (bukti INSIDER dipertahankan)"
   },
   "0x940be719e9084ed0b73d20b409181a10fe960494": {
    "primary_type": "GENERALIST",
@@ -341584,7 +341584,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $2,451.43; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $2,451.43; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 6 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0x96b46879ac5c6796d6f0cac08852d5276333de42": {
    "primary_type": "GENERALIST",
@@ -341629,9 +341629,9 @@
    }
   },
   "0x96b60940fc3c3a03a4079b74f3872b1361091dee": {
-   "primary_type": "DUST",
+   "primary_type": "GENERALIST",
    "labels": [
-    "DUST"
+    "GENERALIST"
    ],
    "evidence": {
     "GENERALIST": {
@@ -341642,7 +341642,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $1,992.15; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $1,992.15; 2026-09-26T17:24:45.570110+00:00 | re-gate pasca-delta 9/28: notional terukur $29,097.11 > $10k -> GENERALIST; 2026-09-27T20:03:47.295485+00:00"
   },
   "0x96b904a76d69ab94825816401a17e880068e7e9e": {
    "primary_type": "GENERALIST",
@@ -344138,7 +344138,7 @@
     "GENERALIST": 0.4,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $123.53; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $123.53; 2026-09-26T17:24:45.570110+00:00 | provenance P3: didanai platform ['GMGN'] (bukti INSIDER dipertahankan)"
   },
   "0x97c84008e7782b9a1310245da296feddfdc1ad83": {
    "primary_type": "GENERALIST",
@@ -348535,7 +348535,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $292.53; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $292.53; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 3 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0x99684302b5c7a87606887988183ae8c2ea019dda": {
    "primary_type": "GENERALIST",
@@ -361307,7 +361307,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $647.85; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $647.85; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 8 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0x9f27aa1bef2a272c919aa7ebe23bbd0e647b2d75": {
    "primary_type": "GENERALIST",
@@ -369270,7 +369270,7 @@
     "GENERALIST": 0.4,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $362.72; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $362.72; 2026-09-26T17:24:45.570110+00:00 | provenance P3: didanai platform ['GMGN'] (bukti INSIDER dipertahankan)"
   },
   "0xa2b9265a55de60b2842c1e11cdc5147f7f33038a": {
    "primary_type": "DUST",
@@ -375468,7 +375468,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $40.90; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $40.90; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 7 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0xa5bf1e9a620c13e3b032e436646d997634aca663": {
    "primary_type": "GENERALIST",
@@ -375780,7 +375780,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $1.64; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $1.64; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 3 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0xa5e9b49b379a704636d9a1e94d9dda3255a9fb67": {
    "primary_type": "INSIDER",
@@ -376246,7 +376246,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $275.00; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $275.00; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 3 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0xa62ebfe1440e1531462ed5b7cfa3596fac6669ec": {
    "primary_type": "GENERALIST",
@@ -382728,7 +382728,7 @@
     "GENERALIST": 0.4,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $84.20; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $84.20; 2026-09-26T17:24:45.570110+00:00 | provenance P3: didanai platform ['GMGN'] (bukti INSIDER dipertahankan)"
   },
   "0xa965a2d261d97ccba5f778069a5a2bbb5831b0c6": {
    "primary_type": "GENERALIST",
@@ -385166,7 +385166,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $246.70; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $246.70; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 5 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0xaa6cff12d5342b8e461f73c05f78419bfcaef9ba": {
    "primary_type": "GENERALIST",
@@ -386107,7 +386107,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $1,509.98; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $1,509.98; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 3 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0xaacddfb2c3a924dfb2d6c1c847b3e85d068fec6f": {
    "primary_type": "DUST",
@@ -387004,7 +387004,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $147.14; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $147.14; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 4 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0xab2be0d768d89fbd9a6f1b5c7c231d768f3e72cd": {
    "primary_type": "GENERALIST",
@@ -389984,7 +389984,7 @@
     "GENERALIST": 0.4,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $28.16; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $28.16; 2026-09-26T17:24:45.570110+00:00 | provenance P3: didanai platform ['GMGN'] (bukti INSIDER dipertahankan)"
   },
   "0xac85692708a3f322686912a7fb9d024b23afc20a": {
    "primary_type": "GENERALIST",
@@ -392333,7 +392333,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $2,750.70; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $2,750.70; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 3 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0xad9b8b758869de655a20f4098a69dc8975b10ea1": {
    "primary_type": "INSIDER",
@@ -393019,7 +393019,7 @@
     "GENERALIST": 0.4,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $151.25; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $151.25; 2026-09-26T17:24:45.570110+00:00 | provenance P3: didanai platform ['GMGN'] (bukti INSIDER dipertahankan)"
   },
   "0xadd12adbbd5db87674b38af99b6dd34dd2a45e0d": {
    "primary_type": "GENERALIST",
@@ -411774,7 +411774,7 @@
     "GENERALIST": 0.4,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $34.50; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $34.50; 2026-09-26T17:24:45.570110+00:00 | provenance P3: didanai platform ['GMGN'] (bukti INSIDER dipertahankan)"
   },
   "0xb5d134c768fc33dcd191022fcaf7adec6a119f55": {
    "primary_type": "BUNDLER_SUSPECT",
@@ -414358,7 +414358,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $389.39; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $389.39; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 3 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0xb6c76dc6a643fd9b5442bb0f8516b20d69511bfe": {
    "primary_type": "DUST",
@@ -414514,7 +414514,7 @@
     "GENERALIST": 0.4,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $62.51; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $62.51; 2026-09-26T17:24:45.570110+00:00 | provenance P3: didanai platform ['GMGN'] (bukti INSIDER dipertahankan)"
   },
   "0xb6d911e40fa022735663b4b4f3c24a27b3fd1275": {
    "primary_type": "GENERALIST",
@@ -431032,7 +431032,7 @@
     "GENERALIST": 0.4,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $1.35; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $1.35; 2026-09-26T17:24:45.570110+00:00 | provenance P3: didanai platform ['GMGN'] (bukti INSIDER dipertahankan)"
   },
   "0xbe45d2ad9d3b7066cf6150fb3b448fc6ea54e2b7": {
    "primary_type": "GENERALIST",
@@ -446171,7 +446171,7 @@
     "GENERALIST": 0.4,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $183.94; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $183.94; 2026-09-26T17:24:45.570110+00:00 | provenance P3: didanai platform ['GMGN'] (bukti INSIDER dipertahankan)"
   },
   "0xc54255fe0129d8fa5cc624482a359b0ba8861e17": {
    "primary_type": "GENERALIST",
@@ -451986,7 +451986,7 @@
     "GENERALIST": 0.4,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $5.33; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $5.33; 2026-09-26T17:24:45.570110+00:00 | provenance P3: didanai platform ['GMGN'] (bukti INSIDER dipertahankan)"
   },
   "0xc7fcfe3cef144c78f0612ee585e79b055bf00045": {
    "primary_type": "GENERALIST",
@@ -453035,7 +453035,7 @@
     "GENERALIST": 0.4,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $18.91; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $18.91; 2026-09-26T17:24:45.570110+00:00 | provenance P3: didanai platform ['GMGN'] (bukti INSIDER dipertahankan)"
   },
   "0xc86fae1517421c9c5e4c6ceac89346f063344772": {
    "primary_type": "GENERALIST",
@@ -453621,7 +453621,7 @@
     "GENERALIST": 0.4,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $81.15; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $81.15; 2026-09-26T17:24:45.570110+00:00 | provenance P3: didanai platform ['GMGN'] (bukti INSIDER dipertahankan)"
   },
   "0xc8ab6eda3464bb5a9770c2cb3c26bdedb4976bed": {
    "primary_type": "INSIDER",
@@ -465731,7 +465731,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $182.30; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $182.30; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 3 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0xce6a59b4786ca5ae0419a03aec5fad3324d11ea6": {
    "primary_type": "MEV_BOT",
@@ -466065,7 +466065,7 @@
     "GENERALIST": 0.4,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $9,720.94; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $9,720.94; 2026-09-26T17:24:45.570110+00:00 | provenance P3: didanai platform ['GMGN'] (bukti INSIDER dipertahankan)"
   },
   "0xce8bcabe012d767375ff688b4a9150f8550fb196": {
    "primary_type": "GENERALIST",
@@ -468039,7 +468039,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $1,074.25; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $1,074.25; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 3 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0xcf6516ae899a34a92d104c25cbcbd06c68b587f1": {
    "primary_type": "GENERALIST",
@@ -468265,7 +468265,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $841.80; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $841.80; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 3 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0xcf7c4feb434751146a48b895e96caeb15838f92c": {
    "primary_type": "GENERALIST",
@@ -468549,7 +468549,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $1,201.28; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $1,201.28; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 4 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0xcf96b0b1edff29ff9940290a488b976a95b0b3a3": {
    "primary_type": "GENERALIST",
@@ -477345,7 +477345,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $1,741.38; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $1,741.38; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 3 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0xd399b6934bed90f9ecdef9afcd807a8f358dc2ab": {
    "primary_type": "DUST",
@@ -492825,7 +492825,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $1,637.84; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $1,637.84; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 3 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0xda71e8392be19541e62136d814cc39590ae9f94c": {
    "primary_type": "TRADER_COVERAGE_GAP",
@@ -499278,7 +499278,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $909.77; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $909.77; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 3 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0xdd3e163ae7d2f122050102d4c8a93d2d2a9eb463": {
    "primary_type": "GENERALIST",
@@ -503357,7 +503357,7 @@
     "GENERALIST": 0.4,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $76.39; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $76.39; 2026-09-26T17:24:45.570110+00:00 | provenance P3: didanai platform ['GMGN'] (bukti INSIDER dipertahankan)"
   },
   "0xdf0807606449596af5fd0eaf02f8a6ab1d6df29a": {
    "primary_type": "DUST",
@@ -503466,7 +503466,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $702.44; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $702.44; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 5 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0xdf199c29479d9048364a8d1595a7a5e4f78657dd": {
    "primary_type": "DUST",
@@ -505850,7 +505850,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $618.43; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $618.43; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 7 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0xe000fc74c8e7d2132b0838a5db35c411d80d6ecf": {
    "primary_type": "DUST",
@@ -513883,7 +513883,7 @@
     "GENERALIST": 0.4,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $29.08; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $29.08; 2026-09-26T17:24:45.570110+00:00 | provenance P3: didanai platform ['GMGN'] (bukti INSIDER dipertahankan)"
   },
   "0xe3666187c7fbd30ea514a00747f27bef2df27d69": {
    "primary_type": "DUST",
@@ -519273,7 +519273,7 @@
     "GENERALIST": 0.4,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $189.51; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $189.51; 2026-09-26T17:24:45.570110+00:00 | provenance P3: didanai platform ['GMGN'] (bukti INSIDER dipertahankan)"
   },
   "0xe5d19083ca3a2dd1d4ae9381d658b2d8293d7f98": {
    "primary_type": "DUST",
@@ -522468,9 +522468,9 @@
    }
   },
   "0xe7978c12509279322c7f42ceb789cb65aa830fb2": {
-   "primary_type": "DUST",
+   "primary_type": "GENERALIST",
    "labels": [
-    "DUST"
+    "GENERALIST"
    ],
    "evidence": {
     "GENERALIST": {
@@ -522481,7 +522481,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $0.00; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $0.00; 2026-09-26T17:24:45.570110+00:00 | re-gate pasca-delta 9/28: notional terukur $53,420.43 > $10k -> GENERALIST; 2026-09-27T20:03:47.295485+00:00"
   },
   "0xe7978f7a7efad3ac306dd2c2f1bd107864908489": {
    "primary_type": "DUST",
@@ -523724,7 +523724,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $1,717.85; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $1,717.85; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 3 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0xe83a1659c98b6a49b66dfaab6395b680b07f85a3": {
    "primary_type": "GENERALIST",
@@ -524142,7 +524142,7 @@
     "GENERALIST": 0.4,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $57.49; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $57.49; 2026-09-26T17:24:45.570110+00:00 | provenance P3: didanai platform ['GMGN'] (bukti INSIDER dipertahankan)"
   },
   "0xe86d78381c4cd7b4a67278e1194ca7babc363af9": {
    "primary_type": "GENERALIST",
@@ -528531,7 +528531,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $61.06; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $61.06; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 3 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0xea678c738af8c19a2137ecfbae6111783a5b7bfe": {
    "primary_type": "GENERALIST",
@@ -530745,7 +530745,7 @@
     "GENERALIST": 0.4,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $4.68; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $4.68; 2026-09-26T17:24:45.570110+00:00 | provenance P3: didanai platform ['GMGN'] (bukti INSIDER dipertahankan)"
   },
   "0xeb51f6a68f6a93c1931f3d80b82050e8cdc7d84b": {
    "primary_type": "DUST",
@@ -530856,7 +530856,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $3.71; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $3.71; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 3 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0xeb723a974124ab234263badf775cb2f07a9e2c22": {
    "primary_type": "GENERALIST",
@@ -532503,7 +532503,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $31.99; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $31.99; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 13 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0xec2bd2a387dfd28ecbecf571250fd8bb3a249675": {
    "primary_type": "GENERALIST",
@@ -537232,9 +537232,9 @@
    "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $4,007.62; 2026-09-26T17:24:45.570110+00:00"
   },
   "0xee83325d0d018930c1d64466d8a172d0484f8acf": {
-   "primary_type": "DUST",
+   "primary_type": "GENERALIST",
    "labels": [
-    "DUST"
+    "GENERALIST"
    ],
    "evidence": {
     "GENERALIST": {
@@ -537245,7 +537245,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $3,784.83; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $3,784.83; 2026-09-26T17:24:45.570110+00:00 | re-gate pasca-delta 9/28: notional terukur $15,992.86 > $10k -> GENERALIST; 2026-09-27T20:03:47.295485+00:00"
   },
   "0xee8819d1a0a84f79933f697956ffaf9e39e17051": {
    "primary_type": "GENERALIST",
@@ -552433,7 +552433,7 @@
     "GENERALIST": 0.4,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $97.97; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $97.97; 2026-09-26T17:24:45.570110+00:00 | provenance P3: didanai platform ['GMGN'] (bukti INSIDER dipertahankan)"
   },
   "0xf56d30981bfb9a2adf975cb984ae9160a13c347f": {
    "primary_type": "GENERALIST",
@@ -564514,7 +564514,7 @@
     "GENERALIST": 0.5,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $464.65; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $464.65; 2026-09-26T17:24:45.570110+00:00 | stale pasca-delta: kini 7 swap (kriteria 1-2 tidak berlaku lagi); 2026-09-27T20:03:47.295485+00:00"
   },
   "0xfac913fb2412b85ad53915ed722d14b4722ba66c": {
    "primary_type": "DUST",
@@ -564639,7 +564639,7 @@
     "GENERALIST": 0.4,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $144.00; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $144.00; 2026-09-26T17:24:45.570110+00:00 | provenance P3: didanai platform ['GMGN'] (bukti INSIDER dipertahankan)"
   },
   "0xfad5dc416800e0244eb7806e2d6390bedcfa7f67": {
    "primary_type": "AIRDROP_FARMER",
@@ -566664,7 +566664,7 @@
     "GENERALIST": 0.4,
     "DUST": 0.6
    },
-   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $8,286.30; 2026-09-26T17:24:45.570110+00:00"
+   "override_note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $8,286.30; 2026-09-26T17:24:45.570110+00:00 | provenance P3: didanai platform ['GMGN'] (bukti INSIDER dipertahankan)"
   },
   "0xfbcc4dc8057969008e0af5c547d7d960eac1d363": {
    "primary_type": "GENERALIST",
@@ -575751,6 +575751,6 @@
  },
  "tag_overrides_applied": {
   "wallets": 12386,
-  "applied_at": "2026-09-26T17:24:46.000990+00:00"
+  "applied_at": "2026-09-27T20:04:07.611088+00:00"
  }
 }

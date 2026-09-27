@@ -314,3 +314,18 @@ per-stage/per-entry = kelaparan; kunci hanya di commit.
 - **DELTA RING TUNTAS di [PC]**: wallets **105.708** (+10.747), swaps
   **593.712** (+153.415), price_points 5,65 jt — dompet bundel ring
   (CRUMBS/PINK dsb) kini terdata. wallet_scores=0 (analyze VPS pending).
+
+## VERIFIKASI A-J (2026-09-28) — putusan hakim: PERTAHANKAN DENGAN PERBAIKAN
+3 hunter + 2 skeptic + 1 hakim (subagent bergantian). Hasil:
+- P2 DUST: 15/15 sampel akurat hingga sen; NOL >$10k tersembunyi (max
+  $9.982); TAPI angka proteksi yang benar = **528** (independen, 5,65 jt
+  price_points), BUKAN 1.042 (klaim engine tak terverifikasi; divergensi
+  pricing dua arah: 22 wallet engine-$0 vs aktual $1,9-6,5rb; 4 wallet
+  146x). 238 wallet $5k-$10k masuk watchlist; 6 breach pasca-delta
+  dipromosikan; 63 stale dirapikan.
+- Fault regen 54/54 DIPERBAIKI: entri P3-ditimpa-P2 kini
+  remove_labels=[INSIDER,GENERALIST] — regen+re-apply 0/54 resurrect.
+- Rantai insider 0x65050a9b... terdokumentasi (WALLET_TAXONOMY.md) +
+  ring_link pada 129 wallet klaster; 39 DUST ring-touchers ter-tag.
+- Laporan angka final: proteksi 528; DUST 8.363-6+... lihat
+  results/judge_fix_report.json.

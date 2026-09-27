@@ -47,3 +47,14 @@ wajib lolos verifier keras (R1–R3) sebelum masuk list copytrade.
   beli tapi pegang (receive-only)
 - Semua label single-metrik dilarang jadi dasar vonis final — minimal 3 sinyal
   (konsentrasi supply + validitas holder + rekam jejak dev)
+
+## DUST (audit-night P2, 2026-09-26 — disahkan hakim 2026-09-28)
+Wallet dengan 1-2 swap dan notional terukur <= $10.000 (gate union, dihitung
+engine dataset.py). Satu-shot noise, bukan trader. TIDAK berlaku untuk wallet
+ber-evidence INSIDER — provenance tetap dipertahankan di override (S-45).
+
+## Klaster funder 0x65050a9b (Wazz ring, 2026-09-28)
+Sender 0x65050a9b7e5075a2ba5ced7b1b64ee66262c40dc mendanai klaster micro-
+wallet distribusi: 133 wallet terkonfirmasi (54 DUST + 79 GENERALIST, kini
+ring_link di override) — klaster tautan Launch Ring WazzCrypto (53 launch,
+$18,4M; tools Pons V2). Funder itu sendiri: tanpa label arkham, 0 swap.
