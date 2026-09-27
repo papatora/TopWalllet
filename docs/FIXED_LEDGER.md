@@ -304,3 +304,13 @@ per-stage/per-entry = kelaparan; kunci hanya di commit.
   wallets 97.988, pending 148. Scores=0 menunggu satu pass analyze bersih
   (cycle masih crash-retry di discover; chunked commit baru terdeploy —
   pantau).
+
+## S-45m/n + delta ring TUNTAS (2026-09-28)
+- **S-45m**: fetch_dump reuse dump VPS bila fp cocok — retry tidak lagi
+  re-dump + unduh ulang 30 part (60 mnt sia-sia).
+- **S-45n**: rebuild streaming per-statement — executescript 1,1 GB
+  melebihi batas string SQLite ('query string is too large'); 6,39 jt
+  statement diterapkan 145 dtk.
+- **DELTA RING TUNTAS di [PC]**: wallets **105.708** (+10.747), swaps
+  **593.712** (+153.415), price_points 5,65 jt — dompet bundel ring
+  (CRUMBS/PINK dsb) kini terdata. wallet_scores=0 (analyze VPS pending).
