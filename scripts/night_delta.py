@@ -38,7 +38,11 @@ def save_state(st: dict) -> None:
 def run_step(cmd: list[str], timeout_s: int) -> int:
     print(f"[delta] $ {' '.join(cmd)}", flush=True)
     t0 = time.time()
-    p = subprocess.run(cmd, cwd=str(REPO), timeout=timeout_s)
+    try:
+        p = subprocess.run(cmd, cwd=str(REPO), timeout=timeout_s)
+    except subprocess.TimeoutExpired:
+        print(f"[delta] TIMEOUT setelah {timeout_s}s — resumable, jalankan ulang", flush=True)
+        return 3
     print(f"[delta] exit={p.returncode} ({time.time()-t0:.0f}s)", flush=True)
     return p.returncode
 
