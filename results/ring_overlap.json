@@ -1,0 +1,24 @@
+[
+ {
+  "sym": "CRUMBS",
+  "traders": 33,
+  "labels": {
+   "TRADER_COVERAGE_GAP": 2,
+   "BELUM": 3,
+   "GENERALIST": 26,
+   "DUST": 2
+  },
+  "senders": {}
+ },
+ {
+  "sym": "PINK",
+  "traders": 18,
+  "labels": {
+   "TRADER_COVERAGE_GAP": 1,
+   "GENERALIST": 13,
+   "BELUM": 3,
+   "DUST": 1
+  },
+  "senders": {}
+ }
+]

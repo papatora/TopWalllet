@@ -310,6 +310,23 @@ def _rating(db: dict, dex: dict, bub: dict, clu: dict) -> tuple[float, list]:
     return total, comps
 
 
+def _ring_side(ca: str) -> dict:
+    """Watchlist Launch Ring (WazzCrypto thread, Sep 2026) — token yang
+    terbukti bagian dari 53-launch ring ($18,4M) kena penalti rating."""
+    f = REPO / "results" / "launch_ring_watchlist.json"
+    try:
+        wl = json.loads(f.read_text(encoding="utf-8"))
+    except Exception:
+        return {"listed": False}
+    toks = wl.get("token_disebut", {})
+    hit = None
+    for sym, info in toks.items():
+        if str(info.get("ca_kita", "")).lower() == ca:
+            hit = {"symbol": sym, **{k: v for k, v in info.items() if k != "ca_kita"}}
+            break
+    return {"listed": hit is not None, "info": hit}
+
+
 def lookup(raw: str) -> dict:
     ca = parse_input(raw)
     if not ca:
@@ -331,9 +348,17 @@ def lookup(raw: str) -> dict:
     chain["deployer_entity"] = ent.get("deployer")
     chain["funder_entity"] = ent.get("funder")
     rating, comps = _rating(db, dex, bub, clu)
+    ring = _ring_side(ca)
+    if ring["listed"]:
+        info = ring.get("info") or {}
+        rating = max(0.0, rating - 3.0)
+        comps.append({"component": "Launch Ring (Wazz)", "score": -3.0, "max": 3.0,
+                      "note": f"terbukti bagian ring 53-launch: {info.get('ekstrak', '?')} "
+                              f"terekstrak, bundle {info.get('bundle', '?')} wallet, Pons V2"})
     result = {
         "ok": True,
         "ca": ca,
+        "ring": ring,
         "links": {
             "gmgn": f"https://gmgn.ai/robinhood/token/{ca}",
             "dexscreener": f"https://dexscreener.com/robinhood/{ca}",

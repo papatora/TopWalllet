@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-26T17:24:45.570110+00:00",
+ "generated_at": "2026-09-27T15:57:25.757959+00:00",
  "source": "scripts/reverify_tags.py",
  "wallets": {
   "0x00081217544197617dbee64f38cac8de1bd91a23": {
@@ -1164,7 +1164,12 @@
      }
     }
    },
-   "note": "bukan insider: token diterima dari distribusi massal (>= 20 wallet / <= 100 blok)"
+   "note": "bukan insider: token diterima dari distribusi massal (>= 20 wallet / <= 100 blok)",
+   "ring_link": {
+    "source": "WazzCrypto thread 2026-09-27 (53-launch ring, Pons V2)",
+    "added_at": "2026-09-27T15:57:25.757959+00:00",
+    "note": "didanai bonding curve launch-tool ring; label menunggu verifikasi on-chain per wallet"
+   }
   },
   "0x02792fd35d5b9582ab760c626e4194828f7be582": {
    "verified_at": "2026-09-14T23:15:13.816881+00:00",
@@ -1222,7 +1227,12 @@
      }
     }
    },
-   "note": "bukan insider: token diterima dari distribusi massal (>= 20 wallet / <= 100 blok)"
+   "note": "bukan insider: token diterima dari distribusi massal (>= 20 wallet / <= 100 blok)",
+   "ring_link": {
+    "source": "WazzCrypto thread 2026-09-27 (53-launch ring, Pons V2)",
+    "added_at": "2026-09-27T15:57:25.757959+00:00",
+    "note": "didanai bonding curve launch-tool ring; label menunggu verifikasi on-chain per wallet"
+   }
   },
   "0x0285b4c7a7ac568cb3bfbad4e0df875d28787783": {
    "verified_at": "2026-09-14T23:15:13.816931+00:00",
@@ -1559,7 +1569,12 @@
      }
     }
    },
-   "note": "bukan insider: token diterima dari distribusi massal (>= 20 wallet / <= 100 blok)"
+   "note": "bukan insider: token diterima dari distribusi massal (>= 20 wallet / <= 100 blok)",
+   "ring_link": {
+    "source": "WazzCrypto thread 2026-09-27 (53-launch ring, Pons V2)",
+    "added_at": "2026-09-27T15:57:25.757959+00:00",
+    "note": "didanai bonding curve launch-tool ring; label menunggu verifikasi on-chain per wallet"
+   }
   },
   "0x037791c6f8db11afc52199c7334f3590c69bc946": {
    "verified_at": "2026-09-14T23:15:13.817169+00:00",
@@ -1802,7 +1817,12 @@
      }
     }
    },
-   "note": "bukan insider: token diterima dari distribusi massal (>= 20 wallet / <= 100 blok)"
+   "note": "bukan insider: token diterima dari distribusi massal (>= 20 wallet / <= 100 blok)",
+   "ring_link": {
+    "source": "WazzCrypto thread 2026-09-27 (53-launch ring, Pons V2)",
+    "added_at": "2026-09-27T15:57:25.757959+00:00",
+    "note": "didanai bonding curve launch-tool ring; label menunggu verifikasi on-chain per wallet"
+   }
   },
   "0x046324bdcb099dd8fdbe8183763b0f884ba585d3": {
    "verified_at": "2026-09-14T23:15:13.817348+00:00",
@@ -2500,7 +2520,12 @@
      }
     }
    },
-   "note": "bukan insider: token diterima dari distribusi massal (>= 20 wallet / <= 100 blok)"
+   "note": "bukan insider: token diterima dari distribusi massal (>= 20 wallet / <= 100 blok)",
+   "ring_link": {
+    "source": "WazzCrypto thread 2026-09-27 (53-launch ring, Pons V2)",
+    "added_at": "2026-09-27T15:57:25.757959+00:00",
+    "note": "didanai bonding curve launch-tool ring; label menunggu verifikasi on-chain per wallet"
+   }
   },
   "0x063b3e644ec9a8ba3c262fb98041abd8afba4538": {
    "verified_at": "2026-09-14T23:15:13.817860+00:00",
@@ -3014,7 +3039,12 @@
      }
     }
    },
-   "note": "bukan insider: token diterima dari distribusi massal (>= 20 wallet / <= 100 blok)"
+   "note": "bukan insider: token diterima dari distribusi massal (>= 20 wallet / <= 100 blok)",
+   "ring_link": {
+    "source": "WazzCrypto thread 2026-09-27 (53-launch ring, Pons V2)",
+    "added_at": "2026-09-27T15:57:25.757959+00:00",
+    "note": "didanai bonding curve launch-tool ring; label menunggu verifikasi on-chain per wallet"
+   }
   },
   "0x0821af6d1d2dfccfbdcc13d4ac56d204f60fa8e3": {
    "verified_at": "2026-09-14T23:15:13.818186+00:00",
@@ -4744,7 +4774,12 @@
      }
     }
    },
-   "note": "bukan insider: token diterima dari distribusi massal (>= 20 wallet / <= 100 blok)"
+   "note": "bukan insider: token diterima dari distribusi massal (>= 20 wallet / <= 100 blok)",
+   "ring_link": {
+    "source": "WazzCrypto thread 2026-09-27 (53-launch ring, Pons V2)",
+    "added_at": "2026-09-27T15:57:25.757959+00:00",
+    "note": "didanai bonding curve launch-tool ring; label menunggu verifikasi on-chain per wallet"
+   }
   },
   "0x0c5d5ffb869feb2bcc55cb4bd86e0aa7dc6db108": {
    "verified_at": "2026-09-14T23:15:13.819348+00:00",
@@ -15996,7 +16031,12 @@
      }
     }
    },
-   "note": "bukan insider: token diterima dari distribusi massal (>= 20 wallet / <= 100 blok)"
+   "note": "bukan insider: token diterima dari distribusi massal (>= 20 wallet / <= 100 blok)",
+   "ring_link": {
+    "source": "WazzCrypto thread 2026-09-27 (53-launch ring, Pons V2)",
+    "added_at": "2026-09-27T15:57:25.757959+00:00",
+    "note": "didanai bonding curve launch-tool ring; label menunggu verifikasi on-chain per wallet"
+   }
   },
   "0x3e23f60bd33a9a4e42b0fabb3d285ad05845617b": {
    "verified_at": "2026-09-15T01:50:38.279266+00:00",
@@ -22625,7 +22665,12 @@
      "mint": null
     }
    },
-   "note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $3,151.21; 2026-09-26T17:24:45.570110+00:00"
+   "note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 2 swap, notional terukur $3,151.21; 2026-09-26T17:24:45.570110+00:00",
+   "ring_link": {
+    "source": "WazzCrypto thread 2026-09-27 (53-launch ring, Pons V2)",
+    "added_at": "2026-09-27T15:57:25.757959+00:00",
+    "note": "didanai bonding curve launch-tool ring; label menunggu verifikasi on-chain per wallet"
+   }
   },
   "0x6bae89567fd290594cc02794b087fdcca8d2759c": {
    "verified_at": "2026-09-15T04:05:49.855053+00:00",
@@ -30115,7 +30160,12 @@
      }
     }
    },
-   "note": "bukan insider: token diterima dari distribusi massal (>= 20 wallet / <= 100 blok)"
+   "note": "bukan insider: token diterima dari distribusi massal (>= 20 wallet / <= 100 blok)",
+   "ring_link": {
+    "source": "WazzCrypto thread 2026-09-27 (53-launch ring, Pons V2)",
+    "added_at": "2026-09-27T15:57:25.757959+00:00",
+    "note": "didanai bonding curve launch-tool ring; label menunggu verifikasi on-chain per wallet"
+   }
   },
   "0x98bb35d2f5303075f9d54be2afab34e1448a9b82": {
    "verified_at": "2026-09-15T07:30:54.960268+00:00",
@@ -37510,7 +37560,12 @@
      "mint": null
     }
    },
-   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['PonsV2BondingCurve']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['PonsV2BondingCurve']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00",
+   "ring_link": {
+    "source": "WazzCrypto thread 2026-09-27 (53-launch ring, Pons V2)",
+    "added_at": "2026-09-27T15:57:25.757959+00:00",
+    "note": "didanai bonding curve launch-tool ring; label menunggu verifikasi on-chain per wallet"
+   }
   },
   "0xc7457ef8031c651a665be654f67d5ab520a65720": {
    "verified_at": "2026-09-15T07:30:54.965300+00:00",
@@ -42965,7 +43020,12 @@
      "mint": null
     }
    },
-   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['PonsV2BondingCurve']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['PonsV2BondingCurve']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00",
+   "ring_link": {
+    "source": "WazzCrypto thread 2026-09-27 (53-launch ring, Pons V2)",
+    "added_at": "2026-09-27T15:57:25.757959+00:00",
+    "note": "didanai bonding curve launch-tool ring; label menunggu verifikasi on-chain per wallet"
+   }
   },
   "0xe83cf9a3d7377871d0a2d09b1a52deeaf987ff7c": {
    "verified_at": "2026-09-15T09:31:26.444564+00:00",
@@ -43898,7 +43958,12 @@
      "mint": null
     }
    },
-   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['PonsV2BondingCurve']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00"
+   "note": "audit-night P3 (hakim MODIFY) \u2014 didanai platform ['PonsV2BondingCurve']; bukti asli dipertahankan; 2026-09-26T17:16:22.767914+00:00",
+   "ring_link": {
+    "source": "WazzCrypto thread 2026-09-27 (53-launch ring, Pons V2)",
+    "added_at": "2026-09-27T15:57:25.757959+00:00",
+    "note": "didanai bonding curve launch-tool ring; label menunggu verifikasi on-chain per wallet"
+   }
   },
   "0xee5ece8cd338127cb1aa9c9bf30491edb5e416ed": {
    "verified_at": "2026-09-15T10:50:42.902352+00:00",

@@ -1,0 +1,43 @@
+{
+  "title": "Robinhood Launch Ring (Sep 2026) — WazzCrypto thread",
+  "source": [
+    "https://x.com/wazzcrypto/status/2104194307628621976",
+    "https://x.com/WazzCrypto/status/2104195256397033835 (PINK bundle)",
+    "https://x.com/WazzCrypto/status/2103056260769681454 (pengumuman awal)"
+  ],
+  "archived_at": "2026-09-27",
+  "klaim_inti": {
+    "skala": "53 launch Jul-Sep 2026, ~$18.43M / 7.647,45 ETH terekstrak",
+    "modus": [
+      "snipe >=70% supply per launch",
+      "bundle 70-200 wallet per launch (CRUMBS 92, LEGS 77, PINK 125)",
+      "launch tool: Pons V2",
+      "45 launch terhubung UANG: hub launch sebelumnya membayar funding key launch berikutnya (detik sebelum signing batch)",
+      "4 launch terhubung KUNCI privat sama (VAULTS, WAIFU, DEED#2, CRUMBS)",
+      "FAKE LAUNCH sebelum CA asli — pre-scam hype memaksimalkan ekstraksi",
+      "+2 operasi serial lain yang belum bisa ditautkan langsung"
+    ],
+    "contoh_rantai": "DRAFT: 98 wallet sweep 179,88 ETH -> hub -> hop -> 20 ETH ke DEED funding key -> 16 detik kemudian key menandatangani batch funding DEED"
+  },
+  "token_disebut": {
+    "CRUMBS": {"ca_kita": "0x80baa4b3bfac6f4978700df824b1b3d98e889136", "bundle": 92, "ekstrak": "$3,12M", "peak_mcap": "$8M"},
+    "PINK": {"ca_kita": "0xbc9cc4b93a08b2dfba87067a9c53e713db3314ce", "bundle": 125, "ekstrak": "$1,44M", "catatan": "3 kontrak PINK: 0xfbfb019..388a, 0xaac833..9fc0, 0x8bc9cc4..14ce (=0xbc9cc4..14ce di DB kita)"},
+    "LEGS": {"bundle": 77, "ekstrak": "$2,9M", "peak_mcap": "$4,6M"},
+    "HOT": {"ekstrak": "447,78 ETH"}, "WAIFU": {"ekstrak": "389,81 ETH"},
+    "RIG": {"ekstrak": "329,59 ETH"}, "PRESS": {"ekstrak": "279,94 ETH"},
+    "BELL": {"ekstrak": "278,64 ETH"}, "SVALTS": {"ekstrak": "252,66 ETH", "catatan": "Scam Cluster"},
+    "EQUITY": {"ekstrak": "243,62 ETH"}, "DEED": {"ekstrak": "228,92 ETH (top-11 saja)", "pemicu": "investigasi ini"},
+    "DRAFT": {"peran": "sumber dana DEED"}, "VAULTS": {"terhubung_kunci": true}
+  },
+  "di_db_kita": {
+    "CRUMBS": "ADA — 480 swap / 33 trader; 0 wallet bundel terdata (discover dulu buta)",
+    "PINK": "ADA — 102 swap / 18 trader; 0 wallet bundel terdata",
+    "PonsV2BondingCurve": "13 wallet didanai kontrak ini (bukti arkham P3) — launch tool ring",
+    "Relay.link": "2 wallet (bridging keluar yang disebut thread)"
+  },
+  "aksi": [
+    "re-harvest CRUMBS + PINK via track_by_ca (klien Etherscan sudah benar) -> wallet bundel masuk sebagai INSIDER (distribusi ring)",
+    "watchlist token-level utk rating paste-CA (penalti RING)",
+    "catatan aditif ring-linked di evidence wallet Pons-funded (13)"
+  ]
+}
