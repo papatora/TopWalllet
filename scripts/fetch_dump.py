@@ -88,30 +88,36 @@ def main() -> int:
     print(sh("cd /opt/topwallet && TOPWALLET_RUN_ENV=vps .venv/bin/python "
              "scripts/extract_wallets.py 2>&1 | tail -1", 900), flush=True)
 
-    print("[2/4] dump atomik (detached) + poll...", flush=True)
-    sh("cd /opt/topwallet && rm -f data/local_snapshot.sql.part* "
-       "data/local_snapshot.sql.gz && setsid nohup .venv/bin/python "
-       "scripts/dump_snapshot.py > logs/dump.log 2>&1 < /dev/null "
-       "& > /dev/null 2>&1", 20)
-    for _ in range(60):  # maks 15 menit
-        time.sleep(15)
-        log = sh("cat /opt/topwallet/logs/dump.log 2>/dev/null", 30)
-        if "lines=" in log:
-            print("  dump:", log, flush=True)
-            break
+    # S-45m: kalau dump VPS MASIH ADA dan fingerprint-nya cocok dengan
+    # manifest lokal, PAKAI ULANG — jangan re-dump (re-dump mengubah fp ->
+    # semua 30 part terunduh ulang = 60 mnt sia-sia saat jaringan lambat;
+    # 2026-09-28: 29/30 part sudah aman lokal, tinggal 1 part).
+    fp = sh("stat -c '%s %Y' /opt/topwallet/data/local_snapshot.sql.gz 2>/dev/null", 30)
+    reuse = bool(fp) and manifest.get("fp") == fp and fp.strip() != ""
+    if reuse:
+        print(f"[2/4] dump VPS dipakai ulang (fp cocok) — skip re-dump", flush=True)
     else:
-        print("dump tidak selesai dalam 15 menit — cek logs/dump.log")
-        return 1
+        print("[2/4] dump atomik (detached) + poll...", flush=True)
+        sh("cd /opt/topwallet && rm -f data/local_snapshot.sql.part* "
+           "data/local_snapshot.sql.gz && setsid nohup .venv/bin/python "
+           "scripts/dump_snapshot.py > logs/dump.log 2>&1 < /dev/null "
+           "& > /dev/null 2>&1", 20)
+        for _ in range(60):  # maks 15 menit
+            time.sleep(15)
+            log = sh("cat /opt/topwallet/logs/dump.log 2>/dev/null", 30)
+            if "lines=" in log:
+                print("  dump:", log, flush=True)
+                break
+        else:
+            print("dump tidak selesai dalam 15 menit — cek logs/dump.log")
+            return 1
 
-    print("[3/4] split...", flush=True)
-    nparts = sh("cd /opt/topwallet/data && rm -f local_snapshot.sql.part* && "
-                "split -b 6m local_snapshot.sql.gz local_snapshot.sql.part && "
-                "ls local_snapshot.sql.part* | wc -l", 120)
-    print("  parts:", nparts, flush=True)
-    # S-45: fingerprint dump — manifest lama milik dump beda TIDAK BOLEH
-    # dipakai (insiden 2026-09-25: part lama 'verified' tercampur dump baru
-    # -> gzip rusak). Nama part selalu sama, isi berubah tiap dump.
-    fp = sh("stat -c '%s %Y' /opt/topwallet/data/local_snapshot.sql.gz", 60)
+        print("[3/4] split...", flush=True)
+        nparts = sh("cd /opt/topwallet/data && rm -f local_snapshot.sql.part* && "
+                    "split -b 6m local_snapshot.sql.gz local_snapshot.sql.part && "
+                    "ls local_snapshot.sql.part* | wc -l", 120)
+        print("  parts:", nparts, flush=True)
+        fp = sh("stat -c '%s %Y' /opt/topwallet/data/local_snapshot.sql.gz", 60)
     if manifest.get("fp") != fp:
         print(f"  dump baru (fp={fp[:40]}) — manifest part di-reset", flush=True)
         manifest = {"fp": fp, "parts": {}}
