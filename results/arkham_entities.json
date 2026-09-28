@@ -20,6 +20,30 @@
   "label": "",
   "raw_title": "eca.eth (0x000) | Arkham"
  },
+ "0x00081217544197617dbee64f38cac8de1bd91a23": {
+  "checked_at": "2026-09-28T15:11:00.437776+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x00081217544197617dbee64F38caC8dE1BD91A23 | Arkham"
+ },
+ "0x0020b187ee5c3048067d22beff2695cee80e88e4": {
+  "checked_at": "2026-09-28T15:11:07.512396+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x0020b187ee5c3048067D22BeFF2695Cee80E88e4 | Arkham"
+ },
+ "0x0025faa04432b961f84e9f2c31f57f466c476d59": {
+  "checked_at": "2026-09-28T15:11:15.641874+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x0025faa04432b961f84E9F2c31f57f466C476D59 | Arkham"
+ },
+ "0x002b024cd347823e10e98ed99185e0e24acb850a": {
+  "checked_at": "2026-09-28T15:11:23.994794+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x002B024cD347823e10E98ed99185E0e24Acb850A | Arkham"
+ },
  "0x0058db00f210b2fa15b5719360c71ffe72c08e03": {
   "checked_at": "2026-09-20T19:33:23.492372+00:00",
   "entity": "",
@@ -1094,17 +1118,185 @@
   "label": "",
   "raw_title": "0x016ff8bb5152e4f5F6647DF3ecaEf287a64b559F | Arkham"
  },
+ "0x01bcd1890f4f48b13ebbc774591af7ac5d18219f": {
+  "checked_at": "2026-09-28T15:11:30.135424+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x01BCd1890F4f48b13EBbC774591af7aC5d18219f | Arkham"
+ },
+ "0x01dbceee969356623d9db888a4c01394f1d80d54": {
+  "checked_at": "2026-09-28T15:11:37.982936+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x01DbCeEe969356623d9DB888a4C01394F1d80d54 | Arkham"
+ },
+ "0x01ede788057900c0d1cf065b5217263a3f0f27b6": {
+  "checked_at": "2026-09-28T15:11:44.644424+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x01EDe788057900c0D1CF065B5217263a3f0F27b6 | Arkham"
+ },
+ "0x0206f575fd4157d1b998dd03d7152989ded9ee10": {
+  "checked_at": "2026-09-28T15:11:51.833939+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x0206F575FD4157D1B998dD03d7152989DED9Ee10 | Arkham"
+ },
+ "0x023dacc47e24a4b5c0fa4b40e3dc2d5cec06c0ca": {
+  "checked_at": "2026-09-28T15:11:57.894685+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x023DACC47e24a4b5C0fA4B40E3Dc2d5cEc06C0Ca | Arkham"
+ },
+ "0x02491b2fcc7733841a5b64fc04a48b58ec134cb2": {
+  "checked_at": "2026-09-28T15:12:03.445544+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x02491b2FCc7733841A5B64fc04A48b58eC134cb2 | Arkham"
+ },
+ "0x027a230c0803b5af4657f892b91cd0f88b72c75a": {
+  "checked_at": "2026-09-28T15:12:10.056576+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x027a230c0803b5AF4657F892B91CD0F88b72C75A | Arkham"
+ },
+ "0x029ab7d1ac5fc6c09a2c96d2407ad5c92be02ebf": {
+  "checked_at": "2026-09-28T15:12:17.184319+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x029Ab7D1AC5FC6C09A2C96D2407AD5c92Be02EbF | Arkham"
+ },
+ "0x02a37f97691ccc75c0ea7d2247385df0c9fba8ed": {
+  "checked_at": "2026-09-28T15:12:22.556600+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x02a37f97691cCC75c0Ea7D2247385Df0c9Fba8eD | Arkham"
+ },
+ "0x02e2d9d8aa29c2df3e20a9a830d2a6b4ba043141": {
+  "checked_at": "2026-09-28T15:12:28.926605+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x02E2D9d8aA29c2DF3E20A9A830d2A6B4bA043141 | Arkham"
+ },
+ "0x0300236e5a84634e88053e974aea7033e8d57f5d": {
+  "checked_at": "2026-09-28T15:12:35.903166+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x0300236E5A84634e88053E974aEa7033E8d57F5D | Arkham"
+ },
+ "0x0360d3b502470afe027f43736c437bc659198c02": {
+  "checked_at": "2026-09-28T15:12:43.869486+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x0360D3b502470afe027F43736C437BC659198C02 | Arkham"
+ },
+ "0x03b92f53f57ea948a821682775e6926ce9eb5ac7": {
+  "checked_at": "2026-09-28T15:12:50.166454+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x03B92F53f57eA948a821682775e6926cE9eB5Ac7 | Arkham"
+ },
+ "0x03c3239111e983c55ed95b595e6a694cc7513daa": {
+  "checked_at": "2026-09-28T15:12:56.195685+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x03c3239111E983C55eD95b595E6A694CC7513DAa | Arkham"
+ },
+ "0x03de2dc9a64803ed9da74805f34fc9b3b21454d0": {
+  "checked_at": "2026-09-28T15:13:03.618509+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x03dE2DC9a64803Ed9da74805F34fc9B3B21454d0 | Arkham"
+ },
+ "0x03ecce961296154c15c18f70a86e684825160e4c": {
+  "checked_at": "2026-09-28T15:13:10.198519+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x03eccE961296154C15c18f70A86E684825160E4c | Arkham"
+ },
  "0x04164caa9c75e0874810b2047c057aaa9ec84464": {
   "checked_at": "2026-09-17T19:28:36.339905+00:00",
   "entity": "",
   "label": "",
   "raw_title": "0x04164caa9c75E0874810B2047c057Aaa9ec84464 | Arkham"
  },
+ "0x042c9fdfae19d059db87ea465e8db558e66ac560": {
+  "checked_at": "2026-09-28T15:13:17.720518+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x042C9FDFAe19d059db87EA465E8Db558e66ac560 | Arkham"
+ },
  "0x043e6480568f29a68d00f516ec5f03566923e412": {
   "checked_at": "2026-09-17T19:28:46.557084+00:00",
   "entity": "",
   "label": "",
   "raw_title": "0x043e6480568f29a68D00F516eC5F03566923e412 | Arkham"
+ },
+ "0x046bc264bb05cacd8126cafdbb13cbdee265841c": {
+  "checked_at": "2026-09-28T15:13:25.266565+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x046bC264bB05CACd8126cAFDbb13cbDEe265841c | Arkham"
+ },
+ "0x04ab9b76fd24f2174ab3c27a1c539693e7075327": {
+  "checked_at": "2026-09-28T15:13:33.488629+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x04AB9b76fd24F2174aB3C27a1C539693E7075327 | Arkham"
+ },
+ "0x04b2ee23930c69ed00ef639a84853171ca639c2c": {
+  "checked_at": "2026-09-28T15:13:41.682852+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x04b2EE23930c69Ed00ef639A84853171CA639c2C | Arkham"
+ },
+ "0x04b550209b313d1408dc8bb9567bb7395a0704cc": {
+  "checked_at": "2026-09-28T15:13:47.632132+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x04b550209b313D1408DC8bB9567BB7395A0704CC | Arkham"
+ },
+ "0x04d75c10fc85a4b5211609beaafef5b5e3eda537": {
+  "checked_at": "2026-09-28T15:13:55.243458+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x04d75c10FC85A4b5211609BeaaFEf5b5E3EDA537 | Arkham"
+ },
+ "0x04fb79a50e5874c4325cb64a265702a65672ae98": {
+  "checked_at": "2026-09-28T15:14:01.698931+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x04fB79a50e5874C4325cb64a265702a65672AE98 | Arkham"
+ },
+ "0x051563425b2b4847ddb47dcc54c8bdfcfa626bdb": {
+  "checked_at": "2026-09-28T15:14:08.192736+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x051563425b2b4847DDb47dcC54c8bdFcfa626bDB | Arkham"
+ },
+ "0x05196fea1b7b2b548be86fa523bcf04346de4208": {
+  "checked_at": "2026-09-28T15:14:15.682401+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x05196feA1b7B2B548be86fA523bcf04346de4208 | Arkham"
+ },
+ "0x05448d41a3a0de7228149e951e106156237198a2": {
+  "checked_at": "2026-09-28T15:14:21.819138+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x05448D41a3A0DE7228149E951E106156237198a2 | Arkham"
+ },
+ "0x0557bd51a03d2832874e1728d3c92a6e95b985e5": {
+  "checked_at": "2026-09-28T15:14:28.051624+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x0557Bd51A03D2832874e1728d3C92A6e95B985E5 | Arkham"
+ },
+ "0x055f9d7bc29585f15ddf627a7f1b4d49971a0a8a": {
+  "checked_at": "2026-09-28T15:14:35.712640+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x055f9D7bC29585f15ddf627A7f1B4D49971a0A8a | Arkham"
  },
  "0x059924fd0e3888428bca27ec2e0f0086db7a9da0": {
   "checked_at": "2026-09-17T19:28:58.014132+00:00",
@@ -1118,6 +1310,12 @@
   "label": "",
   "raw_title": "0x05b16E5dC6BDBD95aC6C36Ff52067311081a16Fc | Arkham"
  },
+ "0x05dc9799d077e8a5ec6ef5f9a3495986de2ef142": {
+  "checked_at": "2026-09-28T15:14:43.746726+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x05DC9799D077E8A5EC6eF5F9a3495986DE2EF142 | Arkham"
+ },
  "0x05f73fa80bae83e2a0d460ccb228e2a770126a31": {
   "checked_at": "2026-09-17T19:29:17.920656+00:00",
   "entity": "",
@@ -1130,11 +1328,59 @@
   "label": "",
   "raw_title": "0x05FA85ae9A747e4628BB8DD4B3978498a4aC5181 | Arkham"
  },
+ "0x060125effe0055c332c67d5d0d5baf8e88dbb7ff": {
+  "checked_at": "2026-09-28T15:14:51.619728+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x060125EFFe0055c332C67d5D0d5baf8e88DBb7ff | Arkham"
+ },
+ "0x0618dd61f8f0b2457876053c900191b7c4bf1485": {
+  "checked_at": "2026-09-28T15:14:58.293862+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x0618dd61F8f0B2457876053c900191b7C4Bf1485 | Arkham"
+ },
+ "0x063b3e644ec9a8ba3c262fb98041abd8afba4538": {
+  "checked_at": "2026-09-28T15:15:05.315569+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x063b3e644ec9a8Ba3C262FB98041abd8AFBa4538 | Arkham"
+ },
+ "0x065aee423f579af88a2f92602f59fd5d62470188": {
+  "checked_at": "2026-09-28T15:15:11.283463+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x065aeE423f579AF88A2F92602F59Fd5D62470188 | Arkham"
+ },
+ "0x067b9a5555f9f7e236d51e721931918f755bb9a5": {
+  "checked_at": "2026-09-28T15:15:18.357259+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x067B9A5555F9F7E236D51E721931918f755bB9A5 | Arkham"
+ },
  "0x06867faae05e257ea9ff9cc4c56a7e9ff207bcef": {
   "checked_at": "2026-09-17T19:29:36.962508+00:00",
   "entity": "",
   "label": "",
   "raw_title": "0x06867FAaE05e257EA9fF9CC4c56a7e9ff207bCEf | Arkham"
+ },
+ "0x06f6ff95d9286a0b95350e36c58eaf91ae7b43c1": {
+  "checked_at": "2026-09-28T15:15:25.613544+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x06f6FF95d9286A0b95350e36C58EAF91Ae7B43c1 | Arkham"
+ },
+ "0x0721fc7eda99f561b9d55f8091a37c9a3891cbe4": {
+  "checked_at": "2026-09-28T15:15:33.570901+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x0721fC7edA99f561B9d55f8091A37c9A3891cbe4 | Arkham"
+ },
+ "0x073850b606d0c34ca4890978e89c657986a81e86": {
+  "checked_at": "2026-09-28T15:15:40.895796+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x073850b606D0C34Ca4890978e89c657986a81E86 | Arkham"
  },
  "0x074a4e39a7e5d4449ea864c9ee849d486f26e67a": {
   "checked_at": "2026-09-17T19:29:48.993406+00:00",
@@ -1142,11 +1388,35 @@
   "label": "",
   "raw_title": "0x074A4e39a7E5d4449EA864C9EE849D486F26e67A | Arkham"
  },
+ "0x075d2c1894b86a080250839d00d0518a8bed6869": {
+  "checked_at": "2026-09-28T15:15:47.488342+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x075D2C1894b86a080250839D00D0518A8BeD6869 | Arkham"
+ },
  "0x077b540ebe797f6c0a22039dfe274a11a79bc62f": {
   "checked_at": "2026-09-17T19:29:57.915766+00:00",
   "entity": "",
   "label": "",
   "raw_title": "0x077b540ebE797f6C0a22039dfE274A11A79Bc62F | Arkham"
+ },
+ "0x07b195cfe94a8eb49cd04e40c1e2992a66b76c7a": {
+  "checked_at": "2026-09-28T15:15:53.169379+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x07B195cFE94A8eb49CD04e40C1E2992A66B76C7A | Arkham"
+ },
+ "0x07c3811435d30095081d91524cf54b9b1573dbde": {
+  "checked_at": "2026-09-28T15:16:00.238155+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x07C3811435D30095081d91524CF54B9B1573DBDe | Arkham"
+ },
+ "0x07d7522f431b9d8ff76e5ffcee27918d6015f36b": {
+  "checked_at": "2026-09-28T15:16:06.874775+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x07D7522F431B9D8ff76E5FfcEe27918D6015f36B | Arkham"
  },
  "0x0800a5e588fa93be0f1de045f8f78a907bf0c79e": {
   "checked_at": "2026-09-17T19:30:07.868292+00:00",
@@ -1154,11 +1424,83 @@
   "label": "",
   "raw_title": "0x0800A5E588fa93Be0F1DE045f8f78a907Bf0C79E | Arkham"
  },
+ "0x0821af6d1d2dfccfbdcc13d4ac56d204f60fa8e3": {
+  "checked_at": "2026-09-28T15:16:14.633043+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x0821aF6D1d2DfcCfbDcc13D4ac56d204F60fA8E3 | Arkham"
+ },
+ "0x083b52e2a78ef8ca34d3387812c3ae29e0a3bde4": {
+  "checked_at": "2026-09-28T15:16:22.406061+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x083B52E2A78eF8ca34D3387812c3aE29E0A3BDe4 | Arkham"
+ },
+ "0x0850e90760c3be990eb434b0668cf00784c820ce": {
+  "checked_at": "2026-09-28T15:16:29.705461+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x0850e90760c3bE990eb434B0668cF00784C820cE | Arkham"
+ },
+ "0x08524ec64e6bfefd669c00c5f36317989dfe5556": {
+  "checked_at": "2026-09-28T15:16:37.418057+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x08524EC64e6BfEfd669C00C5F36317989dFe5556 | Arkham"
+ },
+ "0x088b98ef4225256d75ca7feae69aecca0d39f88c": {
+  "checked_at": "2026-09-28T15:16:43.518038+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x088b98Ef4225256d75Ca7FEaE69aeCCa0d39f88C | Arkham"
+ },
+ "0x08fb42e0e1c7fa44baf6fb5cb6bcf47080e21006": {
+  "checked_at": "2026-09-28T15:16:51.531327+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x08fB42E0e1C7FA44baF6FB5CB6BCf47080e21006 | Arkham"
+ },
+ "0x08ff6fd0fa9d6b4e4fc36139a94265cf158cd898": {
+  "checked_at": "2026-09-28T15:16:58.768452+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x08ff6fd0fa9d6b4e4fc36139a94265CF158CD898 | Arkham"
+ },
+ "0x09319255b1684ff8f45e946b0da74bca65a78327": {
+  "checked_at": "2026-09-28T15:17:06.533669+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x09319255B1684fF8F45e946B0dA74bca65A78327 | Arkham"
+ },
  "0x097644d44a00b80319a25b8f60c8070a89a7b1ad": {
   "checked_at": "2026-09-17T19:30:18.411897+00:00",
   "entity": "",
   "label": "",
   "raw_title": "0x097644D44a00b80319A25b8F60c8070a89a7B1Ad | Arkham"
+ },
+ "0x098fdbbda02597fede14cc481b428c30320931b8": {
+  "checked_at": "2026-09-28T15:17:14.211460+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x098fDBbDa02597FEDe14cC481B428c30320931B8 | Arkham"
+ },
+ "0x099b55f329e66e19bd14d02e0cff4e28dd830c99": {
+  "checked_at": "2026-09-28T15:17:21.114484+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x099B55F329E66E19BD14D02E0cfF4e28DD830C99 | Arkham"
+ },
+ "0x09adaf3c7919796a0a9dd73ec88d736cd8dd6694": {
+  "checked_at": "2026-09-28T15:17:27.094353+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x09aDaF3c7919796a0A9DD73ec88d736Cd8dd6694 | Arkham"
+ },
+ "0x09c1f5ed74300befc67593c0dbea71ba8f7c3cb6": {
+  "checked_at": "2026-09-28T15:17:34.036732+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x09c1F5ED74300befC67593c0dBEA71bA8F7C3Cb6 | Arkham"
  },
  "0x09ca2bb0d22342ebd95ac8d74459eccafbef05ac": {
   "category": "",
@@ -1167,17 +1509,112 @@
   "label": "",
   "raw_title": "PonsV2BondingCurve (0x09C) | Arkham"
  },
+ "0x09d2c33915ce7f7a93565668a1e17e53d8316093": {
+  "checked_at": "2026-09-28T15:17:40.870666+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x09D2C33915Ce7F7a93565668A1e17e53d8316093 | Arkham"
+ },
  "0x09dca88f38a2cf41c9ecdce330874f39891dde28": {
   "checked_at": "2026-09-17T19:30:27.937835+00:00",
   "entity": "",
   "label": "",
   "raw_title": "0x09DcA88F38a2cF41c9eCDce330874F39891dDe28 | Arkham"
  },
+ "0x0a0441ad02e7b8fc88a6e9b060e3f8fa63cef96e": {
+  "checked_at": "2026-09-28T15:17:47.508827+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x0a0441AD02e7B8Fc88a6e9b060E3F8Fa63cEf96E | Arkham"
+ },
+ "0x0a200b3ee35ad9d00f7f85ca22f7cd5abec95517": {
+  "checked_at": "2026-09-28T15:17:55.405707+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x0a200B3EE35Ad9D00f7f85Ca22f7cd5ABEc95517 | Arkham"
+ },
+ "0x0a2b526c5b3051d4d5070a7ada1022a2c5f0189b": {
+  "checked_at": "2026-09-28T15:18:03.035032+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x0A2B526C5b3051D4d5070A7ada1022A2c5F0189B | Arkham"
+ },
+ "0x0a4455e9739a3da00c8acf2dc34ba95ce5e2bc5b": {
+  "checked_at": "2026-09-28T15:18:09.729352+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x0A4455E9739a3da00C8Acf2Dc34ba95cE5e2BC5B | Arkham"
+ },
+ "0x0abd0596f03f26b2f49b16f466e7cc1bc87305f8": {
+  "checked_at": "2026-09-28T15:18:15.964570+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x0AbD0596f03F26b2F49b16F466E7cC1Bc87305f8 | Arkham"
+ },
+ "0x0ac0396c42cf45c2e710e878ef78c956d2a69247": {
+  "checked_at": "2026-09-28T15:18:34.892548+00:00",
+  "error": "something went wrong"
+ },
+ "0x0b0489ca187b9f0776e8c19c490bac20213fe42e": {
+  "checked_at": "2026-09-28T15:18:44.872127+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x0B0489Ca187B9f0776E8c19C490bAc20213Fe42e | Arkham"
+ },
+ "0x0b3b12a31be3b646a72dfc4ecb8008f20b54013d": {
+  "checked_at": "2026-09-28T15:18:52.238723+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x0B3b12a31Be3B646a72dFc4ECb8008F20b54013D | Arkham"
+ },
+ "0x0b558edc2e90df69a5ad0737da09315efc9d2544": {
+  "checked_at": "2026-09-28T15:19:22.514915+00:00",
+  "error": "something went wrong"
+ },
+ "0x0b924756c9092e77b4016a6226058c3499886e3d": {
+  "checked_at": "2026-09-28T15:19:32.215201+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x0B924756c9092e77b4016A6226058c3499886e3D | Arkham"
+ },
+ "0x0b9400847229e8a844041ddfce6f9b295d9dea6b": {
+  "checked_at": "2026-09-28T15:19:38.137354+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x0B9400847229e8A844041DDFcE6f9b295D9DEA6B | Arkham"
+ },
+ "0x0bdedebd5f9152e49f08b867b4dbb37e0dcfc996": {
+  "checked_at": "2026-09-28T15:19:45.267766+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x0BdeDebD5F9152e49F08b867B4DBb37E0dCfc996 | Arkham"
+ },
+ "0x0bdf7c9177bc36ec34d62749c1504655cace5c52": {
+  "checked_at": "2026-09-28T15:19:51.763275+00:00",
+  "entity": "",
+  "label": "",
+  "raw_title": "0x0bdf7c9177bc36ec34d62749c1504655cace5c52 | Arkham"
+ },
  "0x0bec6a2c2614e40bb5b22576f8767af568844acb": {
   "checked_at": "2026-09-17T19:30:38.449080+00:00",
   "entity": "",
   "label": "",
   "raw_title": "0x0BEc6A2C2614E40bb5b22576f8767aF568844acB | Arkham"
+ },
+ "0x0bf3e424255a0cbaec17d655806f791af2d50f21": {
+  "category": "DAO",
+  "checked_at": "2026-09-28T15:20:09.217212+00:00",
+  "entity": "\"0xLris\" on Polymarket",
+  "label": "",
+  "raw_title": "\"0xLris\" on Polymarket (0x0bf) | Arkham"
+ },
+ "0x0c053f27aa22c0f83de5da2b59371f46c19263fa": {
+  "checked_at": "2026-09-28T15:20:26.551215+00:00",
+  "error": "something went wrong"
+ },
+ "0x0c1c416a7f2b3ee024a27c65de892ec0ca743025": {
+  "checked_at": "2026-09-28T15:20:46.749842+00:00",
+  "error": "something went wrong"
  },
  "0x0c1d594d3eb57c12b9ca5b0db09632480e6b5b74": {
   "checked_at": "2026-09-17T19:30:49.154495+00:00",
@@ -1190,6 +1627,30 @@
   "entity": "",
   "label": "",
   "raw_title": "0x0C1eB74d0997EbaFAC0265b9a72f0ca205AF8E58 | Arkham"
+ },
+ "0x0c404a103afb562a610168b56d5a88d763cea39c": {
+  "checked_at": "2026-09-28T15:21:07.191273+00:00",
+  "error": "something went wrong"
+ },
+ "0x0c67458b662f443e019385c83ecd480da49662a3": {
+  "checked_at": "2026-09-28T15:21:27.250989+00:00",
+  "error": "something went wrong"
+ },
+ "0x0c6ecff7df459dfb7ad697ef830972c2c0b3b435": {
+  "checked_at": "2026-09-28T15:21:47.297167+00:00",
+  "error": "something went wrong"
+ },
+ "0x0c7071384bc53e9cc7caac7785f5de7d4b8f2263": {
+  "checked_at": "2026-09-28T15:22:08.614504+00:00",
+  "error": "something went wrong"
+ },
+ "0x0c733f18e38cd7fe34ab329212619bb4ff5bfb23": {
+  "checked_at": "2026-09-28T15:22:29.315809+00:00",
+  "error": "something went wrong"
+ },
+ "0x0c826edbf3ca06b653b51c15678dcb9688199b53": {
+  "checked_at": "2026-09-28T15:22:50.386545+00:00",
+  "error": "something went wrong"
  },
  "0x0d31ee0fa7b0abcfea9659a1161850be0ac7fd8c": {
   "checked_at": "2026-09-17T19:31:12.956245+00:00",
