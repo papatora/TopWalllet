@@ -152,10 +152,13 @@ def main() -> int:
                 print(" ", f, f"retry {attempt + 1}: md5 mismatch", flush=True)
             except Exception as e:
                 print(" ", f, f"retry {attempt + 1}: {str(e)[:60]}", flush=True)
-                time.sleep(10)
+                time.sleep(min(90, 20 * (attempt + 1)))
         if not ok:
             print("GAGAL:", f, "— jalankan ulang skrip ini (resumable)")
             return 1
+        # S-46b: jeda antar part — sshd VPS menolak deretan koneksi cepat
+        # (flap pagi 2026-09-28: port buka saat sepi, timeout saat beruntun)
+        time.sleep(4)
 
     print("ALL PARTS MD5-VERIFIED — jalankan scripts/rebuild_local_db.py "
           "lalu scripts/start_explorer.py")
