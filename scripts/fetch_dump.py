@@ -123,42 +123,68 @@ def main() -> int:
         manifest = {"fp": fp, "parts": {}}
     parts_map: dict = manifest.setdefault("parts", {})
 
-    print("[4/4] download + MD5 (koneksi fresh per part)...", flush=True)
+    print("[4/4] download + MD5 (SATU koneksi utk semua part)...")
     parts = sorted(n for n in
                    sh("ls /opt/topwallet/data | grep -a 'local_snapshot.sql.part'",
                       60).splitlines() if n.strip())
-    for f in parts:
-        if parts_map.get(f) == "verified":
-            print(" ", f, "skip (sudah verified)")
-            continue
-        dst = LOCAL / f
-        ok = False
-        for attempt in range(5):
-            try:
-                ssh = _vps.connect()
-                sftp = ssh.open_sftp()
-                sftp.get(f"{VPS_DATA}/{f}", str(dst))
-                _, out, _ = ssh.exec_command(
-                    f"md5sum {VPS_DATA}/{f} | cut -d' ' -f1", timeout=120)
-                remote = out.read().decode().strip()
+    # S-46c: satu koneksi SSH utk seluruh batch — sshd VPS membatasi laju
+    # koneksi (flap 2026-09-28: TCP suka-suka; koneksi per-part = ~90x
+    # konek = pasti kena limit). SFTP multi-file + md5sum batch di koneksi
+    # yang sama; koneksi baru hanya bila benar2 putus.
+    import _vps
+    ssh = sftp = None
+    try:
+        for f in parts:
+            if parts_map.get(f) == "verified":
+                print(" ", f, "skip (sudah verified)")
+                continue
+            dst = LOCAL / f
+            ok = False
+            for attempt in range(5):
+                try:
+                    if ssh is None or ssh.get_transport() is None or not ssh.get_transport().is_active():
+                        ssh = _vps.connect()
+                        sftp = ssh.open_sftp()
+                    sftp.get(f"{VPS_DATA}/{f}", str(dst))
+                    _, out, _ = ssh.exec_command(
+                        f"md5sum {VPS_DATA}/{f} | cut -d' ' -f1", timeout=120)
+                    remote = out.read().decode().strip()
+                    if md5_local(dst) == remote:
+                        print(" ", f, "OK", flush=True)
+                        parts_map[f] = "verified"
+                        save_manifest(manifest)
+                        ok = True
+                        break
+                    print(" ", f, f"retry {attempt + 1}: md5 mismatch", flush=True)
+                except Exception as e:
+                    print(" ", f, f"retry {attempt + 1}: {str(e)[:60]}", flush=True)
+                    try:
+                        if sftp:
+                            sftp.close()
+                    except Exception:
+                        pass
+                    try:
+                        if ssh:
+                            ssh.close()
+                    except Exception:
+                        pass
+                    ssh, sftp = None, None
+                    time.sleep(min(120, 30 * (attempt + 1)))
+            if not ok:
+                print("GAGAL:", f, "— jalankan ulang skrip ini (resumable)")
+                return 1
+            time.sleep(2)
+    finally:
+        try:
+            if sftp:
                 sftp.close()
+        except Exception:
+            pass
+        try:
+            if ssh:
                 ssh.close()
-                if md5_local(dst) == remote:
-                    print(" ", f, "OK", flush=True)
-                    parts_map[f] = "verified"
-                    save_manifest(manifest)
-                    ok = True
-                    break
-                print(" ", f, f"retry {attempt + 1}: md5 mismatch", flush=True)
-            except Exception as e:
-                print(" ", f, f"retry {attempt + 1}: {str(e)[:60]}", flush=True)
-                time.sleep(min(90, 20 * (attempt + 1)))
-        if not ok:
-            print("GAGAL:", f, "— jalankan ulang skrip ini (resumable)")
-            return 1
-        # S-46b: jeda antar part — sshd VPS menolak deretan koneksi cepat
-        # (flap pagi 2026-09-28: port buka saat sepi, timeout saat beruntun)
-        time.sleep(4)
+        except Exception:
+            pass
 
     print("ALL PARTS MD5-VERIFIED — jalankan scripts/rebuild_local_db.py "
           "lalu scripts/start_explorer.py")
