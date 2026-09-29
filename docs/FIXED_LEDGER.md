@@ -329,3 +329,15 @@ per-stage/per-entry = kelaparan; kunci hanya di commit.
   ring_link pada 129 wallet klaster; 39 DUST ring-touchers ter-tag.
 - Laporan angka final: proteksi 528; DUST 8.363-6+... lihat
   results/judge_fix_report.json.
+
+## S-46d + rutin 2026-09-29
+- Fix fetch: skip "verified" hanya bila file part masih ada (rebuild
+  menghapus part; manifest bohong menyebabkan rebuild kelaparan).
+- Extract tuntas: wallets **118.563**, swaps **762.062** (max 14:42 UTC),
+  price_points 6,22 jt.
+- Regrouping ring: 29 penerima alokasi (sell-only CRUMBS/PINK/DRAFT)
+  ter-tag RING_RECIPIENT (additif); 1 wallet menjual 2 token ring
+  (0xf5c4f3dc…: PINK+DRAFT).
+- Analyze eksklusif v2 diluncurkan 16:20 UTC (v1 dibunuh reboot setelah
+  25 jam TANPA traceback — metode terbukti; skor+label 35rb wallet baru
+  keluar bersamaan).

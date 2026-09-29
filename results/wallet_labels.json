@@ -4784,7 +4784,8 @@
    "primary_type": "TRADER_COVERAGE_GAP",
    "labels": [
     "AIRDROP_FARMER",
-    "TRADER_COVERAGE_GAP"
+    "TRADER_COVERAGE_GAP",
+    "RING_RECIPIENT"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -18361,7 +18362,8 @@
    "primary_type": "TRADER_COVERAGE_GAP",
    "labels": [
     "AIRDROP_FARMER",
-    "TRADER_COVERAGE_GAP"
+    "TRADER_COVERAGE_GAP",
+    "RING_RECIPIENT"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -45316,7 +45318,8 @@
    "primary_type": "TRADER_COVERAGE_GAP",
    "labels": [
     "AIRDROP_FARMER",
-    "TRADER_COVERAGE_GAP"
+    "TRADER_COVERAGE_GAP",
+    "RING_RECIPIENT"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -50209,7 +50212,8 @@
    "primary_type": "TRADER_COVERAGE_GAP",
    "labels": [
     "AIRDROP_FARMER",
-    "TRADER_COVERAGE_GAP"
+    "TRADER_COVERAGE_GAP",
+    "RING_RECIPIENT"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -77249,7 +77253,8 @@
    "primary_type": "INSIDER",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "INSIDER",
+    "RING_RECIPIENT"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -93483,7 +93488,8 @@
    "primary_type": "INSIDER",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "INSIDER",
+    "RING_RECIPIENT"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -118488,7 +118494,8 @@
   "0x3226c61be894a20aa3e1fde48edc056259751361": {
    "primary_type": "GENERALIST",
    "labels": [
-    "GENERALIST"
+    "GENERALIST",
+    "RING_RECIPIENT"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -126547,7 +126554,8 @@
    "primary_type": "TRADER_COVERAGE_GAP",
    "labels": [
     "AIRDROP_FARMER",
-    "TRADER_COVERAGE_GAP"
+    "TRADER_COVERAGE_GAP",
+    "RING_RECIPIENT"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -128695,7 +128703,8 @@
    "primary_type": "TRADER_COVERAGE_GAP",
    "labels": [
     "AIRDROP_FARMER",
-    "TRADER_COVERAGE_GAP"
+    "TRADER_COVERAGE_GAP",
+    "RING_RECIPIENT"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -130416,7 +130425,8 @@
    "primary_type": "INSIDER",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "INSIDER",
+    "RING_RECIPIENT"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -169653,7 +169663,8 @@
    "primary_type": "INSIDER",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "INSIDER",
+    "RING_RECIPIENT"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -223721,7 +223732,8 @@
    "primary_type": "INSIDER",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "INSIDER",
+    "RING_RECIPIENT"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -263438,7 +263450,8 @@
   "0x73c13acbefd24ba2fa453ed05da33e6a8af583ea": {
    "primary_type": "GENERALIST",
    "labels": [
-    "GENERALIST"
+    "GENERALIST",
+    "RING_RECIPIENT"
    ],
    "evidence": {
     "GENERALIST": {
@@ -263446,8 +263459,10 @@
     }
    },
    "confidence": {
-    "GENERALIST": 0.5
-   }
+    "GENERALIST": 0.5,
+    "RING_RECIPIENT": 0.6
+   },
+   "override_note": "sell-only pada token ring ['DRAFT'] (WazzCrypto thread); 2026-09-29T16:23:55.947470+00:00"
   },
   "0x73c1d9bf821f7ee7ffa762459921dbeec9560a40": {
    "primary_type": "BUNDLER_SUSPECT",
@@ -271559,7 +271574,8 @@
    "primary_type": "INSIDER",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "INSIDER",
+    "RING_RECIPIENT"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -271592,7 +271608,8 @@
    "primary_type": "TRADER_COVERAGE_GAP",
    "labels": [
     "AIRDROP_FARMER",
-    "TRADER_COVERAGE_GAP"
+    "TRADER_COVERAGE_GAP",
+    "RING_RECIPIENT"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -349560,7 +349577,8 @@
    "primary_type": "INSIDER",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "INSIDER",
+    "RING_RECIPIENT"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -373241,7 +373259,8 @@
    "primary_type": "INSIDER",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "INSIDER",
+    "RING_RECIPIENT"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -377446,7 +377465,8 @@
    "primary_type": "INSIDER",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "INSIDER",
+    "RING_RECIPIENT"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -390837,7 +390857,8 @@
    "primary_type": "TRADER_COVERAGE_GAP",
    "labels": [
     "AIRDROP_FARMER",
-    "TRADER_COVERAGE_GAP"
+    "TRADER_COVERAGE_GAP",
+    "RING_RECIPIENT"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -450348,7 +450369,8 @@
    "primary_type": "INSIDER",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "INSIDER",
+    "RING_RECIPIENT"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -456909,7 +456931,8 @@
    "primary_type": "TRADER_COVERAGE_GAP",
    "labels": [
     "AIRDROP_FARMER",
-    "TRADER_COVERAGE_GAP"
+    "TRADER_COVERAGE_GAP",
+    "RING_RECIPIENT"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -460130,7 +460153,8 @@
    "primary_type": "INSIDER",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "INSIDER",
+    "RING_RECIPIENT"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -463640,7 +463664,8 @@
    "primary_type": "TRADER_COVERAGE_GAP",
    "labels": [
     "AIRDROP_FARMER",
-    "TRADER_COVERAGE_GAP"
+    "TRADER_COVERAGE_GAP",
+    "RING_RECIPIENT"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -553145,7 +553170,8 @@
    "primary_type": "TRADER_COVERAGE_GAP",
    "labels": [
     "AIRDROP_FARMER",
-    "TRADER_COVERAGE_GAP"
+    "TRADER_COVERAGE_GAP",
+    "RING_RECIPIENT"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -564212,7 +564238,8 @@
    "primary_type": "INSIDER",
    "labels": [
     "AIRDROP_FARMER",
-    "INSIDER"
+    "INSIDER",
+    "RING_RECIPIENT"
    ],
    "evidence": {
     "AIRDROP_FARMER": {
@@ -575750,7 +575777,7 @@
   }
  },
  "tag_overrides_applied": {
-  "wallets": 12386,
-  "applied_at": "2026-09-27T20:04:07.611088+00:00"
+  "wallets": 12387,
+  "applied_at": "2026-09-29T16:23:56.515524+00:00"
  }
 }

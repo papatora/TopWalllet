@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-27T20:03:47.295485+00:00",
+ "generated_at": "2026-09-29T16:23:55.947470+00:00",
  "source": "scripts/reverify_tags.py",
  "wallets": {
   "0x00081217544197617dbee64f38cac8de1bd91a23": {
@@ -874,6 +874,7 @@
    ],
    "set_primary": "TRADER_COVERAGE_GAP",
    "add_labels": [
+    "RING_RECIPIENT",
     "TRADER_COVERAGE_GAP"
    ],
    "confidence": {
@@ -890,7 +891,14 @@
      ]
     }
    },
-   "note": "INSIDER dibatalkan: bukti on-chain menunjukkan tx beli (Swap log) yang tak tertangkap scan; antre re-enrich"
+   "note": "INSIDER dibatalkan: bukti on-chain menunjukkan tx beli (Swap log) yang tak tertangkap scan; antre re-enrich",
+   "ring_link": {
+    "tokens": [
+     "DRAFT"
+    ],
+    "pattern": "sell-only recipient",
+    "added_at": "2026-09-29T16:23:55.947470+00:00"
+   }
   },
   "0x01dbceee969356623d9db888a4c01394f1d80d54": {
    "verified_at": "2026-09-14T23:15:13.816639+00:00",
@@ -2934,6 +2942,7 @@
    ],
    "set_primary": "TRADER_COVERAGE_GAP",
    "add_labels": [
+    "RING_RECIPIENT",
     "TRADER_COVERAGE_GAP"
    ],
    "confidence": {
@@ -2951,7 +2960,14 @@
      ]
     }
    },
-   "note": "INSIDER dibatalkan: bukti on-chain menunjukkan tx beli (Swap log) yang tak tertangkap scan; antre re-enrich"
+   "note": "INSIDER dibatalkan: bukti on-chain menunjukkan tx beli (Swap log) yang tak tertangkap scan; antre re-enrich",
+   "ring_link": {
+    "tokens": [
+     "DRAFT"
+    ],
+    "pattern": "sell-only recipient",
+    "added_at": "2026-09-29T16:23:55.947470+00:00"
+   }
   },
   "0x07b195cfe94a8eb49cd04e40c1e2992a66b76c7a": {
    "verified_at": "2026-09-14T23:15:13.818100+00:00",
@@ -6871,6 +6887,7 @@
    ],
    "set_primary": "TRADER_COVERAGE_GAP",
    "add_labels": [
+    "RING_RECIPIENT",
     "TRADER_COVERAGE_GAP"
    ],
    "confidence": {
@@ -6891,7 +6908,14 @@
      ]
     }
    },
-   "note": "INSIDER dibatalkan: bukti on-chain menunjukkan tx beli (Swap log) yang tak tertangkap scan; antre re-enrich"
+   "note": "INSIDER dibatalkan: bukti on-chain menunjukkan tx beli (Swap log) yang tak tertangkap scan; antre re-enrich",
+   "ring_link": {
+    "tokens": [
+     "DRAFT"
+    ],
+    "pattern": "sell-only recipient",
+    "added_at": "2026-09-29T16:23:55.947470+00:00"
+   }
   },
   "0x12dc4a532ea469affd1d59f4016b1af4dc665fc4": {
    "verified_at": "2026-09-14T23:15:13.820790+00:00",
@@ -8011,6 +8035,7 @@
    ],
    "set_primary": "TRADER_COVERAGE_GAP",
    "add_labels": [
+    "RING_RECIPIENT",
     "TRADER_COVERAGE_GAP"
    ],
    "confidence": {
@@ -8029,7 +8054,14 @@
      ]
     }
    },
-   "note": "INSIDER dibatalkan: bukti on-chain menunjukkan tx beli (Swap log) yang tak tertangkap scan; antre re-enrich"
+   "note": "INSIDER dibatalkan: bukti on-chain menunjukkan tx beli (Swap log) yang tak tertangkap scan; antre re-enrich",
+   "ring_link": {
+    "tokens": [
+     "DRAFT"
+    ],
+    "pattern": "sell-only recipient",
+    "added_at": "2026-09-29T16:23:55.947470+00:00"
+   }
   },
   "0x14f0830a439a77b9c09f6598bb28679fc7a754de": {
    "verified_at": "2026-09-14T23:15:13.821552+00:00",
@@ -15176,6 +15208,7 @@
    ],
    "set_primary": "TRADER_COVERAGE_GAP",
    "add_labels": [
+    "RING_RECIPIENT",
     "TRADER_COVERAGE_GAP"
    ],
    "confidence": {
@@ -15192,7 +15225,14 @@
      ]
     }
    },
-   "note": "INSIDER dibatalkan: bukti on-chain menunjukkan tx beli (Swap log) yang tak tertangkap scan; antre re-enrich"
+   "note": "INSIDER dibatalkan: bukti on-chain menunjukkan tx beli (Swap log) yang tak tertangkap scan; antre re-enrich",
+   "ring_link": {
+    "tokens": [
+     "DRAFT"
+    ],
+    "pattern": "sell-only recipient",
+    "added_at": "2026-09-29T16:23:55.947470+00:00"
+   }
   },
   "0x35dabbf0190cb68dee6d58b7ebfd28dd34959879": {
    "verified_at": "2026-09-15T01:50:38.278588+00:00",
@@ -15371,6 +15411,7 @@
    ],
    "set_primary": "TRADER_COVERAGE_GAP",
    "add_labels": [
+    "RING_RECIPIENT",
     "TRADER_COVERAGE_GAP"
    ],
    "confidence": {
@@ -15387,7 +15428,14 @@
      ]
     }
    },
-   "note": "INSIDER dibatalkan: bukti on-chain menunjukkan tx beli (Swap log) yang tak tertangkap scan; antre re-enrich"
+   "note": "INSIDER dibatalkan: bukti on-chain menunjukkan tx beli (Swap log) yang tak tertangkap scan; antre re-enrich",
+   "ring_link": {
+    "tokens": [
+     "DRAFT"
+    ],
+    "pattern": "sell-only recipient",
+    "added_at": "2026-09-29T16:23:55.947470+00:00"
+   }
   },
   "0x371356eb5b6a24fad0006ca8275b6a0927147c0e": {
    "verified_at": "2026-09-15T01:50:38.278738+00:00",
@@ -25074,6 +25122,7 @@
    ],
    "set_primary": "TRADER_COVERAGE_GAP",
    "add_labels": [
+    "RING_RECIPIENT",
     "TRADER_COVERAGE_GAP"
    ],
    "confidence": {
@@ -25090,7 +25139,14 @@
      ]
     }
    },
-   "note": "INSIDER dibatalkan: bukti on-chain menunjukkan tx beli (Swap log) yang tak tertangkap scan; antre re-enrich"
+   "note": "INSIDER dibatalkan: bukti on-chain menunjukkan tx beli (Swap log) yang tak tertangkap scan; antre re-enrich",
+   "ring_link": {
+    "tokens": [
+     "CRUMBS"
+    ],
+    "pattern": "sell-only recipient",
+    "added_at": "2026-09-29T16:23:55.947470+00:00"
+   }
   },
   "0x7749bbbbdad04d772f6fe58e82942e936a3d4771": {
    "verified_at": "2026-09-15T04:05:49.856248+00:00",
@@ -33818,6 +33874,7 @@
    ],
    "set_primary": "TRADER_COVERAGE_GAP",
    "add_labels": [
+    "RING_RECIPIENT",
     "TRADER_COVERAGE_GAP"
    ],
    "confidence": {
@@ -33837,7 +33894,14 @@
      ]
     }
    },
-   "note": "INSIDER dibatalkan: bukti on-chain menunjukkan tx beli (Swap log) yang tak tertangkap scan; antre re-enrich"
+   "note": "INSIDER dibatalkan: bukti on-chain menunjukkan tx beli (Swap log) yang tak tertangkap scan; antre re-enrich",
+   "ring_link": {
+    "tokens": [
+     "DRAFT"
+    ],
+    "pattern": "sell-only recipient",
+    "added_at": "2026-09-29T16:23:55.947470+00:00"
+   }
   },
   "0xad223df983dbb09aec07331978e161a5b7bd6ec6": {
    "verified_at": "2026-09-15T07:30:54.962619+00:00",
@@ -38680,6 +38744,7 @@
    ],
    "set_primary": "TRADER_COVERAGE_GAP",
    "add_labels": [
+    "RING_RECIPIENT",
     "TRADER_COVERAGE_GAP"
    ],
    "confidence": {
@@ -38707,7 +38772,14 @@
      ]
     }
    },
-   "note": "INSIDER dibatalkan: bukti on-chain menunjukkan tx beli (Swap log) yang tak tertangkap scan; antre re-enrich"
+   "note": "INSIDER dibatalkan: bukti on-chain menunjukkan tx beli (Swap log) yang tak tertangkap scan; antre re-enrich",
+   "ring_link": {
+    "tokens": [
+     "CRUMBS"
+    ],
+    "pattern": "sell-only recipient",
+    "added_at": "2026-09-29T16:23:55.947470+00:00"
+   }
   },
   "0xca90930a4fb81a541fd3e9aeab301e0f5005c289": {
    "verified_at": "2026-09-15T07:30:54.965736+00:00",
@@ -39226,6 +39298,7 @@
    ],
    "set_primary": "TRADER_COVERAGE_GAP",
    "add_labels": [
+    "RING_RECIPIENT",
     "TRADER_COVERAGE_GAP"
    ],
    "confidence": {
@@ -39246,7 +39319,14 @@
      ]
     }
    },
-   "note": "INSIDER dibatalkan: bukti on-chain menunjukkan tx beli (Swap log) yang tak tertangkap scan; antre re-enrich"
+   "note": "INSIDER dibatalkan: bukti on-chain menunjukkan tx beli (Swap log) yang tak tertangkap scan; antre re-enrich",
+   "ring_link": {
+    "tokens": [
+     "CRUMBS"
+    ],
+    "pattern": "sell-only recipient",
+    "added_at": "2026-09-29T16:23:55.947470+00:00"
+   }
   },
   "0xcd70e075e36dfb1da3cb744b8d9ead6224a22ec3": {
    "verified_at": "2026-09-15T09:31:26.440391+00:00",
@@ -45727,6 +45807,7 @@
    ],
    "set_primary": "TRADER_COVERAGE_GAP",
    "add_labels": [
+    "RING_RECIPIENT",
     "TRADER_COVERAGE_GAP"
    ],
    "confidence": {
@@ -45750,7 +45831,15 @@
      ]
     }
    },
-   "note": "INSIDER dibatalkan: bukti on-chain menunjukkan tx beli (Swap log) yang tak tertangkap scan; antre re-enrich"
+   "note": "INSIDER dibatalkan: bukti on-chain menunjukkan tx beli (Swap log) yang tak tertangkap scan; antre re-enrich",
+   "ring_link": {
+    "tokens": [
+     "PINK",
+     "DRAFT"
+    ],
+    "pattern": "sell-only recipient",
+    "added_at": "2026-09-29T16:23:55.947470+00:00"
+   }
   },
   "0xf5c722c970a5d90cc5b32b233e08f7324c68cea4": {
    "verified_at": "2026-09-15T10:50:42.903542+00:00",
@@ -48091,7 +48180,8 @@
    ],
    "set_primary": "GENERALIST",
    "add_labels": [
-    "GENERALIST"
+    "GENERALIST",
+    "RING_RECIPIENT"
    ],
    "confidence": {
     "GENERALIST": 0.5
@@ -48101,7 +48191,14 @@
      "note": "174 wallet berlabel AIRDROP_FARMER 0.95 padahal swap_events lokal PUNYA BUY legs \u2014 melanggar rule classifier sendiri (wallet_classifier.py:219: any BUY -> skip) dan taxonomy #9 100%-incoming (docs/WALLET_TAXONOMY.md:19, 03_DETECTIONS.md:17). Contoh terverifikasi: 0x7da72b7d31\u2026 = 67 BUY/58 SELL 4 tok"
     }
    },
-   "note": "relabel dari verification_verdicts.json (grup AIRDROP_FARMER, rule filter:af_buys_contradiction_174, action=relabel)"
+   "note": "relabel dari verification_verdicts.json (grup AIRDROP_FARMER, rule filter:af_buys_contradiction_174, action=relabel)",
+   "ring_link": {
+    "tokens": [
+     "DRAFT"
+    ],
+    "pattern": "sell-only recipient",
+    "added_at": "2026-09-29T16:23:55.947470+00:00"
+   }
   },
   "0x33eb6352a4b5240fe9b1526f032dbc5def2d253f": {
    "verified_at": "2026-09-23T17:38:56.921815+00:00",
@@ -58277,7 +58374,17 @@
     "AIRDROP_FARMER": 0.5
    },
    "note": "unverified zero-buy: conf diturunkan 0.5 sampai re-verify",
-   "verified_at": "2026-09-23T19:24:55.076781+00:00"
+   "verified_at": "2026-09-23T19:24:55.076781+00:00",
+   "ring_link": {
+    "tokens": [
+     "DRAFT"
+    ],
+    "pattern": "sell-only recipient",
+    "added_at": "2026-09-29T16:23:55.947470+00:00"
+   },
+   "add_labels": [
+    "RING_RECIPIENT"
+   ]
   },
   "0x2bcd0ff188e9d092ffe16f9ccb7e064dfc9a8e69": {
    "confidence": {
@@ -59019,7 +59126,17 @@
     "AIRDROP_FARMER": 0.5
    },
    "note": "unverified zero-buy: conf diturunkan 0.5 sampai re-verify",
-   "verified_at": "2026-09-23T19:24:55.076781+00:00"
+   "verified_at": "2026-09-23T19:24:55.076781+00:00",
+   "ring_link": {
+    "tokens": [
+     "DRAFT"
+    ],
+    "pattern": "sell-only recipient",
+    "added_at": "2026-09-29T16:23:55.947470+00:00"
+   },
+   "add_labels": [
+    "RING_RECIPIENT"
+   ]
   },
   "0x795e291b0c17c13165ef51e25b05537668f2c2bb": {
    "confidence": {
@@ -59173,7 +59290,17 @@
     "AIRDROP_FARMER": 0.5
    },
    "note": "unverified zero-buy: conf diturunkan 0.5 sampai re-verify",
-   "verified_at": "2026-09-23T19:24:55.076781+00:00"
+   "verified_at": "2026-09-23T19:24:55.076781+00:00",
+   "ring_link": {
+    "tokens": [
+     "DRAFT"
+    ],
+    "pattern": "sell-only recipient",
+    "added_at": "2026-09-29T16:23:55.947470+00:00"
+   },
+   "add_labels": [
+    "RING_RECIPIENT"
+   ]
   },
   "0x6d3bcab10f05b702f5459895e071c38c6c21cab9": {
    "confidence": {
@@ -60986,7 +61113,17 @@
     "AIRDROP_FARMER": 0.5
    },
    "note": "unverified zero-buy: conf diturunkan 0.5 sampai re-verify",
-   "verified_at": "2026-09-23T19:24:55.076781+00:00"
+   "verified_at": "2026-09-23T19:24:55.076781+00:00",
+   "ring_link": {
+    "tokens": [
+     "DRAFT"
+    ],
+    "pattern": "sell-only recipient",
+    "added_at": "2026-09-29T16:23:55.947470+00:00"
+   },
+   "add_labels": [
+    "RING_RECIPIENT"
+   ]
   },
   "0xa23c9ab82081dc78e882ad1cfcb160933d3d2598": {
    "confidence": {
@@ -61805,7 +61942,17 @@
     "AIRDROP_FARMER": 0.5
    },
    "note": "unverified zero-buy: conf diturunkan 0.5 sampai re-verify",
-   "verified_at": "2026-09-23T19:24:55.076781+00:00"
+   "verified_at": "2026-09-23T19:24:55.076781+00:00",
+   "ring_link": {
+    "tokens": [
+     "DRAFT"
+    ],
+    "pattern": "sell-only recipient",
+    "added_at": "2026-09-29T16:23:55.947470+00:00"
+   },
+   "add_labels": [
+    "RING_RECIPIENT"
+   ]
   },
   "0x385c3e008188818f933d488afc92eb4c350cfbab": {
    "confidence": {
@@ -61959,7 +62106,17 @@
     "AIRDROP_FARMER": 0.5
    },
    "note": "unverified zero-buy: conf diturunkan 0.5 sampai re-verify",
-   "verified_at": "2026-09-23T19:24:55.076781+00:00"
+   "verified_at": "2026-09-23T19:24:55.076781+00:00",
+   "ring_link": {
+    "tokens": [
+     "DRAFT"
+    ],
+    "pattern": "sell-only recipient",
+    "added_at": "2026-09-29T16:23:55.947470+00:00"
+   },
+   "add_labels": [
+    "RING_RECIPIENT"
+   ]
   },
   "0xfde611451f8d644315e1ebb953590ff5d56763f9": {
    "confidence": {
@@ -64353,7 +64510,17 @@
     "AIRDROP_FARMER": 0.5
    },
    "note": "unverified zero-buy: conf diturunkan 0.5 sampai re-verify",
-   "verified_at": "2026-09-23T19:24:55.076781+00:00"
+   "verified_at": "2026-09-23T19:24:55.076781+00:00",
+   "ring_link": {
+    "tokens": [
+     "DRAFT"
+    ],
+    "pattern": "sell-only recipient",
+    "added_at": "2026-09-29T16:23:55.947470+00:00"
+   },
+   "add_labels": [
+    "RING_RECIPIENT"
+   ]
   },
   "0x9793ffc9297605ab33a9fc94dbd82cc3d3524855": {
    "confidence": {
@@ -65130,7 +65297,17 @@
     "AIRDROP_FARMER": 0.5
    },
    "note": "unverified zero-buy: conf diturunkan 0.5 sampai re-verify",
-   "verified_at": "2026-09-23T19:24:55.076781+00:00"
+   "verified_at": "2026-09-23T19:24:55.076781+00:00",
+   "ring_link": {
+    "tokens": [
+     "DRAFT"
+    ],
+    "pattern": "sell-only recipient",
+    "added_at": "2026-09-29T16:23:55.947470+00:00"
+   },
+   "add_labels": [
+    "RING_RECIPIENT"
+   ]
   },
   "0x501d55efdbf1b7cc4b5b6a2188ff8d50bf88d95d": {
    "confidence": {
@@ -65347,7 +65524,17 @@
     "AIRDROP_FARMER": 0.5
    },
    "note": "unverified zero-buy: conf diturunkan 0.5 sampai re-verify",
-   "verified_at": "2026-09-23T19:24:55.076781+00:00"
+   "verified_at": "2026-09-23T19:24:55.076781+00:00",
+   "ring_link": {
+    "tokens": [
+     "DRAFT"
+    ],
+    "pattern": "sell-only recipient",
+    "added_at": "2026-09-29T16:23:55.947470+00:00"
+   },
+   "add_labels": [
+    "RING_RECIPIENT"
+   ]
   },
   "0x70f8e4d4596e5062a5e17faba8198146f564e396": {
    "confidence": {
@@ -65543,7 +65730,17 @@
     "AIRDROP_FARMER": 0.5
    },
    "note": "unverified zero-buy: conf diturunkan 0.5 sampai re-verify",
-   "verified_at": "2026-09-23T19:24:55.076781+00:00"
+   "verified_at": "2026-09-23T19:24:55.076781+00:00",
+   "ring_link": {
+    "tokens": [
+     "DRAFT"
+    ],
+    "pattern": "sell-only recipient",
+    "added_at": "2026-09-29T16:23:55.947470+00:00"
+   },
+   "add_labels": [
+    "RING_RECIPIENT"
+   ]
   },
   "0xa687deb98fbb5fc1056cc150e91ad58d278a89ee": {
    "confidence": {
@@ -66635,7 +66832,17 @@
     "AIRDROP_FARMER": 0.5
    },
    "note": "unverified zero-buy: conf diturunkan 0.5 sampai re-verify",
-   "verified_at": "2026-09-23T19:24:55.076781+00:00"
+   "verified_at": "2026-09-23T19:24:55.076781+00:00",
+   "ring_link": {
+    "tokens": [
+     "DRAFT"
+    ],
+    "pattern": "sell-only recipient",
+    "added_at": "2026-09-29T16:23:55.947470+00:00"
+   },
+   "add_labels": [
+    "RING_RECIPIENT"
+   ]
   },
   "0x597b64dbcbbefb7dda8ababef9670e2d0bfb2449": {
    "confidence": {
@@ -66880,7 +67087,17 @@
     "AIRDROP_FARMER": 0.5
    },
    "note": "unverified zero-buy: conf diturunkan 0.5 sampai re-verify",
-   "verified_at": "2026-09-23T19:24:55.076781+00:00"
+   "verified_at": "2026-09-23T19:24:55.076781+00:00",
+   "ring_link": {
+    "tokens": [
+     "DRAFT"
+    ],
+    "pattern": "sell-only recipient",
+    "added_at": "2026-09-29T16:23:55.947470+00:00"
+   },
+   "add_labels": [
+    "RING_RECIPIENT"
+   ]
   },
   "0xcee95a09b84dee7f4df0d80643820291a7c1df42": {
    "confidence": {
@@ -176236,6 +176453,56 @@
     "DUST": 0.6
    },
    "note": "audit-night P2 (hakim MODIFY, union gate >$10k) \u2014 1 swap, notional terukur $61.59; 2026-09-26T17:24:45.570110+00:00"
+  },
+  "0x4acb6c4321253548a7d4bb9c84032cc4ee04bfd7": {
+   "add_labels": [
+    "RING_RECIPIENT"
+   ],
+   "confidence": {
+    "RING_RECIPIENT": 0.6
+   },
+   "evidence": {},
+   "note": "sell-only pada token ring ['CRUMBS'] (WazzCrypto thread); 2026-09-29T16:23:55.947470+00:00"
+  },
+  "0x0e65c8820ec06d869c6128ed9ecba10238ff2bf4": {
+   "add_labels": [
+    "RING_RECIPIENT"
+   ],
+   "confidence": {
+    "RING_RECIPIENT": 0.6
+   },
+   "evidence": {},
+   "note": "sell-only pada token ring ['PINK'] (WazzCrypto thread); 2026-09-29T16:23:55.947470+00:00"
+  },
+  "0x93d0a3cdbcdd397703307c9d2f775853e5ada791": {
+   "add_labels": [
+    "RING_RECIPIENT"
+   ],
+   "confidence": {
+    "RING_RECIPIENT": 0.6
+   },
+   "evidence": {},
+   "note": "sell-only pada token ring ['PINK'] (WazzCrypto thread); 2026-09-29T16:23:55.947470+00:00"
+  },
+  "0x2c2951fb56c7275d089ffb0f41b0bba7af431356": {
+   "add_labels": [
+    "RING_RECIPIENT"
+   ],
+   "confidence": {
+    "RING_RECIPIENT": 0.6
+   },
+   "evidence": {},
+   "note": "sell-only pada token ring ['DRAFT'] (WazzCrypto thread); 2026-09-29T16:23:55.947470+00:00"
+  },
+  "0x73c13acbefd24ba2fa453ed05da33e6a8af583ea": {
+   "add_labels": [
+    "RING_RECIPIENT"
+   ],
+   "confidence": {
+    "RING_RECIPIENT": 0.6
+   },
+   "evidence": {},
+   "note": "sell-only pada token ring ['DRAFT'] (WazzCrypto thread); 2026-09-29T16:23:55.947470+00:00"
   }
  }
 }
