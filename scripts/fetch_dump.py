@@ -136,8 +136,15 @@ def main() -> int:
     try:
         for f in parts:
             if parts_map.get(f) == "verified":
-                print(" ", f, "skip (sudah verified)")
-                continue
+                # S-46d: "verified" di manifest TIDAK berarti file masih ada —
+                # rebuild sukses mengHAPUS part (cleanup). Cek fisik dulu;
+                # hilang = hapus entri manifest supaya di-download ulang.
+                if (LOCAL / f).exists():
+                    print(" ", f, "skip (sudah verified)")
+                    continue
+                parts_map.pop(f, None)
+                save_manifest(manifest)
+                print(" ", f, "manifest basi (file hilang) — download ulang", flush=True)
             dst = LOCAL / f
             ok = False
             for attempt in range(5):
