@@ -100,6 +100,12 @@ class EtherscanV2Client:
         self.base = settings.explorer_url.rstrip("/")  # untuk link /tx/ /address/
         self._limiter = AsyncLimiter(max(rps or settings.etherscan_rps, 0.1), 1.0)
         self._client: httpx.AsyncClient | None = None
+        # S-46e: statistik kesehatan — pnl_verifier membaca total_ok/total_5xx
+        # (dulu hanya BlockscoutClient yang punya; analyze solo crash
+        # AttributeError saat backend = EtherscanV2, 2026-09-29).
+        self.total_ok = 0
+        self.total_5xx = 0
+        self.consecutive_5xx = 0
         if not self.api_keys:
             jlog(log, logging.WARNING,
                  "ETHERSCAN_API_KEY kosong — request akan ditolak API; "
@@ -147,14 +153,21 @@ class EtherscanV2Client:
                     resp = await client.get(self.base_api, params=params)
                 if resp.status_code == 429:
                     last_err = "http 429"
+                    self.total_5xx += 1
+                    self.consecutive_5xx += 1
                     self._rotate()
                     await asyncio.sleep(min(60.0, 2.0 * (2 ** attempt)))
                     continue
+                if resp.status_code >= 500:
+                    self.total_5xx += 1
+                    self.consecutive_5xx += 1
                 resp.raise_for_status()
                 data = resp.json()
                 if isinstance(data, dict) and data.get("status") == "0":
                     msg = (data.get("message") or "") + " " + str(data.get("result") or "")
                     if "No transactions found" in msg:
+                        self.total_ok += 1
+                        self.consecutive_5xx = 0
                         return []
                     last_err = msg[:120]
                     # Missing/invalid key → percuma di-retry
@@ -169,6 +182,8 @@ class EtherscanV2Client:
                         continue
                     await asyncio.sleep(min(60.0, 2.0 * (2 ** attempt)))
                     continue
+                self.total_ok += 1
+                self.consecutive_5xx = 0
                 return data
             except (httpx.HTTPError, ValueError) as e:
                 last_err = str(e)[:120]
