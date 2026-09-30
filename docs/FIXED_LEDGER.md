@@ -341,3 +341,16 @@ per-stage/per-entry = kelaparan; kunci hanya di commit.
 - Analyze eksklusif v2 diluncurkan 16:20 UTC (v1 dibunuh reboot setelah
   25 jam TANPA traceback — metode terbukti; skor+label 35rb wallet baru
   keluar bersamaan).
+
+## Rutin 2026-09-30 sore — LABEL MASUK SKALA PENUH
+- S-46f: ekstraksi rutin selalu dump SEGAR (reuse hanya retry) — insiden
+  data basi (762rb vs 899rb) tak terulang.
+- **DB lokal kini: wallets 125.028 · swaps 899.331 · wallet_labels
+  71.069 (dari 36rb) · price_points 6,44 jt · live s.d. 15:06 UTC.**
+- Distribusi label fresh: GENERALIST 56.584 / **INSIDER 6.928** /
+  AIRDROP 5.414 / SNIPER 951 / BUNDLER 675 / MEV 339 / DEV 96 /
+  CT 34 / **DEV_SERIAL_RUGGER 29 (label baru!)**.
+- Ring: 39 dari 201 trader CRUMBS/PINK/DRAFT resmi INSIDER (classifier
+  menangkap penerima bundel — sesuai prediksi verifikasi).
+- Analyze retry-loop aktif (auto-bangkit ≤12x sampai scores>1000);
+  scores=2 saat extract (fase verifikasi berjalan).

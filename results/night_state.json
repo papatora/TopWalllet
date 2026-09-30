@@ -7,7 +7,8 @@
  "delta_done": true,
  "wallets": 125028,
  "swaps": 899331,
- "swap_max_ts": "2026-09-30 15:06:10.000000",
+ "swap_max_ts": "2026-09-30 15:06:10",
  "wallet_scores": 2,
- "delta_finished_at": "2026-09-30T15:59:27.522961+00:00"
+ "delta_finished_at": "2026-09-30T16:00:00Z",
+ "labels_in_db": 71069
 }
