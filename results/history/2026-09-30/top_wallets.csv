@@ -1,0 +1,3 @@
+rank,wallet_address,composite_score,win_rate,median_return_multiple,max_return_multiple,total_positions,distinct_tokens,big_wins_10x_plus,total_realized_pnl_usd,total_unrealized_pnl_usd,dip_buying_accuracy,top_selling_accuracy,avg_hold_duration_hours,active_months,last_active,trading_style,risk_flags,cluster_id
+1,0x3EE616899d493B8A68FdD5d4f420DFe76Bc6bfCe,73.28,1.0,3.5361,3.6722,5,1,0,1205.3,0,1.0,1.0,14.99,1,2026-09-08T06:56:10+00:00,dip_buyer_top_seller,SINGLE_TOKEN_SAMPLE,cluster_22960191
+2,0x1bCCcd91840bD81Ab6716EB88EB25d0846571893,70.28,1.0,8.733,9.7409,9,1,0,1477.75,0,1.0,0.0,114.36,1,2026-09-12T00:52:01+00:00,dip_buyer,SINGLE_TOKEN_SAMPLE,cluster_bcf91141

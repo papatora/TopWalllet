@@ -1,18 +1,20 @@
 {
-  "phase": "pipeline_done",
+  "phase": "pipeline",
   "cycle": 1,
-  "pid": 43153,
-  "top_wallets": 37,
-  "last_exit": 1,
-  "updated_at": "2026-09-07T10:41:12.739528+00:00",
-  "log_tail": "cout.com/api/v2/addresses/0x85cf55049d7ad3aaf74562f7a4599bccf66ed376/token-transfers?type=ERC-20&token=0x9395116762721d13c246f6b0a5c41bbb31777a8d \"HTTP/1.1 200 OK\" | 10:41:11 INFO    httpx: HTTP Request: GET https://robinhoodchain.blockscout.com/api/v2/addresses/0x85cf55049d7ad3aaf74562f7a4599bccf66ed376/token-transfers?type=ERC-20&token=0x9395116762721d13c246f6b0a5c41bbb31777a8d \"HTTP/1.1 200 OK\"",
-  "pipeline_pid": 43155,
+  "pid": 75763,
+  "top_wallets": null,
+  "last_exit": null,
+  "updated_at": "2026-09-30T13:28:26.986363+00:00",
+  "log_tail": "13:26:16 INFO    src.analyze.pnl_verifier: PnL verification done | 13:26:16 INFO    src.pipeline: strict verification filter",
+  "pipeline_pid": 75766,
   "stats": {
-    "tokens_in_db": 62,
-    "pools_in_db": 62,
-    "wallets_in_db": 1675,
-    "swap_events": 9233,
-    "wallets_scored": 112,
-    "wallets_excluded": 0
+    "tokens_in_db": 1996,
+    "pools_in_db": 2011,
+    "wallets_in_db": 122796,
+    "swap_events": 841709,
+    "wallets_scored": 2999,
+    "wallets_excluded": 46271,
+    "wallets_classified": 64167,
+    "labels_assigned": 70376
   }
 }

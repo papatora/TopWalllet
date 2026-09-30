@@ -1,0 +1,168 @@
+{
+  "rank": 1,
+  "wallet_address": "0x3EE616899d493B8A68FdD5d4f420DFe76Bc6bfCe",
+  "composite_score": 73.28,
+  "metrics": {
+    "total_positions": 5,
+    "winning_positions": 5,
+    "win_rate": 1.0,
+    "median_return_multiple": 3.5361,
+    "max_return_multiple": 3.6722,
+    "total_realized_pnl_usd": 1205.3,
+    "total_unrealized_pnl_usd": 0,
+    "avg_hold_duration_hours": 14.99,
+    "consistency_score": 0.44,
+    "dip_buying_accuracy": 1.0,
+    "top_selling_accuracy": 1.0,
+    "distinct_tokens": 1,
+    "big_wins_10x_plus": 0,
+    "recent_win_rate": 1.0,
+    "active_months": 1,
+    "last_active": "2026-09-08T06:56:10+00:00"
+  },
+  "top_trades": [
+    {
+      "token": "STNKPAD",
+      "ca": "0x52738860e56571110869cA77431663ccAFFa2D82",
+      "entry_price_usd": 0.00014401675513870256,
+      "exit_price_usd": 0.0005288587459487388,
+      "return_multiple": 3.67,
+      "position_size_usd": 1.29,
+      "pnl_usd": 3.46,
+      "entry_date": "2026-09-07",
+      "exit_date": "2026-09-08"
+    },
+    {
+      "token": "STNKPAD",
+      "ca": "0x52738860e56571110869cA77431663ccAFFa2D82",
+      "entry_price_usd": 0.00014401675513870177,
+      "exit_price_usd": 0.0005121892994610041,
+      "return_multiple": 3.56,
+      "position_size_usd": 112.09,
+      "pnl_usd": 286.56,
+      "entry_date": "2026-09-07",
+      "exit_date": "2026-09-08"
+    },
+    {
+      "token": "STNKPAD",
+      "ca": "0x52738860e56571110869cA77431663ccAFFa2D82",
+      "entry_price_usd": 0.00014401675513870177,
+      "exit_price_usd": 0.0005092616614074273,
+      "return_multiple": 3.54,
+      "position_size_usd": 138.39,
+      "pnl_usd": 350.97,
+      "entry_date": "2026-09-07",
+      "exit_date": "2026-09-08"
+    },
+    {
+      "token": "STNKPAD",
+      "ca": "0x52738860e56571110869cA77431663ccAFFa2D82",
+      "entry_price_usd": 0.00014401675513870177,
+      "exit_price_usd": 0.0005065920850952208,
+      "return_multiple": 3.52,
+      "position_size_usd": 100.89,
+      "pnl_usd": 253.99,
+      "entry_date": "2026-09-07",
+      "exit_date": "2026-09-08"
+    },
+    {
+      "token": "STNKPAD",
+      "ca": "0x52738860e56571110869cA77431663ccAFFa2D82",
+      "entry_price_usd": 0.00014401675513870177,
+      "exit_price_usd": 0.0005028355072097639,
+      "return_multiple": 3.49,
+      "position_size_usd": 124.55,
+      "pnl_usd": 310.32,
+      "entry_date": "2026-09-07",
+      "exit_date": "2026-09-08"
+    }
+  ],
+  "verification": {
+    "verdict": "verified",
+    "eth_oracle_ok": true,
+    "trades_verified": "3/3",
+    "details": []
+  },
+  "trading_style": "dip_buyer_top_seller",
+  "risk_flags": [
+    "SINGLE_TOKEN_SAMPLE"
+  ],
+  "cluster_id": "cluster_22960191",
+  "all_positions": [
+    {
+      "token": "STNKPAD",
+      "ca": "0x52738860e56571110869cA77431663ccAFFa2D82",
+      "status": "closed",
+      "entry_ts": "2026-09-07T15:53:42",
+      "exit_ts": "2026-09-08T06:50:45",
+      "entry_price_usd": 0.00014401675513870177,
+      "exit_price_usd": 0.0005092616614074273,
+      "size_usd": 138.39,
+      "pnl_usd": 350.97,
+      "return_multiple": 3.5361,
+      "hold_hours": 14.95,
+      "entry_pctile": 0.11729706757331067,
+      "exit_pctile": 0.8573735656608584
+    },
+    {
+      "token": "STNKPAD",
+      "ca": "0x52738860e56571110869cA77431663ccAFFa2D82",
+      "status": "closed",
+      "entry_ts": "2026-09-07T15:53:42",
+      "exit_ts": "2026-09-08T06:51:36",
+      "entry_price_usd": 0.00014401675513870177,
+      "exit_price_usd": 0.0005028355072097639,
+      "size_usd": 124.55,
+      "pnl_usd": 310.32,
+      "return_multiple": 3.4915,
+      "hold_hours": 14.96,
+      "entry_pctile": 0.11729706757331067,
+      "exit_pctile": 0.8476838079048024
+    },
+    {
+      "token": "STNKPAD",
+      "ca": "0x52738860e56571110869cA77431663ccAFFa2D82",
+      "status": "closed",
+      "entry_ts": "2026-09-07T15:53:42",
+      "exit_ts": "2026-09-08T06:53:06",
+      "entry_price_usd": 0.00014401675513870177,
+      "exit_price_usd": 0.0005121892994610041,
+      "size_usd": 112.09,
+      "pnl_usd": 286.56,
+      "return_multiple": 3.5565,
+      "hold_hours": 14.99,
+      "entry_pctile": 0.11729706757331067,
+      "exit_pctile": 0.8620484487887803
+    },
+    {
+      "token": "STNKPAD",
+      "ca": "0x52738860e56571110869cA77431663ccAFFa2D82",
+      "status": "closed",
+      "entry_ts": "2026-09-07T15:53:42",
+      "exit_ts": "2026-09-08T06:53:47",
+      "entry_price_usd": 0.00014401675513870177,
+      "exit_price_usd": 0.0005065920850952208,
+      "size_usd": 100.89,
+      "pnl_usd": 253.99,
+      "return_multiple": 3.5176,
+      "hold_hours": 15.0,
+      "entry_pctile": 0.11729706757331067,
+      "exit_pctile": 0.8532936676583085
+    },
+    {
+      "token": "STNKPAD",
+      "ca": "0x52738860e56571110869cA77431663ccAFFa2D82",
+      "status": "closed",
+      "entry_ts": "2026-09-07T15:53:42",
+      "exit_ts": "2026-09-08T06:56:10",
+      "entry_price_usd": 0.00014401675513870256,
+      "exit_price_usd": 0.0005288587459487388,
+      "size_usd": 1.29,
+      "pnl_usd": 3.46,
+      "return_multiple": 3.6722,
+      "hold_hours": 15.04,
+      "entry_pctile": 0.11729706757331067,
+      "exit_pctile": 0.8947726306842329
+    }
+  ]
+}

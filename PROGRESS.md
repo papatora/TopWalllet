@@ -215,3 +215,15 @@
 - Stats: {"tokens_in_db": 125, "pools_in_db": 125, "wallets_in_db": 3169, "swap_events": 10032, "wallets_scored": 114, "wallets_excluded": 6}
 - Top wallet: `0x35e63bba…` score 35.49 (scalper, 1 tokens, median 1.2305x)
 - Next: scheduled re-run per PIPELINE_CRON; details in results/stats.json
+
+### [2026-09-30] — Automated pipeline run
+- What ran: full pipeline (discover → enrich → analyze → rank → export)
+- Stats: {"tokens_in_db": 1996, "pools_in_db": 2011, "wallets_in_db": 122796, "swap_events": 841709, "wallets_scored": 2999, "wallets_excluded": 46271, "wallets_classified": 64167, "labels_assigned": 70376}
+- Top wallet: `0x3ee61689…` score 73.28 (dip_buyer_top_seller, 1 tokens, median 3.5361x)
+- Next: scheduled re-run per PIPELINE_CRON; details in results/stats.json
+
+### [2026-09-30] — Automated pipeline run
+- What ran: full pipeline (discover → enrich → analyze → rank → export)
+- Stats: {"tokens_in_db": 2003, "pools_in_db": 2018, "wallets_in_db": 123697, "swap_events": 871738, "wallets_scored": 2991, "wallets_excluded": 519, "wallets_classified": 64840, "labels_assigned": 71069}
+- Top wallet: `0x3ee61689…` score 73.28 (dip_buyer_top_seller, 1 tokens, median 3.5361x)
+- Next: scheduled re-run per PIPELINE_CRON; details in results/stats.json

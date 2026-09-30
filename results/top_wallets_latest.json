@@ -1,77 +1,192 @@
 {
-  "generated_at": "2026-09-09T15:47:30.901013+00:00",
+  "generated_at": "2026-09-30T13:28:47.496141+00:00",
   "chain": "robinhood",
   "chain_id": 4663,
-  "total_ranked": 1,
+  "total_ranked": 2,
   "wallets": [
     {
       "rank": 1,
-      "wallet_address": "0x90C8Ab209490d3D54aF8817E182344A632E5F8E2",
-      "composite_score": 52.55,
+      "wallet_address": "0x3EE616899d493B8A68FdD5d4f420DFe76Bc6bfCe",
+      "composite_score": 73.28,
       "metrics": {
-        "total_positions": 3,
-        "winning_positions": 2,
+        "total_positions": 5,
+        "winning_positions": 5,
         "win_rate": 1.0,
-        "median_return_multiple": 1.6116,
-        "max_return_multiple": 1.9543,
-        "total_realized_pnl_usd": 23.62,
-        "total_unrealized_pnl_usd": -16.15,
-        "avg_hold_duration_hours": 0.0,
+        "median_return_multiple": 3.5361,
+        "max_return_multiple": 3.6722,
+        "total_realized_pnl_usd": 1205.3,
+        "total_unrealized_pnl_usd": 0,
+        "avg_hold_duration_hours": 14.99,
         "consistency_score": 0.44,
-        "dip_buying_accuracy": 0.6667,
-        "top_selling_accuracy": 0.0,
+        "dip_buying_accuracy": 1.0,
+        "top_selling_accuracy": 1.0,
         "distinct_tokens": 1,
         "big_wins_10x_plus": 0,
         "recent_win_rate": 1.0,
         "active_months": 1,
-        "last_active": "2026-09-07T14:34:56+00:00"
+        "last_active": "2026-09-08T06:56:10+00:00"
       },
       "top_trades": [
         {
-          "token": "NDFW",
-          "ca": "0x769bf41470faef03fc9bb8d62d0f5aBE46C3e46A",
-          "entry_price_usd": 4.5387232091360785e-06,
-          "exit_price_usd": 8.870248720816358e-06,
-          "return_multiple": 1.95,
-          "position_size_usd": 18.02,
-          "pnl_usd": 17.19,
+          "token": "STNKPAD",
+          "ca": "0x52738860e56571110869cA77431663ccAFFa2D82",
+          "entry_price_usd": 0.00014401675513870256,
+          "exit_price_usd": 0.0005288587459487388,
+          "return_multiple": 3.67,
+          "position_size_usd": 1.29,
+          "pnl_usd": 3.46,
           "entry_date": "2026-09-07",
-          "exit_date": "2026-09-07"
+          "exit_date": "2026-09-08"
         },
         {
-          "token": "NDFW",
-          "ca": "0x769bf41470faef03fc9bb8d62d0f5aBE46C3e46A",
-          "entry_price_usd": 0.00011257361205587688,
-          "exit_price_usd": 0.00014284216035690366,
-          "return_multiple": 1.27,
-          "position_size_usd": 23.91,
-          "pnl_usd": 6.43,
+          "token": "STNKPAD",
+          "ca": "0x52738860e56571110869cA77431663ccAFFa2D82",
+          "entry_price_usd": 0.00014401675513870177,
+          "exit_price_usd": 0.0005121892994610041,
+          "return_multiple": 3.56,
+          "position_size_usd": 112.09,
+          "pnl_usd": 286.56,
           "entry_date": "2026-09-07",
-          "exit_date": "2026-09-07"
+          "exit_date": "2026-09-08"
         },
         {
-          "token": "NDFW",
-          "ca": "0x769bf41470faef03fc9bb8d62d0f5aBE46C3e46A",
-          "entry_price_usd": 4.609206213850214e-06,
-          "exit_price_usd": 3.686e-06,
-          "return_multiple": 0.8,
-          "position_size_usd": 80.65,
-          "pnl_usd": null,
+          "token": "STNKPAD",
+          "ca": "0x52738860e56571110869cA77431663ccAFFa2D82",
+          "entry_price_usd": 0.00014401675513870177,
+          "exit_price_usd": 0.0005092616614074273,
+          "return_multiple": 3.54,
+          "position_size_usd": 138.39,
+          "pnl_usd": 350.97,
           "entry_date": "2026-09-07",
-          "exit_date": null
+          "exit_date": "2026-09-08"
+        },
+        {
+          "token": "STNKPAD",
+          "ca": "0x52738860e56571110869cA77431663ccAFFa2D82",
+          "entry_price_usd": 0.00014401675513870177,
+          "exit_price_usd": 0.0005065920850952208,
+          "return_multiple": 3.52,
+          "position_size_usd": 100.89,
+          "pnl_usd": 253.99,
+          "entry_date": "2026-09-07",
+          "exit_date": "2026-09-08"
+        },
+        {
+          "token": "STNKPAD",
+          "ca": "0x52738860e56571110869cA77431663ccAFFa2D82",
+          "entry_price_usd": 0.00014401675513870177,
+          "exit_price_usd": 0.0005028355072097639,
+          "return_multiple": 3.49,
+          "position_size_usd": 124.55,
+          "pnl_usd": 310.32,
+          "entry_date": "2026-09-07",
+          "exit_date": "2026-09-08"
         }
       ],
       "verification": {
         "verdict": "verified",
         "eth_oracle_ok": true,
-        "trades_verified": "2/2",
+        "trades_verified": "3/3",
         "details": []
+      },
+      "trading_style": "dip_buyer_top_seller",
+      "risk_flags": [
+        "SINGLE_TOKEN_SAMPLE"
+      ],
+      "cluster_id": "cluster_22960191"
+    },
+    {
+      "rank": 2,
+      "wallet_address": "0x1bCCcd91840bD81Ab6716EB88EB25d0846571893",
+      "composite_score": 70.28,
+      "metrics": {
+        "total_positions": 9,
+        "winning_positions": 9,
+        "win_rate": 1.0,
+        "median_return_multiple": 8.733,
+        "max_return_multiple": 9.7409,
+        "total_realized_pnl_usd": 1477.75,
+        "total_unrealized_pnl_usd": 0,
+        "avg_hold_duration_hours": 114.36,
+        "consistency_score": 0.44,
+        "dip_buying_accuracy": 1.0,
+        "top_selling_accuracy": 0.0,
+        "distinct_tokens": 1,
+        "big_wins_10x_plus": 0,
+        "recent_win_rate": 1.0,
+        "active_months": 1,
+        "last_active": "2026-09-12T00:52:01+00:00"
+      },
+      "top_trades": [
+        {
+          "token": "PONIE",
+          "ca": "0x9Aa0C0ca88e6aE43A3D229afC373C0B9F2b53521",
+          "entry_price_usd": 8.81864267946787e-06,
+          "exit_price_usd": 8.590154631030909e-05,
+          "return_multiple": 9.74,
+          "position_size_usd": 15.45,
+          "pnl_usd": 135.02,
+          "entry_date": "2026-09-07",
+          "exit_date": "2026-09-11"
+        },
+        {
+          "token": "PONIE",
+          "ca": "0x9Aa0C0ca88e6aE43A3D229afC373C0B9F2b53521",
+          "entry_price_usd": 8.81864267946787e-06,
+          "exit_price_usd": 8.56367083876143e-05,
+          "return_multiple": 9.71,
+          "position_size_usd": 17.16,
+          "pnl_usd": 149.51,
+          "entry_date": "2026-09-07",
+          "exit_date": "2026-09-11"
+        },
+        {
+          "token": "PONIE",
+          "ca": "0x9Aa0C0ca88e6aE43A3D229afC373C0B9F2b53521",
+          "entry_price_usd": 8.81864267946787e-06,
+          "exit_price_usd": 8.403411947527313e-05,
+          "return_multiple": 9.53,
+          "position_size_usd": 13.9,
+          "pnl_usd": 118.58,
+          "entry_date": "2026-09-07",
+          "exit_date": "2026-09-11"
+        },
+        {
+          "token": "PONIE",
+          "ca": "0x9Aa0C0ca88e6aE43A3D229afC373C0B9F2b53521",
+          "entry_price_usd": 8.81864267946787e-06,
+          "exit_price_usd": 8.007730175002949e-05,
+          "return_multiple": 9.08,
+          "position_size_usd": 19.07,
+          "pnl_usd": 154.1,
+          "entry_date": "2026-09-07",
+          "exit_date": "2026-09-11"
+        },
+        {
+          "token": "PONIE",
+          "ca": "0x9Aa0C0ca88e6aE43A3D229afC373C0B9F2b53521",
+          "entry_price_usd": 8.81864267946787e-06,
+          "exit_price_usd": 7.701296973792206e-05,
+          "return_multiple": 8.73,
+          "position_size_usd": 23.46,
+          "pnl_usd": 181.42,
+          "entry_date": "2026-09-07",
+          "exit_date": "2026-09-11"
+        }
+      ],
+      "verification": {
+        "verdict": "verified",
+        "eth_oracle_ok": true,
+        "trades_verified": "2/3",
+        "details": [
+          "R2 mismatch stored=9.53x recomputed=7.01x"
+        ]
       },
       "trading_style": "dip_buyer",
       "risk_flags": [
         "SINGLE_TOKEN_SAMPLE"
       ],
-      "cluster_id": null
+      "cluster_id": "cluster_bcf91141"
     }
   ]
 }
