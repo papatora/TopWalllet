@@ -53,7 +53,7 @@ def main() -> int:
     st["delta_status"] = "running"
     save_state(st)
 
-    if run_step([sys.executable, "scripts/fetch_dump.py"], 60 * 60) != 0:
+    if run_step([sys.executable, "scripts/fetch_dump.py", "--fresh"], 60 * 60) != 0:
         st["delta_status"] = "failed_fetch"
         save_state(st)
         return 1

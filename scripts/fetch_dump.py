@@ -88,12 +88,13 @@ def main() -> int:
     print(sh("cd /opt/topwallet && TOPWALLET_RUN_ENV=vps .venv/bin/python "
              "scripts/extract_wallets.py 2>&1 | tail -1", 900), flush=True)
 
-    # S-45m: kalau dump VPS MASIH ADA dan fingerprint-nya cocok dengan
-    # manifest lokal, PAKAI ULANG — jangan re-dump (re-dump mengubah fp ->
-    # semua 30 part terunduh ulang = 60 mnt sia-sia saat jaringan lambat;
-    # 2026-09-28: 29/30 part sudah aman lokal, tinggal 1 part).
+    # S-45m/S-46f: reuse dump VPS hanya utk RETRY (unduhan putus). Ekstraksi
+    # rutin (night_delta) wajib dump SEGAR — pass --fresh; tanpa itu fp lama
+    # cocok terus dan data basi terkirim (insiden 2026-09-30: swaps 899rb
+    # di VPS tapi PC dapat 762rb).
+    force_fresh = "--fresh" in sys.argv
     fp = sh("stat -c '%s %Y' /opt/topwallet/data/local_snapshot.sql.gz 2>/dev/null", 30)
-    reuse = bool(fp) and manifest.get("fp") == fp and fp.strip() != ""
+    reuse = (not force_fresh) and bool(fp) and manifest.get("fp") == fp and fp.strip() != ""
     if reuse:
         print(f"[2/4] dump VPS dipakai ulang (fp cocok) — skip re-dump", flush=True)
     else:
