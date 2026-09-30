@@ -1,18 +1,20 @@
 {
   "phase": "pipeline",
   "cycle": 1,
-  "pid": 70234,
+  "pid": 75763,
   "top_wallets": null,
   "last_exit": null,
-  "updated_at": "2026-09-30T10:30:58.875932+00:00",
-  "log_tail": "10:30:47 INFO    src.analyze.wallet_classifier: wallet classification done: 64167 wallets, 70376 labels, {'BUNDLER_SUSPECT': 668, 'CLUSTER_MEMBER:cluster_22960191': 1, 'CLUSTER_MEMBER:cluster_bcf91141': 1, 'CLUSTER_MEMBER:cluster_be41': 14, 'CLUSTER_MEMBER:cluster_f70d': 1, 'CT_ATTRIBUTED': 16, 'DEV': 95, 'DEV_SERIAL_RUGGER': 29, 'GENERALIST': 55939, 'INSIDER': 6877, 'MEV_BOT': 271, 'SNIPER': 255}",
-  "pipeline_pid": 70237,
+  "updated_at": "2026-09-30T13:28:26.986363+00:00",
+  "log_tail": "13:26:16 INFO    src.analyze.pnl_verifier: PnL verification done | 13:26:16 INFO    src.pipeline: strict verification filter",
+  "pipeline_pid": 75766,
   "stats": {
-    "tokens_in_db": 62,
-    "pools_in_db": 62,
-    "wallets_in_db": 1675,
-    "swap_events": 9233,
-    "wallets_scored": 112,
-    "wallets_excluded": 0
+    "tokens_in_db": 1996,
+    "pools_in_db": 2011,
+    "wallets_in_db": 122796,
+    "swap_events": 841709,
+    "wallets_scored": 2999,
+    "wallets_excluded": 46271,
+    "wallets_classified": 64167,
+    "labels_assigned": 70376
   }
 }
