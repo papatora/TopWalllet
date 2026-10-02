@@ -1307,3 +1307,9 @@ LEGACY_WORKFLOWS.md tetap ada sbg jejak; entri .gitignore `.zcode/` baru.
 **PELAJARAN S-47:** klaim hash "1:1" ≠ perilaku 1:1 — migrasi harus diaudit
 dengan diff FILE OPERASIONAL (path, guard, env) thd sumber, bukan percaya
 laporan. Guardrail yang memutus jalur kerja harian = regresi, bukan fitur.
+
+### S-47 tambahan (3 Okt): REPO GITHUB RESMI JADI papatora/WalletIntel
+- Rename via GitHub API sukses; redirect otomatis dari URL lama tetap aktif.
+- Selaras: remote origin, .env lokal+VPS, .env.example, settings.py default,
+  setup.sh REPO_URL, night_delta push URL, deploy/ops scripts.
+- Commit 61133b6 ter-push ke URL baru (origin/main = lokal).
