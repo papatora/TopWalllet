@@ -120,7 +120,7 @@ class Settings:
     weights_path: Path = REPO_ROOT / "config" / "scoring_weights.json"
 
     # github
-    github_repo: str = os.getenv("GITHUB_REPO", "papatora/TopWalllet")
+    github_repo: str = os.getenv("GITHUB_REPO", "papatora/WalletIntel")
     github_token: str = os.getenv("GITHUB_TOKEN", "")
     github_branch: str = os.getenv("GITHUB_BRANCH", "main")
     auto_push_results: bool = _env_bool("AUTO_PUSH_RESULTS", False)

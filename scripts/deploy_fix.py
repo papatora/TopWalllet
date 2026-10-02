@@ -19,7 +19,7 @@ print("1. install venv/pip packages…")
 run(ssh, "apt-get update -qq && apt-get install -y -qq python3-venv python3-pip", timeout=600)
 
 print("2. fetch repo into existing /opt/topwallet (keeps .env, logs, data)…")
-run(ssh, "cd /opt/topwallet && rm -rf .git .venv && git init -q && git remote add origin https://github.com/papatora/TopWalllet.git && git fetch -q origin main && git reset --hard origin/main && ls | head -12", timeout=300)
+run(ssh, "cd /opt/topwallet && rm -rf .git .venv && git init -q && git remote add origin https://github.com/papatora/WalletIntel.git && git fetch -q origin main && git reset --hard origin/main && ls | head -12", timeout=300)
 
 print("3. rebuild venv + deps + tests…")
 run(ssh, "cd /opt/topwallet && python3 -m venv .venv && .venv/bin/pip install -q --upgrade pip && .venv/bin/pip install -q -r requirements.txt && .venv/bin/python -m pytest -q 2>&1 | tail -1", timeout=900)

@@ -25,6 +25,6 @@ print(run("cd /opt/topwallet && git fetch /tmp/twx.bundle main:twx 2>&1 | tail -
           "git reset --hard twx 2>&1 | tail -1 && git branch -D twx 2>/dev/null; "
           "git log --oneline -1"))
 print(run("cd /opt/topwallet && set -a && . ./.env && set +a && "
-          "git push https://x-access-token:$GITHUB_TOKEN@github.com/papatora/TopWalllet.git "
+          "git push https://x-access-token:$GITHUB_TOKEN@github.com/papatora/WalletIntel.git "
           "master:main --force 2>&1 | sed -E 's/x-access-token:[^@]*@/:***@/' | tail -2", 150))
 ssh.close()

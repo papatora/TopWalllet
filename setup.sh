@@ -3,7 +3,7 @@
 #   curl -fsSL <repo>/setup.sh | bash    or:  sudo bash setup.sh
 set -euo pipefail
 
-REPO_URL="${REPO_URL:-https://github.com/papatora/TopWalllet.git}"
+REPO_URL="${REPO_URL:-https://github.com/papatora/WalletIntel.git}"
 INSTALL_DIR="${INSTALL_DIR:-/opt/topwallet}"
 
 log() { echo -e "\033[1;32m[walletintel]\033[0m $*"; }

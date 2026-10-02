@@ -18,7 +18,7 @@ DATABASE_URL=sqlite+aiosqlite:////opt/topwallet/data/topwallet.db
 EVM_RPC_ENDPOINTS={env.get('EVM_RPC_ENDPOINTS','https://rpc.mainnet.chain.robinhood.com')}
 BLOCKSCOUT_API_URL=https://robinhoodchain.blockscout.com
 BLOCKSCOUT_RPS=8
-GITHUB_REPO=papatora/TopWalllet
+GITHUB_REPO=papatora/WalletIntel
 GITHUB_TOKEN={env.get('GITHUB_TOKEN','')}
 GITHUB_BRANCH=main
 AUTO_PUSH_RESULTS=true
@@ -56,7 +56,7 @@ code, _, _ = run(ssh, "test -d /opt/topwallet/.git && echo yes || echo no", quie
 if code == 0:
     run(ssh, "cd /opt/topwallet && git config --global --add safe.directory /opt/topwallet && git fetch origin && git reset --hard origin/main")
 else:
-    run(ssh, "git clone https://github.com/papatora/TopWalllet.git /opt/topwallet", timeout=300)
+    run(ssh, "git clone https://github.com/papatora/WalletIntel.git /opt/topwallet", timeout=300)
 
 # write .env via SFTP (not shell history)
 sftp = ssh.open_sftp()

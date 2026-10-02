@@ -93,7 +93,7 @@ def main() -> int:
                         "-m", f"chore(night): delta ekstraksi — swap_max_ts {max_ts}"],
                        cwd=str(REPO))
         subprocess.run(["git", "push", "-q",
-                        f"https://x-access-token:{tok}@github.com/papatora/TopWalllet.git",
+                        f"https://x-access-token:{tok}@github.com/papatora/WalletIntel.git",
                         "main:main"], cwd=str(REPO))
     return 0 if ok else 1
 
