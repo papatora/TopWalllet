@@ -1,0 +1,6 @@
+{
+ "code": 4,
+ "reason": "Traceback pola BARU: AttributeError: 'EtherscanV2Client' object has no attribute 'total_ok'",
+ "detail": "baseline=3884 sekarang=3885",
+ "at": "2026-09-25T17:50:13.467180+00:00"
+}

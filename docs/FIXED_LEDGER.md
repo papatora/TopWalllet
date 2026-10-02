@@ -354,3 +354,13 @@ per-stage/per-entry = kelaparan; kunci hanya di commit.
   menangkap penerima bundel — sesuai prediksi verifikasi).
 - Analyze retry-loop aktif (auto-bangkit ≤12x sampai scores>1000);
   scores=2 saat extract (fase verifikasi berjalan).
+
+## S-47 (2026-10-02) — pemulihan pasca-migrasi WalletIntel
+- 21 scripts + setup.sh: /opt/walletintel→/opt/topwallet, walletintel-supervisor
+  →topwallet-supervisor (layout VPS nyata). Detail lengkap: PRE_COMPACT S-47.
+- 5 script migrasi-disabled di-restore utuh dr backup (night_delta, _vps,
+  deploy_vps, deploy_fix, finish_s34, _vps_ops_once).
+- Publishing pulih: guard penolak repo-lama dihapus, GITHUB_REPO default balik,
+  AUTO_PUSH_RESULTS=true, remote origin dipasang lagi, push terbukti.
+- Dipertahankan: branding, REPO_ROOT-relative paths (perbaikan sah).
+- Delta 2 Okt: DB lokal 145.027 wallets / 1,08 jt swaps / max_ts 14:14 UTC.

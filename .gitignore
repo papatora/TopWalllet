@@ -37,3 +37,6 @@ desktop/*.exe
 
 logs_server_*.log
 nul
+
+# ZCode internal workspace
+.zcode/

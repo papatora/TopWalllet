@@ -1257,3 +1257,53 @@ MODIFY hakim menunggu keputusan user (results/audit_p123_verdicts.json).
 X Goal #3: 10/10 akun hidup (xlogin VPS /opt/xlogin), sesi utama di .env.
 PC explorer 8787: MATI sengaja (permintaan user). SSH VPS rate-limited —
 jeda beberapa menit antar percobaan.
+
+## SNAPSHOT S-47 — 2026-10-02: PEMULIHAN PASCA-MIGRASI + RUTIN PENUH JALAN LAGI
+
+**KONTEKS:** Migrasi 2026-10-01 (TopWalllet→WalletIntel, dikerjakan model lain)
+meninggalkan guardrail yang MEMUTUS operasional meski klaim "1:1 hash".
+User memerintahkan audit + pemulihan. Semua dibuktikan via diff thd backup.
+
+**DIBONGKAR (guardrail migrasi yang salah):**
+1. 21 scripts + setup.sh: path `/opt/walletintel` → `/opt/topwallet` BALIK
+   (VPS nyata masih layout lama; guard dibuka pun dump/fetch akan gagal).
+2. `walletintel-supervisor` → `topwallet-supervisor` (nama systemd nyata).
+3. 5 script disabled SystemExit di-restore utuh dr backup: _vps.py,
+   night_delta.py, deploy_vps.py, deploy_fix.py, finish_s34.py, _vps_ops_once.py.
+4. Publishing: github_pusher guard penolak repo-lama DIHAPUS; default
+   GITHUB_REPO=papatora/TopWalllet; AUTO_PUSH_RESULTS=true (.env/compose/example).
+5. `git remote origin` DITAMBAHKAN LAGI (https://github.com/papatora/TopWalllet);
+   push via x-access-token TERBUKTI (9870cbe + 166952a masuk).
+
+**DIPERTAHANKAN dari migrasi (memang bagus):** branding WalletIntel, DB path
+relatif REPO_ROOT (settings.py), read_wazz_thread REPO_ROOT, compose volume
+names topwallet_*, migration notice di dokumen historis.
+
+**[PC] STATE:** pytest 112 hijau. DB lokal (delta 2 Okt, MD5 resumable):
+wallets 145.027 · swaps 1.076.198 · labels 71.935 · price_points 6.858.217 ·
+tokens 2.111 · scores 41 · swap_max_ts 2026-10-02 14:14 UTC.
+
+**[VPS] HEALTH 2 Okt:** supervisor active, load 1.6-2.0, disk 34G bebas.
+scores=41 = hasil analyze pass PERTAMA (dulu selalu 0). Cron: watchdog hourly,
+trending */30, sweep */5 + callout-history (projek lain, JANGAN disentuh).
+Traceback count 4079 (baseline 3887; naik pelan — SQLAlchemy busy transien,
+crash-retry menangani, cycle lanjut; pantau bila lonjak).
+VPS git head 84a2ac26 (auto-push results jalan normal dr VPS).
+
+**VERIFY RUTIN 2 Okt:**
+- GMGN: client hidup — trending robinhood 1h = 50 token (EDEL +1818%).
+- Arkham: sisa 70 antrean TUNTAS → 802 dicek total, 109 labeled, known_entities
+  110 entity (merge +1). QUEUE KOSONG. (Sisa = mayoritas kontrak proxy/curve,
+  wajar unlabeled.)
+- Bubblemaps: queue lama 12 tuntas era Sep; antrean BARU 11 token volume tinggi
+  (REVENUE $45jt, IMDSTRTGY, ZFORGE, PAIR, musebook, ANTHROPIG, FRONG, CRUMBS,
+  VRAX×2, swordcat) — capture berjalan via Brave CDP (sesi login Arkham masih
+  HIDUP tanpa re-login; bubblemaps tab belum dicek pasca-capture).
+
+**REPO:** user putuskan pakai repo lama papatora/TopWalllet (rename GitHub ke
+WalletIntel = opsional, redirect otomatis menangani). MIGRATION_REPORT.md +
+LEGACY_WORKFLOWS.md tetap ada sbg jejak; entri .gitignore `.zcode/` baru.
+
+**PELAJARAN S-47:** klaim hash "1:1" ≠ perilaku 1:1 — migrasi harus diaudit
+dengan diff FILE OPERASIONAL (path, guard, env) thd sumber, bukan percaya
+laporan. Guardrail yang memutus jalur kerja harian = regresi, bukan fitur.
