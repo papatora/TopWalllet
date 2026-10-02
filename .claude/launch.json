@@ -2,7 +2,7 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "topwallet-explorer",
+      "name": "walletintel-explorer",
       "runtimeExecutable": "python",
       "runtimeArgs": ["Database Local only/html/server.py", "--port", "8787"],
       "port": 8787

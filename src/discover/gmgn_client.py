@@ -1,4 +1,4 @@
-"""GMGN OpenAPI client — official data source for TopWallet (replaces scraping).
+"""GMGN OpenAPI client — official data source for WalletIntel (replaces scraping).
 
 Base: https://openapi.gmgn.ai · Auth: X-APIKEY header + timestamp + client_id
 params (±5s clock window, 7s replay window — always generate fresh).

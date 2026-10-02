@@ -1,4 +1,4 @@
-"""TopWallet CLI.
+"""WalletIntel CLI.
 
   python -m src.cli pipeline                     # full run (all stages)
   python -m src.cli discover                     # single stage
@@ -115,7 +115,7 @@ def _cmd_push(_args) -> int:
 
 
 def main(argv: list[str] | None = None) -> int:
-    parser = argparse.ArgumentParser(prog="topwallet", description=__doc__,
+    parser = argparse.ArgumentParser(prog="walletintel", description=__doc__,
                                      formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = parser.add_subparsers(dest="cmd", required=True)
 

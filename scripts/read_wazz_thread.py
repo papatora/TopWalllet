@@ -1,5 +1,9 @@
 import json
+from pathlib import Path
 from playwright.sync_api import sync_playwright
+
+REPO_ROOT = Path(__file__).resolve().parents[1]
+OUTPUT_PATH = REPO_ROOT / "results" / "wazz_thread.json"
 
 POSTS = [
     "https://x.com/wazzcrypto/status/2104194307628621976",
@@ -43,6 +47,6 @@ with sync_playwright() as p:
         print("POST:", d["main"][:1500].replace("\n", " | ")[:1500])
         print(f"replies tertangkap: {len(d['replies'])}")
     pg.close()
-    json.dump(out, open(r"C:/Users/ROG/Documents/ClaudeCode/SniperToken/TopWalllet/results/wazz_thread.json", "w", encoding="utf-8"),
-              ensure_ascii=False, indent=1)
-    print("saved results/wazz_thread.json")
+    OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
+    OUTPUT_PATH.write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
+    print(f"saved {OUTPUT_PATH.relative_to(REPO_ROOT)}")

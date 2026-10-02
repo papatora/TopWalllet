@@ -1,6 +1,6 @@
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 
-//! TopWallet Launcher — desktop wrapper yang bertugas SATU hal:
+//! WalletIntel Launcher — desktop wrapper yang bertugas SATU hal:
 //! start/stop server explorer lokal (python server.py, 127.0.0.1:8787)
 //! dengan tombol, plus log kecil. Tidak ada logika dompet/kripto di sini.
 
@@ -59,57 +59,41 @@ fn exe_dir() -> Option<PathBuf> {
 }
 
 fn read_config_dir() -> Option<String> {
-    let cfg = exe_dir()?.join("topwallet-launcher.ini");
+    let cfg = exe_dir()?.join("walletintel-launcher.ini");
     let text = std::fs::read_to_string(cfg).ok()?;
     for line in text.lines() {
         if let Some(v) = line.strip_prefix("html_dir=") {
             let v = v.trim().trim_matches('"');
             if !v.is_empty() {
-                return Some(v.to_string());
+                let path = PathBuf::from(v);
+                let path = if path.is_absolute() { path } else { exe_dir()?.join(path) };
+                return Some(path.to_string_lossy().to_string());
             }
         }
     }
     None
 }
 
-fn write_config_dir(dir: &str) {
-    if let Some(d) = exe_dir() {
-        let _ = std::fs::write(
-            d.join("topwallet-launcher.ini"),
-            format!("html_dir={dir}\n"),
-        );
-    }
-}
-
 fn find_html_dir() -> Option<String> {
-    // 1. env override  2. config next to exe  3. walk up from exe
-    // 4. lokasi repo default (single-user tool)
-    if let Some(v) = std::env::var_os("TOPWALLET_HTML_DIR") {
+    // Explicit override, then the project containing this executable. No machine-specific fallback.
+    if let Some(v) = std::env::var_os("WALLETINTEL_HTML_DIR") {
         let p = PathBuf::from(v);
         if p.join("server.py").exists() {
             return Some(p.to_string_lossy().to_string());
+        }
+    }
+    for origin in [exe_dir(), std::env::current_dir().ok()].into_iter().flatten() {
+        for dir in origin.ancestors() {
+            let candidate = dir.join("Database Local only").join("html");
+            if candidate.join("server.py").exists() {
+                return Some(candidate.to_string_lossy().to_string());
+            }
         }
     }
     if let Some(v) = read_config_dir() {
         if PathBuf::from(&v).join("server.py").exists() {
             return Some(v);
         }
-    }
-    if let Some(mut dir) = exe_dir() {
-        for _ in 0..6 {
-            let candidate = dir.join("Database Local only").join("html");
-            if candidate.join("server.py").exists() {
-                let s = candidate.to_string_lossy().to_string();
-                write_config_dir(&s);
-                return Some(s);
-            }
-            dir = dir.parent()?.to_path_buf();
-        }
-    }
-    let default = r"C:\Users\ROG\Documents\ClaudeCode\SniperToken\TopWalllet\Database Local only\html";
-    if PathBuf::from(default).join("server.py").exists() {
-        write_config_dir(default);
-        return Some(default.into());
     }
     None
 }
@@ -163,7 +147,7 @@ fn start_server(state: State<ServerState>, app: AppHandle) -> Result<String, Str
         return Err(format!("Port {PORT} sudah dipakai — server mungkin sudah jalan"));
     }
     let html = find_html_dir().ok_or_else(|| {
-        "server.py tidak ditemukan. Isi html_dir= di topwallet-launcher.ini \
+        "server.py tidak ditemukan. Isi html_dir= di walletintel-launcher.ini \
          (sebelah exe) dengan path folder 'Database Local only/html'"
             .to_string()
     })?;
@@ -244,6 +228,15 @@ fn open_website() {
 }
 
 fn main() {
+    if std::env::args().any(|arg| arg == "--check-config") {
+        let html = find_html_dir();
+        let python = find_python();
+        println!("{}", serde_json::json!({ "html_dir": html, "python": python }));
+        if html.is_none() || python.is_none() {
+            std::process::exit(1);
+        }
+        return;
+    }
     tauri::Builder::default()
         .manage(ServerState { child: Mutex::new(None) })
         .invoke_handler(tauri::generate_handler![

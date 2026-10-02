@@ -1,4 +1,4 @@
-"""Overnight supervisor — keeps the TopWallet pipeline running unattended.
+"""Overnight supervisor — keeps the WalletIntel pipeline running unattended.
 
 Responsibilities:
   1. Run pipeline stages (enrich→prices→analyze) with resume; skip stages
@@ -100,7 +100,7 @@ def zai_watchdog(status: dict) -> str:
         "log_tail": status.get("log_tail"),
     }
     prompt = (
-        "You are an unattended-jobs watchdog. Here is the TopWallet supervisor "
+        "You are an unattended-jobs watchdog. Here is the WalletIntel supervisor "
         f"status JSON: {json.dumps(brief)}. UTC now = {now_iso()}. "
         "Answer in ONE short line: 'OK: <why>' if work is progressing (recent "
         "updated_at, plausible phase), or 'PROBLEM: <why>' if stalled/failed "

@@ -2,7 +2,7 @@
 <html lang="id">
 <head>
 <meta charset="utf-8" />
-<title>TopWallet — Local Server</title>
+<title>WalletIntel — Local Server</title>
 <style>
   :root {
     --bg: #0b1220; --panel: #111a2e; --line: #1e2a44;
@@ -53,7 +53,7 @@
 </style>
 </head>
 <body>
-  <h1>TopWallet — Local Server</h1>
+  <h1>WalletIntel — Local Server</h1>
   <div class="sub">Explorer lokal · Robinhood Chain snapshot · hanya 127.0.0.1</div>
 
   <div class="card">
@@ -146,7 +146,7 @@
       $("metaPy").textContent = cfg.python
         ? cfg.python + " " + (cfg.python_args || []).join(" ")
         : "TIDAK DITEMUKAN — install Python 3";
-      $("metaDir").textContent = cfg.html_dir || "TIDAK DITEMUKAN — isi topwallet-launcher.ini";
+      $("metaDir").textContent = cfg.html_dir || "TIDAK DITEMUKAN — isi walletintel-launcher.ini";
     } catch (e) { log("[launcher] config error: " + e, true); }
     refresh();
     setInterval(refresh, 1500);

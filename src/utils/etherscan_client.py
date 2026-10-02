@@ -24,7 +24,7 @@ from aiolimiter import AsyncLimiter
 from config.settings import settings
 from src.utils.logger import jlog
 
-log = logging.getLogger("topwallet.etherscan")
+log = logging.getLogger("walletintel.etherscan")
 
 # method id untuk eth_call (token metadata gratis, tanpa endpoint PRO)
 SEL_DECIMALS = "0x313ce567"   # decimals()
@@ -343,7 +343,7 @@ def make_explorer_client(rps: float | None = None):
 
         n_keys = len([k for k in settings.etherscan_api_key.split(",") if k.strip()])
         return EtherscanV2Client(rps=(rps or settings.etherscan_rps) * max(n_keys, 1))
-    logging.getLogger("topwallet.etherscan").warning(
+    logging.getLogger("walletintel.etherscan").warning(
         "ETHERSCAN_API_KEY belum di-set — memakai Blockscout fallback "
         "(robin.etherscan.io jauh lebih stabil; daftar gratis di "
         "etherscan.io/myapikey lalu isi .env)")

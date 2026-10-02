@@ -1,4 +1,4 @@
-"""Central configuration for TopWallet.
+"""Central configuration for WalletIntel.
 
 Every tunable is either an environment variable (see .env.example) or lives in
 config/scoring_weights.json. Nothing is hardcoded at call sites, so the whole
@@ -14,6 +14,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 
 from dotenv import load_dotenv
+from sqlalchemy.engine import make_url
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 load_dotenv(REPO_ROOT / ".env")
@@ -139,6 +140,15 @@ class Settings:
     proxy_urls: list[str] = field(default_factory=list)
 
     def __post_init__(self) -> None:
+        # Keep relative SQLite databases tied to this checkout, regardless of cwd.
+        db_url = make_url(self.database_url)
+        if db_url.get_backend_name() == "sqlite" and db_url.database:
+            db_path = db_url.database
+            if db_path != ":memory:" and not db_path.startswith("file:") and not Path(db_path).is_absolute():
+                self.database_url = db_url.set(
+                    database=str(REPO_ROOT / db_path)
+                ).render_as_string(hide_password=False)
+
         endpoints = os.getenv(
             "EVM_RPC_ENDPOINTS", "https://rpc.mainnet.chain.robinhood.com"
         )

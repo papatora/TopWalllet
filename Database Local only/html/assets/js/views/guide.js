@@ -1,4 +1,4 @@
-// Guide — cara membaca data TopWallet.
+// Guide — cara membaca data WalletIntel.
 import { esc } from '../lib/fmt.js';
 import { chip, labelMeta } from '../lib/ui.js';
 import { S } from '../lib/store.js';

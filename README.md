@@ -1,8 +1,8 @@
-# TopWallet
+# WalletIntel
 
 **Fully automated smart-wallet discovery & tracking engine — built for Robinhood Chain (EVM L2, chain id 4663).**
 
-TopWallet scrapes hundreds of thousands of wallet addresses across the chain's DEX universe, reconstructs every wallet's full trade history with on-chain-derived prices, and ranks wallets by a single thesis: **consistently buy local dips, sell local tops (or hold deep winners), across MANY tokens.**
+WalletIntel discovers and investigates wallets across the chain's DEX universe, reconstructs trading histories with on-chain-derived prices, classifies wallet types, and ranks verified smart traders by consistency across many tokens.
 
 ```
 ┌─────────────┐   ┌──────────────┐   ┌──────────────┐   ┌───────────────┐   ┌──────────────┐
@@ -16,27 +16,24 @@ TopWallet scrapes hundreds of thousands of wallet addresses across the chain's D
 
 ## Quick start
 
-### Local (no Docker, no paid keys)
+### Local development (offline-safe)
 ```bash
-python -m venv .venv && .venv/Scripts/pip install -r requirements.txt   # Windows
-# source .venv/bin/activate && pip install -r requirements.txt          # Linux
-cp .env.example .env          # optional: add Alchemy keys for speed
-python -m src.cli pipeline --max-tokens 50 --enrich-limit 100
+.venv/Scripts/python.exe -m src.cli --help   # Windows
+.venv/Scripts/python.exe -m pytest -q         # offline unit tests
 ```
-Results land in `results/top_wallets_latest.json` (+ CSV, stats, history).
+Local machines are for code, results, and offline tests. Pipeline stages,
+scraping, monitoring, and verification run only on an approved VPS.
 
 ### VPS (Ubuntu 22.04+), fully autonomous
-```bash
-sudo bash setup.sh            # installs docker, clones, builds, runs, schedules
-```
-That starts: postgres + redis + weekly scheduler + FastAPI API. First pipeline
-runs immediately; results are pushed to this repo automatically after every run.
+Deployment requires an approved WalletIntel repository and VPS target.
+`setup.sh` now refuses to run without an explicit `REPO_URL`; automatic
+publishing and remote helper workflows are disabled until a new target is configured.
 
 ## How it works (chain reality, not hand-waving)
 
 Robinhood Chain is a ~2-month-old Arbitrum-Orbit L2 (block time ≈ 0.1 s,
 ~850k blocks/day). There is no GeckoTerminal/Birdeye coverage for it, so
-TopWallet derives everything from three free sources:
+WalletIntel derives the chain data from three free sources:
 
 | Data | Source | Notes |
 |---|---|---|

@@ -15,7 +15,7 @@ from fastapi.responses import HTMLResponse
 
 from config.settings import settings
 
-app = FastAPI(title="TopWallet API", version="0.2.0")
+app = FastAPI(title="WalletIntel API", version="0.2.0")
 
 from src.api.v2 import router as v2_router
 app.include_router(v2_router)

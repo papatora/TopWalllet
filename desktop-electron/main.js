@@ -1,4 +1,4 @@
-// TopWallet Launcher — Electron main process.
+// WalletIntel Launcher — Electron main process.
 // Prinsip: TIDAK ADA operasi blocking di main thread (pembeda dari Tauri
 // yang not-responding) — semua probe (netstat/python detect) async via exec.
 const { app, BrowserWindow, ipcMain, shell } = require('electron');

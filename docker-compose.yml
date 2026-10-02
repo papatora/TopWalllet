@@ -1,9 +1,9 @@
-# TopWallet — full stack for a Linux VPS.
+# WalletIntel — full stack for a Linux VPS.
 #   docker compose up -d --build
 # Services: postgres, redis, worker (one-shot pipeline run), scheduler
 # (weekly cron), api (FastAPI dashboard). The worker can be scaled:
 #   docker compose up -d --scale worker=4
-name: topwallet
+name: walletintel
 
 x-app-base: &app-base
   build: .
@@ -67,4 +67,6 @@ services:
 
 volumes:
   pgdata:
+    name: topwallet_pgdata
   redisdata:
+    name: topwallet_redisdata

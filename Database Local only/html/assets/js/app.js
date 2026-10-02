@@ -134,7 +134,7 @@ $('#rebuild').addEventListener('click', async () => {
 function footer() {
   const m = S.meta;
   $('#foot').innerHTML = [
-    'TopWallet', `Robinhood Chain ${m.chain_id}`, `swaps ${date(m.swap_from)} → ${date(m.swap_to)}`,
+    'WalletIntel', `Robinhood Chain ${m.chain_id}`, `swaps ${date(m.swap_from)} → ${date(m.swap_to)}`,
     `labels ${m.labels_generated.slice(0, 10)}`, `built ${m.built.slice(0, 16).replace('T', ' ')} UTC`,
     '<a href="/design/styleguide.html">Design system</a>', 'Local only',
   ].map(s => `<span>${s}</span>`).join('');

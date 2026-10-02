@@ -53,7 +53,7 @@ from config.settings import settings  # noqa: E402
 from src.utils.logger import jlog  # noqa: E402
 from src.utils.rpc_client import EvmRpcClient, V3_SWAP_TOPIC0, v4_swap_topic0  # noqa: E402
 
-log = logging.getLogger("topwallet.reverify")
+log = logging.getLogger("walletintel.reverify")
 
 ZERO_ADDR = "0x" + "0" * 40
 MASS_SPREAD_WALLETS = 20   # >= → distribusi massal (airdrop/phishing bot)

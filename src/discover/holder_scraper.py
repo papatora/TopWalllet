@@ -20,7 +20,7 @@ from config.settings import settings
 from src.utils.logger import jlog
 
 log = logging.getLogger(__name__)
-UA = {"User-Agent": "Mozilla/5.0 (compatible; TopWallet/0.1)"}
+UA = {"User-Agent": "Mozilla/5.0 (compatible; WalletIntel/0.1)"}
 
 
 @dataclass

@@ -1,7 +1,7 @@
 [package]
-name = "topwallet-launcher"
+name = "walletintel-launcher"
 version = "0.1.0"
-description = "TopWallet local explorer server launcher"
+description = "WalletIntel local explorer server launcher"
 edition = "2021"
 
 [build-dependencies]

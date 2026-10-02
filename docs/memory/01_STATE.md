@@ -1,3 +1,4 @@
+> **Migration notice (2026-10-01): historical snapshot, non-operational.** This memory entry predates the WalletIntel relocation. Any TopWalllet local paths, `/opt/topwallet` server paths, and commands are retained for audit only; do not execute. The canonical local project is `C:\Users\ROG\Documents\ClaudeCode\AlphaIntel\WalletIntel`. Use current `README.md`, `SECURITY_POLICY.md`, and `MIGRATION_REPORT.md` for active instructions.
 # 01 — CURRENT STATE (VPS + Pipeline) — update S-42 (2026-09-24 dini hari)
 
 > Baca ini dulu. Setelah itu: PRE_COMPACT S-42 (paling baru) + FIXED_LEDGER +

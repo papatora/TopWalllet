@@ -2,7 +2,7 @@
 
 Kebutuhan: ARKHAM_API_KEY dari arkham.io (endpoint resmi api.arkhamintelligence.com,
 header x-api-key). Cookie web TIDAK cukup — backend Arkham ada di balik Cloudflare
-dan kebijakan TopWallet melarang bypass CF (lihat SECURITY_POLICY.md).
+dan kebijakan WalletIntel melarang bypass CF (lihat SECURITY_POLICY.md).
 
 Cara kerja (setelah key terpasang di .env):
   1. Ambil daftar wallet prioritas (top swaps + top ranked) dari DB lokal.

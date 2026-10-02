@@ -52,7 +52,7 @@ def parse_input(raw: str) -> str | None:
 
 def _get(url: str, timeout: int = 15) -> dict | list | None:
     req = urllib.request.Request(url, headers={"accept": "application/json",
-                                               "user-agent": "TopWallet-lookup/1.0"})
+                                               "user-agent": "WalletIntel-lookup/1.0"})
     # Python sistem kadang membawa CA bundle kadaluarsa → coba certifi,
     # lalu default, terakhir tanpa verifikasi (endpoint publik baca-saja).
     ctxs = []

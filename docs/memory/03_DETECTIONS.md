@@ -1,3 +1,4 @@
+> **Migration notice (2026-10-01): historical snapshot, non-operational.** This memory entry predates the WalletIntel relocation. Any TopWalllet local paths, `/opt/topwallet` server paths, and commands are retained for audit only; do not execute. The canonical local project is `C:\Users\ROG\Documents\ClaudeCode\AlphaIntel\WalletIntel`. Use current `README.md`, `SECURITY_POLICY.md`, and `MIGRATION_REPORT.md` for active instructions.
 # 03 — DETECTION RULES (all signals + false positives)
 
 > Blueprint: docs/GMGN_PANDUAN_LENGKAP.md. Implementasi: src/analyze/wallet_classifier.py

@@ -3,7 +3,7 @@
 Reality check (verified 2026-09-05):
   * GMGN DOES list Robinhood Chain (gmgn.ai/trend?chain=robinhood) — but its
     API endpoints sit behind a Cloudflare "Just a moment..." challenge for
-    plain HTTP clients, with or without residential proxies. TopWallet does
+    plain HTTP clients, with or without residential proxies. WalletIntel does
     NOT attempt to defeat bot protections (no CAPTCHA farming, no fingerprint
     spoofing): if the challenge appears, this source is skipped gracefully.
     Enable ENABLE_GMGN=true to try it anyway (may work from VPS IPs).
@@ -70,7 +70,7 @@ async def fetch_leaderboard_wallets(chain: str = "sol", period: str = "7d") -> l
                 if _is_cloudflare_challenge(resp):
                     jlog(log, logging.WARNING,
                          "gmgn blocked by Cloudflare challenge — skipping source "
-                         "(TopWallet does not bypass bot protections)",
+                         "(WalletIntel does not bypass bot protections)",
                          proxy=proxy is not None)
                     return []
                 resp.raise_for_status()

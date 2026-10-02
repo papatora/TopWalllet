@@ -25,6 +25,10 @@ def _run_git(args: list[str], check: bool = True) -> subprocess.CompletedProcess
 
 def push_results() -> bool:
     """Stage results/ + PROGRESS.md, commit, and push. Returns success bool."""
+    repo = settings.github_repo.strip().rstrip("/")
+    if not repo:
+        jlog(log, logging.WARNING, "AUTO_PUSH_RESULTS is on but GITHUB_REPO is empty; skipping")
+        return False
     if not settings.github_token:
         jlog(log, logging.WARNING, "AUTO_PUSH_RESULTS is on but GITHUB_TOKEN is empty; skipping")
         return False
@@ -34,7 +38,7 @@ def push_results() -> bool:
         if not status.stdout.strip():
             jlog(log, logging.INFO, "nothing new to push")
             return True
-        _run_git(["-c", "user.name=TopWallet Bot", "-c", "user.email=topwallet-bot@users.noreply.github.com",
+        _run_git(["-c", "user.name=WalletIntel Bot", "-c", "user.email=walletintel-bot@users.noreply.github.com",
                   "commit", "-m", "chore(results): automated pipeline output update"])
         url = f"https://x-access-token:{settings.github_token}@github.com/{settings.github_repo}.git"
         _run_git(["push", url, f"HEAD:{settings.github_branch}"])

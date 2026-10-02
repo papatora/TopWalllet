@@ -1,4 +1,4 @@
-// TopWallet Launcher — native WinForms (compiled with the Windows built-in
+// WalletIntel Launcher — native WinForms (compiled with the Windows built-in
 // csc.exe; zero install). Replaces the laggy Tauri app per user request.
 // All probes are async on worker threads — the UI can never "not respond".
 using System;
@@ -17,22 +17,49 @@ static class Program
     static Label dot, stxt, ssub;
     static Button bStart, bStop, bForce;
 
-    static string Repo = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, ".."));
+    static string Repo = FindRepo();
+
+    static string FindRepo()
+    {
+        var dir = new DirectoryInfo(Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location));
+        while (dir != null)
+        {
+            if (File.Exists(Path.Combine(dir.FullName, "Database Local only", "html", "server.py")))
+                return dir.FullName;
+            dir = dir.Parent;
+        }
+        throw new DirectoryNotFoundException("WalletIntel project root containing server.py was not found");
+    }
+
+    static string ConfigPath(string value)
+    {
+        value = value.Replace("\\\\", "\\");
+        return Path.GetFullPath(Path.IsPathRooted(value) ? value : Path.Combine(Repo, value));
+    }
 
     [STAThread]
-    static void Main()
+    static void Main(string[] args)
     {
+        if (args.Contains("--check-config"))
+        {
+            var dir = ServerDir();
+            Console.WriteLine("project_root=" + Repo);
+            Console.WriteLine("server_dir=" + dir);
+            Console.WriteLine("server_exists=" + File.Exists(Path.Combine(dir, "server.py")));
+            Console.WriteLine("python=" + FindPython());
+            return;
+        }
         Application.EnableVisualStyles();
         var f = new Form
         {
-            Text = "TopWallet Launcher",
+            Text = "WalletIntel Launcher",
             Width = 740, Height = 520,
             BackColor = Color.FromArgb(11, 14, 24),
             FormBorderStyle = FormBorderStyle.FixedSingle,
             MaximizeBox = false,
         };
 
-        var logo = new Label { Text = "★ TOPWALLET LAUNCHER", Left = 18, Top = 14, AutoSize = true,
+        var logo = new Label { Text = "★ WALLETINTEL LAUNCHER", Left = 18, Top = 14, AutoSize = true,
             ForeColor = Color.FromArgb(232, 235, 247), Font = new Font("Segoe UI", 12, FontStyle.Bold) };
         var chain = new Label { Text = "Robinhood Chain · 4663", Left = 560, Top = 18, AutoSize = true,
             ForeColor = Color.FromArgb(125, 135, 173), Font = new Font("Consolas", 9) };
@@ -110,7 +137,7 @@ static class Program
         {
             var j = File.ReadAllText(cfg);
             var m = System.Text.RegularExpressions.Regex.Match(j, "\"server_dir\"\\s*:\\s*\"([^\"]+)\"");
-            if (m.Success && Directory.Exists(m.Groups[1].Value.Replace("\\\\", "\\"))) return m.Groups[1].Value.Replace("\\\\", "\\");
+            if (m.Success && File.Exists(Path.Combine(ConfigPath(m.Groups[1].Value), "server.py"))) return ConfigPath(m.Groups[1].Value);
         }
         catch { }
         return Path.Combine(Repo, "Database Local only", "html");
@@ -149,7 +176,7 @@ static class Program
         {
             var j = File.ReadAllText(Path.Combine(Repo, "data", "launcher.json"));
             var m = System.Text.RegularExpressions.Regex.Match(j, "\"python\"\\s*:\\s*\"([^\"]+)\"");
-            if (m.Success && File.Exists(m.Groups[1].Value.Replace("\\\\", "\\"))) return m.Groups[1].Value.Replace("\\\\", "\\");
+            if (m.Success && File.Exists(ConfigPath(m.Groups[1].Value))) return ConfigPath(m.Groups[1].Value);
         }
         catch { }
         string[] cands = { "python", "py" };

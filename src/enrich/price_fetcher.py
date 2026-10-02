@@ -1,7 +1,7 @@
 """Historical price reconstruction from on-chain DEX Swap events.
 
 Robinhood Chain has no third-party historical price API (GeckoTerminal not
-supported, Birdeye is Solana-centric), so TopWallet derives prices itself:
+supported, Birdeye is Solana-centric), so WalletIntel derives prices itself:
 
   * Uniswap v4 pools  — Swap logs from the PoolManager singleton, filtered by
     the pool's poolId topic. The log data carries sqrtPriceX96 after each swap.

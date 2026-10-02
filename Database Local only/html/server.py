@@ -1,4 +1,4 @@
-"""Local-only web server for the TopWallet explorer.
+"""Local-only web server for the WalletIntel explorer.
 
     python server.py            -> http://127.0.0.1:8787
     python server.py --port 9000 --open
@@ -110,7 +110,7 @@ def main() -> None:
     rebuild()
     srv = ThreadingHTTPServer(("127.0.0.1", args.port), partial(Handler, directory=str(ROOT)))
     url = f"http://127.0.0.1:{args.port}/"
-    print(f"[server] TopWallet explorer running at {url}  (Ctrl+C to stop)")
+    print(f"[server] WalletIntel explorer running at {url}  (Ctrl+C to stop)")
     if args.open:
         webbrowser.open(url)
     try:

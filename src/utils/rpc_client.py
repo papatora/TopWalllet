@@ -49,7 +49,7 @@ class EvmRpcClient:
             proxies = settings.proxy_urls if os.getenv("RPC_USE_PROXY") == "1" else None
             self._client = httpx.AsyncClient(
                 timeout=httpx.Timeout(30.0, connect=10.0),
-                headers={"User-Agent": "TopWallet/0.1"},
+                headers={"User-Agent": "WalletIntel/0.1"},
                 proxy=proxies[0] if proxies else None,
             )
         return self._client

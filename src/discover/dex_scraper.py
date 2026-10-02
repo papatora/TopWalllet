@@ -21,7 +21,7 @@ from src.utils.logger import jlog
 
 log = logging.getLogger(__name__)
 BASE = "https://api.dexscreener.com"
-UA = {"User-Agent": "TopWallet/0.1"}
+UA = {"User-Agent": "WalletIntel/0.1"}
 
 
 @dataclass

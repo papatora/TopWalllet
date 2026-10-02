@@ -1,3 +1,4 @@
+> **Migration notice (2026-10-01): historical snapshot, non-operational.** This document records the pre-migration TopWalllet layout. Old local paths, remotes, and command examples below are retained for history only; do not execute them. The canonical working copy is `C:\Users\ROG\Documents\ClaudeCode\AlphaIntel\WalletIntel`. Use the current `README.md`, `SECURITY_POLICY.md`, and `MIGRATION_REPORT.md` for active instructions.
 # ULTIMATE PROMPT — paste this into ANY AI agent to continue TopWallet
 
 > Usage: open this file, copy everything below the line into a new AI session

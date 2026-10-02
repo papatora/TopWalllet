@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
-# TopWallet — one-command VPS setup (Ubuntu 22.04+).
+# WalletIntel — one-command VPS setup (Ubuntu 22.04+).
 #   curl -fsSL <repo>/setup.sh | bash    or:  sudo bash setup.sh
 set -euo pipefail
 
 REPO_URL="${REPO_URL:-https://github.com/papatora/TopWalllet.git}"
 INSTALL_DIR="${INSTALL_DIR:-/opt/topwallet}"
 
-log() { echo -e "\033[1;32m[topwallet]\033[0m $*"; }
+log() { echo -e "\033[1;32m[walletintel]\033[0m $*"; }
 
 # --- 1. system deps -------------------------------------------------------
 if command -v apt-get >/dev/null 2>&1; then

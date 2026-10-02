@@ -1,4 +1,4 @@
-# 🔒 TOPWALLET OPERATION & SECURITY POLICY
+# 🔒 WALLETINTEL OPERATION & SECURITY POLICY
 
 > **DOKUMEN PENGGILING ATURAN — TIDAK BISA DIBANTAH.**
 > AI/agent mana pun yang membaca repo ini WAJIB patuh 100%. Aturan ini ada
@@ -86,14 +86,10 @@ Sebelum menambah/meng-install library, tool, binary, script dari internet
 
 ---
 
-## VPS DEPLOY (satu kali, copy-paste; user jalankan sendiri atau izinkan SSH)
+## VPS DEPLOY
 
-```bash
-ssh root@78.31.250.202          # password di file creds user
-curl -fsSL https://raw.githubusercontent.com/papatora/TopWalllet/main/setup.sh -o setup.sh
-TOPWALLET_RUN_ENV=vps bash setup.sh
-# saat editor .env terbuka: isi EVM_RPC_ENDPOINTS (Alchemy keys), GITHUB_TOKEN,
-# ZAI_API_KEY, PROXY_URLS_FILE=/opt/topwallet/proxies.txt (upload file proxy)
-# lalu: docker compose --profile monitor up -d
-```
-Supervisor/monitor/scheduler hidup di VPS; lokal cukup `git pull` untuk baca hasil.
+The previous TopWalllet URL and deployment commands are retired. After the
+WalletIntel repository and VPS target are explicitly approved, follow
+`scripts/VPS_SETUP.md`. `setup.sh` requires an explicit `REPO_URL` and installs
+to `/opt/walletintel`; remote helper scripts remain disabled until the
+WalletIntel target is configured. Do not reuse the historical commands above.

@@ -1,4 +1,4 @@
-"""Dataset builder for the local TopWallet explorer.
+"""Dataset builder for the local WalletIntel explorer.
 
 Robinhood Chain (4663) ONLY. Reads the LOCAL snapshot — never the VPS:
   - data/topwallet.db                   tokens, pools, price_points, swap_events, wallet_scores, checkpoints
